@@ -1,0 +1,52 @@
+{
+  "id": "sig-ae489bdccab2",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, productividad y técnicas de estudio, y docencia de programación entry-level en la era de la IA.",
+  "label": "The contagion of fear",
+  "member_doc_ids": [
+    "0c3c5784ebaf5853",
+    "1ccc8e412cdaa1c4",
+    "1f04466d62728268",
+    "261df8a913149e73",
+    "38488a573fdcbb0f",
+    "3a5f5a05b538f792",
+    "3f06e70725cb9811",
+    "423a4c12782556d6",
+    "4d6b4129cda6c3b7",
+    "54cc792a5b943002",
+    "57c0e0396566fbda",
+    "6ca38ee23586ae47",
+    "7e10ed86c0db6a3e",
+    "8602f3432d4b2631",
+    "9682b38f7206f152",
+    "9ba7fc6680f5787d",
+    "a7f2651da24d2748",
+    "c655f18a602b2e23",
+    "ce1fc97876bd2c27",
+    "d2a6cf32720ea375",
+    "d2ff0bd6df26dc0c",
+    "e2c12068a8a89df4",
+    "e915fa7ba8ebe93a",
+    "f4ad14c15d16d2e9"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 1.0,
+    "novelty": 1.0,
+    "corroboration": 1.0,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.875,
+  "first_seen": "2009-02-10T00:00:00Z",
+  "sources_count": 1,
+  "status": "promoted",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

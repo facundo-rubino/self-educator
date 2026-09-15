@@ -1,0 +1,29 @@
+{
+  "id": "sig-e1974f3021ef",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, productividad y técnicas de estudio, y docencia de programación entry-level en la era de la IA.",
+  "label": "Agency and Agents",
+  "member_doc_ids": [
+    "f2866eade042e07c"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://www.oneusefulthing.org/p/agency-and-agents",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 1.0,
+    "corroboration": 1.0,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.6417,
+  "first_seen": "2026-08-31T00:24:35Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
