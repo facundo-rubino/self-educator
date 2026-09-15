@@ -131,6 +131,15 @@ of indices. Nothing downstream cares how the groups were formed.
 give separate `kb/`, `store/` and `config.yaml`. Wrap it in a shell alias, or add
 a registry that resolves a name to a path.
 
+**Leer otras vaults para no repetirte (idea, sin implementar).** Si ya tenés
+otra vault de Obsidian sobre un tema (ej. fitness, UX), este `self-educator`
+podría: (a) tratarla como fuente extra en la etapa 1 (un `files` source que
+apunte a esa carpeta), y (b) en la etapa 2, restar relevancia o descartar una
+señal si ya existe una nota `concept` con título/alias muy similar en esa otra
+vault — para que el brief solo te muestre lo nuevo, no lo que ya sabés. Lo más
+simple: un chequeo determinista de títulos/aliases contra los `.md` de la otra
+vault antes de promover una señal, sin gastar LLM en eso.
+
 **Scheduling.** `edu run --from-gaps --scale S -y` is designed to be run
 unattended: the KB picks the target, the scale caps the spend, and `-y` skips
 confirmation. Pair it with a periodic `edu review` so calibration keeps up.
