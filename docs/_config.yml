@@ -1,0 +1,12 @@
+# GitHub Pages sirve esta carpeta. El brief se sobrescribe cada mañana.
+title: Brief
+description: Lo que salió hoy en lo que estoy aprendiendo.
+theme: jekyll-theme-cayman
+lang: es
+# El histórico vive en briefs/ y no se publica: el brief es efímero a propósito.
+# Documentacion interna del proyecto: vive en docs/ pero no se publica.
+exclude:
+  - _config.yml
+  - superpowers/
+  - architecture.md
+  - extending.md

@@ -1,0 +1,99 @@
+name: brief
+
+on:
+  schedule:
+    # 09:00 UTC = 06:00 en Uruguay/Argentina (UTC-3). Lunes a viernes.
+    - cron: "0 9 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      scale:
+        description: "Escala de la corrida (XS es casi gratis, para probar)"
+        default: "S"
+        type: choice
+        options: ["XS", "S", "M"]
+
+# Una corrida por vez: dos a la vez se pisarían el store y el ledger.
+concurrency:
+  group: brief
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # commitear el brief, el KB y el store
+  issues: write     # abrir el issue que llega al mail
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Instalar
+        run: uv sync --group dev
+
+      - name: Crear kb/ y store/ si faltan
+        run: uv run edu init
+
+      - name: Estado de los feeds
+        # Informativo: un feed muerto cuesta sus propios items y nada más.
+        continue-on-error: true
+        run: uv run edu sources --check >> "$GITHUB_STEP_SUMMARY"
+
+      # Etapas 1-2 no gastan un centavo; 3-4 sí. Si DeepSeek falla o se queda
+      # sin presupuesto, igual seguimos: el brief se renderiza con lo que haya
+      # en el store. El brief nunca deja de llegar por un error de API.
+      - name: Correr el pipeline
+        id: run
+        continue-on-error: true
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: uv run edu run --scale "${{ inputs.scale || 'S' }}" --yes
+
+      - name: Fecha de hoy
+        id: hoy
+        run: echo "fecha=$(date -u +%d-%m-%Y)" >> "$GITHUB_OUTPUT"
+
+      - name: Renderizar el brief
+        run: |
+          uv run edu brief \
+            --page-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" \
+            --issue-out .github/issue-body.md
+
+      - name: Podar el corpus viejo
+        run: |
+          uv run python - <<'PY'
+          from self_educator.config import Config
+          from self_educator.storage import Store
+          print("volcados podados:", Store(Config.load(".").store_dir).prune_corpus())
+          PY
+
+      - name: Guardar el brief, el KB y la memoria de no-repetir
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add briefs docs kb store
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "brief: $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Avisar por mail
+        # Sin items no se abre issue: una mañana sin nada no manda mail.
+        if: hashFiles('.github/issue-body.md') != ''
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Brief · ${{ steps.hoy.outputs.fecha }}"
+          content-filepath: .github/issue-body.md
+          labels: brief
+
+      - name: Si el pipeline falló, decirlo
+        if: steps.run.outcome == 'failure'
+        run: |
+          echo "El pipeline falló; el brief se renderizó con lo que ya había en el store." \
+            >> "$GITHUB_STEP_SUMMARY"

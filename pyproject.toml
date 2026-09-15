@@ -1,0 +1,35 @@
+[project]
+name = "self-educator"
+version = "0.1.0"
+description = "Brief diario y base de conocimiento: ingesta, senal, investigacion, compilacion."
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.90",
+    "openai>=1.0",
+    "httpx>=0.27",
+    "numpy>=1.26",
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "rich>=13.7",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+ml = ["sentence-transformers>=3.0"]
+
+[project.scripts]
+edu = "self_educator.cli:app"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["self_educator"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
