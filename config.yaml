@@ -6,9 +6,12 @@
 # ---------------------------------------------------------------------------
 
 topic: >-
-  Cómo un dev que lidera proyectos hace mejor su trabajo: agentes de IA
-  aplicados a programar y gestionar, liderazgo técnico de equipos chicos
-  (estimación, secuenciamiento, alcance) y oficio de frontend moderno.
+  Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
+  trabajo: agentes de IA aplicados a programar, gestionar y enseñar,
+  liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance,
+  organización personal), oficio de software engineering en general,
+  productividad y técnicas de estudio, y docencia de programación entry-level
+  en la era de la IA.
 
 provider: deepseek
 model: deepseek-chat
@@ -41,9 +44,15 @@ themes:
       - cursor
       - copilot
       - token
+      # IA aplicada a enseñar
+      - ai in education
+      - ai tutor
+      - chatgpt students
+      - academic integrity
+      - ai literacy
 
   - name: liderazgo
-    label: "Liderar proyectos y equipos"
+    label: "Liderar proyectos, equipos y a mí mismo"
     quota: 2
     keywords:
       - estimat
@@ -66,9 +75,18 @@ themes:
       - stakeholder
       - postmortem
       - planning
+      # organización personal
+      - gtd
+      - getting things done
+      - para method
+      - second brain
+      - note-taking
+      - task management
+      - weekly review
+      - personal kanban
 
   - name: oficio-dev
-    label: "Seguir siendo buen dev"
+    label: "Seguir siendo buen software engineer"
     quota: 2
     keywords:
       - javascript
@@ -88,6 +106,49 @@ themes:
       - refactor
       - architecture
       - testing
+      # software engineering general
+      - backend
+      - database
+      - api design
+      - distributed systems
+      - system design
+      - design pattern
+      - clean code
+      - technical debt
+      - code review
+
+  - name: productividad-estudio
+    label: "Productividad y técnicas de estudio"
+    quota: 2
+    keywords:
+      - deep work
+      - spaced repetition
+      - active recall
+      - pomodoro
+      - focus
+      - procrastination
+      - habit
+      - learning technique
+      - study technique
+      - time blocking
+      - attention
+      - flow state
+
+  - name: docencia-programacion
+    label: "Enseñar a programar (entry-level)"
+    quota: 2
+    keywords:
+      - computing education
+      - cs education
+      - teaching programming
+      - intro to programming
+      - cs1
+      - programming pedagogy
+      - student motivation
+      - novice programmer
+      - course design
+      - curriculum
+      - classroom
 
 # --- La ontología del KB ---------------------------------------------------
 # Son los 5 tipos que trae el proyecto, con la descripción apuntada a este
@@ -182,6 +243,19 @@ sources:
       - https://2ality.com/feeds/posts.atom
       - https://overreacted.io/rss.xml
       - https://www.baldurbjarnason.com/feed.xml
+
+      # ---- Software engineering general -----------------------------------
+      - https://martinfowler.com/feed.atom
+      - https://blog.pragmaticengineer.com/rss/
+
+      # ---- Productividad y estudio -----------------------------------------
+      - https://jamesclear.com/feed
+      - https://calnewport.com/blog/feed/
+      - https://nesslabs.com/feed
+
+      # ---- Docencia de programación -----------------------------------------
+      - https://computinged.wordpress.com/feed/
+      - https://www.oneusefulthing.org/feed
 
 # --- Loop de aprendizaje ---------------------------------------------------
 review_after_days: 28
