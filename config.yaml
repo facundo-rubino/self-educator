@@ -1,0 +1,187 @@
+# ---------------------------------------------------------------------------
+# Los dos archivos que se editan: este y kb/SCHEMA.md.
+#
+# Para apuntar todo esto a otro tema (otra persona, otro proyecto): cambiá
+# `topic`, `themes` y `sources`. No hay que tocar código. Ver ADAPTING.md.
+# ---------------------------------------------------------------------------
+
+topic: >-
+  Cómo un dev que lidera proyectos hace mejor su trabajo: agentes de IA
+  aplicados a programar y gestionar, liderazgo técnico de equipos chicos
+  (estimación, secuenciamiento, alcance) y oficio de frontend moderno.
+
+provider: deepseek
+model: deepseek-chat
+
+# --- Los temas del brief ---------------------------------------------------
+# Usados dos veces: la etapa 2 puntúa relevancia contra esto, y el brief llena
+# el cupo de cada tema con lo mismo. `quota` es cuántos items entran por tema;
+# la suma es el largo del brief. Tope pensado para 10 minutos de lectura.
+themes:
+  - name: ia-agentes
+    label: "IA y agentes en mi trabajo"
+    quota: 3
+    keywords:
+      - agent
+      - agentic
+      - llm
+      - claude
+      - mcp
+      - model context protocol
+      - prompt
+      - eval
+      - context engineering
+      - coding agent
+      - subagent
+      - tool use
+      - rag
+      - inference
+      - anthropic
+      - openai
+      - cursor
+      - copilot
+      - token
+
+  - name: liderazgo
+    label: "Liderar proyectos y equipos"
+    quota: 2
+    keywords:
+      - estimat
+      - forecast
+      - monte carlo
+      - throughput
+      - cycle time
+      - flow metric
+      - slicing
+      - decompos
+      - roadmap
+      - scope
+      - deadline
+      - delegat
+      - one-on-one
+      - tech lead
+      - staff engineer
+      - engineering manager
+      - prioriti
+      - stakeholder
+      - postmortem
+      - planning
+
+  - name: oficio-dev
+    label: "Seguir siendo buen dev"
+    quota: 2
+    keywords:
+      - javascript
+      - typescript
+      - react
+      - css
+      - browser
+      - frontend
+      - web api
+      - node
+      - bundler
+      - performance
+      - accessibility
+      - dom
+      - ecmascript
+      - tc39
+      - refactor
+      - architecture
+      - testing
+
+# --- La ontología del KB ---------------------------------------------------
+# Son los 5 tipos que trae el proyecto, con la descripción apuntada a este
+# dominio. No inventar tipos nuevos: si en dos meses el grafo pide uno, se
+# agrega acá en cuatro líneas — se extrae del uso, no se diseña antes.
+kb:
+  note_types:
+    - name: concept
+      dir: concepts
+      half_life_days: 180
+      description: "Una idea, término, técnica o herramienta. La unidad básica."
+    - name: pattern
+      dir: patterns
+      half_life_days: 365
+      description: >-
+        Una regularidad que se repite entre casos distintos: cómo se construye
+        o se gestiona software. El tipo más valioso y el que envejece más lento.
+    - name: actor
+      dir: actors
+      half_life_days: 120
+      description: "Una persona, empresa o producto, y qué está haciendo."
+    - name: question
+      dir: questions
+      half_life_days: 120
+      description: "Algo que la evidencia plantea pero no responde."
+    - name: risk
+      dir: risks
+      half_life_days: 120
+      description: "Una razón por la que algo de este KB puede estar mal o durar poco."
+
+# --- Etapa 2: señal --------------------------------------------------------
+signal:
+  cluster_threshold: 0.55
+  promotion_threshold: 0.6      # piso inicial; la calibración lo mueve sola
+  weights:
+    relevance: 0.35             # ¿es de lo mío, y está escrito para leerse?
+    novelty: 0.25               # lo que evita que se repita entre días
+    corroboration: 0.15
+    velocity: 0.15
+    surprise: 0.10
+
+# --- Etapa 1: fuentes ------------------------------------------------------
+# `order` habilita y prioriza a la vez: un preset de escala toma order[:n].
+# Antes de confiar en un feed nuevo: `edu sources --check`.
+sources:
+  order: [rss, web_api, files]
+
+  files:
+    paths: ["seed"]
+    extensions: [".md", ".txt", ".json", ".csv"]
+
+  web_api:
+    endpoint: https://hn.algolia.com/api/v1/search
+
+  rss:
+    feeds:
+      # ---- IA y agentes: practicantes, no prensa -------------------------
+      - https://simonwillison.net/atom/everything/
+      - https://www.latent.space/feed
+      - https://www.interconnects.ai/feed
+      - https://hamel.dev/index.xml
+      - https://eugeneyan.com/rss/
+      - https://huyenchip.com/feed.xml
+      - https://jxnl.co/feed.xml
+      - https://vickiboykis.com/index.xml
+      - https://www.dbreunig.com/feed.xml
+      - https://minimaxir.com/index.xml
+      - https://aider.chat/blog/index.xml
+      - https://www.reddit.com/r/LocalLLaMA/.rss
+      - https://github.com/anthropics/claude-code/releases.atom
+      - https://github.com/modelcontextprotocol/servers/releases.atom
+
+      # ---- Liderazgo técnico: los que escriben desde el pozo --------------
+      - https://lethain.com/feeds/
+      - https://charity.wtf/feed/
+      - https://danluu.com/atom.xml
+      - https://jacobian.org/index.xml
+      - https://buttondown.com/hillelwayne/rss
+      - https://brooker.co.za/blog/rss.xml
+      - https://tidyfirst.substack.com/feed
+      - https://dannorth.net/feed/
+      - https://randsinrepose.com/feed/
+      - https://corecursive.libsyn.com/feed
+      - https://softwaremisadventures.libsyn.com/rss
+
+      # ---- Oficio dev / frontend -----------------------------------------
+      - https://lea.verou.me/feed.xml
+      - https://www.joshwcomeau.com/rss.xml
+      - https://jakearchibald.com/posts.rss
+      - https://nolanlawson.com/feed/
+      - https://v8.dev/blog.atom
+      - https://2ality.com/feeds/posts.atom
+      - https://overreacted.io/rss.xml
+      - https://www.baldurbjarnason.com/feed.xml
+
+# --- Loop de aprendizaje ---------------------------------------------------
+review_after_days: 28
