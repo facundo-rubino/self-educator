@@ -1,149 +1,172 @@
 # self-educator
 
-A template for a specific shape of program: **ingest sources, filter the noise
-cheaply, research what survives, and compile the result into a knowledge base
-that improves run over run.**
-
-It runs the moment you clone it — offline, with no API key — over a small
-example corpus. Then you point it at your own sources and your own subject.
+Un brief diario de lo que importa en lo que estoy aprendiendo, y una base de
+conocimiento que crece sola y se abre con Obsidian.
 
 ```
-sources/*  →  [1] ingest      Document[]        deterministic, no LLM
-              [2] signal      Signal[]          cluster + score + promote, no LLM
-              [3] enrich      Report[]          analyst + critic, LLM, budgeted
-              [4] compile     Notes in kb/      LLM, guided by kb/SCHEMA.md
+sources/*  →  [1] ingesta    Document[]      determinista, sin LLM, $0
+              [2] señal      Signal[]        agrupa, puntúa, promueve, $0
+              [3] research   Report[]        analista + crítico, LLM, con presupuesto
+              [4] compila    notas en kb/    LLM, guiado por kb/SCHEMA.md
+              [5] brief      docs/index.md   render puro, sin LLM, $0
 ```
 
-## The idea
+## La idea
 
-Most "ingest it into an LLM" pipelines spend their money in the wrong place:
-they hand raw documents to a model and ask it to find what matters. That is the
-most expensive possible way to do the cheapest part of the job.
+Casi todo lo que se llama "resumen con IA" gasta la plata en el lugar
+equivocado: le da cientos de documentos crudos a un modelo y le pide que
+encuentre lo que importa. Es la forma más cara posible de hacer la parte más
+barata del trabajo.
 
-This flow inverts it. **Stages 1 and 2 contain no LLM call at all.** Hundreds of
-ingested documents are clustered and scored by deterministic rules — how fast
-engagement is accruing, how many independent sources see it, how different it is
-from everything previous runs already covered, how far it beats the norm for its
-own source. Only the handful that clear the promotion bar cost a model call.
+Acá está al revés. **Las etapas 1 y 2 no tienen una sola llamada a un LLM.**
+Los documentos se agrupan y se puntúan con reglas deterministas: qué tan rápido
+acumula interés, cuántas fuentes independientes lo ven, qué tan distinto es de
+todo lo que las corridas anteriores ya cubrieron, y si es del tema o es ruido.
+Solo el puñado que pasa la barra cuesta una llamada al modelo.
 
-What reaches the LLM is small, so you can afford to treat it properly: an
-analyst drafts a report where every claim cites the document it came from, and
-a critic attacks it and adjusts the confidence downward if it does not survive.
+Lo que llega al LLM es poco, así que se puede tratar bien: un analista escribe
+un informe donde cada afirmación cita el documento del que salió, y un crítico
+lo ataca y le baja la confianza si no aguanta.
 
-Then the surviving reports are **compiled** into a graph of markdown notes.
-Compiled, not appended: an incoming report is decomposed into atomic ideas, and
-each idea is integrated into the note that already owns it. The reports are the
-source code, the model is the compiler, `kb/SCHEMA.md` is the language spec, and
-the note graph is the executable.
+Después los informes se **compilan** en un grafo de notas markdown. Compilados,
+no apilados: cada informe se parte en ideas atómicas y cada idea se integra en
+la nota que ya la posee.
 
-Around that sits a loop that makes the next run better than the last:
+## Las dos salidas
 
-- **Decay.** Every note carries a half-life. Confidence is computed on read, so
-  a note nobody has reinforced in six months is visibly weaker than one from
-  last week — without anyone maintaining it.
-- **Gaps.** The KB derives its own list of what it does not know: contradictions,
-  thin evidence, orphans, decayed claims. `edu run --from-gaps` lets the KB
-  choose the next target instead of you.
-- **Calibration.** Signals promoted weeks ago get re-judged: hit, miss, or too
-  early. Each source's track record moves the promotion bar. A source that
-  keeps lying has to clear a higher one, automatically.
-- **Reconcile.** Contradictions are never overwritten at write time. They are
-  recorded and ruled on later, with both bodies of evidence in view — and
-  "both stand, and the disagreement is the finding" is a valid ruling.
+**El brief** (`docs/index.md`) es efímero: se lee con el café y se tira.
+Titulares primero, una línea de por qué importa, un link. Un cupo por tema
+evita que el tema más ruidoso de la semana se coma a los otros dos. Y nada se
+repite nunca: cada item emitido queda anotado en `store/briefed.json`.
 
-## Quick start
+**El KB** (`kb/`) es permanente y se acumula. Son notas markdown con
+front-matter YAML y links `[[wikilink]]`, o sea **una vault de Obsidian tal
+cual**. Ver [Obsidian](#obsidian) abajo.
+
+## Arrancar
 
 ```bash
-uv sync --group dev      # Python 3.13 + dependencies
-uv run pytest -q         # 83 tests, all offline
-uv run edu init          # create kb/ from the note types in config.yaml
-uv run edu sources       # which sources will run, and why the others will not
-uv run edu status        # what is in the KB, and what to do next
+uv sync --group dev      # Python 3.13 + dependencias
+uv run pytest -q         # 111 tests, todos offline
+uv run edu init          # crea kb/ según los tipos de nota de config.yaml
+uv run edu sources --check   # ¿responden los feeds? ¿hace cuánto no publican?
+uv run edu status        # qué hay en el KB y qué conviene hacer ahora
 ```
 
-Stages 1 and 2 need no credential. For stages 3 and 4:
+Las etapas 1 y 2 no necesitan credencial. Para las etapas 3 y 4:
 
 ```bash
-cp .env.example .env     # then add your ANTHROPIC_API_KEY
-uv run edu run --scale XS   # ~$0.07 — the cheapest way to see the whole flow
+cp .env.example .env     # y poné tu DEEPSEEK_API_KEY
+uv run edu run --scale XS   # ~US$0.003 — la forma más barata de ver todo el flujo
+uv run edu brief
 ```
 
-Optionally `uv sync --extra ml` for real sentence-transformer embeddings. Without
-it a deterministic hashing embedder keeps everything working — less precise, and
-it never blocks you on a torch install.
+## Comandos
 
-## Commands
-
-| Command | What it does |
+| Comando | Qué hace |
 |---|---|
-| `edu init` | Create one `kb/` directory per note type in `config.yaml`. |
-| `edu sources` | Which sources are active, and why the others are excluded. |
-| `edu run` | The full pipeline. `--scale XS…XL` is the cost lever; `--from-gaps` lets the KB pick the target. |
-| `edu compile` | Re-run **only** stage 4 over stored reports. No ingestion, no enrichment. |
-| `edu gaps` | The attention ledger: what the KB does not know, ranked. |
-| `edu review` | Calibration — judge old promoted signals, adjust the promotion bar. |
-| `edu reconcile` | Rule on the graph's open contradictions. |
-| `edu lint` | Broken links, orphans, duplicate titles, decayed notes. Exits non-zero, so CI can gate on it. |
-| `edu status` | Current state, and a suggested next step. |
-| `edu ask "..."` | Query the KB. It answers only from the notes, or says it cannot. |
+| `edu init` | Crea un directorio en `kb/` por cada tipo de nota de `config.yaml`. |
+| `edu sources` | Qué fuentes van a correr y por qué las otras no. `--check` prueba cada feed por HTTP. |
+| `edu run` | El pipeline completo. `--scale XS…XL` es la palanca de costo; `--from-gaps` deja que el KB elija el objetivo. |
+| `edu brief` | Renderiza el brief del día. Sin LLM, sin costo. `--dry-run` no lo marca como emitido. |
+| `edu compile` | Re-corre **solo** la etapa 4 sobre los informes guardados. |
+| `edu gaps` | El libro de deudas: qué no sabe el KB, ordenado. |
+| `edu review` | Calibración: juzga señales viejas y mueve la barra de promoción. |
+| `edu reconcile` | Resuelve las contradicciones abiertas del grafo. |
+| `edu lint` | Links rotos, huérfanos, títulos duplicados, notas decaídas. Sale con código != 0, o sea sirve en CI. |
+| `edu ask "..."` | Pregunta al KB. Responde solo desde las notas, o dice que no puede. |
 
-Every command that costs money previews the cost before spending it; `L` and
-`XL` ask for confirmation.
+Todo comando que gasta plata muestra el costo antes de gastarlo.
 
-## Scale — the cost lever
+## Escala — la palanca de costo
 
-| Scale | docs/source | sources | top signals | critic | token budget |
-|-------|------------:|--------:|------------:|:------:|-------------:|
-| XS | 50 | 1 | 1 | – | 5,000 |
-| S | 150 | 2 | 3 | ✓ | 20,000 |
-| M | 400 | 3 | 6 | ✓ | 60,000 |
-| L | 1,000 | 4 | 12 | ✓ | 150,000 |
-| XL | 3,000 | 6 | 25 | ✓ | 400,000 |
+| Escala | docs/fuente | fuentes | señales top | crítico | presupuesto | costo/corrida |
+|--------|------------:|--------:|------------:|:-------:|------------:|-------------:|
+| XS | 50 | 1 | 1 | – | 5.000 | ~US$0,003 |
+| S | 250 | 3 | 9 | ✓ | 25.000 | ~US$0,015 |
+| M | 600 | 3 | 14 | ✓ | 60.000 | ~US$0,036 |
+| L | 1.000 | 4 | 12 | ✓ | 150.000 | ~US$0,090 |
+| XL | 3.000 | 6 | 25 | ✓ | 400.000 | ~US$0,240 |
 
-These are starting points, not truths. Tune them in `config.py` for your sources.
+`S` es la que corre el cron: **unos US$0,33 por mes** con DeepSeek. Tiene que
+promover al menos tantas señales como suman los cupos de los temas (hoy 7) o el
+brief nunca se llena.
 
-## Making it yours
+## El cron
 
-Two files, in this order:
+`.github/workflows/brief.yml` corre 09:00 UTC (6:00 en Uruguay/Argentina), de
+lunes a viernes. Commitea el brief, el KB y el store, y abre un issue con los
+tres titulares de arriba y el link a la página — **el mail es el disparador, no
+tu memoria.** Una mañana sin nada relevante no abre issue ni manda mail.
 
-1. **`config.yaml`** — the topic, the note types your subject actually needs,
-   the sources to ingest, the scoring weights.
-2. **`kb/SCHEMA.md`** — the compiler's system prompt. This is the single
-   highest-leverage file in the project: it decides how every note gets written.
+Tres cosas hay que hacer a mano una sola vez:
 
-Adding a source means copying `self_educator/sources/_template.py`; it does not
-mean editing the core. Adding a note type means adding four lines to
-`config.yaml`. See **[ADAPTING.md](ADAPTING.md)** for the full checklist.
+1. **Settings → Secrets and variables → Actions**: cargar `DEEPSEEK_API_KEY`.
+2. **Settings → Pages**: Source = rama por defecto, carpeta `/docs`.
+3. **Watch → All Activity** en el repo, para que los issues lleguen al mail.
 
-## Layout
+Si DeepSeek falla o se queda sin presupuesto, el paso sigue igual y el brief se
+renderiza con lo que ya había. **El brief nunca deja de llegar por un error de
+API.**
+
+## Obsidian
+
+No hay nada que instalar ni configurar del lado del proyecto. Las notas ya se
+escriben con front-matter YAML y links `[[wikilink]]`:
+
+1. Cloná el repo.
+2. En Obsidian: *Open folder as vault* → elegí la carpeta `kb/`.
+3. Listo. El graph view funciona, los backlinks funcionan, la búsqueda funciona.
+
+`kb/.obsidian/` está en `.gitignore`: tu configuración local es tuya.
+
+## Hacerlo tuyo (o de otra persona)
+
+Dos archivos, en este orden:
+
+1. **`config.yaml`** — el tema, los `themes` del brief con sus cupos, los tipos
+   de nota y las fuentes.
+2. **`kb/SCHEMA.md`** — el system prompt del compilador. Es el archivo de mayor
+   apalancamiento del proyecto: decide cómo se escribe cada nota.
+
+Para dárselo a otra persona con otros intereses: copiar el repo, cambiar esos
+dos archivos. **No hay que tocar código.** Agregar una fuente es copiar
+`self_educator/sources/_template.py`. Agregar un tipo de nota son cuatro líneas
+de `config.yaml`. El checklist completo está en **[ADAPTING.md](ADAPTING.md)**.
+
+## Estructura
 
 ```
-config.yaml            what to ingest, and the note-type ontology
-kb/                    the knowledge base (the output)
-  SCHEMA.md            the compiler contract — edit this
-  GAPS.md              the attention ledger (generated)
-store/                 documents, signals, reports (regenerable, gitignored)
-runs/                  one directory per run, with its summary
-examples/corpus/       sample documents, so it runs with no network
+config.yaml            qué se ingiere, los temas del brief, la ontología del KB
+kb/                    la base de conocimiento (la salida permanente)
+  SCHEMA.md            el contrato del compilador — editar esto
+  GAPS.md              el libro de deudas (generado)
+docs/index.md          el brief de hoy (lo que sirve GitHub Pages)
+briefs/                el histórico, una entrada por día
+seed/                  corpus semilla que se ingiere como fuente `files`
+store/                 documentos, señales, informes y la memoria de no-repetir
 self_educator/
-  config.py models.py storage.py llm.py kb.py pipeline.py cli.py
-  sources/             ingest      — files, rss, web_api, _template.py
-  signal/              scoring     — embedder, cluster, scorers, engine
+  config.py models.py storage.py llm.py kb.py pipeline.py brief.py cli.py
+  sources/             ingesta     — files, rss, web_api, _template.py
+  signal/              puntuación  — embedder, cluster, scorers, engine
   enrich/              research    — analyst, critic
-  synthesis/           compilation — compiler
-  learning/            the loop    — decay, gaps, calibration, reconcile
-docs/                  architecture.md, extending.md
+  synthesis/           compilación — compiler
+  learning/            el loop     — decay, gaps, calibration, reconcile
+docs/architecture.md   cómo encajan las etapas, y por qué
+docs/extending.md      extensiones del mismo grafo
 ```
 
-## Documentation
+## El loop que mejora solo
 
-- **[ADAPTING.md](ADAPTING.md)** — "I want to ingest X into a KB": the checklist.
-- **[docs/architecture.md](docs/architecture.md)** — how the four stages fit, and why.
-- **[docs/extending.md](docs/extending.md)** — extensions of the same graph:
-  cross-topic analogies, note recombination, spawning a project from a note.
-
-## Origin
-
-Extracted from TrendFisher/TrendBrain, a working trend-intelligence system, by
-lifting the flow out of its domain. Anything that was specific to that subject
-is now configuration.
+- **Decaimiento.** Cada nota tiene una vida media. La confianza se calcula al
+  leer, así que una nota que nadie reforzó en seis meses se ve visiblemente más
+  débil que una de la semana pasada — sin que nadie la mantenga.
+- **Deudas.** El KB deriva su propia lista de lo que no sabe: contradicciones,
+  evidencia flaca, huérfanos, afirmaciones decaídas. `edu run --from-gaps` deja
+  que el KB elija el próximo objetivo.
+- **Calibración.** Las señales promovidas hace semanas se vuelven a juzgar:
+  acierto, error o prematuro. El historial de cada fuente mueve su barra de
+  promoción. Una fuente que miente seguido tiene que saltar más alto, sola.
+- **Reconciliación.** Las contradicciones nunca se pisan al escribir. Se
+  registran y se resuelven después, con las dos evidencias a la vista — y
+  "las dos valen, y el desacuerdo es el hallazgo" es un veredicto válido.

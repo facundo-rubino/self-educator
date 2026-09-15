@@ -13,7 +13,7 @@ it the loudest topic of the week crowds out the other two every time.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 from .config import Config
 from .kb import KnowledgeBase
@@ -21,8 +21,14 @@ from .models import Report, Signal
 from .storage import Store
 
 
+#: A report nobody briefed within this window is stale news, not a backlog to
+#: drip out. Wide enough to survive a failed run or a long weekend.
+MAX_AGE_DAYS = 7
+
+
 @dataclass
 class BriefItem:
+    signal_id: str
     title: str
     why: str
     url: str
@@ -38,10 +44,15 @@ class Brief:
     items: list[BriefItem]
     considered: int          # signals looked at before the quota cut
     skipped_no_theme: int
+    skipped_already_seen: int
 
     @property
     def is_empty(self) -> bool:
         return not self.items
+
+    @property
+    def signal_ids(self) -> list[str]:
+        return [i.signal_id for i in self.items]
 
 
 #: Shortest head we will accept as a real first sentence. Anything under this
@@ -64,11 +75,22 @@ def _first_sentence(text: str, limit: int = 220) -> str:
 
 
 def build_brief(cfg: Config, store: Store, kb: KnowledgeBase | None = None,
-                day: date | None = None) -> Brief:
-    """Pick the day's items: best first, capped by each theme's quota."""
+                day: date | None = None, max_age_days: int = MAX_AGE_DAYS) -> Brief:
+    """Pick the day's items: best first, capped by each theme's quota.
+
+    Two filters before the quota: anything already briefed is gone for good,
+    and anything researched more than `max_age_days` ago is no longer news.
+    """
     day = day or datetime.now(timezone.utc).date()
-    reports = {r.signal_id: r for r in store.load_reports()}
-    signals = [s for s in store.load_signals() if s.id in reports]
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=max_age_days)
+
+    reports = {r.signal_id: r for r in store.load_reports()
+               if _aware(r.generated_at) >= cutoff}
+    already = store.load_briefed()
+    fresh = [s for s in store.load_signals() if s.id in reports]
+    signals = [s for s in fresh if s.id not in already]
+    seen_again = len(fresh) - len(signals)
     signals.sort(key=lambda s: -s.aggregate_score)
 
     labels = {t.name: t.label for t in cfg.themes}
@@ -88,6 +110,7 @@ def build_brief(cfg: Config, store: Store, kb: KnowledgeBase | None = None,
         remaining[signal.theme] -= 1
         report = reports[signal.id]
         items.append(BriefItem(
+            signal_id=signal.id,
             title=signal.label,
             why=_first_sentence(report.summary),
             url=signal.headline_url,
@@ -98,7 +121,11 @@ def build_brief(cfg: Config, store: Store, kb: KnowledgeBase | None = None,
         ))
 
     return Brief(day=day, items=items, considered=len(signals),
-                 skipped_no_theme=skipped)
+                 skipped_no_theme=skipped, skipped_already_seen=seen_again)
+
+
+def _aware(dt: datetime) -> datetime:
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
 
 def _notes_by_source(kb: KnowledgeBase) -> dict[str, set[str]]:
@@ -152,7 +179,8 @@ def render_markdown(brief: Brief, *, title: str = "Brief") -> str:
         "---",
         "",
         f"<sub>{brief.considered} señales consideradas, "
-        f"{brief.skipped_no_theme} descartadas por no ser de ningún tema. "
+        f"{brief.skipped_no_theme} descartadas por no ser de ningún tema, "
+        f"{brief.skipped_already_seen} ya emitidas en un brief anterior. "
         "El KB completo se abre con Obsidian sobre `kb/`.</sub>",
         "",
     ]

@@ -172,3 +172,49 @@ def test_best_theme_picks_the_strongest_match_not_the_first():
     text = "typescript css browser rendering, with one agent mention"
     theme, score = best_theme(text, THEMES)
     assert theme is not None and theme.name == "dev" and score > 0
+
+
+# ------------------------------------------------------- no repeats, ever ----
+def test_an_item_already_briefed_never_comes_back(tmp_path, store):
+    store.save_signal(_signal("a", "ia", 0.9))
+    store.save_report(_report("a"))
+
+    first = build_brief(_cfg(tmp_path), store)
+    assert len(first.items) == 1
+    store.mark_briefed(first.signal_ids)
+
+    second = build_brief(_cfg(tmp_path), store)
+    assert second.items == []
+    assert second.skipped_already_seen == 1
+
+
+def test_the_ledger_survives_a_new_store_object(tmp_path, store):
+    # Each CI run builds a fresh Store over the checked-out directory.
+    store.save_signal(_signal("a", "ia", 0.9))
+    store.save_report(_report("a"))
+    store.mark_briefed(build_brief(_cfg(tmp_path), store).signal_ids)
+
+    from self_educator.storage import Store as FreshStore
+    reopened = FreshStore(store.root)
+    assert build_brief(_cfg(tmp_path), reopened).items == []
+
+
+def test_marking_is_additive_across_days(tmp_path, store):
+    for day, sid in enumerate(["a", "b"]):
+        store.save_signal(_signal(sid, "ia", 0.9 - day / 10))
+        store.save_report(_report(sid))
+        brief = build_brief(_cfg(tmp_path), store)
+        store.mark_briefed(brief.signal_ids)
+    assert store.load_briefed() == {"a", "b"}
+
+
+def test_stale_research_is_not_dripped_out_later(tmp_path, store):
+    from datetime import timedelta
+    old = _report("old")
+    old.generated_at = datetime.now(timezone.utc) - timedelta(days=30)
+    store.save_signal(_signal("old", "ia", 0.99))
+    store.save_report(old)
+
+    assert build_brief(_cfg(tmp_path), store).items == []
+    # ...but it is not counted as a repeat; it simply aged out.
+    assert build_brief(_cfg(tmp_path), store).skipped_already_seen == 0

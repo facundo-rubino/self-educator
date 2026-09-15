@@ -71,6 +71,24 @@ class Store:
         (self.root / "corpus" / "baseline.json").write_text(
             json.dumps(baseline[-_BASELINE_CAP:]))
 
+    # ------------------------------------------------------------ briefed ---
+    def load_briefed(self) -> set[str]:
+        """Signal ids that already went out in a brief.
+
+        The whole point of the brief is that it never shows the same thing
+        twice. Filtering by date only approximates that — a run that fires
+        late, twice, or after a long weekend would repeat. A ledger makes it
+        exact, and it is two lines of JSON.
+        """
+        path = self.root / "briefed.json"
+        return set(json.loads(path.read_text())) if path.exists() else set()
+
+    def mark_briefed(self, signal_ids: list[str]) -> None:
+        if not signal_ids:
+            return
+        merged = sorted(self.load_briefed() | set(signal_ids))
+        (self.root / "briefed.json").write_text(json.dumps(merged))
+
     # ------------------------------------------------------------ signals ---
     def save_signal(self, signal: Signal) -> None:
         (self.root / "signals" / f"{signal.id}.json").write_text(

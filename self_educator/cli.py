@@ -349,7 +349,11 @@ def brief(root: RootOpt = Path("."),
           page_url: Optional[str] = typer.Option(
               None, "--page-url", help="Link to the published page, for the issue body."),
           issue_out: Optional[Path] = typer.Option(
-              None, "--issue-out", help="Write the short issue body here too.")) -> None:
+              None, "--issue-out", help="Write the short issue body here too."),
+          dry_run: bool = typer.Option(
+              False, "--dry-run",
+              help="Render without recording the items as sent, so the same "
+                   "brief can be rebuilt.")) -> None:
     """Render today's brief. No LLM call, no cost — pure presentation."""
     from .brief import build_brief, render_issue, render_markdown
 
@@ -365,14 +369,23 @@ def brief(root: RootOpt = Path("."),
     archive.mkdir(parents=True, exist_ok=True)
     (archive / f"{today.day.isoformat()}.md").write_text(page, encoding="utf-8")
 
-    if issue_out:
+    # Written only when there is something to say. A morning with nothing
+    # worth reading should send no mail at all — an "empty brief" notification
+    # is exactly the noise this is supposed to cut.
+    if issue_out and not today.is_empty:
         issue_out.parent.mkdir(parents=True, exist_ok=True)
         issue_out.write_text(render_issue(today, page_url), encoding="utf-8")
 
+    # Recorded only once the files are written: a crash before this point must
+    # not burn the items, or they would never be briefed at all.
+    if not dry_run:
+        store.mark_briefed(today.signal_ids)
+
     if today.is_empty:
         console.print("[yellow]Nada pasó el filtro hoy.[/] "
-                      f"({today.considered} señales, "
-                      f"{today.skipped_no_theme} sin tema)")
+                      f"({today.considered} señales nuevas, "
+                      f"{today.skipped_no_theme} sin tema, "
+                      f"{today.skipped_already_seen} ya emitidas)")
     else:
         table = Table(title=f"Brief {today.day.isoformat()}")
         table.add_column("#", justify="right", style="dim")

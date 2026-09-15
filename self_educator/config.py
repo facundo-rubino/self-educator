@@ -69,11 +69,14 @@ class ScalePreset:
     token_budget: int
 
 
-# Starting points, not truths. Tune them for your sources and your budget.
+# Tuned for the daily brief: `S` is what the cron runs every morning, so it
+# has to promote at least as many signals as the themes' quotas add up to
+# (7 today) or the brief can never fill. Three sources so `files` gets read
+# alongside rss and web_api. The budget is DeepSeek tokens: ~US$0.015 a run.
 SCALE_PRESETS: dict[Scale, ScalePreset] = {
     Scale.XS: ScalePreset(50, 1, 1, False, 5_000),
-    Scale.S: ScalePreset(150, 2, 3, True, 20_000),
-    Scale.M: ScalePreset(400, 3, 6, True, 60_000),
+    Scale.S: ScalePreset(250, 3, 9, True, 25_000),
+    Scale.M: ScalePreset(600, 3, 14, True, 60_000),
     Scale.L: ScalePreset(1_000, 4, 12, True, 150_000),
     Scale.XL: ScalePreset(3_000, 6, 25, True, 400_000),
 }
