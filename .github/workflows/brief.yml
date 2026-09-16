@@ -2,8 +2,10 @@ name: brief
 
 on:
   schedule:
-    # 09:00 UTC = 06:00 en Uruguay/Argentina (UTC-3). Lunes a viernes.
-    - cron: "0 9 * * 1-5"
+    # 10:15 UTC = 07:15 en Argentina (UTC-3, sin horario de verano). Lunes a
+    # viernes. Arranca 15 min antes de las 7:30 para que el pipeline corra,
+    # commitee y abra el issue con margen.
+    - cron: "15 10 * * 1-5"
   workflow_dispatch:
     inputs:
       scale:
@@ -51,7 +53,9 @@ jobs:
         continue-on-error: true
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: uv run edu run --scale "${{ inputs.scale || 'S' }}" --yes
+        # TEMP semana 1: XL en vez de S para juntar volumen de bootstrap.
+        # Revertir a 'S' el 2026-09-22 (~US$0.24/corrida en vez de ~US$0.015).
+        run: uv run edu run --scale "${{ inputs.scale || 'XL' }}" --yes
 
       - name: Fecha de hoy
         id: hoy
