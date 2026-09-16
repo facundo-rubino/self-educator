@@ -1,24 +1,25 @@
 {
-  "id": "sig-0905fba84ee5",
+  "id": "sig-52a8d351a1cf",
   "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
-  "label": "There Are No Instances in atproto",
+  "label": "v2.1.272",
   "member_doc_ids": [
-    "bc998f56c5826fbe"
+    "5f0d603925611877",
+    "8f6abb4e84bf9385"
   ],
   "member_sources": [
     "rss"
   ],
-  "headline_url": "https://overreacted.io/there-are-no-instances-in-atproto/",
+  "headline_url": "tag:github.com,2008:Repository/937253475/v2.1.272",
   "theme": "",
   "scores": {
     "relevance": 0.0,
-    "novelty": 0.0,
+    "novelty": 0.0146,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.2,
-  "first_seen": "2026-06-19T00:00:00Z",
+  "aggregate_score": 0.2036,
+  "first_seen": "2026-09-06T02:54:20Z",
   "sources_count": 1,
   "status": "candidate",
   "outcome": {

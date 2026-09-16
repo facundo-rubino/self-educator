@@ -1,26 +1,26 @@
 {
-  "id": "sig-0905fba84ee5",
+  "id": "sig-f1e663270290",
   "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
-  "label": "There Are No Instances in atproto",
+  "label": "Introducing RSC Explorer",
   "member_doc_ids": [
-    "bc998f56c5826fbe"
+    "faef309fe3cbaca8"
   ],
   "member_sources": [
     "rss"
   ],
-  "headline_url": "https://overreacted.io/there-are-no-instances-in-atproto/",
+  "headline_url": "https://overreacted.io/introducing-rsc-explorer/",
   "theme": "",
   "scores": {
     "relevance": 0.0,
-    "novelty": 0.0,
+    "novelty": 0.5976,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.2,
-  "first_seen": "2026-06-19T00:00:00Z",
+  "aggregate_score": 0.3494,
+  "first_seen": "2025-12-19T00:00:00Z",
   "sources_count": 1,
-  "status": "candidate",
+  "status": "promoted",
   "outcome": {
     "reviewed_at": null,
     "verdict": null,

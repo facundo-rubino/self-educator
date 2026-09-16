@@ -1,26 +1,26 @@
 {
-  "id": "sig-0905fba84ee5",
+  "id": "sig-173dfdbcdcc9",
   "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
-  "label": "There Are No Instances in atproto",
+  "label": "Animating zooming using CSS: transform order is important… sometimes",
   "member_doc_ids": [
-    "bc998f56c5826fbe"
+    "b0df1f50a76ba564"
   ],
   "member_sources": [
     "rss"
   ],
-  "headline_url": "https://overreacted.io/there-are-no-instances-in-atproto/",
-  "theme": "",
+  "headline_url": "https://jakearchibald.com/2025/animating-zooming/",
+  "theme": "oficio-dev",
   "scores": {
-    "relevance": 0.0,
-    "novelty": 0.0,
+    "relevance": 0.3333,
+    "novelty": 0.504,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.2,
-  "first_seen": "2026-06-19T00:00:00Z",
+  "aggregate_score": 0.4427,
+  "first_seen": "2025-06-17T01:00:00Z",
   "sources_count": 1,
-  "status": "candidate",
+  "status": "promoted",
   "outcome": {
     "reviewed_at": null,
     "verdict": null,
