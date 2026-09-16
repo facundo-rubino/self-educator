@@ -75,6 +75,7 @@ uv run edu brief
 | `edu reconcile` | Resuelve las contradicciones abiertas del grafo. |
 | `edu lint` | Links rotos, huérfanos, títulos duplicados, notas decaídas. Sale con código != 0, o sea sirve en CI. |
 | `edu ask "..."` | Pregunta al KB. Responde solo desde las notas, o dice que no puede. |
+| `edu learn "..."` | Suma un concepto a mano — sin scraping, sin señal, directo a enrich+compile. `--label` le pone título, `--no-critic` se salta el crítico. |
 
 Todo comando que gasta plata muestra el costo antes de gastarlo.
 

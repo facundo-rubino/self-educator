@@ -9,7 +9,7 @@ import json
 
 import pytest
 
-from self_educator.actions import ask, compile_all
+from self_educator.actions import ask, compile_all, learn
 from self_educator.enrich.analyst import Draft
 from self_educator.enrich.critic import Review
 from self_educator.llm import BudgetExceeded, FakeLLM
@@ -137,6 +137,24 @@ def test_the_run_refreshes_the_gap_ledger(cfg, store, kb, embedder):
                           sources=build_sources(cfg))
     assert result.gaps_open > 0, "new single-source notes are thin evidence"
     assert (cfg.kb_dir / "GAPS.md").exists()
+
+
+def test_learn_adds_a_manual_concept_without_ingest(cfg, store, kb):
+    llm = PipelineLLM()
+    report = learn(cfg, store, kb, llm,
+                   "Closures capture their enclosing scope.", label="closures")
+
+    assert report.confidence > 0
+    assert store.load_signals(), "the manual signal is persisted for review"
+    assert store.load_reports()
+    assert kb.load_all(), "the note was compiled straight from the manual input"
+
+
+def test_learn_without_critic_skips_that_llm_call(cfg, store, kb):
+    llm = PipelineLLM()
+    learn(cfg, store, kb, llm, "Recursion needs a base case.", include_critic=False)
+    # analyst + compile only, no critic pass, so two LLM calls rather than three.
+    assert len(llm.calls) == 2
 
 
 def test_ask_answers_only_from_the_notes(cfg, kb, embedder):

@@ -345,6 +345,23 @@ def ask(question: Annotated[str, typer.Argument()],
 
 
 @app.command()
+def learn(text: Annotated[str, typer.Argument()],
+         label: Annotated[Optional[str], typer.Option(
+             "--label", help="Short title, instead of the text's first line.")] = None,
+         no_critic: Annotated[bool, typer.Option(
+             "--no-critic", help="Skip the critic pass — cheaper, for input you already trust.")] = False,
+         root: RootOpt = Path(".")) -> None:
+    """Add a concept by hand — no scraping, no signal, straight to compile."""
+    from .actions import learn as learn_action
+
+    cfg, store, kb = _ctx(root)
+    with _llm_errors():
+        report = learn_action(cfg, store, kb, _llm(cfg), text,
+                              label=label, include_critic=not no_critic)
+    console.print(f"[green]✓[/] confidence {report.confidence:.2f}")
+
+
+@app.command()
 def brief(root: RootOpt = Path("."),
           page_url: Optional[str] = typer.Option(
               None, "--page-url", help="Link to the published page, for the issue body."),

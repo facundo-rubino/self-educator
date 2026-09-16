@@ -2,12 +2,15 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from typing import Callable
 
 from .config import Config
+from .enrich import enrich
 from .kb import KnowledgeBase
+from .learning.gaps import refresh_gaps
 from .llm import LLM, BudgetExceeded
-from .models import Provenance
+from .models import Document, Provenance, Report, Signal, SignalStatus
 from .storage import Store
 from .synthesis.compiler import compile_report
 
@@ -46,6 +49,31 @@ def compile_all(cfg: Config, store: Store, kb: KnowledgeBase, llm: LLM,
         log(f"compiled {len(notes)} note(s) from «{signal.label[:60]}»")
     summary.cost_usd = round(llm.cost_usd, 4)
     return summary
+
+
+def learn(cfg: Config, store: Store, kb: KnowledgeBase, llm: LLM, text: str, *,
+         label: str | None = None, include_critic: bool = True) -> Report:
+    """A concept the user hands over directly. No ingest, no signal: it is
+    already trusted, there is nothing to discover or score."""
+    now = datetime.now(timezone.utc)
+    doc = Document(
+        id=Document.make_id("manual", label or text[:60]),
+        source="manual", source_id=label or text[:60], url="manual://learn",
+        title=label or text.splitlines()[0][:80], text=text,
+        created_at=now, fetched_at=now, topic=cfg.topic,
+    )
+    signal = Signal(
+        id=doc.id, topic=cfg.topic, label=doc.title,
+        member_doc_ids=[doc.id], member_sources=["manual"],
+        aggregate_score=1.0, first_seen=now, sources_count=1,
+        status=SignalStatus.promoted,
+    )
+    store.save_signal(signal)
+    report = enrich(signal, [doc], llm, include_critic=include_critic)
+    store.save_report(report)
+    compile_report(report, signal, kb, cfg.kb, llm, Provenance())
+    refresh_gaps(kb)
+    return report
 
 
 ASK_SYSTEM = (
