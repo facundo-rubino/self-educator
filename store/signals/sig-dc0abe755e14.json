@@ -1,0 +1,29 @@
+{
+  "id": "sig-dc0abe755e14",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Fix Like No One’s Watching",
+  "member_doc_ids": [
+    "105ea608324d14cd"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://overreacted.io/fix-like-no-ones-watching/",
+  "theme": "oficio-dev",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 0.4911,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.4394,
+  "first_seen": "2019-02-15T00:00:00Z",
+  "sources_count": 1,
+  "status": "promoted",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

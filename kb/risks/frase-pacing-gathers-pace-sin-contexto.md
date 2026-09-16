@@ -14,7 +14,10 @@ sources:
 - 4e1f2a7e255ed83a
 tags:
 - calidad-de-fuente
+- frase-sin-contexto
+- rss
 - ruido-de-ingesta
+- ruido-informativo
 base_confidence: 0.85
 half_life_days: 120
 last_reinforced: '2026-09-16'
@@ -24,19 +27,24 @@ provenance:
 links:
 - to: aef-1-estandar-de-evaluadores-de-terceros
   type: relates_to
+- to: aef-1-estandar-de-evaluadores-de-terceros
+  type: supports
+- to: evidencia-de-evento-sin-contenido-tecnico
+  type: relates_to
 ---
 
 ## What it is
-El titular incluye la frase «Pacing gathers pace» sin contexto que permita verificar a qué se refiere ni cómo se conecta con AEF-1 [4e1f2a7e255ed83a]. No aporta información utilizable sobre el estándar ni sobre su aplicación.
+La frase «Pacing gathers pace» aparece en un ítem de newsletter [4e1f2a7e255ed83a] sin contexto que la ancle: no dice a qué ritmo se refiere, de qué proceso, ni con qué evidencia. Es una fórmula retórica, no un dato verificable, y funciona como ruido que infla la aparente relevancia del titular.
 
 ## Evidence
-- El título menciona «Pacing gathers pace», una frase sin contexto que no aporta información verificable — source: 4e1f2a7e255ed83a
-- El documento se ingirió vía RSS con engagement=0 — source: 4e1f2a7e255ed83a
+- El documento solo contiene el titular y la frase «Pacing gathers pace», sin detalle sobre alcance, contenido técnico o firmantes efectivos — source: 4e1f2a7e255ed83a
 
 ## Why it matters
-Señala que la pieza puede ser ruido de ingesta o un titular parcialmente malinterpretado por el feed. Cualquier nota derivada de este documento debe tratar la frase como no informativa.
+Frases de este tipo son un patrón de baja densidad informativa: suenan a novedad o aceleración sin comprometerse a nada comprobable. Un compilador debe descartarlas como portadoras de claim y no derivar de ellas estado, tendencia ni urgencia. El engagement=0 del ítem refuerza que no hay discusión ni validación externa.
 
-Se relaciona con `aef-1-estandar-de-evaluadores-de-terceros`, cuya confianza baja se explica en parte por esta clase de relleno en la fuente.
+Sostiene a `aef-1-estandar-de-evaluadores-de-terceros` documentando la falta de sustancia del documento que lo origina. Se relaciona con `evidencia-de-evento-sin-contenido-tecnico`: ambas describen el mismo vacío desde ángulos complementarios.
 
 ## Links
 - relates_to → [[aef-1-estandar-de-evaluadores-de-terceros]]
+- supports → [[aef-1-estandar-de-evaluadores-de-terceros]]
+- relates_to → [[evidencia-de-evento-sin-contenido-tecnico]]

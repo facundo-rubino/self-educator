@@ -1,0 +1,29 @@
+{
+  "id": "sig-a25b8a7e1e46",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Why Do React Elements Have a $$typeof Property?",
+  "member_doc_ids": [
+    "959434b13d1b37c2"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://overreacted.io/why-do-react-elements-have-typeof-property/",
+  "theme": "oficio-dev",
+  "scores": {
+    "relevance": 0.1833,
+    "novelty": 0.4859,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.3856,
+  "first_seen": "2018-12-03T00:00:00Z",
+  "sources_count": 1,
+  "status": "promoted",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

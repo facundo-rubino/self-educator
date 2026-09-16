@@ -1,0 +1,29 @@
+{
+  "id": "sig-627025c3f6b5",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Why Do We Write super(props)?",
+  "member_doc_ids": [
+    "6d1e8db2e4485993"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://overreacted.io/why-do-we-write-super-props/",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 0.5001,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.325,
+  "first_seen": "2018-11-30T00:00:00Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

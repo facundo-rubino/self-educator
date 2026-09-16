@@ -1,0 +1,29 @@
+{
+  "id": "sig-82c56cbe9e04",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "What Is JavaScript Made Of?",
+  "member_doc_ids": [
+    "6ac20e5a86b3ebc8"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://overreacted.io/what-is-javascript-made-of/",
+  "theme": "oficio-dev",
+  "scores": {
+    "relevance": 0.1833,
+    "novelty": 0.5588,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.4039,
+  "first_seen": "2019-12-20T00:00:00Z",
+  "sources_count": 1,
+  "status": "promoted",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

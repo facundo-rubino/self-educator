@@ -1,0 +1,29 @@
+{
+  "id": "sig-bd57902dedd7",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Building an AI Coach to Help Tame My Monkey Mind",
+  "member_doc_ids": [
+    "49140f9d5133d3c7"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://eugeneyan.com//writing/ai-coach/",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 0.4816,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.4371,
+  "first_seen": "2024-04-07T00:00:00Z",
+  "sources_count": 1,
+  "status": "promoted",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

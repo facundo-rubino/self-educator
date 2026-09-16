@@ -14,9 +14,9 @@ sources:
 - abf61eeec75462f9
 tags:
 - agentic-coding
-- system-prompt
 - claude-code
 - prompt-architecture
+- system-prompt
 base_confidence: 0.12
 half_life_days: 180
 last_reinforced: '2026-09-16'
@@ -30,21 +30,26 @@ links:
   type: contradicts
 - to: sobre-generalizacion-desde-claude-code
   type: relates_to
+- to: ensamblado-condicional-de-prompts
+  type: supports
+- to: system-prompt-como-artefacto-de-ingenieria
+  type: relates_to
 ---
 
 ## What it is
-El system prompt de Claude Code no sería un texto monolítico sino una composición dinámica ensamblada a partir de docenas de partes condicionales. La afirmación proviene de una lectura del supuesto código fuente filtrado de la herramienta, reportada a nivel de titular.
+Un documento reporta que el código fuente filtrado de Claude Code muestra que su system prompt se ensambla a partir de decenas de partes condicionales. Es la única afirmación sustantiva disponible en el clúster: no se especifican qué condiciones, qué partes, cómo se secuencian ni cómo se verificó el «filtrado». El contenido de la nota se limita a ese claim, sin mecanismo verificable.
 
 ## Evidence
-- El system prompt de Claude Code se ensambla a partir de "docenas de partes condicionales", no es un texto monolítico — source: abf61eeec75462f9
-- Fuente única, tipo rss, engagement=0, sin corroboración independiente ni código o fragmentos citados — source: abf61eeec75462f9
+- «El código fuente filtrado de Claude Code muestra que su system prompt se ensambla a partir de decenas de partes condicionales» — source: abf61eeec75462f9
 
 ## Why it matters
-Si el diseño es real, el prompt deja de ser un artefacto de redacción y pasa a ser un artefacto de composición: el problema se desplaza a qué bloques activar, cuándo y en qué orden. Bajo ese encuadre, construir agentes propios deja de ser "escribir bien el prompt" y se vuelve diseñar un ensamblador.
+Si la modularidad condicional del prompt fuera real y estuviera publicada, un dev que lidera y enseña podría adoptar el patrón para sus propias instrucciones de agentes (activar secciones de estimación, secuenciamiento o revisión de código según contexto). Pero el documento no extrae ninguna implicación de ese tipo, no hay corroboración independiente y la novedad es nula: es un patrón conocido en productos LLM. La confianza se fija en 0.05 porque, tras descartar la procedencia no establecida del leak y el patrón trivial de «prompt modular», lo que queda es una reformulación de conocimiento común con envoltorio anecdótico.
 
-Se apoya en `system-prompt-como-artefacto-de-ingenieria` porque es un caso concreto de tratar el prompt como software construido, no como texto. Contradice parcialmente `prompt-modular-sin-mecanica-verificable`: la afirmación es plausible pero no verificable en el estado actual, y el rol de esa nota es sostener la duda hasta que exista evidencia mecánica. `sobre-generalizacion-desde-claude-code` acota el alcance de cualquier conclusión tomada de aquí.
+`supports` hacia `ensamblado-condicional-de-prompts`: es una instancia concreta del patrón general de componer el system prompt según contexto, aunque de baja calidad probatoria. `relates_to` con `system-prompt-como-artefacto-de-ingenieria`: ambos tratan el system prompt como objeto diseñado, no como texto improvisado. `contradicts` con `prompt-modular-sin-mecanica-verificable`: esa nota sostiene que la modularidad de prompts es plausible pero no verificable en esta evidencia, lo que choca con cualquier lectura de este documento como confirmación del mecanismo.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
 - contradicts → [[prompt-modular-sin-mecanica-verificable]]
 - relates_to → [[sobre-generalizacion-desde-claude-code]]
+- supports → [[ensamblado-condicional-de-prompts]]
+- relates_to → [[system-prompt-como-artefacto-de-ingenieria]]
