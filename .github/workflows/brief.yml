@@ -2,10 +2,12 @@ name: brief
 
 on:
   schedule:
-    # 10:15 UTC = 07:15 en Argentina (UTC-3, sin horario de verano). Lunes a
-    # viernes. Arranca 15 min antes de las 7:30 para que el pipeline corra,
-    # commitee y abra el issue con margen.
-    - cron: "15 10 * * 1-5"
+    # GitHub puede demorar o directamente saltear un cron bajo carga, sin
+    # avisar. Tres intentos espaciados por hora: si el primero no dispara,
+    # el siguiente sí, y el job "check" evita repetir trabajo si ya corrió.
+    - cron: "15 10 * * 1-5"  # 07:15 ART
+    - cron: "15 11 * * 1-5"  # 08:15 ART
+    - cron: "15 12 * * 1-5"  # 09:15 ART
   workflow_dispatch:
     inputs:
       scale:
@@ -24,7 +26,25 @@ permissions:
   issues: write     # abrir el issue que llega al mail
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      already_done: ${{ steps.check.outputs.already_done }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: check
+        run: |
+          fecha=$(date -u +%Y-%m-%d)
+          if [ -f "briefs/${fecha}.md" ]; then
+            echo "Brief de ${fecha} ya existe, salteo la corrida." >> "$GITHUB_STEP_SUMMARY"
+            echo "already_done=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "already_done=false" >> "$GITHUB_OUTPUT"
+          fi
+
   brief:
+    needs: check
+    if: needs.check.outputs.already_done != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
