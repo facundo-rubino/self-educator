@@ -9,16 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-17'
 sources:
 - b0df1f50a76ba564
 tags:
+- condicionalidad
 - css
-- transform
 - docencia
+- transform
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-17'
 provenance:
   scale: M
   query: null
@@ -27,20 +28,22 @@ links:
   type: relates_to
 - to: prompt-modular-sin-mecanica-verificable
   type: relates_to
+- to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
+  type: supports
 ---
 
 ## What it is
-La dependencia de orden entre funciones `transform` es condicional: el título fuente la matiza con «sometimes», implicando que no es universal. Solo cabría esperar efecto cuando múltiples funciones transform interactúan (por ejemplo scale más translate, o rotate sobre un origen no por defecto). El documento no explica por qué ni cuándo exactamente.
+El documento matiza que el orden de `transform` no siempre importa: importa solo a veces. Esa condicionalidad no viene delimitada en el clúster, y el documento no expone qué condiciones activan el efecto ni qué combinaciones de funciones lo disparan.
 
 ## Evidence
-- El título califica la dependencia de orden como «sometimes», es decir condicional y no universal — source: b0df1f50a76ba564
-- No se ingirió cuerpo, ejemplos de código ni contexto de versión de navegador — source: b0df1f50a76ba564
+- El post sostiene que el orden de `transform` es importante «a veces», sin detallar las condiciones — source: b0df1f50a76ba564
 
 ## Why it matters
-Encuadrar el gotcha como condicional evita sobre- o subestimar cuándo el orden cambia el render. Es la parte del hallazgo que un docente debería conservar incluso si el resto no se verifica.
+Sin el detalle de las condiciones, la regla es difícil de aplicar. Un lector no puede saber cuándo debe reordenar funciones y cuándo no. Esto convierte la afirmación en una heurística sin umbral operativo.
 
-Es la cara condicional de `transform-order-en-css-afecta-el-zoom`. Comparte forma con `prompt-modular-sin-mecanica-verificable`: una mecánica plausible afirmada sin comprobación en la evidencia disponible.
+Depende de la observación general sobre el orden de transform en el zoom. Sirve como caso del modo de fallo de afirmar capacidades desde un fragmento de una línea sin método.
 
 ## Links
 - relates_to → [[transform-order-en-css-afecta-el-zoom]]
 - relates_to → [[prompt-modular-sin-mecanica-verificable]]
+- supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]

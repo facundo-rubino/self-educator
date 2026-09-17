@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-17'
 sources:
 - bc47e7115f9ba8d0
 tags:
-- clean-code
 - ambiguedad
-- interpretacion
+- clean-code
 - evidencia-debil
+- interpretacion
+- tagline
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-17'
 provenance:
   scale: XL
   query: null
@@ -28,20 +29,23 @@ links:
   type: contradicts
 - to: ensayo-goodbye-clean-code-sin-cuerpo-recuperado
   type: derived_from
+- to: sueltalo-clean-code-como-heuristica-condicionada
+  type: relates_to
 ---
 
 ## What it is
-El tagline «Let clean code guide you. Then let it go.» admite al menos tres lecturas incompatibles entre sí: abandonar la práctica de clean code, abandonar el dogma de aplicarla incondicionalmente, o abandonar la culpa por no cumplirla. El material recuperado no permite decidir cuál.
+La tagline «Let clean code guide you. Then let it go.» no especifica qué se abandona: ¿los principios de clean code como práctica, su uso como dogma, o la culpa asociada a desviarse de ellos? [bc47e7115f9ba8d0]. La pregunta queda abierta porque el cuerpo del artículo no fue recuperado.
 
 ## Evidence
-- El único cuerpo textual recuperado del documento es la frase «Let clean code guide you. Then let it go.» — source: bc47e7115f9ba8d0
-- El título del documento plantea una despedida respecto de clean code, sin especificar su objeto — source: bc47e7115f9ba8d0
+- La única frase disponible es «Let clean code guide you. Then let it go.» — source: bc47e7115f9ba8d0.
+- No hay argumentos, ejemplos ni caveats en el texto recuperado — source: bc47e7115f9ba8d0.
 
 ## Why it matters
-Sin texto completo no puede resolverse si el ensayo recomienda dejar la práctica o solo su aplicación dogmática. Cualquier tesis que fije una de las tres lecturas (como hace «sueltalo-clean-code-como-heuristica-condicionada») queda cuestionada por esta ambigüedad, y la respuesta requiere el documento íntegro.
+La interpretación elegida cambia por completo la prescripción: soltar la práctica es una cosa, soltar el dogma es otra, y soltar la culpa es una tercera. Sin el cuerpo, `edu reconcile` no puede resolver cuál de las tres sostiene la fuente.
 
-Contradice la lectura unívoca de «sueltalo-clean-code-como-heuristica-condicionada». Se deriva de «ensayo-goodbye-clean-code-sin-cuerpo-recuperado», del que hereda la limitación de evidencia.
+`relates_to` el patrón de clean code como heurística condicionada, que depende de esta desambiguación para ser accionable.
 
 ## Links
 - contradicts → [[sueltalo-clean-code-como-heuristica-condicionada]]
 - derived_from → [[ensayo-goodbye-clean-code-sin-cuerpo-recuperado]]
+- relates_to → [[sueltalo-clean-code-como-heuristica-condicionada]]

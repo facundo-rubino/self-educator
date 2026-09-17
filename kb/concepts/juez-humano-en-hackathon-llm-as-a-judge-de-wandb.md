@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-17'
 sources:
 - d2a0c86ca8027978
 tags:
 - evaluacion-llm
-- hackathon
-- weave
 - evento
+- hackathon
+- wandb
+- weave
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-17'
 provenance:
   scale: XL
   query: null
@@ -28,20 +29,33 @@ links:
   type: relates_to
 - to: relevancia-no-es-verdad
   type: relates_to
+- to: evidencia-de-evento-sin-contenido-tecnico
+  type: relates_to
+- to: promocion-personal-no-es-evidencia-de-practica
+  type: relates_to
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: relates_to
+- to: garantizar-relevancia-no-es-verdad
+  type: relates_to
 ---
 
 ## What it is
-El autor se desempeñó como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases. El documento es un ítem RSS que registra el hecho de haber juzgado; no contiene diseño de evaluadores, rúbrica, criterios de juicio ni resultados de los proyectos participantes (doc: d2a0c86ca8027978).
+El único documento ingerido [d2a0c86ca8027978] es un anuncio personal de participación como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases. No aporta formato, criterios de evaluación, proyectos de participantes ni resultados. Es una autodescripción de rol, no una descripción de práctica.
 
 ## Evidence
-- El documento trata sobre ser juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases — source: d2a0c86ca8027978
-- El documento registró cero engagement, sin discusión ni interacción downstream — source: d2a0c86ca8027978
+- El documento trata sobre actuar como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases — source: d2a0c86ca8027978
+- El documento proviene de un feed RSS y muestra engagement=0 — source: d2a0c86ca8027978
+- No hay detalle en el clúster sobre formato, criterios, proyectos u outcomes — source: d2a0c86ca8027978
 
 ## Why it matters
-Es una mención de evento, no un hallazgo: no aporta técnica evaluadora ni lección de liderazgo u oficio que pueda integrarse en el brief. Su valor máximo es servir de ancla de fecha/nombre para el dominio de evaluación de LLM, adyacente al trabajo con agentes de IA.
+El ítem solo confirma de forma débil que existen eventos en torno a la evaluación automática por LLM. No dice nada sobre estimación, secuenciamiento, alcance, gestión de personas, docencia ni organización personal — los ejes del brief. Novedad 0.00 y engagement 0 lo marcan como no corroborado y fuera de foco; no debe elevarse a hallazgo sobre práctica.
 
-Se relaciona con la evaluación de LLM como dominio contiguo a los agentes de IA. Ilustra la dinámica descrita en «afirmacion-de-novedad-sin-linea-base»: un evento no establece por sí mismo un cambio de práctica, y en «relevancia-no-es-verdad»: la marca W&B y el contexto de hackathon no convierten una entrada RSS en evidencia.
+Se relaciona con «Evidencia de evento sin contenido técnico» (una mención de evento no es práctica). También con «Promoción personal no es evidencia de práctica» (un anuncio individual no describe cómo se trabaja). El riesgo de «Generalización desde clúster de un solo documento» aplica directamente: un doc corto sin corroboración no sostiene ninguna afirmación. La coincidencia léxica «AI»/«evaluación» con el brief no la convierte en verdad relevante (relevancia no es verdad).
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
 - relates_to → [[relevancia-no-es-verdad]]
+- relates_to → [[evidencia-de-evento-sin-contenido-tecnico]]
+- relates_to → [[promocion-personal-no-es-evidencia-de-practica]]
+- relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- relates_to → [[garantizar-relevancia-no-es-verdad]]

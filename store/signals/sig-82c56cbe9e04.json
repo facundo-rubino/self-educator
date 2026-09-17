@@ -12,15 +12,15 @@
   "theme": "oficio-dev",
   "scores": {
     "relevance": 0.1833,
-    "novelty": 0.5588,
+    "novelty": 0.0,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.4039,
+  "aggregate_score": 0.2642,
   "first_seen": "2019-12-20T00:00:00Z",
   "sources_count": 1,
-  "status": "promoted",
+  "status": "candidate",
   "outcome": {
     "reviewed_at": null,
     "verdict": null,

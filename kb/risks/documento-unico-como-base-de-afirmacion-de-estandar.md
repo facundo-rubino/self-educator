@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-17'
 sources:
 - 4e1f2a7e255ed83a
 tags:
-- evidencia
 - corroboracion
+- estandares
+- evidencia
+- metodologia
 - riesgo-epistemico
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-17'
 provenance:
   scale: M
   query: null
@@ -27,21 +29,28 @@ links:
   type: contradicts
 - to: afirmacion-poblacional-desde-un-solo-proveedor
   type: relates_to
+- to: aef-1-estandar-de-evaluadores-de-terceros
+  type: derived_from
+- to: afirmacion-de-novedad-sin-linea-base
+  type: relates_to
+- to: cosignar-estandar-no-implica-adopcion
+  type: relates_to
 ---
 
 ## What it is
-Declarar que un estándar «emerge» exige al menos dos fuentes independientes que lo reporten o una fuente primaria (la especificación misma). Aquí solo existe un documento [4e1f2a7e255ed83a], con corroboración 0.50 y novedad 0.00 según el propio análisis. Cualquier afirmación fuerte sobre el contenido o alcance de AEF-1 sería extrapolación sin respaldo.
+Declarar que un estándar «emerge» a partir de un único documento de feed, sin corpus de adopción, sin documentos normativos y sin cobertura independiente, confunde el anuncio con el fenómeno. La emergencia de un estándar se mide por adopción observable, no por una mención.
 
 ## Evidence
-- El clúster se basa en un único documento [4e1f2a7e255ed83a] — source: 4e1f2a7e255ed83a
-- La corroboración reportada es 0.50 y la novedad 0.00 — source: 4e1f2a7e255ed83a
-- El engagement=0 indica baja circulación o posible ruido en la ingesta — source: 4e1f2a7e255ed83a
+- El clúster que sostiene la afirmación de «AEF-1» contiene exactamente un documento, engagement=0 y novelty=0.00 — source: 4e1f2a7e255ed83a
 
 ## Why it matters
-Antes de tomar decisiones de arquitectura o de adopción de agentes por causa de AEF-1 hay que esperar fuentes primarias: la especificación, anuncios oficiales o cobertura secundaria. Hasta entonces la nota de AEF-1 es un titular, no un insumo de diseño.
+Evita promocionar un titular a la categoría de tendencia de gobernanza. La afirmación correcta es «un ítem de feed menciona un supuesto estándar», no «emerge un estándar».
 
-Contradice `aef-1-estandar-de-evaluadores-de-terceros`: esa nota registra el enunciado, esta registra por qué el enunciado no está establecido. Se relaciona con `afirmacion-poblacional-desde-un-solo-proveedor`, que es la misma falla aplicada a claims sobre LLMs.
+Es un caso concreto, derivado de `aef-1-estandar-de-evaluadores-de-terceros`, del riesgo general `afirmacion-de-novedad-sin-linea-base`. Se relaciona con `cosignar-estandar-no-implica-adopcion` porque incluso con más documentos, el respaldo declarado no bastaría para hablar de estándar operativo.
 
 ## Links
 - contradicts → [[aef-1-estandar-de-evaluadores-de-terceros]]
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
+- derived_from → [[aef-1-estandar-de-evaluadores-de-terceros]]
+- relates_to → [[afirmacion-de-novedad-sin-linea-base]]
+- relates_to → [[cosignar-estandar-no-implica-adopcion]]

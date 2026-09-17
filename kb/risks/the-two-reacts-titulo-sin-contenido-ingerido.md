@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-17'
 sources:
 - 43e006f4538b71dd
 tags:
+- documento-vacio
 - evidencia-fina
+- ingesta
 - ingestion
+- pipeline
 - react
 base_confidence: 0.05
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-17'
 provenance:
   scale: XL
   query: null
@@ -29,22 +32,29 @@ links:
   type: relates_to
 - to: mecanica-css-afirmada-desde-solo-titulo-rss
   type: relates_to
+- to: relevancia-no-es-verdad
+  type: supports
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: supports
 ---
 
 ## What it is
-Riesgo de tomar el título «The Two Reacts» como referencia a contenidos concretos (las dos Reacts, prácticas de liderazgo, docencia) cuando el texto ingerido no los describe. Todo lo que se afirme sobre el tema a partir de ese título sería una conclusión fabricada sobre material ausente.
+El clúster «The Two Reacts» está formado por un único documento RSS [43e006f4538b71dd] cuyo cuerpo ingerido es la fórmula «UI = f(data)(state)» y nada más. El nombre del clúster sugiere un ensayo sobre dos modelos de React, pero ese ensayo no está en la ingesta: no hay argumento, ejemplos ni contexto. Cualquier nota que desarrolle la idea de «las dos Reacts» sería proyección desde el título, no lectura de la fuente.
 
 ## Evidence
-- El título del documento es «The Two Reacts» y su engagement es 0 — source: 43e006f4538b71dd
-- La única afirmación identificable en el texto ingerido es la fórmula `UI = f(data)(state)` — source: 43e006f4538b71dd
-- No hay evidencia en los documentos suministrados que desarrolle «las dos Reacts» ni sus implicaciones para el tema del brief — source: 43e006f4538b71dd
+- El clúster consiste en un solo documento RSS titulado «The Two Reacts» — source: 43e006f4538b71dd
+- El cuerpo íntegro ingerido del documento es la fórmula «UI = f(data)(state)» — source: 43e006f4538b71dd
+- El documento no contiene ejemplos, argumentos ni elaboración más allá de la fórmula — source: 43e006f4538b71dd
+- Ningún texto del documento aborda agentes de IA, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de software ni técnicas de estudio — source: 43e006f4538b71dd
 
 ## Why it matters
-Cualquier metaanálisis que use este documento debe tratar sus afirmaciones como hipótesis de trabajo sin validez externa. Sobreinterpretar el título produciría conclusiones fabricadas y contaminaría el grafo con conexiones inexistentes.
+Marca un límite de escritura: el material recuperado no permite afirmar nada sobre el contenido real del ensayo. La fórmula superviviente ya está representada en el grafo por `ui-como-funcion-de-data-y-state`, de modo que un report nuevo desde este clúster no aportaría novedad (novelty=0.00). Si el artículo completo era el objetivo, la ingesta probablemente truncó el cuerpo y hace falta re-recuperar la fuente antes de escribir cualquier claim.
 
-Se relaciona con `ui-como-funcion-de-data-y-state` porque este riesgo acota lo que de esa nota puede sostenerse. Se relaciona con `afirmacion-de-novedad-sin-linea-base` y con `mecanica-css-afirmada-desde-solo-titulo-rss` porque comparte el patrón de afirmar contenido a partir de un artefacto sin cuerpo técnico verificado.
+`relates_to` con `ui-como-funcion-de-data-y-state`: la única frase superviviente de este clúster es exactamente esa idea, ya compilada como concepto propio. `supports` con `relevancia-no-es-verdad` y `generalizacion-desde-cluster-de-un-solo-documento`: un clúster de un documento sin cuerpo que lo desarrolle no sostiene ninguna afirmación sustantiva, por relevante que parezca el título.
 
 ## Links
 - relates_to → [[ui-como-funcion-de-data-y-state]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
 - relates_to → [[mecanica-css-afirmada-desde-solo-titulo-rss]]
+- supports → [[relevancia-no-es-verdad]]
+- supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
