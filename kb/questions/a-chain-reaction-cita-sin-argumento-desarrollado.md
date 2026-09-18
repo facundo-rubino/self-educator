@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - 0715b80a63a796ad
 tags:
+- a-chain-reaction
+- artefacto-de-feed
+- cita
+- filosofia-del-lenguaje
 - rss
 - wittgenstein
-- artefacto-de-feed
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -31,16 +34,16 @@ links:
 ---
 
 ## What it is
-El documento consiste únicamente en una cita atribuida a Wittgenstein sobre los límites del lenguaje como límites del mundo. No hay desarrollo argumental, glosa, referente editorial, fecha ni autoría en el texto disponible. La pregunta abierta es si existe algún cuerpo recuperable detrás de esta cita.
+El único contenido sustantivo del documento [0715b80a63a796ad] es la cita «The limits of my language mean the limits of my world», sin desarrollo posterior. Queda abierto si el documento contenía originalmente un argumento que la cita debía encabezar y que no fue ingerido, o si la cita es todo el contenido publicado.
 
 ## Evidence
-- El contenido del documento es la cita «The limits of my language mean the limits of my world» — source: 0715b80a63a796ad
-- No es posible verificar autoría, fecha, contexto editorial ni intención del ítem con el texto disponible — source: 0715b80a63a796ad
+- El único contenido sustantivo del documento es la cita «The limits of my language mean the limits of my world», sin desarrollo posterior — source: 0715b80a63a796ad
+- El título declarado del documento es «A Chain Reaction», sin conexión explícita con el cuerpo citado en la evidencia disponible — source: 0715b80a63a796ad
 
 ## Why it matters
-Si la cita viniera con un argumento sobre vocabulario compartido en equipos (lenguaje ubicuo de dominio aplicado a estimación o alcance), sería una nota conceptual distinta y potencialmente relevante. Con el texto actual, no se puede establecer ese puente sin especular.
+Sin cuerpo no hay tesis que evaluar ni conexión explícita con el topic declarado. La relevancia temática solo puede sostenerse por interpretación del lector, no por el texto. Cualquier uso de este documento como fuente sobre agentes de IA, liderazgo técnico, estimación u oficio requeriría primero recuperar el cuerpo original o descartarlo como fuente.
 
-Se deriva de la nota de riesgo sobre el título sin contenido ingerido: aquella documenta el fallo, esta registra la pregunta que el fallo deja abierta. Se relaciona con la nota existente sobre Wittgenstein, que sí trata la idea filosófica como concepto, no la cita como artefacto de feed.
+Deriva del riesgo sobre el título sin contenido ingerido. Se relaciona con la cuestión general sobre corpus truncado como riesgo sistémico de cobertura.
 
 ## Links
 - relates_to → [[lenguaje-como-frontera-epistemica-wittgenstein]]

@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - abf61eeec75462f9
 tags:
+- agentes
 - agentic-coding
 - claude-code
 - composicion-condicional
+- filtracion
 - leak
 - prompt-architecture
 - system-prompt
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: M
   query: null
@@ -40,18 +42,22 @@ links:
   type: relates_to
 - to: claude-code-source-leak-conditions-parts-unspecified
   type: relates_to
+- to: leak-sin-autenticidad-establecida
+  type: relates_to
 ---
 
 ## What it is
-Una fuente afirma que el system prompt de Claude Code no es una cadena estática única, sino el resultado de ensamblar docenas de partes condicionales — secciones que se activan o desactivan según contexto. El documento no especifica cuáles son esas condiciones ni cuántas partes hay. La afirmación es una descripción arquitectónica interna, no una capacidad documentada hacia el desarrollador.
+El system prompt de Claude Code no es un texto monolítico: se ensambla, según una filtración de su código fuente, a partir de docenas de partes condicionales. La composición dependería del contexto de ejecución, no de una redacción fija. La afirmación proviene de una única señal RSS sobre código filtrado.
 
 ## Evidence
-- «Claude Code's leaked source shows a system prompt assembled from dozens of conditional parts» — source: abf61eeec75462f9 (documento único, sin corroboración; corroboration score 0.50, novelty 0.00).
+- El system prompt de Claude Code se ensambla a partir de docenas de partes condicionales — source: abf61eeec75462f9
+- La afirmación se basa en código fuente filtrado de Claude Code — source: abf61eeec75462f9
+- El documento es de tipo RSS con engagement 0, sin corroboración independiente en el clúster — source: abf61eeec75462f9
 
 ## Why it matters
-Si fuera cierto, el prompt de un agente de coding sería un artefacto componible y no un bloque monolítico, lo que abriría la puerta a razonar sobre control por secciones en lugar de sobre una instrucción única. Pero con esta evidencia la implicación es una extrapolación plausible, no un hallazgo: sin las condiciones de gating la afirmación no es falsable ni operable.
+Si el patrón es real, la unidad de diseño de un agente no es «el prompt» sino el conjunto de bloques y sus condiciones de activación. Eso desplaza el trabajo de prompt engineering hacia composición y separación de responsabilidades, no hacia redacción. El valor informativo marginal es bajo (novedad 0.00): el ensamblado condicional ya es un patrón conocido en productos LLM.
 
-`ensamblado-condicional-de-prompts` ya registra el patrón general de composición condicional; esta nota sería una instancia concreta si la fuente especificara la mecánica. `system-prompt-como-artefacto-de-ingenieria` es el marco que esta observación apoyaría como caso. La laguna sobre qué condiciones gatean qué partes está registrada en `claude-code-source-leak-conditions-parts-unspecified`.
+Se relaciona con `ensamblado-condicional-de-prompts`, que generaliza el patrón más allá de Claude Code. Se relaciona con `claude-code-source-leak-conditions-parts-unspecified`: el reporte no especifica condiciones, partes ni secuenciación, lo que limita cualquier inferencia mecánica. Se relaciona con `leak-sin-autenticidad-establecida`: sin artefacto verificable no se confirma ni el leak ni la arquitectura descrita.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
@@ -61,3 +67,4 @@ Si fuera cierto, el prompt de un agente de coding sería un artefacto componible
 - relates_to → [[system-prompt-como-artefacto-de-ingenieria]]
 - relates_to → [[ensamblado-condicional-de-prompts]]
 - relates_to → [[claude-code-source-leak-conditions-parts-unspecified]]
+- relates_to → [[leak-sin-autenticidad-establecida]]

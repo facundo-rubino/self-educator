@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - abf61eeec75462f9
 tags:
+- agentes
 - control-de-agentes
 - inferencia
 - leak
+- riesgo
 - riesgo-epistemico
+- system-prompt
 base_confidence: 0.15
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -30,21 +33,27 @@ links:
   type: relates_to
 - to: sobre-generalizacion-desde-claude-code
   type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: relates_to
+- to: claude-code-source-leak-conditions-parts-unspecified
+  type: relates_to
 ---
 
 ## What it is
-El reporte extrae de un detalle interno de implementación («prompt ensamblado de partes condicionales») una conclusión sobre affordances del desarrollador: que el control sobre el agente también sería composicional. Es un salto inferencial: la evidencia describe cómo se construye el prompt dentro del producto, no qué control expone el producto al usuario.
+Del hecho de que un system prompt se ensamble de partes no se sigue que el control del comportamiento del agente resida en esa composición. El salto de «se ensambla condicionalmente» a «así se controla al agente» no está respaldado por la evidencia del clúster. Es una inferencia plausible pero no demostrada.
 
 ## Evidence
-- La evidencia disponible es un único documento con un único claim sobre estructura interna del prompt — source: abf61eeec75462f9.
-- El propio crítico del pipeline señala que la conclusión sobre control composicional está «smuggled in from the premise rather than derived» — source: transcript del signal sig-979a04e33a30 (confianza ajustada 0.12).
+- El reporte afirma que el system prompt se ensambla de docenas de partes condicionales, sin detallar el mecanismo de control asociado — source: abf61eeec75462f9
+- El leak de Claude Code no especifica condiciones, partes ni secuenciación — source: abf61eeec75462f9
 
 ## Why it matters
-Tratar un detalle interno como capacidad del desarrollador infla la utilidad práctica del hallazgo: un lead que elige tooling de agentes no puede decidir sobre la base de una estructura de prompt que el proveedor no expone ni documenta. La lección transferible al brief es que «cómo está construido por dentro» y «qué puedo controlar desde fuera» son claims distintos y requieren evidencia distinta.
+Evita diseñar agentes propios copiando una arquitectura cuya función real se desconoce. La modularidad puede ser mantenimiento, caching, o experimentación A/B, no control semántico del comportamiento. Tratar la composición como mecanismo de control sin evidencia lleva a invertir esfuerzo en la dimensión equivocada.
 
-Deriva de `claude-code-system-prompt-conditional-composition`, cuyo único soporte es la fuente filtrada. Es la misma familia de riesgo que `prompt-modular-sin-mecanica-verificable` (modularidad plausible pero no verificable) y `sobre-generalizacion-desde-claude-code` (extrapolar el diseño de un producto a los propios agentes).
+Se relaciona con `claude-code-system-prompt-conditional-composition` como la afirmación de la que se infiere de más, con `claude-code-source-leak-conditions-parts-unspecified` por la falta de detalle mecánico, y con `sobre-generalizacion-desde-claude-code` como caso concreto de ese riesgo.
 
 ## Links
 - derived_from → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[prompt-modular-sin-mecanica-verificable]]
 - relates_to → [[sobre-generalizacion-desde-claude-code]]
+- relates_to → [[claude-code-system-prompt-conditional-composition]]
+- relates_to → [[claude-code-source-leak-conditions-parts-unspecified]]

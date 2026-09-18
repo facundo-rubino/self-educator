@@ -9,36 +9,44 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - 49140f9d5133d3c7
 tags:
+- ai-coach
 - efectividad
+- evaluation
+- evidence-quality
 - evidencia
 - generalizacion
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
 links:
 - to: stack-de-ai-coach-voz-a-voz
   type: relates_to
+- to: monkey-mind-como-encuadre-de-productividad-personal
+  type: relates_to
+- to: privacidad-y-costo-en-asistentes-de-voz-continuos
+  type: relates_to
 ---
 
 ## What it is
-El post documenta que un AI coach fue ensamblado con cuatro componentes, pero no aporta métricas, resultados de uso ni comparativa. Tomar su existencia como prueba de eficacia es circular.
+El documento es un auto-reporte breve de un build personal, sin outcome, evaluación ni datos de fallo. Cualquier afirmación sobre si el coach mejora la atención o el trabajo queda sin verificar en este corpus.
 
 ## Evidence
-- El documento es anecdótico y arquitectónico: no aporta métricas, resultados de uso ni comparaciones — source: 49140f9d5133d3c7
-- El enlace con «monkey mind» es una etiqueta autoaplicada, no un resultado demostrado — source: 49140f9d5133d3c7
-- engagement=0 y novelty=0.00 en un único documento: sin corroboración externa — source: 49140f9d5133d3c7
+- El documento es una nota breve de proyecto, no evidencia sobre liderar equipos, estimación, secuenciamiento, enseñanza o técnica de estudio — source: 49140f9d5133d3c7
+- No hay outcome, evaluación ni datos de fallo presentes en el clúster — source: 49140f9d5133d3c7
 
 ## Why it matters
-Viabilidad técnica y efectividad son afirmaciones distintas. Este registro solo sostiene que las piezas se integran; cualquier inferencia sobre mejora del foco, la enseñanza o la gestión de equipos es especulativa.
+Un clúster de un solo documento con engagement=0 y novelty=0.00 es un puntero débil a un proyecto personal menor, no un hallazgo sustantivo. Tratar la mera existencia del build como evidencia de eficacia sería overfitting temático desde una mecánica ajena o auto-descripción del pipeline.
 
-Es la advertencia epistémica que acompaña al stack descrito: el mismo documento que da la arquitectura no da el resultado.
+Se relaciona con `stack-de-ai-coach-voz-a-voz` y con `monkey-mind-como-encuadre-de-productividad-personal`: ambos describen intención y medio, ninguno mide resultado. Se relaciona con `privacidad-y-costo-en-asistentes-de-voz-continuos`: incluso si la eficacia se demostrara, esas dimensiones seguirían abiertas.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
+- relates_to → [[monkey-mind-como-encuadre-de-productividad-personal]]
+- relates_to → [[privacidad-y-costo-en-asistentes-de-voz-continuos]]

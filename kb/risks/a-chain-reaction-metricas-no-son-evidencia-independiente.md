@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - 0715b80a63a796ad
 tags:
-- metricas
+- a-chain-reaction
 - calibracion
 - filtrado-determinista
+- metricas
+- pipeline
+- singleton
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -30,21 +33,25 @@ links:
   type: supports
 - to: a-chain-reaction-titulo-sin-contenido-ingerido
   type: supports
+- to: a-chain-reaction-titulo-sin-contenido-ingerido
+  type: derived_from
 ---
 
 ## What it is
-Las métricas relevance=0.33, novelty=0.00, corroboration=0.50 y velocidad/sorpresa neutras provienen del mismo pipeline de filtrado determinista que produjo el artefacto. No son evidencia independiente de significancia: son self-description del pipeline. Con n=1, corroboración 0.50 no está anclada en triangulación.
+Las métricas que acompañan al clúster de «A Chain Reaction» (relevance 0.33, novelty 0.00, corroboración parcial 0.50, engagement 0) son descripciones del propio pipeline de ingesta y scoring, no corroboración independiente de ninguna afirmación temática. Confundirlas con evidencia equivale a validar el output del sistema con el output del sistema.
 
 ## Evidence
-- La corroboración registrada de 0.50 sobre un único documento carece de base para triangulación cruzada — source: 0715b80a63a796ad
-- Las métricas declaradas (relevance 0.33, novelty 0.00, corroboration 0.50) derivan del mismo filtrado determinista que retuvo el ítem — source: 0715b80a63a796ad
+- El documento proviene de RSS con engagement=0, es decir, sin interacciones registradas — source: 0715b80a63a796ad
+- La baja relevancia (0.33), la novedad nula (0.00) y la corroboración parcial (0.50) caracterizan a un clúster de un único documento — source: 0715b80a63a796ad
+- El clúster contiene un solo documento, por lo que cualquier medida de tendencia es estadísticamente vacía — source: 0715b80a63a796ad
 
 ## Why it matters
-Usar estas métricas para justificar que el ítem es relevante cierra un círculo: el pipeline dice que el pipeline encontró algo. Confiar en ellas como señal temática es un error de calibración.
+Con engagement=0 y un solo documento, ninguna afirmación de corroboración o tendencia temática puede sostenerse. La novedad nula (0.00) indica además que, incluso si hubiera contenido, no añadiría nada al conocimiento acumulado. Estas cifras deben leerse como estado de la ingesta, no como respaldo de una tesis.
 
-Soporta la nota de riesgo sobre el título sin contenido: la ausencia de cuerpo combinada con métricas autogeneradas agrava el problema. Refuerza la nota sobre singletons que no generalizan, y se relaciona con la nota sobre confianza inflada en hallazgos por ausencia de contenido.
+Deriva de «A Chain Reaction: título sin contenido ingerido». Se relaciona con los riesgos ya registrados sobre métricas de singletons y sobre argumentos ex silentio en corpus truncados.
 
 ## Links
 - relates_to → [[confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
+- derived_from → [[a-chain-reaction-titulo-sin-contenido-ingerido]]

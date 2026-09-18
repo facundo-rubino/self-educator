@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - 1bfe45ede61ee575
 tags:
+- corpus-truncado
+- ingesta-truncada
+- matching-por-titulo
+- rss
+- senal-debil
 - xml
 - xslt
-- corpus-truncado
-- matching-por-titulo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -33,24 +36,32 @@ links:
   type: relates_to
 - to: functional-html-titulo-sin-contenido-ingerido
   type: relates_to
+- to: xml-human-readable-singleton-engagement-cero
+  type: relates_to
+- to: argumento-ex-silentio-en-corpus-truncado
+  type: derived_from
+- to: xslt-fuera-del-brief-de-agentes-y-liderazgo
+  type: supports
 ---
 
 ## What it is
-El único contenido ingerido del ítem «Making XML human-readable without XSLT» es el fragmento «JavaScript is right there.» — cuatro palabras que no mencionan XSLT, no comparan alternativas, no recomiendan nada y no desarrollan tesis alguna. El título nombra XSLT; el cuerpo ingerido no. Cualquier afirmación sobre una preferencia JS-vs-XSLT es reconstrucción interpretativa, no lectura del documento.
+Todo el contenido sustantivo del documento es un título que plantea una pregunta —«Making XML human-readable without XSLT»— y una única frase, «JavaScript is right there». No hay mecanismo desarrollado, ni código, ni comparación con el stack XSLT. Cualquier afirmación sobre *cómo* se haría la sustitución tendría que importarse de conocimiento general, no del documento.
 
 ## Evidence
-- El cuerpo ingerido del ítem se reduce al fragmento «JavaScript is right there.» — source: 1bfe45ede61ee575
-- El ítem tiene engagement=0 y el clúster es de un solo documento: corroboración nula dentro del clúster — source: 1bfe45ede61ee575
-- Los scores del propio clúster son relevance=0.33, novelty=0.00, corroboration=0.50, velocity=0.50: indistinguibles del ruido de fondo — source: 1bfe45ede61ee575
-- La confianza inicial de 0.20 fue ajustada a 0.04 tras el pase crítico, que calificó el hallazgo como WEAK — source: 1bfe45ede61ee575
+- El título enmarca el tema como hacer XML legible para humanos sin XSLT — source: 1bfe45ede61ee575
+- El único contenido de cuerpo es la aserción de cuatro palabras «JavaScript is right there» — source: 1bfe45ede61ee575
+- No hay código, benchmark, autor atribuido ni documento de corroboración en el clúster — source: 1bfe45ede61ee575
 
 ## Why it matters
-Este ítem no sostiene ninguna afirmación sobre agentes de IA aplicados a programar, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio ni técnicas de estudio. Escribir una nota del tipo «JS es mejor que XSLT para presentar XML» sería fabricar un hallazgo a partir de una coincidencia léxica: la única fuente de la tesis sería el propio summary que la enuncia. El valor del ítem es negativo: documenta un modo de fallo de matching por título.
+Compilar este documento como una técnica (parsear y re-serializar XML en JS en lugar de XSLT) sería escribir una nota cuyo contenido no proviene del documento. La nota correcta es la que registra la insuficiencia de la fuente, porque un lector del grafo que vea «técnica de XML sin XSLT» asumirá que existe evidencia detrás.
 
-Comparte el patrón de «Afirmar una mecánica CSS desde un solo título RSS sin cuerpo» y de «Un juicio fuerte desde un fragmento de dos líneas»: en los tres, un título temáticamente cargado más un cuerpo ausente producen una afirmación que la fuente no respalda. Se relaciona también con «Afirmar un salto de capacidad desde una línea sin método», porque aquí la línea disponible ni siquiera es metodológica sino una exhortación sin contexto.
+Se relaciona con `xml-human-readable-singleton-engagement-cero`: el mismo hecho de ser un singleton sin engagement es lo que deja el título sin desarrollo. Deriva de `argumento-ex-silentio-en-corpus-truncado`: inferir la técnica desde una línea es leer intención en un fragmento. Refuerza `xslt-fuera-del-brief-de-agentes-y-liderazgo`: si hubiera argumento, seguiría fuera de los ejes del brief de agentes, liderazgo y gestión.
 
 ## Links
 - relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - relates_to → [[juicio-fuerte-desde-fragmento-de-dos-lineas]]
 - relates_to → [[mecanica-css-afirmada-desde-solo-titulo-rss]]
 - relates_to → [[functional-html-titulo-sin-contenido-ingerido]]
+- relates_to → [[xml-human-readable-singleton-engagement-cero]]
+- derived_from → [[argumento-ex-silentio-en-corpus-truncado]]
+- supports → [[xslt-fuera-del-brief-de-agentes-y-liderazgo]]

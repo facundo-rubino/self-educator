@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -18,12 +18,13 @@ tags:
 - arquitectura
 - integration
 - personal-productivity
+- stack
 - telefonia
 - voice
 - voz
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -32,20 +33,25 @@ links:
   type: relates_to
 - to: monkey-mind-como-encuadre-de-productividad-personal
   type: relates_to
+- to: efectividad-de-ai-coach-no-demostrada
+  type: relates_to
+- to: privacidad-y-costo-en-asistentes-de-voz-continuos
+  type: relates_to
 ---
 
 ## What it is
-Un agente conversacional personal implementado como la composición de cuatro piezas: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. El canal telefónico sustituye a la app de texto como interfaz de entrada y salida.
+Un AI coach personal se compone de cuatro piezas: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. El documento lo describe como un build propio, sin detallar arquitectura, integración entre piezas ni elección de proveedores.
 
 ## Evidence
-- La arquitectura del AI coach combina cuatro componentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
-- El documento es de tipo rss y presenta engagement=0, sin señales de interacción o difusión registradas — source: 49140f9d5133d3c7
+- El documento describe la construcción de un AI coach compuesto por speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es una plantilla de bajo costo y piezas off-the-shelf para un agente personal: no requiere interfaz propia ni canal de mensajería. El documento solo evidencia que las cuatro piezas se pueden integrar, no que el resultado sea útil ni reproducible.
+El stack es la superficie de integración mínima para un asistente por voz: telefonía como canal de entrada/salida y STT/TTS/LLM como procesamiento. Lo aprovechable aquí es el ejercicio de integración (aprender los límites de cada API y su encadenamiento), no un producto reutilizable ni una metodología. Un dev que lidera y enseña puede tratar este tipo de build como práctica de oficio acotada.
 
-Se enlaza con monkey-mind-como-encuadre-de-productividad-personal porque el stack se presenta como medio para un fin de regulación atencional, no como fin en sí.
+Se relaciona con `monkey-mind-como-encuadre-de-productividad-personal`: el stack es el medio, el encuadre es el fin declarado. Se relaciona con `efectividad-de-ai-coach-no-demostrada`: el stack no viene acompañado de evaluación. Se relaciona con `privacidad-y-costo-en-asistentes-de-voz-continuos`: un canal telefónico permanente abre esas preguntas incluso en un build personal.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
 - relates_to → [[monkey-mind-como-encuadre-de-productividad-personal]]
+- relates_to → [[efectividad-de-ai-coach-no-demostrada]]
+- relates_to → [[privacidad-y-costo-en-asistentes-de-voz-continuos]]

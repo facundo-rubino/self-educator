@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-18'
 sources:
+- abf61eeec75462f9
 - cd27a82163907417
 tags:
-- react
-- nextjs
-- inferencia
 - corpus-truncado
+- fragmento
+- inferencia
+- nextjs
+- react
+- riesgo
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -29,20 +32,26 @@ links:
   type: derived_from
 - to: afirmacion-de-novedad-sin-linea-base
   type: relates_to
+- to: static-as-a-server-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de inferencia: leer la frase «Two worlds, two doors.» del documento [cd27a82163907417] como confirmación de que existe una separación entre componentes de servidor y de cliente en React es una interpretación no confirmada por el texto. La frase es una metáfora introductoria, no una descripción de mecanismo.
+Un fragmento aforístico de un texto no constituye evidencia de una arquitectura. «Two worlds, two doors.» puede leerse como metáfora de la separación servidor/cliente en React, pero el aforismo por sí solo no demuestra que esa separación exista ni cómo está implementada. La misma operación de lectura se aplica al caso Claude Code: una frase de una fuente no basta.
 
 ## Evidence
-- El único texto recuperado del documento es «Two worlds, two doors.» — source: cd27a82163907417
-- No hay texto adicional que especifique a qué «mundos» o «puertas» se refiere — source: cd27a82163907417
+- El reporte critica explícitamente el salto de una afirmación sobre composición de prompts a conclusiones sobre liderazgo, estimación o enseñanza sin respaldo — source: abf61eeec75462f9
+- El reporte señala el riesgo de sobre-extrapolación desde una única señal RSS — source: abf61eeec75462f9
 
 ## Why it matters
-Evita que una metáfora de apertura se convierta en una afirmación técnica en la KB. Si el cuerpo completo apareciese y confirmase la lectura de servidor/cliente, esta nota se actualiza; hasta entonces, la inferencia queda marcada.
+El modo de fallo es estructural, no específico de React: tomar un fragmento persuasivo y tratarlo como descripción de mecanismo. Nombrarlo permite detectarlo cuando reaparece en contextos distintos del brief.
 
-Deriva de `what-does-use-client-do-titulo-sin-contenido-ingerido`. Comparte patrón con `afirmacion-de-novedad-sin-linea-base`: en ambos casos la lectura que se hace del texto excede lo que el texto sostiene.
+Se relaciona con `static-as-a-server-titulo-sin-contenido-ingerido` como otro caso de título aforístico sin cuerpo. Se relaciona con `afirmacion-de-capacidad-desde-fragmento-de-una-linea` como instancia general del mismo error de inferencia.
 
 ## Links
 - derived_from → [[what-does-use-client-do-titulo-sin-contenido-ingerido]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
+- relates_to → [[static-as-a-server-titulo-sin-contenido-ingerido]]
+- relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]

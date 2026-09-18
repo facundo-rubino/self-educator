@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - 19cb8032958cd964
 tags:
+- identificacion-facial
 - multimodal
+- politica-de-proveedor
 - politicas-de-proveedor
 - rechazo
-- identificacion-facial
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -37,20 +38,22 @@ links:
   type: relates_to
 - to: identificar-no-es-reconocer-en-la-fuente
   type: relates_to
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: relates_to
 ---
 
 ## What it is
-Un único documento RSS afirma que, ante imágenes con figuras públicas, Gemini las identifica mientras que ChatGPT y Claude se niegan. La afirmación describe una divergencia de política de proveedor, no una capacidad general de los LLM: el documento no distingue si los modelos no pueden o no quieren hacerlo.
+Un único ítem RSS afirma que ChatGPT y Claude se niegan a identificar figuras públicas en imágenes mientras que Gemini sí lo hace. El documento solo contiene la aserción: no aporta metodología, benchmark, cita de documentación ni fecha. Engagement=0.
 
 ## Evidence
-- El cuerpo del documento dice, textualmente: «ChatGPT and Claude won't, but Gemini will» sobre identificar figuras públicas en imágenes — source: 19cb8032958cd964
-- El título del mismo documento enuncia la afirmación como capacidad general: los LLM ya pueden identificar figuras públicas en imágenes — source: 19cb8032958cd964
-- No hay metodología, versión de modelo, fecha, prompt, conjunto de imágenes ni cita de política de proveedor — source: 19cb8032958cd964
+- El documento afirma que los LLM ya pueden identificar figuras públicas en imágenes — source: 19cb8032958cd964
+- El documento afirma la divergencia conductual: ChatGPT y Claude no identifican, Gemini sí — source: 19cb8032958cd964
+- El clúster contiene un solo ítem RSS con engagement=0, sin corroboración independiente dentro de la señal — source: 19cb8032958cd964
 
 ## Why it matters
-Si se toma al pie de la letra, cualquier feature de subida de imágenes opera con comportamiento dependiente del proveedor y requiere verificación explícita por API, no una asunción de paridad. Pero con una sola fuente sin cuerpo ni corroboración, lo accionable es la cautela: no tratar «Gemini will» como contrato de producto.
+Si la divergencia fuese real, implicaría diferencias de política a nivel de proveedor en visión, no necesariamente de capacidad subyacente — relevante para quien construye agentes multimodales que procesan caras o figuras públicas. Sin metodología verificable, cualquier acción práctica (adoptar Gemini para identificación de caras) sería prematura: el veredicto honesto es «no verificado, no actuar».
 
-Refuerza la nota existente sobre Gemini y figuras públicas, que registra el mismo ítem. Se relaciona con la divergencia de rechazo entre proveedores y con la sonda de rechazo por identidad en producción: es el mismo fenómeno de comportamiento diferenciado por política, no por capacidad. También toca la nota sobre identificación de figuras públicas preexistente y el riesgo de sostener un claim poblacional desde una sola observación de un proveedor.
+Es una instancia concreta del patrón general de divergencia de rechazo entre proveedores, y refuerza la distinción entre capacidad técnica y política de rechazo: el titular «los LLM ya pueden identificar» puede estar conflacionando gating de política con capacidad del modelo. Corrobora el ítem existente sobre Gemini.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -59,3 +62,4 @@ Refuerza la nota existente sobre Gemini y figuras públicas, que registra el mis
 - relates_to → [[divergencia-de-rechazo-entre-proveedores]]
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - relates_to → [[identificar-no-es-reconocer-en-la-fuente]]
+- relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]

@@ -10,16 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-18'
 sources:
 - abf61eeec75462f9
 tags:
-- transferibilidad
-- overfitting
+- analogia
+- extrapolacion
 - inferencia
+- overfitting
+- patrones
+- riesgo
+- transferibilidad
 base_confidence: 0.65
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -28,20 +32,26 @@ links:
   type: derived_from
 - to: relevancia-no-es-verdad
   type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: relates_to
+- to: a-chain-reaction-metricas-no-son-evidencia-independiente
+  type: relates_to
 ---
 
 ## What it is
-Tomar la descripción técnica del prompt de otro producto y convertirla en práctica de liderazgo, docencia o productividad personal es un salto sin evidencia. La descripción de una arquitectura no demuestra que esa arquitectura sea transferible a otro contexto, ni que produzca los beneficios que se le atribuyen. En este clúster, el documento no plantea ninguna implicación de ese tipo.
+El reporte propone que si un agente se construye con bloques condicionales, un dev-líder puede replicar el patrón con perfiles por rol («pair programming», «code review», «diseño de ejercicio»). Ese salto es analógico: no hay evidencia en el clúster que conecte la mecánica de un producto con contextos de liderazgo o enseñanza. La utilidad sugerida es especulativa.
 
 ## Evidence
-- El documento reporta solo la composición condicional del prompt, sin extraer implicaciones para liderazgo, docencia o productividad — source: abf61eeec75462f9
-- No hay evidencia en el clúster de que el patrón sea transferible a otros contextos — source: abf61eeec75462f9
+- El reporte admite que pasar de «cómo se construye un system prompt de producto» a «cómo liderar, estimar o enseñar» es un salto analógico no respaldado por la evidencia del clúster — source: abf61eeec75462f9
+- El critic señala que el movimiento a relevancia analógica es especulativo y sin evidencia que conecte el patrón con contextos educativos o de liderazgo — source: abf61eeec75462f9
 
 ## Why it matters
-El brief cubre agentes de IA aplicados a programar, gestionar y enseñar, pero la relevancia de este documento es tangencial y afirmada por quien lo revisa, no demostrada por la evidencia. Inferir prácticas sin transferibilidad comprobada contamina el grafo con conclusiones que no sobreviven a la verificación.
+Permite conservar la analogía como hipótesis de diseño sin contarla como hallazgo. Si se promueve a recomendación sin validación, el KB acumula consejos sin respaldo y pierde valor de predicción.
 
-`derived_from` `claude-code-system-prompt-conditional-composition`: esta nota es la advertencia de no proyectar ese claim más allá de lo que la fuente dice. `relates_to` con `relevancia-no-es-verdad`: la utilidad temática de un dato no valida las afirmaciones que se le cuelgan.
+Se relaciona con `claude-code-system-prompt-conditional-composition` como el hecho del que se parte. Se relaciona con `a-chain-reaction-metricas-no-son-evidencia-independiente` como otro caso donde una señal interna del pipeline se trata como evidencia externa.
 
 ## Links
 - derived_from → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[relevancia-no-es-verdad]]
+- relates_to → [[claude-code-system-prompt-conditional-composition]]
+- relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]

@@ -10,18 +10,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
+- 16a4e3995d6c827e
+- 2221814efbefaa3b
 - 30a26335a9988ba2
 - 5a4df6bef0a4905f
+- 748f8b0a02cd7524
+- 9750590bbfe6b285
+- b9106690f5dfd849
 - ffbd76916d1dfdc5
 tags:
-- mcp
-- brief
 - alcance
+- brief
+- mcp
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -32,21 +37,25 @@ links:
   type: relates_to
 - to: impacto-de-corte-de-proveedor-en-flujos-de-coding-con-ia
   type: relates_to
+- to: mcp-cadencia-date-versioned-descartada-para-brief
+  type: relates_to
 ---
 
 ## What it is
-Queda abierto si el esquema de publicación date-versioned de los MCP servers de referencia aporta algo accionable para el tema del brief (agentes de IA aplicados a programar, gestión y docencia) o si debe descartarse enteramente. La evidencia disponible solo permite describir el formato, no evaluar su impacto [30a26335a9988ba2][5a4df6bef0a4905f].
+Queda abierto si la cadencia date-versioned de MCP servers —releases sin changelog ni rationale— tiene algún valor operativo para el brief de agentes de IA y liderazgo técnico. La evidencia disponible solo muestra listas de paquetes; no conecta la cadencia con ninguna decisión de coding, gestión o docencia.
 
 ## Evidence
-- La única caracterización sostenible es mecánica: versiones por fecha y roster variable de paquetes — source: 30a26335a9988ba2
-- Los ocho ítems son stubs de feed con engagement=0 — source: ffbd76916d1dfdc5
+- Ocho releases entre 2025.11.25 y 2026.8.31 listan paquetes y versiones, sin narrativa ni análisis — source: 16a4e3995d6c827e / 2221814efbefaa3b / 30a26335a9988ba2 / 5a4df6bef0a4905f / 748f8b0a02cd7524 / 9750590bbfe6b285 / b9106690f5dfd849 / ffbd76916d1dfdc5
+- El reporte concluye que «downstream summarization should not attempt to extract lessons about AI-assisted coding, tech leadership, or teaching from these documents» — source: sig-d0acf338c3a6
+- engagement=0 en todos los ítems — source: sig-d0acf338c3a6
 
 ## Why it matters
-Un dev que integra servidores MCP en flujos de coding con agentes podría necesitar saber si actualizar es seguro, pero esta evidencia no lo responde: sin changelog ni semver, la decisión requiere diffear paquetes. La pregunta queda abierta hasta tener documentación de compatibilidad o discusión humana.
+Evita compilar una lección inexistente. La pregunta deja registrado que el valor de esta cadencia, si existe, no se ha demostrado contra el brief, y que el corpus no aporta los canales primarios (repo, CI, changelog) para decidirlo.
 
-Se deriva de `mcp-release-stubs-como-artefacto-de-feed` y se relaciona con `mcp-servers-versionado-por-fecha`. Conecta temáticamente con `impacto-de-corte-de-proveedor-en-flujos-de-coding-con-ia`: ambas tratan sobre infraestructura de proveedores que afecta flujos de coding, pero desde evidencia insuficiente.
+Deriva de `mcp-release-stubs-como-artefacto-de-feed` (el clúster como artefacto de feed) y se relaciona con `mcp-servers-versionado-por-fecha`. Conexión reflexiva con `mcp-cadencia-date-versioned-descartada-para-brief` ya existente: esta nota integra la nueva evidencia del clúster 2026.8.31 sin duplicar el id.
 
 ## Links
 - derived_from → [[mcp-release-stubs-como-artefacto-de-feed]]
 - relates_to → [[mcp-servers-versionado-por-fecha]]
 - relates_to → [[impacto-de-corte-de-proveedor-en-flujos-de-coding-con-ia]]
+- relates_to → [[mcp-cadencia-date-versioned-descartada-para-brief]]

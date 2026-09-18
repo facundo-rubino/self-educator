@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-17'
+updated: '2026-09-18'
 sources:
 - 105ea608324d14cd
 tags:
 - corpus-truncado
+- cuerpo-ausente
 - deuda-tecnica
+- evidence-quality
 - ingesta
 - rss
 - senal-debil
 - titular-sin-cuerpo
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-18'
 provenance:
   scale: XL
   query: null
@@ -42,19 +44,22 @@ links:
   type: supports
 - to: deuda-tecnica-como-puente-lexico-al-brief
   type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: supports
 ---
 
 ## What it is
-El clúster «Fix Like No One’s Watching» contiene un único documento de feed RSS cuyo texto disponible se reduce al título y al subtítulo «The other kind of technical debt», sin cuerpo analizable. Cualquier tesis sobre deuda técnica «invisible» que se atribuya al documento es reconstrucción del analista a partir de una etiqueta, no contenido ingerido.
+El clúster «Fix Like No One’s Watching» consiste en un único documento RSS del que solo se recuperaron el título y la línea «The other kind of technical debt.». No hay coste nombrado, ejemplo, mecanismo ni medición en el texto disponible.
 
 ## Evidence
-- El único documento del clúster se titula «Fix Like No One's Watching» y tiene como subtítulo «The other kind of technical debt» — source: 105ea608324d14cd
-- El documento proviene de un feed RSS y tiene engagement=0, sin metadatos de interacción ni difusión medible — source: 105ea608324d14cd
+- El clúster es un único documento RSS titulado «Fix Like No One’s Watching» con engagement=0 — source: 105ea608324d14cd
+- La única línea sustantiva suministrada es «The other kind of technical debt», que apunta a una definición no estándar de deuda técnica sin especificarla — source: 105ea608324d14cd
+- No aparecen ejemplos, mecanismos, mediciones ni prácticas nombradas en el texto suministrado — source: 105ea608324d14cd
 
 ## Why it matters
-Cualquier nota que afirme una tesis del autor sobre deuda técnica estaría inventando el argumento. El documento solo puede sostener su propio título como dato de ingesta; el resto queda pendiente de recuperar el cuerpo.
+Cualquier afirmación sobre el argumento real del artículo sería invención: el material no contiene proposición alguna que evaluar. El ítem no debe promoverse al brief ni citarse como hallazgo sin recuperar la pieza subyacente.
 
-Soporta `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: es un caso concreto de clúster evaluado sin cuerpo recuperado. Se relaciona con `deuda-tecnica-como-puente-lexico-al-brief`, que describe el mecanismo por el que este subtítulo entra al brief sin contenido que lo respalde.
+Refuerza el patrón de fallo de `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: aquí el pipeline evalúa un clúster cuyo cuerpo nunca llegó. Se relaciona con `deuda-tecnica-como-puente-lexico-al-brief` porque la frase «the other kind of technical debt» es un solapamiento léxico con el corpus, no un hallazgo derivado. Es un caso concreto de `single-document-cluster-engagement-cero-no-generaliza`: un documento único con engagement nulo no sostiene generalización.
 
 ## Links
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
@@ -65,3 +70,4 @@ Soporta `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: es un caso 
 - relates_to → [[ensayo-goodbye-clean-code-sin-cuerpo-recuperado]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - relates_to → [[deuda-tecnica-como-puente-lexico-al-brief]]
+- supports → [[single-document-cluster-engagement-cero-no-generaliza]]
