@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - e25736c4f44de11c
 tags:
+- alcance
+- brief
+- corpus
 - humildad-epistemica
 - relevancia
-- brief
 - sin-contexto
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -30,21 +32,24 @@ links:
   type: derived_from
 - to: relevancia-tematica-baja-no-es-ruido
   type: contradicts
+- to: ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo
+  type: relates_to
 ---
 
 ## What it is
-La única idea extraíble del documento es que admitir lagunas de conocimiento no devalúa la expertise. El documento no la conecta con agentes de IA, liderazgo técnico de equipos chicos, estimación, secuenciamiento, alcance, organización personal ni técnicas de estudio.
+Pregunta abierta: si el clúster trata exclusivamente de una disposición personal hacia el propio desconocimiento [e25736c4f44de11c], ¿existe algún eje del brief —agentes de IA, gestión de equipos chicos, oficio, productividad— que este material toque de forma evaluable?
 
 ## Evidence
-- El documento no contiene ninguna mención a agentes de IA, programación, gestión, enseñanza, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de software engineering ni técnicas de estudio — source: e25736c4f44de11c
-- La relevancia reportada del clúster es 0.33 y la novedad 0.00 — source: e25736c4f44de11c
+- El clúster no contiene material sobre agentes de IA para programar, gestionar o enseñar, liderazgo técnico de equipos chicos, oficio de software engineering ni productividad — source: e25736c4f44de11c
+- El único contenido es un aforismo aislado sobre reconocer lagunas de conocimiento — source: e25736c4f44de11c
 
 ## Why it matters
-Queda abierto si el principio puede operacionalizarse como práctica de un dev que lidera y enseña (por ejemplo, nombrar lo que no se sabe al estimar o al revisar), o si es un principio transversal sin consecuencia operativa. El documento no permite decidir entre ambas.
+Mientras no se responda, la nota de humildad epistémica no debe usarse para justificar cambios concretos de proceso. La pregunta también obliga a distinguir entre una laguna real del corpus y un artefacto de muestreo.
 
-Se apoya en `humildad-epistemica-como-actitud-profesional` como concepto ya existente, y deriva de `things-i-dont-know-as-of-2018-titulo-sin-contenido-ingerido`. Contradice parcialmente `relevancia-tematica-baja-no-es-ruido`: aquí la baja relevancia sí parece corresponder a ausencia de material utilizable, no a una señal no capturada por el filtro.
+Se apoya en la nota de humildad epistémica, que es su objeto, y comparte con la nota sobre el artefacto de muestreo la duda de fondo: la desconexión con el brief puede ser del clúster o del propio pipeline.
 
 ## Links
 - relates_to → [[humildad-epistemica-como-actitud-profesional]]
 - derived_from → [[things-i-dont-know-as-of-2018-titulo-sin-contenido-ingerido]]
 - contradicts → [[relevancia-tematica-baja-no-es-ruido]]
+- relates_to → [[ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo]]

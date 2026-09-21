@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - e25736c4f44de11c
 tags:
+- corpus
 - engagement-cero
 - ensayo-personal
 - ingesta
@@ -22,7 +23,7 @@ tags:
 - titulo-sin-contenido
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -37,19 +38,22 @@ links:
   type: relates_to
 - to: argumento-ex-silentio-en-corpus-truncado
   type: derived_from
+- to: afirmacion-de-novedad-sin-linea-base
+  type: relates_to
 ---
 
 ## What it is
-El clúster «Things I Don’t Know as of 2018» consiste en un único documento cuya única oración ingerida es un aforismo sobre admitir lagunas de conocimiento. Todo lo que el título promete (introspección personal sobre lo que el autor no sabe) queda fuera del cuerpo recuperado.
+El clúster de «Things I Don’t Know as of 2018» contiene un único documento RSS [e25736c4f44de11c] del que solo se dispone de título y de un aforismo aislado: que reconocer lagunas de conocimiento no devalúa la expertise [e25736c4f44de11c]. No hay cuerpo argumental, secciones, datos ni método ingeridos que desarrollen esa idea.
 
 ## Evidence
-- El título del documento es «Things I Don’t Know as of 2018» — source: e25736c4f44de11c
-- El contenido textual ingerido es una sola frase: «We can admit our knowledge gaps without devaluing our expertise.» — source: e25736c4f44de11c
+- El documento se titula «Things I Don’t Know as of 2018», lo que lo establece como inventario personal de desconocimientos, no como estudio ni argumento — source: e25736c4f44de11c
+- La única afirmación extraíble es que las lagunas de conocimiento pueden reconocerse sin devaluar la expertise — source: e25736c4f44de11c
+- El clúster completo no contiene material sobre agentes de IA, liderazgo técnico, oficio de software ni productividad — source: e25736c4f44de11c
 
 ## Why it matters
-No se puede extraer una práctica, método o caso del documento: lo ingerido es un aforismo aislado, no el ensayo que el título anuncia. Cualquier afirmación sobre «lo que el autor no sabía en 2018» sería reconstrucción desde el titular, no lectura del texto.
+Cualquier nota que desarrolle esta idea más allá del aforismo estaría fabricando contenido que el corpus no ingirió. El valor del clúster se agota en documentar el modo de fallo, no en sostener una práctica.
 
-Se relaciona con `humildad-epistemica-como-actitud-profesional` porque el aforismo es una formulación de esa actitud sin contexto ni aplicación. Deriva de `argumento-ex-silentio-en-corpus-truncado`: la ausencia de desarrollo en el cuerpo recuperado no prueba que el ensayo original carezca de él.
+Es un caso concreto del patrón de pipeline que evalúa clústeres RSS sin haber recuperado el cuerpo. Se relaciona con las notas sobre afirmar novedad sin línea base: aquí no hay ni siquiera base textual.
 
 ## Links
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
@@ -57,3 +61,4 @@ Se relaciona con `humildad-epistemica-como-actitud-profesional` porque el aforis
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - relates_to → [[humildad-epistemica-como-actitud-profesional]]
 - derived_from → [[argumento-ex-silentio-en-corpus-truncado]]
+- relates_to → [[afirmacion-de-novedad-sin-linea-base]]

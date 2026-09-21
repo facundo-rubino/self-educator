@@ -9,22 +9,24 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - bc47e7115f9ba8d0
 tags:
 - clean-code
 - decisiones-tecnicas
 - deuda-tecnica
+- framing
 - heuristica
 - heuristicas
+- juicio-tecnico
 - liderazgo-tecnico
 - oficio
 - pragmatismo
 - refactorizacion
 base_confidence: 0.1
 half_life_days: 365
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -43,21 +45,24 @@ links:
   type: supports
 - to: relvancia-tematica-baja-no-es-ruido
   type: relates_to
+- to: ensayo-goodbye-clean-code-sin-cuerpo-recorrido
+  type: contradicts
+- to: complejidad-esencial-vs-accidental-brooks
+  type: relates_to
+- to: llms-malos-para-vibing-specifications-buenos-como-multiplicadores
+  type: relates_to
 ---
 
 ## What it is
-El ensayo «Goodbye, Clean Code» propone una máxima de dos tiempos: dejar que clean code guíe la práctica y luego soltarlo. El clean code funciona como heurística orientadora, no como dogma absoluto, y la decisión de apartarse de él no está formalizada: el texto no indica cuándo ni bajo qué condiciones hacerlo.
+El subtítulo «Let clean code guide you. Then let it go.» encuadra la práctica de clean code como guía provisional que se supera, no como estándar absoluto. Es la única afirmación de contenido que el ítem [bc47e7115f9ba8d0] permite citar; no hay cuerpo que desarrolle el criterio de cuándo soltarlo.
 
 ## Evidence
-- El único documento del clúster es el ensayo «Goodbye, Clean Code», cuya máxima nuclear es «Let clean code guide you. Then let it go.» — source: bc47e7115f9ba8d0
-- El documento es una pieza de opinión/ensayo: no presenta datos empíricos, métricas ni estudios — source: bc47e7115f9ba8d0
-- No hay otros documentos en el clúster que corroboren, refinen o contextualicen la afirmación — source: bc47e7115f9ba8d0
-- El contenido no aborda agentes de IA, liderazgo de equipos chicos, estimación, secuenciamiento ni alcance — source: bc47e7115f9ba8d0
+- El teaser «Let clean code guide you. Then let it go.» presenta el clean code como guía provisional a superar, no como estándar absoluto — source: bc47e7115f9ba8d0
 
 ## Why it matters
-Si se usa como guía de decisión de alcance en equipos chicos, la máxima no es operativa: no dice cuándo el pragmatismo de entrega debe pesar más que la disciplina de código. Tomarla como licencia para descuidar el oficio ignora que el propio texto conserva el primer tiempo, «let clean code guide you». La tensión entre disciplina de código y pragmatismo de entrega es candidata a explorarse con material que sí tenga datos.
+Plantea una heurística condicionada: la regla sirve mientras mejora legibilidad y cambio, y se abandona cuando su coste de estimación y secuenciación excede el beneficio. Sin el argumento del ensayo, la condición de disparo (¿qué evidencia autoriza a soltar la regla?) queda como pregunta abierta, no como doctrina.
 
-`derived_from` el ensayo sin cuerpo recuperado: la máxima es lo único que se puede extraer de un documento cuyo texto no fue ingerido. `contradicts` la ambigüedad de «Let it go»: aquí se lee como guía heuristicamente condicionada, no como abandono de la práctica. `supports` el registro de que el título y la tagline no vienen con contenido ingerido. `relates_to` la observación de que relevancia temática baja no equivale a ausencia de señal: la señal es real pero delgada.
+Se relaciona con `complejidad-esencial-vs-accidental-brooks` en tanto la disciplina de estilo aborda lo accidental, no lo esencial. Se relaciona con `llms-malos-para-vibing-specifications-buenos-como-multiplicadores` porque ambas tratan cuándo la pureza formal cede ante el resultado. Marca `contradicts` con `ensayo-goodbye-clean-code-sin-cuerpo-recorrido` en el sentido de que esta nota extrae una tesis del subtítulo mientras esa nota documenta la ausencia de cuerpo citable; el reconcile debe decidir si el subtítulo sostiene o no la heurística.
 
 ## Links
 - derived_from → [[ensayo-goodbye-clean-code-sin-cuerpo-recuperado]]
@@ -67,3 +72,6 @@ Si se usa como guía de decisión de alcance en equipos chicos, la máxima no es
 - derived_from → [[ensayo-goodbye-clean-code-sin-cuerpo-recorrido]]
 - supports → [[goodbye-clean-code-titulo-sin-contenido-ingerido]]
 - relates_to → [[relvancia-tematica-baja-no-es-ruido]]
+- contradicts → [[ensayo-goodbye-clean-code-sin-cuerpo-recorrido]]
+- relates_to → [[complejidad-esencial-vs-accidental-brooks]]
+- relates_to → [[llms-malos-para-vibing-specifications-buenos-como-multiplicadores]]

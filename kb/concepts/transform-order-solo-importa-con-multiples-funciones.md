@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-17'
+updated: '2026-09-21'
 sources:
 - b0df1f50a76ba564
 tags:
+- composición
 - condicionalidad
 - css
 - docencia
+- front-end
 - transform
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-21'
 provenance:
   scale: M
   query: null
@@ -30,20 +32,24 @@ links:
   type: relates_to
 - to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
   type: supports
+- to: transform-order-y-zoom-css-sin-cuerpo-ingerido
+  type: derived_from
 ---
 
 ## What it is
-El documento matiza que el orden de `transform` no siempre importa: importa solo a veces. Esa condicionalidad no viene delimitada en el clúster, y el documento no expone qué condiciones activan el efecto ni qué combinaciones de funciones lo disparan.
+El calificador «sometimes» del titular implica que el orden de `transform` no es siempre relevante: lo es cuando varias funciones interactúan en la misma declaración. Con una sola función no hay orden que discutir; el problema aparece al componer operaciones no conmutativas (p. ej. traslación y escalado), donde el resultado depende de la secuencia.
 
 ## Evidence
-- El post sostiene que el orden de `transform` es importante «a veces», sin detallar las condiciones — source: b0df1f50a76ba564
+- El título califica el efecto del orden como condicional («…sometimes») — source: b0df1f50a76ba564
+- La fuente no enumera qué combinaciones ni distingue orden dentro de la lista de `transform` frente al orden entre propiedades animadas — source: b0df1f50a76ba564
 
 ## Why it matters
-Sin el detalle de las condiciones, la regla es difícil de aplicar. Un lector no puede saber cuándo debe reordenar funciones y cuándo no. Esto convierte la afirmación en una heurística sin umbral operativo.
+Acota el claim anterior: no hay que auditar todo uso de `transform`, solo los que componen varias funciones. Eso hace la regla accionable (revisar composiciones, no usos sueltos) a la vez que la mantiene incompleta: sin la lista de combinaciones problemáticas, no se puede convertir en checklist.
 
-Depende de la observación general sobre el orden de transform en el zoom. Sirve como caso del modo de fallo de afirmar capacidades desde un fragmento de una línea sin método.
+Es la restricción de alcance de `transform-order-en-css-afecta-el-zoom`. `transform-order-y-zoom-css-sin-cuerpo-ingerido` registra que el «sometimes» es, tal como está ingerido, un hedge no falsable: sin las combinaciones concretas, ninguna observación lo refuta.
 
 ## Links
 - relates_to → [[transform-order-en-css-afecta-el-zoom]]
 - relates_to → [[prompt-modular-sin-mecanica-verificable]]
 - supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
+- derived_from → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]

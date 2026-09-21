@@ -10,16 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 105ea608324d14cd
 tags:
 - ambiguedad-lexica
 - deuda-tecnica
+- fuente-unica
+- interpretacion
 - sobreinterpretacion
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -30,22 +32,27 @@ links:
   type: relates_to
 - to: relevancia-no-es-verdad
   type: relates_to
+- to: fix-like-no-one-s-watching-titulo-sin-contenido-ingerido
+  type: derived_from
+- to: fix-like-no-one-s-watching-argumento-sin-corroboracion
+  type: relates_to
 ---
 
 ## What it is
-La frase «the other kind of technical debt» podría significar inconsistencia, toil, tests ausentes o acumulación de arreglos pequeños. Ninguna de esas lecturas está especificada en el material suministrado.
+La frase «the other kind of technical debt» aparece solo como subtítulo, sin desarrollo ingerido que fije su referente [105ea608324d14cd]. El abanico de lecturas posibles —desde deuda de proceso hasta consejos de limpieza de código— no está zanjado por el texto disponible.
 
 ## Evidence
-- El documento no especifica qué tipo de deuda técnica sería «the other kind» — source: 105ea608324d14cd
-- La frase es un solapamiento léxico con lenguaje ya presente en el corpus, no un hallazgo derivado — source: 105ea608324d14cd
-- No hay mecanismo, medición ni ejemplo que fije una interpretación — source: 105ea608324d14cd
+- El documento enmarca su propia claim como la existencia de «the other kind of technical debt», aseverada vía subtítulo sin argumento de soporte en el texto ingerido — source: 105ea608324d14cd
+- El clúster es de un solo documento, engagement cero, novelty 0.00, sin corroboración independiente — source: 105ea608324d14cd
 
 ## Why it matters
-Elegir cualquiera de las acepciones posibles sería imponer contenido al texto. Cualquier nota sobre mantenimiento o disciplina de revisión que se apoyara en esta fuente sería invención, no compilación.
+Fijar una definición concreta (por ejemplo «deuda de proceso informa» o «deuda latente de código») requeriría importar conocimiento externo sobre qué significa convencionalmente la frase. El resultado honesto es dejar la ambigüedad registrada en lugar de sobreescribirla.
 
-Refuerza `deuda-tecnica-como-puente-lexico-al-brief`: el vocabulario coincide, la señal no. Comparte modo de fallo con `mecanica-css-afirmada-desde-solo-titulo-rss` (afirmar mecánica desde un titular). Se relaciona con `relevancia-no-es-verdad`: que un fragmento sea aprovechable no valida ninguna afirmación sobre él.
+Derivada de `fix-like-no-one-s-watching-titulo-sin-contenido-ingerido`: es ese mismo material sin cuerpo leído por su eje semántico. Soporta `deuda-tecnica-como-puente-lexico-al-brief`, porque el puente al brief aquí es puramente léxico, no contenido. Se relaciona con `fix-like-no-one-s-watching-argumento-sin-corroboracion`, que cubre la falta de corroboración del argumento.
 
 ## Links
 - supports → [[deuda-tecnica-como-puente-lexico-al-brief]]
 - relates_to → [[mecanica-css-afirmada-desde-solo-titulo-rss]]
 - relates_to → [[relevancia-no-es-verdad]]
+- derived_from → [[fix-like-no-one-s-watching-titulo-sin-contenido-ingerido]]
+- relates_to → [[fix-like-no-one-s-watching-argumento-sin-corroboracion]]

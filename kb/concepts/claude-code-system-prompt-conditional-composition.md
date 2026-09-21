@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - abf61eeec75462f9
 tags:
@@ -20,10 +20,11 @@ tags:
 - filtracion
 - leak
 - prompt-architecture
+- prompt-engineering
 - system-prompt
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: M
   query: null
@@ -44,20 +45,23 @@ links:
   type: relates_to
 - to: leak-sin-autenticidad-establecida
   type: relates_to
+- to: prompt-condicional-conocimiento-comun-en-productos-llm
+  type: relates_to
+- to: prompt-modular-sin-mecanica-verificable
+  type: relates_to
 ---
 
 ## What it is
-El system prompt de Claude Code no es un texto monolítico: se ensambla, según una filtración de su código fuente, a partir de docenas de partes condicionales. La composición dependería del contexto de ejecución, no de una redacción fija. La afirmación proviene de una única señal RSS sobre código filtrado.
+Claude Code ensambla su system prompt a partir de docenas de partes condicionales, según una fuente filtrada. El documento que lo afirma no aporta fragmentos citados del prompt, ni los disparadores condicionales nombrados, ni metodología de obtención del leak.
 
 ## Evidence
-- El system prompt de Claude Code se ensambla a partir de docenas de partes condicionales — source: abf61eeec75462f9
-- La afirmación se basa en código fuente filtrado de Claude Code — source: abf61eeec75462f9
-- El documento es de tipo RSS con engagement 0, sin corroboración independiente en el clúster — source: abf61eeec75462f9
+- El system prompt de Claude Code se describe como ensamblado a partir de docenas de partes condicionales, atribuido a fuente filtrada — source: abf61eeec75462f9
+- El documento es el único miembro del clúster, con engagement=0, por lo que no existe corroboración independiente dentro de la señal — source: abf61eeec75462f9
 
 ## Why it matters
-Si el patrón es real, la unidad de diseño de un agente no es «el prompt» sino el conjunto de bloques y sus condiciones de activación. Eso desplaza el trabajo de prompt engineering hacia composición y separación de responsabilidades, no hacia redacción. El valor informativo marginal es bajo (novedad 0.00): el ensamblado condicional ya es un patrón conocido en productos LLM.
+Si el diseño es real, el prompt deja de ser un bloque monolítico y pasa a ser una superficie de configuración con comportamiento dependiente de condiciones habilitadas (herramientas, entorno, modo). Eso implica que validar el prompt una sola vez no basta: habría que probarlo por condición. Para el brief, el uso correcto es como patrón didáctico y como hipótesis a testear, no como cita en documentación de equipo ni en currícula sobre cómo funciona Claude Code.
 
-Se relaciona con `ensamblado-condicional-de-prompts`, que generaliza el patrón más allá de Claude Code. Se relaciona con `claude-code-source-leak-conditions-parts-unspecified`: el reporte no especifica condiciones, partes ni secuenciación, lo que limita cualquier inferencia mecánica. Se relaciona con `leak-sin-autenticidad-establecida`: sin artefacto verificable no se confirma ni el leak ni la arquitectura descrita.
+Es una instancia concreta del ensamblado condicional de prompts como patrón general, y coincide con la observación ya registrada de que el prompt modular y condicional es conocido en productos LLM. La pregunta sobre el leak de Claude Code registra precisamente las condiciones y partes no especificadas que faltan aquí. Se relaciona con el riesgo de sobre-generalizar el diseño de Claude Code a agentes propios y con el riesgo de que la modularidad de prompts sea plausible pero no verificable en esta evidencia.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
@@ -68,3 +72,5 @@ Se relaciona con `ensamblado-condicional-de-prompts`, que generaliza el patrón 
 - relates_to → [[ensamblado-condicional-de-prompts]]
 - relates_to → [[claude-code-source-leak-conditions-parts-unspecified]]
 - relates_to → [[leak-sin-autenticidad-establecida]]
+- relates_to → [[prompt-condicional-conocimiento-comun-en-productos-llm]]
+- relates_to → [[prompt-modular-sin-mecanica-verificable]]

@@ -10,19 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 0715b80a63a796ad
 tags:
 - a-chain-reaction
 - calibracion
+- corroboracion
 - filtrado-determinista
 - metricas
 - pipeline
 - singleton
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -35,23 +36,28 @@ links:
   type: supports
 - to: a-chain-reaction-titulo-sin-contenido-ingerido
   type: derived_from
+- to: a-chain-reaction-cita-sin-argumento-desarrollado
+  type: derived_from
+- to: afirmacion-de-novedad-sin-linea-base
+  type: relates_to
 ---
 
 ## What it is
-Las métricas que acompañan al clúster de «A Chain Reaction» (relevance 0.33, novelty 0.00, corroboración parcial 0.50, engagement 0) son descripciones del propio pipeline de ingesta y scoring, no corroboración independiente de ninguna afirmación temática. Confundirlas con evidencia equivale a validar el output del sistema con el output del sistema.
+La «corroboración moderada (0.50)» de este clúster no es verificable contra ninguna fuente independiente: el único soporte del «hallazgo» es el mismo documento que el hallazgo debería explicar.
 
 ## Evidence
-- El documento proviene de RSS con engagement=0, es decir, sin interacciones registradas — source: 0715b80a63a796ad
-- La baja relevancia (0.33), la novedad nula (0.00) y la corroboración parcial (0.50) caracterizan a un clúster de un único documento — source: 0715b80a63a796ad
-- El clúster contiene un solo documento, por lo que cualquier medida de tendencia es estadísticamente vacía — source: 0715b80a63a796ad
+- El clúster contiene un único documento y la corroboración no es verificable contra ninguna fuente independiente — source: 0715b80a63a796ad
+- La novedad declarada es nula y el engagement del ítem es 0 — source: 0715b80a63a796ad
 
 ## Why it matters
-Con engagement=0 y un solo documento, ninguna afirmación de corroboración o tendencia temática puede sostenerse. La novedad nula (0.00) indica además que, incluso si hubiera contenido, no añadiría nada al conocimiento acumulado. Estas cifras deben leerse como estado de la ingesta, no como respaldo de una tesis.
+Evita usar las métricas del propio pipeline como si fueran señal externa. Un singleton con engagement 0 y novelty nula no puede sostener un claim, por alto que sea el score de corroboración calculado internamente.
 
-Deriva de «A Chain Reaction: título sin contenido ingerido». Se relaciona con los riesgos ya registrados sobre métricas de singletons y sobre argumentos ex silentio en corpus truncados.
+Deriva de la nota sobre el ensayo sin argumento desarrollado. Se relaciona con el modo de fallo ya documentado de afirmar novedad sin línea base: aquí la métrica de corroboración juega el mismo papel engañoso.
 
 ## Links
 - relates_to → [[confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
 - derived_from → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
+- derived_from → [[a-chain-reaction-cita-sin-argumento-desarrollado]]
+- relates_to → [[afirmacion-de-novedad-sin-linea-base]]

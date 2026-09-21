@@ -10,18 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 19cb8032958cd964
 tags:
 - identificacion-facial
 - multimodal
+- politica-de-modelos
 - politica-de-proveedor
 - politicas-de-proveedor
 - rechazo
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -40,20 +41,21 @@ links:
   type: relates_to
 - to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
   type: relates_to
+- to: politica-de-face-recognition-como-variable-de-producto
+  type: derived_from
 ---
 
 ## What it is
-Un único ítem RSS afirma que ChatGPT y Claude se niegan a identificar figuras públicas en imágenes mientras que Gemini sí lo hace. El documento solo contiene la aserción: no aporta metodología, benchmark, cita de documentación ni fecha. Engagement=0.
+Ante la misma consulta sobre una imagen con una figura pública, los proveedores no responden igual: Gemini la nombra y ChatGPT y Claude se niegan. Es una diferencia de guardrail, no de facultad: el modelo que se niega probablemente también podría nombrarla, pero su política de producto lo impide.
 
 ## Evidence
-- El documento afirma que los LLM ya pueden identificar figuras públicas en imágenes — source: 19cb8032958cd964
-- El documento afirma la divergencia conductual: ChatGPT y Claude no identifican, Gemini sí — source: 19cb8032958cd964
-- El clúster contiene un solo ítem RSS con engagement=0, sin corroboración independiente dentro de la señal — source: 19cb8032958cd964
+- «Los vendedores divergen al identificar figuras públicas en imágenes: ChatGPT y Claude no lo harán, pero Gemini sí» — source: 19cb8032958cd964
+- «El documento enmarca el hecho como una afirmación de capacidad ("LLMs can now identify public figures in images")» — source: 19cb8032958cd964
 
 ## Why it matters
-Si la divergencia fuese real, implicaría diferencias de política a nivel de proveedor en visión, no necesariamente de capacidad subyacente — relevante para quien construye agentes multimodales que procesan caras o figuras públicas. Sin metodología verificable, cualquier acción práctica (adoptar Gemini para identificación de caras) sería prematura: el veredicto honesto es «no verificado, no actuar».
+El mismo prompt produce éxito en un proveedor y rechazo en otro. Para quien delega tareas de manejo de imágenes a un agente, elegir proveedor es elegir política. La evidencia es de un solo ítem RSS sin metodología, versión, tamaño de muestra ni corroboración, así que el hallazgo se sostiene como cautela operativa, no como resultado.
 
-Es una instancia concreta del patrón general de divergencia de rechazo entre proveedores, y refuerza la distinción entre capacidad técnica y política de rechazo: el titular «los LLM ya pueden identificar» puede estar conflacionando gating de política con capacidad del modelo. Corrobora el ítem existente sobre Gemini.
+Es una instancia concreta de `divergencia-de-rechazo-entre-proveedores` y evidencia para `gemini-no-rechaza-nombrar-figuras-publicas`. Refuerza la distinción de `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`, sobre `identificacion-de-figuras-publicas-ya-existia`. Se deriva de tratar la política de reconocimiento facial como variable de producto (`politica-de-face-recognition-como-variable-de-producto`).
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -63,3 +65,4 @@ Es una instancia concreta del patrón general de divergencia de rechazo entre pr
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - relates_to → [[identificar-no-es-reconocer-en-la-fuente]]
 - relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- derived_from → [[politica-de-face-recognition-como-variable-de-producto]]

@@ -9,17 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - ded7560510c137bc
 tags:
 - accesibilidad
 - aria
-- tooltips
 - frontend
+- tooltips
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -31,17 +31,16 @@ links:
 ---
 
 ## What it is
-La afirmación de que `aria-describedby` no basta por sí solo para hacer accesible un tooltip. El documento que la sostiene se titula «Fixing my tooltip accessibility mistake» y su extracto se limita a la frase «aria-describedby isn't always enough» [ded7560510c137bc]. No hay en la evidencia disponible ningún desarrollo del mecanismo alternativo, del error concreto ni del alcance de la insuficiencia.
+Formulación alternativa del mismo hallazgo: añadir `aria-describedby` a un tooltip no garantiza su accesibilidad. El corpus solo aporta la frase «aria-describedby isn't always enough» — source: ded7560510c137bc.
 
 ## Evidence
-- El título del documento es «Fixing my tooltip accessibility mistake» — source: ded7560510c137bc
-- El extracto afirma «aria-describedby isn't always enough» — source: ded7560510c137bc
-- El documento es de tipo rss con engagement=0 y sin métricas de interacción — source: ded7560510c137bc
+- «aria-describedby isn't always enough» — source: ded7560510c137bc
+- Documento único, tipo RSS, engagement=0 — source: ded7560510c137bc
 
 ## Why it matters
-Si la lección se confirmara, sería un recordatorio de que las soluciones ARIA de primera línea suelen requerir refuerzos (roles, gestión de foco o texto visible) para que un tooltip sea realmente accesible. Queda dentro del apartado de oficio de software engineering del topic, pero como está escrito no habilita ninguna decisión operativa: falta el caso, el fallo observado y la corrección aplicada.
+Registra la afirmación con el vocabulario del brief de accesibilidad de UI, para que la reconciliación posterior decida si se fusiona con [[aria-describedby-no-basta-para-tooltips-accesibles]] (mismo contenido, distinto título).
 
-Se relaciona con la nota ya existente sobre el mismo fallo sin detalle de mecanismo, que registra la misma laguna desde el ángulo del titular. La afirmación se apoya únicamente en el extracto de una línea del documento fuente, sin corroboración interna en el clúster.
+Solapa con [[aria-describedby-no-basta-para-tooltips-accesibles]]; se enlaza como `relates_to` en lugar de fusionarse en silencio para dejar constancia del solapamiento.
 
 ## Links
 - relates_to → [[aria-describedby-tooltip-sin-detalle-de-mecanismo]]

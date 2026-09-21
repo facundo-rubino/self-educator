@@ -10,20 +10,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 1bfe45ede61ee575
 tags:
 - corpus-truncado
+- ingesta
 - ingesta-truncada
 - matching-por-titulo
+- pipeline
 - rss
 - senal-debil
 - xml
 - xslt
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -42,20 +44,22 @@ links:
   type: derived_from
 - to: xslt-fuera-del-brief-de-agentes-y-liderazgo
   type: supports
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: supports
 ---
 
 ## What it is
-Todo el contenido sustantivo del documento es un título que plantea una pregunta —«Making XML human-readable without XSLT»— y una única frase, «JavaScript is right there». No hay mecanismo desarrollado, ni código, ni comparación con el stack XSLT. Cualquier afirmación sobre *cómo* se haría la sustitución tendría que importarse de conocimiento general, no del documento.
+El único contenido ingerido del documento [1bfe45ede61ee575] es su título «Making XML human-readable without XSLT» más la frase «JavaScript is right there.» No hay código, ejemplo, criterio de comparación ni desarrollo argumental. Cualquier afirmación sobre cómo JavaScript haría legible el XML sería una reconstrucción posterior del lector, no del texto.
 
 ## Evidence
-- El título enmarca el tema como hacer XML legible para humanos sin XSLT — source: 1bfe45ede61ee575
-- El único contenido de cuerpo es la aserción de cuatro palabras «JavaScript is right there» — source: 1bfe45ede61ee575
-- No hay código, benchmark, autor atribuido ni documento de corroboración en el clúster — source: 1bfe45ede61ee575
+- El documento se titula «Making XML human-readable without XSLT» y plantea el problema como alternativa a XSLT — source: 1bfe45ede61ee575
+- Todo el soporte ofrecido es la frase de una línea «JavaScript is right there», que propone JavaScript como herramienta — source: 1bfe45ede61ee575
+- El crítico señala que no hay detalle técnico, código ni criterios de comparación — source: 1bfe45ede61ee575
 
 ## Why it matters
-Compilar este documento como una técnica (parsear y re-serializar XML en JS en lugar de XSLT) sería escribir una nota cuyo contenido no proviene del documento. La nota correcta es la que registra la insuficiencia de la fuente, porque un lector del grafo que vea «técnica de XML sin XSLT» asumirá que existe evidencia detrás.
+Marca el modo de fallo de compilar sobre titulares: el título enuncia una postura («sin XSLT») y el fragmento de cuerpo solo la nombra. Un nodo escrito desde aquí afirmaría una mecánica de transformación XML que la fuente no expone.
 
-Se relaciona con `xml-human-readable-singleton-engagement-cero`: el mismo hecho de ser un singleton sin engagement es lo que deja el título sin desarrollo. Deriva de `argumento-ex-silentio-en-corpus-truncado`: inferir la técnica desde una línea es leer intención en un fragmento. Refuerza `xslt-fuera-del-brief-de-agentes-y-liderazgo`: si hubiera argumento, seguiría fuera de los ejes del brief de agentes, liderazgo y gestión.
+Se apoya en `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` (mismo patrón: se evalúa un clúster cuyo cuerpo no se recuperó) y refuerza `xslt-fuera-del-brief-de-agentes-y-liderazgo`. Se relaciona con `xml-human-readable-singleton-engagement-cero`, que describe el otro déficit del mismo clúster.
 
 ## Links
 - relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
@@ -65,3 +69,4 @@ Se relaciona con `xml-human-readable-singleton-engagement-cero`: el mismo hecho 
 - relates_to → [[xml-human-readable-singleton-engagement-cero]]
 - derived_from → [[argumento-ex-silentio-en-corpus-truncado]]
 - supports → [[xslt-fuera-del-brief-de-agentes-y-liderazgo]]
+- supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 105ea608324d14cd
 tags:
@@ -17,13 +17,15 @@ tags:
 - cuerpo-ausente
 - deuda-tecnica
 - evidence-quality
+- failed-extraction
 - ingesta
 - rss
 - senal-debil
+- stub
 - titular-sin-cuerpo
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -46,20 +48,22 @@ links:
   type: relates_to
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: supports
+- to: fix-like-no-one-s-watching-mantenimiento-sin-evidencia
+  type: relates_to
 ---
 
 ## What it is
-El clúster «Fix Like No One’s Watching» consiste en un único documento RSS del que solo se recuperaron el título y la línea «The other kind of technical debt.». No hay coste nombrado, ejemplo, mecanismo ni medición en el texto disponible.
+El clúster de la señal `sig-dc0abe755e14` contiene exactamente un ítem RSS titulado «Fix Like No One’s Watching» con el subtítulo «The other kind of technical debt». El cuerpo ingerido no aporta argumentos, ejemplos ni mediciones: lo disponible es únicamente el par título/subtítulo [105ea608324d14cd].
 
 ## Evidence
-- El clúster es un único documento RSS titulado «Fix Like No One’s Watching» con engagement=0 — source: 105ea608324d14cd
-- La única línea sustantiva suministrada es «The other kind of technical debt», que apunta a una definición no estándar de deuda técnica sin especificarla — source: 105ea608324d14cd
-- No aparecen ejemplos, mecanismos, mediciones ni prácticas nombradas en el texto suministrado — source: 105ea608324d14cd
+- El cluster contiene un solo documento, con engagement cero y novelty 0.00, por lo que no existe corroboración independiente dentro de la señal — source: 105ea608324d14cd
+- La única afirmación propia del documento es la existencia de «the other kind of technical debt», aseverada vía subtítulo y sin argumento de soporte presente en el texto ingerido — source: 105ea608324d14cd
+- La señal recibió relevance=0.33 y corroboration=0.50, por debajo del punto medio en ambos ejes — source: 105ea608324d14cd
 
 ## Why it matters
-Cualquier afirmación sobre el argumento real del artículo sería invención: el material no contiene proposición alguna que evaluar. El ítem no debe promoverse al brief ni citarse como hallazgo sin recuperar la pieza subyacente.
+Cualquier conclusión sobre el argumento del documento sería extrapolación, no análisis: lo único verificable es un título y un subtítulo. Tratar este clúster como hallazgo sobre disciplina de mantenimiento sería rellenar el cuerpo ausente con priors del analista.
 
-Refuerza el patrón de fallo de `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: aquí el pipeline evalúa un clúster cuyo cuerpo nunca llegó. Se relaciona con `deuda-tecnica-como-puente-lexico-al-brief` porque la frase «the other kind of technical debt» es un solapamiento léxico con el corpus, no un hallazgo derivado. Es un caso concreto de `single-document-cluster-engagement-cero-no-generaliza`: un documento único con engagement nulo no sostiene generalización.
+Es un caso directo del patrón `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: el pipeline evaluó y puntuó un clúster sin haber recuperado su cuerpo. También soporta `single-document-cluster-engagement-cero-no-generaliza`, porque aquí un solo documento con engagement cero no sostiene generalización alguna. Se relaciona con `fix-like-no-one-s-watching-mantenimiento-sin-evidencia`, que registra la pregunta abierta sobre el tema putativo del clúster.
 
 ## Links
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
@@ -71,3 +75,4 @@ Refuerza el patrón de fallo de `pipeline-no-recupera-cuerpo-antes-de-evaluar-cl
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - relates_to → [[deuda-tecnica-como-puente-lexico-al-brief]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
+- relates_to → [[fix-like-no-one-s-watching-mantenimiento-sin-evidencia]]

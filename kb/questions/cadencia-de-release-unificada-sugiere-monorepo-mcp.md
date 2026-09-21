@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -20,12 +20,13 @@ sources:
 - b9106690f5dfd849
 - ffbd76916d1dfdc5
 tags:
+- inferencia
 - mcp
 - monorepo
 - versionado
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -34,21 +35,30 @@ links:
   type: relates_to
 - to: mcp-roster-de-paquetes-varia-entre-releases
   type: derived_from
+- to: mcp-servers-sin-changelog-legible
+  type: derived_from
+- to: mcp-roster-de-paquetes-varia-entre-releases
+  type: supports
+- to: mcp-release-stubs-como-artefacto-de-feed
+  type: relates_to
 ---
 
 ## What it is
-Las releases de MCP servers comparten una versión-fecha única entre paquetes, de 2025.11.25 a 2026.8.31. El reporte sugiere leer esto como una cadencia de release coordinada estilo monorepo, donde todos los paquetes modificados comparten una misma versión-fecha. La evidencia disponible no permite confirmar la mecánica.
+Una sola etiqueta de release agrupa varios paquetes MCP con versiones coordinadas durante aproximadamente nueve meses, lo que es compatible con un monorepo o con un pipeline de publicación unificado [16a4e3995d6c827e] [30a26335a9988ba2] [5a4df6bef0a4905f]. La inferencia es plausible pero no está confirmada por ningún documento: los releases no declaran estructura de repositorio ni política de versionado conjunta.
 
 ## Evidence
-- Los paquetes listados en cada release comparten la versión-fecha (p. ej. «at 2025.11.25», «at that version» en 2026.8.31) — source: 16a4e3995d6c827e / 30a26335a9988ba2
-- El reporte plantea «The recurring version-unified releases suggest a coordinated monorepo-style release cadence» — source: sig-d0acf338c3a6
-- El reporte admite que la ausencia/presencia de paquetes podría reflejar «monorepo release mechanics or RSS truncation» — source: sig-d0acf338c3a6
+- El mismo tag de release agrupa varios paquetes con versiones coordinadas — source: 30a26335a9988ba2, 9750590bbfe6b285
+- El patrón se repite desde v2026.1.14 hasta v2026.8.31 con subconjuntos rotativos de paquetes — source: 5a4df6bef0a4905f, b9106690f5dfd849, ffbd76916d1dfdc5
+- Ningún documento del clúster declara si los paquetes comparten repositorio — source: 16a4e3995d6c827e
 
 ## Why it matters
-Si la cadencia es monorepo, entonces la fecha compartida no aporta información sobre cambios individuales y refuerza la lectura de las notas como salida mecánica de build. Queda abierto: ninguna fuente primaria (repo, CI, changelog) está en el corpus para verificarlo.
+La hipótesis importa porque un monorepo y un conjunto de repos independientes tienen implicancias distintas para versionado, compatibilidad y costo de mantenimiento — justo el eje que el brief pide observar. Pero mientras la estructura no se confirme con fuente primaria, la pregunta queda abierta y no debe alimentar una recomendación.
 
-Se relaciona con `mcp-servers-versionado-por-fecha` (misma observación de versionado date-versioned) y deriva de `mcp-roster-de-paquetes-varia-entre-releases`: la variación del roster es lo que la hipótesis de monorepo intenta explicar.
+`mcp-servers-sin-changelog-legible` es la razón por la que hay que inferir la estructura en lugar de leerla. `mcp-roster-de-paquetes-varia-entre-releases` aporta el patrón estructural que sostiene la hipótesis. `mcp-release-stubs-como-artefacto-de-feed` advierte que, incluso si la hipótesis fuera cierta, seguiría sin haber material sobre práctica de ingeniería.
 
 ## Links
 - relates_to → [[mcp-servers-versionado-por-fecha]]
 - derived_from → [[mcp-roster-de-paquetes-varia-entre-releases]]
+- derived_from → [[mcp-servers-sin-changelog-legible]]
+- supports → [[mcp-roster-de-paquetes-varia-entre-releases]]
+- relates_to → [[mcp-release-stubs-como-artefacto-de-feed]]

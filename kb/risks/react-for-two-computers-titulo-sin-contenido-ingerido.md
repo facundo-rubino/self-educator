@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - dec9f3cc9a87f904
 - sig-fade19e1d50a
@@ -18,11 +18,13 @@ tags:
 - evidencia-ausente
 - falso-positivo
 - ingesta
+- ingesta-truncada
 - react
 - rss
+- senal-no-sostenida
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -55,23 +57,26 @@ links:
   type: derived_from
 - to: react-for-two-computers-etiqueta-react-sin-evidencia-de-practica
   type: relates_to
+- to: documento-unico-como-base-de-afirmacion-de-estandar
+  type: supports
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: supports
+- to: afirmar-constraint-de-diseno-desde-solo-titulo-rss
+  type: supports
 ---
 
 ## What it is
-
-El clúster sobre «React for Two Computers» consiste en un único ítem RSS [dec9f3cc9a87f904] cuyo cuerpo se limita a la frase «Two things, one origin.». No hay desarrollo de argumentos técnicos, ni sobre React, ni sobre agentes de IA, liderazgo técnico, productividad o enseñanza.
+El único contenido ingerido del documento [dec9f3cc9a87f904] es el título «React for Two Computers» seguido del fragmento «Two things, one origin.». No hay elaboración, ejemplos ni argumento. Es un artefacto de feed RSS, no un cuerpo de texto del que extraer claims.
 
 ## Evidence
-
-- El clúster contiene un solo documento, un ítem RSS titulado «React for Two Computers» — source: dec9f3cc9a87f904
-- El cuerpo del documento se limita a la frase «Two things, one origin.», sin desarrollo de argumentos sobre agentes de IA, liderazgo técnico, productividad o enseñanza — source: dec9f3cc9a87f904
-- El documento tiene engagement=0, lo que sugiere nula interacción o difusión registrada — source: dec9f3cc9a87f904
+- El contenido entero del documento es el título «React for Two Computers» más el fragmento «Two things, one origin.», sin desarrollo posterior. — source: dec9f3cc9a87f904
+- El ítem es una ingesta RSS con engagement=0: no hay lectura ni interacción observada asociada. — source: dec9f3cc9a87f904
+- El propio analista concede que el documento «states no claims about React, no claims about AI agents, and no claims about teaching, estimation, sequencing, scope, or personal organization». — source: dec9f3cc9a87f904
 
 ## Why it matters
+Construir cualquier hallazgo sobre React, agentes, liderazgo técnico o productividad a partir de este documento exigiría inferir de memoria un ensayo externo, no leer el artefacto. La acción correcta del pipeline es reingestar el texto completo del origen o descartar el clúster; reportar sobre el fragmento fabrica señal donde solo hay truncamiento.
 
-No existe material citable que sostenga ninguna afirmación sobre el contenido del documento. Cualquier tesis sobre arquitecturas duales, separación servidor/cliente o prácticas de un dev que enseña sería una inferencia sin respaldo textual. El ítem es un caso de ingesta cuyo cuerpo no fue recuperado antes de la evaluación del clúster.
-
-Se apoya en el riesgo de pipeline de que los clústeres RSS se evalúan sin cuerpo recuperado (`pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`) y en el riesgo de generalizar desde un clúster de un solo documento (`generalizacion-desde-cluster-de-un-solo-documento`). Es el mismo patrón observado en otros títulos React del corpus («The Two Reacts», «Static as a Server»): título sin contenido. Está ligado al clúster original de corroboración (`react-for-two-computers-cluster-de-uno-sin-corroboracion`) y a su carácter periférico al brief (`react-for-two-computers-periferico-al-tema-de-agentes`).
+Se relaciona con `react-for-two-computers-cluster-de-uno-sin-corroboracion` (el clúster es un único documento sin corroboración) y con `react-for-two-computers-periferico-al-tema-de-agentes` (aun leído como ensayo del modelo servidor/cliente, sería craft, no agentes). Es un caso concreto que apoya `documento-unico-como-base-de-afirmacion-de-estandar` y `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: el pipeline puntúa clústeres cuyo cuerpo nunca recuperó. También sostiene `afirmar-constraint-de-diseno-desde-solo-titulo-rss` como instancia del modo de fallo «título RSS sin cuerpo». La etiqueta React de `react-for-two-computers-etiqueta-react-sin-evidencia-de-practica` es consecuencia directa de esta ausencia.
 
 ## Links
 - relates_to → [[afirmacion-de-mecanica-css-desde-solo-titulo-rss]]
@@ -88,3 +93,6 @@ Se apoya en el riesgo de pipeline de que los clústeres RSS se evalúan sin cuer
 - supports → [[react-for-two-computers-periferico-al-tema-de-agentes]]
 - derived_from → [[argumento-ex-silentio-en-corpus-truncado]]
 - relates_to → [[react-for-two-computers-etiqueta-react-sin-evidencia-de-practica]]
+- supports → [[documento-unico-como-base-de-afirmacion-de-estandar]]
+- supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- supports → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]

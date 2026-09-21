@@ -9,12 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - abf61eeec75462f9
 tags:
 - agentes
+- claude-code
 - control-de-agentes
+- evidencia
 - inferencia
 - leak
 - riesgo
@@ -22,7 +24,7 @@ tags:
 - system-prompt
 base_confidence: 0.15
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -37,19 +39,21 @@ links:
   type: relates_to
 - to: claude-code-source-leak-conditions-parts-unspecified
   type: relates_to
+- to: leak-sin-autenticidad-establecida
+  type: relates_to
 ---
 
 ## What it is
-Del hecho de que un system prompt se ensamble de partes no se sigue que el control del comportamiento del agente resida en esa composición. El salto de «se ensambla condicionalmente» a «así se controla al agente» no está respaldado por la evidencia del clúster. Es una inferencia plausible pero no demostrada.
+Que el control del agente consista en la composición de secciones condicionales del system prompt es una inferencia plausible, pero no está demostrada por la evidencia disponible. El cluster aporta una aserción de una línea sin fragmentos citados ni disparadores nombrados.
 
 ## Evidence
-- El reporte afirma que el system prompt se ensambla de docenas de partes condicionales, sin detallar el mecanismo de control asociado — source: abf61eeec75462f9
-- El leak de Claude Code no especifica condiciones, partes ni secuenciación — source: abf61eeec75462f9
+- La única evidencia del cluster es una aserción de una línea sobre ensamblado condicional, sin fragmentos de prompt citados ni disparadores condicionales nombrados — source: abf61eeec75462f9
+- El ítem es un singleton RSS con engagement=0: no existe documento corroborante dentro de la señal — source: abf61eeec75462f9
 
 ## Why it matters
-Evita diseñar agentes propios copiando una arquitectura cuya función real se desconoce. La modularidad puede ser mantenimiento, caching, o experimentación A/B, no control semántico del comportamiento. Tratar la composición como mecanismo de control sin evidencia lleva a invertir esfuerzo en la dimensión equivocada.
+Presentar la composición condicional como el mecanismo de control del agente sería convertir un patrón plausible en un hecho verificado. Ese salto es el tipo de error que desorienta a estudiantes sobre qué está documentado y qué fue inferido. La decisión operativa debería apoyarse en el patrón, no en el framing de «fuente filtrada».
 
-Se relaciona con `claude-code-system-prompt-conditional-composition` como la afirmación de la que se infiere de más, con `claude-code-source-leak-conditions-parts-unspecified` por la falta de detalle mecánico, y con `sobre-generalizacion-desde-claude-code` como caso concreto de ese riesgo.
+Cuelga directamente del concepto sobre el ensamblado condicional del prompt de Claude Code y refuerza el riesgo de sobre-generalizar el diseño de Claude Code a agentes propios. Se relaciona también con el riesgo general de que un leak sin autenticidad establecida no confirme lo que dice, y con el de que la modularidad de prompts sea plausible pero no verificable.
 
 ## Links
 - derived_from → [[claude-code-system-prompt-conditional-composition]]
@@ -57,3 +61,4 @@ Se relaciona con `claude-code-system-prompt-conditional-composition` como la afi
 - relates_to → [[sobre-generalizacion-desde-claude-code]]
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[claude-code-source-leak-conditions-parts-unspecified]]
+- relates_to → [[leak-sin-autenticidad-establecida]]

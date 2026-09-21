@@ -9,36 +9,39 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-21'
 sources:
 - 0715b80a63a796ad
 tags:
-- wittgenstein
-- lenguaje
 - epistemologia
 - filosofia
+- lenguaje
+- wittgenstein
 base_confidence: 0.35
 half_life_days: 180
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
 links:
 - to: cita-como-epigrafe-no-es-evidencia-de-practica
   type: relates_to
+- to: a-chain-reaction-cita-sin-argumento-desarrollado
+  type: derived_from
 ---
 
 ## What it is
-La afirmación de Wittgenstein «The limits of my language mean the limits of my world» sostiene que el vocabulario y la gramática disponibles delimitan lo que un hablante puede articular, y por tanto experimentar o pensar como tal. Es una tesis filosófica sobre la relación lenguaje-mundo, no una teoría sobre toolchains ni sobre equipos de software en esta evidencia.
+Tesis según la cual los límites del lenguaje de una persona marcan los límites de su mundo: aquello que no puede formularse con los recursos lingüísticos disponibles queda fuera del espacio de lo pensable y, por extensión, de lo gestionable o enseñable.
 
 ## Evidence
-- El documento [0715b80a63a796ad], titulado «A Chain Reaction», cita el aforismo «The limits of my language mean the limits of my world» de Wittgenstein — source: 0715b80a63a796ad.
-- No hay en el clúster desarrollo posterior del aforismo; es el contenido íntegro visible del documento — source: 0715b80a63a796ad.
+- El documento afirma que «los límites de mi lenguaje significan los límites de mi mundo», tesis sobre cómo el lenguaje y las herramientas condicionan la cognición y la práctica — source: 0715b80a63a796ad
+- El título «A Chain Reaction» es el único contenido sustantivo además de la frase citada, sin desarrollo posterior ni datos de soporte — source: 0715b80a63a796ad
 
 ## Why it matters
-Registrar la tesis como concepto filosófico permite referenciarla si en el futuro aparece material que la conecte con naming, vocabulario compartido de equipo o diseño de prompts. Por ahora queda como idea aislada con confianza baja: la única fuente es una cita, sin fuente primaria de Wittgenstein ni argumentación que la desarrolle.
+Es el ancla conceptual que cualquier extensión aplicada (herramientas como «lenguaje» del dev, vocabulario compartido de un equipo) tendría que presuponer. Sin cuerpo argumental ingerido, la tesis permanece como aforismo: sirve como marco, no como hallazgo operativo.
 
-Se relaciona con «cita-como-epigrafe-no-es-evidencia-de-practica»: este concepto documenta la tesis en sí, mientras esa nota advierte contra usarla como evidencia técnica. No se enlaza con «prompt modular sin mecánica verificable» porque el vínculo entre el aforismo y la composición de prompts no está respaldado por el texto ingerido.
+Se deriva del ensayo «A Chain Reaction», cuyo único contenido recuperable es la cita. Es la nota madre de la que cuelgan las lecturas aplicadas al brief, ninguna de ellas sostenida por evidencia en este clúster.
 
 ## Links
 - relates_to → [[cita-como-epigrafe-no-es-evidencia-de-practica]]
+- derived_from → [[a-chain-reaction-cita-sin-argumento-desarrollado]]

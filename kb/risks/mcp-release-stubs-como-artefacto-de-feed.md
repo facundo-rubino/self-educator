@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -22,12 +22,14 @@ sources:
 tags:
 - clustering
 - falso-positivo
+- falsos-positivos
 - mcp
 - pipeline
 - relevancia
+- ruido
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -46,20 +48,27 @@ links:
   type: supports
 - to: mcp-roster-de-paquetes-varia-entre-releases
   type: relates_to
+- to: mcp-release-bumps-no-revelan-practica-de-ingenieria
+  type: derived_from
+- to: mcp-servers-sin-changelog-legible
+  type: supports
+- to: cadencia-de-release-unificada-sugiere-monorepo-mcp
+  type: relates_to
 ---
 
 ## What it is
-El clúster completo está formado por notas de release RSS desnudas de paquetes MCP versionados, sin narrativa, changelog ni análisis. Frente al brief —agentes de IA para programar, enseñar y liderar equipos— la diferencia es categórica, no un solapamiento léxico: no hay ninguna lección extraíble sobre coding asistido, liderazgo técnico o docencia.
+Las ocho fuentes del clúster son notas de release autogeneradas de la suite de MCP servers (filesystem, everything, memory, sequential-thinking, git, time, fetch): cada documento lista nombres de paquete y versiones alineadas con el tag del título, sin narrativa, metodología ni claim alguno [16a4e3995d6c827e] [2221814efbefaa3b] [30a26335a9988ba2] [5a4df6bef0a4905f] [748f8b0a02cd7524] [9750590bbfe6b285] [b9106690f5dfd849] [ffbd76916d1dfdc5]. El clúster entra al brief porque el token «agents» matchea el tema de agentes de IA, no porque los documentos digan algo sobre cómo un dev lidera, gestiona o enseña. Es un falso positivo de recuperación, no un hallazgo.
 
 ## Evidence
-- Los ocho documentos del clúster son listas de paquetes versionados sin desarrollo argumental — source: 16a4e3995d6c827e / 2221814efbefaa3b / 30a26335a9988ba2 / 5a4df6bef0a4905f / 748f8b0a02cd7524 / 9750590bbfe6b285 / b9106690f5dfd849 / ffbd76916d1dfdc5
-- El reporte clasifica el mismatch brief/clúster como «the dominant finding» — source: sig-d0acf338c3a6
-- engagement=0 en todos los ítems del clúster — source: sig-d0acf338c3a6
+- Cada documento repite la misma plantilla: tag de release más lista paquete/versión — source: 16a4e3995d6c827e, 2221814efbefaa3b, 30a26335a9988ba2, 5a4df6bef0a4905f, 748f8b0a02cd7524, 9750590bbfe6b285, b9106690f5dfd849, ffbd76916d1dfdc5
+- El release más reciente (v2026.8.31) vuelve a listar solo nombres y versiones, sin texto descriptivo ni instruccional — source: 30a26335a9988ba2
+- Subconjuntos distintos de paquetes rotan por la misma plantilla (filesystem, time, fetch, git / everything, memory, time / everything, filesystem, sequential-thinking, memory) — source: 5a4df6bef0a4905f, b9106690f5dfd849, ffbd76916d1dfdc5
+- La relevancia 0.33 y novedad 0.00 del clúster son consistentes con la lectura de ruido, no con señal temática — source: 30a26335a9988ba2
 
 ## Why it matters
-Marca el clúster como falso positivo del pipeline: la summarización downstream no debe extraer lecciones sobre el brief de estos documentos. Como señal de inventario, el corpus solo puede leerse como débil («everything» y «filesystem» recurren más que el resto), sin valor para decisiones de agentes o liderazgo.
+Consumir este clúster como evidencia del brief produce claims inventados sobre práctica de ingeniería a partir de metadata de versiones. Si el pipeline necesita señal sobre agentes de IA aplicados al trabajo de ingeniería, debe recuperarla de documentos con narrativa o evaluación, no de feeds de release autogenerados. La lección operativa: filtrar por forma del documento (¿tiene prosa argumental?) antes de puntuar relevancia temática.
 
-Se relaciona con `cluster-heterogeneo-como-vertedero-de-firehose` (clúster sin campo semántico común con el tema) y apoya a `mismatch-query-tema-por-vocabulario-generico-de-infraestructura`: el vocabulario de infraestructura admite ítems fuera del tema. También conecta con `mcp-roster-de-paquetes-varia-entre-releases`, el único contenido factual que el clúster ofrece.
+`mcp-release-bumps-no-revelan-practica-de-ingenieria` es la regla general de la que este clúster es instancia; este note la fundamenta con ocho documentos en vez de uno. `mcp-servers-sin-changelog-legible` explica por qué los stubs no tienen contenido extraíble: el feed no publica rationale. `mismatch-query-tema-por-vocabulario-generico-de-infraestructura` describe el mecanismo de recuperación que produjo el falso positivo. La conexión con `cadencia-de-release-unificada-sugiere-monorepo-mcp` es temática: ambas observan el mismo patrón de release sin poder leer práctica de ingeniería detrás.
 
 ## Links
 - derived_from → [[mcp-servers-versionado-por-fecha]]
@@ -69,3 +78,6 @@ Se relaciona con `cluster-heterogeneo-como-vertedero-de-firehose` (clúster sin 
 - relates_to → [[cluster-heterogeneo-como-vertedero-de-firehose]]
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
 - relates_to → [[mcp-roster-de-paquetes-varia-entre-releases]]
+- derived_from → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]
+- supports → [[mcp-servers-sin-changelog-legible]]
+- relates_to → [[cadencia-de-release-unificada-sugiere-monorepo-mcp]]

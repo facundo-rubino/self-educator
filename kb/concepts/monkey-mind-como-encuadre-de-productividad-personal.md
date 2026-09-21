@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -17,13 +17,14 @@ tags:
 - attention-management
 - encuadre
 - framing
+- monkey-mind
 - personal-productivity
 - productividad
 - productivity
 - self-management
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -36,21 +37,25 @@ links:
   type: relates_to
 - to: efectividad-de-ai-coach-no-demostrada
   type: relates_to
+- to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: relates_to
 ---
 
 ## What it is
-El propósito declarado del AI coach del documento es «tame» la «monkey mind» del autor: una meta de autogestión personal, no de coordinación de equipo ni de docencia. El encuadre ubica el proyecto en productividad individual, no en liderazgo técnico.
+«Monkey mind» es el encuadre que el autor da a su propio problema de atención/dispersión, y el motivo declarado para construir un AI coach. El término nombra un pain point subjetivo de autogestión, no un fenómeno organizacional ni una métrica de productividad.
 
 ## Evidence
-- El propósito declarado del AI coach es ayudar a «tame» la «monkey mind» del autor, es decir una meta personal de autogestión y no una meta de equipo o de enseñanza — source: 49140f9d5133d3c7
+- El propósito declarado del AI coach es ayudar al autor a gestionar su propia «monkey mind» — source: 49140f9d5133d3c7
+- El cluster tiene un solo documento, sin fuente corroborante dentro de la señal — source: 49140f9d5133d3c7
 
 ## Why it matters
-Si este encuadre generaliza, el uso más accesible de agentes LLM para un dev que lidera y enseña es la augmentation personal (captura de ideas, recordatorios, interfaces de voz) antes que el tooling de equipo. Eso posiciona estos builds como oficio y experimentación personal, no como práctica transferible a estimación, secuenciamiento o coordinación.
+Un encuadre de autogestión personal no es evidencia sobre estimación, secuenciamiento, alcance ni liderazgo de equipos. Mapearlo a los ejes del brief requeriría un puente que la fuente no ofrece: el término es vocabulario de productividad individual, no de práctica de ingeniería ni de liderazgo técnico.
 
-Se relaciona con `stack-de-ai-coach-voz-a-voz`: el encuadre explica por qué existe el stack. Se relaciona con `efectividad-de-ai-coach-no-demostrada`: el documento declara la intención pero no mide si la atención mejoró.
+Se relaciona con `stack-de-ai-coach-voz-a-voz` porque el stack se construyó para este pain point. Se relaciona con `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion` como otro caso del mismo modo de fallo: leer más alcance del que la fuente sostiene.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[deuda-tecnica-como-puente-lexico-al-brief]]
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[efectividad-de-ai-coach-no-demostrada]]
+- relates_to → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]

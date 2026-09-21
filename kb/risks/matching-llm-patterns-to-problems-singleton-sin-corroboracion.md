@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 0248fdb60811e91e
 tags:
-- engagement
 - corroboracion
+- engagement
+- pipeline
 - senal-debil
+- singleton
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -29,21 +31,27 @@ links:
   type: relates_to
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: supports
+- to: how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido
+  type: supports
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: relates_to
 ---
 
 ## What it is
-El clúster que sostiene cualquier afirmación sobre «How to Match LLM Patterns to Problems» contiene exactamente un documento, con engagement=0 en la fuente RSS. Sin corroboración interna, sin validación externa registrada y sin cuerpo recuperado, no hay forma de distinguir una idea útil de un post de relleno. Cualquier confidence alta sobre el contenido del post sería infundada.
+El clúster se compone de un único documento RSS con engagement 0 [0248fdb60811e91e]. No hay segundo documento en el clúster que permita corroborar ninguna afirmación, y las métricas de engagement disponibles son autodescripción del pipeline de agregación, no corroboración externa [0248fdb60811e91e].
 
 ## Evidence
-- «El único documento del cluster tiene engagement=0 en la fuente RSS, es decir, sin señal de audiencia o validación externa registrada» — source: 0248fdb60811e91e
-- Las métricas del clúster son novelty=0.00, corroboration=0.50 y relevance=0.33 (baja) — source: 0248fdb60811e91e
+- Engagement registrado para el documento: 0 — source: 0248fdb60811e91e
+- El clúster consiste en un único documento RSS — source: 0248fdb60811e91e
 
 ## Why it matters
-Con estas métricas, el contenido probablemente ya está cubierto en la KB acumulativa: su valor estaría en categorizar, no en descubrir. Tratar este singleton como fuente de un framework nuevo introduciría material no corroborado en el grafo. La decisión correcta es mantenerlo marcado como señal débil hasta que aparezca una fuente independiente o se ingiera el cuerpo completo.
+Un singleton con tracción nula no sostiene generalización sobre cómo se emparejan patrones de LLM con problemas. Sirve como registro de que el tema existe, no como evidencia de práctica.
 
-Se relaciona con `how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido`, que documenta el fallo de ingesta sobre el mismo documento. Comparte forma con `functional-html-singleton-engagement-cero`, otro caso de singleton RSS sin señal. Es evidencia de apoyo para `single-document-cluster-engagement-cero-no-generaliza`, que generaliza el patrón.
+`supports` la nota sobre el título sin contenido ingerido: sin cuerpo, la única métrica disponible es el engagement, y es cero. `relates_to` la nota general sobre singletons con engagement cero que no generalizan: mismo patrón estructural, distinto documento.
 
 ## Links
 - relates_to → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
 - relates_to → [[functional-html-singleton-engagement-cero]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
+- supports → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
+- relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]

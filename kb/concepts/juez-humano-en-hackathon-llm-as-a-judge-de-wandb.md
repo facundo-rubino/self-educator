@@ -9,20 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - d2a0c86ca8027978
 tags:
+- evaluacion
 - evaluacion-llm
 - evento
 - hackathon
+- llm-as-a-judge
 - llm-evaluation
 - rss
 - wandb
 - weave
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -45,21 +47,22 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo
   type: relates_to
+- to: juez-humano-como-rol-sin-contenido-metodologico
+  type: derived_from
 ---
 
 ## What it is
-Documento único de RSS titulado «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge», con engagement=0. Su único contenido es la afirmación en primera persona de que el autor fue juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases. No incluye rúbrica, herramientas, métodos ni resultados [d2a0c86ca8027978].
+Entrada RSS que registra la participación de una persona como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases. El contenido documentado se reduce a esa frase de rol; no desarrolla metodología de evaluación ni criterios.
 
 ## Evidence
-- El clúster completo es un solo documento, titulado «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge», de fuente RSS con engagement=0 — source: d2a0c86ca8027978
-- El único contenido del documento es la aserción de que el autor fue juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases — source: d2a0c86ca8027978
-- El documento ubica la actividad como «LLM-as-a-Judge», es decir, uso de LLMs como evaluadores, lo que lo sitúa en el dominio de evaluación de LLM y no en el de agentes de IA para programar/gestionar/enseñar — source: d2a0c86ca8027978
-- No aparecen afirmaciones sobre estimación, secuenciamiento, alcance, organización personal, liderazgo de equipo, docencia ni técnica de estudio en el material — source: d2a0c86ca8027978
+- El único documento del clúster es una entrada RSS titulada «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge» — source: d2a0c86ca8027978
+- El contenido se limita a la frase «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon» — source: d2a0c86ca8027978
+- La entrada tiene engagement=0 y novelty=0.00 según los metadatos del clúster — source: d2a0c86ca8027978
 
 ## Why it matters
-El documento es una etiqueta de categoría («juez de hackathon») sin datos: no sostiene ninguna afirmación sobre metodología de evaluación, diseño de agentes ni pedagogía. La conclusión honesta es que el clúster es delgado —un solo doc de baja señal, cero corroboración interna, cero novedad— y su adyacencia temática (evaluación de LLM) no se solapa con los ejes del brief. La implicación operativa es no promoverlo como hallazgo y marcarlo como artefacto de enrutamiento del pipeline.
+Registra que existe una práctica de juzgar humanamente evaluaciones LLM en un evento de W&B. Como artefacto de rol y no de contenido, no habilita inferencias sobre cómo se juzga ni sobre transferibilidad al brief.
 
-Se relaciona con `afirmacion-de-capacidad-desde-fragmento-de-una-linea`: es el mismo modo de fallo, extraer capacidad o práctica desde una línea de framing. Se relaciona con `evento-como-evidencia-de-practica-tecnica`: un evento narrado no es evidencia de práctica técnica. Se relaciona con `task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo`: ambas notas delimitan qué evidencia de evaluación de LLM es y no es utilizable para el brief.
+`derived_from` del riesgo sobre ausencia de contenido metodológico. `relates_to` con las notas sobre familias de tarea en evals LLM, que cubren evaluación pero desde otro corpus.
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
@@ -71,3 +74,4 @@ Se relaciona con `afirmacion-de-capacidad-desde-fragmento-de-una-linea`: es el m
 - supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - relates_to → [[evento-como-evidencia-de-practica-tecnica]]
 - relates_to → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
+- derived_from → [[juez-humano-como-rol-sin-contenido-metodologico]]

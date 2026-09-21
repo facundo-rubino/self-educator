@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-21'
 sources:
 - 0248fdb60811e91e
 tags:
-- llm-patterns
-- validacion
 - corroboracion
+- evidencia-ausente
+- llm-patterns
+- taxonomia
+- validacion
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -27,21 +29,23 @@ links:
   type: derived_from
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: relates_to
+- to: documento-unico-como-base-de-afirmacion-de-estandar
+  type: relates_to
 ---
 
 ## What it is
-Un solo documento sin engagement no permite evaluar si la distinción externo/interno y datos/no-datos es completa o útil. Sin corroboración ni casos reales, los bordes de la taxonomía —qué cae dentro y qué fuera de cada categoría— quedan sin definir.
+La dicotomía externo/interno y la dicotomía datos/no-datos se enuncian en el título y en el resumen del ítem RSS, sin que el clúster aporte fuentes adicionales que las corroboren ni casos que las pongan a prueba [0248fdb60811e91e]. En consecuencia, no está establecido que la taxonomía sea exhaustiva, mutuamente excluyente o útil en la práctica [0248fdb60811e91e].
 
 ## Evidence
-- El documento proviene de una fuente RSS y no registra engagement — source: 0248fdb60811e91e
-- El clúster contiene un único documento, relevancia 0.33 y novedad 0.00 — source: 0248fdb60811e91e
-- El documento no aborda liderazgo técnico, estimación, secuenciamiento ni docencia; cualquier inferencia sobre esos ejes sería forzada — source: 0248fdb60811e91e
+- La distinción se enuncia en el documento sin corroboración en fuentes adicionales del clúster — source: 0248fdb60811e91e
+- Clúster de un solo documento con engagement 0 — source: 0248fdb60811e91e
 
 ## Why it matters
-Usar esta taxonomía como criterio de selección sin validarla puede llevar a elegir patrones de LLM por una clasificación no comprobada. El riesgo no es tanto la taxonomía en sí, sino tratarla como hallazgo validado cuando la evidencia es un post sin engagement.
+Cualquier uso de esta taxonomía para decidir arquitectura o adopción opera sobre categorías no validadas. Un modelo de decisión construido encima hereda esa falta de validación.
 
-Deriva directamente de `taxonomia-dos-ejes-llm-externo-interno-datos`. Se relaciona con `single-document-cluster-engagement-cero-no-generaliza`: mismo patrón de fallo (un clúster de uno no sostiene generalización).
+`derived_from` la nota que registra la taxonomía. `relates_to` la nota sobre un documento único que no sostiene la afirmación de un estándar: es el mismo modo de fallo — inferir exhaustividad o estatus de una única fuente sin corroboración.
 
 ## Links
 - derived_from → [[taxonomia-dos-ejes-llm-externo-interno-datos]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
+- relates_to → [[documento-unico-como-base-de-afirmacion-de-estandar]]

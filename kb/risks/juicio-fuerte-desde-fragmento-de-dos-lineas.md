@@ -10,17 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-21'
 sources:
+- 0248fdb60811e91e
 - db20384eecad29c2
 tags:
-- matching-por-titulo
-- falsos-positivos
-- pipeline
 - calibracion
+- falsos-positivos
+- matching
+- matching-por-titulo
+- metodo
+- pipeline
+- sobreinterpretacion
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -33,23 +37,28 @@ links:
   type: relates_to
 - to: confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido
   type: relates_to
+- to: promesa-de-mapeo-problema-patron-sin-cuerpo-no-sostenida
+  type: derived_from
+- to: juicio-fuerte-desde-fragmento-de-dos-lineas
+  type: relates_to
 ---
 
 ## What it is
-El clúster de «Coping with Feedback» [db20384eecad29c2] fue marcado por su título y obtuvo relevance=0.00, engagement=0, y corroboración/velocity de 0.50. El caso es un falso positivo del filtro determinista o del embedding con nombre propio: el título capta el match, el cuerpo no contiene claim alguno. La implicación declarada por el analista es que la etapa de matching debería ponderar el cuerpo por encima del título [db20384eecad29c2].
+El clúster produce una observación negativa correcta —utilidad mínima— a partir de un resumen de pocas líneas sobre un título [0248fdb60811e91e]. El crítico señala que esa observación es casi tautológica dado el material descrito y que la inferencia positiva de utilidad no sobrevive [0248fdb60811e91e].
 
 ## Evidence
-- El documento fue flagged principalmente por su título, con relevance=0.00 y sin claim extraíble en el cuerpo — source: db20384eecad29c2
-- El documento tiene engagement=0 — source: db20384eecad29c2
-- El analista concluye que el filtro debería ponderar cuerpo sobre título — source: db20384eecad29c2
+- El crítico califica el clúster como débil y ajusta la confianza a 0.12 — source: 0248fdb60811e91e
+- La base de evidencia es un único ítem RSS sin datos, casos ni métricas — source: 0248fdb60811e91e
 
 ## Why it matters
-Registrar el modo de fallo permite tratarlo como señal estructural del pipeline y no como hallazgo temático. El critic advierte además que «relevance=0.00 no es un dato neutro, es una señal explícita» [db20384eecad29c2]; ignorarla y forzar un claim temático sería la fabricación que el brief prohíbe.
+Marca el nivel máximo de afirmación admisible aquí: una evaluación negativa de baja confianza, no un hallazgo positivo. Cualquier nota que eleve esto a conclusión metodológica está sobreinterpretando el fragmento.
 
-Se relaciona con «clustering-por-embedding-produce-falsos-positivos» por compartir el mecanismo de match superficial. Se relaciona con «mismatch-query-tema-por-vocabulario-generico-de-infraestructura» porque aquí el match proviene igualmente de vocabulario superficial. Se relaciona con «relevancia-no-es-verdad» porque el título relevante no valida afirmación alguna. Se relaciona con «confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido» por el mismo patrón: puntuar alto un hallazgo por ausencia.
+`derived_from` la nota sobre la promesa sin cuerpo: el juicio fuerte sólo puede formularse sobre la ausencia, no sobre el contenido. `relates_to` la nota homóloga sobre colapsar fragmentos de dos líneas a juicios fuertes: mismo patrón de fallo del matching por título.
 
 ## Links
 - relates_to → [[clustering-por-embedding-produce-falsos-positivos]]
 - relates_to → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
 - relates_to → [[relevancia-no-es-verdad]]
 - relates_to → [[confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido]]
+- derived_from → [[promesa-de-mapeo-problema-patron-sin-cuerpo-no-sostenida]]
+- relates_to → [[juicio-fuerte-desde-fragmento-de-dos-lineas]]

@@ -9,14 +9,16 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-21'
 sources:
 - 49140f9d5133d3c7
 tags:
 - agentes
 - ai-agents
+- ai-coach
 - arquitectura
 - integration
+- llm
 - personal-productivity
 - stack
 - telefonia
@@ -24,7 +26,7 @@ tags:
 - voz
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-21'
 provenance:
   scale: XL
   query: null
@@ -40,15 +42,15 @@ links:
 ---
 
 ## What it is
-Un AI coach personal se compone de cuatro piezas: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. El documento lo describe como un build propio, sin detallar arquitectura, integración entre piezas ni elección de proveedores.
+Un AI coach personal construido sobre cuatro piezas apiladas: speech-to-text para entrada de voz, un LLM como motor de conversación, text-to-speech para salida hablada, y un número de teléfono virtual como canal. Es un ensamblado de APIs, no un sistema de agentes con diseño propio.
 
 ## Evidence
-- El documento describe la construcción de un AI coach compuesto por speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El documento describe un AI coach que usa speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-El stack es la superficie de integración mínima para un asistente por voz: telefonía como canal de entrada/salida y STT/TTS/LLM como procesamiento. Lo aprovechable aquí es el ejercicio de integración (aprender los límites de cada API y su encadenamiento), no un producto reutilizable ni una metodología. Un dev que lidera y enseña puede tratar este tipo de build como práctica de oficio acotada.
+Muestra que el umbral para construir un asistente conversacional personal es hoy bajo: cuatro servicios encadenados bastan para un prototipo funcional. No dice nada sobre si funciona ni sobre arquitectura de agentes, así que sirve como punto de partida arquitectónico, no como recomendación.
 
-Se relaciona con `monkey-mind-como-encuadre-de-productividad-personal`: el stack es el medio, el encuadre es el fin declarado. Se relaciona con `efectividad-de-ai-coach-no-demostrada`: el stack no viene acompañado de evaluación. Se relaciona con `privacidad-y-costo-en-asistentes-de-voz-continuos`: un canal telefónico permanente abre esas preguntas incluso en un build personal.
+Se relaciona con `monkey-mind-como-encuadre-de-productividad-personal` porque el stack existe para atacar ese pain point, y con `privacidad-y-costo-en-asistentes-de-voz-continuos` porque la fuente no discute ninguno de esos dos ejes.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
