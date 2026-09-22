@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - bc47e7115f9ba8d0
 tags:
@@ -24,9 +24,10 @@ tags:
 - oficio
 - pragmatismo
 - refactorizacion
+- trade-offs
 base_confidence: 0.1
 half_life_days: 365
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -51,18 +52,23 @@ links:
   type: relates_to
 - to: llms-malos-para-vibing-specifications-buenos-como-multiplicadores
   type: relates_to
+- to: sueltalo-clean-code-sin-mencion-al-brief
+  type: relates_to
+- to: generalizar-desde-goodbye-clean-code-sin-corroboracion
+  type: relates_to
 ---
 
 ## What it is
-El subtítulo «Let clean code guide you. Then let it go.» encuadra la práctica de clean code como guía provisional que se supera, no como estándar absoluto. Es la única afirmación de contenido que el ítem [bc47e7115f9ba8d0] permite citar; no hay cuerpo que desarrolle el criterio de cuándo soltarlo.
+La única aserción sustantiva del documento es un aforismo de dos frases: dejar que clean code guíe y después soltarlo. No se especifica situación, mecanismo ni umbral; es una heurística condicionada, no una regla, y el documento no declara cuál es la condición.
 
 ## Evidence
-- El teaser «Let clean code guide you. Then let it go.» presenta el clean code como guía provisional a superar, no como estándar absoluto — source: bc47e7115f9ba8d0
+- El contenido entero del documento es la indicación de dejar que clean code guíe y luego soltarlo — source: bc47e7115f9ba8d0
+- No hay ejemplo concreto, técnica, métrica ni caso de estudio sobre agentes de IA, estimación, liderazgo de equipo, oficio o técnicas de estudio — source: bc47e7115f9ba8d0
 
 ## Why it matters
-Plantea una heurística condicionada: la regla sirve mientras mejora legibilidad y cambio, y se abandona cuando su coste de estimación y secuenciación excede el beneficio. Sin el argumento del ensayo, la condición de disparo (¿qué evidencia autoriza a soltar la regla?) queda como pregunta abierta, no como doctrina.
+Si se lee como norma condicionada, es compatible con la idea de que las normas de craft son heurísticas y no absolutos, lo que importa a quien lidera y enseña y debe balancear refactor con alcance y fechas. Pero el documento no demuestra ese trade-off: la lectura pragmática la aporta el revisor, no la fuente, y por eso no puede sostener ninguna recomendación por sí sola.
 
-Se relaciona con `complejidad-esencial-vs-accidental-brooks` en tanto la disciplina de estilo aborda lo accidental, no lo esencial. Se relaciona con `llms-malos-para-vibing-specifications-buenos-como-multiplicadores` porque ambas tratan cuándo la pureza formal cede ante el resultado. Marca `contradicts` con `ensayo-goodbye-clean-code-sin-cuerpo-recorrido` en el sentido de que esta nota extrae una tesis del subtítulo mientras esa nota documenta la ausencia de cuerpo citable; el reconcile debe decidir si el subtítulo sostiene o no la heurística.
+Se relaciona con `complejidad-esencial-vs-accidental-brooks` porque ambas tratan el craft como algo que se aplica con criterio y no como dogma. Se relaciona con `tagline-let-it-go-ambiguo` porque «let it go» admite al menos dos lecturas opuestas («no sobre-ingenierizar» vs. «clean code está obsoleto») y el clúster no permite elegir. Se relaciona con `sueltalo-clean-code-sin-mencion-al-brief` porque el clúster no menciona ningún eje del brief. Se relaciona con `generalizar-desde-goodbye-clean-code-sin-corroboracion` porque cualquier uso prescriptivo choca con la ausencia de corroboración.
 
 ## Links
 - derived_from → [[ensayo-goodbye-clean-code-sin-cuerpo-recuperado]]
@@ -75,3 +81,5 @@ Se relaciona con `complejidad-esencial-vs-accidental-brooks` en tanto la discipl
 - contradicts → [[ensayo-goodbye-clean-code-sin-cuerpo-recorrido]]
 - relates_to → [[complejidad-esencial-vs-accidental-brooks]]
 - relates_to → [[llms-malos-para-vibing-specifications-buenos-como-multiplicadores]]
+- relates_to → [[sueltalo-clean-code-sin-mencion-al-brief]]
+- relates_to → [[generalizar-desde-goodbye-clean-code-sin-corroboracion]]

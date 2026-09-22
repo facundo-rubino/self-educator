@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 0248fdb60811e91e
 tags:
-- relevancia
+- agentes
 - brief
-- ruido
+- docencia
+- relevancia
+- relevancia-baja
 - rss
+- ruido
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -28,20 +31,33 @@ links:
   type: derived_from
 - to: relevancia-tematica-baja-no-es-ruido
   type: contradicts
+- to: matching-llm-patterns-relevancia-baja-sin-ejes-del-topic
+  type: relates_to
+- to: how-to-match-llm-patterns-to-problems-titulo-sin-contenido
+  type: relates_to
+- to: relevancia-no-es-verdad
+  type: supports
+- to: relevancia-tematica-baja-no-es-ruido
+  type: relates_to
 ---
 
 ## What it is
-El clúster no contiene evidencia sobre docencia de programación, liderazgo técnico de equipos chicos, estimación, secuenciamiento, alcance, organización personal, oficio de software engineering, productividad ni técnicas de estudio [0248fdb60811e91e]. El único solapamiento con el brief es léxico: la línea «agentes de IA aplicados a programar» comparte vocabulario con «LLM patterns», sin vínculo sustantivo demostrado [0248fdb60811e91e].
+El clúster «How to Match LLM Patterns to Problems» no articula ninguno de los ejes operativos del brief (agentes de IA aplicados a programar, gestionar o enseñar; liderazgo técnico de equipos chicos; oficio de software engineering; productividad). El propio informe lo sitúa como un artículo de diseño general de sistemas LLM, con relevance=0.33.
 
 ## Evidence
-- El documento no contiene evidencia sobre docencia de programación, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, productividad ni técnicas de estudio — source: 0248fdb60811e91e
-- Engagement registrado: 0 — source: 0248fdb60811e91e
+- Relevance del clúster = 0.33; el informe lo clasifica como match débil al tema de agentes de IA para coding/docencia/liderazgo — source: 0248fdb60811e91e
+- El informe advierte que «the article may be about general LLM system design rather than the dev-educator-leader workflow» — source: 0248fdb60811e91e
+- Como consecuencia, «the cluster offers at most a framing … but no evidence that this framing improves any of those activities» — source: 0248fdb60811e91e
 
 ## Why it matters
-Este clúster no debe priorizarse sobre otros con scores más altos de relevancia o novedad. Si el objetivo del brief es producir hallazgos accionables, aquí no hay ninguno: hace falta recolectar documentos con datos, casos o marcos aplicables.
+Si se decidiera incorporar la distinción externo/interno a un currículo o a un flujo de trabajo, sería por plausibilidad genérica de la etiqueta, no porque la evidencia la conecte con el trabajo del dev que lidera y enseña. La baja relevancia no la convierte en ruido absoluto, pero sí impide usarla como base de decisión.
 
-`derived_from` la nota sobre el título sin contenido ingerido: el juicio de irrelevancia se apoya en que no hay cuerpo que pueda cubrir los ejes. `contradicts` la nota que sostiene que relevancia temática baja no equivale a ruido: este caso concreto es un contraejemplo potencial a esa regla general — relevancia baja más ausencia de cuerpo más engagement cero sí producen ruido aquí, y el conflicto entre regla y caso queda registrado, no resuelto.
+Es el gemelo de encuadre de matching-llm-patterns-relevancia-baja-sin-ejes-del-topic (mismo clúster, otra formulación) y comparte clúster con how-to-match-llm-patterns-to-problems-titulo-sin-contenido. Se apoya en relevancia-no-es-verdad: que el clúster sea temáticamente pertinente no valida ninguna afirmación suya. Se relaciona con relevancia-tematica-baja-no-es-ruido, que matiza que baja relevancia no equivale a ausencia total de señal.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
 - contradicts → [[relevancia-tematica-baja-no-es-ruido]]
+- relates_to → [[matching-llm-patterns-relevancia-baja-sin-ejes-del-topic]]
+- relates_to → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido]]
+- supports → [[relevancia-no-es-verdad]]
+- relates_to → [[relevancia-tematica-baja-no-es-ruido]]

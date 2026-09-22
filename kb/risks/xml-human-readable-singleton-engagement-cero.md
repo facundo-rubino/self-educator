@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 1bfe45ede61ee575
 tags:
@@ -23,7 +23,7 @@ tags:
 - xslt
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -44,20 +44,21 @@ links:
   type: derived_from
 - to: relevancia-no-es-verdad
   type: relates_to
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: supports
 ---
 
 ## What it is
-El clúster se compone de un solo documento [1bfe45ede61ee575], con engagement nulo y novelty=0.00 (relevance=0.33, corroboration=0.50). Sin segunda fuente independiente, la observación no puede sostener una regularidad; como máximo registra la preferencia de un autor.
+El clúster tiene un solo documento [1bfe45ede61ee575], con engagement=0, novelty=0.00 y corroboration=0.50 sin segunda fuente. Tratarlo como regla de arquitectura o de enseñanza sería generalizar desde un único caso sin validación.
 
 ## Evidence
-- Un único documento en el clúster — source: 1bfe45ede61ee575
-- Scores: relevance=0.33, novelty=0.00, corroboration=0.50, velocity=0.50, surprise=0.50 — source: 1bfe45ede61ee575
-- El crítico lo declara WEAK con confianza ajustada 0.05 — source: 1bfe45ede61ee575
+- El clúster está compuesto por un solo documento, un post RSS con engagement=0 titulado «Making XML human-readable without XSLT» — source: 1bfe45ede61ee575
+- El signal tiene novelty=0.00, corroboration=0.50 y engagement=0, sin segunda fuente que lo valide — source: 1bfe45ede61ee575
 
 ## Why it matters
-Un patrón sobre elección de tecnología de transformación no puede derivarse de aquí. La utilidad del ítem es negativa para el brief: ocupa cupo de compilación sin aportar señal sobre agentes de IA, liderazgo técnico ni docencia.
+El valor del documento es ilustrativo, no prescriptivo. No debería convertirse en estándar de equipo sin validación propia, y la corroboración 0.50 no es validación independiente.
 
-Instancia concreta de `single-document-cluster-engagement-cero-no-generaliza`. Se relaciona con `relevancia-no-es-verdad`: que el tema sea pertinente al oficio no lo hace verdadero. Comparte clúster con `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`.
+Se relaciona con el riesgo de título sin cuerpo del mismo documento (`xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`). Es un caso de apoyo para `single-document-cluster-engagement-cero-no-generaliza` y para `generalizacion-desde-cluster-de-un-solo-documento`: refuerza el patrón de que un clúster de uno con engagement cero no sostiene generalización.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
@@ -68,3 +69,4 @@ Instancia concreta de `single-document-cluster-engagement-cero-no-generaliza`. S
 - derived_from → [[single-document-cluster-engagement-cero-no-generaliza]]
 - derived_from → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[relevancia-no-es-verdad]]
+- supports → [[generalizacion-desde-cluster-de-un-solo-documento]]

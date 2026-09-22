@@ -10,18 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 105ea608324d14cd
 tags:
 - ambiguedad-lexica
 - deuda-tecnica
+- evidencia-ausente
 - fuente-unica
 - interpretacion
 - sobreinterpretacion
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -36,19 +37,23 @@ links:
   type: derived_from
 - to: fix-like-no-one-s-watching-argumento-sin-corroboracion
   type: relates_to
+- to: afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases
+  type: relates_to
+- to: sobre-generalizacion-desde-claude-code
+  type: relates_to
 ---
 
 ## What it is
-La frase «the other kind of technical debt» aparece solo como subtítulo, sin desarrollo ingerido que fije su referente [105ea608324d14cd]. El abanico de lecturas posibles —desde deuda de proceso hasta consejos de limpieza de código— no está zanjado por el texto disponible.
+El subtítulo «The other kind of technical debt» nombra una categoría pero no la define, no la ejemplifica y no la contrasta con la deuda técnica convencional. El texto ingerido no contiene la distinción.
 
 ## Evidence
-- El documento enmarca su propia claim como la existencia de «the other kind of technical debt», aseverada vía subtítulo sin argumento de soporte en el texto ingerido — source: 105ea608324d14cd
-- El clúster es de un solo documento, engagement cero, novelty 0.00, sin corroboración independiente — source: 105ea608324d14cd
+- El subtítulo introduce la noción de «otro tipo de deuda técnica» sin desarrollarla — source: 105ea608324d14cd
+- No hay cuerpo, secciones ni citas que especifiquen qué tipo de deuda sería esa — source: 105ea608324d14cd
 
 ## Why it matters
-Fijar una definición concreta (por ejemplo «deuda de proceso informa» o «deuda latente de código») requeriría importar conocimiento externo sobre qué significa convencionalmente la frase. El resultado honesto es dejar la ambigüedad registrada en lugar de sobreescribirla.
+El sintagma es lo bastante sugerente como para tentar una tesis (deuda de atención, de mantenimiento, de motivación). Sostener cualquiera de ellas desde el subtítulo produciría una afirmación no respaldada por el documento.
 
-Derivada de `fix-like-no-one-s-watching-titulo-sin-contenido-ingerido`: es ese mismo material sin cuerpo leído por su eje semántico. Soporta `deuda-tecnica-como-puente-lexico-al-brief`, porque el puente al brief aquí es puramente léxico, no contenido. Se relaciona con `fix-like-no-one-s-watching-argumento-sin-corroboracion`, que cubre la falta de corroboración del argumento.
+Depende de la nota de título sin contenido porque sin cuerpo no hay definición posible. Se relaciona con los modos de fallo ya registrados sobre afirmar práctica o diseño desde material ingerido incompleto.
 
 ## Links
 - supports → [[deuda-tecnica-como-puente-lexico-al-brief]]
@@ -56,3 +61,5 @@ Derivada de `fix-like-no-one-s-watching-titulo-sin-contenido-ingerido`: es ese m
 - relates_to → [[relevancia-no-es-verdad]]
 - derived_from → [[fix-like-no-one-s-watching-titulo-sin-contenido-ingerido]]
 - relates_to → [[fix-like-no-one-s-watching-argumento-sin-corroboracion]]
+- relates_to → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]
+- relates_to → [[sobre-generalizacion-desde-claude-code]]

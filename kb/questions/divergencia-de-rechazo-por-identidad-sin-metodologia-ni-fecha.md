@@ -9,15 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-22'
 sources:
 - 19cb8032958cd964
 tags:
 - evidencia-ausente
+- fuente-unica
+- metodologia
 - multimodal
+- verificabilidad
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -26,20 +29,26 @@ links:
   type: derived_from
 - to: hy3-fuente-primaria-y-metodologia-ausentes
   type: relates_to
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: supports
+- to: divergencia-de-rechazo-por-identidad-sin-metodologia-ni-fecha
+  type: relates_to
 ---
 
 ## What it is
-La aserción de divergencia entre ChatGPT, Claude y Gemini no especifica cuándo se observó, en qué producto (API vs. consumer), en qué región ni con qué prompt. Las políticas de proveedor cambian con frecuencia y en silencio; la conducta declarada podría ya estar obsoleta o ser dependiente de rollout.
+El ítem que reporta la divergencia no incluye metodología, protocolo de prueba, fechas ni versiones de modelo, lo que impide cualquier verificación o replicación (19cb8032958cd964).
 
 ## Evidence
-- El documento no cita fecha, versión ni endpoint — source: 19cb8032958cd964
-- El análisis del reporte señala que la conducta puede estar stale o depender de región, tier y API vs. producto consumer — source: 19cb8032958cd964
+- Ausencia de metodología, protocolo, fecha y versión en la fuente — source: 19cb8032958cd964
+- Corroboración 0.50 y velocity 0.50 no constituyen confirmación independiente — source: 19cb8032958cd964
 
 ## Why it matters
-Sin anclaje temporal ni de producto, la afirmación no es replicable ni accionable. Cualquier decisión de adopción (p. ej. elegir Gemini para una demo de aula) sería prematura.
+Sin estos datos, la observación no se puede situar en el tiempo ni atribuir a una configuración concreta, de modo que no sirve como base de decisión. El clúster entero debe quedar pendiente de verificación contra documentación primaria del proveedor o pruebas reproducibles.
 
-Se deriva de la nota de divergencia: la ausencia de metodología es la razón por la que esa nota queda en confianza baja. Comparte con la nota de Hy3 el patrón de fuente sin primaria ni método.
+Es la cara de verificabilidad de la nota de divergencia por proveedor y respalda la conclusión de que la observación no debe incorporarse a currículo ni tooling. Se refuerza con el riesgo ya registrado de que la divergencia de rechazo por identidad no viene con metodología ni fecha.
 
 ## Links
 - derived_from → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[hy3-fuente-primaria-y-metodologia-ausentes]]
+- supports → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[divergencia-de-rechazo-por-identidad-sin-metodologia-ni-fecha]]

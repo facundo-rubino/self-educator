@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - dec9f3cc9a87f904
 - sig-fade19e1d50a
@@ -24,7 +24,7 @@ tags:
 - senal-no-sostenida
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -63,20 +63,21 @@ links:
   type: supports
 - to: afirmar-constraint-de-diseno-desde-solo-titulo-rss
   type: supports
+- to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
+  type: supports
 ---
 
 ## What it is
-El único contenido ingerido del documento [dec9f3cc9a87f904] es el título «React for Two Computers» seguido del fragmento «Two things, one origin.». No hay elaboración, ejemplos ni argumento. Es un artefacto de feed RSS, no un cuerpo de texto del que extraer claims.
+El documento dec9f3cc9a87f904 es un ítem RSS titulado «React for Two Computers» cuyo único cuerpo textual capturado es la frase «Two things, one origin.». No hay artículo, autor, argumento ni contenido verificable en el documento. El título sugiere contenido ya existente o reeditado, pero ningún desarrollo sustantivo fue ingerido.
 
 ## Evidence
-- El contenido entero del documento es el título «React for Two Computers» más el fragmento «Two things, one origin.», sin desarrollo posterior. — source: dec9f3cc9a87f904
-- El ítem es una ingesta RSS con engagement=0: no hay lectura ni interacción observada asociada. — source: dec9f3cc9a87f904
-- El propio analista concede que el documento «states no claims about React, no claims about AI agents, and no claims about teaching, estimation, sequencing, scope, or personal organization». — source: dec9f3cc9a87f904
+- El título del documento es «React for Two Computers» y su cuerpo textual visible es únicamente «Two things, one origin.», sin desarrollo sustantivo — source: dec9f3cc9a87f904
+- El clúster contiene un solo documento proveniente de un feed RSS con engagement=0 — source: dec9f3cc9a87f904
 
 ## Why it matters
-Construir cualquier hallazgo sobre React, agentes, liderazgo técnico o productividad a partir de este documento exigiría inferir de memoria un ensayo externo, no leer el artefacto. La acción correcta del pipeline es reingestar el texto completo del origen o descartar el clúster; reportar sobre el fragmento fabrica señal donde solo hay truncamiento.
+Sin cuerpo ingerido no hay claim extraíble: cualquier afirmación sobre React, sobre la relación cliente-servidor que el título evoca, o sobre práctica de ingeniería sería invención. El único uso defendible de este documento es marcarlo como fallo de ingestión y reingestar el artículo completo o descartarlo.
 
-Se relaciona con `react-for-two-computers-cluster-de-uno-sin-corroboracion` (el clúster es un único documento sin corroboración) y con `react-for-two-computers-periferico-al-tema-de-agentes` (aun leído como ensayo del modelo servidor/cliente, sería craft, no agentes). Es un caso concreto que apoya `documento-unico-como-base-de-afirmacion-de-estandar` y `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: el pipeline puntúa clústeres cuyo cuerpo nunca recuperó. También sostiene `afirmar-constraint-de-diseno-desde-solo-titulo-rss` como instancia del modo de fallo «título RSS sin cuerpo». La etiqueta React de `react-for-two-computers-etiqueta-react-sin-evidencia-de-practica` es consecuencia directa de esta ausencia.
+Es un caso concreto del patrón de pipeline que evalúa clústeres RSS cuyo cuerpo nunca recuperó (pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss), y una instancia del riesgo sistémico de cobertura por ingesta truncada (ingesta-truncada-como-riesgo-sistemico-de-cobertura). Se relaciona con el juicio de que el clúster de un solo documento no sostiene generalización (react-for-two-computers-cluster-de-uno-sin-corroboracion) y con su relevancia periférica al tema de agentes (react-for-two-computers-periferico-al-tema-de-agentes).
 
 ## Links
 - relates_to → [[afirmacion-de-mecanica-css-desde-solo-titulo-rss]]
@@ -96,3 +97,4 @@ Se relaciona con `react-for-two-computers-cluster-de-uno-sin-corroboracion` (el 
 - supports → [[documento-unico-como-base-de-afirmacion-de-estandar]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - supports → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]
+- supports → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]

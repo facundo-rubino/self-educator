@@ -10,11 +10,12 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 105ea608324d14cd
 tags:
 - corroboracion
+- engagement
 - engagement-cero
 - fuente-unica
 - inferencia
@@ -22,7 +23,7 @@ tags:
 - single-source
 base_confidence: 0.88
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -39,19 +40,24 @@ links:
   type: supports
 - to: fix-like-no-one-s-watching-deuda-tecnica-ambigua
   type: relates_to
+- to: anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica
+  type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: relates_to
 ---
 
 ## What it is
-El clúster se apoya en exactamente un documento, un ítem RSS con engagement cero y novelty 0.00 [105ea608324d14cd]. No hay una segunda fuente dentro de la señal que corrobore ninguna afirmación.
+El clúster es un singleton: un único documento con engagement=0 y sin segunda fuente que lo discuta, cite o contradiga. No hay base para generalizar ninguna práctica de ingeniería a partir de él.
 
 ## Evidence
-- El cluster contiene un solo documento, con engagement cero y novelty 0.00, sin corroboración independiente dentro de la señal — source: 105ea608324d14cd
-- La señal recibió relevance=0.33 y corroboration=0.50, por debajo del punto medio en ambos ejes — source: 105ea608324d14cd
+- El clúster contiene un único documento (105ea608324d14cd) — source: 105ea608324d14cd
+- Engagement=0: sin señales de discusión o corroboración — source: 105ea608324d14cd
+- Corroboration=0.50 y novelty=0.00 en los scores del clúster — source: 105ea608324d14cd
 
 ## Why it matters
-Una fuente única sin corroboración no permite elevar ninguna afirmación del clúster al estatus de hallazgo. La ausencia de corroboración es en sí misma un dato sobre la calidad del clúster, no un vacío neutro.
+Un singleton de bajo engagement no es accionable: cualquier lección sobre disciplina de mantenimiento extraída de aquí dependería de una fuente no verificada. Debería depriorizarse o reingestarse con cuerpo completo antes de entrar en un informe sustantivo.
 
-Derivada de `fix-like-no-one-s-watching-titulo-sin-contenido-ingerido`, que establece la falta de cuerpo. Soporta `single-document-cluster-engagement-cero-no-generaliza`, instancia concreta de esa regla. Se relaciona con `fix-like-no-one-s-watching-deuda-tecnica-ambigua`, que cubre el otro modo de fallo de este mismo material.
+Depende de la nota de contenido ausente. Se relaciona con los patrones ya registrados sobre anécdotas de fuente única y sobre clústeres de un solo documento con engagement cero.
 
 ## Links
 - derived_from → [[single-document-cluster-engagement-cero-no-generaliza]]
@@ -60,3 +66,5 @@ Derivada de `fix-like-no-one-s-watching-titulo-sin-contenido-ingerido`, que esta
 - derived_from → [[fix-like-no-one-s-watching-titulo-sin-contenido-ingerido]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - relates_to → [[fix-like-no-one-s-watching-deuda-tecnica-ambigua]]
+- relates_to → [[anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica]]
+- relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]

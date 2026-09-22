@@ -9,18 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 0715b80a63a796ad
 tags:
 - a-chain-reaction
+- falsos-positivos
+- filtrado
 - fuera-de-topic
 - pipeline
 - relevancia-baja
 - senal-debil
+- topic
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -33,22 +36,35 @@ links:
   type: derived_from
 - to: relevancia-no-es-verdad
   type: relates_to
+- to: a-chain-reaction-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: aforismo-autocontenido-no-es-hallazgo
+  type: supports
+- to: relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista
+  type: relates_to
+- to: argumento-ex-silentio-en-corpus-truncado
+  type: relates_to
 ---
 
 ## What it is
-El clúster no menciona agentes de IA, gestión de equipos, estimación, docencia ni productividad; la relevancia medida es baja (0.33) y la novedad nula. El vínculo con el topic del brief es interpretativo, no explícito.
+El documento [0715b80a63a796ad] solo contiene el aforismo de Wittgenstein «The limits of my language mean the limits of my world» bajo el titular «A Chain Reaction». No menciona agentes de IA, programación, liderazgo de equipos, estimación, ingeniería de software, productividad ni técnicas de estudio. La única conexión con el topic es léxica («language»).
 
 ## Evidence
-- El clúster no aporta detalles operativos ni datos sobre agentes de IA, liderazgo técnico o docencia — source: 0715b80a63a796ad
-- El documento no menciona ninguno de los ejes del brief; el vínculo temático es analógico — source: 0715b80a63a796ad
+- El cuerpo entero del documento es un único aforismo: «The limits of my language mean the limits of my world» — source: 0715b80a63a796ad
+- El documento no menciona agentes de IA, programación, liderazgo de equipos, estimación, ingeniería de software, productividad ni técnicas de estudio — source: 0715b80a63a796ad
+- El documento se ingirió vía RSS con engagement cero — source: 0715b80a63a796ad
 
 ## Why it matters
-Marca este clúster como material de marco, no de hallazgo. Cualquier decisión de liderazgo técnico, diseño curricular o tooling tomada a partir de él sería un salto no soportado.
+El uso correcto de este documento es descartarlo como señal para el brief. La relevancia 0.33 asignada es un falso positivo de matching superficial; tratarlo como hallazgo produciría pseudo-conclusiones sobre agentes o liderazgo sin ninguna evidencia que las sostenga.
 
-Deriva de la nota sobre el ensayo sin argumento desarrollado. Se relaciona con el riesgo general de confundir relevancia temática con verdad o utilidad: el clúster es un recordatorio de que un tema puede ser interesante sin ser evidencia.
+Se apoya en «aforismo autocontenido no es hallazgo»: el documento no tiene contenido más allá de la cita. Se relaciona con el resto de riesgos sobre el mismo artefacto (título sin contenido ingerido, métricas autodescriptivas, truncamiento) porque todos describen distintos modos de fallo del mismo pipeline sobre el mismo documento.
 
 ## Links
 - derived_from → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
 - relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
 - derived_from → [[a-chain-reaction-cita-sin-argumento-desarrollado]]
 - relates_to → [[relevancia-no-es-verdad]]
+- relates_to → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
+- supports → [[aforismo-autocontenido-no-es-hallazgo]]
+- relates_to → [[relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista]]
+- relates_to → [[argumento-ex-silentio-en-corpus-truncado]]

@@ -10,17 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-22'
 sources:
 - e25736c4f44de11c
+- sig-a4e7799f5bb2
 tags:
-- critica
-- metodologia
 - ausencia-lexica
+- clustering
+- critica
+- crítica
 - falso-negativo
+- metodologia
+- pipeline
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -31,22 +35,28 @@ links:
   type: supports
 - to: humildad-epistemica-aforismo-sin-aplicacion-al-brief
   type: relates_to
+- to: things-i-dont-know-as-of-2018-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: humildad-epistemica-como-actitud-profesional
+  type: relates_to
 ---
 
 ## What it is
-El veredicto del crítico sobre este clúster es WEAK: la irrelevancia se sostiene sobre la lista de términos que el documento no menciona, no sobre una evaluación del contenido contra los objetivos del brief. La confianza se ajusta de 0.05 a 0.30.
+El crítico del pipeline marca como débil el razonamiento que descarta el clúster «Things I Don't Know as of 2018» por ausencia léxica respecto al brief: usar la falta de cobertura temática como prueba de que no hay nada que extraer es razonamiento circular. El descarte queda registrado como juicio disputado, no como conclusión cerrada.
 
 ## Evidence
-- El crítico argumenta que la afirmación descansa en ausencias léxicas, lo que constituye una base circular para declarar irrelevancia — source: e25736c4f44de11c
-- El crítico señala que relevance=0.33 y novelty=0.00 son cuantitativos pero sin contexto y no establecen que el documento sea sustancialmente vacío — source: e25736c4f44de11c
-- Veredicto: WEAK con confianza ajustada de 0.30 — source: e25736c4f44de11c
+- El crítico afirma que el argumento es circular: se cita la falta de cobertura temática del documento como prueba de su falta de valor — source: sig-a4e7799f5bb2
+- El crítico califica el caso como «lexical coincidence dressed as a research insight» y ajusta la confianza a 0.02 — source: sig-a4e7799f5bb2
+- Corroboración 0.50 y novedad 0.00 se usan como parte de la fundamentación del descarte — source: sig-a4e7799f5bb2
 
 ## Why it matters
-Si un ítem puede descartarse por no matchear un vocabulario predefinido, el mismo criterio puede descartar material válido formulado con otro léxico. La crítica es una advertencia sobre el modo de fallo del filtro, no solo sobre este documento.
+Si el descarte por ausencia léxica no es sostenible, el mismo criterio aplicado a otros clústeres del corpus podría estar eliminando señal real. La consecuencia operativa es que el filtro necesita distinguir entre «no hay cuerpo ingerido» (fallo de recuperación) y «el cuerpo existe pero no cubre el brief» (juicio temático legítimo).
 
-Deriva de `things-i-dont-know-as-of-2018-titulo-sin-contenido-ingerido` porque presupone que el cuerpo ingerido es un aforismo único. Apoya a `argumento-ex-silentio-en-corpus-truncado` al ser un caso concreto de razonamiento desde la ausencia. Se relaciona con `humildad-epistemica-aforismo-sin-aplicacion-al-brief` porque el crítico señala que si el brief valora la humildad epistémica, el documento podría ser relevante.
+Se relaciona con el riesgo de título sin contenido ingerido del mismo clúster: si el problema es de recuperación, el descarte por tema es prematuro. Refuerza el riesgo general de argumento ex silentio sobre corpus truncado.
 
 ## Links
 - derived_from → [[things-i-dont-know-as-of-2018-titulo-sin-contenido-ingerido]]
 - supports → [[argumento-ex-silentio-en-corpus-truncado]]
 - relates_to → [[humildad-epistemica-aforismo-sin-aplicacion-al-brief]]
+- relates_to → [[things-i-dont-know-as-of-2018-titulo-sin-contenido-ingerido]]
+- relates_to → [[humildad-epistemica-como-actitud-profesional]]

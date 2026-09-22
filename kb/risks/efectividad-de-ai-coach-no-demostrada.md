@@ -9,11 +9,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-18'
+updated: '2026-09-22'
 sources:
 - 49140f9d5133d3c7
 tags:
+- agentes
 - ai-coach
+- autogestion
 - efectividad
 - evaluation
 - evidence-quality
@@ -21,7 +23,7 @@ tags:
 - generalizacion
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -32,21 +34,27 @@ links:
   type: relates_to
 - to: privacidad-y-costo-en-asistentes-de-voz-continuos
   type: relates_to
+- to: hipotesis-de-coach-de-voz-como-accountability-de-equipo
+  type: contradicts
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: supports
 ---
 
 ## What it is
-El documento es un auto-reporte breve de un build personal, sin outcome, evaluación ni datos de fallo. Cualquier afirmación sobre si el coach mejora la atención o el trabajo queda sin verificar en este corpus.
+El documento describe la construcción del coach pero no reporta ningún outcome, evaluación o medición. Afirmar que el coach mejora el foco o el rendimiento de trabajo sería extrapolación no sostenida por la fuente.
 
 ## Evidence
-- El documento es una nota breve de proyecto, no evidencia sobre liderar equipos, estimación, secuenciamiento, enseñanza o técnica de estudio — source: 49140f9d5133d3c7
-- No hay outcome, evaluación ni datos de fallo presentes en el clúster — source: 49140f9d5133d3c7
+- El propósito declarado es gestionar la propia «monkey mind», sin resultado reportado — source: 49140f9d5133d3c7
+- El clúster es un único documento con engagement cero, sin corroboración y con el vínculo a liderazgo técnico ausente — source: 49140f9d5133d3c7
 
 ## Why it matters
-Un clúster de un solo documento con engagement=0 y novelty=0.00 es un puntero débil a un proyecto personal menor, no un hallazgo sustantivo. Tratar la mera existencia del build como evidencia de eficacia sería overfitting temático desde una mecánica ajena o auto-descripción del pipeline.
+Cualquier nota que afirme efectividad debe llevar confianza baja y no puede apoyarse en este documento. El valor del clúster es señalar una práctica posible, no validarla.
 
-Se relaciona con `stack-de-ai-coach-voz-a-voz` y con `monkey-mind-como-encuadre-de-productividad-personal`: ambos describen intención y medio, ninguno mide resultado. Se relaciona con `privacidad-y-costo-en-asistentes-de-voz-continuos`: incluso si la eficacia se demostrara, esas dimensiones seguirían abiertas.
+Se relaciona con el stack del AI coach, del que es la advertencia principal. Contradice la hipótesis del coach como accountability de equipo. Es un caso concreto del patrón general de no generalizar desde un clúster de un solo documento.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[monkey-mind-como-encuadre-de-productividad-personal]]
 - relates_to → [[privacidad-y-costo-en-asistentes-de-voz-continuos]]
+- contradicts → [[hipotesis-de-coach-de-voz-como-accountability-de-equipo]]
+- supports → [[generalizacion-desde-cluster-de-un-solo-documento]]

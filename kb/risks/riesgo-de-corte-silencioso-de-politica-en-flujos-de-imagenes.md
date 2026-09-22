@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 19cb8032958cd964
 tags:
-- riesgo-de-integracion
 - agentes
+- fragilidad
+- multimodal
 - politica-de-modelos
+- politica-de-proveedor
+- riesgo-de-integracion
 - versionado
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -33,22 +36,31 @@ links:
   type: relates_to
 - to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
   type: derived_from
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: relates_to
+- to: spike-por-proveedor-para-comportamiento-de-rechazo
+  type: relates_to
+- to: aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales
+  type: relates_to
 ---
 
 ## What it is
-Un flujo de agente que hoy procesa imágenes de personas puede dejar de funcionar cuando el proveedor ajuste su política de rechazo. El rechazo no depende del prompt ni del código: depende de una configuración del proveedor que puede cambiar en silencio entre versiones de modelo.
+Las capacidades y políticas de rechazo cambian con frecuencia: una observación verdadera en un momento puede ser falsa poco después (19cb8032958cd964). Cualquier flujo de agente que dependa de que un proveedor acepte o rechace contenido con personas es frágil por construcción.
 
 ## Evidence
-- «Si construyes flujos de agente que tocan imágenes de personas, la elección de modelo es una elección de política tanto como de capacidad: prompts idénticos tendrán éxito en un proveedor y serán rechazados en otro» — source: 19cb8032958cd964
-- «El comportamiento de rechazo es un riesgo de integración que debe probarse por proveedor y fijarse a versiones específicas de modelo, porque puede cambiar sin aviso» — source: 19cb8032958cd964
+- El propio informe advierte que capacidades y políticas cambian con frecuencia y que una observación puntual puede dejar de valer pronto — source: 19cb8032958cd964
+- El caso reportado carece de versión y fecha, lo que impide saber a qué configuración se refiere — source: 19cb8032958cd964
 
 ## Why it matters
-Para quien estima y secuencia trabajo con agentes, este riesgo exige: spike de rechazo por proveedor antes de comprometer la feature, criterios de aceptación dependientes del proveedor, y pinning a versión. No es un riesgo de capacidad del modelo sino de superficie de política.
+Un agente que hoy procesa capturas con caras puede dejar de hacerlo sin cambio de código, por una actualización de política del proveedor. Esto exige spike por proveedor y criterios de aceptación dependientes del proveedor antes de comprometer features multimodales.
 
-Se deriva de `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`. Refuerza `spike-por-proveedor-para-comportamiento-de-rechazo` y `aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales`. Es una instancia del problema general descrito en `impacto-de-corte-de-proveedor-en-flujos-de-coding-con-ia`: dependencia de un proveedor para una capacidad que puede desaparecer sin control propio.
+Depende de la distinción entre capacidad y política de rechazo: lo que cambia es la política, no necesariamente el modelo. Conecta con el patrón de spike por proveedor y con los criterios de aceptación dependientes de proveedor en features multimodales.
 
 ## Links
 - supports → [[spike-por-proveedor-para-comportamiento-de-rechazo]]
 - supports → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]
 - relates_to → [[impacto-de-corte-de-proveedor-en-flujos-de-coding-con-ia]]
 - derived_from → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- relates_to → [[spike-por-proveedor-para-comportamiento-de-rechazo]]
+- relates_to → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]

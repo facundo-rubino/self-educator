@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-22'
 sources:
 - 105ea608324d14cd
 tags:
+- brecha-de-evidencia
+- brief
+- docencia
 - mantenimiento
 - oficio
-- docencia
-- brief
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -31,22 +32,30 @@ links:
   type: relates_to
 - to: nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria
   type: relates_to
+- to: fix-like-no-one-s-watching-deuda-tecnica-ambigua
+  type: derived_from
+- to: mantenimiento-sigue-costoso-electron-app
+  type: relates_to
+- to: agentes-abatatan-ports-mantener-sigue-costoso
+  type: relates_to
 ---
 
 ## What it is
-Si la pieza subyacente sostuviera que los defectos pequeños no arreglados se acumulan en una clase de deuda distinta, tocaría el eje de oficio de software engineering —disciplina de mantenimiento y normas de revisión en equipos chicos—. El material actual no permite sostenerlo.
+El único anclaje temático del clúster al oficio de software engineering es la mención de «deuda técnica» en el subtítulo. El documento no aporta nada sobre prácticas de mantenimiento, calidad de código o disciplina de corrección.
 
 ## Evidence
-- El análisis sitúa el posible impacto en el hilo de «oficio de software engineering» solo de forma condicional: «if the underlying piece argues…» — source: 105ea608324d14cd
-- El mismo análisis advierte que el encuadre «fix while no one is watching» mapea a modelar hábitos de mantenimiento para contribuidores junior, pero lo marca como «again unverified pending the source text» — source: 105ea608324d14cd
-- No hay cuerpo ingerido que desarrolle ni la tesis de mantenimiento ni la de docencia — source: 105ea608324d14cd
+- El subtítulo menciona «technical debt» sin desarrollarla — source: 105ea608324d14cd
+- El material no aborda mantenimiento, calidad ni disciplina de corrección con contenido verificable — source: 105ea608324d14cd
 
 ## Why it matters
-La pregunta queda abierta y es la única conexión plausible de este ítem con el brief de liderazgo y docencia. Sin la pieza subyacente no puede responderse, y no debe resolverse por inferencia.
+Queda abierta la pregunta de si este artículo, con cuerpo completo, contendría una definición útil de deuda técnica no convencional. Hasta entonces no hay material para conectarlo con lo que el KB ya sabe sobre el coste de mantenimiento.
 
-Deriva de `fix-like-no-one-s-watching-titulo-sin-contenido-ingerido`: la ausencia de cuerpo es lo que deja la pregunta abierta. Se relaciona con `ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo`, porque aquí la desconexión con el brief también puede ser artefacto de la ingesta, no del tema. Recuerda a `nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria`: una etiqueta no es evidencia de práctica.
+Depende de la nota sobre la ambigüedad del subtítulo. Se relaciona con las notas existentes que sí tratan el mantenimiento como coste real, para marcar que aquí no hay todavía puente entre ambas.
 
 ## Links
 - derived_from → [[fix-like-no-one-s-watching-titulo-sin-contenido-ingerido]]
 - relates_to → [[ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo]]
 - relates_to → [[nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria]]
+- derived_from → [[fix-like-no-one-s-watching-deuda-tecnica-ambigua]]
+- relates_to → [[mantenimiento-sigue-costoso-electron-app]]
+- relates_to → [[agentes-abatatan-ports-mantener-sigue-costoso]]

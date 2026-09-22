@@ -9,21 +9,24 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - e25736c4f44de11c
+- sig-a4e7799f5bb2
 tags:
+- clustering
 - corpus
 - engagement-cero
 - ensayo-personal
 - ingesta
 - ingesta-truncada
 - laguna-de-corpus
+- pipeline
 - singleton-rss
 - titulo-sin-contenido
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -40,20 +43,24 @@ links:
   type: derived_from
 - to: afirmacion-de-novedad-sin-linea-base
   type: relates_to
+- to: things-i-dont-know-as-of-2018-descarte-por-ausencia-lexica
+  type: relates_to
+- to: aforismo-autocontenido-no-es-hallazgo
+  type: supports
 ---
 
 ## What it is
-El clúster de «Things I Don’t Know as of 2018» contiene un único documento RSS [e25736c4f44de11c] del que solo se dispone de título y de un aforismo aislado: que reconocer lagunas de conocimiento no devalúa la expertise [e25736c4f44de11c]. No hay cuerpo argumental, secciones, datos ni método ingeridos que desarrollen esa idea.
+El clúster «Things I Don't Know as of 2018» contiene un solo documento cuyo único contenido sustantivo es la aserción de que admitir lagunas de conocimiento no devalúa la expertise. No hay instancias, mecanismo ni contexto que la sostengan.
 
 ## Evidence
-- El documento se titula «Things I Don’t Know as of 2018», lo que lo establece como inventario personal de desconocimientos, no como estudio ni argumento — source: e25736c4f44de11c
-- La única afirmación extraíble es que las lagunas de conocimiento pueden reconocerse sin devaluar la expertise — source: e25736c4f44de11c
-- El clúster completo no contiene material sobre agentes de IA, liderazgo técnico, oficio de software ni productividad — source: e25736c4f44de11c
+- El clúster consta de un único documento de baja señal — source: sig-a4e7799f5bb2
+- La única aserción sustantiva es que admitir lagunas no devalúa la expertise, ofrecida como máxima general — source: sig-a4e7799f5bb2
+- No hay material sobre agentes de IA, liderazgo técnico, estimación, organización personal, oficio ni estudio — source: sig-a4e7799f5bb2
 
 ## Why it matters
-Cualquier nota que desarrolle esta idea más allá del aforismo estaría fabricando contenido que el corpus no ingirió. El valor del clúster se agota en documentar el modo de fallo, no en sostener una práctica.
+Una máxima general sin instancias no es una afirmación operativa: no dice cuándo, ante quién ni cuánto es seguro revelar una laguna. Tratar este documento como hallazgo sobre humildad epistémica duplicaría la nota existente y produciría razonamiento circular.
 
-Es un caso concreto del patrón de pipeline que evalúa clústeres RSS sin haber recuperado el cuerpo. Se relaciona con las notas sobre afirmar novedad sin línea base: aquí no hay ni siquiera base textual.
+Se relaciona con la nota de humildad epistémica ya existente, que cubre el mismo terreno conceptual con más contexto. Se apoya en el riesgo general de aforismo autocontenido no es hallazgo, aplicado aquí a una máxima sobre el desconocimiento propio.
 
 ## Links
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
@@ -62,3 +69,5 @@ Es un caso concreto del patrón de pipeline que evalúa clústeres RSS sin haber
 - relates_to → [[humildad-epistemica-como-actitud-profesional]]
 - derived_from → [[argumento-ex-silentio-en-corpus-truncado]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
+- relates_to → [[things-i-dont-know-as-of-2018-descarte-por-ausencia-lexica]]
+- supports → [[aforismo-autocontenido-no-es-hallazgo]]

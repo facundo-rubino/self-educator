@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 105ea608324d14cd
 tags:
@@ -17,15 +17,17 @@ tags:
 - cuerpo-ausente
 - deuda-tecnica
 - evidence-quality
+- evidencia-ausente
 - failed-extraction
 - ingesta
+- pipeline
 - rss
 - senal-debil
 - stub
 - titular-sin-cuerpo
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -50,20 +52,24 @@ links:
   type: supports
 - to: fix-like-no-one-s-watching-mantenimiento-sin-evidencia
   type: relates_to
+- to: fix-like-no-one-s-watching-argumento-sin-corroboracion
+  type: relates_to
+- to: fix-like-no-one-s-watching-deuda-tecnica-ambigua
+  type: relates_to
 ---
 
 ## What it is
-El clúster de la señal `sig-dc0abe755e14` contiene exactamente un ítem RSS titulado «Fix Like No One’s Watching» con el subtítulo «The other kind of technical debt». El cuerpo ingerido no aporta argumentos, ejemplos ni mediciones: lo disponible es únicamente el par título/subtítulo [105ea608324d14cd].
+El documento 105ea608324d14cd solo aporta dos fragmentos: el título «Fix Like No One’s Watching» y el subtítulo «The other kind of technical debt». No hay cuerpo, datos, autoría ni métricas; engagement=0. Nada del material permite reconstruir el argumento del artículo.
 
 ## Evidence
-- El cluster contiene un solo documento, con engagement cero y novelty 0.00, por lo que no existe corroboración independiente dentro de la señal — source: 105ea608324d14cd
-- La única afirmación propia del documento es la existencia de «the other kind of technical debt», aseverada vía subtítulo y sin argumento de soporte presente en el texto ingerido — source: 105ea608324d14cd
-- La señal recibió relevance=0.33 y corroboration=0.50, por debajo del punto medio en ambos ejes — source: 105ea608324d14cd
+- El documento se titula «Fix Like No One’s Watching» — source: 105ea608324d14cd
+- El subtítulo es «The other kind of technical debt», sin desarrollo en el texto disponible — source: 105ea608324d14cd
+- Procede de un feed RSS con engagement=0, sin discusión ni corroboración — source: 105ea608324d14cd
 
 ## Why it matters
-Cualquier conclusión sobre el argumento del documento sería extrapolación, no análisis: lo único verificable es un título y un subtítulo. Tratar este clúster como hallazgo sobre disciplina de mantenimiento sería rellenar el cuerpo ausente con priors del analista.
+Cualquier afirmación sobre qué es ese «otro tipo de deuda técnica» o sobre disciplina de mantenimiento sería invención, no compilación. La nota deja constancia del límite de la evidencia para que una reingesta con cuerpo completo pueda contrastarse contra ella.
 
-Es un caso directo del patrón `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: el pipeline evaluó y puntuó un clúster sin haber recuperado su cuerpo. También soporta `single-document-cluster-engagement-cero-no-generaliza`, porque aquí un solo documento con engagement cero no sostiene generalización alguna. Se relaciona con `fix-like-no-one-s-watching-mantenimiento-sin-evidencia`, que registra la pregunta abierta sobre el tema putativo del clúster.
+Se relaciona con las demás notas del clúster porque todas describen facetas del mismo vacío de contenido: la ausencia de corroboración, la ambigüedad del subtítulo y la falta de evidencia sobre mantenimiento como tema del oficio.
 
 ## Links
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
@@ -76,3 +82,5 @@ Es un caso directo del patrón `pipeline-no-recupera-cuerpo-antes-de-evaluar-clu
 - relates_to → [[deuda-tecnica-como-puente-lexico-al-brief]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - relates_to → [[fix-like-no-one-s-watching-mantenimiento-sin-evidencia]]
+- relates_to → [[fix-like-no-one-s-watching-argumento-sin-corroboracion]]
+- relates_to → [[fix-like-no-one-s-watching-deuda-tecnica-ambigua]]

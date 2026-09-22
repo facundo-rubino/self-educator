@@ -9,19 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 93963a5f93e58d05
 tags:
 - clustering
 - corroboracion
 - engagement
+- evals
 - metricas
+- novelty
 - pipeline
 - senal
+- singleton
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -40,19 +43,27 @@ links:
   type: supports
 - to: generalizacion-desde-cluster-de-un-solo-documento
   type: supports
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: relates_to
+- to: relevancia-no-es-verdad
+  type: relates_to
+- to: a-chain-reaction-metricas-no-son-evidencia-independiente
+  type: relates_to
 ---
 
 ## What it is
-El clúster contiene un único documento que proviene de RSS y registra engagement=0. La novedad reportada es 0.00 y la corroboración 0.50, coherente con un ítem sin apoyo cruzado.
+El clúster de «Task-Specific LLM Evals» consiste en un único documento rss con engagement=0, novelty=0.00 y corroboration=0.50. Un singleton sin engagement ni novedad no sostiene generalización sobre el estado de la práctica de evals.
 
 ## Evidence
-- El ítem proviene de la fuente RSS y registra engagement=0 — source: 93963a5f93e58d05
-- La novedad reportada para el clúster es 0.00 y la corroboración 0.50 — source: 93963a5f93e58d05
+- El cluster contiene un solo documento, un post rss con engagement=0 — source: 93963a5f93e58d05
+- La señal tiene novelty=0.00 y corroboration=0.50, lo que sugiere que no aporta información nueva y solo está parcialmente respaldada — source: 93963a5f93e58d05
 
 ## Why it matters
-La puntuación de corroboración de un singleton describe la forma del clúster, no confirma su contenido: no hay una segunda fuente independiente. Y novelty=0.00 indica que el pipeline no lo trata como información nueva sobre el topic; el caso razonable es clasificarlo como ruido de recuperación hasta que aparezca cuerpo o una segunda fuente.
+Con una sola fuente y novelty nula, este clúster no puede desplazar a fuentes más sustantivas del brief ni sostener afirmaciones del tipo «las evals útiles son específicas por tarea». Eso sería importar conocimiento previo y presentarlo como hallazgo del clúster.
 
-`relates_to` la nota sobre la ausencia de contenido ingerido. Se apoya en `a-chain-reaction-metricas-no-son-evidencia-independiente` —las métricas de un singleton son autodescripción del pipeline— y en `generalizacion-desde-cluster-de-un-solo-documento`.
+Instancia concreta de `generalizacion-desde-cluster-de-un-solo-documento`. Se apoya en `relevancia-no-es-verdad`: que el tema sea relevante no convierte al singleton en evidencia. Comparte estructura con `a-chain-reaction-metricas-no-son-evidencia-independiente`.
 
 ## Links
 - supports → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -62,3 +73,7 @@ La puntuación de corroboración de un singleton describe la forma del clúster,
 - relates_to → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
 - supports → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- relates_to → [[relevancia-no-es-verdad]]
+- relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]

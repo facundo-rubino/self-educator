@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 1bfe45ede61ee575
 tags:
@@ -25,7 +25,7 @@ tags:
 - xslt
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -46,20 +46,21 @@ links:
   type: supports
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: afirmar-constraint-de-diseno-desde-solo-titulo-rss
+  type: supports
 ---
 
 ## What it is
-El único contenido ingerido del documento [1bfe45ede61ee575] es su título «Making XML human-readable without XSLT» más la frase «JavaScript is right there.» No hay código, ejemplo, criterio de comparación ni desarrollo argumental. Cualquier afirmación sobre cómo JavaScript haría legible el XML sería una reconstrucción posterior del lector, no del texto.
+El documento [1bfe45ede61ee575] es un post RSS cuyo cuerpo se reduce a la frase «JavaScript is right there»; el título promete una receta («Making XML human-readable without XSLT») que el cuerpo no desarrolla. El clúster entero lo compone ese único documento, con engagement=0 y novelty=0.00.
 
 ## Evidence
-- El documento se titula «Making XML human-readable without XSLT» y plantea el problema como alternativa a XSLT — source: 1bfe45ede61ee575
-- Todo el soporte ofrecido es la frase de una línea «JavaScript is right there», que propone JavaScript como herramienta — source: 1bfe45ede61ee575
-- El crítico señala que no hay detalle técnico, código ni criterios de comparación — source: 1bfe45ede61ee575
+- El clúster está compuesto por un solo documento, un post RSS con engagement=0 titulado «Making XML human-readable without XSLT» — source: 1bfe45ede61ee575
+- El cuerpo del documento se limita a la frase «JavaScript is right there», sin desarrollo de la técnica ni ejemplos — source: 1bfe45ede61ee575
 
 ## Why it matters
-Marca el modo de fallo de compilar sobre titulares: el título enuncia una postura («sin XSLT») y el fragmento de cuerpo solo la nombra. Un nodo escrito desde aquí afirmaría una mecánica de transformación XML que la fuente no expone.
+Cualquier enunciado sobre qué problema resuelve, qué técnica propone o qué alternativas descarta es inferencia del título, no claim soportado. Compilar ese enunciado como hallazgo sobre ingeniería de software sería fabricar contenido a partir de un titular.
 
-Se apoya en `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` (mismo patrón: se evalúa un clúster cuyo cuerpo no se recuperó) y refuerza `xslt-fuera-del-brief-de-agentes-y-liderazgo`. Se relaciona con `xml-human-readable-singleton-engagement-cero`, que describe el otro déficit del mismo clúster.
+Se relaciona con el singleton sin engagement del mismo documento (`xml-human-readable-singleton-engagement-cero`). Es evidencia de apoyo para `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: aquí el pipeline evaluó un clúster cuyo cuerpo efectivamente no recuperó. Y es un caso de apoyo para `afirmar-constraint-de-diseno-desde-solo-titulo-rss`: el título sugiere un constraint de diseño (usar JS en lugar de XSLT) sin cuerpo que lo sostenga.
 
 ## Links
 - relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
@@ -70,3 +71,4 @@ Se apoya en `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` (mismo p
 - derived_from → [[argumento-ex-silentio-en-corpus-truncado]]
 - supports → [[xslt-fuera-del-brief-de-agentes-y-liderazgo]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- supports → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]

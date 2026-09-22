@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-22'
 sources:
 - bc47e7115f9ba8d0
 tags:
-- metricas
 - autodescripcion
+- corroboracion
 - evidencia
+- meta-evidencia
+- metricas
+- pipeline
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -27,20 +30,26 @@ links:
   type: relates_to
 - to: goodbye-clean-code-titulo-sin-contenido-ingerido
   type: supports
+- to: goodbye-clean-code-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: corroboracion-y-velocidad-como-artefactos-del-scorer
+  type: relates_to
 ---
 
 ## What it is
-Los scores del ítem (relevance 0.33, novelty 0.00, corroboration 0.50, velocity 0.50, surprise 0.50) son salidas del propio pipeline sobre un documento de un solo ítem RSS, no corroboración externa [bc47e7115f9ba8d0].
+Los números del clúster (novelty 0.00, corroboration 0.50, engagement 0) no son evidencia independiente sobre el tema: son la descripción del propio pipeline sobre un único ítem RSS. Una corroboración de 0.50 dentro de un clúster de un solo documento no corrobora nada, porque no hay contra qué corroborar.
 
 ## Evidence
-- El clúster es un singleton RSS con engagement=0 — source: bc47e7115f9ba8d0.
-- novelty=0.00 y corroboration=0.50 son valores calculados por el pipeline, no evidencia independiente — source: bc47e7115f9ba8d0.
+- El documento aparece como ítem RSS con engagement=0, sin señal de lectura ni discusión — source: bc47e7115f9ba8d0
+- El clúster contiene un solo documento y novelty 0.00, de modo que no está corroborado independientemente dentro de este conjunto — source: bc47e7115f9ba8d0
 
 ## Why it matters
-Confundir la autodescripción del pipeline con señal del dominio infla la aparente solidez del ítem. El valor compilable es únicamente la tagline, no los scores.
+Cualquier lectura cuantitativa de este clúster como «validado al 50%» o «con engagement medido» sería un artefacto del scorer, no un hallazgo. El único uso legítimo del clúster es como hook temático candidato a corroborar contra otras fuentes, o a descartar.
 
-`relates_to` el caso análogo de «A Chain Reaction», donde las métricas tampoco son evidencia independiente. `supports` la nota sobre el título sin contenido ingerido, que documenta el mismo límite material.
+Se relaciona con `goodbye-clean-code-titulo-sin-contenido-ingerido` porque la ausencia de cuerpo es la razón de fondo. Se relaciona con `a-chain-reaction-metricas-no-son-evidencia-independiente` y con `corroboracion-y-velocidad-como-artefactos-del-scorer`, que documentan el mismo modo de fallo del pipeline.
 
 ## Links
 - relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
 - supports → [[goodbye-clean-code-titulo-sin-contenido-ingerido]]
+- relates_to → [[goodbye-clean-code-titulo-sin-contenido-ingerido]]
+- relates_to → [[corroboracion-y-velocidad-como-artefactos-del-scorer]]

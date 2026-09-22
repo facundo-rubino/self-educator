@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 1bfe45ede61ee575
 tags:
-- seleccion-de-tecnologia
+- alcance
 - dependencias
 - javascript
 - oficio
+- seleccion-de-tecnologia
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -29,20 +30,25 @@ links:
   type: relates_to
 - to: agentes-abatatan-ports-mantener-sigue-costoso
   type: relates_to
+- to: xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido
+  type: derived_from
+- to: js-como-lenguaje-general-ya-presente-en-el-runtime
+  type: relates_to
 ---
 
 ## What it is
-La única idea extraíble del fragmento es débil: si el runtime ya trae un lenguaje de propósito general (JavaScript en navegador o Node), añadir un lenguaje de transformación especializado como XSLT implica una dependencia y una superficie de mantenimiento adicionales. La fuente solo enuncia esto de forma tácita con «JavaScript is right there».
+La única señal del documento [1bfe45ede61ee575] es la frase «JavaScript is right there». En su lectura más caritativa —y no sostenida por el cuerpo— sugiere la postura de resolver un problema de presentación con un lenguaje de propósito general ya disponible en el runtime, antes que introducir una tecnología adicional específica como XSLT. No hay problema enunciado, ni técnica, ni alternativas descartadas, ni resultado.
 
 ## Evidence
-- «JavaScript is right there» como toda la justificación de evitar XSLT — source: 1bfe45ede61ee575
-- El analista infiere que la afirmación, de sostenerse, permitiría evitar añadir un toolchain XSLT y transformar con JavaScript ya presente — source: 1bfe45ede61ee575
+- El cuerpo del documento se limita a la frase «JavaScript is right there», sin desarrollo de la técnica ni ejemplos — source: 1bfe45ede61ee575
 
 ## Why it matters
-Es un criterio plausible de selección tecnológica, pero con base_confidence baja a propósito: la fuente no distingue coste de dependencia de coste de código, y XSLT es declarativo para exactamente este caso. Se registra para que quede rastreable, no como regla.
+Es un criterio de alcance posible (no sumar una dependencia o lenguaje extra si el entorno ya ofrece una vía directa), pero con esta evidencia no pasa de anécdota: no hay datos, benchmarks ni experiencia de equipo que permitan extraer una práctica transferible.
 
-Se relaciona con `complejidad-esencial-vs-accidental-brooks` (evitar accidentalidad añadida) y con `agentes-abatatan-ports-mantener-sigue-costoso` (el coste que sobrevive no es el port inicial sino el mantenimiento).
+Se deriva del riesgo `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`: es la lectura más caritativa que el titular admite, y por eso queda con confianza mínima. Es la misma idea canónica que el run anterior ya había registrado; esta instancia no añade evidencia nueva, solo confirma que la fuente es un one-liner sin desarrollo.
 
 ## Links
 - relates_to → [[complejidad-esencial-vs-accidental-brooks]]
 - relates_to → [[agentes-abatatan-ports-mantener-sigue-costoso]]
+- derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
+- relates_to → [[js-como-lenguaje-general-ya-presente-en-el-runtime]]

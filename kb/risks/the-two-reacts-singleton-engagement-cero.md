@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 43e006f4538b71dd
 tags:
+- corroboracion
+- engagement-cero
+- pipeline
 - react
 - singleton
-- engagement-cero
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -27,21 +29,29 @@ links:
   type: derived_from
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: relates_to
+- to: the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo
+  type: supports
+- to: the-two-reacts-singleton-engagement-cero
+  type: relates_to
+- to: corroboracion-0-5-por-repeticion-de-serie-no-es-validacion-independiente
+  type: relates_to
 ---
 
 ## What it is
-El clúster «The Two Reacts» consiste en un solo documento [43e006f4538b71dd] proveniente de un feed RSS, con engagement=0 y sin ningún otro doc_id de apoyo. Un singleton con engagement nulo no sostiene generalización sobre práctica de ingeniería ni sobre React como tema del brief.
+Un clúster de un solo documento con engagement=0 y novelty=0.00 no sostiene generalización: no hay convergencia entre fuentes independientes. El informe reconoce que corroboration=0.50 'refleja solo presencia, no convergencia'.
 
 ## Evidence
-- El documento proviene de una fuente rss con engagement=0, indicando nula interacción observable en la captura — source: 43e006f4538b71dd.
-- El clúster no incluye ningún otro doc_id que corrobore, amplíe o contraste el contenido — source: 43e006f4538b71dd.
-- Los scores del signal son consistentes: novelty=0.00 y relevance=0.33, con corroboración y velocidad neutras — source: 43e006f4538b71dd.
+- El clúster contiene un único documento de baja relevancia (relevance=0.33, novelty=0.00) que se limita a mostrar la fórmula 'UI = f(data)(state)' — source: 43e006f4538b71dd
+- corroboration=0.50 con un solo documento no es convergencia entre fuentes independientes — source: 43e006f4538b71dd
 
 ## Why it matters
-Cualquier conclusión formulada sobre este clúster tenderá a tratar una ecuación aislada como un hallazgo más sólido de lo que la evidencia permite (sesgo de disponibilidad). Un singleton con engagement=0 no es accionable para el brief.
+Cualquier afirmación de 'tendencia' o 'cambio de práctica' a partir de este clúster sería invención. La única lectura defendible es ruido temático. El valor operativo es marcar el clúster como no accionable y esperar corroboración real.
 
-Deriva de `the-two-reacts-fragmento-aislado-ui-f-data-state`, que documenta el contenido mínimo del clúster. Se relaciona con `single-document-cluster-engagement-cero-no-generaliza`, que registra el mismo patrón de evidencia insuficiente.
+Refuerza `the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo`: un solo doc con engagement nulo no valida nada. Se relaciona con `corroboracion-0-5-por-repeticion-de-serie-no-es-validacion-independiente`, donde ya está establecido que corroboración por repetición no es validación independiente. Cuando la relectura falla, el mismo id se usa de nuevo para no duplicar.
 
 ## Links
 - derived_from → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
+- supports → [[the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo]]
+- relates_to → [[the-two-reacts-singleton-engagement-cero]]
+- relates_to → [[corroboracion-0-5-por-repeticion-de-serie-no-es-validacion-independiente]]

@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-22'
 sources:
 - bc47e7115f9ba8d0
 tags:
-- ingesta-truncada
-- rss
+- claude-code
 - falso-positivo
+- ingesta
+- ingesta-truncada
+- meta-evidencia
+- rss
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -29,21 +32,30 @@ links:
   type: relates_to
 - to: argumento-ex-silentio-en-corpus-truncado
   type: derived_from
+- to: goodbye-clean-code-metricas-sin-corroboracion
+  type: relates_to
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: relates_to
+- to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
+  type: relates_to
 ---
 
 ## What it is
-El clúster de «Goodbye, Clean Code» es un único ítem RSS del que solo se recuperaron el título y una tagline de una línea [bc47e7115f9ba8d0]. El pipeline evalúa el clúster sin haber recuperado el cuerpo del documento.
+Lo ingerido de «Goodbye, Clean Code» se reduce al título y a un aforismo de dos frases; no hay cuerpo que desarrolle autor, caso, ejemplo de código ni mecanismo. El documento no establece ninguna afirmación falsable sobre agentes de IA, estimación, secuenciamiento, liderazgo, docencia ni productividad.
 
 ## Evidence
-- El clúster contiene un solo documento, con engagement=0 y novelty=0.00 — source: bc47e7115f9ba8d0.
-- No hay autor, fecha, argumentos ni prácticas en el texto disponible — source: bc47e7115f9ba8d0.
+- El contenido entero del documento es la indicación de dejar que clean code guíe y luego soltarlo — source: bc47e7115f9ba8d0
+- No hay ejemplo, técnica, métrica ni caso de estudio sobre ninguno de los ejes del brief — source: bc47e7115f9ba8d0
 
 ## Why it matters
-Cualquier generalización más allá del título y la tagline es invención. El modo de fallo es tratar la coincidencia léxica con «clean code» como señal temática cuando el cuerpo del artículo no fue ingerido.
+Sin cuerpo, cualquier enunciado específico (cuándo abandonar clean code, cómo enseñarlo, qué cambia con código asistido por IA) sería fabricación. El clúster es un titular más un eslogan, indistinguible de ruido salvo por el gancho temático.
 
-`relates_to` la nota del ensayo sin cuerpo y el caso análogo de «A Chain Reaction». `derived_from` el riesgo general de argumento ex silentio sobre corpus truncado.
+Se relaciona con `goodbye-clean-code-metricas-sin-corroboracion` porque la falta de cuerpo anula las métricas como evidencia. Se relaciona con `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` y con `ingesta-truncada-como-riesgo-sistemico-de-cobertura`, que describen el fallo de ingesta como riesgo transversal del pipeline.
 
 ## Links
 - relates_to → [[ensayo-goodbye-clean-code-sin-cuerpo-recuperado]]
 - relates_to → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
 - derived_from → [[argumento-ex-silentio-en-corpus-truncado]]
+- relates_to → [[goodbye-clean-code-metricas-sin-corroboracion]]
+- relates_to → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- relates_to → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-22'
 sources:
 - dec9f3cc9a87f904
 - sig-fade19e1d50a
@@ -20,10 +20,11 @@ tags:
 - matching
 - react
 - relevancia
+- relevancia-tangencial
 - topic-drift
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -48,22 +49,21 @@ links:
   type: relates_to
 - to: mismatch-query-tema-por-vocabulario-generico-de-infraestructura
   type: derived_from
+- to: the-two-reacts-relevancia-tangencial-al-brief
+  type: relates_to
 ---
 
 ## What it is
-
-El documento apunta a React como tema, no a las prácticas de un dev que lidera proyectos y enseña a programar. Con relevance=0.33, el clúster es un falso positivo temático respecto al brief de agentes de IA aplicados a programar, gestionar y enseñar.
+La relevancia temática de «React for Two Computers» con el brief —agentes de IA aplicados a programar, liderazgo técnico de equipos chicos, oficio de software engineering— es baja y especulativa. La conexión se infiere solo por el token «React», que nombra una librería de UI, no un agente de IA ni una práctica de liderazgo o enseñanza. El scoring del pipeline (relevance=0.33, novelty=0.00) ya lo considera marginal.
 
 ## Evidence
-
-- El documento apunta a React como tema, no a las prácticas de un dev que lidera proyectos y enseña a programar — source: dec9f3cc9a87f904
-- El cuerpo del documento se limita a «Two things, one origin.», sin desarrollo de argumentos sobre agentes de IA, liderazgo técnico, productividad o enseñanza — source: dec9f3cc9a87f904
+- La conexión con el brief se infiere solo por el término «React», que es una librería de UI, no un agente de IA ni una práctica de liderazgo o enseñanza — source: dec9f3cc9a87f904
+- relevance=0.33 con novelty=0.00 indica que el sistema ya lo considera marginal — source: dec9f3cc9a87f904
 
 ## Why it matters
+El matching por vocabulario genérico de infraestructura admite ítems fuera del tema; incluirlo como señal válida contaminaría el brief. Pero esto no equivale a afirmar ausencia de señal temática en el corpus: es indistinguible de un fallo de ingestión del artículo original.
 
-Si el pipeline depende de este clúster para cubrir el brief, no genera hallazgos útiles. La coincidencia con React es tangencial y refuerza el patrón de falsos positivos por vocabulario de infraestructura.
-
-Es el mismo patrón que `the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo`. Deriva del riesgo de mismatch por vocabulario genérico (`mismatch-query-tema-por-vocabulario-generico-de-infraestructura`). Contradice parcialmente la nota `relevancia-tematica-baja-no-es-ruido`, que sostiene que baja relevancia temática no equivale a ausencia de señal: aquí, con un documento sin cuerpo y engagement=0, no hay señal extraíble. Se liga al título sin contenido (`react-for-two-computers-titulo-sin-contenido-ingerido`).
+Contradice la nota de que relevancia temática baja no equivale a ruido (relevancia-tematica-baja-no-es-ruido) en este caso concreto: aquí la baja relevancia coincide con cuerpo vacío, de modo que no hay señal latente que rescatar. Se relaciona con el mismo documento sin contenido ingerido (react-for-two-computers-titulo-sin-contenido-ingerido) y con el precedente análogo de relevancia tangencial de un ítem React al brief (the-two-reacts-relevancia-tangencial-al-brief).
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
@@ -76,3 +76,4 @@ Es el mismo patrón que `the-two-reacts-ruido-para-el-brief-de-agentes-y-lideraz
 - relates_to → [[the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo]]
 - relates_to → [[react-for-two-computers-etiqueta-react-sin-evidencia-de-practica]]
 - derived_from → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
+- relates_to → [[the-two-reacts-relevancia-tangencial-al-brief]]

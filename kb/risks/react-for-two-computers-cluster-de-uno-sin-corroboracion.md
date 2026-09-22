@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-22'
 sources:
 - 0248fdb60811e91e
 - dec9f3cc9a87f904
@@ -24,9 +24,10 @@ tags:
 - pipeline
 - react
 - sample-size-uno
+- singleton
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -56,19 +57,16 @@ links:
 ---
 
 ## What it is
-
-Un clúster compuesto por un único documento con engagement=0 no permite generalizar sobre React, sobre prácticas de ingeniería ni sobre tendencias. Las métricas declaradas (relevance=0.33, novelty=0.00, corroboration=0.50) son autodescripción del pipeline, no mediciones independientes.
+El clúster se compone de un único documento (dec9f3cc9a87f904) con engagement=0 y corroboración declarada de 0.50 sin fuentes independientes que la respalden. Un singleton sin engagement no es base para ninguna generalización sobre React, sobre arquitecturas de dos computadoras ni sobre práctica de ingeniería.
 
 ## Evidence
-
-- El clúster contiene un solo documento — source: dec9f3cc9a87f904
-- El documento tiene engagement=0 — source: dec9f3cc9a87f904
+- El clúster contiene un solo documento identificado como dec9f3cc9a87f904, proveniente de un feed RSS con engagement=0 — source: dec9f3cc9a87f904
+- No hay fuentes independientes en el clúster que confirmen ninguna afirmación — source: dec9f3cc9a87f904
 
 ## Why it matters
+La cifra de corroboración 0.50 con un solo documento es un artefacto de scoring, no validación externa. Tratar este clúster como hallazgo introduciría ruido en el perfil temático y desplazaría documentos con contenido real.
 
-Tratar los scores del propio pipeline como corroboración externa es circular: el clúster se usa para validar una conclusión sobre el clúster. Un clúster de n=1 con engagement=0 no puede sostener ninguna generalización sobre React ni sobre el brief.
-
-Deriva de la regla general `single-document-cluster-engagement-cero-no-generaliza`. Es el mismo patrón que `static-as-a-server-cluster-de-uno-sin-corroboracion`. Está ligado al riesgo de que el título no tiene contenido ingerido (`react-for-two-computers-titulo-sin-contenido-ingerido`).
+Deriva del patrón general ya registrado de que un clúster de un solo documento con engagement=0 no generaliza (single-document-cluster-engagement-cero-no-generaliza). Se relaciona con la carencia de cuerpo ingerido del mismo documento (react-for-two-computers-titulo-sin-contenido-ingerido): ambas son caras del mismo artefacto de pipeline.
 
 ## Links
 - relates_to → [[documento-unico-como-base-de-afirmacion-de-estandar]]

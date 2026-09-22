@@ -9,17 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-22'
 sources:
 - 43e006f4538b71dd
 tags:
-- react
 - atribucion
 - framing
 - ingesta
+- react
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -28,21 +28,26 @@ links:
   type: relates_to
 - to: nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria
   type: relates_to
+- to: the-two-reacts-fragmento-aislado-ui-f-data-state
+  type: relates_to
+- to: the-two-reacts-titulo-sin-contenido-ingerido
+  type: supports
 ---
 
 ## What it is
-La única frase ingerida del clúster «The Two Reacts» [43e006f4538b71dd] es «UI = f(data)(state)», un encuadre conocido de la comunidad React sobre el modelo de render, no una formulación original atribuible al documento. Citar esta fórmula como «el insight del documento» atribuiría a la fuente un aporte que la fuente no argumenta ni reclama, y que de hecho ya circula como lugar común del ecosistema.
+La fórmula 'UI = f(data)(state)' aparece como eslogan de la comunidad React, no como aporte argumentado del documento. El título 'The Two Reacts' puede ser un heading de blog o charla que replica el eslogan.
 
 ## Evidence
-- El cuerpo ingerido del documento se agota en la fórmula «UI = f(data)(state)» — source: 43e006f4538b71dd
-- La fórmula es un encuadre conocido del ecosistema React, no una contribución argumentada en el documento — source: 43e006f4538b71dd
-- No hay ejemplos ni elaboración que fijen autoría o novedad respecto a la formulación generalizada — source: 43e006f4538b71dd
+- El documento se titula 'The Two Reacts' y su contenido es la fórmula 'UI = f(data)(state)' — source: 43e006f4538b71dd
+- El informe advierte que el título del clúster puede meramente replicar un heading y que el matching temático contra un filtro determinista produce falsos clústeres — source: 43e006f4538b71dd
 
 ## Why it matters
-Previene el error de atribución inverso al habitual: aquí el riesgo no es inventar una afirmación, sino asignar a este documento un lugar común del ecosistema y presentarlo como hallazgo. La ausencia de elaboración convierte la fórmula en un término de vocabulario compartido, útil como nodo de conexión pero inútil como evidencia de que este texto en particular enseña algo.
+Atribuir autoría, tesis o argumentos sobre Server Components u otras versiones de React a este documento iría más allá de lo que sostiene la fuente. La señal es de comunidad, no de autor, y debe tratarse como ruido temático.
 
-`relates_to` con `ui-como-funcion-de-data-y-state`: si se quiere conservar el encuadre, el lugar correcto es el concepto existente, no una nota derivada de un documento que no lo desarrolla. `relates_to` con `nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria`: recuerda que mencionar un concepto reconocido en un documento no lo convierte en aporte ni en evidencia de práctica.
+Se relaciona con `the-two-reacts-fragmento-aislado-ui-f-data-state` porque ambos registran que el fragmento no tiene desarrollo argumental. Refuerza `the-two-reacts-titulo-sin-contenido-ingerido` como la misma laguna vista desde la atribución.
 
 ## Links
 - relates_to → [[ui-como-funcion-de-data-y-state]]
 - relates_to → [[nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria]]
+- relates_to → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
+- supports → [[the-two-reacts-titulo-sin-contenido-ingerido]]

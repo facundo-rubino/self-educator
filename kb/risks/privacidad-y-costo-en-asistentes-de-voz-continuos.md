@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-22'
 sources:
 - 49140f9d5133d3c7
 tags:
 - cost
+- coste
+- privacidad
 - privacy
 - telephony
 - voice
+- voz
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -30,20 +33,23 @@ links:
   type: relates_to
 - to: efectividad-de-ai-coach-no-demostrada
   type: relates_to
+- to: privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia
+  type: relates_to
 ---
 
 ## What it is
-Un coach por voz que corre sobre un número telefónico virtual y un LLM implica (a) que el audio personal pasa por STT y por un proveedor de modelo, y (b) que hay un costo variable por minuto o por token en un canal que se pretende siempre disponible. Ninguna de las dos está discutida en el documento.
+Un coach de voz que combina STT, TTS, un LLM y un número virtual implica audio continuo, transcripción y telefonía real. El documento no detalla cómo se manejan privacidad, consentimiento, retención ni coste por minuto de ese pipeline.
 
 ## Evidence
-- El documento describe un AI coach compuesto por speech-to-text, text-to-speech, un LLM y un número virtual, sin tratar implicaciones de privacidad ni de costo — source: 49140f9d5133d3c7
+- El documento menciona un número virtual y un pipeline de voz, sin detallar manejo de privacidad ni coste — source: 49140f9d5133d3c7
 
 ## Why it matters
-Un asistente de voz continuo es un canal de captura de pensamiento sin filtro; ese material es exactamente el que un dev no querría enviar a un proveedor externo sin control. Y una interfaz «siempre disponible» tiende a usarse más de lo previsto, lo que convierte el costo variable en una decisión de diseño, no en un detalle de factura.
+Antes de reutilizar este scaffolding en contextos de equipo o docencia, estas dimensiones deben resolverse por separado. Son huecos del documento, no afirmaciones del mismo.
 
-Deriva de `stack-de-ai-coach-voz-a-voz`: es consecuencia directa de las piezas elegidas. Se relaciona con `efectividad-de-ai-coach-no-demostrada`: sin evaluación de resultado, el costo y la exposición se asumen sin retorno verificado.
+Se relaciona con el stack del AI coach por voz, del que señala los huecos operativos. Conecta con los riesgos de privacidad y consentimiento en imágenes de personas para docencia: mismo tipo de precaución al usar datos personales en herramientas del oficio.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[efectividad-de-ai-coach-no-demostrada]]
+- relates_to → [[privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia]]

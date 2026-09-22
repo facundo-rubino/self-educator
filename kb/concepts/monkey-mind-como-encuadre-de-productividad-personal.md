@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -18,13 +18,14 @@ tags:
 - encuadre
 - framing
 - monkey-mind
+- organizacion-personal
 - personal-productivity
 - productividad
 - productivity
 - self-management
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -39,19 +40,20 @@ links:
   type: relates_to
 - to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
   type: relates_to
+- to: humildad-epistemica-aforismo-sin-aplicacion-al-brief
+  type: relates_to
 ---
 
 ## What it is
-«Monkey mind» es el encuadre que el autor da a su propio problema de atención/dispersión, y el motivo declarado para construir un AI coach. El término nombra un pain point subjetivo de autogestión, no un fenómeno organizacional ni una métrica de productividad.
+«Monkey mind» es el encuadre que el autor usa para describir su propia mente distraída y justificar la construcción de un coach de IA. Es una etiqueta de productividad y organización personal, no un concepto de liderazgo técnico ni de gestión de equipos.
 
 ## Evidence
-- El propósito declarado del AI coach es ayudar al autor a gestionar su propia «monkey mind» — source: 49140f9d5133d3c7
-- El cluster tiene un solo documento, sin fuente corroborante dentro de la señal — source: 49140f9d5133d3c7
+- El propósito declarado de la construcción es ayudar a gestionar la propia «monkey mind» del autor — source: 49140f9d5133d3c7
 
 ## Why it matters
-Un encuadre de autogestión personal no es evidencia sobre estimación, secuenciamiento, alcance ni liderazgo de equipos. Mapearlo a los ejes del brief requeriría un puente que la fuente no ofrece: el término es vocabulario de productividad individual, no de práctica de ingeniería ni de liderazgo técnico.
+Delimita el alcance real del documento: habla de autogestión de la atención, no de estimación, secuenciación, alcance o enseñanza. Cualquier puente hacia el brief de liderazgo técnico sería inferencia, no evidencia. Sirve como recordatorio de que un encuadre léxico atractivo no es un hallazgo.
 
-Se relaciona con `stack-de-ai-coach-voz-a-voz` porque el stack se construyó para este pain point. Se relaciona con `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion` como otro caso del mismo modo de fallo: leer más alcance del que la fuente sostiene.
+Se relaciona con el stack del AI coach por voz, del que es la motivación declarada. Conecta con la nota sobre el aforismo de humildad epistémica sin aplicación al brief: ambos son marcos que no aterrizan en ningún eje operativo del brief.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
@@ -59,3 +61,4 @@ Se relaciona con `stack-de-ai-coach-voz-a-voz` porque el stack se construyó par
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[efectividad-de-ai-coach-no-demostrada]]
 - relates_to → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[humildad-epistemica-aforismo-sin-aplicacion-al-brief]]

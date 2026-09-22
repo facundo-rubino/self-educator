@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-22'
 sources:
 - 19cb8032958cd964
 tags:
+- capacidad-vs-politica
 - epistemologia
+- falsa-capacidad
+- fuente-unica
+- modo-de-fallo
 - multimodal
 - politica-de-modelos
-- falsa-capacidad
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -35,19 +38,28 @@ links:
   type: relates_to
 - to: politica-de-face-recognition-como-variable-de-producto
   type: relates_to
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: contradicts
+- to: identificar-no-es-reconocer-en-la-fuente
+  type: relates_to
+- to: nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria
+  type: relates_to
+- to: afirmacion-poblacional-desde-un-solo-proveedor
+  type: relates_to
 ---
 
 ## What it is
-Un titular RSS afirma que «los LLM ahora pueden identificar figuras públicas en imágenes». El «ahora» sugiere capacidad nueva y generalizada; la evidencia subyacente es una comparación de disposición a responder entre tres proveedores, con metodología, versión y muestra sin especificar. La afirmación de capacidad no se sigue de la observación de cumplimiento.
+Tomar una afirmación de producto de un único ítem RSS y reformularla como hallazgo de capacidad («los LLM ahora pueden identificar figuras públicas») confunde reconocimiento facial, recuerdo de nombres y captioning bajo una sola etiqueta (19cb8032958cd964). Una política de producto, además, no es un resultado científico (19cb8032958cd964).
 
 ## Evidence
-- «El documento enmarca el hecho como una afirmación de capacidad ("LLMs can now identify public figures in images"), es decir, que el comportamiento es nuevo o recién notable» — source: 19cb8032958cd964
-- «La evidencia es una comparación de comportamiento entre vendedores sin metodología, tamaño de muestra ni versionado especificados» — source: 19cb8032958cd964
+- El ítem no especifica metodología, protocolo de prueba, fechas ni versiones de modelo — source: 19cb8032958cd964
+- La evidencia es circular: la fuente es el único apoyo de su propia aserción — source: 19cb8032958cd964
+- Novelty 0.00 y corroboración 0.50 no indican confirmación independiente — source: 19cb8032958cd964
 
 ## Why it matters
-Tratar esto como un salto de capacidad lleva a conclusiones equivocadas: que el análisis visual de personas es ampliamente desplegable, o que un proveedor es «más capaz». Reconocer una cara es una tarea de visión de larga data; que un modelo la nombre depende de su política. Antes de citar este hallazgo como capability, hace falta fuente primaria y comparación controlada.
+Sin evaluaciones controladas sobre versiones, prompts y criterios de identificación, la aserción no sobrevive escrutinio. Reformularla como «capacidad ahora disponible» es el modo de fallo exacto que este KB debe bloquear.
 
-Es un caso concreto del modo de fallo descrito en `afirmacion-de-capacidad-desde-fragmento-de-una-linea` y refuerza `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`. Se relaciona con `una-observacion-no-sostiene-claim-poblacional-sobre-llm` (un proveedor no sostiene un claim poblacional) y con `politica-de-face-recognition-como-variable-de-producto` (la política como variable, no la capacidad). Conecta con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`, el hallazgo observable del que se extrae la afirmación.
+Contradice la nota de divergencia por proveedor al negarle estatus de hallazgo establecido. Comparte el mecanismo con la advertencia de «identificar = no rechazar» y con el riesgo de afirmar capacidades poblacionales desde un solo proveedor.
 
 ## Links
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
@@ -55,3 +67,7 @@ Es un caso concreto del modo de fallo descrito en `afirmacion-de-capacidad-desde
 - relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - relates_to → [[una-observacion-no-sostiene-claim-poblacional-sobre-llm]]
 - relates_to → [[politica-de-face-recognition-como-variable-de-producto]]
+- contradicts → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[identificar-no-es-reconocer-en-la-fuente]]
+- relates_to → [[nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria]]
+- relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]

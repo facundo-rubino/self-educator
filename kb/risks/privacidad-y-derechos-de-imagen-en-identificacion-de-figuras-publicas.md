@@ -9,34 +9,40 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-18'
+updated: '2026-09-22'
 sources:
 - 19cb8032958cd964
 tags:
-- privacidad
-- multimodal
+- consentimiento
+- docencia
 - etica
+- imagenes
+- multimodal
+- privacidad
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
 links:
 - to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
   type: relates_to
+- to: privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia
+  type: relates_to
 ---
 
 ## What it is
-El documento no menciona en absoluto las preocupaciones de privacidad, consentimiento y derechos de imagen que plantea cualquier capacidad de identificación facial, con independencia de qué proveedor la habilite.
+Reconocer figuras públicas a partir de imágenes plantea cuestiones de privacidad, consentimiento y seguridad que la fuente no trata (19cb8032958cd964).
 
 ## Evidence
-- El reporte identifica explícitamente que estas preocupaciones quedan «entirely unaddressed by the document» — source: 19cb8032958cd964
+- El informe lista privacidad, consentimiento y consideraciones de seguridad como no abordadas por la fuente — source: 19cb8032958cd964
 
 ## Why it matters
-Una capacidad de identificación de caras en una herramienta interna o demo de aula arrastra obligaciones de consentimiento y likeness-rights que un titular de tech-news no cubre. Ignorarlas al evaluar la adopción sería un fallo de diligencia, no un detalle.
+Para un docente, la diferencia entre identificar a una figura pública y procesar imágenes de estudiantes o terceros es operativa: las segundas requieren consentimiento y cuidado que ninguna política de proveedor resuelve por sí sola.
 
-Se relaciona con la nota de divergencia: la misma capacidad cuya política varía entre proveedores tiene implicaciones legales y éticas que la fuente omite por completo.
+Se relaciona con la nota de divergencia por proveedor como consecuencia no tratada, y con el riesgo ya registrado sobre privacidad y consentimiento en imágenes de personas usadas en docencia o demos.
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia]]

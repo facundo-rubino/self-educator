@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-22'
 sources:
 - 49140f9d5133d3c7
 tags:
-- leadership
 - accountability
-- voice
+- agentes
+- equipos
+- leadership
 - open-question
+- voice
 base_confidence: 0.15
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-22'
 provenance:
   scale: XL
   query: null
@@ -28,20 +30,25 @@ links:
   type: derived_from
 - to: generalizacion-desde-cluster-de-un-solo-documento
   type: contradicts
+- to: stack-de-ai-coach-voz-a-voz
+  type: relates_to
+- to: efectividad-de-ai-coach-no-demostrada
+  type: contradicts
 ---
 
 ## What it is
-Si el patrón es genuino, un asistente LLM voice-first alcanzable por número virtual sería una herramienta de bajo roce para check-ins y accountability en un equipo pequeño [49140f9d5133d3c7]. La evidencia disponible no incluye ningún uso en equipo ni outcome medido [49140f9d5133d3c7].
+¿Podría un coach de voz construido sobre LLM y telefonía servir como mecanismo ligero de accountability o seguimiento para un equipo pequeño, en lugar de solo para autogestión individual? El documento no lo plantea ni lo mide.
 
 ## Evidence
-- El proyecto es personal y autodirigido; no hay datos de uso por otras personas ni de resultados — source: 49140f9d5133d3c7
-- El único hecho duro es la composición del stack — source: 49140f9d5133d3c7
+- El propósito declarado de la construcción es ayudar a gestionar la propia «monkey mind» del autor — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es una extrapolación plausible pero no licenciada por la evidencia: se registra como pregunta para no inflar el claim. Cualquier respuesta exige datos de equipo que aquí no existen.
+Es la extensión más plausible del documento hacia el tema del brief, pero se apoya únicamente en una asociación temática. Queda como pregunta abierta hasta que existan documentos con outcomes o evaluación.
 
-Deriva de stack-de-ai-coach-voz-a-voz. Contradice a generalizacion-desde-cluster-de-un-solo-documento en tensión productiva: la hipótesis apunta a un uso de equipo que la regla de evidencia del clúster prohíbe afirmar; la contradicción queda marcada, no resuelta.
+Se relaciona con el stack del AI coach por voz, que sería la base técnica. Contradice la nota sobre efectividad de AI coach no demostrada: aquí se plantea la hipótesis, allí se recuerda que ninguna evidencia la sostiene.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
 - contradicts → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- relates_to → [[stack-de-ai-coach-voz-a-voz]]
+- contradicts → [[efectividad-de-ai-coach-no-demostrada]]
