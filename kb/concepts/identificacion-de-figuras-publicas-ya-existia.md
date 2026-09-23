@@ -9,35 +9,40 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-23'
 sources:
 - 19cb8032958cd964
 tags:
-- multimodal
-- linea-base
 - afirmacion-de-novedad
+- figuras-publicas
+- linea-base
+- multimodal
+- novedad
 base_confidence: 0.4
 half_life_days: 180
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
 links:
 - to: afirmacion-de-novedad-sin-linea-base
   type: supports
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: relates_to
 ---
 
 ## What it is
-Los modelos multimodales podían identificar figuras públicas en imágenes antes de que existiera el ítem que reporta el «ahora» [19cb8032958cd964]. Lo reportado no es un cambio de capacidad de identificación en el tiempo, sino que un modelo en particular no se negó a ejecutar la tarea.
+El titular enmarca la identificación de figuras públicas en imágenes como una capacidad emergente («can now»), pero lo que el ítem describe es divergencia de política entre proveedores, no la aparición de una habilidad nueva. La capacidad de reconocimiento de identidad existe desde antes; lo que varía es quién la permite responder.
 
 ## Evidence
-- El único contenido concreto del ítem es que un modelo no rechazó, no que la capacidad de identificar apareciera entonces — source: 19cb8032958cd964
-- No hay medición previa comparable que establezca el cambio temporal — source: 19cb8032958cd964
+- El ítem presenta una capacidad como reciente sin aportar línea base, versión de modelo ni fecha de comparación. — source: 19cb8032958cd964
+- La única evidencia es una aserción de diferencia entre Gemini, ChatGPT y Claude, no un cambio documentado a lo largo del tiempo. — source: 19cb8032958cd964
 
 ## Why it matters
-Distinguir «no rechaza» de «ahora puede» evita registrar como avance de capacidad lo que es una diferencia de guardrails. La formulación «ahora» implica una línea base temporal que la evidencia no provee [19cb8032958cd964].
+Bloquea la inferencia de novedad: sin línea base fechada, «ahora» no es sostenible. Reorienta la lectura del ítem hacia política de proveedor y aleja la conclusión de «salto de capacidad».
 
-Instancia concreta de [[afirmacion-de-novedad-sin-linea-base]]. Se opone a la lectura de capacidad implícita en la afirmación de que los LLM «ahora» identifican figuras públicas.
+Se relaciona con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`, que es donde vive la evidencia concreta. Apoya a `afirmacion-de-novedad-sin-linea-base`: el ítem es un caso de manual de sostener «ahora» sin comparación temporal.
 
 ## Links
 - supports → [[afirmacion-de-novedad-sin-linea-base]]
+- relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]

@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 19cb8032958cd964
 tags:
@@ -23,7 +23,7 @@ tags:
 - rechazo
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -46,19 +46,22 @@ links:
   type: derived_from
 - to: gemini-no-rechaza-nombrar-figuras-publicas
   type: derived_from
+- to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: contradicts
 ---
 
 ## What it is
-Un ítem RSS afirma que Gemini identifica figuras públicas en imágenes mientras ChatGPT y Claude no. La afirmación se presenta como diferencia de comportamiento entre productos nombrados, no como resultado de un benchmark medido (19cb8032958cd964). No se aportan metodología, versiones de modelo, fechas ni protocolo de prueba (19cb8032958cd964).
+Un único ítem RSS [19cb8032958cd964] afirma que los LLM frontera divergen al procesar imágenes de figuras públicas: Gemini las nombraría, ChatGPT y Claude no. La evidencia es solo el titular y una frase de cuerpo; no hay prueba fechada, benchmark, captura, versión de modelo ni prompt reproducido.
 
 ## Evidence
-- ChatGPT y Claude supuestamente no identifican figuras públicas en imágenes; Gemini supuestamente sí — source: 19cb8032958cd964
-- El encuadre es de diferencia de capacidad/política entre productos, no de resultado medido — source: 19cb8032958cd964
+- El documento afirma que los LLM ya pueden identificar figuras públicas en imágenes, con el contraste parentético «ChatGPT and Claude won't, but Gemini will.» — source: 19cb8032958cd964
+- La única evidencia ofrecida es el titular y una frase de cuerpo; no se aporta procedimiento de prueba, imágenes de muestra, versiones de modelo ni fechas. — source: 19cb8032958cd964
+- El ítem ingerido es una entrada RSS con engagement=0, sin discusión ni corroboración observada en el pipeline. — source: 19cb8032958cd964
 
 ## Why it matters
-Si fuera cierto, la elección de modelo multimodal para tareas sensibles a la identidad dependería fuertemente del proveedor. Para un dev que lidera y enseña, solo importaría si sus flujos incluyen imágenes con personas (capturas con caras, demos, materiales de corrección). Sin corroboración no debe entrar en currículo, decisión de tooling ni diseño de agente.
+Si fuera cierto, apuntaría a divergencia de política de producto a nivel de proveedor, no a una brecha de capacidad: la misma habilidad de reconocimiento podría estar deliberadamente bloqueada por ChatGPT y Claude. Para quien construye pipelines agénticos con imágenes, el reconocimiento de personas no sería portable entre proveedores; elegir proveedor podría determinar si la función existe siquiera. La relevancia para el brief (agentes de coding, liderazgo técnico, docencia, oficio) es marginal.
 
-Se deriva del ítem que nombra explícitamente a Gemini; instancia el patrón general de divergencia de rechazo entre proveedores y toca la distinción entre capacidad técnica y política de rechazo. Se apoya en la advertencia de que «identificar» en la fuente puede significar «no rechazar» y no «reconocer».
+Se relaciona con `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo` y con `divergencia-de-rechazo-entre-proveedores`: el caso ilustra que un «no» del modelo no prueba incapacidad. `gemini-no-rechaza-nombrar-figuras-publicas` es el actor concreto al que apunta la afirmación. Se apoya en `identificacion-de-figuras-publicas-ya-existia` para descartar que la identificación por modelos multimodales sea nueva. Contradice `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion`, que es justo el modo de fallo que este ítem ejemplifica.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -70,3 +73,4 @@ Se deriva del ítem que nombra explícitamente a Gemini; instancia el patrón ge
 - relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
 - derived_from → [[politica-de-face-recognition-como-variable-de-producto]]
 - derived_from → [[gemini-no-rechaza-nombrar-figuras-publicas]]
+- contradicts → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 0715b80a63a796ad
 tags:
@@ -25,10 +25,12 @@ tags:
 - rss
 - ruido-de-ingesta
 - sin-cuerpo
+- singleton
+- truncamiento
 - weak-signal
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -49,19 +51,23 @@ links:
   type: relates_to
 - to: a-chain-reaction-metricas-no-son-evidencia-independiente
   type: relates_to
+- to: a-chain-reaction-cita-sin-argumento-desarrollado
+  type: supports
+- to: a-chain-reaction-titulo-cuerpo-desajuste-sugiere-truncamiento
+  type: supports
 ---
 
 ## What it is
-El titular «A Chain Reaction» no se explica ni conecta con el cuerpo del documento, que solo contiene el aforismo de Wittgenstein. El titular no anticipa ni resume el contenido ingerido.
+El documento [0715b80a63a796ad] aporta un título («A Chain Reaction») y una cita de Wittgenstein, sin cuerpo que desarrolle la relación entre ambos. Cualquier afirmación sobre el significado pretendido del título —«reacción en cadena» como acumulación de conocimiento o como efecto compuesto de enseñar y liderar— sería una reconstrucción del analista, no contenido del documento.
 
 ## Evidence
-- El titular del documento es «A Chain Reaction», sin conexión explícita con el cuerpo — source: 0715b80a63a796ad
-- El cuerpo entero es el aforismo «The limits of my language mean the limits of my world» — source: 0715b80a63a796ad
+- El título «A Chain Reaction» aparece en el documento pero su contenido no desarrolla ni explica ninguna reacción en cadena — source: 0715b80a63a796ad
+- El único contenido sustantivo del documento es la cita «The limits of my language mean the limits of my world» — source: 0715b80a63a796ad
 
 ## Why it matters
-Un titular que no se corresponde con el cuerpo impide usar el título como proxy de señal para filtrar o clasificar. Cualquier inferencia sobre el tema del documento a partir de «A Chain Reaction» es invención, no extracción.
+Riesgo de sobreinterpretación: construir una narrativa sobre efectos compuestos de la docencia o del liderazgo a partir de un título y una cita sin desarrollo. La conducta correcta es tratar el ítem como no compilable hasta recuperar su cuerpo.
 
-Es el modo de fallo específico que explica por qué «A Chain Reaction» queda fuera del topic: no porque el aforismo sea irrelevante en abstracto, sino porque no hay texto que lo vincule a nada. Se relaciona con el riesgo de truncamiento/extracción y con el de métricas autodescriptivas, que son otras hipótesis sobre el mismo artefacto.
+Es evidencia de apoyo para `a-chain-reaction-cita-sin-argumento-desarrollado` (el aforismo es el único contenido) y para `a-chain-reaction-titulo-cuerpo-desajuste-sugiere-truncamiento`, que ya registra el desajuste título/cuerpo como síntoma de truncamiento o mala extracción.
 
 ## Links
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
@@ -72,3 +78,5 @@ Es el modo de fallo específico que explica por qué «A Chain Reaction» queda 
 - relates_to → [[a-chain-reaction-fuera-del-topic-sin-conexion-explicita]]
 - relates_to → [[a-chain-reaction-titulo-cuerpo-desajuste-sugiere-truncamiento]]
 - relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
+- supports → [[a-chain-reaction-cita-sin-argumento-desarrollado]]
+- supports → [[a-chain-reaction-titulo-cuerpo-desajuste-sugiere-truncamiento]]

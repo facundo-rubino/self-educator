@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - bc47e7115f9ba8d0
 tags:
@@ -27,7 +27,7 @@ tags:
 - trade-offs
 base_confidence: 0.1
 half_life_days: 365
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -56,19 +56,21 @@ links:
   type: relates_to
 - to: generalizar-desde-goodbye-clean-code-sin-corroboracion
   type: relates_to
+- to: goodbye-clean-code-titulo-sin-contenido-ingerido
+  type: derived_from
 ---
 
 ## What it is
-La única aserción sustantiva del documento es un aforismo de dos frases: dejar que clean code guíe y después soltarlo. No se especifica situación, mecanismo ni umbral; es una heurística condicionada, no una regla, y el documento no declara cuál es la condición.
+Lectura del lema «Let clean code guide you. Then let it go.» como heurística condicionada: usar las prácticas de clean code como guía pero no como dogma, sin que la obsesión por la limpieza bloquee otros objetivos.
 
 ## Evidence
-- El contenido entero del documento es la indicación de dejar que clean code guíe y luego soltarlo — source: bc47e7115f9ba8d0
-- No hay ejemplo concreto, técnica, métrica ni caso de estudio sobre agentes de IA, estimación, liderazgo de equipo, oficio o técnicas de estudio — source: bc47e7115f9ba8d0
+- El snippet sugiere una postura de guía y no dogma, sin desarrollar argumentos adicionales — source: bc47e7115f9ba8d0
+- No hay texto argumental que respalde cuándo ni por qué soltar la guía — source: bc47e7115f9ba8d0
 
 ## Why it matters
-Si se lee como norma condicionada, es compatible con la idea de que las normas de craft son heurísticas y no absolutos, lo que importa a quien lidera y enseña y debe balancear refactor con alcance y fechas. Pero el documento no demuestra ese trade-off: la lectura pragmática la aporta el revisor, no la fuente, y por eso no puede sostener ninguna recomendación por sí sola.
+Si la lectura se confirmara con el texto completo, sería un patrón sobre cuándo priorizar limpieza frente a entrega. Con solo una tagline, es interpretación de eslogan y su confianza se mantiene baja hasta recuperar la fuente.
 
-Se relaciona con `complejidad-esencial-vs-accidental-brooks` porque ambas tratan el craft como algo que se aplica con criterio y no como dogma. Se relaciona con `tagline-let-it-go-ambiguo` porque «let it go» admite al menos dos lecturas opuestas («no sobre-ingenierizar» vs. «clean code está obsoleto») y el clúster no permite elegir. Se relaciona con `sueltalo-clean-code-sin-mencion-al-brief` porque el clúster no menciona ningún eje del brief. Se relaciona con `generalizar-desde-goodbye-clean-code-sin-corroboracion` porque cualquier uso prescriptivo choca con la ausencia de corroboración.
+Deriva de la nota sobre el vacío de contenido ingerido. La nota existente sobre la ambigüedad de «let it go» documenta que el lema no resuelve si se suelta la práctica, el dogma o la culpa.
 
 ## Links
 - derived_from → [[ensayo-goodbye-clean-code-sin-cuerpo-recuperado]]
@@ -83,3 +85,4 @@ Se relaciona con `complejidad-esencial-vs-accidental-brooks` porque ambas tratan
 - relates_to → [[llms-malos-para-vibing-specifications-buenos-como-multiplicadores]]
 - relates_to → [[sueltalo-clean-code-sin-mencion-al-brief]]
 - relates_to → [[generalizar-desde-goodbye-clean-code-sin-corroboracion]]
+- derived_from → [[goodbye-clean-code-titulo-sin-contenido-ingerido]]

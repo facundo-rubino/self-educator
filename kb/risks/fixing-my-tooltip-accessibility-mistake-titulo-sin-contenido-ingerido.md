@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - ded7560510c137bc
 tags:
 - accesibilidad
-- tooltips
-- ingesta-truncada
+- aria
 - evidencia-ausente
+- ingesta-truncada
+- singleton
+- tooltip
+- tooltips
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -33,23 +36,29 @@ links:
   type: supports
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion
+  type: relates_to
+- to: afirmacion-de-mistake-personal-desde-titulo
+  type: relates_to
 ---
 
 ## What it is
-El clúster del documento `ded7560510c137bc` («Fixing my tooltip accessibility mistake») contiene solo un título RSS y una aserción de una línea; el error concreto, el mecanismo por el que `aria-describedby` se queda corto y la corrección no están ingeridos. Cualquier claim que vaya más allá de «el documento afirma que `aria-describedby` no siempre basta» es fabricación.
+El documento [ded7560510c137bc] llega al pipeline con título y un único fragmento: «aria-describedby isn't always enough». No hay cuerpo recuperado, ni ejemplos de código, ni alternativas propuestas, ni relato del error concreto. Cualquier afirmación sobre el arreglo aplicado o su corrección sería reconstrucción, no lectura.
 
 ## Evidence
-- El clúster consta de un único documento RSS titulado «Fixing my tooltip accessibility mistake» — source: ded7560510c137bc
-- El documento afirma que «aria-describedby isn't always enough» — source: ded7560510c137bc
-- El documento registra engagement cero en los metadatos de la señal — source: ded7560510c137bc
+- El documento se titula «Fixing my tooltip accessibility mistake» — source: ded7560510c137bc
+- El único fragmento textual disponible es «aria-describedby isn't always enough» — source: ded7560510c137bc
+- El crítico del reporte señala que «only the title and one fragment are visible; the full argument, code examples, and recommended alternatives are not available» — source: ded7560510c137bc
 
 ## Why it matters
-Reconstruir desde el título una regla general sobre mal uso de ARIA excede la evidencia disponible. La señal no soporta ninguna decisión de diseño ni entrada a una revisión de accesibilidad hasta recuperar el texto completo; lo único registrable es la existencia de la aserción.
+Fija el techo epistémico de todo lo demás que se escriba desde este clúster: se puede registrar que el post existe y que su tesis visible es una insuficiencia de aria-describedby, nada más. Cualquier nota que detalle la mecánica del fallo o la solución estaría inventando contenido que el pipeline no ingirió.
 
-Se relaciona con `aria-describedby-no-basta-para-tooltips-accesibles` y `tooltip-accesible-no-basta-con-aria-describedby` porque comparte el mismo tema de accesibilidad de tooltips sin aportar mecanismo. Sustenta `aria-describedby-tooltip-sin-detalle-de-mecanismo` al confirmar que el fallo sigue sin venir acompañado de mecanismo ni alcance. Sustenta `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` como un caso fresco de clúster evaluado sobre un cuerpo que el pipeline no recuperó.
+Es el límite de evidencia del clúster, por eso se relaciona con la nota sobre el engagement nulo del mismo singleton. Comparte modo de fallo con otras notas de título-sin-cuerpo, y toca lateralmente el concepto de que aria-describedby no basta para tooltips accesibles, que ya existe en el grafo con su propia fuente.
 
 ## Links
 - relates_to → [[aria-describedby-no-basta-para-tooltips-accesibles]]
 - relates_to → [[tooltip-accesible-no-basta-con-aria-describedby]]
 - supports → [[aria-describedby-tooltip-sin-detalle-de-mecanismo]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- relates_to → [[fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion]]
+- relates_to → [[afirmacion-de-mistake-personal-desde-titulo]]

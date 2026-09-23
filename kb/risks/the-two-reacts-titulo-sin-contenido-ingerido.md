@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-23'
 sources:
 - 43e006f4538b71dd
 tags:
+- documento-unico
 - documento-vacio
 - documento-único
 - evidencia-fina
@@ -23,9 +24,10 @@ tags:
 - rss
 - ruido-de-pipeline
 - sin-contenido
+- truncamiento
 base_confidence: 0.05
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -44,21 +46,23 @@ links:
   type: relates_to
 - to: argumento-ex-silentio-en-corpus-truncado
   type: relates_to
+- to: the-two-reacts-fragmento-aislado-ui-f-data-state
+  type: relates_to
+- to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
+  type: supports
 ---
 
 ## What it is
-El documento [43e006f4538b71dd] se titula «The Two Reacts» pero su única sustancia registrada es la fórmula `UI = f(data)(state)` (doc_id: 43e006f4538b71dd). No hay argumento desarrollado, método, ejemplo ni fuente corroborante. El clúster es un documento único de RSS con engagement cero.
+Solo se recuperaron el título y una línea de fórmula del documento «The Two Reacts» [43e006f4538b71dd]. Cualquier inferencia más allá de la fórmula literal sería fabricación. La explicación mundana —truncamiento, fallo de extracción o indexación solo de metadatos— no está descartada.
 
 ## Evidence
-- El único contenido del documento es la fórmula `UI = f(data)(state)` — source: 43e006f4538b71dd
-- El documento se titula «The Two Reacts», lo que sugiere un texto sobre dos aspectos o variantes de React — source: 43e006f4538b71dd
-- Se ingiere desde RSS con engagement registrado nulo, sin señal externa de recepción ni autoridad — source: 43e006f4538b71dd
-- No discute agentes de IA, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de software ni técnicas de estudio — source: 43e006f4538b71dd
+- El cuerpo extraído del documento es únicamente la fórmula `UI = f(data)(state)` — source: 43e006f4538b71dd
+- El crítico señala que la ausencia de contenido extraído no es evidencia de ausencia en la fuente, dadas las alternativas mundanas de truncamiento o indexación parcial.
 
 ## Why it matters
-El título promete un desarrollo («dos Reacts») que el cuerpo ingerido no contiene. Cualquier inferencia sobre práctica de ingeniería a partir de este documento sería invención. Debe registrarse como artefacto terminológico, no como cuerpo de evidencia.
+Sostener hallazgos sobre React, agentes o docencia desde este artefacto inflaría un resultado nulo. La fórmula además es un eslogan conocido del ecosistema React y podría citarse de memoria, violando el requisito de grounding.
 
-Se relaciona con `ui-como-funcion-de-data-y-state`, que sí nombra la fórmula, y con `single-document-cluster-engagement-cero-no-generaliza`, que describe el mismo patrón de clúster unitario sin corroboración. Participa del mismo modo de fallo que `argumento-ex-silentio-en-corpus-truncado`: la ausencia de contenido no debe leerse como afirmación sobre el mundo.
+Se relaciona directamente con la nota de la fórmula; es un caso particular del riesgo sistémico de ingesta truncada ya registrado en el KB.
 
 ## Links
 - relates_to → [[ui-como-funcion-de-data-y-state]]
@@ -68,3 +72,5 @@ Se relaciona con `ui-como-funcion-de-data-y-state`, que sí nombra la fórmula, 
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
+- relates_to → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
+- supports → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]

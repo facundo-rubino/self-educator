@@ -10,19 +10,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 105ea608324d14cd
 tags:
 - ambiguedad-lexica
 - deuda-tecnica
+- documento-unico
 - evidencia-ausente
 - fuente-unica
+- inferencia-no-sostenida
 - interpretacion
+- mantenimiento
 - sobreinterpretacion
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -41,19 +44,23 @@ links:
   type: relates_to
 - to: sobre-generalizacion-desde-claude-code
   type: relates_to
+- to: deuda-tecnica-como-puente-lexico-al-brief
+  type: relates_to
+- to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
+  type: relates_to
 ---
 
 ## What it is
-El subtítulo «The other kind of technical debt» nombra una categoría pero no la define, no la ejemplifica y no la contrasta con la deuda técnica convencional. El texto ingerido no contiene la distinción.
+La única frase con contenido nominal del documento es «The other kind of technical debt». La expresión presupone una taxonomía previa («the other kind») cuyo referente no aparece en el material ingerido. Nombrar de qué tipo se trata —de comprensión, de observabilidad, de documentación o de higiene de mantenimiento silencioso— es una inferencia no respaldada por el texto.
 
 ## Evidence
-- El subtítulo introduce la noción de «otro tipo de deuda técnica» sin desarrollarla — source: 105ea608324d14cd
-- No hay cuerpo, secciones ni citas que especifiquen qué tipo de deuda sería esa — source: 105ea608324d14cd
+- El documento introduce la frase «The other kind of technical debt», sin definirla ni desarrollarla en el texto disponible — source: 105ea608324d14cd
+- El clúster consta de un único documento, sin corroboración — source: 105ea608324d14cd
 
 ## Why it matters
-El sintagma es lo bastante sugerente como para tentar una tesis (deuda de atención, de mantenimiento, de motivación). Sostener cualquiera de ellas desde el subtítulo produciría una afirmación no respaldada por el documento.
+La fórmula es un puntero, no un concepto. Si el pipeline tratase esta línea como un hallazgo sobre deuda técnica, contaminaría el grafo con una definición inventada que luego se citaría como si tuviera fuente. La ambigüedad queda registrada como tal hasta que exista el artículo completo.
 
-Depende de la nota de título sin contenido porque sin cuerpo no hay definición posible. Se relaciona con los modos de fallo ya registrados sobre afirmar práctica o diseño desde material ingerido incompleto.
+Se deriva de la nota sobre el título sin contenido ingerido: sin cuerpo no hay definición. Se relaciona con la nota que trata «deuda técnica» como puente léxico al brief en lugar de señal de contenido, y con el modo de fallo consistente en colapsar un fragmento de una línea a un juicio fuerte. También con la nota sobre relevancia frente a verdad: que la expresión resulte familiar no valida ninguna lectura concreta.
 
 ## Links
 - supports → [[deuda-tecnica-como-puente-lexico-al-brief]]
@@ -63,3 +70,5 @@ Depende de la nota de título sin contenido porque sin cuerpo no hay definición
 - relates_to → [[fix-like-no-one-s-watching-argumento-sin-corroboracion]]
 - relates_to → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]
 - relates_to → [[sobre-generalizacion-desde-claude-code]]
+- relates_to → [[deuda-tecnica-como-puente-lexico-al-brief]]
+- relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]

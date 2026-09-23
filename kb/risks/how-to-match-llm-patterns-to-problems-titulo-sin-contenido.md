@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 0248fdb60811e91e
 tags:
 - evidencia-ausente
-- rss
-- llm-patterns
 - ingesta
+- ingle-documento
+- llm-patterns
+- pipeline
+- rss
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -34,20 +36,26 @@ links:
   type: relates_to
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: taxonomia-dos-ejes-llm-externo-interno-datos
+  type: relates_to
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: relates_to
+- to: matching-llm-patterns-relevancia-baja-sin-ejes-del-topic
+  type: relates_to
 ---
 
 ## What it is
-El clúster «How to Match LLM Patterns to Problems» consta de un único documento RSS [0248fdb60811e91e] cuyo texto ingerido no va más allá del título y un subtítulo que declara el alcance: distinguir problemas con LLMs externos vs. internos, y patrones con datos vs. sin datos. No hay taxonomía de patrones, ni criterios de decisión, ni ejemplos trabajados, ni afirmaciones verificables de forma independiente.
+El único documento ingerido del clúster se reduce a título y subtítulo: «How to Match LLM Patterns to Problems», con el subtítulo que distingue problemas con LLMs externos vs. internos y patrones con datos vs. sin datos [0248fdb60811e91e]. La taxonomía real, los criterios y las recomendaciones no están en el cuerpo ingerido [0248fdb60811e91e]. Afirmar su contenido sería invención.
 
 ## Evidence
-- El clúster es un único documento RSS titulado «How to Match LLM Patterns to Problems» — source: 0248fdb60811e91e
-- El documento describe su alcance como «distinguishing problems with external vs. internal LLMs, and data vs non-data patterns» y no aporta más detalle en el texto ingerido — source: 0248fdb60811e91e
-- El analista concede explícitamente que no hay «no concrete pattern taxonomy, no decision criteria, no worked examples, and no claims that can be independently verified» — source: 0248fdb60811e91e
+- El clúster contiene un único documento RSS titulado «How to Match LLM Patterns to Problems» — source: 0248fdb60811e91e
+- El framing del subtítulo distingue problemas con LLM externo vs. interno, y patrones con datos vs. sin datos — source: 0248fdb60811e91e
+- El documento llegó vía RSS con engagement=0 — source: 0248fdb60811e91e
 
 ## Why it matters
-Cualquier nota que atribuya contenido sustantivo (una taxonomía, un criterio de selección, una mejora medible) a este clúster estaría fabricando a partir del subtítulo de marketing del propio documento. El estado correcto de este ítem es «puntero externo pendiente de ingesta», no hallazgo.
+Cualquier nota que atribuya contenido técnico (criterios de elección, cuándo usar qué patrón) a esta fuente está fabricando. La señal del clúster solo puede sostener una nota negativa: lo que el pipeline no recuperó.
 
-Es el mismo patrón que matching-llm-patterns-to-problems-titulo-sin-contenido (duplicado de etiqueta del mismo clúster). Es un caso concreto del modo de fallo general registrado en afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases y se apoya en pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss: el pipeline evaluó el clúster antes de recuperar el cuerpo. También se relaciona con how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic y con matching-llm-patterns-to-problems-singleton-sin-corroboracion, que describen las otras dos caras del mismo clúster.
+Es el mismo modo de fallo descrito en `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`. La taxonomía de dos ejes esbozada en el subtítulo conecta con `taxonomia-dos-ejes-llm-externo-interno-datos`, pero sin cruzar el umbral de evidencia. Se relaciona con los demás riesgos del mismo clúster (`singleton-sin-corroboracion`, `relevancia-baja-sin-ejes-del-topic`).
 
 ## Links
 - relates_to → [[matching-llm-patterns-to-problems-titulo-sin-contenido]]
@@ -55,3 +63,6 @@ Es el mismo patrón que matching-llm-patterns-to-problems-titulo-sin-contenido (
 - relates_to → [[matching-llm-patterns-to-problems-singleton-sin-corroboracion]]
 - relates_to → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- relates_to → [[taxonomia-dos-ejes-llm-externo-interno-datos]]
+- relates_to → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- relates_to → [[matching-llm-patterns-relevancia-baja-sin-ejes-del-topic]]

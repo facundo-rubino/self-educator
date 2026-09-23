@@ -10,20 +10,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 19cb8032958cd964
 tags:
+- capacidad
 - capacidad-vs-politica
 - epistemologia
+- evidencia
 - falsa-capacidad
 - fuente-unica
 - modo-de-fallo
 - multimodal
 - politica-de-modelos
+- titular-rss
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -49,17 +52,17 @@ links:
 ---
 
 ## What it is
-Tomar una afirmación de producto de un único ítem RSS y reformularla como hallazgo de capacidad («los LLM ahora pueden identificar figuras públicas») confunde reconocimiento facial, recuerdo de nombres y captioning bajo una sola etiqueta (19cb8032958cd964). Una política de producto, además, no es un resultado científico (19cb8032958cd964).
+Leer el titular «LLMs can now identify public figures in images» como hallazgo de capacidad es un non sequitur: una negativa del proveedor es una decisión de política de producto, no prueba de incapacidad técnica. El ítem además no desambigua «identify» entre reconocer, emparejar con una base y nombrar en la salida.
 
 ## Evidence
-- El ítem no especifica metodología, protocolo de prueba, fechas ni versiones de modelo — source: 19cb8032958cd964
-- La evidencia es circular: la fuente es el único apoyo de su propia aserción — source: 19cb8032958cd964
-- Novelty 0.00 y corroboración 0.50 no indican confirmación independiente — source: 19cb8032958cd964
+- El único contenido es el titular y una frase de cuerpo; no hay benchmark, protocolo fechado, captura, prompt reproducido ni replicación independiente. — source: 19cb8032958cd964
+- El ítem carece de fechas y versiones de modelo, por lo que no puede sostener una afirmación en presente («now»). — source: 19cb8032958cd964
+- La afirmación mezcla reconocimiento (el modelo sabe quién es) con cumplimiento de política (el proveedor decide si responde con identidad). — source: 19cb8032958cd964
 
 ## Why it matters
-Sin evaluaciones controladas sobre versiones, prompts y criterios de identificación, la aserción no sobrevive escrutinio. Reformularla como «capacidad ahora disponible» es el modo de fallo exacto que este KB debe bloquear.
+Es el modo de fallo canónico de este clúster: confundir un «no» de política con un «no puedo» de capacidad, y sostener una afirmación poblacional sobre LLM desde un proveedor con una única observación sin método. La confianza calibrada del ítem es 0.08.
 
-Contradice la nota de divergencia por proveedor al negarle estatus de hallazgo establecido. Comparte el mecanismo con la advertencia de «identificar = no rechazar» y con el riesgo de afirmar capacidades poblacionales desde un solo proveedor.
+Contradice `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`: el concepto sostiene una lectura de política, este riesgo señala que la lectura de capacidad no está licenciada por la fuente. Se apoya en `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`, que es el principio que la afirmación viola.
 
 ## Links
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]

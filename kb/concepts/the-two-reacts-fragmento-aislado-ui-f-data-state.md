@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 43e006f4538b71dd
 tags:
+- documento-unico
 - fragmento-aislado
 - react
 - ruido-tematico
+- sin-cuerpo
 - ui
 base_confidence: 0.75
 half_life_days: 180
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -32,21 +34,24 @@ links:
   type: derived_from
 - to: the-two-reacts-aphorism-community-framing-attribution
   type: relates_to
+- to: ui-como-funcion-de-data-y-state
+  type: supports
 ---
 
 ## What it is
-Documento único titulado «The Two Reacts» cuyo contenido verificable se reduce a la fórmula 'UI = f(data)(state)': un artefacto conceptual sobre el modelo de UI/estado de React, no un documento sobre docencia, liderazgo o agentes. relevance=0.33, novelty=0.00 en la evaluación del pipeline. Es la única pieza del clúster.
+El clúster «The Two Reacts» contiene un único documento [43e006f4538b71dd] cuyo contenido extraído se limita al título y a la fórmula `UI = f(data)(state)`. No hay cuerpo, citas ni contexto que desarrollen el argumento. La única afirmación verificable es la forma funcional con currificación de dos argumentos.
 
 ## Evidence
-- El documento se titula 'The Two Reacts' y su contenido es la fórmula 'UI = f(data)(state)', es decir un artefacto conceptual sobre el modelo de UI/estado de React, no un documento sobre docencia, liderazgo o agentes — source: 43e006f4538b71dd
+- El clúster contiene un solo documento, titulado «The Two Reacts», cuyo cuerpo extraído es únicamente la fórmula `UI = f(data)(state)` — source: 43e006f4538b71dd
 
 ## Why it matters
-El aumento de evidencia respecto de la nota previa es nulo: el doc propuesto como corroboración no es otro documento, es la misma fuente con otro encuadre. Esto es precisamente lo que la nota existente ya advertía. No habilita ninguna afirmación sobre agentes de IA, liderazgo técnico, estimación ni didáctica.
+La fórmula de dos argumentos admite la lectura de dos fuentes distintas de reactividad (data y state), pero eso es una hipótesis de lectura, no un hallazgo del documento. El artefacto es demasiado delgado para evaluar el argumento del artículo original.
 
-Se relaciona con `ui-como-funcion-de-data-y-state` porque comparte la fórmula, pero comparte el mismo problema: es una descripción conceptual estable, no un hallazgo novedoso. Deriva de `the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo` al confirmar que el clúster no aporta a ningún eje del brief. Se relaciona con `the-two-reacts-aphorism-community-framing-attribution` por el mismo framing de comunidad en torno al eslogan.
+Refuerza `ui-como-funcion-de-data-y-state` en tanto que ambas notas registran la misma fórmula; sin embargo esta nota solo documenta que el soporte es un título más un eslogan.
 
 ## Links
 - relates_to → [[ui-como-funcion-de-data-y-state]]
 - supports → [[the-two-reacts-titulo-sin-contenido-ingerido]]
 - derived_from → [[the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo]]
 - relates_to → [[the-two-reacts-aphorism-community-framing-attribution]]
+- supports → [[ui-como-funcion-de-data-y-state]]

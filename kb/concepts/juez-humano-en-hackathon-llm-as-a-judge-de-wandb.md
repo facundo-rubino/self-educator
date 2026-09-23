@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - d2a0c86ca8027978
 tags:
@@ -25,7 +25,7 @@ tags:
 - weave
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -54,19 +54,21 @@ links:
   type: supports
 - to: eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
   type: contradicts
+- to: juez-humano-como-rol-sin-contenido-metodologico
+  type: supports
 ---
 
 ## What it is
-El clúster consta de un único ítem RSS titulado «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge», con engagement registrado de cero — fuente: d2a0c86ca8027978. Su único contenido afirmado es que el autor actuó como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases — fuente: d2a0c86ca8027978. No aporta criterios de evaluación, diseño de evaluadores ni anécdotas sobre agentes, liderazgo o docencia — fuente: d2a0c86ca8027978.
+Un autor relata su participación como jurado humano en un hackathon de Weights & Biases centrado en «LLM-as-a-Judge» — source: d2a0c86ca8027978. El único contenido verificable del documento es el rol y el evento: una entrada RSS de blog personal con engagement=0 y novelty=0.00 — source: d2a0c86ca8027978.
 
 ## Evidence
-- El clúster entero es un solo ítem RSS con engagement cero — fuente: d2a0c86ca8027978.
-- El documento afirma únicamente la participación como juez humano, sin detalle de método, criterios ni conclusiones — fuente: d2a0c86ca8027978.
+- El documento es una entrada RSS titulada «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge», con engagement=0 — source: d2a0c86ca8027978.
+- El autor se identifica como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases; el texto se enmarca en la experiencia de juzgar, no en resultados técnicos reproducibles — source: d2a0c86ca8027978.
 
 ## Why it matters
-No se puede derivar ningún hallazgo utilizable sobre los ejes del brief (agentes aplicados a programar/gestionar/enseñar, liderazgo técnico de equipos chicos, oficio, productividad) — fuente: d2a0c86ca8027978. Cualquier inferencia que conecte «LLM-as-a-Judge» con agentes en un flujo de desarrollo es un salto no sostenido por el documento — fuente: d2a0c86ca8027978.
+Registra la existencia del evento y del rol, nada más. No aporta metodología, métricas ni lecciones generalizables sobre evaluación automatizada ni sobre docencia — source: d2a0c86ca8027978.
 
-`juez-humano-como-rol-sin-contenido-metodologico` nombra exactamente este modo de fallo: un rol declarado sin contenido metodológico detrás. `wandb-llm-as-a-judge-hackathon-sin-corroboracion` registra la falta de corroboración del mismo clúster. `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` contradice la idea implícita de que un hackathon de evaluadores sea evidencia de infraestructura de fiabilidad: un evento no es una práctica adoptada.
+Es la evidencia de soporte de `juez-humano-como-rol-sin-contenido-metodologico` y de `wandb-llm-as-a-judge-hackathon-sin-corroboracion`: ambas describen exactamente lo que este documento es — un rol declarado sin cuerpo metodológico.
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
@@ -81,3 +83,4 @@ No se puede derivar ningún hallazgo utilizable sobre los ejes del brief (agente
 - derived_from → [[juez-humano-como-rol-sin-contenido-metodologico]]
 - supports → [[wandb-llm-as-a-judge-hackathon-sin-corroboracion]]
 - contradicts → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
+- supports → [[juez-humano-como-rol-sin-contenido-metodologico]]

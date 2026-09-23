@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - dec9f3cc9a87f904
 - sig-fade19e1d50a
@@ -22,9 +22,10 @@ tags:
 - react
 - rss
 - senal-no-sostenida
+- singleton
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -68,16 +69,16 @@ links:
 ---
 
 ## What it is
-El documento dec9f3cc9a87f904 es un ítem RSS titulado «React for Two Computers» cuyo único cuerpo textual capturado es la frase «Two things, one origin.». No hay artículo, autor, argumento ni contenido verificable en el documento. El título sugiere contenido ya existente o reeditado, pero ningún desarrollo sustantivo fue ingerido.
+El único documento del clúster es un ítem RSS titulado «React for Two Computers» [dec9f3cc9a87f904]. El contenido ingerido no contiene ningún claim sustantivo: solo el fragmento stub «Two things, one origin.» [dec9f3cc9a87f904]. Sin cuerpo, el título no sostiene ninguna afirmación sobre arquitectura React, renderizado cliente/servidor ni sobre los ejes del brief.
 
 ## Evidence
-- El título del documento es «React for Two Computers» y su cuerpo textual visible es únicamente «Two things, one origin.», sin desarrollo sustantivo — source: dec9f3cc9a87f904
-- El clúster contiene un solo documento proveniente de un feed RSS con engagement=0 — source: dec9f3cc9a87f904
+- El contenido entero del documento es la frase «Two things, one origin.», acompañada únicamente del título «React for Two Computers» — source: dec9f3cc9a87f904
+- El ítem se atribuye a una fuente rss con engagement=0 y novelty=0.00, sin información nueva respecto al corpus — source: dec9f3cc9a87f904
 
 ## Why it matters
-Sin cuerpo ingerido no hay claim extraíble: cualquier afirmación sobre React, sobre la relación cliente-servidor que el título evoca, o sobre práctica de ingeniería sería invención. El único uso defendible de este documento es marcarlo como fallo de ingestión y reingestar el artículo completo o descartarlo.
+Cualquier inferencia sobre React a partir del título sería invención, no compilación. Este ítem debe quedar registrado como stub sin cuerpo, no como fuente sobre oficio de software, y no debe agregarse a ninguna nota temática ni usarse como corroboración de otra.
 
-Es un caso concreto del patrón de pipeline que evalúa clústeres RSS cuyo cuerpo nunca recuperó (pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss), y una instancia del riesgo sistémico de cobertura por ingesta truncada (ingesta-truncada-como-riesgo-sistemico-de-cobertura). Se relaciona con el juicio de que el clúster de un solo documento no sostiene generalización (react-for-two-computers-cluster-de-uno-sin-corroboracion) y con su relevancia periférica al tema de agentes (react-for-two-computers-periferico-al-tema-de-agentes).
+Se relaciona con la ausencia de corroboración del mismo clúster (`react-for-two-computers-cluster-de-uno-sin-corroboracion`): ambos describen el mismo vacío desde ángulos distintos. Soporta el patrón de que el pipeline evalúa clústeres RSS cuyo cuerpo no recuperó (`pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`).
 
 ## Links
 - relates_to → [[afirmacion-de-mecanica-css-desde-solo-titulo-rss]]

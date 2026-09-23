@@ -10,18 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 105ea608324d14cd
 tags:
 - brecha-de-evidencia
 - brief
 - docencia
+- laguna-de-corpus
 - mantenimiento
 - oficio
+- senal-debil
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -38,19 +40,21 @@ links:
   type: relates_to
 - to: agentes-abatatan-ports-mantener-sigue-costoso
   type: relates_to
+- to: argumento-ex-silentio-en-corpus-truncado
+  type: relates_to
 ---
 
 ## What it is
-El único anclaje temático del clúster al oficio de software engineering es la mención de «deuda técnica» en el subtítulo. El documento no aporta nada sobre prácticas de mantenimiento, calidad de código o disciplina de corrección.
+El clúster «Fix Like No One’s Watching» no aporta material accionable sobre agentes de IA, liderazgo técnico ni productividad: el documento no ofrece ninguna conexión explícita verificable con esos ejes en el material disponible. Queda abierto si esto refleja una laguna real del corpus sobre disciplina de mantenimiento o solo la pérdida del cuerpo del único documento.
 
 ## Evidence
-- El subtítulo menciona «technical debt» sin desarrollarla — source: 105ea608324d14cd
-- El material no aborda mantenimiento, calidad ni disciplina de corrección con contenido verificable — source: 105ea608324d14cd
+- El documento no ofrece ninguna conexión explícita verificable con el tópico del brief en el material disponible — source: 105ea608324d14cd
+- El clúster contiene un solo documento, con relevancia 0.33 y novelty 0.00 — source: 105ea608324d14cd
 
 ## Why it matters
-Queda abierta la pregunta de si este artículo, con cuerpo completo, contendría una definición útil de deuda técnica no convencional. Hasta entonces no hay material para conectarlo con lo que el KB ya sabe sobre el coste de mantenimiento.
+Distinguir laguna de corpus de fallo de ingesta cambia la acción: recuperar el artículo completo o reencolar el clúster. Sin esa distinción, un vacío de muestreo se lee como conclusión sobre el tema y el brief hereda una ausencia que nunca se comprobó.
 
-Depende de la nota sobre la ambigüedad del subtítulo. Se relaciona con las notas existentes que sí tratan el mantenimiento como coste real, para marcar que aquí no hay todavía puente entre ambas.
+Se deriva de la nota sobre el título sin contenido ingerido. Se relaciona con la nota existente sobre el coste de mantenimiento: ese es el único claim de mantenimiento con fuente real en el grafo, y este clúster no lo amplía. También con el argumento ex silentio sobre corpus truncado, que es exactamente la inferencia que aquí debe evitarse.
 
 ## Links
 - derived_from → [[fix-like-no-one-s-watching-titulo-sin-contenido-ingerido]]
@@ -59,3 +63,4 @@ Depende de la nota sobre la ambigüedad del subtítulo. Se relaciona con las not
 - derived_from → [[fix-like-no-one-s-watching-deuda-tecnica-ambigua]]
 - relates_to → [[mantenimiento-sigue-costoso-electron-app]]
 - relates_to → [[agentes-abatatan-ports-mantener-sigue-costoso]]
+- relates_to → [[argumento-ex-silentio-en-corpus-truncado]]

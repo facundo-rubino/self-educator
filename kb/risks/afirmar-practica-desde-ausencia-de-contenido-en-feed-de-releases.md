@@ -9,18 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-23'
 sources:
 - 30a26335a9988ba2
 - 5a4df6bef0a4905f
+- d2a0c86ca8027978
 - ffbd76916d1dfdc5
 tags:
-- metodo
+- ausencia
 - evidencia
 - falso-positivo
+- feed
+- metodo
+- practica
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -31,21 +35,27 @@ links:
   type: supports
 - to: argumento-ex-silentio-en-corpus-truncado
   type: relates_to
+- to: wandb-llm-as-a-judge-hackathon-sin-corroboracion
+  type: relates_to
+- to: relevancia-no-es-verdad
+  type: relates_to
 ---
 
 ## What it is
-Un feed de releases autogenerado invita a dos errores simétricos: leer el bump como evidencia de práctica (por ejemplo, «el equipo versiona con disciplina») o leer su silencio como prueba de que no hay nada que aprender. Ambos leen intención donde solo hay metadata [30a26335a9988ba2] [5a4df6bef0a4905f] [ffbd76916d1dfdc5].
+Cuando el único material es una entrada de blog o un feed sin cuerpo sustantivo, inferir prácticas de ingeniería, docencia, agentes o liderazgo es un modo de fallo recurrente del pipeline. La ausencia de contenido no es un hallazgo.
 
 ## Evidence
-- Los releases listan solo paquetes y versiones, sin descripción ni rationale — source: 30a26335a9988ba2
-- El mismo formato se repite en v2026.7.4 y en un release anterior con otro subconjunto de paquetes — source: ffbd76916d1dfdc5, 5a4df6bef0a4905f
+- El documento analizado no contiene evidencia sobre agentes de IA aplicados a programar, gestión, enseñanza, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de ingeniería ni productividad — source: d2a0c86ca8027978.
+- El crítico advierte que presentar «el documento existe y es poco informativo» como conclusión con confianza alta es circular, y ajusta la confianza de 0.90 a 0.10 — source: d2a0c86ca8027978.
 
 ## Why it matters
-Marca el modo de fallo del pipeline en este clúster: puntuar relevancia temática sin comprobar que el documento tenga prosa argumental. El filtro correcto es de forma —¿hay claim verificable?— antes que de tópico. Aplicado correctamente, el clúster se descarta sin necesidad de fabricar un hallazgo sobre el ecosistema MCP.
+Evita que un clúster ruidoso contamine futuras síntesis temáticas. La relevancia léxica superficial (palabras como «LLM», «hackathon», «evaluator») no equivale a conexión demostrada con el brief — source: d2a0c86ca8027978.
 
-`mcp-release-bumps-no-revelan-practica-de-ingenieria` enuncia la regla específica de MCP que este riesgo generaliza. `relevancia-no-es-verdad` aporta el principio subyacente: que un documento encaje en el tema no valida lo que dice. `argumento-ex-silentio-en-corpus-truncado` es el modo de fallo opuesto —convertir la ausencia de contenido en un hallazgo positivo— y conviene tenerlo presente al descartar el clúster.
+Se relaciona con `wandb-llm-as-a-judge-hackathon-sin-corroboracion` al compartir el mismo caso base y con `relevancia-no-es-verdad`, que ya establece que la utilidad temática no valida una afirmación.
 
 ## Links
 - derived_from → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]
 - supports → [[relevancia-no-es-verdad]]
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
+- relates_to → [[wandb-llm-as-a-judge-hackathon-sin-corroboracion]]
+- relates_to → [[relevancia-no-es-verdad]]

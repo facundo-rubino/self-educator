@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-23'
 sources:
 - 1bfe45ede61ee575
 tags:
+- contexto-ausente
+- evidence-gap
+- javascript
+- recomendacion-no-generalizable
 - xml
 - xslt
-- contexto-ausente
-- recomendacion-no-generalizable
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -28,21 +30,23 @@ links:
   type: derived_from
 - to: afirmar-constraint-de-diseno-desde-solo-titulo-rss
   type: supports
+- to: xml-human-readable-singleton-engagement-cero
+  type: relates_to
 ---
 
 ## What it is
-La recomendación implícita —renderizar XML con JavaScript en vez de XSLT— solo sería evaluable sabiendo dónde ocurre la transformación (cliente o build time), el tamaño de los documentos XML, el volumen de código JS necesario frente a una hoja XSLT declarativa y si el XML es de confianza. Nada de eso aparece en la fuente.
+El documento afirma que JavaScript está disponible como alternativa a XSLT para hacer XML legible para humanos, pero no ingiere ninguna de las condiciones que harían operable esa elección: tipo de XML, volumen, pipeline de despliegue, ecosistema preexistente, quién mantiene el resultado. La pregunta queda abierta porque la evidencia no la responde.
 
 ## Evidence
-- El documento no ofrece código, ejemplo ni argumento: todo el apoyo es «JavaScript is right there» — source: 1bfe45ede61ee575
-- El crítico observa que el contexto (SSR, transform en build, seguridad de renderizar XML no confiable en cliente) está ausente, por lo que la recomendación puede no generalizar — source: 1bfe45ede61ee575
-- El crítico señala que XSLT está hecho precisamente para transformación declarativa XML→XML/HTML, algo que el documento no aborda — source: 1bfe45ede61ee575
+- El cuerpo visible es solo «JavaScript is right there.» — source: 1bfe45ede61ee575
+- No hay código, benchmark ni análisis de trade-offs en la evidencia — source: 1bfe45ede61ee575
 
 ## Why it matters
-Fija explícitamente el techo epistémico del ítem: no es evidencia de que JavaScript sea mejor opción, solo de que alguien lo afirmó sin argumento. Evita que el grafo herede una heurística de selección tecnológica sin condiciones.
+Sin ese contexto no se puede saber si la afirmación es una preferencia personal, una observación situada o una regla generalizable. XSLT sigue siendo apropiado en pipelines con transformaciones definidas por estándar o ecosistemas XSLT ya existentes, y el documento no aborda esos casos. Registrar la pregunta evita que el compilador fabrique el contexto faltante.
 
-Deriva de `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`, que documenta la ausencia de cuerpo. Es una instancia de `afirmar-constraint-de-diseno-desde-solo-titulo-rss`.
+Deriva de `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`, que documenta el déficit de cuerpo. Se relaciona con `xml-human-readable-singleton-engagement-cero` porque ambos describen el mismo cluster desde el ángulo de la evidencia ausente.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
 - supports → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]
+- relates_to → [[xml-human-readable-singleton-engagement-cero]]

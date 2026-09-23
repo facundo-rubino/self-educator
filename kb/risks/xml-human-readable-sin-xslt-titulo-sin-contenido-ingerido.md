@@ -10,14 +10,16 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 1bfe45ede61ee575
 tags:
 - corpus-truncado
+- evidence-quality
 - ingesta
 - ingesta-truncada
 - matching-por-titulo
+- meta-analysis
 - pipeline
 - rss
 - senal-debil
@@ -25,7 +27,7 @@ tags:
 - xslt
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -48,19 +50,24 @@ links:
   type: supports
 - to: afirmar-constraint-de-diseno-desde-solo-titulo-rss
   type: supports
+- to: anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica
+  type: relates_to
+- to: xml-human-readable-sin-xslt-contexto-no-ingerido
+  type: derived_from
 ---
 
 ## What it is
-El documento [1bfe45ede61ee575] es un post RSS cuyo cuerpo se reduce a la frase «JavaScript is right there»; el título promete una receta («Making XML human-readable without XSLT») que el cuerpo no desarrolla. El clúster entero lo compone ese único documento, con engagement=0 y novelty=0.00.
+El documento [1bfe45ede61ee575] se titula «Making XML human-readable without XSLT» y su cuerpo visible entero es la frase «JavaScript is right there.». No hay argumento, ejemplo, benchmark ni análisis de trade-offs en la evidencia ingerida. Cualquier reconstrucción de una tesis más allá de «usar JS en lugar de XSLT» es invención del compilador.
 
 ## Evidence
-- El clúster está compuesto por un solo documento, un post RSS con engagement=0 titulado «Making XML human-readable without XSLT» — source: 1bfe45ede61ee575
-- El cuerpo del documento se limita a la frase «JavaScript is right there», sin desarrollo de la técnica ni ejemplos — source: 1bfe45ede61ee575
+- El título del documento es «Making XML human-readable without XSLT» — source: 1bfe45ede61ee575
+- El cuerpo del documento consiste únicamente en la aserción «JavaScript is right there.» — source: 1bfe45ede61ee575
+- El ítem es RSS sin engagement (engagement=0) y novelty=0.00 — source: 1bfe45ede61ee575
 
 ## Why it matters
-Cualquier enunciado sobre qué problema resuelve, qué técnica propone o qué alternativas descarta es inferencia del título, no claim soportado. Compilar ese enunciado como hallazgo sobre ingeniería de software sería fabricar contenido a partir de un titular.
+Un titular más una línea no es un hallazgo sobre el oficio de ingeniería. Sin cuerpo ingerido no se puede saber qué problema resuelve el autor, con qué herramientas, ni bajo qué restricciones; escribir esa reconstrucción sería fabricar contenido. El valor de esta nota es como bandera de calidad de evidencia: el cluster no rinde afirmación compilable.
 
-Se relaciona con el singleton sin engagement del mismo documento (`xml-human-readable-singleton-engagement-cero`). Es evidencia de apoyo para `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: aquí el pipeline evaluó un clúster cuyo cuerpo efectivamente no recuperó. Y es un caso de apoyo para `afirmar-constraint-de-diseno-desde-solo-titulo-rss`: el título sugiere un constraint de diseño (usar JS en lugar de XSLT) sin cuerpo que lo sostenga.
+Se relaciona con `anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica` porque comparte el modo de fallo de generalizar desde un solo documento. Se relaciona con `afirmacion-de-capacidad-desde-fragmento-de-una-linea` porque el patrón de inferencia es idéntico: colapsar una línea a un juicio fuerte. Deriva de `xml-human-readable-sin-xslt-contexto-no-ingerido`, que registra el hueco de contexto específicamente para decidir el reemplazo de XSLT.
 
 ## Links
 - relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
@@ -72,3 +79,5 @@ Se relaciona con el singleton sin engagement del mismo documento (`xml-human-rea
 - supports → [[xslt-fuera-del-brief-de-agentes-y-liderazgo]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - supports → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]
+- relates_to → [[anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica]]
+- derived_from → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]

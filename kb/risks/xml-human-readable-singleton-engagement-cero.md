@@ -9,13 +9,16 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-22'
+updated: '2026-09-23'
 sources:
 - 1bfe45ede61ee575
 tags:
 - clustering
 - corroboracion
+- engagement
 - engagement-cero
+- evidence-quality
+- meta-analysis
 - pipeline
 - senal-debil
 - singleton
@@ -23,7 +26,7 @@ tags:
 - xslt
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -46,19 +49,24 @@ links:
   type: relates_to
 - to: generalizacion-desde-cluster-de-un-solo-documento
   type: supports
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: relates_to
+- to: afirmacion-de-novedad-sin-linea-base
+  type: relates_to
 ---
 
 ## What it is
-El clúster tiene un solo documento [1bfe45ede61ee575], con engagement=0, novelty=0.00 y corroboration=0.50 sin segunda fuente. Tratarlo como regla de arquitectura o de enseñanza sería generalizar desde un único caso sin validación.
+El cluster de «Making XML human-readable without XSLT» es un singleton: un único documento RSS [1bfe45ede61ee575] con engagement=0, novelty=0.00 y corroboración parcial 0.50. No hay replicación independiente ni tracción de audiencia. Un singleton sin engagement no sostiene generalización alguna sobre práctica profesional.
 
 ## Evidence
-- El clúster está compuesto por un solo documento, un post RSS con engagement=0 titulado «Making XML human-readable without XSLT» — source: 1bfe45ede61ee575
-- El signal tiene novelty=0.00, corroboration=0.50 y engagement=0, sin segunda fuente que lo valide — source: 1bfe45ede61ee575
+- El cluster contiene un solo documento, [1bfe45ede61ee575] — source: 1bfe45ede61ee575
+- engagement=0 en el ítem RSS — source: 1bfe45ede61ee575
+- novelty=0.00 medida por el pipeline — source: 1bfe45ede61ee575
 
 ## Why it matters
-El valor del documento es ilustrativo, no prescriptivo. No debería convertirse en estándar de equipo sin validación propia, y la corroboración 0.50 no es validación independiente.
+Cero engagement significa que no hay señal de que la posición del autor circule o haya sido contestada. Sostener desde aquí una recomendación de equipo («usen JS para XML») es sobre-generalizar desde un dato personal y sin eco. La corroboración 0.50 del pipeline no es validación independiente: es repetición de serie, no evidencia externa.
 
-Se relaciona con el riesgo de título sin cuerpo del mismo documento (`xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`). Es un caso de apoyo para `single-document-cluster-engagement-cero-no-generaliza` y para `generalizacion-desde-cluster-de-un-solo-documento`: refuerza el patrón de que un clúster de uno con engagement cero no sostiene generalización.
+Se relaciona con `single-document-cluster-engagement-cero-no-generaliza`, que enuncia la regla general que este caso ejemplifica. Deriva de `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`: el singleton y la ausencia de cuerpo son el mismo déficit de evidencia. Se relaciona con `afirmacion-de-novedad-sin-linea-base` porque el novelty=0.00 impide cualquier claim sobre una práctica nueva.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
@@ -70,3 +78,5 @@ Se relaciona con el riesgo de título sin cuerpo del mismo documento (`xml-human
 - derived_from → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[relevancia-no-es-verdad]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
+- relates_to → [[afirmacion-de-novedad-sin-linea-base]]

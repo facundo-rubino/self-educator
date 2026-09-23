@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-23'
 sources:
 - d2a0c86ca8027978
 tags:
-- inferencia
-- rss
-- rol-vs-contenido
 - evals
+- evaluacion
+- inferencia
+- llm-as-a-judge
+- metodologia
+- rol
+- rol-vs-contenido
+- rss
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -30,22 +34,27 @@ links:
   type: relates_to
 - to: evidencia-de-evento-sin-contenido-tecnico
   type: relates_to
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb
+  type: supports
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: relates_to
 ---
 
 ## What it is
-Modo de fallo: leer un rol declarado en un titular («soy juez humano en X») como si documentara conocimiento sobre el criterio, el método o el aprendizaje de ese rol. El documento solo enuncia la participación; no contiene afirmación alguna sobre prácticas de evaluación.
+Declarar que alguien actuó como juez humano en un hackathon de evaluación con LLM no aporta nada sobre cómo se evalúa: ni criterios, ni rúbrica, ni metodología. El rol es un dato biográfico, no un hallazgo técnico.
 
 ## Evidence
-- El documento no contiene afirmaciones sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo, estimación o secuenciamiento — source: d2a0c86ca8027978
-- El documento no aporta contenido sobre oficio de software engineering, productividad ni técnicas de estudio — source: d2a0c86ca8027978
-- El contenido se reduce a la frase de rol, sin desarrollo — source: d2a0c86ca8027978
+- El autor se identifica como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases, pero el documento no reporta metodología, resultados ni lecciones generalizables — source: d2a0c86ca8027978.
+- El texto se enmarca en la experiencia de juzgar, no en resultados técnicos reproducibles — source: d2a0c86ca8027978.
 
 ## Why it matters
-Evita fabricar conclusiones sobre LLM-as-a-Judge o aprendizajes de hackathon a partir de un artefacto de participación. La ausencia de contenido en un stub RSS no prueba ausencia en el evento subyacente: el alcance correcto del descarte es «esta entrada no es un artículo sustantivo», no «el evento no produjo nada».
+La técnica «LLM-as-a-Judge» podría interesar a quien lidera o enseña para escalar revisión de código o evaluación de ejercicios, pero este documento no desarrolla esa aplicación — source: d2a0c86ca8027978. Sin contenido metodológico, la mención no justifica ninguna línea de investigación por sí sola.
 
-`relates_to` con el patrón de promoción de evento como señal falsa y con la nota sobre mención de evento sin contenido técnico: los tres comparten la misma trampa léxica título/rol → contenido.
+Se apoya en `juez-humano-en-hackathon-llm-as-a-judge-de-wandb` como evidencia directa. Se relaciona con `task-specific-llm-evals-titulo-sin-contenido-ingerido`: ambos casos comparten el mismo modo de fallo — un título o rol de evaluación sin cuerpo que lo desarrolle.
 
 ## Links
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - relates_to → [[promocion-de-evento-por-marca-como-senal]]
 - relates_to → [[evidencia-de-evento-sin-contenido-tecnico]]
+- supports → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
+- relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]

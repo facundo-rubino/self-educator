@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-21'
+updated: '2026-09-23'
 sources:
 - 0248fdb60811e91e
 tags:
@@ -20,10 +20,11 @@ tags:
 - seleccion-de-arquitectura
 - seleccion-de-tecnicas
 - sin-contenido-ingerido
+- sin-cuerpo
 - taxonomia
 base_confidence: 0.05
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -38,19 +39,23 @@ links:
   type: relates_to
 - to: bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados
   type: contradicts
+- to: how-to-match-llm-patterns-to-problems-titulo-sin-contenido
+  type: derived_from
+- to: task-specific-llm-evals-adyacencia-al-brief-no-demostrada
+  type: relates_to
 ---
 
 ## What it is
-Un documento RSS titulado «How to Match LLM Patterns to Problems» enuncia una distinción de dos ejes: problemas que usan LLMs externos frente a LLMs internos, y patrones basados en datos frente a patrones no basados en datos [0248fdb60811e91e]. No se ingirió el cuerpo del documento, de modo que la taxonomía queda como enunciado, no como marco desarrollado ni aplicado [0248fdb60811e91e]. La nota registra la existencia de la distinción y su estado de evidencia, no su contenido operativo.
+El subtítulo del documento propone distinguir problemas con LLM externo vs. interno y patrones con datos vs. sin datos [0248fdb60811e91e]. Es un encuadre de decisión para elegir cómo aplicar LLMs, no una taxonomía validada: no hay criterios, definiciones de frontera ni ejemplos en el material ingerido [0248fdb60811e91e].
 
 ## Evidence
-- El documento distingue problemas con LLMs externos frente a internos, y patrones basados en datos frente a no basados en datos — source: 0248fdb60811e91e
-- El engagement registrado para el documento es 0 — source: 0248fdb60811e91e
+- El subtítulo distingue problemas con LLM externo vs. interno y patrones con datos vs. sin datos — source: 0248fdb60811e91e
+- No hay cuerpo ingerido que desarrolle los criterios de la taxonomía — source: 0248fdb60811e91e
 
 ## Why it matters
-Si la distinción fuese válida y estuviese desarrollada, sería un criterio para decidir cuándo un dev que lidera proyectos usa un agente de IA y cuándo no. Tal como está, sólo señala que existe un vocabulario posible; no autoriza ninguna decisión de adopción ni de selección de técnica.
+Si la taxonomía se sostuviera, sería una ayuda de decisión para que un líder técnico elija cómo aplicar LLMs a tareas de programación, gestión y docencia. Hoy no pasa de hipótesis de encuadre.
 
-`derived_from` el ítem RSS del que proviene: la nota no existe sin el título ingerido. `contradicts` la nota sobre bordes no validados: aquí la taxonomía se registra como enunciada, allí se registra que su exhaustividad no está establecida; ambas describen el mismo objeto desde lados opuestos y el conflicto es real, no aparente.
+Deriva de la nota sobre el título sin contenido [0248fdb60811e91e]. Comparte con `bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados` la pregunta por los límites no validados de cualquier taxonomía de este tipo.
 
 ## Links
 - derived_from → [[matching-llm-patterns-to-problems-titulo-sin-contenido]]
@@ -58,3 +63,5 @@ Si la distinción fuese válida y estuviese desarrollada, sería un criterio par
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
 - relates_to → [[bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados]]
 - contradicts → [[bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados]]
+- derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido]]
+- relates_to → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]

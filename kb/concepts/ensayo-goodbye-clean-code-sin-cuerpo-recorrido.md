@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-21'
+updated: '2026-09-23'
 sources:
 - bc47e7115f9ba8d0
 tags:
@@ -18,10 +18,11 @@ tags:
 - ensayo
 - evidencia-ausente
 - ingesta
+- pipeline
 - rss
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-23'
 provenance:
   scale: XL
   query: null
@@ -42,19 +43,22 @@ links:
   type: contradicts
 - to: goodbye-clean-code-titulo-sin-contenido-ingerido
   type: relates_to
+- to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
+  type: relates_to
 ---
 
 ## What it is
-El clúster etiquetado «Goodbye, Clean Code» contiene un único ítem RSS [bc47e7115f9ba8d0] del que solo se dispone de título y subtítulo; el cuerpo del ensayo no está reproducido en la señal, por lo que ningún argumento interno es citable.
+El clúster del signal contiene un único documento [bc47e7115f9ba8d0], un post titulado «Goodbye, Clean Code» cuyo extracto se limita a dos líneas. El pipeline no recuperó el cuerpo del ensayo antes de evaluarlo.
 
 ## Evidence
-- El clúster contiene un solo documento: un ítem RSS titulado «Goodbye, Clean Code» con subtítulo «Let clean code guide you. Then let it go.» — source: bc47e7115f9ba8d0
-- El único contenido disponible para analizar es título y subtítulo; el cuerpo del ensayo no está presente en la señal — source: bc47e7115f9ba8d0
+- El clúster contiene un solo documento [bc47e7115f9ba8d0] — source: bc47e7115f9ba8d0
+- El contenido visible se reduce a «Let clean code guide you. Then let it go.» — source: bc47e7115f9ba8d0
+- Novelty=0.00 y engagement=0 — source: bc47e7115f9ba8d0
 
 ## Why it matters
-Cualquier afirmación sobre la tesis del ensayo (que el clean code es medio y no fin, que aplica a juicio de ingeniería) es memoria del crítico, no evidencia del documento. Sin cuerpo ingerido, el ítem solo puede sostener una nota sobre el fallo de ingesta, no sobre la práctica de ingeniería.
+Documenta que un clúster puede evaluarse sobre un cuerpo vacío. La evaluación final (WEAK, confianza 0.01) es un resultado negativo sobre una fuente débil, no un hallazgo de investigación.
 
-`pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` describe el mismo modo de fallo a escala de pipeline; esta nota lo instancia en un clúster concreto. `ensayo-goodbye-clean-code-sin-cuerpo-recuperado` y `goodbye-clean-code-titulo-sin-contenido-ingerido` son notas hermanas sobre el mismo ítem. `sueltalo-clean-code-como-heuristica-condicionada` afirma una tesis atribuida al ensayo sin cuerpo citable: esta nota la contradice en tanto el contenido no la sostiene.
+Se relaciona con la nota sobre el vacío de contenido y refuerza la nota existente sobre el pipeline que evalúa clústeres cuyo cuerpo no recuperó. Conecta con el riesgo sistémico de ingesta truncada.
 
 ## Links
 - supports → [[sueltalo-clean-code-como-heuristica-condicionada]]
@@ -65,3 +69,4 @@ Cualquier afirmación sobre la tesis del ensayo (que el clean code es medio y no
 - relates_to → [[ensayo-goodbye-clean-code-sin-cuerpo-recuperado]]
 - contradicts → [[sueltalo-clean-code-como-heuristica-condicionada]]
 - relates_to → [[goodbye-clean-code-titulo-sin-contenido-ingerido]]
+- relates_to → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]
