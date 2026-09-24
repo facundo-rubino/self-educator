@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - 49140f9d5133d3c7
 tags:
+- ai-coach
+- composicion
+- novedad
 - novelty
-- overinterpretation
 - off-the-shelf
+- overinterpretation
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -27,20 +30,29 @@ links:
   type: relates_to
 - to: afirmar-constraint-de-diseno-desde-solo-titulo-rss
   type: relates_to
+- to: stack-de-ai-coach-voz-a-voz
+  type: contradicts
+- to: afirmacion-de-novedad-sin-linea-base
+  type: supports
+- to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
+  type: supports
 ---
 
 ## What it is
-Riesgo de sobrevalorar la arquitectura descrita: STT, TTS, un LLM y un número virtual son componentes comerciales estándar. Asumir que la combinación es novedosa o diferenciada no está sostenido por la evidencia disponible.
+Tratar el ensamblado de STT, TTS, LLM y número virtual como un hallazgo nuevo o una práctica validada es un modo de fallo: no hay línea base contra la que medir novedad. El propio pipeline declara novelty=0.00 para el ítem.
 
 ## Evidence
-- El documento describe integración de servicios existentes en vez de modelos propios — source: 49140f9d5133d3c7
-- El clúster consta de un único documento de fuente rss con engagement=0, sin corroboración interna — source: 49140f9d5133d3c7
+- El ítem tiene novelty=0.00 según las métricas del pipeline, lo que contradice cualquier lectura de novedad — source: 49140f9d5133d3c7
+- No hay segundo autor, artefacto, código, métricas ni feedback de usuarios que corrobore la práctica — source: 49140f9d5133d3c7
 
 ## Why it matters
-Si el clúster se abriera como eje de herramientas personales, la contribución a registrar sería el patrón de composición, no un supuesto avance técnico.
+Presentar la composición como novedad convierte una lista de partes en un supuesto hallazgo. La composición es práctica de ingeniería reconocible, pero no demostración de mejora ni de adopción.
 
-Caso particular de `afirmacion-de-novedad-sin-linea-base`; comparte el modo de fallo de `afirmar-constraint-de-diseno-desde-solo-titulo-rss`.
+Contradice la lectura de novedad implícita en `stack-de-ai-coach-voz-a-voz`. Refuerza `afirmacion-de-novedad-sin-linea-base` y `afirmacion-de-capacidad-desde-fragmento-de-una-linea` como instancias del mismo modo de fallo.
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
 - relates_to → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]
+- contradicts → [[stack-de-ai-coach-voz-a-voz]]
+- supports → [[afirmacion-de-novedad-sin-linea-base]]
+- supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]

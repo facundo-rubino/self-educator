@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - d2a0c86ca8027978
 tags:
@@ -21,9 +21,10 @@ tags:
 - rol
 - rol-vs-contenido
 - rss
+- sin-cuerpo
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -38,19 +39,23 @@ links:
   type: supports
 - to: task-specific-llm-evals-titulo-sin-contenido-ingerido
   type: relates_to
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb
+  type: derived_from
+- to: mecanica-de-evals-afirmada-desde-solo-titulo-rss
+  type: relates_to
 ---
 
 ## What it is
-Declarar que alguien actuó como juez humano en un hackathon de evaluación con LLM no aporta nada sobre cómo se evalúa: ni criterios, ni rúbrica, ni metodología. El rol es un dato biográfico, no un hallazgo técnico.
+El documento se limita a declarar el rol de juez humano en un hackathon de evaluación LLM; no desarrolla criterios, mecánica ni metodología. El título y el snippet agotan el contenido disponible.
 
 ## Evidence
-- El autor se identifica como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases, pero el documento no reporta metodología, resultados ni lecciones generalizables — source: d2a0c86ca8027978.
-- El texto se enmarca en la experiencia de juzgar, no en resultados técnicos reproducibles — source: d2a0c86ca8027978.
+- El snippet solo afirma que se trata de ser juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases, sin más detalle sobre métodos, herramientas o lecciones — source: d2a0c86ca8027978
+- El clúster afirma que no hay descripción de criterios de juicio ni conclusiones extraíbles — source: d2a0c86ca8027978
 
 ## Why it matters
-La técnica «LLM-as-a-Judge» podría interesar a quien lidera o enseña para escalar revisión de código o evaluación de ejercicios, pero este documento no desarrolla esa aplicación — source: d2a0c86ca8027978. Sin contenido metodológico, la mención no justifica ninguna línea de investigación por sí sola.
+Over-leer un título/snippet como si contuviera hallazgos produciría fabricación. Cualquier inferencia sobre criterios de juicio, diseño de agentes o práctica docente desde este ítem carece de base.
 
-Se apoya en `juez-humano-en-hackathon-llm-as-a-judge-de-wandb` como evidencia directa. Se relaciona con `task-specific-llm-evals-titulo-sin-contenido-ingerido`: ambos casos comparten el mismo modo de fallo — un título o rol de evaluación sin cuerpo que lo desarrolle.
+Deriva de `juez-humano-en-hackathon-llm-as-a-judge-de-wandb`, que documenta el ítem. Se relaciona con `mecanica-de-evals-afirmada-desde-solo-titulo-rss`: ambos marcan el mismo modo de fallo de leer mecánica desde un titular.
 
 ## Links
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
@@ -58,3 +63,5 @@ Se apoya en `juez-humano-en-hackathon-llm-as-a-judge-de-wandb` como evidencia di
 - relates_to → [[evidencia-de-evento-sin-contenido-tecnico]]
 - supports → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- derived_from → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
+- relates_to → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]

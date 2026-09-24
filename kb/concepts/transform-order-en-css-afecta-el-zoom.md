@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-22'
+updated: '2026-09-24'
 sources:
 - b0df1f50a76ba564
 tags:
@@ -22,7 +22,7 @@ tags:
 - transform
 base_confidence: 0.25
 half_life_days: 180
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-24'
 provenance:
   scale: M
   query: null
@@ -39,20 +39,21 @@ links:
   type: supports
 - to: post-css-sin-engagement-y-relevancia-tangencial-al-brief
   type: relates_to
+- to: animating-zooming-css-titulo-con-documento-unico-engagement-cero
+  type: derived_from
 ---
 
 ## What it is
-Al animar zoom con CSS, el orden de las funciones `transform` importa para el resultado visual, con matización explícita: importa «… a veces». La única tesis del documento [b0df1f50a76ba564] es ese detalle de implementación, sin medición ni resultado de investigación.
+Según el título del documento [b0df1f50a76ba564], al animar zoom con CSS el orden de las funciones `transform` determina el resultado de la animación, aunque con excepciones que el propio título admite («… sometimes»). No hay cuerpo ingerido que especifique qué orden produce qué resultado ni en qué casos el orden es indiferente. La formulación hedged la vuelve casi infalsable tal como está enunciada.
 
 ## Evidence
-- El documento afirma que al animar zoom con CSS el orden de las funciones `transform` importa, con matización («… sometimes») — source: b0df1f50a76ba564
-- El título sugiere contenido de «How to get the right transform animation», es decir una guía práctica, no un resultado de investigación ni una medición — source: b0df1f50a76ba564
-- El documento proviene de un feed RSS con engagement=0, sin indicios de discusión o validación por terceros — source: b0df1f50a76ba564
+- El título afirma que el orden de las funciones `transform` importa para animar zoom en CSS, «a veces» — source: b0df1f50a76ba564
+- El documento se presenta como guía para «obtener la animación de transform correcta», lo que lo clasifica como material tutorial de front-end — source: b0df1f50a76ba564
 
 ## Why it matters
-Es práctica establecida del oficio de CSS (novedad 0.00 según el análisis), no un hallazgo. La matización «sometimes» indica dependencia de contexto (navegador, propiedades previas, orden de escritura); tratarla como regla universal sería incorrecto. El brief declara explícitamente que la docencia entry-level se movió al profile `teaching` de `# pogba`, y este documento no toca ninguno de los ejes declarados (agentes de IA aplicados a programar, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, productividad, técnicas de estudio).
+Si el orden de `transform` altera el zoom, es un punto táctico para quien construye interfaces en CSS. Pero el brief es sobre agentes de IA, liderazgo técnico, estimación, secuenciamiento y productividad, no sobre primitivas de CSS: el valor aquí es de oficio front-end y queda fuera de los ejes del topic.
 
-`transform-order-solo-importa-con-multiples-funciones` matiza el alcance de la regla: el orden solo importa cuando interactúan varias funciones `transform`. `transform-order-y-zoom-css-sin-cuerpo-ingerido` registra que la afirmación no tiene cuerpo ingerido que la sostenga. `post-css-sin-engagement-y-relevancia-tangencial-al-brief` cubre el mismo patrón de ruido: singleton CSS con engagement=0 y relevancia tangencial al brief.
+Se relaciona con `transform-order-solo-importa-con-multiples-funciones`, que acota cuándo el orden es relevante, y deriva del registro del clúster en `animating-zooming-css-titulo-con-documento-unico-engagement-cero`, que documenta el soporte empírico mínimo de esta señal.
 
 ## Links
 - relates_to → [[transform-order-solo-importa-con-multiples-funciones]]
@@ -61,3 +62,4 @@ Es práctica establecida del oficio de CSS (novedad 0.00 según el análisis), n
 - derived_from → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]
 - supports → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]
 - relates_to → [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]]
+- derived_from → [[animating-zooming-css-titulo-con-documento-unico-engagement-cero]]

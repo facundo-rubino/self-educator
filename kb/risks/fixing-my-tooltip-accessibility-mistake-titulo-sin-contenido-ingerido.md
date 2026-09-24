@@ -10,20 +10,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - ded7560510c137bc
 tags:
 - accesibilidad
 - aria
+- aria-describedby
 - evidencia-ausente
 - ingesta-truncada
 - singleton
+- singleton-rss
 - tooltip
 - tooltips
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -40,20 +42,26 @@ links:
   type: relates_to
 - to: afirmacion-de-mistake-personal-desde-titulo
   type: relates_to
+- to: fixing-my-tooltip-accessibility-mistake-fuera-del-brief-de-agentes-y-liderazgo
+  type: supports
+- to: fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion
+  type: supports
+- to: afirmacion-de-mistake-personal-desde-titulo
+  type: supports
 ---
 
 ## What it is
-El documento [ded7560510c137bc] llega al pipeline con título y un único fragmento: «aria-describedby isn't always enough». No hay cuerpo recuperado, ni ejemplos de código, ni alternativas propuestas, ni relato del error concreto. Cualquier afirmación sobre el arreglo aplicado o su corrección sería reconstrucción, no lectura.
+El documento ded7560510c137bc se compone del titular «Fixing my tooltip accessibility mistake» y de la frase «aria-describedby isn't always enough». No hay cuerpo que describa el error cometido, el contexto, la corrección aplicada ni una lección transferible.
 
 ## Evidence
 - El documento se titula «Fixing my tooltip accessibility mistake» — source: ded7560510c137bc
-- El único fragmento textual disponible es «aria-describedby isn't always enough» — source: ded7560510c137bc
-- El crítico del reporte señala que «only the title and one fragment are visible; the full argument, code examples, and recommended alternatives are not available» — source: ded7560510c137bc
+- El documento contiene la frase «aria-describedby isn't always enough» — source: ded7560510c137bc
+- El contenido ingerido se agota en titular más una frase: no hay descripción del error ni de la corrección — source: ded7560510c137bc
 
 ## Why it matters
-Fija el techo epistémico de todo lo demás que se escriba desde este clúster: se puede registrar que el post existe y que su tesis visible es una insuficiencia de aria-describedby, nada más. Cualquier nota que detalle la mecánica del fallo o la solución estaría inventando contenido que el pipeline no ingirió.
+Compilar desde este documento cualquier enunciado sobre accesibilidad de tooltips, sobre el error del autor o sobre una práctica de equipo sería extrapolación no respaldada por el doc_id. El ítem queda como evidencia de truncamiento de ingesta, no como hallazgo.
 
-Es el límite de evidencia del clúster, por eso se relaciona con la nota sobre el engagement nulo del mismo singleton. Comparte modo de fallo con otras notas de título-sin-cuerpo, y toca lateralmente el concepto de que aria-describedby no basta para tooltips accesibles, que ya existe en el grafo con su propia fuente.
+Refuerza las notas que ya registran la ausencia de detalle de mecanismo en el caso aria-describedby y la falta de contenido ingerido del post. También sostiene el modo de fallo general de reconstruir un «mistake» personal desde un titular.
 
 ## Links
 - relates_to → [[aria-describedby-no-basta-para-tooltips-accesibles]]
@@ -62,3 +70,6 @@ Es el límite de evidencia del clúster, por eso se relaciona con la nota sobre 
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - relates_to → [[fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion]]
 - relates_to → [[afirmacion-de-mistake-personal-desde-titulo]]
+- supports → [[fixing-my-tooltip-accessibility-mistake-fuera-del-brief-de-agentes-y-liderazgo]]
+- supports → [[fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion]]
+- supports → [[afirmacion-de-mistake-personal-desde-titulo]]

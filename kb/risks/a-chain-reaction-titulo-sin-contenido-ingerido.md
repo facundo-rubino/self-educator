@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - 0715b80a63a796ad
 tags:
@@ -30,7 +30,7 @@ tags:
 - weak-signal
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -55,19 +55,22 @@ links:
   type: supports
 - to: a-chain-reaction-titulo-cuerpo-desajuste-sugiere-truncamiento
   type: supports
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: supports
 ---
 
 ## What it is
-El documento [0715b80a63a796ad] aporta un título («A Chain Reaction») y una cita de Wittgenstein, sin cuerpo que desarrolle la relación entre ambos. Cualquier afirmación sobre el significado pretendido del título —«reacción en cadena» como acumulación de conocimiento o como efecto compuesto de enseñar y liderar— sería una reconstrucción del analista, no contenido del documento.
+Del documento «A Chain Reaction» sólo se conserva el título y una cita aislada; no hay cuerpo que desarrolle el tema que el título anuncia. El clúster se sostiene sobre un único documento de un feed RSS con engagement=0.
 
 ## Evidence
-- El título «A Chain Reaction» aparece en el documento pero su contenido no desarrolla ni explica ninguna reacción en cadena — source: 0715b80a63a796ad
-- El único contenido sustantivo del documento es la cita «The limits of my language mean the limits of my world» — source: 0715b80a63a796ad
+- El título del documento es «A Chain Reaction» — source: 0715b80a63a796ad
+- El único contenido listado es la cita de Wittgenstein — source: 0715b80a63a796ad
+- El documento proviene de un feed RSS con engagement=0 — source: 0715b80a63a796ad
 
 ## Why it matters
-Riesgo de sobreinterpretación: construir una narrativa sobre efectos compuestos de la docencia o del liderazgo a partir de un título y una cita sin desarrollo. La conducta correcta es tratar el ítem como no compilable hasta recuperar su cuerpo.
+Sin cuerpo no se puede extraer ningún claim verificable: no hay tesis, mecanismo, ejemplo ni contexto. Cualquier afirmación sobre lo que el artículo «dice» sería fabricación.
 
-Es evidencia de apoyo para `a-chain-reaction-cita-sin-argumento-desarrollado` (el aforismo es el único contenido) y para `a-chain-reaction-titulo-cuerpo-desajuste-sugiere-truncamiento`, que ya registra el desajuste título/cuerpo como síntoma de truncamiento o mala extracción.
+`relates_to` la nota que descarta el clúster por falta de conexión con el topic. `relates_to` la nota sobre el desajuste título/cuerpo como indicio de truncamiento. `supports` el riesgo general de que el pipeline no recupere el cuerpo antes de evaluar clústeres RSS.
 
 ## Links
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
@@ -80,3 +83,4 @@ Es evidencia de apoyo para `a-chain-reaction-cita-sin-argumento-desarrollado` (e
 - relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
 - supports → [[a-chain-reaction-cita-sin-argumento-desarrollado]]
 - supports → [[a-chain-reaction-titulo-cuerpo-desajuste-sugiere-truncamiento]]
+- supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]

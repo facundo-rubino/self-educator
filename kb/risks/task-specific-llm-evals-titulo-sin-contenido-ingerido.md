@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 sources:
 - 93963a5f93e58d05
 tags:
 - evals
-- llm
-- ingesta-truncada
+- evidencia
 - firehose
+- ingesta-truncada
+- llm
+- titulo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -33,22 +35,28 @@ links:
   type: relates_to
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: supports
+- to: restatement-de-titulo-no-es-hallazgo
+  type: relates_to
 ---
 
 ## What it is
-El único documento del clúster [93963a5f93e58d05] declara cubrir evals específicas por tarea para LLMs, pero no se recuperó texto que desarrolle la mecánica. Solo hay título, listado de dominios y un anuncio. Ninguna afirmación sobre qué evals «funcionan y cuáles no» es extraíble del material ingerido.
+El documento «Task-Specific LLM Evals that Do & Don't Work» [93963a5f93e58d05] llega sin el artículo: lo ingerido es el título más un listado de ámbitos. Las lecciones de «do» y «don't» —lo único que daría valor decidible— no están presentes en el clúster [93963a5f93e58d05].
 
 ## Evidence
-- El documento no provee detalle sobre qué evals funcionan y cuáles no, más allá del título y el listado de dominios — source: 93963a5f93e58d05
-- El material es un post rss con engagement=0 — source: 93963a5f93e58d05
+- El clúster no aporta el cuerpo del artículo, solo título y alcance declarado — source: 93963a5f93e58d05
+- El propio análisis sostiene que la conexión con los ejes del brief requeriría el contenido completo, que el clúster no provee — source: 93963a5f93e58d05
 
 ## Why it matters
-Bloquea cualquier claim sobre la mecánica de evals que el título sugiere. Cualquier nota que afirme contenido metodológico de este documento estaría fabricando desde un titular. El clúster queda como placeholder, no como evidencia.
+Sin cuerpo no hay taxonomía de evals efectivas vs. inefectivas, y sin esa taxonomía no hay cambio de práctica posible. La nota correcta aquí es la ausencia, no una síntesis inventada de los «do & don't».
 
-Es la cara concreta de `mecanica-de-evals-afirmada-desde-solo-titulo-rss` para este documento. Refuerza `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: el pipeline evaluó el clúster sin haber recuperado cuerpo.
+`supports` la nota de alcance declarado: ambas describen lo mismo desde ángulos complementarios (qué dice el documento vs. qué falta). Se relaciona con el patrón de reformulación de título como no-hallazgo y con el riesgo de afirmar mecánica de evals desde un titular RSS.
 
 ## Links
 - supports → [[task-specific-llm-evals-singleton-engagement-cero]]
 - supports → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
 - relates_to → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- supports → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- relates_to → [[restatement-de-titulo-no-es-hallazgo]]

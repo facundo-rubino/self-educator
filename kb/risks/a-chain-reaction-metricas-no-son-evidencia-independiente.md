@@ -10,20 +10,24 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-21'
+updated: '2026-09-24'
 sources:
 - 0715b80a63a796ad
 tags:
 - a-chain-reaction
 - calibracion
 - corroboracion
+- corroboración
 - filtrado-determinista
+- metodología
 - metricas
 - pipeline
+- rss
+- scoring
 - singleton
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -40,19 +44,25 @@ links:
   type: derived_from
 - to: afirmacion-de-novedad-sin-linea-base
   type: relates_to
+- to: a-chain-reaction-fuera-del-topic-sin-conexion-explicita
+  type: supports
+- to: corroboracion-y-velocidad-como-artefactos-del-scorer
+  type: relates_to
+- to: scores-neutrales-de-cluster-no-corroboran-una-lectura-de-contenido
+  type: supports
 ---
 
 ## What it is
-La «corroboración moderada (0.50)» de este clúster no es verificable contra ninguna fuente independiente: el único soporte del «hallazgo» es el mismo documento que el hallazgo debería explicar.
+Las cifras que acompañan al clúster (relevance 0.33, novelty 0.00, corroboration 0.50, engagement 0) no son evidencia independiente sobre el documento: son la salida del propio scorer del pipeline. Citarlas como prueba de que el documento es irrelevante incurre en circularidad, porque la conclusión y la premisa provienen del mismo sistema.
 
 ## Evidence
-- El clúster contiene un único documento y la corroboración no es verificable contra ninguna fuente independiente — source: 0715b80a63a796ad
-- La novedad declarada es nula y el engagement del ítem es 0 — source: 0715b80a63a796ad
+- El documento lleva relevance 0.33, novelty 0.00 y corroboration 0.50, con engagement=0 — source: 0715b80a63a796ad
+- El clúster se compone de un único documento — source: 0715b80a63a796ad
 
 ## Why it matters
-Evita usar las métricas del propio pipeline como si fueran señal externa. Un singleton con engagement 0 y novelty nula no puede sostener un claim, por alto que sea el score de corroboración calculado internamente.
+Un score bajo no es un hallazgo sobre el mundo ni sobre el contenido; es una medida interna. Tratarlo como corroboración convierte la calibración del pipeline en la conclusión del análisis, lo que impide detectar falsos positivos y hace irrefutable cualquier descarte.
 
-Deriva de la nota sobre el ensayo sin argumento desarrollado. Se relaciona con el modo de fallo ya documentado de afirmar novedad sin línea base: aquí la métrica de corroboración juega el mismo papel engañoso.
+`supports` la nota de que el clúster queda fuera del topic sin conexión explícita, porque retira la única «prueba» que se esgrimía. `relates_to` la observación general de que corroboración y velocidad son artefactos del scorer. `supports` la nota sobre scores en línea base neutra que no corroboran ninguna lectura de contenido.
 
 ## Links
 - relates_to → [[confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido]]
@@ -61,3 +71,6 @@ Deriva de la nota sobre el ensayo sin argumento desarrollado. Se relaciona con e
 - derived_from → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
 - derived_from → [[a-chain-reaction-cita-sin-argumento-desarrollado]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
+- supports → [[a-chain-reaction-fuera-del-topic-sin-conexion-explicita]]
+- relates_to → [[corroboracion-y-velocidad-como-artefactos-del-scorer]]
+- supports → [[scores-neutrales-de-cluster-no-corroboran-una-lectura-de-contenido]]

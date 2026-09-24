@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 sources:
 - 49140f9d5133d3c7
 tags:
 - agentes
-- prototipado
+- apis
+- composicion
 - composicion-de-apis
+- prototipado
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -27,19 +29,26 @@ links:
   type: derived_from
 - to: agent-based-stack-de-ai-coach-voz-a-voz
   type: relates_to
+- to: stack-de-ai-coach-voz-a-voz
+  type: relates_to
+- to: agentes-abatatan-ports-mantener-sigue-costoso
+  type: relates_to
 ---
 
 ## What it is
-Construir un agente de IA útil para una persona puede consistir solo en encadenar servicios existentes: reconocimiento de voz, síntesis de voz, un LLM y un canal telefónico. La barrera de entrada es de integración, no de investigación ni de entrenamiento.
+Ensamblar servicios existentes (STT, TTS, LLM, telefonía) en un asistente pequeño es una forma rápida de probar una hipótesis de flujo personal con código propio mínimo. El valor es como hipótesis a medir, no como técnica de productividad probada.
 
 ## Evidence
-- El documento describe construir un AI coach usando speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El coach descrito se construye combinando speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El clúster no incluye artefacto, código ni métricas que demuestren el resultado de la composición — source: 49140f9d5133d3c7
 
 ## Why it matters
-Sugiere que un ingeniero individual puede pasar de idea a prototipo funcional sin infraestructura de modelos. Es la parte del documento potencialmente transferible a otros flujos de coaching o enseñanza, aunque el documento no aporta ninguna evidencia de esa transferencia.
+Reconoce la actividad como práctica de ingeniería legítima — combinar componentes off-the-shelf — sin confundirla con evidencia de mejora. El coste real está en el mantenimiento posterior, no en el ensamblado inicial.
 
-Se deriva del stack concreto descrito en el documento. Se relaciona con la pregunta de si similar scaffolding de voz podría reutilizarse para coaching o enseñanza, que este documento deja abierta.
+Se relaciona con `stack-de-ai-coach-voz-a-voz`, que es su instancia concreta. Conecta con `agentes-abatatan-ports-mantener-sigue-costoso` por el contraste entre coste de construcción y coste de mantenimiento.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[agent-based-stack-de-ai-coach-voz-a-voz]]
+- relates_to → [[stack-de-ai-coach-voz-a-voz]]
+- relates_to → [[agentes-abatatan-ports-mantener-sigue-costoso]]

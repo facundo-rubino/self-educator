@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - b0df1f50a76ba564
 tags:
+- engagement
 - evidencia
-- singleton
 - pipeline
+- singleton
+- soporte-empirico
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -29,22 +31,30 @@ links:
   type: relates_to
 - to: afirmacion-de-novedad-sin-linea-base
   type: relates_to
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: derived_from
+- to: transform-order-en-css-afecta-el-zoom
+  type: supports
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: relates_to
 ---
 
 ## What it is
-El clúster que produce esta señal consta de un solo documento [b0df1f50a76ba564], un post RSS con engagement=0, relevance=0.33, novelty=0.00 y corroboration=0.50. En esas condiciones no se sostiene generalización alguna sobre prácticas de animación o de ingeniería.
+El clúster de «Animating zooming using CSS» contiene un único documento [b0df1f50a76ba564] con engagement=0 y novelty=0.00, sin corroboración independiente interna. Un singleton sin engagement no sostiene generalización alguna sobre prácticas de front-end ni sobre el interés de una audiencia en el tema.
 
 ## Evidence
-- El clúster contiene un único documento con engagement=0 — source: b0df1f50a76ba564
-- relevance=0.33, novelty=0.00, corroboration=0.50: baja afinidad temática y novedad nula — source: b0df1f50a76ba564
-- No hay cuerpo recuperado, solo el título — source: b0df1f50a76ba564
+- Es el único documento del cluster, con engagement=0 — source: b0df1f50a76ba564
+- relevance=0.33 y novelty=0.00: la señal es débil por construcción — source: b0df1f50a76ba564
 
 ## Why it matters
-Previene el modo de fallo de extraer una regla CSS desde un titular sin cuerpo y sin corroboración. Marca el ítem como ruido temático para el brief de agentes, liderazgo técnico y oficio, evitando contaminación del grafo con contenido ajeno capturado por coincidencia léxica.
+Cualquier claim sobre el contenido concreto del artículo más allá de lo que dice su título queda especulativo. La debilidad estructural del soporte es, en sí misma, el dato más sólido del clúster.
 
-Refuerza `transform-order-y-zoom-css-sin-cuerpo-ingerido` (misma señal, mismo vacío de cuerpo) y es un caso particular de `single-document-cluster-engagement-cero-no-generaliza`. Se conecta también con `afirmacion-de-novedad-sin-linea-base` porque novelty=0.00 indica que el consejo no es nuevo.
+Deriva de `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica` y se relaciona con `generalizacion-desde-cluster-de-un-solo-documento`. Da soporte a `transform-order-en-css-afecta-el-zoom` como registro de su base empírica mínima.
 
 ## Links
 - supports → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
+- derived_from → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- supports → [[transform-order-en-css-afecta-el-zoom]]
+- relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]

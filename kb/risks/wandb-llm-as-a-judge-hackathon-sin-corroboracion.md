@@ -9,19 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - d2a0c86ca8027978
 tags:
 - corroboracion
 - engagement
+- engagement-cero
 - hackathon
 - novelty
 - pipeline
+- sin-corroboracion
 - singleton
+- wandb
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -34,23 +37,28 @@ links:
   type: relates_to
 - to: juez-humano-como-rol-sin-contenido-metodologico
   type: relates_to
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb
+  type: relates_to
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: supports
 ---
 
 ## What it is
-Un clúster de un solo documento con engagement=0 y novelty=0.00 no sostiene ninguna afirmación sobre tendencias del sector ni sobre prácticas. La ausencia de corroboración externa convierte cualquier inferencia extraída de él en especulación.
+El clúster consta de un único ítem RSS con engagement=0, corroboration=0.50, velocity=0.50 y novelty=0.00. Es una fuente única sin corroboración independiente.
 
 ## Evidence
-- El clúster contiene un único documento, entrada RSS de blog personal con engagement=0 — source: d2a0c86ca8027978.
-- Las señales del pipeline marcan novelty=0.00 y velocity=0.50, lo que indica contenido ya conocido en el corpus o sin tracción — source: d2a0c86ca8027978.
-- El crítico del pipeline ajustó la confianza de 0.90 a 0.10 al señalar que el hallazgo es una observación meta autonegatoria: afirmar que el documento no aporta nada no es un resultado — source: d2a0c86ca8027978.
+- El documento muestra engagement=0, corroboration=0.50 y novelty=0.00, indicando ausencia de documentos corroborantes y de información nueva — source: d2a0c86ca8027978
+- No hay documentos adicionales en el clúster — source: d2a0c86ca8027978
 
 ## Why it matters
-Protege contra la tentación de extraer «aprendizajes» de una nota anecdótica. Un documento único con engagement nulo no es evidencia de práctica de ingeniería, docencia, agentes ni liderazgo técnico — source: d2a0c86ca8027978.
+Tratar un ítem único de bajo engagement como tendencia sería un error: los propios scores advierten contra afirmaciones de patrón. El clúster debe registrarse como ruido respecto al brief, no como soporte de ninguna tesis.
 
-Sostiene a `juez-humano-en-hackathon-llm-as-a-judge-de-wandb` al enmarcar sus límites de evidencia. Se relaciona con `juez-humano-como-rol-sin-contenido-metodologico`, que ya registraba la distinción entre declarar un rol de juez y aportar contenido metodológico.
+Se relaciona con `juez-humano-en-hackathon-llm-as-a-judge-de-wandb` como su único documento. Refuerza `generalizacion-desde-cluster-de-un-solo-documento`: un clúster de uno con engagement=0 no sostiene generalización.
 
 ## Links
 - supports → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
 - relates_to → [[juez-humano-como-rol-sin-contenido-metodologico]]
+- relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
+- supports → [[generalizacion-desde-cluster-de-un-solo-documento]]

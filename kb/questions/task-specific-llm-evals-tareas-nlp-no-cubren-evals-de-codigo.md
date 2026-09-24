@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-22'
+updated: '2026-09-24'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -24,7 +24,7 @@ tags:
 - llm
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -49,19 +49,23 @@ links:
   type: relates_to
 - to: task-families-evaluadas-en-el-documento-evals
   type: relates_to
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: derived_from
+- to: embedding-de-eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
+  type: relates_to
 ---
 
 ## What it is
-El documento enumera clasificación, summarization, traducción, regurgitación de copyright y toxicidad como tareas con métodos de eval establecidos. El dominio de coding no aparece en esa lista, y el documento no aborda coding agents, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal ni técnicas de estudio. Queda abierta la pregunta de si las evals para código requieren métodos propios no transferibles desde NLP general.
+El alcance declarado —clasificación, resumen, traducción, copyright regurgitation, toxicidad [93963a5f93e58d05]— no incluye evals de código ni de asistentes de enseñanza. Queda abierto si existe una extensión de la taxonomía a esos dominios o si el documento simplemente no los trata.
 
 ## Evidence
-- El documento trata sobre evals específicas por tarea para LLMs y enumera clasificación, summarization, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
-- El documento no aborda coding agents, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal ni técnicas de estudio — source: 93963a5f93e58d05
+- Las familias de tarea enumeradas son clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
+- El análisis señala que estas categorías son adyacentes pero no directamente sobre los temas centrales del brief — source: 93963a5f93e58d05
 
 ## Why it matters
-Si la lista declarada es la taxonomía completa del documento, el brief de agentes-de-código y docencia no tiene cobertura directa. Marca un posible vacío de corpus: los métodos de eval para código podrían no ser derivables de las tareas NLP enumeradas.
+El brief que importa aquí es fiabilidad de agentes al programar, gestionar y enseñar. Ninguna de las cinco familias declaradas mide eso, así que este documento no puede sostener conclusiones sobre aceptación de agentes de coding sin un puente que la evidencia no provee.
 
-Se deriva de la falta de contenido ingerido: la lista de tareas es lo único afirmable. Se relaciona con `task-families-evaluadas-en-el-documento-evals` desde otro clúster: ambos documentos enumeran tareas NLP generales y dejan fuera el código. La pregunta conecta con `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad`, que sí asume aplicabilidad a contextos de coding.
+`derived_from` la nota de alcance declarado, que enumera las tareas. Se relaciona con la nota existente sobre evaluación específica por tarea como infraestructura de fiabilidad: comparten tema, pero esta fuente no aporta el tramo de código o docencia que aquella nota necesitaría.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -74,3 +78,5 @@ Se deriva de la falta de contenido ingerido: la lista de tareas es lo único afi
 - derived_from → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
 - relates_to → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
 - relates_to → [[task-families-evaluadas-en-el-documento-evals]]
+- derived_from → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- relates_to → [[embedding-de-eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]

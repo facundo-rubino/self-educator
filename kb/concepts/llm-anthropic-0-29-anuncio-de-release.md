@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - 31820ad25e39a34b
 tags:
-- llm
 - anthropic
 - cli
+- llm
+- llm-cli
 - release
+- releases
+- tooling
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -31,22 +34,28 @@ links:
   type: relates_to
 - to: claude-opus-5-5-identificador-no-verificable
   type: contradicts
+- to: modelo-nuevo-en-cli-habilita-sin-demostrar-mejora
+  type: supports
+- to: release-de-plugin-no-es-evidencia-de-practica
+  type: supports
 ---
 
 ## What it is
-Un documento único del feed RSS de Simon Willison anuncia la release 0.29 del plugin `llm-anthropic`, que agrega soporte para un modelo etiquetado como `claude-opus-5.5`, invocable desde la CLI con `llm -m claude-opus-5.5 "prompt goes here"`. El documento está tagueado `llm` y `anthropic`, lo que lo ubica en la familia de herramientas de línea de comandos para modelos de Anthropic. No contiene análisis, discusión ni afirmación alguna sobre prácticas de ingeniería, liderazgo, estimación o docencia.
+El release 0.29 de `llm-anthropic`, plugin de la CLI `llm` de Simon Willison para modelos de Anthropic, añade soporte para un modelo etiquetado `claude-opus-5.5`. La invocación documentada es `llm -m claude-opus-5.5 "prompt goes here"`. El anuncio viene etiquetado `llm` y `anthropic`.
 
 ## Evidence
-- Se publica la release 0.29 del plugin `llm-anthropic`, que agrega soporte para un modelo identificado como Claude Opus 5.5, invocable con `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
-- El documento está tagueado como `llm` y `anthropic` — source: 31820ad25e39a34b
-- Clúster de un solo documento con engagement=0: sin corroboración independiente ni discusión observada — source: 31820ad25e39a34b
+- La nota de release indica que 0.29 añade soporte para `Claude Opus 5.5`, invocable con `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
+- El ítem está etiquetado `llm` y `anthropic`, lo que lo identifica como entrada de changelog del ecosistema de plugins de la CLI `llm` — source: 31820ad25e39a34b
+- El documento es un aviso de release sin discusión de agentes de IA para programar, gestionar o enseñar, ni de liderazgo técnico, oficio o técnicas de estudio — source: 31820ad25e39a34b
 
 ## Why it matters
-Habilita, pero no demuestra, la posibilidad de invocar ese modelo desde scripts y flujos automatizados de terminal. Para el brief —agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos, oficio y productividad— el aporte se limita a un dato operativo de disponibilidad de herramienta. No hay ninguna afirmación sobre estimación, secuenciamiento, alcance, organización personal, liderazgo de equipos chicos ni técnicas de estudio; cualquier inferencia sobre mejores prácticas es especulativa respecto a esta evidencia.
+Es un hecho de disponibilidad de herramienta, no un hallazgo sobre práctica de ingeniería ni sobre cómo un dev-líder-docente trabaja mejor. A lo sumo es un input para futuras evaluaciones de flujos asistidos por IA; por sí mismo no demuestra ninguna mejora de productividad ni beneficio pedagógico.
 
-Se apoya en la observación general de que las métricas de un singleton RSS son autodescripción del pipeline y no corroboración externa, porque aquí el único dato de engagement disponible es 0. Se relaciona con la ausencia de changelogs legibles en releases de servidores/herramientas de agentes: este anuncio sí nombra la versión y el paquete, pero no aporta rationale ni notas de comportamiento. Contradice —o más bien queda suspendido frente a— la nota sobre la verificabilidad del identificador `claude-opus-5.5`: la plausibilidad del nombre del modelo es una duda abierta, no un hecho resuelto en ninguna de las dos direcciones.
+`contradicts` con `claude-opus-5-5-identificador-no-verificable`: el identificador tomado verbatim del anuncio no tiene confirmación externa en este clúster. `supports` a `modelo-nuevo-en-cli-habilita-sin-demostrar-mejora` y a `release-de-plugin-no-es-evidencia-de-practica`, que describen exactamente la clase de inferencia que esta evidencia no permite hacer.
 
 ## Links
 - supports → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
 - relates_to → [[mcp-servers-sin-changelog-legible]]
 - contradicts → [[claude-opus-5-5-identificador-no-verificable]]
+- supports → [[modelo-nuevo-en-cli-habilita-sin-demostrar-mejora]]
+- supports → [[release-de-plugin-no-es-evidencia-de-practica]]

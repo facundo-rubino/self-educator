@@ -9,19 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - 1bfe45ede61ee575
 tags:
 - contexto-ausente
 - evidence-gap
+- ingesta
 - javascript
 - recomendacion-no-generalizable
 - xml
 - xslt
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -32,21 +33,23 @@ links:
   type: supports
 - to: xml-human-readable-singleton-engagement-cero
   type: relates_to
+- to: xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido
+  type: relates_to
 ---
 
 ## What it is
-El documento afirma que JavaScript está disponible como alternativa a XSLT para hacer XML legible para humanos, pero no ingiere ninguna de las condiciones que harían operable esa elección: tipo de XML, volumen, pipeline de despliegue, ecosistema preexistente, quién mantiene el resultado. La pregunta queda abierta porque la evidencia no la responde.
+Para evaluar la idea «usar JavaScript en lugar de XSLT» faltan versión, entorno (navegador vs. tooling), autoría y ejemplos. El pipeline solo recuperó título y una línea de cuerpo, así que la tesis no es evaluable.
 
 ## Evidence
-- El cuerpo visible es solo «JavaScript is right there.» — source: 1bfe45ede61ee575
-- No hay código, benchmark ni análisis de trade-offs en la evidencia — source: 1bfe45ede61ee575
+- El único documento del clúster [1bfe45ede61ee575] se reduce al título y a la frase «JavaScript is right there.», sin contexto de aplicación — source: 1bfe45ede61ee575
 
 ## Why it matters
-Sin ese contexto no se puede saber si la afirmación es una preferencia personal, una observación situada o una regla generalizable. XSLT sigue siendo apropiado en pipelines con transformaciones definidas por estándar o ecosistemas XSLT ya existentes, y el documento no aborda esos casos. Registrar la pregunta evita que el compilador fabrique el contexto faltante.
+Una nota táctica de oficio sobre transformar o embellecer XML con JavaScript sería posible en principio, pero no compilable desde esta evidencia. Queda como laguna, no como hallazgo.
 
-Deriva de `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`, que documenta el déficit de cuerpo. Se relaciona con `xml-human-readable-singleton-engagement-cero` porque ambos describen el mismo cluster desde el ángulo de la evidencia ausente.
+Es la cara complementaria de «xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido»: allí falta el cuerpo, aquí falta además el contexto que haría decidible la elección de herramienta.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
 - supports → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]
 - relates_to → [[xml-human-readable-singleton-engagement-cero]]
+- relates_to → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]

@@ -10,16 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 sources:
 - 49140f9d5133d3c7
 tags:
-- evidencia
+- ai-coach
 - brief
+- evidencia
+- inferencia
 - liderazgo
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -30,20 +32,27 @@ links:
   type: relates_to
 - to: bridge-especulativo-de-eval-por-tarea-a-practica-de-liderazgo
   type: relates_to
+- to: ai-coach-como-herramienta-de-foco-no-de-liderazgo
+  type: relates_to
+- to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
+  type: supports
 ---
 
 ## What it is
-El documento no menciona liderazgo de ingeniería, estimación, secuenciación, alcance ni enseñanza de programación. Cualquier afirmación que conecte este build con cómo el autor lidera o enseña es una inferencia del analista, no un contenido de la fuente.
+La cadena causal desde una herramienta personal de foco hasta mejor liderazgo técnico o mejor docencia no está sostenida por ningún documento del clúster. Afirmarla sería inferencia, no evidencia.
 
 ## Evidence
-- El clúster no contiene mención a liderazgo, estimación, secuenciación, alcance ni docencia; solo describe la construcción y la motivación de autogestión — source: 49140f9d5133d3c7
+- El clúster no contiene evidencia sobre liderazgo técnico, estimación, secuenciamiento, alcance ni docencia — source: 49140f9d5133d3c7
+- El documento es un ítem RSS con engagement=0 y no ofrece contexto de curso, resultados de aprendices ni métricas de equipo — source: 49140f9d5133d3c7
 
 ## Why it matters
-Evita que el encuadre «agentes de IA aplicados a gestionar» contamine el brief con un puente no sostenido. La conexión temática puede registrarse como relación, no como hallazgo.
+Para docencia, el puente más plausible sería mostrar el patrón de composición a estudiantes como proyecto pequeño y acotado con interfaces claras y modos de fallo observables, pero el documento no aporta contexto de curso ni resultados que lo sostengan.
 
-Apoya el encuadre de «monkey mind» como productividad personal, no de liderazgo. Se relaciona con el riesgo de que la ausencia de conexión con el brief sea artefacto de muestreo, y con el patrón de puentes especulativos desde una evidencia delgada hacia la práctica de liderazgo.
+Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo`, que fija la categoría del artefacto. Refuerza `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion` como advertencia de modo de fallo.
 
 ## Links
 - supports → [[monkey-mind-como-encuadre-de-productividad-personal]]
 - relates_to → [[ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo]]
 - relates_to → [[bridge-especulativo-de-eval-por-tarea-a-practica-de-liderazgo]]
+- relates_to → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
+- supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]

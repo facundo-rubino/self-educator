@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - d2a0c86ca8027978
 tags:
@@ -21,11 +21,12 @@ tags:
 - llm-evaluation
 - rss
 - senal-debil
+- sin-cuerpo
 - wandb
 - weave
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -56,19 +57,22 @@ links:
   type: contradicts
 - to: juez-humano-como-rol-sin-contenido-metodologico
   type: supports
+- to: wandb-llm-as-a-judge-hackathon-sin-corroboracion
+  type: relates_to
 ---
 
 ## What it is
-Un autor relata su participación como jurado humano en un hackathon de Weights & Biases centrado en «LLM-as-a-Judge» — source: d2a0c86ca8027978. El único contenido verificable del documento es el rol y el evento: una entrada RSS de blog personal con engagement=0 y novelty=0.00 — source: d2a0c86ca8027978.
+El único documento del clúster es un ítem RSS titulado «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge». El snippet declara únicamente que se trata de ser juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases. No hay cuerpo ingerido: ni criterios de evaluación, ni descripción de lo construido, ni conclusiones.
 
 ## Evidence
-- El documento es una entrada RSS titulada «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge», con engagement=0 — source: d2a0c86ca8027978.
-- El autor se identifica como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases; el texto se enmarca en la experiencia de juzgar, no en resultados técnicos reproducibles — source: d2a0c86ca8027978.
+- El único documento del clúster es un ítem RSS titulado «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge» — source: d2a0c86ca8027978
+- El snippet solo afirma que se trata de ser juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases, sin más detalle sobre métodos, herramientas o lecciones — source: d2a0c86ca8027978
+- El documento muestra engagement=0, corroboration=0.50 y novelty=0.00, sin documentos corroborantes — source: d2a0c86ca8027978
 
 ## Why it matters
-Registra la existencia del evento y del rol, nada más. No aporta metodología, métricas ni lecciones generalizables sobre evaluación automatizada ni sobre docencia — source: d2a0c86ca8027978.
+El clúster no aporta base para afirmar nada sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de software, productividad o técnicas de estudio. «LLM-as-a-Judge» es temáticamente adyacente al tooling de evaluación de LLMs, pero aquí no se conecta con ningún resultado de liderazgo o pedagogía, así que estirarlo para encajar en el brief sería fabricación.
 
-Es la evidencia de soporte de `juez-humano-como-rol-sin-contenido-metodologico` y de `wandb-llm-as-a-judge-hackathon-sin-corroboracion`: ambas describen exactamente lo que este documento es — un rol declarado sin cuerpo metodológico.
+`juez-humano-como-rol-sin-contenido-metodologico` nombra el mismo modo de fallo: un rol declarado sin metodología detrás. `wandb-llm-as-a-judge-hackathon-sin-corroboracion` registra que este clúster es un documento único con engagement=0 y novelty=0.00.
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
@@ -84,3 +88,4 @@ Es la evidencia de soporte de `juez-humano-como-rol-sin-contenido-metodologico` 
 - supports → [[wandb-llm-as-a-judge-hackathon-sin-corroboracion]]
 - contradicts → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
 - supports → [[juez-humano-como-rol-sin-contenido-metodologico]]
+- relates_to → [[wandb-llm-as-a-judge-hackathon-sin-corroboracion]]

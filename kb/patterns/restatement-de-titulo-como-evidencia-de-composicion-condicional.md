@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-24'
 sources:
 - abf61eeec75462f9
 tags:
 - evidencia-circular
-- prompt-engineering
+- evidencia-debil
 - metodo
+- patron
+- prompt-engineering
+- restatement
 base_confidence: 0.5
 half_life_days: 365
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-24'
 provenance:
   scale: XL
   query: null
@@ -32,22 +35,35 @@ links:
   type: relates_to
 - to: prompt-condicional-conocimiento-comun-en-productos-llm
   type: supports
+- to: ensamblado-condicional-de-prompts
+  type: relates_to
+- to: prompt-modular-sin-mecanica-verificable
+  type: supports
+- to: prompt-condicional-conocimiento-comun-en-productos-llm
+  type: relates_to
+- to: validacion-de-senal-por-contenido-no-por-titulo
+  type: supports
 ---
 
 ## What it is
-Que un system prompt se ensamble condicionalmente es cómo funciona cualquier aplicación LLM por capas, no algo que el documento haya establecido sobre Claude Code. Decir «docenas de partes condicionales» coincide léxicamente con vocabulario genérico de ingeniería de prompts; esa coincidencia no convierte la frase en evidencia sobre un producto concreto.
+Cuando una fuente dice que un system prompt se compone de «decenas de partes condicionales» y no aporta ninguna parte, condición o versión, lo que se está repitiendo es la definición de un system prompt modular, no un hallazgo sobre un producto concreto. La regularidad: el restatement de una descripción genérica se presenta como evidencia y sobrevive al filtrado por parecer específico.
 
 ## Evidence
-- Afirmar que Claude Code ensambla su prompt de «docenas de partes condicionales» es reformular cómo funciona el ensamblado condicional en cualquier aplicación LLM por capas, no un hallazgo — source: abf61eeec75462f9 (crítica del crítico sobre el clúster)
-- El material no aporta código, método, mediciones, autoría ni verificación independiente que ancle la afirmación a Claude Code — source: abf61eeec75462f9
+- La única afirmación del clúster es que el system prompt de Claude Code se ensambla de decenas de partes condicionales, según una filtración — source: abf61eeec75462f9
+- El clúster tiene corroboración=0.50 y un único documento con engagement=0 — source: abf61eeec75462f9
+- El crítico la clasifica como «non-finding»: descripción de la arquitectura de un producto propietario, sin validación independiente ni medición — source: abf61eeec75462f9
 
 ## Why it matters
-Una generalidad que podría inferirse sin el documento no puede cargar el peso de «se sabe esto sobre Claude Code». Es el modo de fallo clásico de la evidencia circular: la afirmación se sostiene en su propio enunciado. Para un dev que lidera, la consecuencia es práctica: antes de copiar un supuesto patrón de un producto a propio agente, exigir el artefacto (config, diff, reproducción), no el titular.
+Un dev que diseñe sus propios flujos con agentes obtiene de aquí solo la confirmación de algo ya sabido: los prompts de producto se componen por ramas. Confundir eso con evidencia sobre cómo se construye Claude Code infla el valor de la fuente y contamina el grafo con un `concept` que describe un mecanismo no observado.
 
-`derived_from` la nota general sobre reformular un título como no-hallazgo: este es un caso instanciado. `relates_to` las notas sobre afirmar práctica desde ausencia de contenido en feeds y sobre la composición condicional de Claude Code. `supports` la nota sobre el prompt condicional como patrón conocido en productos LLM: confirma que la idea no es novedosa.
+Es un caso particular de `restatement-de-titulo-no-es-hallazgo`, aplicado al vocabulario de prompts condicionales. Se relaciona con `ensamblado-condicional-de-prompts` (el patrón real) y con `prompt-condicional-conocimiento-comun-en-productos-llm` (el patrón ya conocido en productos LLM). Sustenta `prompt-modular-sin-mecanica-verificable` y comparte método con `validacion-de-senal-por-contenido-no-por-titulo`.
 
 ## Links
 - derived_from → [[restatement-de-titulo-no-es-hallazgo]]
 - relates_to → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
 - supports → [[prompt-condicional-conocimiento-comun-en-productos-llm]]
+- relates_to → [[ensamblado-condicional-de-prompts]]
+- supports → [[prompt-modular-sin-mecanica-verificable]]
+- relates_to → [[prompt-condicional-conocimiento-comun-en-productos-llm]]
+- supports → [[validacion-de-senal-por-contenido-no-por-titulo]]
