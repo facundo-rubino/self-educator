@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-25'
 sources:
 - b0df1f50a76ba564
 tags:
-- css
-- transform
 - animacion
+- css
+- frontend
+- publicacion-sin-cuerpo
+- transform
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -27,21 +29,24 @@ links:
   type: relates_to
 - to: transform-order-y-zoom-css-sin-cuerpo-ingerido
   type: derived_from
+- to: transform-order-en-css-afecta-el-zoom
+  type: relates_to
 ---
 
 ## What it is
-El único contenido verificable es una afirmación condicional: el orden de las funciones `transform` en CSS importa para animar zoom «a veces», lo que implica que existen configuraciones donde el orden es irrelevante o equivalente. No se especifican qué combinaciones de `scale`, `translate` o `rotate`, ni qué condiciones de `transform-origin` o dimensiones de contenedor producen resultados distintos.
+El titular de un post RSS [b0df1f50a76ba564] afirma que al animar zoom con CSS el orden de los `transform` es importante «a veces», y su resumen de una línea promete cómo obtener la animación de transform correcta. No hay más contenido: el cuerpo del documento no está en el material entregado.
 
 ## Evidence
-- El documento [b0df1f50a76ba564] se titula «Animating zooming using CSS: transform order is important… sometimes» y proviene de un feed RSS con engagement=0 — source: b0df1f50a76ba564
-- La afirmación central es explícitamente condicional («a veces»), luego no se sostiene como regla general — source: b0df1f50a76ba564
-- No se recuperó cuerpo del documento; solo el título — source: b0df1f50a76ba564
+- El clúster contiene un único documento, con engagement=0 y puntajes relevance=0.33, novelty=0.00, corroboration=0.50, velocity=0.50, surprise=0.50 — source: b0df1f50a76ba564
+- El titular afirma que el orden de los transforms importa «a veces» al animar zoom con CSS; el resumen de una línea habla de obtener la animación de transform correcta — source: b0df1f50a76ba564
+- El cuerpo del documento no está incluido en el material entregado; solo hay titular y línea de resumen — source: b0df1f50a76ba564
 
 ## Why it matters
-No habilita ninguna decisión técnica: sin combinaciones concretas ni casos, la nota no puede desglosarse en reglas accionables. Su valor es negativo: registra que existe un límite conocido (el orden no siempre importa) sin poder decir dónde está ese límite.
+No se puede citar ninguna afirmación técnica concreta (qué orden, en qué navegadores, con qué síntomas) porque el cuerpo no está ingerido. Todo lo que puede sostenerse es que existe un titular con esa frase; nada más. Cualquier detalle operativo sería invención.
 
-Se relaciona con `transform-order-solo-importa-con-multiples-funciones`, que sostiene una condición más específica (solo con varias funciones interactuando); esta nota es una versión más débil y sin cuerpo de la misma idea. Deriva de `transform-order-y-zoom-css-sin-cuerpo-ingerido`, que documenta el riesgo de afirmar la mecánica desde el titular.
+Se relaciona con las notas ya existentes sobre orden de transform ([[transform-order-solo-importa-con-multiples-funciones]], [[transform-order-en-css-afecta-el-zoom]]) porque el titular apunta al mismo territorio, pero no las corrobora ni las amplía: no hay cuerpo que lo permita. Su estatuto de «sin cuerpo ingerido» se registra en [[transform-order-y-zoom-css-sin-cuerpo-ingerido]].
 
 ## Links
 - relates_to → [[transform-order-solo-importa-con-multiples-funciones]]
 - derived_from → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]
+- relates_to → [[transform-order-en-css-afecta-el-zoom]]

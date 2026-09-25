@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -21,7 +21,7 @@ tags:
 - task-specific
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -38,19 +38,23 @@ links:
   type: supports
 - to: task-specific-llm-evals-adyacencia-al-brief-no-demostrada
   type: supports
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: relates_to
 ---
 
 ## What it is
-El único documento del clúster, titulado «Task-Specific LLM Evals that Do & Don't Work» [93963a5f93e58d05], declara cubrir evals para clasificación, resumen, traducción, copyright regurgitation y toxicidad [93963a5f93e58d05]. Es un listado de ámbitos de evaluación, no un conjunto de hallazgos.
+El único contenido atribuible al documento [93963a5f93e58d05] es la enumeración de familias de tarea sobre las que versan sus evals: clasificación, resumen, traducción, «copyright regurgitation» y toxicidad. No hay cuerpo ingerido más allá de esa lista; el resto del ítem es título y metadatos.
 
 ## Evidence
-- El documento del clúster se titula «Task-Specific LLM Evals that Do & Don't Work» — source: 93963a5f93e58d05
-- Su alcance declarado incluye evals de clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
+- El ítem aborda evals para clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
+- El clúster contiene un único ítem RSS titulado «Task-Specific LLM Evals that Do & Don't Work» con engagement medido de cero — source: 93963a5f93e58d05
 
 ## Why it matters
-Fija qué familias de tarea toca la fuente y, por omisión, cuáles no: son tareas NLP generales, no evals de código ni de asistentes de enseñanza. Cualquier uso de este clúster para hablar de fiabilidad de agentes de coding sería overreach.
+Fija el perímetro real de lo que este documento puede sostener: NLP general sobre texto. Cualquier afirmación sobre evals de código, de asistentes de agentes o de herramientas de gestión queda fuera de ese perímetro y no puede extraerse de aquí.
 
-`derived_from` la nota de título sin contenido ingerido: todo lo que sabemos viene del titular y de la lista de alcance. `supports` la nota sobre tareas NLP que no cubren evals de código y la nota sobre adyacencia no demostrada al brief, porque ambas se sostienen precisamente sobre este listado declarado.
+`supports` la nota sobre tareas NLP que no cubren evals de código: el alcance declarado es precisamente la prueba de esa ausencia. Se relaciona con la nota de título sin contenido ingerido porque ambas describen el mismo límite documental desde ángulos distintos.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -59,3 +63,5 @@ Fija qué familias de tarea toca la fuente y, por omisión, cuáles no: son tare
 - relates_to → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
 - supports → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
 - supports → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
+- relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]

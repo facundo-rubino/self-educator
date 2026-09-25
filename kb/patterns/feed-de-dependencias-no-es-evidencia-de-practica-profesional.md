@@ -9,18 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-25'
 sources:
+- 16a4e3995d6c827e
 - 30a26335a9988ba2
 - 5a4df6bef0a4905f
+- 9750590bbfe6b285
 - b9106690f5dfd849
 tags:
-- metodologia
 - evidencia
+- firehose
 - infraestructura
+- metodologia
+- off-topic
 base_confidence: 0.75
 half_life_days: 365
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -36,17 +40,17 @@ links:
 ---
 
 ## What it is
-Un corpus compuesto exclusivamente por notas de release de paquetes versionados documenta mecanismos de publicación, no prácticas de ingeniería, liderazgo ni docencia. La coincidencia de vocabulario con el brief ('agentes', 'MCP') es nominal.
+Un conjunto de notas de release autogeneradas registra que se publicaron versiones, no que exista práctica de ingeniería, liderazgo o docencia. El formato (encabezado más lista de bumps) no contiene el tipo de claim que el brief pide.
 
 ## Evidence
-- La nota 2026.8.31 solo enumera paquetes y versión, sin describir uso ni resultado — source: 30a26335a9988ba2
-- La nota 2026.7.10 solo enumera paquetes y versión — source: 5a4df6bef0a4905f
-- La nota 2026.1.26 solo enumera paquetes y versión — source: b9106690f5dfd849
+- Ninguno de los documentos del clúster contiene afirmaciones sobre agentes de IA para programar, estimación, secuenciamiento, alcance, organización personal, oficio de software, productividad ni técnicas de estudio — source: 30a26335a9988ba2
+- Los documentos solo registran que paquetes fueron bumpeados a una versión fechada — source: 16a4e3995d6c827e
+- Las releases adyacentes se limitan a listas de paquetes sin rationale — source: 9750590bbfe6b285
 
 ## Why it matters
-Reasigna este tipo de corpus a un feed de dependencias y evita usarlo como evidencia sobre el brief. La autodescripción del pipeline (relevancia, novedad, corroboración) no es validación externa.
+Es la razón por la que este clúster no puede sostener ninguna nota sobre cómo un dev que lidera y enseña hace mejor su trabajo. El valor máximo extraíble es describir la cadencia y el formato, no inferir conducta.
 
-Deriva de `mcp-release-stub-sin-changelog` (sin changelog, no hay práctica que extraer) y refuerza los riesgos ya registrados `mcp-release-bumps-no-revelan-practica-de-ingenieria`, `mcp-release-stubs-como-artefacto-de-feed` y `afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases`.
+`derived_from` la nota sobre release stubs sin changelog: la ausencia de contenido expositivo es lo que invalida tratar el feed como evidencia de práctica.
 
 ## Links
 - derived_from → [[mcp-release-stub-sin-changelog]]

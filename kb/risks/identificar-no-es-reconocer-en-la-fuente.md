@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-25'
 sources:
 - 19cb8032958cd964
 tags:
 - ambiguedad-lexica
 - claims
+- definiciones
 - llm
+- metodologia
 - multimodal
+- rechazo
 base_confidence: 0.12
 half_life_days: 120
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-25'
 provenance:
   scale: M
   query: null
@@ -32,22 +35,32 @@ links:
   type: contradicts
 - to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
   type: relates_to
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: derived_from
+- to: identificacion-de-figuras-publicas-ya-existia
+  type: derived_from
+- to: identificar-no-es-reconocer-en-la-fuente
+  type: relates_to
 ---
 
 ## What it is
-La fuente no establece qué capacidad se probó realmente. Detección de caras, reconocimiento facial y grounding multimodal son capacidades técnicas distintas, y «identify public figures in images» es una trampa de coincidencia léxica si no se especifica el mecanismo.
+«Identificar una figura pública en una imagen» es ambiguo y admite al menos tres lecturas distintas: poner el nombre exacto, producir una coincidencia facial contra una base, o dar una descripción reconocible. El documento fuente no elige ninguna, y sin esa definición la afirmación no es evaluable: no se sabe si se observó reconocimiento correcto o simplemente la ausencia de un rechazo.
 
 ## Evidence
-- El documento no aporta metodología ni benchmark que defina qué se midió — source: 19cb8032958cd964
-- El critic del reporte señala la conflación entre rechazo-a-cumplir e incapacidad-de-cumplir en el encuadre del titular — source: 19cb8032958cd964
+- El documento no especifica qué se entiende por «identificar» ni en qué condiciones [19cb8032958cd964].
+- Tampoco publica tasa de acierto, conjunto de prueba ni tasa de falsos positivos [19cb8032958cd964].
+- El riesgo registrado en el pipeline señala explícitamente esa indefinición como impedimento para evaluar el alcance real [19cb8032958cd964].
 
 ## Why it matters
-Sin definir el mecanismo, el titular «los LLM ahora pueden identificar» es engañoso. La distinción entre política de rechazo y capacidad subyacente no es accesoria: es la diferencia entre un cambio de gating y un cambio de modelo, con implicaciones distintas para quien elige una API de visión.
+Sin operacionalizar el verbo, cualquier medición que se haga encima mide otra cosa. Antes de probar el comportamiento hay que decidir qué se contará como éxito: un nombre exacto, una coincidencia con tolerancia, o la mera no-negativa del modelo. Las tres dan números distintos para el mismo sistema.
 
-Contradice la lectura literal de la nota de divergencia: lo que la fuente llama «identificar» podría ser solo ausencia de refusal, no reconocimiento efectivo. Refuerza la nota sobre capacidad vs. política de rechazo.
+Es consecuencia directa de `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`: como el único dato verificable es sí-rechaza / no-rechaza, la palabra «identificar» del titular solo puede sostenerse como «no rechazó». Depende de `identificacion-de-figuras-publicas-ya-existia` para el contexto de la afirmación. La autoliga registra que la ambigüedad terminológica se aplica a cualquier futura observación de este tipo, no solo a esta.
 
 ## Links
 - derived_from → [[divergencia-de-rechazo-entre-proveedores]]
 - relates_to → [[relevancia-no-es-verdad]]
 - contradicts → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- derived_from → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- derived_from → [[identificacion-de-figuras-publicas-ya-existia]]
+- relates_to → [[identificar-no-es-reconocer-en-la-fuente]]

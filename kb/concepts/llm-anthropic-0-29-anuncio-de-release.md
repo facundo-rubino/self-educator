@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - 31820ad25e39a34b
 tags:
@@ -23,7 +23,7 @@ tags:
 - tooling
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -38,20 +38,22 @@ links:
   type: supports
 - to: release-de-plugin-no-es-evidencia-de-practica
   type: supports
+- to: modelo-nuevo-en-cli-habilita-sin-demostrar-mejora
+  type: relates_to
 ---
 
 ## What it is
-El release 0.29 de `llm-anthropic`, plugin de la CLI `llm` de Simon Willison para modelos de Anthropic, añade soporte para un modelo etiquetado `claude-opus-5.5`. La invocación documentada es `llm -m claude-opus-5.5 "prompt goes here"`. El anuncio viene etiquetado `llm` y `anthropic`.
+El documento anuncia la release `llm-anthropic 0.29`, que añade soporte para el modelo «Claude Opus 5.5» en la CLI `llm` de Simon Willison. El uso documentado es el comando `llm -m claude-opus-5.5 "prompt goes here"` [31820ad25e39a34b].
 
 ## Evidence
-- La nota de release indica que 0.29 añade soporte para `Claude Opus 5.5`, invocable con `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
-- El ítem está etiquetado `llm` y `anthropic`, lo que lo identifica como entrada de changelog del ecosistema de plugins de la CLI `llm` — source: 31820ad25e39a34b
-- El documento es un aviso de release sin discusión de agentes de IA para programar, gestionar o enseñar, ni de liderazgo técnico, oficio o técnicas de estudio — source: 31820ad25e39a34b
+- El documento anuncia la release llm-anthropic 0.29 con soporte para el modelo «Claude Opus 5.5» — source: 31820ad25e39a34b
+- El uso documentado es `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
+- El ítem está etiquetado `llm` y `anthropic`, lo que lo ubica en el ecosistema de herramientas CLI — source: 31820ad25e39a34b
 
 ## Why it matters
-Es un hecho de disponibilidad de herramienta, no un hallazgo sobre práctica de ingeniería ni sobre cómo un dev-líder-docente trabaja mejor. A lo sumo es un input para futuras evaluaciones de flujos asistidos por IA; por sí mismo no demuestra ninguna mejora de productividad ni beneficio pedagógico.
+Habilita invocar un modelo adicional desde la misma CLI sin cambiar de herramienta, para quien ya usa `llm` en scripts o prototipado. No es evidencia de mejora en la forma de trabajar: el documento prueba que existe un comando, no que el modelo sea mejor para ninguna tarea.
 
-`contradicts` con `claude-opus-5-5-identificador-no-verificable`: el identificador tomado verbatim del anuncio no tiene confirmación externa en este clúster. `supports` a `modelo-nuevo-en-cli-habilita-sin-demostrar-mejora` y a `release-de-plugin-no-es-evidencia-de-practica`, que describen exactamente la clase de inferencia que esta evidencia no permite hacer.
+Contradice a `claude-opus-5-5-identificador-no-verificable`: el anuncio afirma la existencia del identificador pero el nombre no corresponde a ningún modelo público conocido. Se relaciona con `modelo-nuevo-en-cli-habilita-sin-demostrar-mejora`, que generaliza este patrón.
 
 ## Links
 - supports → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
@@ -59,3 +61,4 @@ Es un hecho de disponibilidad de herramienta, no un hallazgo sobre práctica de 
 - contradicts → [[claude-opus-5-5-identificador-no-verificable]]
 - supports → [[modelo-nuevo-en-cli-habilita-sin-demostrar-mejora]]
 - supports → [[release-de-plugin-no-es-evidencia-de-practica]]
+- relates_to → [[modelo-nuevo-en-cli-habilita-sin-demostrar-mejora]]

@@ -9,10 +9,12 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-22'
+updated: '2026-09-25'
 sources:
 - 43e006f4538b71dd
 tags:
+- craft
+- mental-model
 - modelado
 - modelo-mental
 - notacion
@@ -20,7 +22,7 @@ tags:
 - ui
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -29,19 +31,26 @@ links:
   type: relates_to
 - to: the-two-reacts-fragmento-aislado-ui-f-data-state
   type: relates_to
+- to: the-two-reacts-fragmento-aislado-ui-f-data-state
+  type: derived_from
+- to: ui-como-funcion-de-data-y-state
+  type: relates_to
 ---
 
 ## What it is
-La fórmula 'UI = f(data)(state)' describe la UI como función de los datos y del estado. Es un eslogan de React, estable desde hace años, no una observación empírica.
+La UI se modela como una función sobre datos que devuelve una función sobre estado: `UI = f(data)(state)`. Es un encuadre declarativo conocido del renderizado estilo React, donde datos y estado son las entradas y la interfaz el resultado.
 
 ## Evidence
-- El documento se titula 'The Two Reacts' y su contenido es la fórmula 'UI = f(data)(state)', es decir un artefacto conceptual sobre el modelo de UI/estado de React — source: 43e006f4538b71dd
+- El contenido extraíble del documento es la fórmula `UI = f(data)(state)`, que enmarca la UI como función de datos que retorna una función de estado — source: 43e006f4538b71dd
+- El documento es un ítem RSS con engagement=0, sin interacción de lectores medida — source: 43e006f4538b71dd
 
 ## Why it matters
-Ninguna inferencia sobre agentes de IA, liderazgo técnico, estimación o didáctica se sigue de esta fórmula: el salto de la fórmula a esos dominios sería una coincidencia léxica, no un vínculo empírico. novelty=0.00 es coherente con una descripción conceptual estable.
+Aporta vocabulario de craft (modelos mentales declarativos, estado y datos como entradas) que es parte del lenguaje general de ingeniería de software, pero no avanza ninguno de los sub-temas específicos del brief.
 
-Se relaciona con `the-two-reacts-fragmento-aislado-ui-f-data-state` como recopilación del único contenido verificable del fragmento. No se enlaza a ningún eje del brief porque no hay conexión demostrable.
+Se relaciona con el resto de notas de React del grafo (p. ej. `the-two-reacts-fragmento-aislado-ui-f-data-state`) como formulación condensada del mismo encuadre; la conexión es temática y léxica, no una relación descubierta en la fuente.
 
 ## Links
 - relates_to → [[mecanica-css-afirmada-desde-solo-titulo-rss]]
 - relates_to → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
+- derived_from → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
+- relates_to → [[ui-como-funcion-de-data-y-state]]

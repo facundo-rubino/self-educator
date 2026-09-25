@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - dec9f3cc9a87f904
 tags:
+- fuera-del-brief
+- ingesta-truncada
 - react
 - rss
-- ingesta-truncada
-- fuera-del-brief
+- sin-cuerpo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -30,22 +31,27 @@ links:
   type: supports
 - to: segundo-corpus-necesario-para-afirmar-capacidad-multimodal
   type: relates_to
+- to: react-for-two-computers-singleton-engagement-cero
+  type: relates_to
+- to: react-for-two-computers-fuera-del-brief-de-agentes-y-liderazgo
+  type: relates_to
 ---
 
 ## What it is
-El documento `dec9f3cc9a87f904` («React for Two Computers») es un único ítem de feed RSS cuyo cuerpo ingerido se reduce a la frase «Two things, one origin.». El analista lo declara explícitamente: no hay contenido sustantivo verificable, y las lecturas posibles (metáfora servidor/cliente, técnica de sincronización) no están respaldadas por el documento.
+El documento [dec9f3cc9a87f904], titulado «React for Two Computers», es un ítem RSS cuyo cuerpo ingerido consiste únicamente en el fragmento «Two things, one origin.», sin desarrollo posterior. No hay artículo que respalde el título ni que permita saber a qué se refiere «two computers».
 
 ## Evidence
-- El clúster contiene exactamente un documento, `dec9f3cc9a87f904`, de feed RSS con engagement 0 — source: dec9f3cc9a87f904
-- El título del documento es «React for Two Computers» — source: dec9f3cc9a87f904
-- El cuerpo textual disponible se limita a «Two things, one origin.», sin desarrollo — source: dec9f3cc9a87f904
+- El único documento del clúster se titula «React for Two Computers» y su cuerpo consiste solo en el fragmento «Two things, one origin.», sin más elaboración — source: dec9f3cc9a87f904
+- El ítem es un RSS con engagement=0, sin interacción registrada de lectores — source: dec9f3cc9a87f904
 
 ## Why it matters
-Sin cuerpo no hay claim extraíble sobre el brief. La pregunta abierta es si el feed entrega solo extractos: si es así, cualquier lectura del título es provisional hasta reingesta del texto completo, y la relevancia (0.33) no puede interpretarse.
+Cualquier lectura del título — React para web y nativo, servidor y cliente, o una analogía con enseñar a dos audiencias — sería invención sobre un fragmento de una línea. El vacío de cuerpo es la pregunta abierta: no se puede determinar si el artículo original era relevante o no. Sin el texto completo, el ítem no es compilable como hallazgo.
 
-Se relaciona con la nota previa del mismo título (`react-for-two-computers-titulo-sin-contenido-ingerido`): es la misma laguna de ingesta, no un ángulo nuevo. Soporta `ingesta-truncada-como-riesgo-sistemico-de-cobertura` porque ejemplifica un clúster evaluado sobre cuerpo vacío.
+Se relaciona con `react-for-two-computers-singleton-engagement-cero`: un documento único sin engagement no sostiene generalización. Se relaciona con `react-for-two-computers-fuera-del-brief-de-agentes-y-liderazgo`: sin cuerpo, no se demuestra relevancia a ningún eje del brief. Refuerza `ingesta-truncada-como-riesgo-sistemico-de-cobertura`: el pipeline evaluó un clúster cuyo cuerpo no recuperó.
 
 ## Links
 - relates_to → [[react-for-two-computers-titulo-sin-contenido-ingerido]]
 - supports → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]
 - relates_to → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
+- relates_to → [[react-for-two-computers-singleton-engagement-cero]]
+- relates_to → [[react-for-two-computers-fuera-del-brief-de-agentes-y-liderazgo]]

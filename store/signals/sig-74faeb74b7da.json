@@ -12,12 +12,12 @@
   "theme": "ia-agentes",
   "scores": {
     "relevance": 0.3333,
-    "novelty": 0.4517,
+    "novelty": 0.0,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.4296,
+  "aggregate_score": 0.3167,
   "first_seen": "2026-09-23T16:37:18Z",
   "sources_count": 1,
   "status": "promoted",

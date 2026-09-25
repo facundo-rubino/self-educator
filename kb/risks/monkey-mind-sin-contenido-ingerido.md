@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - 49140f9d5133d3c7
 tags:
-- ingesta
-- rss
 - contenido
+- ingesta
+- modo-de-fallo
+- rss
+- sin-contenido
+- stub
 base_confidence: 0.2
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -28,20 +31,30 @@ links:
   type: relates_to
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: contradicts
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: supports
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: relates_to
 ---
 
 ## What it is
-La aserción sustantiva del material proporcionado se limita a una descripción de una línea del stack. No hay cuerpo ingerido que desarrolle el build, la medición ni la experiencia de uso.
+El documento es un ítem RSS de engagement cero cuyo único contenido concreto es la lista de cuatro componentes del stack. No reporta si el coach funcionó, ni metodología, ni comparación con alternativas, ni base teórica. Leerlo como hallazgo sobre productividad de desarrolladores o práctica con agentes sería sobreinterpretación.
 
 ## Evidence
-- La aserción sustantiva disponible es la composición del coach (STT + TTS + LLM + número virtual), una línea — source: 49140f9d5133d3c7
-- El ítem es un RSS con relevance=0.33 y novelty=0.00, lo que indica coincidencia léxica más que hallazgo — source: 49140f9d5133d3c7
+- El documento es un ítem RSS con engagement=0 — source: 49140f9d5133d3c7
+- El documento solo describe el stack de cuatro componentes; no reporta resultados, evaluación ni metodología — source: 49140f9d5133d3c7
+- El esquema exige citar doc_ids para cada claim, y este documento solo sostiene la descripción literal del stack — source: 49140f9d5133d3c7
 
 ## Why it matters
-Cualquier informe que derive conclusiones de práctica a partir de este ítem estaría inflando una lista de partes en un hallazgo. La lectura honesta: alguien describió el ensamblado de un producto, sin métricas ni corroboración.
+Evita dos errores simétricos: inflar la nota del stack hasta convertirla en recomendación de práctica, y descartar el ítem como si no contuviera nada. Contiene una descripción técnica acotada y nada más. La ausencia de resultados no prueba que el coach no funcione; solo impide afirmar que funcione.
 
-Se relaciona con `stack-de-ai-coach-voz-a-voz`, que es el único contenido verificable. Refuerza `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` como caso concreto de evaluación sobre cuerpo no recuperado.
+Contradice el impulso de tratar `ai-coach-voz-a-voz-ensamblado-de-servicios` como evidencia de eficacia: la nota describe un ensamblado, no un resultado. Apoya a `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica`, que generaliza la misma regla. Se relaciona con `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` como instancia del mismo modo de fallo en otro dominio.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- contradicts → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]

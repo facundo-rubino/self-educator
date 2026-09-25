@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - df4836a1d89bcba4
 tags:
+- cluster-singleton
 - css
-- shadow-dom
+- engagement-cero
+- falso-positivo
 - ruido-de-cluster
+- shadow-dom
 - singleton
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -30,22 +33,28 @@ links:
   type: relates_to
 - to: sobre-generalizacion-desde-claude-code
   type: relates_to
+- to: shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada
+  type: relates_to
 ---
 
 ## What it is
-El clúster de la señal «Shadow roots, explained with live examples» contiene un único documento [df4836a1d89bcba4]: una entrada RSS etiquetada `css`, con engagement=0 y contenido visible reducido al título más un prompt dirigido a «Fable 5.1 Medium» para construir un artefacto interactivo. No es un hallazgo sustantivo sobre el brief (liderazgo técnico, docencia, estimación, agentes de IA aplicados a programar, productividad).
+El clúster se sostiene en un único documento [df4836a1d89bcba4] con engagement cero, etiquetado únicamente con `css`. No hay segunda fuente que corrobore nada, pese a un score de corroboración de 0.50.
 
 ## Evidence
-- El único documento del clúster es «Shadow roots, explained with live examples», etiquetado `css`, con engagement=0 — source: df4836a1d89bcba4
-- El contenido es un prompt a «Fable 5.1 Medium» para construir un artefacto que explique shadow roots con ejemplos interactivos, no un análisis ya desarrollado — source: df4836a1d89bcba4
-- El documento no menciona liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, agentes de IA aplicados a programación, productividad ni técnicas de estudio — source: df4836a1d89bcba4
+- El documento reporta engagement cero, sin señal de validación ni interés de la comunidad — source: df4836a1d89bcba4
+- El documento está etiquetado solo con «css», lo que sitúa su dominio temático en CSS, no en práctica de ingeniería, liderazgo de equipos ni pedagogía — source: df4836a1d89bcba4
+- El clúster contiene exactamente un ítem, por lo que no existe corroboración cruzada entre documentos — source: df4836a1d89bcba4
 
 ## Why it matters
-Contar este ítem como señal del brief inflaría artificialmente su volumen y diluiría hallazgos reales: el vínculo temático con los ejes declarados no está demostrado en el texto, solo sugerido por solapamiento léxico genérico. El elemento pertenece a un KB de CSS/frontend, no al brief de agentes y liderazgo.
+Un singleton con engagement cero es altamente susceptible de ser ruido antes que señal; inferir tendencias amplias desde él sería overreach. El score de corroboración 0.50 no está respaldado por ningún segundo documento del clúster.
 
-Se relaciona con la discusión general sobre relevancia temática baja y con los riesgos de generalizar desde clústeres de un solo documento sin engagement. No se enlaza con `teaching` ni con los ejes del brief porque el propio documento no establece ese vínculo.
+Complementa la nota sobre el título sin cuerpo: aquí el eje es la ausencia de validación y de segunda fuente; allí, la ausencia de contenido entregado. También se relaciona con la nota sobre el prompt como artefacto sin práctica demostrada.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
 - relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[sobre-generalizacion-desde-claude-code]]
+- relates_to → [[shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido]]
+- relates_to → [[shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada]]

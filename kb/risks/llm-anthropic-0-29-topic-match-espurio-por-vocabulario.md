@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - 31820ad25e39a34b
 tags:
-- pipeline
-- clustering
 - brief
+- clustering
+- falso-positivo
 - falsos-positivos
+- llm
+- matching
+- pipeline
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -31,22 +34,24 @@ links:
   type: derived_from
 - to: clustering-por-embedding-produce-falsos-positivos
   type: supports
+- to: relevancia-no-es-verdad
+  type: relates_to
 ---
 
 ## What it is
-El único documento del clúster no aborda ninguno de los ejes del topic: agentes de IA para programar, gestionar o enseñar, liderazgo técnico de equipos chicos, oficio, productividad o técnicas de estudio. La coincidencia se produce entre las etiquetas `llm` y `anthropic` y el interés del topic por LLMs y agentes de IA para coding.
+La relevancia del ítem para el topic se sostiene en la coincidencia de vocabulario (`llm`, `anthropic`) con el ecosistema de herramientas de IA, no en contenido que dialogue con los ejes del brief. El documento no contiene nada sobre liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, docencia de programación, productividad ni técnicas de estudio [31820ad25e39a34b].
 
 ## Evidence
-- El documento es un aviso de release sin contenido sobre los ejes del topic — source: 31820ad25e39a34b
-- Las etiquetas del ítem son `llm` y `anthropic` — source: 31820ad25e39a34b
-- El analista concluye que es una señal periférica de fuente única y no un hallazgo sobre práctica de ingeniería — source: 31820ad25e39a34b
+- El documento se ubica en el ecosistema de herramientas CLI por sus tags `llm` y `anthropic`, no por práctica de ingeniería ni docencia — source: 31820ad25e39a34b
+- No hay en el documento contenido sobre ningún eje del brief — source: 31820ad25e39a34b
 
 ## Why it matters
-Tratar esta señal como hallazgo del topic sería matching circular por palabra clave. El caso es un ejemplo concreto de cómo el vocabulario genérico de infraestructura (nombres de CLI, de proveedor, de modelo) admite ítems fuera del tema. Si estos casos no se filtran, contaminan la evaluación de cobertura del corpus.
+Un match por etiquetas produce clústeres que parecen relevantes sin cubrir el tema. Cualquier conclusión sobre agentes de IA aplicados a programar, gestionar o enseñar excede lo que este documento soporta.
 
-`supports` a `mismatch-query-tema-por-vocabulario-generico-de-infraestructura` y a `clustering-por-embedding-produce-falsos-positivos`. `derived_from` `llm-anthropic-0-29-anuncio-de-release`, cuyo cuerpo verifica la ausencia de ejes del topic.
+Deriva de `llm-anthropic-0-29-anuncio-de-release`. Se relaciona con `relevancia-no-es-verdad`: la utilidad instrumental del ítem no valida ninguna afirmación sobre el brief.
 
 ## Links
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
 - derived_from → [[llm-anthropic-0-29-anuncio-de-release]]
 - supports → [[clustering-por-embedding-produce-falsos-positivos]]
+- relates_to → [[relevancia-no-es-verdad]]

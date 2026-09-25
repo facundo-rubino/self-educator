@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-22'
+updated: '2026-09-25'
 sources:
 - b0df1f50a76ba564
 tags:
@@ -19,11 +19,13 @@ tags:
 - evidencia-ausente
 - falso-positivo
 - front-end
+- inferencia
+- ingesta-truncada
 - pipeline
 - riesgo
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -50,20 +52,23 @@ links:
   type: derived_from
 - to: generalizacion-desde-cluster-de-un-solo-documento
   type: relates_to
+- to: css-transform-order-importa-solo-a-veces
+  type: derived_from
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: supports
 ---
 
 ## What it is
-El resumen y las implicaciones del análisis se basan en el título del documento [b0df1f50a76ba564]; el cuerpo del artículo no está ingerido. Si el cuerpo contiene matices o casos límite, este análisis no los captura, por lo que conclusiones fuertes sobre el contenido están mal fundamentadas.
+La afirmación «el orden de transform importa a veces» no es verificable con el material entregado: el cuerpo del documento no está incluido, solo el titular y una línea de resumen. Cualquier concreción técnica (qué orden, qué navegador, qué síntoma) sería fabricación, no evidencia.
 
 ## Evidence
-- El propio análisis declara: «el resumen y las implicaciones se basan en el título del documento; si el cuerpo del artículo contiene matices o casos límite, este análisis no los captura» — source: b0df1f50a76ba564
-- El documento proviene de un feed RSS con engagement=0, sin indicios de discusión o validación por terceros — source: b0df1f50a76ba564
-- El título sugiere contenido de «How to get the right transform animation», es decir una guía práctica — source: b0df1f50a76ba564
+- El texto del cuerpo del documento no está incluido en el material entregado; solo se dispone de titular y línea de resumen — source: b0df1f50a76ba564
+- El titular afirma que el orden de los transforms importa «a veces» al animar zoom con CSS, sin desarrollo disponible — source: b0df1f50a76ba564
 
 ## Why it matters
-Cualquier nota que afirme mecánica CSS a partir de este clúster hereda la limitación: la evidencia disponible es el título y una aserción resumida, no el texto que la desarrolla. La matización «sometimes» que el análisis reporta puede o no estar en el cuerpo; sin cuerpo no es verificable.
+La regla queda enunciada sin casos de excepción ni mecanismo. Registrar el hueco evita que una futura compilación rellene el vacío inventando el detalle. Si el cuerpo se ingiere más adelante, esta nota debería reconciliarse con [[css-transform-order-importa-solo-a-veces]].
 
-`transform-order-en-css-afecta-el-zoom` es la nota sustantiva que esta nota delimita. `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` es el patrón general del que este caso es una instancia: el pipeline evalúa clústeres RSS cuyo cuerpo no recuperó. `generalizacion-desde-cluster-de-un-solo-documento` cubre el problema de escala. `mecanica-css-afirmada-desde-solo-titulo-rss` cubre el mismo modo de fallo para mecánica CSS específicamente.
+Se deriva del único contenido extraíble del clúster ([[css-transform-order-importa-solo-a-veces]]). Refuerza [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]] y [[mecanica-css-afirmada-desde-solo-titulo-rss]]: mismo modo de fallo — afirmar mecánica desde un titular sin cuerpo.
 
 ## Links
 - supports → [[mecanica-css-afirmada-desde-solo-titulo-rss]]
@@ -77,3 +82,5 @@ Cualquier nota que afirme mecánica CSS a partir de este clúster hereda la limi
 - relates_to → [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]]
 - derived_from → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- derived_from → [[css-transform-order-importa-solo-a-veces]]
+- supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]

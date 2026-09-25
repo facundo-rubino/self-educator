@@ -9,24 +9,26 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-23'
+updated: '2026-09-25'
 sources:
 - abf61eeec75462f9
 tags:
 - agentes
+- agentes-de-codigo
 - agentic-coding
 - claude-code
 - composicion-condicional
 - composición-condicional
 - filtracion
 - fuente-unica
+- ingenieria-inversa
 - leak
 - prompt-architecture
 - prompt-engineering
 - system-prompt
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-25'
 provenance:
   scale: M
   query: null
@@ -59,19 +61,20 @@ links:
   type: relates_to
 - to: vista-filtrada-del-codigo-no-confirma-composicion-condicional
   type: relates_to
+- to: leak-de-claude-code-sin-fragmentos-citados
+  type: relates_to
 ---
 
 ## What it is
-El system prompt de Claude Code no es un bloque monolítico: se ensambla a partir de docenas de partes condicionales. La afirmación proviene de un artículo que se presenta como basado en «leaked source» de Claude Code. Es la única afirmación sostenible del clúster: no hay detalle de implementación, medición, autoría ni verificación independiente.
+El documento abf61eeec75462f9 reporta que el código fuente filtrado de Claude Code muestra que su system prompt se ensambla a partir de docenas de partes condicionales, en lugar de un bloque monolítico. Es una afirmación de ingeniería inversa sobre las tripas de una herramienta de agentes aplicada a programar: la instrucción al modelo sería el resultado de componer secciones activadas por condiciones.
 
 ## Evidence
-- El system prompt de Claude Code está ensamblado a partir de docenas de partes condicionales — source: abf61eeec75462f9
-- El artículo se presenta como basado en «leaked source» de Claude Code — source: abf61eeec75462f9
+- El system prompt de Claude Code se construye ensamblando docenas de partes condicionales, según el código fuente filtrado que cita el documento — source: abf61eeec75462f9
 
 ## Why it matters
-Si la arquitectura es real, describe un patrón de diseño transferible: bloques activables según contexto (herramientas disponibles, estado de sesión, tipo de tarea) en lugar de un prompt único. Eso alinearía con separar instrucciones de dominio (p. ej. un profile `teaching`) de las de coding. Pero el registro es de titular, no de artefacto: engagement 0, corroboración 0.50, novelty 0.00. No debería desplazar fuentes con evidencia más fuerte sobre liderazgo, estimación o docencia.
+Marca una arquitectura de prompts componible (bloques activados por contexto de entorno, herramientas o modo de tarea) frente al prompt monolítico, y sitúa el prompt del agente como artefacto auditable y testeable por bloque. También desmitifica la IA como caja negra para quien enseña a programar con agentes: la instrucción al modelo es configuración y composición, no magia.
 
-`supports` las notas sobre ensamblado condicional de prompts y sobre el system prompt como artefacto de ingeniería: la composición por bloques es justamente lo que hace versionable y testeable un prompt. `relates_to` las notas sobre el leak de Claude Code y la vista filtrada del código: comparten fuente y la misma laguna (condiciones, partes y secuenciación sin especificar). También `relates_to` el riesgo de sobre-generalizar desde Claude Code y la nota sobre prompt condicional como patrón conocido en productos LLM.
+`system-prompt-como-artefacto-de-ingenieria` es la tesis general que este caso instancia. `prompt-condicional-conocimiento-comun-en-productos-llm` y `ensamblado-condicional-de-prompts` ya establecen que el ensamblado condicional es un patrón conocido en productos LLM, no una exclusiva de Claude Code. `leak-de-claude-code-sin-fragmentos-citados` recoge la ausencia de fragmentos, disparadores y versión. `sobre-generalizacion-desde-claude-code` advierte contra extrapolar este diseño a agentes propios.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
@@ -88,3 +91,4 @@ Si la arquitectura es real, describe un patrón de diseño transferible: bloques
 - derived_from → [[leak-sin-autenticidad-establecida]]
 - relates_to → [[claude-code-condiciones-que-gatean-secciones-sin-observar]]
 - relates_to → [[vista-filtrada-del-codigo-no-confirma-composicion-condicional]]
+- relates_to → [[leak-de-claude-code-sin-fragmentos-citados]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -17,12 +17,14 @@ tags:
 - corroboracion
 - engagement
 - evals
+- ingesta
 - llm
 - rss
+- senal-debil
 - singleton
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -41,20 +43,23 @@ links:
   type: relates_to
 - to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
   type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: derived_from
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: supports
 ---
 
 ## What it is
-El clúster de «Task-Specific LLM Evals» es un singleton: un solo documento RSS [93963a5f93e58d05], con novelty 0.00 y corroboración 0.50, es decir sin fuente independiente que lo respalde. Un documento único con engagement nulo no sostiene generalización sobre práctica de evaluación.
+Riesgo de tratar este clúster como señal: tamaño de clúster uno, engagement medido cero, novelty=0.00. Los metadatos no aportan corroboración independiente, solo autodescripción del pipeline.
 
 ## Evidence
-- El clúster contiene un único documento — source: 93963a5f93e58d05
-- La corroboración reportada es 0.50 desde una sola fuente y la novedad es 0.00 — source: 93963a5f93e58d05
-- El crítico ajustó la confianza de 0.30 a 0.05 — source: 93963a5f93e58d05
+- Cluster size uno, novelty=0.00, corroboración=0.50, engagement cero — source: 93963a5f93e58d05
+- El clúster contiene un único ítem RSS con engagement medido de cero — source: 93963a5f93e58d05
 
 ## Why it matters
-Cualquier conclusión extraída de este clúster es provisional por construcción. El riesgo no es que el artículo sea falso, sino que este KB lo trate como evidencia cuando solo hay una superficie de una fuente.
+Un singleton sin engagement no sostiene generalización alguna sobre evals específicas por tarea, ni sobre si funcionan o fallan. Presentarlo como hallazgo sobrestima la evidencia disponible.
 
-`supports` la nota de título sin contenido ingerido, que documenta la misma carencia desde el lado de la evidencia. Se relaciona con las notas sobre afirmaciones poblacionales desde una sola fuente y sobre ingesta truncada como riesgo sistémico: aquí se combinan ambos modos de fallo.
+`derived_from` el patrón general de que un clúster de un documento con engagement cero no generaliza; `supports` la nota sobre documentos únicos sin engagement que no sostienen claims de práctica.
 
 ## Links
 - relates_to → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -64,3 +69,5 @@ Cualquier conclusión extraída de este clúster es provisional por construcció
 - supports → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - relates_to → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]
+- derived_from → [[single-document-cluster-engagement-cero-no-generaliza]]
+- supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]

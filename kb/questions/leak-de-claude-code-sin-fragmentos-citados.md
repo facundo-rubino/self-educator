@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
+- evidencia
 - evidencia-debil
 - fuente-primaria
 - leak
 - prompt-engineering
+- verificabilidad
 - verificacion
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -38,20 +40,20 @@ links:
   type: relates_to
 - to: vista-filtrada-del-codigo-no-confirma-composicion-condicional
   type: relates_to
+- to: leak-de-claude-code-como-cluster-de-un-solo-documento
+  type: relates_to
 ---
 
 ## What it is
-El clúster no cita ningún fragmento, condición concreta, número de secciones ni versión de Claude Code. Solo afirma que el system prompt se ensambla a partir de «decenas de partes condicionales», sin mostrar el mecanismo que permitiría verificarlo. La pregunta abierta es qué condiciones gatean qué secciones y sobre qué versión del producto se observó.
+El documento abf61eeec75462f9 reporta el ensamblado condicional del system prompt de Claude Code, pero no cita fragmentos del supuesto código filtrado, ni los disparadores que activarían cada parte, ni la versión a la que corresponde el leak. Queda sin respuesta qué condiciones gatean qué secciones y cuántas partes hay exactamente.
 
 ## Evidence
-- El único claim del clúster atribuye a una filtración de código fuente el ensamblado del system prompt a partir de decenas de partes condicionales — source: abf61eeec75462f9
-- El clúster contiene un único documento, con engagement=0 y novelty=0.00 — source: abf61eeec75462f9
-- El propio análisis fija la confianza inicial en 0.15 y el crítico la ajusta a 0.05 — source: abf61eeec75462f9
+- La señal llega vía una fuente agregada de tipo rss con engagement=0, sin fragmentos ni disparadores citados — source: abf61eeec75462f9
 
 ## Why it matters
-Sin fragmentos ni condiciones nombradas, la afirmación no es contrastable. Cualquier lección de diseño que se extraiga de ella queda sin anclaje: no se puede distinguir entre una descripción genérica de un system prompt modular y una arquitectura concreta observada.
+Sin fragmentos citables ni versión, la observación no es replicable ni fechable: no se puede distinguir si describe el diseño actual, una versión pasada o una lectura parcial del código. Cualquier afirmación sobre mecánica interna queda en el terreno de la reconstrucción, no de la verificación.
 
-Continúa el hilo de `claude-code-source-leak-conditions-parts-unspecified` y `claude-code-condiciones-que-gatean-secciones-sin-observar`: la misma carencia de observación directa reaparece aquí. Se apoya en `leak-sin-autenticidad-establecida` (un leak sin autenticidad no confirma lo que dice) y en `vista-filtrada-del-codigo-no-confirma-composicion-condicional`.
+Se apoya en `claude-code-system-prompt-conditional-composition` como el enunciado que carece de soporte. `leak-de-claude-code-como-cluster-de-un-solo-documento` registra que el clúster se sostiene en un único documento con engagement=0. `leak-sin-autenticidad-establecida` recoge el problema general: un leak sin autenticidad establecida no confirma lo que dice el leak.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
@@ -60,3 +62,4 @@ Continúa el hilo de `claude-code-source-leak-conditions-parts-unspecified` y `c
 - relates_to → [[hy3-fuente-primaria-y-metodologia-ausentes]]
 - relates_to → [[claude-code-condiciones-que-gatean-secciones-sin-observar]]
 - relates_to → [[vista-filtrada-del-codigo-no-confirma-composicion-condicional]]
+- relates_to → [[leak-de-claude-code-como-cluster-de-un-solo-documento]]

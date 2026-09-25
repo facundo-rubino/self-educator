@@ -9,20 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-22'
+updated: '2026-09-25'
 sources:
 - 0248fdb60811e91e
 tags:
 - agentes
 - brief
 - docencia
+- llm-patterns
+- relevance
 - relevancia
 - relevancia-baja
 - rss
 - ruido
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -39,20 +41,23 @@ links:
   type: supports
 - to: relevancia-tematica-baja-no-es-ruido
   type: relates_to
+- to: matching-llm-patterns-relevancia-lexica-al-brief-de-agentes
+  type: relates_to
+- to: how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic
+  type: relates_to
 ---
 
 ## What it is
-El clúster «How to Match LLM Patterns to Problems» no articula ninguno de los ejes operativos del brief (agentes de IA aplicados a programar, gestionar o enseñar; liderazgo técnico de equipos chicos; oficio de software engineering; productividad). El propio informe lo sitúa como un artículo de diseño general de sistemas LLM, con relevance=0.33.
+El documento nombra la selección de patrones LLM como preocupación, pero no la conecta con trabajo de ingeniería delegado, estimación, secuenciamiento, alcance ni pedagogía, que son los ejes declarados del brief. La relevance=0.33 es consistente con una pieza de taxonomía de embudo alto, no con evidencia sobre cómo un dev-líder-docente mejora su trabajo.
 
 ## Evidence
-- Relevance del clúster = 0.33; el informe lo clasifica como match débil al tema de agentes de IA para coding/docencia/liderazgo — source: 0248fdb60811e91e
-- El informe advierte que «the article may be about general LLM system design rather than the dev-educator-leader workflow» — source: 0248fdb60811e91e
-- Como consecuencia, «the cluster offers at most a framing … but no evidence that this framing improves any of those activities» — source: 0248fdb60811e91e
+- El documento solo se describe como distinguiendo LLMs externos/internos y patrones con/sin datos — source: 0248fdb60811e91e
+- La relevancia frente al brief es 0.33 y no hay conexión declarada con estimación, secuenciamiento, alcance o docencia — source: 0248fdb60811e91e
 
 ## Why it matters
-Si se decidiera incorporar la distinción externo/interno a un currículo o a un flujo de trabajo, sería por plausibilidad genérica de la etiqueta, no porque la evidencia la conecte con el trabajo del dev que lidera y enseña. La baja relevancia no la convierte en ruido absoluto, pero sí impide usarla como base de decisión.
+Promover este ítem por vocabulario compartido («LLM patterns» vs. agentes de IA) reproduciría un falso positivo léxico y desplazaría material con claims citables.
 
-Es el gemelo de encuadre de matching-llm-patterns-relevancia-baja-sin-ejes-del-topic (mismo clúster, otra formulación) y comparte clúster con how-to-match-llm-patterns-to-problems-titulo-sin-contenido. Se apoya en relevancia-no-es-verdad: que el clúster sea temáticamente pertinente no valida ninguna afirmación suya. Se relaciona con relevancia-tematica-baja-no-es-ruido, que matiza que baja relevancia no equivale a ausencia total de señal.
+Deriva de la ausencia de cuerpo en el mismo documento y se relaciona con el falso positivo léxico ya registrado entre «LLM patterns» y «agentes de IA». Nota duplicada detectada: `how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic` y `matching-llm-patterns-relevancia-baja-sin-ejes-del-topic`.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
@@ -61,3 +66,5 @@ Es el gemelo de encuadre de matching-llm-patterns-relevancia-baja-sin-ejes-del-t
 - relates_to → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido]]
 - supports → [[relevancia-no-es-verdad]]
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
+- relates_to → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]
+- relates_to → [[how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic]]

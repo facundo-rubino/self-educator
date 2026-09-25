@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-25'
 sources:
 - 43e006f4538b71dd
+- 93963a5f93e58d05
 tags:
-- pipeline
-- ingesta
 - cobertura
+- ingesta
+- pipeline
+- riesgo-sistemico
 - senal
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -30,21 +32,24 @@ links:
   type: relates_to
 - to: argumento-ex-silentio-en-corpus-truncado
   type: supports
+- to: task-specific-llm-evals-singleton-rss-engagement-cero-novelty-cero
+  type: relates_to
 ---
 
 ## What it is
-El caso «The Two Reacts» [43e006f4538b71dd], donde el cuerpo ingerido se reduce a una línea, plantea si el truncamiento es la excepción de este documento o un comportamiento sistemático que afecta a otros clústeres. La pregunta abierta no es «qué dice este texto», sino con qué frecuencia el pipeline puntúa documentos cuyo contenido no recuperó.
+Riesgo estructural del pipeline: los metadatos pueden estar incompletos o el ítem RSS puede ser un stub. Si el cuerpo completo se ingiere después, podría reforzar o invalidar cualquier interpretación hecha solo a partir del título.
 
 ## Evidence
-- El documento del clúster tiene cuerpo ingerido igual a una sola fórmula, sin argumento ni desarrollo — source: 43e006f4538b71dd
-- El clúster recibió métricas deterministas (relevance=0.33, novelty=0.00, corroboration=0.50) pese a no haber cuerpo sustantivo que las justifique — source: 43e006f4538b71dd
+- El resumen del pipeline advierte que el metadato por sí solo puede ser incompleto y que el ítem RSS podría ser un stub — source: 93963a5f93e58d05
+- Las conclusiones derivadas solo del título son frágiles según el propio informe del pipeline — source: 93963a5f93e58d05
 
 ## Why it matters
-Si el truncamiento es sistémico, la cobertura aparente del corpus queda inflada: varios clústeres podrían estar clasificados sobre cuerpos vacíos y consumir presupuesto de análisis sin materia. La respuesta afecta directamente al diseño del pipeline (re-verificación de cuerpo antes de evaluar) y al cálculo de frescura y novedad.
+Justifica no cerrar el caso de este ítem como «evaluado y descartado»: lo correcto es registrarlo como cobertura incompleta hasta que exista cuerpo. Afecta a cualquier evaluación de clúster hecha sin texto.
 
-`supports` con `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: es la misma falla observada en otro clúster, aquí confirmada de nuevo. `supports` con `argumento-ex-silentio-en-corpus-truncado`: sin cuerpo verificado, la ausencia de contenido no puede leerse como señal temática. `relates_to` con `relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista`: dos caras del mismo problema de precisión del pipeline.
+`supports` la nota existente de que el pipeline evalúa clústeres RSS cuyo cuerpo no recuperó. Se relaciona con el riesgo de singleton sin engagement porque ambos nacen del mismo tramo del pipeline.
 
 ## Links
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - relates_to → [[relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista]]
 - supports → [[argumento-ex-silentio-en-corpus-truncado]]
+- relates_to → [[task-specific-llm-evals-singleton-rss-engagement-cero-novelty-cero]]

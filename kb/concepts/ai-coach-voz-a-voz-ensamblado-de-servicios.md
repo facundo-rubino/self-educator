@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-25'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
-- voice
 - integration
 - prototyping
+- proyecto-personal
+- stack
+- voice
+- voz
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -32,21 +35,28 @@ links:
   type: supports
 - to: privacidad-y-costo-en-asistentes-de-voz-continuos
   type: supports
+- to: prototipado-por-composicion-de-apis-sin-entrenamiento
+  type: supports
+- to: monkey-mind-como-encuadre-de-productividad-personal
+  type: relates_to
 ---
 
 ## What it is
-Un coach personal de voz se construye ensamblando cuatro servicios existentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. No hay entrenamiento de modelos propios; el valor está en la orquestación, no en la tecnología base.
+Un AI coach personal construido ensamblando cuatro componentes existentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. El documento solo describe el stack, no decisiones de diseño, evaluación ni resultados.
 
 ## Evidence
-- El documento describe un AI coach hecho con speech-to-text, text-to-speech, un LLM y un número de teléfono virtual, es decir, integración de servicios comerciales en vez de modelos propios — source: 49140f9d5133d3c7
+- El documento describe la construcción de un AI coach con speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El documento es un ítem RSS con engagement=0 y no discute agentes de código, liderazgo de equipos, estimación, secuenciamiento, alcance, organización personal, oficio de software engineering ni técnicas de estudio — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es un precedente de «comprar/ensamblar antes que construir» para prototipar una herramienta interna: alcance reducido, coste de integración bajo, sin I+D de modelos. Fija el mínimo arquitectónico del género.
+El único contenido técnico verificable es la lista de cuatro componentes. Eso la vuelve reutilizable como boceto de arquitectura para un asistente de voz, pero no como evidencia de práctica ni de eficacia: no hay decisiones de diseño, ni evaluación, ni resultados reportados.
 
-Se relaciona con `stack-de-ai-coach-voz-a-voz` (posible solapamiento de descripción de componentes: verificar si deben fusionarse). Es un caso de `prototipado-por-composicion-de-apis-sin-entrenamiento`. Soporta `efectividad-de-ai-coach-no-demostrada` y `privacidad-y-costo-en-asistentes-de-voz-continuos` al no reportar métricas ni tratamiento de datos.
+Se relaciona con `stack-de-ai-coach-voz-a-voz`, la nota que ya registraba el mismo ensamblado. Apoya a `prototipado-por-composicion-de-apis-sin-entrenamiento`: es un caso de prototipado por composición de servicios existentes, sin entrenar modelos. Se relaciona con `monkey-mind-como-encuadre-de-productividad-personal` porque ese es el encuadre declarado del proyecto.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
 - supports → [[efectividad-de-ai-coach-no-demostrada]]
 - supports → [[privacidad-y-costo-en-asistentes-de-voz-continuos]]
+- supports → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
+- relates_to → [[monkey-mind-como-encuadre-de-productividad-personal]]

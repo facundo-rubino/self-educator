@@ -9,18 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - b0df1f50a76ba564
 tags:
 - engagement
+- engagement-cero
 - evidencia
+- falso-positivo
 - pipeline
+- rss
 - singleton
 - soporte-empirico
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -37,19 +40,24 @@ links:
   type: supports
 - to: generalizacion-desde-cluster-de-un-solo-documento
   type: relates_to
+- to: post-css-sin-engagement-y-relevancia-tangencial-al-brief
+  type: supports
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: supports
+- to: css-transform-order-importa-solo-a-veces
+  type: relates_to
 ---
 
 ## What it is
-El clúster de «Animating zooming using CSS» contiene un único documento [b0df1f50a76ba564] con engagement=0 y novelty=0.00, sin corroboración independiente interna. Un singleton sin engagement no sostiene generalización alguna sobre prácticas de front-end ni sobre el interés de una audiencia en el tema.
+El clúster que produce esta señal es un singleton: un post RSS con engagement=0 y novelty=0.00. Con esos valores no hay material poblacional ni impacto medible que sostenga generalización alguna sobre práctica de frontend o sobre el estado del arte de la animación CSS.
 
 ## Evidence
-- Es el único documento del cluster, con engagement=0 — source: b0df1f50a76ba564
-- relevance=0.33 y novelty=0.00: la señal es débil por construcción — source: b0df1f50a76ba564
+- El clúster contiene exactamente un documento, un post RSS con engagement=0 y puntajes relevance=0.33, novelty=0.00, corroboration=0.50, velocity=0.50, surprise=0.50 — source: b0df1f50a76ba564
 
 ## Why it matters
-Cualquier claim sobre el contenido concreto del artículo más allá de lo que dice su título queda especulativo. La debilidad estructural del soporte es, en sí misma, el dato más sólido del clúster.
+Un post RSS con engagement=0 no es representativo de prácticas de ingeniería ni del estado del arte en animación CSS. Además, novelty=0.00 sugiere conocimiento ya establecido (el propio material señala que está abundantemente documentado en MDN y blogs de frontend), de modo que incluso en su carril correcto tendría bajo valor de novedad.
 
-Deriva de `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica` y se relaciona con `generalizacion-desde-cluster-de-un-solo-documento`. Da soporte a `transform-order-en-css-afecta-el-zoom` como registro de su base empírica mínima.
+Refuerza [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]] y [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]: el mismo patrón de singleton sin engagement que no sostiene claims. Se relaciona con [[css-transform-order-importa-solo-a-veces]], la única nota con contenido sustantivo que puede extraerse del clúster.
 
 ## Links
 - supports → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]
@@ -58,3 +66,6 @@ Deriva de `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica` y se
 - derived_from → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
 - supports → [[transform-order-en-css-afecta-el-zoom]]
 - relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- supports → [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]]
+- supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- relates_to → [[css-transform-order-importa-solo-a-veces]]

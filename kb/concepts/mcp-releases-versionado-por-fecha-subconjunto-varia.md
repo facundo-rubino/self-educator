@@ -10,23 +10,25 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-25'
 sources:
-- 30a26335a9988ba2
-- 5a4df6bef0a4905f
-- 9750590bbfe6b285
-- b9106690f5dfd849
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
+- 30a26335a9988ba2
+- 5a4df6bef0a4905f
 - 748f8b0a02cd7524
+- 9750590bbfe6b285
+- b9106690f5dfd849
 - ffbd76916d1dfdc5
 tags:
 - mcp
+- release-cadence
 - release-engineering
 - versionado
+- versionado-por-fecha
 base_confidence: 0.7
 half_life_days: 180
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -35,26 +37,33 @@ links:
   type: supports
 - to: mcp-roster-de-paquetes-varia-entre-releases
   type: supports
+- to: mcp-release-2026-8-31-bumps
+  type: derived_from
+- to: mcp-release-stub-sin-changelog
+  type: relates_to
 ---
 
 ## What it is
-Cada nota de release del ecosistema MCP lleva un número de versión en formato fecha (p. ej. 2026.8.31) y ese mismo valor se aplica a todos los paquetes incluidos en ese release. El subconjunto de paquetes versionados conjuntamente no es fijo.
+Los documentos de release del ecosistema MCP usan versionado por fecha (YYYY.MM.DD) y, en cada release, bumpean solo un subconjunto de paquetes en lugar del conjunto completo. El subconjunto rota: paquetes presentes en un release faltan en el siguiente y reaparecen después.
 
 ## Evidence
-- Release 2026.8.31 actualiza server-filesystem, server-memory, server-sequential-thinking y server-everything con la misma versión 2026.8.31 — source: 30a26335a9988ba2
-- Release 2026.7.10 aplica la versión única 2026.7.10 a server-filesystem, mcp-server-time, mcp-server-fetch y mcp-server-git — source: 5a4df6bef0a4905f
-- Release 2026.8.18 versiona conjuntamente server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git — source: 9750590bbfe6b285
-- Release 2026.1.26 solo incluye server-everything, server-memory y mcp-server-time — source: b9106690f5dfd849
-- Release 2025.11.25 lista cinco paquetes (server-sequential-thinking, server-everything, server-filesystem, server-memory, mcp-server-git) con versión 2025.11.25 — source: 16a4e3995d6c827e
-- Release 2025.12.18 versiona server-sequential-thinking, server-everything, server-filesystem y mcp-server-git con 2025.12.18 — source: 2221814efbefaa3b
-- Release 2026.1.14 incluye server-everything, server-filesystem y mcp-server-git con 2026.1.14 — source: 748f8b0a02cd7524
-- Release 2026.7.4 versiona server-everything, server-filesystem, server-sequential-thinking y server-memory con 2026.7.4 — source: ffbd76916d1dfdc5
+- Release 2025.11.25: server-sequential-thinking, server-everything, server-filesystem, server-memory, mcp-server-git — source: 16a4e3995d6c827e
+- Release 2025.12.18: server-sequential-thinking, server-everything, server-filesystem, mcp-server-git — source: 2221814efbefaa3b
+- Release 2026.1.14: subconjunto menor, solo server-everything, server-filesystem y mcp-server-git — source: 748f8b0a02cd7524
+- Release 2026.1.26: server-everything, server-memory y mcp-server-time; introduce mcp-server-time y omite filesystem y git respecto a releases adyacentes — source: b9106690f5dfd849
+- Release 2026.7.4: server-everything, server-filesystem, server-sequential-thinking y server-memory — source: ffbd76916d1dfdc5
+- Release 2026.7.10: server-filesystem, mcp-server-time, mcp-server-fetch y mcp-server-git; introduce mcp-server-fetch — source: 5a4df6bef0a4905f
+- Release 2026.8.18: server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git — source: 9750590bbfe6b285
+- Release 2026.8.31: server-filesystem, server-memory, server-sequential-thinking y server-everything — source: 30a26335a9988ba2
+- server-memory aparece en 2025.11.25 y 2025.12.18 pero falta en 748f8b0a02cd7524, 5a4df6bef0a4905f y 9750590bbfe6b285: la línea de paquetes no es monótona — source: 16a4e3995d6c827e
 
 ## Why it matters
-Fija el hecho observable del corpus: versionado por fecha y composición de paquetes variable. No autoriza inferir qué cambió en cada paquete ni coordinar releases como hallazgo: el matching versión-paquete es definicional cuando el esquema ya es date-versioned.
+Permite describir la serie como un calendario de bumps, no como un producto con historial acumulativo. Cualquier inferencia sobre madurez, adopción o capacidades del ecosistema a partir de estos documentos excede lo que los documentos dicen.
 
-Refuerza `mcp-servers-versionado-por-fecha` y `mcp-roster-de-paquetes-varia-entre-releases` con la serie completa de instancias. No se enlaza a `cadencia-de-release-unificada-sugiere-monorepo-mcp` como supports: la cadencia unificada es conducta esperada de un esquema de versionado único, no evidencia independiente de monorepo.
+`derived_from` la nota del release 2026.8.31, que es el caso fechado de la señal. `relates_to` el patrón de release stubs sin changelog, porque ambos describen el mismo formato documental.
 
 ## Links
 - supports → [[mcp-servers-versionado-por-fecha]]
 - supports → [[mcp-roster-de-paquetes-varia-entre-releases]]
+- derived_from → [[mcp-release-2026-8-31-bumps]]
+- relates_to → [[mcp-release-stub-sin-changelog]]

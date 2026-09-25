@@ -9,22 +9,26 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-24'
+updated: '2026-09-25'
 sources:
 - 49140f9d5133d3c7
 tags:
 - agentes
 - ai-coach
+- anecdota
 - autogestion
 - baseline
 - efectividad
+- eficacia
 - evaluation
 - evidence-quality
 - evidencia
 - generalizacion
+- inferencia
+- un-solo-documento
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-25'
 provenance:
   scale: XL
   query: null
@@ -41,19 +45,25 @@ links:
   type: supports
 - to: stack-de-ai-coach-voz-a-voz
   type: supports
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: contradicts
+- to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
+  type: supports
+- to: proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional
+  type: supports
 ---
 
 ## What it is
-Cualquier afirmación de mejora en foco o productividad por el AI coach carecería de línea base y de comparación controlada; el documento no reporta resultados, métricas ni usuarios. La mejora sería indistinguible de novedad o efecto placebo.
+El documento reporta la intención y la lista de componentes, no los resultados. No hay datos de efectividad, estudios de usuario, comparación con alternativas ni base teórica. Inferir que el coach mejora el foco sería asumir justamente lo que hay que probar.
 
 ## Evidence
-- El documento no incluye artefacto de producto, métricas, feedback de usuarios ni código — source: 49140f9d5133d3c7
-- El ítem tiene engagement=0, por lo que no hay corroboración independiente de beneficio alguno — source: 49140f9d5133d3c7
+- El documento no reporta si el coach funcionó ni aporta métricas de efectividad — source: 49140f9d5133d3c7
+- El documento solo declara la motivación («tame my monkey mind») y el ensamblado de componentes — source: 49140f9d5133d3c7
 
 ## Why it matters
-Para un lead técnico el seguimiento relevante sería instrumentación y comparación: ¿cambia de forma medible el foco o la preparación de reuniones, y sobrevive a una semana ocupada? Nada de eso está en el clúster.
+Bloquea el salto circular de «construyó un coach» a «el coach ayuda». Cualquier afirmación sobre eficacia de coaching por voz queda sin soporte en este corpus y no debe compilarse como hallazgo.
 
-Sostiene la descripción del stack de `stack-de-ai-coach-voz-a-voz` al señalar qué falta para evaluarla. Se relaciona con `privacidad-y-costo-en-asistentes-de-voz-continuos` por los riesgos operativos de un asistente de voz con número virtual.
+Contradice la lectura de `ai-coach-voz-a-voz-ensamblado-de-servicios` como evidencia de eficacia. Apoya a `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion` y coincide con `proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional`.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
@@ -62,3 +72,6 @@ Sostiene la descripción del stack de `stack-de-ai-coach-voz-a-voz` al señalar 
 - contradicts → [[hipotesis-de-coach-de-voz-como-accountability-de-equipo]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - supports → [[stack-de-ai-coach-voz-a-voz]]
+- contradicts → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
+- supports → [[proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional]]
