@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - abf61eeec75462f9
 tags:
@@ -23,7 +23,7 @@ tags:
 - verificacion
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -42,18 +42,25 @@ links:
   type: relates_to
 - to: leak-de-claude-code-como-cluster-de-un-solo-documento
   type: relates_to
+- to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
+  type: supports
+- to: vista-filtrada-del-codigo-no-confirma-composicion-condicional
+  type: supports
+- to: legibilidad-de-la-afirmacion-sin-fuente-primaria
+  type: relates_to
 ---
 
 ## What it is
-El documento abf61eeec75462f9 reporta el ensamblado condicional del system prompt de Claude Code, pero no cita fragmentos del supuesto código filtrado, ni los disparadores que activarían cada parte, ni la versión a la que corresponde el leak. Queda sin respuesta qué condiciones gatean qué secciones y cuántas partes hay exactamente.
+El documento [abf61eeec75462f9] no cita ningún archivo, función, extracto de código ni versión concreta del supuesto leak de Claude Code. Tampoco indica qué condiciones activan qué secciones ni cuándo se observó el estado del código. La afirmación es de segunda mano y autorreferencial: su único apoyo es su propio titular.
 
 ## Evidence
-- La señal llega vía una fuente agregada de tipo rss con engagement=0, sin fragmentos ni disparadores citados — source: abf61eeec75462f9
+- Afirmación sobre «leaked source» sin extracto ni referencia de archivo — source: abf61eeec75462f9
+- engagement=0 y novelty=0.00 en el único documento del clúster — source: abf61eeec75462f9
 
 ## Why it matters
-Sin fragmentos citables ni versión, la observación no es replicable ni fechable: no se puede distinguir si describe el diseño actual, una versión pasada o una lectura parcial del código. Cualquier afirmación sobre mecánica interna queda en el terreno de la reconstrucción, no de la verificación.
+Un leak sin autenticidad establecida ni fragmentos no confirma lo que el leak dice. Cualquier claim derivado —composición condicional, número de partes, mecanismo— queda sin base comprobable y no debe citarse como hecho en el KB. Esta falta de cita es el motivo directo de la confianza 0.05 de la nota que afirma el ensamblado.
 
-Se apoya en `claude-code-system-prompt-conditional-composition` como el enunciado que carece de soporte. `leak-de-claude-code-como-cluster-de-un-solo-documento` registra que el clúster se sostiene en un único documento con engagement=0. `leak-sin-autenticidad-establecida` recoge el problema general: un leak sin autenticidad establecida no confirma lo que dice el leak.
+Soporta `afirmacion-de-capacidad-desde-fragmento-de-una-linea` y `vista-filtrada-del-codigo-no-confirma-composicion-condicional`, ambos modos de fallo del mismo tipo. Se relaciona con `claude-code-system-prompt-conditional-composition` como su límite de evidencia.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
@@ -63,3 +70,6 @@ Se apoya en `claude-code-system-prompt-conditional-composition` como el enunciad
 - relates_to → [[claude-code-condiciones-que-gatean-secciones-sin-observar]]
 - relates_to → [[vista-filtrada-del-codigo-no-confirma-composicion-condicional]]
 - relates_to → [[leak-de-claude-code-como-cluster-de-un-solo-documento]]
+- supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
+- supports → [[vista-filtrada-del-codigo-no-confirma-composicion-condicional]]
+- relates_to → [[legibilidad-de-la-afirmacion-sin-fuente-primaria]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - 0248fdb60811e91e
 tags:
@@ -22,9 +22,10 @@ tags:
 - relevancia-baja
 - rss
 - ruido
+- scoring
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -45,19 +46,23 @@ links:
   type: relates_to
 - to: how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic
   type: relates_to
+- to: how-to-match-llm-patterns-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: etiqueta-cluster-desde-titulo-de-un-documento
+  type: supports
 ---
 
 ## What it is
-El documento nombra la selección de patrones LLM como preocupación, pero no la conecta con trabajo de ingeniería delegado, estimación, secuenciamiento, alcance ni pedagogía, que son los ejes declarados del brief. La relevance=0.33 es consistente con una pieza de taxonomía de embudo alto, no con evidencia sobre cómo un dev-líder-docente mejora su trabajo.
+El clúster «How to Match LLM Patterns to Problems» obtiene relevance=0.33, novelty=0.00, corroboration=0.50 y engagement=0. No solapa con los ejes declarados del brief: liderazgo técnico, estimación, secuenciamiento, alcance, docencia ni productividad personal.
 
 ## Evidence
-- El documento solo se describe como distinguiendo LLMs externos/internos y patrones con/sin datos — source: 0248fdb60811e91e
-- La relevancia frente al brief es 0.33 y no hay conexión declarada con estimación, secuenciamiento, alcance o docencia — source: 0248fdb60811e91e
+- El clúster recibió novelty=0.00, corroboration=0.50, relevance=0.33 y engagement=0 — source: 0248fdb60811e91e
+- El clúster no solapa con el brief sobre liderazgo técnico, estimación, docencia o productividad personal — source: 0248fdb60811e91e
 
 ## Why it matters
-Promover este ítem por vocabulario compartido («LLM patterns» vs. agentes de IA) reproduciría un falso positivo léxico y desplazaría material con claims citables.
+Una relevance de 0.33 con novelty nula es señal de matching léxico («LLM patterns» vs. «agentes de IA»), no de cobertura temática. El ítem no puede acreditarse a ningún eje del topic.
 
-Deriva de la ausencia de cuerpo en el mismo documento y se relaciona con el falso positivo léxico ya registrado entre «LLM patterns» y «agentes de IA». Nota duplicada detectada: `how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic` y `matching-llm-patterns-relevancia-baja-sin-ejes-del-topic`.
+Se apoya en la nota sobre el solapamiento léxico «LLM patterns» / «agentes de IA» y en la nota sobre cómo la etiqueta de un clúster puede derivarse del título de un solo documento.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
@@ -68,3 +73,5 @@ Deriva de la ausencia de cuerpo en el mismo documento y se relaciona con el fals
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
 - relates_to → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]
 - relates_to → [[how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic]]
+- relates_to → [[how-to-match-llm-patterns-titulo-sin-contenido-ingerido]]
+- supports → [[etiqueta-cluster-desde-titulo-de-un-documento]]

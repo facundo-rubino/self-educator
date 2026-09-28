@@ -1,7 +1,7 @@
 ---
 id: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
-title: 'Alcance declarado de «Task-Specific LLM Evals that Do & Don''t Work»: clasificación,
-  resumen, traducción, copyright y toxicidad'
+title: 'Task-Specific LLM Evals: alcance declarado (clasificación, resumen, traducción,
+  copyright, toxicidad)'
 type: concept
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,18 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - 93963a5f93e58d05
 tags:
 - docencia
 - evals
 - llm
+- rss-stub
 - scoping
 - task-specific
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -42,19 +43,22 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
   type: relates_to
+- to: task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido
+  type: derived_from
+- to: task-specific-llm-evals-singleton-engagement-cero
+  type: relates_to
 ---
 
 ## What it is
-El único contenido atribuible al documento [93963a5f93e58d05] es la enumeración de familias de tarea sobre las que versan sus evals: clasificación, resumen, traducción, «copyright regurgitation» y toxicidad. No hay cuerpo ingerido más allá de esa lista; el resto del ítem es título y metadatos.
+El único contenido verificable de «Task-Specific LLM Evals that Do & Don't Work» es el alcance declarado en su descripción: evals para clasificación, resumen, traducción, regurgitación de copyright y toxicidad. No hay cuerpo ingerido que desarrolle ninguna de esas cinco categorías.
 
 ## Evidence
-- El ítem aborda evals para clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
-- El clúster contiene un único ítem RSS titulado «Task-Specific LLM Evals that Do & Don't Work» con engagement medido de cero — source: 93963a5f93e58d05
+- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y su descripción menciona evals para clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
 
 ## Why it matters
-Fija el perímetro real de lo que este documento puede sostener: NLP general sobre texto. Cualquier afirmación sobre evals de código, de asistentes de agentes o de herramientas de gestión queda fuera de ese perímetro y no puede extraerse de aquí.
+Las cinco categorías declaradas son de NLP general, no de agentes de código ni de asistentes de enseñanza; el propio alcance declarado no toca los ejes del brief. Cualquier afirmación sobre mecánica de evals sería extrapolación desde una frase de descripción.
 
-`supports` la nota sobre tareas NLP que no cubren evals de código: el alcance declarado es precisamente la prueba de esa ausencia. Se relaciona con la nota de título sin contenido ingerido porque ambas describen el mismo límite documental desde ángulos distintos.
+Este concepto se deriva del ítem stub `task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido`, que documenta la ausencia de cuerpo. Se relaciona con `task-specific-llm-evals-singleton-engagement-cero`, que registra el estado de señal del clúster.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -65,3 +69,5 @@ Fija el perímetro real de lo que este documento puede sostener: NLP general sob
 - supports → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
 - relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
 - relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
+- relates_to → [[task-specific-llm-evals-singleton-engagement-cero]]

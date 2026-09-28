@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - 19cb8032958cd964
 tags:
-- multimodal
+- cuantificador-universal
 - evidencia
+- evidencia-delgada
 - metodologia
+- multimodal
+- politica-vs-capacidad
 - rss
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -31,23 +34,35 @@ links:
   type: relates_to
 - to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
   type: supports
+- to: identificacion-de-figuras-publicas-ya-existia
+  type: relates_to
+- to: gemini-no-rechaza-nombrar-figuras-publicas
+  type: contradicts
+- to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
+  type: relates_to
+- to: nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria
+  type: supports
 ---
 
 ## What it is
-Modo de fallo: una afirmación de capacidad se deriva de un titular de feed RSS sin cuerpo, sin estudio enlazado, sin fecha y sin método. El resultado es que una decisión de cumplimiento de un proveedor se presenta como una capacidad de clase, y el término general «los LLM» hace un trabajo que la evidencia no autoriza.
+Formular «LLMs can now identify public figures in images» a partir de un ítem RSS implica un cuantificador universal («LLMs») sobre evidencia de, como máximo, un modelo bajo condiciones desconocidas. La redacción confunde dos afirmaciones distintas: «won't» (elección de producto/política de un proveedor) y «can now» (capacidad del modelo), que exigen evidencia diferente y no son intercambiables.
 
 ## Evidence
-- El clúster contiene un único documento de feed RSS [19cb8032958cd964], sin fuente primaria enlazada.
-- No hay datos de evaluación, métricas, fecha de medición ni tasa de error [19cb8032958cd964].
-- La afirmación se autodestruye en su parte central: ChatGPT y Claude no identifican figuras públicas; toda la generalización recae en Gemini [19cb8032958cd964].
-- El encuadre temporal «now» no está respaldado: la novedad puntúa 0.00 y la corroboración 0.50 [19cb8032958cd964].
+- El documento ingerido afirma que ChatGPT y Claude no identifican figuras públicas en imágenes, pero Gemini sí, presentado como capacidad nueva («LLMs can now identify public figures in images») — source: 19cb8032958cd964
+- El clúster está representado por un único documento con engagement=0, sin fuente independiente que corrobore — source: 19cb8032958cd964
 
 ## Why it matters
-Si este titular se ingiere como hecho, se contamina la nota de concepto con una novedad inexistente y se toman decisiones de herramienta sobre publicidad o rumor. La disciplina correcta es registrar la observación como «no rechaza en un proveedor, sin cuantificar», y esperar a una medición con definición operativa antes de convertirla en afirmación de capacidad.
+Una afirmación de capacidad sostenida por n=1 sin metodología, sin versión fijada y sin condiciones de prompt reproducibles no puede cargar el peso de un hallazgo. El modo de fallo concreto es la asimetría de rechazo entre proveedores presentada como capacidad: es exactamente el tipo de afirmación más vulnerable a drift temporal y a selección de ejemplos, y como está enunciada es infalsificable.
 
-Contradice a `identificacion-de-figuras-publicas-ya-existia`, que sostiene que la función no es nueva; el conflicto queda registrado, no resuelto, y `edu reconcile` debe decidir con ambas partes a la vista. Es un caso de `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion` aplicado al dominio multimodal, y comparte la forma de `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica`: una fuente única no sostiene una afirmación poblacional.
+Se relaciona con `identificacion-de-figuras-publicas-ya-existia` porque ambos tratan la identificación de figuras públicas como observación sobre modelos, no como novedad establecida. Contradice a `gemini-no-rechaza-nombrar-figuras-publicas` en el sentido de que ese actor registra la asimetría como conducta observada, mientras esta nota señala que la formulación universal no está sostenida. Se apoya en `nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria`, que niega el valor de práctica de este tipo de observación, y comparte modo de fallo con `afirmacion-de-capacidad-desde-fragmento-de-una-linea`.
+
+⚠️ Nota creada con id nuevo. Existía `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`, cuyo id es un typo (falta la «r» final de «afirmar»). No se integró allí porque reusar el id con typo propagaría el error y crear una redirección no forma parte del contrato de compilación. Acción recomendada para el reconciliador humano: renombrar el id con typo a este.
 
 ## Links
 - contradicts → [[identificacion-de-figuras-publicas-ya-existia]]
 - relates_to → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- relates_to → [[identificacion-de-figuras-publicas-ya-existia]]
+- contradicts → [[gemini-no-rechaza-nombrar-figuras-publicas]]
+- relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
+- supports → [[nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria]]

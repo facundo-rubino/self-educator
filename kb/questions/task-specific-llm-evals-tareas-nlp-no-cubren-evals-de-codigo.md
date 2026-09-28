@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -24,7 +24,7 @@ tags:
 - llm
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -53,19 +53,23 @@ links:
   type: derived_from
 - to: embedding-de-eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
   type: relates_to
+- to: aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion
+  type: relates_to
+- to: eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
+  type: contradicts
 ---
 
 ## What it is
-El alcance declarado —clasificación, resumen, traducción, copyright regurgitation, toxicidad [93963a5f93e58d05]— no incluye evals de código ni de asistentes de enseñanza. Queda abierto si existe una extensión de la taxonomía a esos dominios o si el documento simplemente no los trata.
+Pregunta abierta: las cinco categorías de eval declaradas (clasificación, resumen, traducción, regurgitación de copyright, toxicidad) son tareas NLP de propósito general. Ninguna corresponde a evaluación de generación de código, revisión de código, resúmenes de documentación técnica, clasificación de issues ni feedback de ejercicios.
 
 ## Evidence
-- Las familias de tarea enumeradas son clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
-- El análisis señala que estas categorías son adyacentes pero no directamente sobre los temas centrales del brief — source: 93963a5f93e58d05
+- La descripción del documento enumera clasificación, resumen, traducción, regurgitación de copyright y toxicidad como las tareas cubiertas — source: 93963a5f93e58d05
+- El clúster es un documento único con engagement registrado 0 y sin corroboración cruzada — source: 93963a5f93e58d05
 
 ## Why it matters
-El brief que importa aquí es fiabilidad de agentes al programar, gestionar y enseñar. Ninguna de las cinco familias declaradas mide eso, así que este documento no puede sostener conclusiones sobre aceptación de agentes de coding sin un puente que la evidencia no provee.
+Si las tareas evaluadas no incluyen tareas de código ni de docencia, el documento no puede informar sobre fiabilidad de agentes en los ejes del brief aunque su título mencione «evals». La adyacencia al brief es léxica (la palabra «evals»), no temática.
 
-`derived_from` la nota de alcance declarado, que enumera las tareas. Se relaciona con la nota existente sobre evaluación específica por tarea como infraestructura de fiabilidad: comparten tema, pero esta fuente no aporta el tramo de código o docencia que aquella nota necesitaría.
+Deriva del alcance declarado. Refuerza `aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion`. Entra en tensión con `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad`, que afirma sin este documento que la eval específica por tarea es infraestructura de fiabilidad al adoptar asistentes: aquí la única evidencia disponible no cubre las tareas de ese uso.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -80,3 +84,5 @@ El brief que importa aquí es fiabilidad de agentes al programar, gestionar y en
 - relates_to → [[task-families-evaluadas-en-el-documento-evals]]
 - derived_from → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - relates_to → [[embedding-de-eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
+- relates_to → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]
+- contradicts → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]

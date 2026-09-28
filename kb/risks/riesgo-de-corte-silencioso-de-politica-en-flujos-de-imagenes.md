@@ -10,20 +10,24 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-22'
+updated: '2026-09-28'
 sources:
 - 19cb8032958cd964
 tags:
 - agentes
+- drift-temporal
+- fiabilidad
 - fragilidad
 - multimodal
+- politica
 - politica-de-modelos
 - politica-de-proveedor
 - riesgo-de-integracion
 - versionado
+- vision
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -42,19 +46,23 @@ links:
   type: relates_to
 - to: aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales
   type: relates_to
+- to: confundir-rechazo-por-politica-con-capacidad-de-modelo
+  type: derived_from
+- to: criterios-de-aceptacion-dependientes-de-proveedor
+  type: supports
 ---
 
 ## What it is
-Las capacidades y políticas de rechazo cambian con frecuencia: una observación verdadera en un momento puede ser falsa poco después (19cb8032958cd964). Cualquier flujo de agente que dependa de que un proveedor acepte o rechace contenido con personas es frágil por construcción.
+Una afirmación del tipo «Gemini will» sobre identificación de personas en imágenes caduca sin aviso: la conducta de rechazo varía por región, nivel de cuenta y UI, y cambia con actualizaciones de modelo o de política. Un flujo construido sobre esa conducta se rompe en silencio, sin cambio de versión que lo señale.
 
 ## Evidence
-- El propio informe advierte que capacidades y políticas cambian con frecuencia y que una observación puntual puede dejar de valer pronto — source: 19cb8032958cd964
-- El caso reportado carece de versión y fecha, lo que impide saber a qué configuración se refiere — source: 19cb8032958cd964
+- La afirmación descansa en un único ítem RSS sin verificación independiente, por lo que puede estar desactualizada, ser marketing o ser directamente falsa — source: 19cb8032958cd964
+- La conducta de rechazo en LLMs de consumo cambia con frecuencia y varía por región, cuenta y UI, de modo que una afirmación estática puede expirar en silencio — source: 19cb8032958cd964
 
 ## Why it matters
-Un agente que hoy procesa capturas con caras puede dejar de hacerlo sin cambio de código, por una actualización de política del proveedor. Esto exige spike por proveedor y criterios de aceptación dependientes del proveedor antes de comprometer features multimodales.
+El coste no es la pérdida de la función, es la pérdida silenciosa: un pipeline de materiales o de herramientas que dependa de identificar personas en imágenes fallará en producción sin que ningún número de versión lo anticipe. La mitigación es tratar el rechazo como criterio dependiente de proveedor y mantener un spike que se revalide.
 
-Depende de la distinción entre capacidad y política de rechazo: lo que cambia es la política, no necesariamente el modelo. Conecta con el patrón de spike por proveedor y con los criterios de aceptación dependientes de proveedor en features multimodales.
+Se deriva de `confundir-rechazo-por-politica-con-capacidad-de-modelo`, porque solo se puede vigilar el drift si se sabe que se está observando política y no capacidad. Apoya a `criterios-de-aceptacion-dependientes-de-proveedor` y a `spike-por-proveedor-para-comportamiento-de-rechazo`, que son las respuestas prácticas a este riesgo.
 
 ## Links
 - supports → [[spike-por-proveedor-para-comportamiento-de-rechazo]]
@@ -64,3 +72,5 @@ Depende de la distinción entre capacidad y política de rechazo: lo que cambia 
 - relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
 - relates_to → [[spike-por-proveedor-para-comportamiento-de-rechazo]]
 - relates_to → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]
+- derived_from → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]
+- supports → [[criterios-de-aceptacion-dependientes-de-proveedor]]

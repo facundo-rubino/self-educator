@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - 0715b80a63a796ad
 tags:
-- singleton
+- a-chain-reaction
 - engagement
-- novelty
+- engagement-zero
 - metodología
+- no-generalization
+- novelty
+- single-document-cluster
+- singleton
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -30,21 +34,29 @@ links:
   type: relates_to
 - to: a-chain-reaction-fuera-del-topic-sin-conexion-explicita
   type: supports
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: relates_to
+- to: a-chain-reaction-metricas-no-son-evidencia-independiente
+  type: relates_to
+- to: a-chain-reaction-quote-wittgenstein-lexical-coincidence
+  type: relates_to
 ---
 
 ## What it is
-El clúster se compone de un solo documento, con engagement=0 y novelty=0.00. Esas condiciones impiden cualquier inferencia poblacional: no hay segundo caso que permita generalizar, ni engagement que indique circulación real.
+Un clúster compuesto por un solo documento RSS con engagement=0 y novelty=0.00 no puede sostener ninguna generalización sobre el tema declarado. La corroboración es nula y la única fuente no tiene evidencia de recepción.
 
 ## Evidence
-- El clúster consta de un único documento — source: 0715b80a63a796ad
-- El documento tiene engagement=0 y novelty=0.00 — source: 0715b80a63a796ad
+- El clúster «A Chain Reaction» contiene un único documento con engagement=0 — source: 0715b80a63a796ad
 
 ## Why it matters
-Con n=1 y sin circulación, toda afirmación de tendencia sobre el tema excede lo que el clúster puede sostener. La abstención es la única lectura válida.
+Cualquier afirmación de alcance mayor que «este documento existe» sería anecdótica. La relevancia reportada de 0.33 no se corresponde con el contenido real, que no aborda ningún eje temático del brief.
 
-`supports` la nota sobre las métricas como artefactos del scorer, porque refuerza que esos valores no corroboran nada. `relates_to` la regla general de que un clúster de un solo documento con engagement cero no generaliza. `supports` el descarte por falta de conexión con el topic.
+Comparte el patrón con otras notas sobre singletons sin engagement en el grafo (`cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion`, `single-document-cluster-engagement-cero-no-generaliza`). Refuerza la lectura de que las métricas del clúster son autodescripción del pipeline, no corroboración externa.
 
 ## Links
 - supports → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[a-chain-reaction-fuera-del-topic-sin-conexion-explicita]]
+- relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
+- relates_to → [[a-chain-reaction-quote-wittgenstein-lexical-coincidence]]

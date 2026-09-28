@@ -9,16 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-28'
 sources:
 - 19cb8032958cd964
 tags:
-- evidencia-delgada
 - capacidad
+- evidencia-delgada
 - meta-riesgo
+- metodo-ausente
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -31,22 +32,30 @@ links:
   type: relates_to
 - to: documento-unico-como-base-de-afirmacion-de-estandar
   type: relates_to
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: relates_to
+- to: afirmacion-de-novedad-sin-linea-base
+  type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: supports
 ---
 
 ## What it is
-Un enunciado de capacidad general («los LLM ahora pueden X») sostenido por una sola frase, sin protocolo, fecha, versión de modelo ni conjunto de prueba, no es evidencia de un salto de capacidad. La brecha entre la aserción y lo que un dato sobre capacidad requiere es la falla.
+Un fragmento de una o dos líneas sin metodología, sin versión de modelo y sin condiciones de prueba no sostiene una afirmación de salto de capacidad. La plausibilidad direccional de una afirmación («los modelos con visión pueden reconocer personas») no es evidencia de que la capacidad haya cambiado ni de cuándo.
 
 ## Evidence
-- El crítico enumera la ausencia de metodología, protocolo, fecha, prompt, conjunto de imágenes, versión de modelo y cita de política — source: 19cb8032958cd964
-- La metadato del pipeline reporta novelty=0.00 y engagement=0 sobre el documento fuente — source: 19cb8032958cd964
+- El único documento del clúster enuncia comportamiento diferenciado entre proveedores (ChatGPT/Claude rechazan; Gemini cumple) sin metodología, sin fijación de versión, sin condiciones de prompt ni test reproducible — source: 19cb8032958cd964
 
 ## Why it matters
-Evita que un titular se convierta en una decisión de producto o en una afirmación de docencia. La regla operativa: si la frase no describe un método, no describe un hallazgo.
+Sin metodología ni versión no hay forma de falsar la afirmación ni de detectar cuándo expira. Cualquier decisión que se apoye en ella (elegir proveedor, prometer una función, diseñar un ejercicio) queda colgada de un comportamiento que puede cambiar en el siguiente release sin aviso.
 
-Contradice la lectura fuerte del titular de la nota sobre divergencia de rechazo: lo que el documento sostiene como capacidad, esta nota lo lee como aserción sin soporte. Se relaciona con el modo de fallo de colapsar fragmentos de una o dos líneas a juicios fuertes y con el riesgo de sostener claims poblacionales desde una sola observación.
+Es el caso concreto de `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`; ambas describen el mismo salto indebido de un texto mínimo a una afirmación general, y la segunda es la instancia. Se relaciona con `afirmacion-de-novedad-sin-linea-base` porque el «now» de la afirmación no tiene línea base contra la cual medirse. Se apoya en `single-document-cluster-engagement-cero-no-generaliza`, que establece la insuficiencia estadística del clúster.
 
 ## Links
 - contradicts → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[juicio-fuerte-desde-fragmento-de-dos-lineas]]
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - relates_to → [[documento-unico-como-base-de-afirmacion-de-estandar]]
+- relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[afirmacion-de-novedad-sin-linea-base]]
+- supports → [[single-document-cluster-engagement-cero-no-generaliza]]

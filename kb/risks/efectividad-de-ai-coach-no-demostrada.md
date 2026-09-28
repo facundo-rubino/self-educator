@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -26,9 +26,10 @@ tags:
 - generalizacion
 - inferencia
 - un-solo-documento
+- validacion
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -51,19 +52,23 @@ links:
   type: supports
 - to: proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional
   type: supports
+- to: ai-coach-como-herramienta-de-foco-no-de-liderazgo
+  type: supports
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: relates_to
 ---
 
 ## What it is
-El documento reporta la intención y la lista de componentes, no los resultados. No hay datos de efectividad, estudios de usuario, comparación con alternativas ni base teórica. Inferir que el coach mejora el foco sería asumir justamente lo que hay que probar.
+El documento es un build log que describe cómo se construyó el AI coach, no un estudio sobre si funciona. No hay medición de foco, atención, productividad ni ningún resultado asociado al uso de la herramienta.
 
 ## Evidence
-- El documento no reporta si el coach funcionó ni aporta métricas de efectividad — source: 49140f9d5133d3c7
-- El documento solo declara la motivación («tame my monkey mind») y el ensamblado de componentes — source: 49140f9d5133d3c7
+- El documento no reporta benchmark, replicación ni medición de efecto alguno — source: 49140f9d5133d3c7
+- El artefacto se describe como build log, no como anuncio de producto ni benchmark — source: 49140f9d5133d3c7
 
 ## Why it matters
-Bloquea el salto circular de «construyó un coach» a «el coach ayuda». Cualquier afirmación sobre eficacia de coaching por voz queda sin soporte en este corpus y no debe compilarse como hallazgo.
+Cualquier afirmación de que un AI coach mejora el foco o la productividad sería invención. Lo compilable es el ensamblado técnico y el propósito declarado; la eficacia queda como pregunta abierta.
 
-Contradice la lectura de `ai-coach-voz-a-voz-ensamblado-de-servicios` como evidencia de eficacia. Apoya a `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion` y coincide con `proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional`.
+Soporta `ai-coach-como-herramienta-de-foco-no-de-liderazgo` al fijar el límite de lo evidenciado. Se relaciona con `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica`, el mismo patrón de sobreafirmación desde un solo ítem.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
@@ -75,3 +80,5 @@ Contradice la lectura de `ai-coach-voz-a-voz-ensamblado-de-servicios` como evide
 - contradicts → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
 - supports → [[proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional]]
+- supports → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
+- relates_to → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]

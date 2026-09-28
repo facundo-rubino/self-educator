@@ -9,17 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-28'
 sources:
 - 01f4d4dfc39f3469
 tags:
 - brooks
 - complejidad
-- productividad
 - limites
+- productividad
 base_confidence: 0.45
 half_life_days: 180
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -28,19 +28,25 @@ links:
   type: relates_to
 - to: hy3-tangencial-al-brief-de-agentes-y-liderazgo
   type: relates_to
+- to: agentes-y-complejidad-esencial-limite-de-lo-abaratado
+  type: supports
+- to: no-silver-bullet-limita-el-techo-de-los-agentes-codigo
+  type: supports
 ---
 
 ## What it is
-La distinción de Brooks entre complejidad esencial —inherente al problema y no atacable por avances tecnológicos— y complejidad accidental —introducida por herramientas y proceso—. La consecuencia central: la productividad del programador tiene límites fundamentales, porque ninguna mejora de herramienta elimina la complejidad esencial.
+Brooks sostiene en *No Silver Bullet* que existe un núcleo de complejidad esencial/conceptual en la programación que no es reducible por avances tecnológicos — lenguajes ni tooling. Solo la complejidad accidental es atacable por herramientas.
 
 ## Evidence
-- El artículo argumenta que existe una complejidad esencial en la programación que no es atacable por avances tecnológicos, lo que limita fundamentalmente las mejoras de productividad — source: 01f4d4dfc39f3469
+- Brooks argumenta que hay un núcleo de complejidad esencial/conceptual en programación no reducible por avances tecnológicos como lenguajes o tooling — source: 01f4d4dfc39f3469
 
 ## Why it matters
-Es el único documento del clúster que toca el tema del brief (oficio, liderazgo técnico). Si la tesis de Brooks sigue vigente, ninguna herramienta —incluidos agentes de IA— elimina la necesidad de juicio humano en estimación, secuenciamiento y enseñanza. Es un argumento estructural, no una observación de práctica concreta.
+Da un techo teórico a cualquier expectativa de productividad basada en herramientas: lo esencial no se abarata por añadir capas. Para un lead-dev es la vara para juzgar promesas de agentes y frameworks.
 
-Se relaciona con la crítica recurrente a la promesa de productividad de las herramientas de IA presentes en este corpus. No se enlaza a evidencia de práctica de agentes porque el documento no la provee.
+Es el marco del que se derivan las lecturas sobre qué abaratan los agentes y qué no. Enlaza con la nota de mantenimiento y con la pregunta sobre el techo de los agentes de código.
 
 ## Links
 - relates_to → [[nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria]]
 - relates_to → [[hy3-tangencial-al-brief-de-agentes-y-liderazgo]]
+- supports → [[agentes-y-complejidad-esencial-limite-de-lo-abaratado]]
+- supports → [[no-silver-bullet-limita-el-techo-de-los-agentes-codigo]]

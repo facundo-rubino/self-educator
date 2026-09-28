@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-28'
 sources:
 - 19cb8032958cd964
 tags:
 - gemini
 - multimodal
-- rechazo
 - politica-de-proveedor
+- rechazo
+- vision
 base_confidence: 0.15
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -28,20 +29,34 @@ links:
   type: supports
 - to: leak-sin-autenticidad-establecida
   type: relates_to
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: supports
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: contradicts
+- to: divergencia-de-rechazo-entre-proveedores
+  type: relates_to
+- to: probe-de-rechazo-por-identidad-en-produccion
+  type: relates_to
+- to: prueba-con-proveedores-y-cuentas-especificas
+  type: relates_to
 ---
 
 ## What it is
-El único comportamiento concreto que el ítem reporta es que Gemini accede a la tarea de identificar figuras públicas en imágenes donde ChatGPT y Claude rechazan [19cb8032958cd964]. No es una afirmación sobre capacidad de identificación de Gemini, sino sobre su postura de rechazo relativa.
+Un ítem RSS reporta que Gemini sí nombra figuras públicas en imágenes mientras ChatGPT y Claude no lo hacen. La observación es una sola y no viene con versión de modelo, cuenta, región ni condiciones de prompt, así que describe un caso, no la conducta actual de ninguno de los tres productos.
 
 ## Evidence
-- Gemini no se niega a nombrar figuras públicas en imágenes, según la observación reportada — source: 19cb8032958cd964
-- La observación es anecdótica y sin fecha de test — source: 19cb8032958cd964
+- El documento ingerido afirma que ChatGPT y Claude no identifican figuras públicas en imágenes, pero Gemini sí — source: 19cb8032958cd964
 
 ## Why it matters
-Si la asimetría es real y estable, sirve como sonda pequeña de cómo difieren los proveedores en comportamiento de rechazo ligado a identidad, algo relevante al evaluar comportamiento de modelos en producción [19cb8032958cd964]. Un dato de una sola observación no basta para tratarlo como propiedad estable del actor.
+Si se confirma, es un dato de selección de proveedor para cualquier flujo donde la identificación de personas en imágenes sea un requisito. Sin versión ni fecha no se puede saber si sigue siendo cierto hoy, y la conducta de rechazo cambia con frecuencia.
 
-Es el soporte empírico concreto de [[divergencia-de-rechazo-entre-proveedores]]. Comparte con [[leak-sin-autenticidad-establecida]] el problema de escribir sobre un reporte cuya autenticidad y método no están establecidos.
+Sostiene a `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`, que registra la asimetría entre Gemini y el resto en el caso específico de figuras públicas. Contradice a `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` en el sentido de que el titular lo presenta como capacidad universal mientras este actor describe una diferencia de política entre productos concretos. Se relaciona con `divergencia-de-rechazo-entre-proveedores` (mismo prompt, distinta respuesta), con `probe-de-rechazo-por-identidad-en-produccion` como sonda operativa derivable, y con `prueba-con-proveedores-y-cuentas-especificas`, que exige acotar la observación a versión, cuenta y región antes de generalizar.
 
 ## Links
 - supports → [[divergencia-de-rechazo-entre-proveedores]]
 - relates_to → [[leak-sin-autenticidad-establecida]]
+- supports → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- contradicts → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[divergencia-de-rechazo-entre-proveedores]]
+- relates_to → [[probe-de-rechazo-por-identidad-en-produccion]]
+- relates_to → [[prueba-con-proveedores-y-cuentas-especificas]]

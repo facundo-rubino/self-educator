@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-28'
 sources:
 - 19cb8032958cd964
 tags:
+- corroboracion
 - evidencia
-- singleton
 - multimodal
+- singleton
+- vision
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -29,21 +31,30 @@ links:
   type: supports
 - to: generalizacion-desde-cluster-de-un-solo-documento
   type: supports
+- to: afirmacion-poblacional-desde-un-solo-proveedor
+  type: relates_to
+- to: sin-claim-positivo-posible-desde-cluster-de-agentic-engineering
+  type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: supports
 ---
 
 ## What it is
-Queda abierto qué evidencia haría falta para elevar el ítem de anécdota a hallazgo: pruebas fechadas por proveedor, prompt reproducido, versión de modelo y replicación independiente. Sin ese segundo corpus, la afirmación sobre capacidades multimodales de los LLM frontera no es sostenible.
+Pregunta abierta: ¿qué haría falta para que una observación de identificación de figuras públicas en imágenes fuera evidencia, en lugar de un fragmento? La respuesta mínima es un segundo corpus independiente del mismo proveedor de feed, con la conducta de rechazo fijada por versión, cuenta y región.
 
 ## Evidence
-- El ítem es una entrada RSS con engagement=0 y novelty=0, sin corroboración dentro del pipeline. — source: 19cb8032958cd964
-- El documento proporciona solo titular y una frase: no hay metodología ni test que permita reproducir la observación. — source: 19cb8032958cd964
+- El clúster contiene exactamente una aserción y ninguna corroboración independiente — source: 19cb8032958cd964
+- El único documento tiene engagement=0, por lo que no hay señal externa de que la observación se haya replicado o discutido — source: 19cb8032958cd964
 
 ## Why it matters
-Identifica la laguna con precisión en lugar de descartar el tema por irrelevancia: la pregunta es qué protocolo mínimo convertiría esta aserción en evidencia. También advierte del riesgo de arrastrar ítems de baja relevancia al brief, donde diluyen la calidad de señal.
+Sin segundo corpus no se puede distinguir una asimetría real de proveedor de una anécdota de una sola sesión. La pregunta queda abierta en el grafo y el reconciliador puede cerrarla cuando entre una segunda fuente; hasta entonces, ninguna nota debe tratarla como resultado.
 
-Deriva de `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion`, que documenta el modo de fallo. Apoya las reglas generales `afirmacion-poblacional-desde-un-solo-proveedor` y `generalizacion-desde-cluster-de-un-solo-documento`, ambas aplicables aquí sin cambios.
+Es la pregunta que `afirmacion-poblacional-desde-un-solo-proveedor` responde negativamente en su forma actual. Se relaciona con `sin-claim-positivo-posible-desde-cluster-de-agentic-engineering`, que registra el mismo tipo de déficit de corpus en otro clúster, y se apoya en `single-document-cluster-engagement-cero-no-generaliza`.
 
 ## Links
 - derived_from → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - supports → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
+- relates_to → [[sin-claim-positivo-posible-desde-cluster-de-agentic-engineering]]
+- supports → [[single-document-cluster-engagement-cero-no-generaliza]]

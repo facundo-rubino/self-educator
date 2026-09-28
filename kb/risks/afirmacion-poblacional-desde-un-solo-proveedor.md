@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-17'
+updated: '2026-09-28'
 sources:
 - 19cb8032958cd964
 - 4e1f2a7e255ed83a
@@ -17,10 +17,12 @@ tags:
 - evidencia
 - generalizacion
 - llm
+- n-igual-1
+- proveedores
 - sobre-generalizacion
 base_confidence: 0.12
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-28'
 provenance:
   scale: M
   query: null
@@ -37,18 +39,25 @@ links:
   type: relates_to
 - to: generalizar-un-error-de-un-post-sin-corroboracion
   type: relates_to
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: supports
+- to: segundo-corpus-necesario-para-afirmar-capacidad-multimodal
+  type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: relates_to
 ---
 
 ## What it is
-Un único punto de datos —un titular, un proveedor, un feed— no autoriza una afirmación sobre el conjunto de los proveedores de LLM. Atribuir a «xAI, OpenAI y Anthropic» un comportamiento conjunto partiendo de una sola mención es un salto no soportado.
+Pasar de la conducta observada en un modelo (o en dos o tres) a una afirmación sobre «los LLM» en general requiere una población de modelos, condiciones comparables y criterio de muestreo. Un clúster de un solo documento con engagement=0 describe a lo sumo un caso, no una población.
 
 ## Evidence
-- La afirmación de cosign conjunto por tres laboratorios procede de un único documento, con corroboration=0.50 y sin fuentes independientes — source: 4e1f2a7e255ed83a
+- El clúster se sostiene en un único documento; no hay fuente independiente ni corroboración en el conjunto de señal — source: 19cb8032958cd964
+- La observación reportada cubre como máximo tres productos de proveedor (ChatGPT, Claude, Gemini) bajo condiciones no especificadas — source: 19cb8032958cd964
 
 ## Why it matters
-Evita que un titular se convierta en premisa sobre la industria. Los claims poblacionales exigen cobertura de múltiples fuentes o al menos documentos primarios de cada parte implicada.
+El cuantificador universal es la parte del titular que más se propaga y la que menos evidencia tiene detrás. Para el brief no cambia nada operativo, pero registra el modo de fallo: si el pipeline promueve titulares con cuantificador universal desde singletons, el grafo acumula afirmaciones de alcance creciente y base decreciente.
 
-Se enlaza como contradicción con `aef-1-estandar-de-evaluadores-de-terceros`, cuyo claim es precisamente de alcance poblacional. Comparte forma con `generalizacion-desde-cluster-de-un-solo-documento` y `generalizar-un-error-de-un-post-sin-corroboracion`.
+Es la cara estadística del fallo descrito en `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`. Se relaciona con `segundo-corpus-necesario-para-afirmar-capacidad-multimodal`, que ya establece que un singleton sin engagement no sostiene afirmaciones poblacionales sobre capacidades multimodales, y con `single-document-cluster-engagement-cero-no-generaliza`, que enuncia la regla general.
 
 ## Links
 - derived_from → [[divergencia-de-rechazo-entre-proveedores]]
@@ -57,3 +66,6 @@ Se enlaza como contradicción con `aef-1-estandar-de-evaluadores-de-terceros`, c
 - contradicts → [[aef-1-estandar-de-evaluadores-de-terceros]]
 - relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[generalizar-un-error-de-un-post-sin-corroboracion]]
+- supports → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
+- relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]

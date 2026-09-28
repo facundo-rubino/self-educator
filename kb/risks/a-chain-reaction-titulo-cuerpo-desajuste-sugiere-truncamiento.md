@@ -10,19 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - 0715b80a63a796ad
 tags:
 - a-chain-reaction
 - extraccion
+- extraction
 - ingesta
 - pipeline
 - rss
 - truncamiento
+- truncation
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -35,23 +37,30 @@ links:
   type: supports
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
+  type: relates_to
+- to: a-chain-reaction-missing-body-no-basis-for-assumption
+  type: relates_to
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: relates_to
 ---
 
 ## What it is
-El documento «A Chain Reaction» tiene un título que promete un desarrollo argumental («una reacción en cadena») y un cuerpo cuyo único contenido listado es una cita de Wittgenstein. Ese desajuste entre lo que el título anuncia y lo que el cuerpo entrega es más consistente con truncamiento o extracción defectuosa que con un texto deliberadamente aforístico.
+El documento [0715b80a63a796ad] presenta un título («A Chain Reaction») y un cuerpo que se reduce a una cita aislada, sin desarrollo que conecte ambos. El desajuste es compatible con truncamiento o con una extracción incompleta del cuerpo.
 
 ## Evidence
-- El título del documento es «A Chain Reaction» — source: 0715b80a63a796ad
-- El único contenido listado del documento es la cita «The limits of my language mean the limits of my world.» — source: 0715b80a63a796ad
-- El documento proviene de un feed RSS con engagement=0 y relevance=0.33, novelty=0.00, corroboration=0.50 — source: 0715b80a63a796ad
+- El contenido aportado del único documento del clúster se reduce a la cita «The limits of my language mean the limits of my world» — source: 0715b80a63a796ad
 
 ## Why it matters
-Si el desajuste es artefacto de ingesta, entonces la ausencia de conexión con el brief no es un hallazgo sobre el contenido del post, sino sobre el pipeline. Cualquier juicio de relevancia sobre este documento queda invalidado por la posibilidad de que el cuerpo real nunca llegara al corpus.
+Si el cuerpo fue truncado, la evaluación del clúster se hizo sobre material incompleto. Eso convierte el «no hay evidencia sobre el brief» en un artefacto posiblemente corregible al recuperar el cuerpo, no en una propiedad estable del documento.
 
-`supports` la nota sobre el título sin contenido ingerido: ambos describen la misma carencia desde ángulos distintos. `supports` la nota de falta de conexión explícita con el topic, porque si el cuerpo está truncado esa ausencia es esperada y no informativa. `supports` el riesgo general de ingesta truncada como fallo sistémico de cobertura.
+Conecta con el patrón general de ingesta truncada (`ingesta-truncada-como-riesgo-sistemico-de-cobertura`) y con `a-chain-reaction-missing-body-no-basis-for-assumption`: la ausencia de cuerpo no autoriza a suponer contenido, pero tampoco a concluir definitivamente sobre el tema. Se relaciona con el modo de fallo del pipeline descrito en `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`.
 
 ## Links
 - derived_from → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
 - supports → [[a-chain-reaction-titulo-sin-contenido-ingerido]]
 - supports → [[a-chain-reaction-fuera-del-topic-sin-conexion-explicita]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- relates_to → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]
+- relates_to → [[a-chain-reaction-missing-body-no-basis-for-assumption]]
+- relates_to → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]

@@ -9,22 +9,25 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - 43e006f4538b71dd
 tags:
 - contenido-verificable
+- cuerpo-vacio
 - documento-unico
 - fragmento-aislado
+- ingesta
 - ingesta-parcial
 - react
+- rss
 - rss-ingest
 - ruido-tematico
 - sin-cuerpo
 - ui
 base_confidence: 0.75
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -43,21 +46,24 @@ links:
   type: derived_from
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: the-two-reacts-metricas-sin-corroboracion
+  type: supports
+- to: the-two-reacts-titulo-formula-sin-argumento
+  type: supports
 ---
 
 ## What it is
-Del documento «The Two Reacts» (doc_id 43e006f4538b71dd) solo resulta verificable el encabezado del título y la fórmula «UI = f(data)(state)» — source: 43e006f4538b71dd. No hay en el material accesible ninguna otra frase, sección, ejemplo o argumento atribuible al documento. Lo compilable es, por tanto, la existencia del ítem y esa única expresión, no una tesis sobre React ni sobre gestión de estado.
+El documento `43e006f4538b71dd` («The Two Reacts») tiene como único contenido técnico verificable la expresión `UI = f(data)(state)`: la UI como función curryada de los datos y, luego, del estado. El resto del ítem es metadato de ingesta RSS, no argumento. No hay cuerpo que desarrolle la fórmula ni la conecte con ninguna práctica.
 
 ## Evidence
-- El documento tiene doc_id 43e006f4538b71dd, fue ingerido por RSS y registra engagement=0 — source: 43e006f4538b71dd.
-- El único contenido textual disponible es el encabezado «The Two Reacts» seguido de «UI = f(data)(state)» — source: 43e006f4538b71dd.
-- La puntuación registrada de novelty=0.00 y corroboration=0.50 es consistente con un artefacto de ingesta parcial, no con un hallazgo — source: 43e006f4538b71dd.
-- No aparece mención alguna a agentes de IA, liderazgo técnico, estimación, secuenciamiento, docencia de programación ni productividad — source: 43e006f4538b71dd.
+- El contenido técnico entero del documento es la expresión `UI = f(data)(state)` — source: 43e006f4538b71dd
+- El título es «The Two Reacts», lo que sugiere un encuadre sobre dos preocupaciones reactivas/funcionales distintas, no una sola — source: 43e006f4538b71dd
+- El documento llegó por RSS con engagement=0, sin interacción de audiencia observada en este pipeline — source: 43e006f4538b71dd
 
 ## Why it matters
-Marca el techo de lo que este clúster puede sostener: cualquier lectura sobre React, estado, agentes o liderazgo a partir de aquí sería invención. Y sirve como caso concreto del modo de fallo de ingesta en que llega el título pero no el cuerpo.
+La fórmula es un fragmento de un modelo mental de renderizado de UI, no un claim sobre agentes de IA, estimación, secuenciamiento, alcance, organización personal, oficio ni técnica de estudio. Cualquier lectura que extraiga práctica de ingeniería desde aquí sería fabricación. Su valor en el grafo es como marcador de lo que el pipeline efectivamente recuperó: una fórmula aislada con título sugerente y cero engagement.
 
-Se enlaza con `derived_from` al riesgo `the-two-reacts-titulo-sin-contenido-ingerido`, que registra la misma carencia desde el lado del diagnóstico. Reutiliza la fórmula ya recogida en `ui-como-funcion-de-data-y-state` (edge `supports`): la nota existente registra el modelo mental como tal; esta nota registra únicamente qué porción de ese documento es citable. Y `supports` a `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`, porque aquí se ve el patrón en un caso real: el clúster fue evaluado sin que su cuerpo estuviera disponible.
+`supports` las notas de riesgo que documentan el cuerpo vacío y la falta de corroboración de este ítem. `relates_to` la nota ya existente sobre la misma fórmula (`ui-como-funcion-de-data-y-state`), que cubre el mismo contenido desde el ángulo de la UI como función; esta nota lo cubre desde el ángulo de la ingesta de «The Two Reacts». Ambas deben coexistir sin duplicar: la fórmula se integra allí, la evidencia de corpus truncado se registra aquí.
 
 ## Links
 - relates_to → [[ui-como-funcion-de-data-y-state]]
@@ -67,3 +73,5 @@ Se enlaza con `derived_from` al riesgo `the-two-reacts-titulo-sin-contenido-inge
 - supports → [[ui-como-funcion-de-data-y-state]]
 - derived_from → [[the-two-reacts-titulo-sin-contenido-ingerido]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- supports → [[the-two-reacts-metricas-sin-corroboracion]]
+- supports → [[the-two-reacts-titulo-formula-sin-argumento]]

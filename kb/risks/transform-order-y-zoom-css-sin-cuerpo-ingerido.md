@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - b0df1f50a76ba564
 tags:
@@ -20,12 +20,13 @@ tags:
 - falso-positivo
 - front-end
 - inferencia
+- ingesta
 - ingesta-truncada
 - pipeline
 - riesgo
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -56,19 +57,25 @@ links:
   type: derived_from
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: transform-order-en-css-afecta-el-zoom
+  type: derived_from
+- to: reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin
+  type: relates_to
+- to: argumento-ex-silentio-en-corpus-truncado
+  type: relates_to
 ---
 
 ## What it is
-La afirmación «el orden de transform importa a veces» no es verificable con el material entregado: el cuerpo del documento no está incluido, solo el titular y una línea de resumen. Cualquier concreción técnica (qué orden, qué navegador, qué síntoma) sería fabricación, no evidencia.
+Riesgo de compilación: la única evidencia de este clúster es un título. Cualquier nota que afirme cómo se comporta el orden de `transform` bajo zoom estaría escrita desde memoria, no desde el documento.
 
 ## Evidence
-- El texto del cuerpo del documento no está incluido en el material entregado; solo se dispone de titular y línea de resumen — source: b0df1f50a76ba564
-- El titular afirma que el orden de los transforms importa «a veces» al animar zoom con CSS, sin desarrollo disponible — source: b0df1f50a76ba564
+- El clúster tiene un único miembro con engagement=0 y sin cuerpo ingerido — source: b0df1f50a76ba564
+- La condicionalidad del título («sometimes») queda sin condiciones especificadas, por lo que no puede confirmarse ni refutarse — source: b0df1f50a76ba564
 
 ## Why it matters
-La regla queda enunciada sin casos de excepción ni mecanismo. Registrar el hueco evita que una futura compilación rellene el vacío inventando el detalle. Si el cuerpo se ingiere más adelante, esta nota debería reconciliarse con [[css-transform-order-importa-solo-a-veces]].
+Un downstream que cite este clúster sobrestima una fuente única y no leída. Además, la relevancia baja (0.33) frente al brief sugiere que admitirlo diluye el foco en agentes de IA, liderazgo y productividad sin aportar señal.
 
-Se deriva del único contenido extraíble del clúster ([[css-transform-order-importa-solo-a-veces]]). Refuerza [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]] y [[mecanica-css-afirmada-desde-solo-titulo-rss]]: mismo modo de fallo — afirmar mecánica desde un titular sin cuerpo.
+Deriva de `transform-order-en-css-afecta-el-zoom`, la nota que registra el claim. Comparte modo de fallo con `reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin` (construir lecturas desde un fragmento sin contexto) y con `argumento-ex-silentio-en-corpus-truncado` (tratar ausencia de cuerpo como si autorizara inferencias).
 
 ## Links
 - supports → [[mecanica-css-afirmada-desde-solo-titulo-rss]]
@@ -84,3 +91,6 @@ Se deriva del único contenido extraíble del clúster ([[css-transform-order-im
 - relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - derived_from → [[css-transform-order-importa-solo-a-veces]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- derived_from → [[transform-order-en-css-afecta-el-zoom]]
+- relates_to → [[reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin]]
+- relates_to → [[argumento-ex-silentio-en-corpus-truncado]]

@@ -10,13 +10,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - ded7560510c137bc
 tags:
 - accesibilidad
 - aria
 - aria-describedby
+- artefacto-de-ingesta
 - evidencia-ausente
 - ingesta-truncada
 - singleton
@@ -25,7 +26,7 @@ tags:
 - tooltips
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -59,17 +60,17 @@ links:
 ---
 
 ## What it is
-El clúster de la señal «Fixing my tooltip accessibility mistake» se sostiene en un único documento RSS [ded7560510c137bc] cuyo contenido recuperado se reduce al fragmento «aria-describedby isn't always enough». El cuerpo del artículo no fue ingerido más allá de esa línea, de modo que cualquier afirmación sobre su tesis, alcance o lecciones transferibles se infiere del titular y del snippet, no del documento.
+Del documento `ded7560510c137bc` solo se recupera el título «Fixing my tooltip accessibility mistake» y la frase «aria-describedby isn't always enough». No hay cuerpo ingerido: no consta qué error se cometió, qué alternativa se propone ni qué se aprendió. Cualquier desarrollo de esos puntos sería invención.
 
 ## Evidence
-- El clúster contiene un solo ítem RSS titulado «Fixing my tooltip accessibility mistake», con el único fragmento «aria-describedby isn't always enough.» — source: ded7560510c137bc
-- La tesis reconstruible es que `aria-describedby` no basta por sí solo como solución de accesibilidad para tooltips, implicando técnica adicional — source: ded7560510c137bc
-- El documento no registró engagement en el feed y el pipeline reporta relevance=0.33 y novelty=0.00 — source: ded7560510c137bc
+- El clúster contiene un único documento, de RSS, con engagement 0 — source: ded7560510c137bc
+- El título es «Fixing my tooltip accessibility mistake» — source: ded7560510c137bc
+- La única frase citada es «aria-describedby isn't always enough» — source: ded7560510c137bc
 
 ## Why it matters
-Cualquier uso de este clúster como evidencia de práctica debe limitarse a lo que el fragmento sostiene literalmente. Extraer lecciones de oficio sobre accesibilidad, o sobre la práctica del autor, desde un titular más una aserción es el modo de fallo clásico de ingesta truncada: el desajuste entre lo que el título promete y lo que el cuerpo ingerido aporta.
+Distinguir «título con una aserción» de «documento con contenido» evita que el pipeline trate una promesa textual como hallazgo. Aquí solo hay material para una nota de alcance, no para una nota de práctica.
 
-Refuerza las notas existentes sobre la insuficiencia de `aria-describedby` para tooltips accesibles: el fragmento es exactamente esa aserción. También instancia el patrón más amplio de ingesta truncada que deja clústeres evaluados sobre cuerpos vacíos. Y queda en la estela del riesgo ya registrado de que la accesibilidad de tooltips no cubre ningún eje del brief.
+Comparte el fragmento de `aria-describedby` con `aria-describedby-no-basta-para-tooltips-accesibles`, que registra la misma afirmación desde otro ángulo. El riesgo de generalizar sobre esta base se desarrolla en `fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion`.
 
 ## Links
 - relates_to → [[aria-describedby-no-basta-para-tooltips-accesibles]]

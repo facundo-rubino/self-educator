@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - b0df1f50a76ba564
 tags:
@@ -22,7 +22,7 @@ tags:
 - transform
 base_confidence: 0.25
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: M
   query: null
@@ -41,19 +41,23 @@ links:
   type: relates_to
 - to: animating-zooming-css-titulo-con-documento-unico-engagement-cero
   type: derived_from
+- to: transform-order-solo-importa-con-multiples-funciones
+  type: supports
+- to: css-transform-order-importa-solo-a-veces
+  type: supports
 ---
 
 ## What it is
-Según el título del documento [b0df1f50a76ba564], al animar zoom con CSS el orden de las funciones `transform` determina el resultado de la animación, aunque con excepciones que el propio título admite («… sometimes»). No hay cuerpo ingerido que especifique qué orden produce qué resultado ni en qué casos el orden es indiferente. La formulación hedged la vuelve casi infalsable tal como está enunciada.
+Un documento sostiene en su título que, al animar zoom con CSS, el orden de las funciones `transform` importa «a veces». Solo se ingirió el título: no hay cuerpo, ejemplos ni mediciones que permitan evaluar la afirmación.
 
 ## Evidence
-- El título afirma que el orden de las funciones `transform` importa para animar zoom en CSS, «a veces» — source: b0df1f50a76ba564
-- El documento se presenta como guía para «obtener la animación de transform correcta», lo que lo clasifica como material tutorial de front-end — source: b0df1f50a76ba564
+- El clúster contiene un único documento titulado «Animating zooming using CSS: transform order is important… sometimes», con engagement=0 y sin cuerpo disponible — source: b0df1f50a76ba564
+- El propio título enmarca la regla como condicional («sometimes»), es decir, no universalmente decisiva para animaciones de zoom — source: b0df1f50a76ba564
 
 ## Why it matters
-Si el orden de `transform` altera el zoom, es un punto táctico para quien construye interfaces en CSS. Pero el brief es sobre agentes de IA, liderazgo técnico, estimación, secuenciamiento y productividad, no sobre primitivas de CSS: el valor aquí es de oficio front-end y queda fuera de los ejes del topic.
+La afirmación no es verificable en su estado actual: no se especifican las condiciones bajo las cuales el orden importa ni aquellas en que no. Cualquier conclusión sustantiva sobre el mecanismo sería fabricada, no derivada del documento.
 
-Se relaciona con `transform-order-solo-importa-con-multiples-funciones`, que acota cuándo el orden es relevante, y deriva del registro del clúster en `animating-zooming-css-titulo-con-documento-unico-engagement-cero`, que documenta el soporte empírico mínimo de esta señal.
+Se apoya en `transform-order-solo-importa-con-multiples-funciones` (mecanismo candidato: interacción entre varias funciones) y en `css-transform-order-importa-solo-a-veces` (la condicionalidad como regla enunciada). Es caso concreto de `transform-order-y-zoom-css-sin-cuerpo-ingerido`, que registra el mismo vacío documental.
 
 ## Links
 - relates_to → [[transform-order-solo-importa-con-multiples-funciones]]
@@ -63,3 +67,5 @@ Se relaciona con `transform-order-solo-importa-con-multiples-funciones`, que aco
 - supports → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]
 - relates_to → [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]]
 - derived_from → [[animating-zooming-css-titulo-con-documento-unico-engagement-cero]]
+- supports → [[transform-order-solo-importa-con-multiples-funciones]]
+- supports → [[css-transform-order-importa-solo-a-veces]]

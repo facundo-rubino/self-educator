@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-09-28'
 sources:
 - 00bd010c780beac7
+- 19cb8032958cd964
 tags:
-- ingesta
 - clustering
 - falsos-positivos
+- ingesta
+- pipeline
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -27,20 +29,31 @@ links:
   type: relates_to
 - to: mismatch-query-tema-por-vocabulario-generico-de-infraestructura
   type: supports
+- to: mismatch-query-tema-por-vocabulario-generico-de-infraestructura
+  type: relates_to
+- to: solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering
+  type: relates_to
+- to: relevancia-tematica-baja-no-es-ruido
+  type: contradicts
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: relates_to
 ---
 
 ## What it is
-La etiqueta de señal «datasette 1.0a40» asoció un clúster cuyo único documento trata de la coma final en JSON, sin relación con Datasette ni con ningún tema del brief. La etiqueta es una coincidencia léxica o un artefacto de disparo por palabra clave del filtro determinista, no un hallazgo semántico [00bd010c780beac7].
+El clúster entra al brief con relevance 0.67 sobre la base de solapamiento de tokens («LLM», «AI capability») y no de alineación con la materia. Una etiqueta determinista que acepta por vocabulario puede crear así un falso positivo de categoría: el ítem sobrevive al filtro sin pertenecer al tema.
 
 ## Evidence
-- El clúster contiene un solo documento RSS que discute la prohibición de separadores finales en JSON, enmarcada como cuestión de diseño y estética; ningún documento trata de Datasette, agentes de código, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal ni técnicas de estudio — source: 00bd010c780beac7
-- El contenido sustantivo del documento es la mecánica gramatical de JSON y su justificación estética, no ninguna herramienta de desarrollo ni flujo de trabajo con IA — source: 00bd010c780beac7
+- La relevancia de 0.67 refleja solapamiento de palabras clave con «LLM/AI», no alineación con la materia del brief — source: 19cb8032958cd964
 
 ## Why it matters
-Una etiqueta determinista que dispara por vocabulario puede arrastrar documentos fuera del tema hacia el análisis aguas abajo, y la confianza alta (0.83 inicial) queda conducida por la etiqueta y no por el contenido. La corrección barata es verificar que el cuerpo del documento mencione el tema antes de aceptar la etiqueta.
+El coste es de asignación de atención del analista: cada falso positivo consume cupo y diluye el foco del clúster en liderazgo técnico, estimación, secuenciamiento, alcance, agentes de IA para programar y enseñar, y técnicas de estudio. El modo de fallo es de precisión del pipeline, no del documento.
 
-Se apoya en el patrón ya registrado de que el matching por vocabulario genérico admite ítems fuera del tema, y es una instancia concreta del riesgo general de falsos positivos temáticos en el clustering.
+Se relaciona con `mismatch-query-tema-por-vocabulario-generico-de-infraestructura` y con `solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering`, que describen el mismo mecanismo desde otros pares de tokens. Contradice a `relevancia-tematica-baja-no-es-ruido`, que sostiene que la relevancia baja no implica ausencia de señal: en este caso la relevancia procede del token y no del contenido, y la conclusión es la contraria.
 
 ## Links
 - relates_to → [[clustering-por-embedding-produce-falsos-positivos]]
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
+- relates_to → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
+- relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]
+- contradicts → [[relevancia-tematica-baja-no-es-ruido]]
+- relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]

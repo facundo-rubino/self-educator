@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - df4836a1d89bcba4
 tags:
-- falso-positivo-clustering
-- mismatch-lexico
+- clustering
 - css
+- falso-positivo
+- falso-positivo-clustering
 - gating-topico
+- matching-lexico
+- mismatch-lexico
+- shadow-roots
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -28,21 +32,28 @@ links:
   type: relates_to
 - to: shadow-roots-live-examples-singleton-sin-engagement
   type: derived_from
+- to: shadow-roots-live-examples-singleton-sin-engagement
+  type: relates_to
+- to: clustering-por-embedding-produce-falsos-positivos
+  type: supports
+- to: relevancia-tematica-baja-no-es-ruido
+  type: contradicts
 ---
 
 ## What it is
-El ítem entró al brief pese a concernir autoría de artefactos alrededor de un concepto CSS, con solapamiento topical casi nulo respecto a agentes de IA, liderazgo técnico, docencia u oficio de ingeniería. Es un fallo de gating topológico del pipeline.
+La alineación de este clúster con el tema de craft de software es una coincidencia léxica: aparecen los tokens «CSS» e «interactive examples», pero el documento es una instrucción de tarea a una herramienta externa, no un hallazgo, demostración o argumento. El matcher admite el ítem por vocabulario, no por contenido.
 
 ## Evidence
-- El clúster contiene un único ítem RSS de bajo engagement cuyo contenido es un prompt a un modelo de IA para construir un artefacto CSS — source: df4836a1d89bcba4
-- El documento está etiquetado solo con «css», sin relación con los ejes declarados del brief — source: df4836a1d89bcba4
-- El ítem tiene novelty 0.00 y surprise 0.50: scores neutros que no aportan información nueva — source: df4836a1d89bcba4
+- El documento es una instrucción a una herramienta («Fable 5.1 Medium») para construir un artefacto, no un hallazgo, demostración o argumento — source: df4836a1d89bcba4
 
 ## Why it matters
-Si el pipeline debe alimentar briefs sobre oficio de ingeniería y desarrollo asistido por IA, este ítem es probablemente un miss de clustering o de filtrado por relevancia, y puede indicar una laguna en el gating topológico. Anclar al lector en un ejemplo CSS irrelevante diluye el brief.
+Si el objetivo del pipeline es surfacear contenido sustantivo de liderazgo de ingeniería o agentes de IA, este clúster debe downweightarse o removerse: no contribuye señal usable y su presencia puede arrastrar el matching por vocabulario genérico hacia más prompts disfrazados de análisis.
 
-Se relaciona con el patrón general de solapamiento léxico como falso positivo de clustering («agents»/«servers»). Deriva del singleton CSS sin engagement, cuyo score neutro es el síntoma de la misma falla.
+Se relaciona con el singleton sin engagement del mismo ítem. Apoya el patrón conocido de que el clustering por embeddings produce falsos positivos temáticos. Contradice la regla de que relevancia temática baja no equivale a ausencia de señal: aquí la relevancia baja (0.33) sí corresponde a ausencia de señal sobre el brief.
 
 ## Links
 - relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]
 - derived_from → [[shadow-roots-live-examples-singleton-sin-engagement]]
+- relates_to → [[shadow-roots-live-examples-singleton-sin-engagement]]
+- supports → [[clustering-por-embedding-produce-falsos-positivos]]
+- contradicts → [[relevancia-tematica-baja-no-es-ruido]]

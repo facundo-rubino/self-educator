@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - 0248fdb60811e91e
 tags:
+- descarte
+- ingesta
 - llm-patterns
-- retrieval
 - pipeline
+- retrieval
 - stub
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -31,21 +33,27 @@ links:
   type: relates_to
 - to: argumento-ex-silentio-en-corpus-truncado
   type: contradicts
+- to: how-to-match-llm-patterns-titulo-sin-contenido-ingerido
+  type: derived_from
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: supports
 ---
 
 ## What it is
-Dado que la señal solo ofrece título y una línea de ingest, la acción correcta es recuperar el texto completo del documento [0248fdb60811e91e] o depriorizarlo. Elevarlo a hallazgo sin cuerpo sería un error de categoría: una taxonomía de arquitectura no es evidencia sobre liderazgo técnico, estimación ni pedagogía.
+Pregunta abierta: dado que solo se ingirió título y subtítulo, ¿debe este documento recuperarse en texto completo para evaluar sus claims, o descartarse del brief? Hasta que se recupere el cuerpo, no hay base para acreditar ningún hallazgo.
 
 ## Evidence
-- El documento carece de cuerpo, autor, benchmarks y casos de estudio en la señal entregada — source: 0248fdb60811e91e
-- La propia señal lo marca como candidato a retrieval del texto completo o a depriorización, con confianza 0.05 tras el verdict WEAK del crítico — source: 0248fdb60811e91e
+- El clúster contiene un único documento RSS-ingestado del que solo hay título y snippet de una línea — source: 0248fdb60811e91e
+- El titular promete un mapeo problema-patrón (externo/interno, datos/no-datos) sin cuerpo que lo desarrolle — source: 0248fdb60811e91e
 
 ## Why it matters
-Si el texto completo está paywalled o truncado, la reingesta repetida seguirá produciendo el mismo stub no accionable e inflará la cobertura aparente del topic.
+Si el documento completo argumentase que la elección de patrón LLM depende de restricciones externo/interno y datos/no-datos, podría dar una heurística ligera para un dev líder. Sin cuerpo, esa posibilidad no es una hipótesis sostenida por evidencia, solo un candidato de retrieval.
 
-Deriva del ítem sin cuerpo y del patrón general de pipeline que no recupera fuente primaria antes de evaluar. Se marca como contradictoria frente al riesgo de argumento ex silentio sobre corpus truncado: descartar este documento no equivale a probar que su contenido carezca de valor, y la decisión queda abierta hasta el retrieval.
+Deriva de la nota sobre título sin contenido ingerido. Refuerza la nota sobre el pipeline que evalúa clústeres RSS sin recuperar antes el cuerpo.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
 - relates_to → [[pipeline-sin-fuente-primaria-para-verificar-senal-de-ataques]]
 - contradicts → [[argumento-ex-silentio-en-corpus-truncado]]
+- derived_from → [[how-to-match-llm-patterns-titulo-sin-contenido-ingerido]]
+- supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]

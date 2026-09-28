@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - ded7560510c137bc
 tags:
 - accesibilidad
 - brief
-- relevancia
+- falso-match
 - front-end
+- relevancia
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -30,22 +31,24 @@ links:
   type: supports
 - to: cluster-heterogeneo-sin-tesis-sostenible-sobre-el-brief
   type: supports
+- to: fixing-my-tooltip-accessibility-mistake-titulo-sin-contenido-ingerido
+  type: derived_from
 ---
 
 ## What it is
-El tema del clúster «Fixing my tooltip accessibility mistake» — semántica ARIA de tooltips — toca como máximo el cajón de «oficio de software engineering», pero no tiene conexión visible con agentes de IA, estimación, secuenciamiento, alcance, liderazgo de equipos chicos, docencia ni técnicas de estudio. La adyacencia es léxica, no temática.
+El clúster trata accesibilidad de tooltips en la web; el brief pide agentes de IA aplicados a programar/gestionar/enseñar, liderazgo técnico de equipos chicos, estimación y secuenciamiento, oficio de software engineering, productividad y técnicas de estudio. El único solapamiento defendible es «oficio» en sentido amplio, vínculo tan genérico que cubriría cualquier post técnico.
 
 ## Evidence
-- El documento aborda craftsmanship de front-end (semántica de tooltips basada en ARIA), sin nexo visible con los ejes principales del brief — source: ded7560510c137bc
-- Los propios scores del pipeline coinciden: relevance=0.33 frente al brief — source: ded7560510c137bc
-- No hay documento corroborante alguno en el clúster — source: ded7560510c137bc
+- El clúster no es un análisis de liderazgo técnico, agentes de IA, estimación, secuenciamiento, enseñanza ni productividad — source: ded7560510c137bc
+- El propio señalizador puntúa relevance 0.33 y novelty 0.00, lo que indica ausencia de ángulo nuevo — source: ded7560510c137bc
 
 ## Why it matters
-Es un caso concreto de por qué una coincidencia léxica sobre términos técnicos genéricos no licencia el ingreso de un ítem al brief. Si este clúster consume cupo, lo hace a costa de señal sobre los ejes reales.
+Evita sumar al brief un ítem por coincidencia temática superficial. «Oficio» sin poder discriminante no justifica una nota de concepto ni de patrón.
 
-Se suma al riesgo ya registrado de que la accesibilidad de tooltips no cubre ningún eje del brief, y al diagnóstico general de clústeres heterogéneos sin tesis sostenible sobre el brief.
+Es el caso concreto, para este ítem, de la regla general en `accesibilidad-como-correccion-no-como-tema-del-brief`. Depende de `fixing-my-tooltip-accessibility-mistake-titulo-sin-contenido-ingerido`, que fija cuál es el contenido real disponible.
 
 ## Links
 - relates_to → [[accesibilidad-como-correccion-no-como-tema-del-brief]]
 - supports → [[fixing-my-tooltip-accessibility-mistake-fuera-del-brief-de-agentes-y-liderazgo]]
 - supports → [[cluster-heterogeneo-sin-tesis-sostenible-sobre-el-brief]]
+- derived_from → [[fixing-my-tooltip-accessibility-mistake-titulo-sin-contenido-ingerido]]

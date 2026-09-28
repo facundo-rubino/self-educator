@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - 19cb8032958cd964
 tags:
@@ -21,9 +21,10 @@ tags:
 - politica-de-producto
 - privacidad
 - rechazo
+- vision
 base_confidence: 0.4
 half_life_days: 180
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -40,21 +41,24 @@ links:
   type: supports
 - to: aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales
   type: supports
+- to: identificar-no-es-reconocer-en-la-fuente
+  type: relates_to
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: relates_to
+- to: afirmacion-de-novedad-sin-linea-base
+  type: relates_to
 ---
 
 ## What it is
-La capacidad de identificar personas en imágenes no es un estado nuevo del arte de los LLM: es una función disponible desde hace años y su presencia o ausencia en un producto concreto está determinada por la política del proveedor, no por un salto de capacidad del modelo. La novedad de cualquier anuncio que la presente como reciente debe medirse contra esa línea base, no contra cero.
+El artículo de novedad de la afirmación —«can now»— no está establecido. Los modelos con visión llevan tiempo reconociendo personas en imágenes; lo que varía entre proveedores es si la identificación se permite o se rechaza. Sin línea base, «ahora» describe un cambio de política percibido, no una capacidad que antes no existiera.
 
 ## Evidence
-- El clúster aporta un único documento de feed RSS [19cb8032958cd964] que afirma que los LLM ya pueden identificar figuras públicas en imágenes.
-- El propio documento matiza que ChatGPT y Claude no lo hacen, pero Gemini sí, con lo que la generalización «los LLM» recae sobre un solo producto [19cb8032958cd964].
-- El documento no incluye metodología, métricas, fecha ni fuente primaria [19cb8032958cd964].
-- El pipeline puntúa la novedad del clúster en 0.00, lo que contradice el encuadre temporal «ya/now» del titular [19cb8032958cd964].
+- La afirmación ingerida se enuncia como capacidad nueva («LLMs can now identify public figures in images») sin metodología, sin fijación de versión y sin condiciones de prueba — source: 19cb8032958cd964
 
 ## Why it matters
-Si la novedad es 0.00, la afirmación describe una característica ya establecida y no un cambio de estado del arte; tratarla como hallazgo nuevo es una decisión de encuadre, no un dato. Para quien elige agentes multimodales para tareas con imágenes, lo relevante no es «puede o no puede» en abstracto, sino qué proveedor aplica qué filtro en qué versión y región.
+Si el cambio real es de cumplimiento y no de capacidad, entonces el eje de la investigación debería ser el comportamiento de rechazo por proveedor y su estabilidad, no la celebración de un umbral de capacidad cruzado. La distinción decide qué se vigila y con qué frecuencia.
 
-Se apoya en `gemini-no-rechaza-nombrar-figuras-publicas`, que es la observación concreta que sostiene la única parte específica de la afirmación. Se relaciona con `politica-de-face-recognition-como-variable-de-producto`: la identificación de personas es una decisión de producto, no una capacidad del modelo. Alimenta el patrón `aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales`, porque fija como criterio de aceptación el proveedor concreto. Es tangencial a `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`. El riesgo `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion` es la lectura que esta nota corrige.
+Se relaciona con `identificar-no-es-reconocer-en-la-fuente`, que fija que «identificar» en la fuente significa «no rechazar» y no «reconocer». Se relaciona con `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` porque ambos cuestionan la lectura del titular, y con `afirmacion-de-novedad-sin-linea-base`, que generaliza el problema al «now» sin referencia.
 
 ## Links
 - supports → [[afirmacion-de-novedad-sin-linea-base]]
@@ -63,3 +67,6 @@ Se apoya en `gemini-no-rechaza-nombrar-figuras-publicas`, que es la observación
 - relates_to → [[politica-de-face-recognition-como-variable-de-producto]]
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
 - supports → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]
+- relates_to → [[identificar-no-es-reconocer-en-la-fuente]]
+- relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[afirmacion-de-novedad-sin-linea-base]]

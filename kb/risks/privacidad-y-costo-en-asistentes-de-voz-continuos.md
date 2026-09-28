@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -26,7 +26,7 @@ tags:
 - voz
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -43,19 +43,20 @@ links:
   type: derived_from
 - to: prototipado-por-composicion-de-apis-sin-entrenamiento
   type: relates_to
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: relates_to
 ---
 
 ## What it is
-Un asistente de voz ensamblado con STT, TTS, un LLM y un número virtual implica audio continuo hacia servicios de terceros y un canal telefónico facturado por uso. El documento no aborda ninguno de los dos.
+Un coach por voz que enruta audio por STT, un LLM remoto y TTS a través de un número telefónico virtual implica capturar voz continua, enviarla a servicios de terceros y mantener líneas y llamadas activas.
 
 ## Evidence
-- El stack descrito incluye STT, TTS, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
-- El documento no discute implicaciones de privacidad ni de costo — source: 49140f9d5133d3c7
+- El stack del coach incluye speech-to-text, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-Son dos restricciones que condicionan la viabilidad de reutilizar este boceto en un contexto de equipo: dónde vive el audio y quién paga el canal. El documento no las trata, así que quedan como preguntas abiertas del diseño, no como hallazgos.
+Son los dos costos no técnicos del patrón: audio personal persistido o procesado por terceros, y el gasto recurrente de telefonía más inferencia. El documento no los aborda ni los cuantifica, así que quedan como riesgo a resolver antes de reutilizar el diseño.
 
-Se deriva de `ai-coach-voz-a-voz-ensamblado-de-servicios`: la composición del stack es lo que genera ambos riesgos. Se relaciona con `prototipado-por-composicion-de-apis-sin-entrenamiento`, donde el costo y la dependencia de terceros son inherentes al patrón.
+Deriva de `stack-de-ai-coach-voz-a-voz` al señalar las consecuencias de cada pieza. Se relaciona con `ai-coach-voz-a-voz-ensamblado-de-servicios` como el artefacto que incurre en estos costos.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
@@ -64,3 +65,4 @@ Se deriva de `ai-coach-voz-a-voz-ensamblado-de-servicios`: la composición del s
 - relates_to → [[privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia]]
 - derived_from → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
+- relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]

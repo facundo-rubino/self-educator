@@ -10,18 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
+- alcance
 - brief
 - evidencia
 - inferencia
 - liderazgo
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -36,19 +37,22 @@ links:
   type: relates_to
 - to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
   type: supports
+- to: ai-coach-como-herramienta-de-foco-no-de-liderazgo
+  type: supports
+- to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
+  type: relates_to
 ---
 
 ## What it is
-La cadena causal desde una herramienta personal de foco hasta mejor liderazgo técnico o mejor docencia no está sostenida por ningún documento del clúster. Afirmarla sería inferencia, no evidencia.
+Conectar el AI coach con liderazgo técnico, gestión de equipo o docencia requiere un salto que el documento no autoriza: no menciona equipos, estimación, secuenciamiento, alcance ni pedagogía.
 
 ## Evidence
-- El clúster no contiene evidencia sobre liderazgo técnico, estimación, secuenciamiento, alcance ni docencia — source: 49140f9d5133d3c7
-- El documento es un ítem RSS con engagement=0 y no ofrece contexto de curso, resultados de aprendices ni métricas de equipo — source: 49140f9d5133d3c7
+- El documento describe una herramienta personal de foco y no contiene afirmaciones sobre codificación, estimación, secuenciamiento, alcance ni pedagogía — source: 49140f9d5133d3c7
 
 ## Why it matters
-Para docencia, el puente más plausible sería mostrar el patrón de composición a estudiantes como proyecto pequeño y acotado con interfaces claras y modos de fallo observables, pero el documento no aporta contexto de curso ni resultados que lo sostengan.
+Evita que una anécdota de productividad personal se contabilice como hallazgo sobre práctica profesional. Si el brief necesita insumos de liderazgo o docencia, hay que buscarlos en otro clúster.
 
-Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo`, que fija la categoría del artefacto. Refuerza `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion` como advertencia de modo de fallo.
+Soporta `ai-coach-como-herramienta-de-foco-no-de-liderazgo` al explicitar el límite. Se relaciona con `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion`, el modo de fallo concreto.
 
 ## Links
 - supports → [[monkey-mind-como-encuadre-de-productividad-personal]]
@@ -56,3 +60,5 @@ Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo`, que fija l
 - relates_to → [[bridge-especulativo-de-eval-por-tarea-a-practica-de-liderazgo]]
 - relates_to → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
 - supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
+- supports → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
+- relates_to → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]

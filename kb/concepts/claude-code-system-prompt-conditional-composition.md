@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-25'
+updated: '2026-09-28'
 sources:
 - abf61eeec75462f9
 tags:
@@ -17,6 +17,7 @@ tags:
 - agentes-de-codigo
 - agentic-coding
 - claude-code
+- claude-code-leak
 - composicion-condicional
 - composición-condicional
 - filtracion
@@ -25,10 +26,11 @@ tags:
 - leak
 - prompt-architecture
 - prompt-engineering
+- prompting
 - system-prompt
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-28'
 provenance:
   scale: M
   query: null
@@ -63,18 +65,22 @@ links:
   type: relates_to
 - to: leak-de-claude-code-sin-fragmentos-citados
   type: relates_to
+- to: claude-code-source-leak-condiciones-parts-unspecified
+  type: relates_to
+- to: entrega-de-prompt-monolitico-vs-condicional
+  type: relates_to
 ---
 
 ## What it is
-El documento abf61eeec75462f9 reporta que el código fuente filtrado de Claude Code muestra que su system prompt se ensambla a partir de docenas de partes condicionales, en lugar de un bloque monolítico. Es una afirmación de ingeniería inversa sobre las tripas de una herramienta de agentes aplicada a programar: la instrucción al modelo sería el resultado de componer secciones activadas por condiciones.
+El código fuente filtrado de Claude Code mostraría que su system prompt no es un bloque monolítico, sino un ensamblado de docenas de partes condicionales. La afirmación proviene de un único post de RSS [abf61eeec75462f9], sin cita de código, archivo, función ni mecanismo de activación. No se especifica qué condiciones gatean qué secciones, ni la versión observada.
 
 ## Evidence
-- El system prompt de Claude Code se construye ensamblando docenas de partes condicionales, según el código fuente filtrado que cita el documento — source: abf61eeec75462f9
+- «Claude Code's leaked source shows a system prompt assembled from dozens of conditional parts.» — source: abf61eeec75462f9
 
 ## Why it matters
-Marca una arquitectura de prompts componible (bloques activados por contexto de entorno, herramientas o modo de tarea) frente al prompt monolítico, y sitúa el prompt del agente como artefacto auditable y testeable por bloque. También desmitifica la IA como caja negra para quien enseña a programar con agentes: la instrucción al modelo es configuración y composición, no magia.
+Si el ensamblado condicional fuera real, sería una instancia del patrón general de composición condicional de prompts, no un hallazgo nuevo sobre él: la descripción es la esperada de cualquier pipeline de prompt grande. La afirmación no aporta detalle implementable, no mide efecto alguno sobre el trabajo del desarrollador, y no tiene corroboración en el clúster. Confianza 0.05.
 
-`system-prompt-como-artefacto-de-ingenieria` es la tesis general que este caso instancia. `prompt-condicional-conocimiento-comun-en-productos-llm` y `ensamblado-condicional-de-prompts` ya establecen que el ensamblado condicional es un patrón conocido en productos LLM, no una exclusiva de Claude Code. `leak-de-claude-code-sin-fragmentos-citados` recoge la ausencia de fragmentos, disparadores y versión. `sobre-generalizacion-desde-claude-code` advierte contra extrapolar este diseño a agentes propios.
+Soporta el patrón `ensamblado-condicional-de-prompts` y la tesis de `system-prompt-como-artefacto-de-ingenieria`, pero solo como una instancia no verificada. La pregunta `claude-code-source-leak-condiciones-parts-unspecified` registra exactamente lo que este documento deja sin decir, y `leak-de-claude-code-sin-fragmentos-citados` es la misma carencia de evidencia.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
@@ -92,3 +98,5 @@ Marca una arquitectura de prompts componible (bloques activados por contexto de 
 - relates_to → [[claude-code-condiciones-que-gatean-secciones-sin-observar]]
 - relates_to → [[vista-filtrada-del-codigo-no-confirma-composicion-condicional]]
 - relates_to → [[leak-de-claude-code-sin-fragmentos-citados]]
+- relates_to → [[claude-code-source-leak-condiciones-parts-unspecified]]
+- relates_to → [[entrega-de-prompt-monolitico-vs-condicional]]

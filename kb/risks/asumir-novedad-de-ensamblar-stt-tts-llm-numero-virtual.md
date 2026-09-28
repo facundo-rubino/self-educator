@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -21,7 +21,7 @@ tags:
 - overinterpretation
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -36,19 +36,22 @@ links:
   type: supports
 - to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
   type: supports
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: supports
+- to: prototipado-por-composicion-de-apis-sin-entrenamiento
+  type: relates_to
 ---
 
 ## What it is
-Tratar el ensamblado de STT, TTS, LLM y número virtual como un hallazgo nuevo o una práctica validada es un modo de fallo: no hay línea base contra la que medir novedad. El propio pipeline declara novelty=0.00 para el ítem.
+El documento describe una combinación de componentes existentes (STT, TTS, LLM, número virtual). No hay línea base contra la cual reclamar que ese ensamblado sea nuevo.
 
 ## Evidence
-- El ítem tiene novelty=0.00 según las métricas del pipeline, lo que contradice cualquier lectura de novedad — source: 49140f9d5133d3c7
-- No hay segundo autor, artefacto, código, métricas ni feedback de usuarios que corrobore la práctica — source: 49140f9d5133d3c7
+- El coach se construye combinando componentes ya disponibles: speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-Presentar la composición como novedad convierte una lista de partes en un supuesto hallazgo. La composición es práctica de ingeniería reconocible, pero no demostración de mejora ni de adopción.
+Presentar la composición como innovación sin comparación sería sobreafirmar. Lo verificable es que el patrón de ensamblado aplica a asistentes de voz; la novedad requeriría búsqueda previa o contraste con implementaciones conocidas.
 
-Contradice la lectura de novedad implícita en `stack-de-ai-coach-voz-a-voz`. Refuerza `afirmacion-de-novedad-sin-linea-base` y `afirmacion-de-capacidad-desde-fragmento-de-una-linea` como instancias del mismo modo de fallo.
+Soporta `ai-coach-voz-a-voz-ensamblado-de-servicios` al fijar qué se puede afirmar. Se relaciona con `prototipado-por-composicion-de-apis-sin-entrenamiento`, marco bajo el cual la composición es esperada, no novedosa.
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
@@ -56,3 +59,5 @@ Contradice la lectura de novedad implícita en `stack-de-ai-coach-voz-a-voz`. Re
 - contradicts → [[stack-de-ai-coach-voz-a-voz]]
 - supports → [[afirmacion-de-novedad-sin-linea-base]]
 - supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
+- supports → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]

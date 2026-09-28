@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - abf61eeec75462f9
 tags:
@@ -17,11 +17,13 @@ tags:
 - evidencia-debil
 - hipotesis
 - prompt-engineering
+- prompting
 - prompts
+- system-prompt
 - verificacion
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -38,19 +40,24 @@ links:
   type: relates_to
 - to: revision-de-setup-de-agente-por-rama-condicional-no-por-prompt-monolitico
   type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: derived_from
+- to: reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria
+  type: relates_to
+- to: test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes
+  type: relates_to
 ---
 
 ## What it is
-La pregunta operativa que quedaría si el claim se sostuviera: qué condición habilita cada sección del system prompt. El clúster no la responde; solo afirma que hay condiciones.
+El único dato disponible es el número aproximado («docenas») y la palabra «condicionales» [abf61eeec75462f9]. No hay enumeración de condiciones, ni orden de ensamblado, ni ejemplo de una sección que se active o se omita. La estructura interna del prompt no es observable desde este documento.
 
 ## Evidence
-- El reporte declara que el documento trata «cómo se construye un system prompt» sin aportar el mapeo condición→sección — source: abf61eeec75462f9
-- No hay segundo documento en el clúster que observe el mapeo — source: abf61eeec75462f9
+- «dozens of conditional parts», sin listado ni mecanismo — source: abf61eeec75462f9
 
 ## Why it matters
-Es la pregunta que un dev-líder necesitaría responder para reutilizar el patrón en sus propios agentes. Queda registrada como laguna, no como hallazgo.
+Sin condiciones identificables no se puede replicar el ensamblado, ni escribir tests de regresión por rama habilitada, ni depurar un comportamiento inesperado atribuyéndolo a una sección concreta. La pregunta es el prerrequisito técnico de cualquier uso práctico de la afirmación.
 
-Se relaciona con `control-de-agente-como-composicion-de-secciones` (inferencia no demostrada) y con `revision-de-setup-de-agente-por-rama-condicional-no-por-prompt-monolitico`, que da el método de revisión por rama. Ambos siguen sin observación directa en este clúster.
+Deriva directamente de `claude-code-system-prompt-conditional-composition`. `reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria` explica por qué la carencia bloquea el uso práctico, y `test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes` sería la herramienta que solo funciona una vez resuelta esta pregunta.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
@@ -59,3 +66,6 @@ Se relaciona con `control-de-agente-como-composicion-de-secciones` (inferencia n
 - relates_to → [[leak-de-claude-code-sin-fragmentos-citados]]
 - relates_to → [[control-de-agente-como-composicion-de-secciones]]
 - relates_to → [[revision-de-setup-de-agente-por-rama-condicional-no-por-prompt-monolitico]]
+- derived_from → [[claude-code-system-prompt-conditional-composition]]
+- relates_to → [[reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria]]
+- relates_to → [[test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes]]

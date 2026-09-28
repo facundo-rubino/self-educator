@@ -9,35 +9,40 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-28'
 sources:
 - 02664c7040e371be
 tags:
+- algoritmos
+- contratacion
+- docencia
 - entrevistas
 - evaluacion
 - practica
-- algoritmos
 base_confidence: 0.6
 half_life_days: 180
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
 links:
 - to: critica-entrevistas-algoritmos-no-reflejan-valor
   type: supports
+- to: critica-entrevistas-algoritmos-no-reflejan-valor
+  type: relates_to
 ---
 
 ## What it is
-Un texto discute la teoría frente a la práctica en las entrevistas de algoritmos y afirma que la mayor parte del valor aportado vino de resolver problemas prácticos, no algorítmicos. La evaluación basada en algoritmos queda desalineada con la fuente de valor declarada por quien la vivió.
+La justificación más común en grandes empresas para los quizzes obligatorios de algoritmos es el miedo a escribir accidentalmente código O(n^2) a escala. La evaluación, sin embargo, mide resolución de problemas tipo phone-screen, no la práctica que dice proteger.
 
 ## Evidence
-- «interview algorithms theory-vs-practice and that most value came from solving practical rather than algorithmic problems» — source: 02664c7040e371be
+- La justificación más común de los quizzes de algoritmos es el miedo a código O(n^2) a escala, aunque un autor reporta que casi todo el valor que obtuvo vino de resolver problemas tipo phone-screen — source: 02664c7040e371be
 
 ## Why it matters
-Aporta la afirmación de valor como argumento contra el filtro algorítmico, en vez de limitarse a criticar su dificultad o su artificialidad.
+Muestra el desajuste entre la práctica real que se dice evaluar y la habilidad que realmente se mide. Relevante para quien enseña programación: la evaluación modela lo que los aprendices estudian.
 
-Soporta «critica-entrevistas-algoritmos-no-reflejan-valor»: la crítica existente dice que las entrevistas no reflejan el valor aportado; este documento aporta el contraste entre problemas prácticos y algorítmicos como base concreta de esa afirmación.
+Se relaciona con la crítica existente de que las entrevistas de algoritmos no reflejan el valor aportado. Aporta evidencia sobre la brecha teoría/práctica en la evaluación.
 
 ## Links
 - supports → [[critica-entrevistas-algoritmos-no-reflejan-valor]]
+- relates_to → [[critica-entrevistas-algoritmos-no-reflejan-valor]]

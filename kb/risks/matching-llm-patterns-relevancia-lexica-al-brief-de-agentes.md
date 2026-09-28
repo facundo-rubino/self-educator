@@ -10,16 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - 0248fdb60811e91e
 tags:
+- brief
+- clustering
+- falso-positivo
 - falso-positivo-lexico
-- matching
 - filtrado-determinista
+- matching
+- matching-lexico
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -32,23 +36,28 @@ links:
   type: supports
 - to: relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista
   type: relates_to
+- to: how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic
+  type: relates_to
+- to: solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering
+  type: relates_to
 ---
 
 ## What it is
-El match del clúster [0248fdb60811e91e] con el topic declarado es de vocabulario: la cadena «LLM patterns» comparte términos con «AI agents aplicados a programar» sin que ningún contenido del clúster nombre agentes aplicados a programar, gestionar o enseñar, ni liderazgo técnico de equipos chicos, ni oficio de software, ni productividad. El propio topic excluye por construcción el ángulo de docencia entry-level, que se mudó a otro profile.
+El vocabulario «LLM patterns» / «problems» es genérico y de marketing; coincidir con los tokens del brief («LLM», «problemas») produce un falso positivo de matching. La relación entre el título y el brief es léxica, no semántica ni demostrada.
 
 ## Evidence
-- Ningún contenido del clúster nombra agentes de IA aplicados a programar, gestionar o enseñar; ningún contenido aborda liderazgo técnico de equipos chicos (estimación, secuenciación, alcance, organización personal); ningún contenido aborda oficio de software ni productividad y técnicas de estudio — source: 0248fdb60811e91e
-- El topic declara explícitamente que la docencia de programación entry-level se mudó a un profile `teaching` separado y ya no compite por cupo en este brief — source: 0248fdb60811e91e
-- relevance=0.33, por debajo del punto medio, consistente con un candidato débil — source: 0248fdb60811e91e
+- El matching del clúster con el topic se apoya en tokens genéricos del título, con relevance=0.33 — source: 0248fdb60811e91e
+- Un «pattern-matching framework» inferido desde el título sería un juego semántico, no una relación demostrada — source: 0248fdb60811e91e
 
 ## Why it matters
-Un match por vocabulario genérico admite ítems fuera del tema y consume cupo de evaluación. Si «LLM patterns» basta para pasar el filtro determinista, el umbral de relevancia no está distinguiendo solapamiento léxico de cobertura temática.
+El brief trata de agentes de IA aplicados a programar, gestionar y enseñar. Un artículo sobre elegir patrones de LLM externo/interno no cubre ninguno de esos ejes solo por compartir «LLM». Aceptar el match infla la cobertura aparente del topic.
 
-Refuerza `solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering` y `mismatch-query-tema-por-vocabulario-generico-de-infraestructura`: es el mismo modo de fallo del matcher con otro par de términos. Se relaciona con `relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista` por compartir la pregunta sobre qué deberían suprimir los umbrales del pipeline, y con la nota existente de relevancia baja para este clúster.
+Análoga al falso positivo «agents»/«servers» ya documentado: solapamiento lexical de vocabulario de infraestructura con el brief.
 
 ## Links
 - relates_to → [[matching-llm-patterns-relevancia-baja-sin-ejes-del-topic]]
 - supports → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
 - relates_to → [[relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista]]
+- relates_to → [[how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic]]
+- relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]

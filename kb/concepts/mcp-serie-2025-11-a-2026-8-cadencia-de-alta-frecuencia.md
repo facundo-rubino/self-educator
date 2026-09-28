@@ -9,23 +9,26 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-09-28'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
+- 30a26335a9988ba2
+- 5a4df6bef0a4905f
 - 748f8b0a02cd7524
+- 9750590bbfe6b285
 - b9106690f5dfd849
 - ffbd76916d1dfdc5
-- 5a4df6bef0a4905f
-- 9750590bbfe6b285
-- 30a26335a9988ba2
 tags:
-- mcp
-- releases
 - cadencia
+- date-versioning
+- infraestructura
+- mcp
+- release-cadence
+- releases
 base_confidence: 0.78
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -34,26 +37,26 @@ links:
   type: supports
 - to: mcp-fechas-2026-sinteticas-no-corroborables
   type: relates_to
+- to: mcp-releases-versionado-por-fecha-subconjunto-varia
+  type: relates_to
+- to: patron-de-releases-coordinados-mcp-es-conducta-esperada-no-hallazgo
+  type: contradicts
 ---
 
 ## What it is
-En el muestreo hay al menos ocho releases que van de 2025.11.25 a 2026.8.31, con intervalos que van de días a semanas. La suite se publica con cadencia alta y sellada por fecha.
+Ocho releases MCP datados entre 2025-11-25 y 2026-08-31 indican una cadencia de publicación sostenida y de alta frecuencia. La serie es regular en formato (lista de paquetes bumpeados) pero variable en el subconjunto de paquetes afectados.
 
 ## Evidence
-- Releases muestreadas: v2025.11.25 — source: 16a4e3995d6c827e
-- v2025.12.18 — source: 2221814efbefaa3b
-- v2026.1.14 — source: 748f8b0a02cd7524
-- v2026.1.26 — source: b9106690f5dfd849
-- v2026.7.4 — source: ffbd76916d1dfdc5
-- v2026.7.10 — source: 5a4df6bef0a4905f
-- v2026.8.18 — source: 9750590bbfe6b285
-- v2026.8.31 — source: 30a26335a9988ba2
+- Ocho documentos de release con fechas explícitas cubren 2025-11-25 a 2026-08-31 — source: 16a4e3995d6c827e, 2221814efbefaa3b, 30a26335a9988ba2, 5a4df6bef0a4905f, 748f8b0a02cd7524, 9750590bbfe6b285, b9106690f5dfd849, ffbd76916d1dfdc5
+- Todos los documentos siguen el mismo formato de versión por fecha — source: 16a4e3995d6c827e, 30a26335a9988ba2
 
 ## Why it matters
-Un consumidor que conecte agentes de IA a filesystem/git/memory/time debe esperar churn frecuente de versiones y fijar versiones. La cadencia alta no implica cambios sustantivos en cada release.
+Una cadencia alta con versionado por fecha es conducta esperada de un ecosistema date-versioned, no un hallazgo sobre práctica. Registrarla evita tratarla como señal de adopción, calidad o workflow.
 
-Evidencia cuantitativa de la serie; relacionada con la advertencia sobre fechas 2026 no corroborables.
+Soporta el hecho ya registrado de que los MCP servers se versionan por fecha (mcp-servers-versionado-por-fecha). Se relaciona con la variabilidad del subconjunto de paquetes entre releases. Contradice la lectura implícita de que esta cadencia sea un patrón con señal temática.
 
 ## Links
 - supports → [[mcp-servers-versionado-por-fecha]]
 - relates_to → [[mcp-fechas-2026-sinteticas-no-corroborables]]
+- relates_to → [[mcp-releases-versionado-por-fecha-subconjunto-varia]]
+- contradicts → [[patron-de-releases-coordinados-mcp-es-conducta-esperada-no-hallazgo]]

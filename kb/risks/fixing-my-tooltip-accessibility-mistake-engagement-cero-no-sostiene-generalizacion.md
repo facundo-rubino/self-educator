@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-23'
+updated: '2026-09-28'
 sources:
 - ded7560510c137bc
 tags:
@@ -18,10 +18,12 @@ tags:
 - corroboracion
 - engagement
 - generalizacion
+- metodologia
 - singleton
+- singleton-rss
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
@@ -38,20 +40,25 @@ links:
   type: relates_to
 - to: afirmacion-de-mistake-personal-desde-titulo
   type: relates_to
+- to: fixing-my-tooltip-accessibility-mistake-titulo-sin-contenido-ingerido
+  type: derived_from
+- to: generalizar-un-error-de-un-post-sin-corrobracion
+  type: relates_to
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: relates_to
 ---
 
 ## What it is
-El post es un documento único ingestado por RSS con engagement=0 y sin corroboración. El reporte lo describe como «a weakly relevant singleton that reached the cluster through a broad filter», y el crítico rebaja la confianza a 0.05. No hay autor identificado, ni contexto, ni segunda fuente.
+El clúster se compone de un solo documento con engagement 0, relevance 0.33, novelty 0.00 y corroboration 0.50. Con un único documento sin señal externa, ninguna lección sobre accesibilidad de tooltips puede presentarse como práctica establecida.
 
 ## Evidence
-- El documento fue ingestado por RSS con engagement=0 — source: ded7560510c137bc
-- El reporte lo caracteriza como «a weakly relevant singleton that reached the cluster through a broad filter and should not be used to support claims about the brief's core themes» — source: ded7560510c137bc
-- El crítico lo llama «a textbook n=1 overgeneralization» desde título más fragmento — source: ded7560510c137bc
+- Un único documento en el clúster, procedente de RSS, con engagement 0 — source: ded7560510c137bc
+- Cualquier afirmación más rica sobre el contenido (qué error, qué alternativa, qué aprendizaje) sería inventada, porque no está en los datos — source: ded7560510c137bc
 
 ## Why it matters
-Bloquea el salto de «un autor corrigió su tooltip» a «existe una práctica extendida de tratar la accesibilidad como correctness concern en frontend», que es exactamente la inferencia que el analista hizo y el crítico tumbó. Sin corroboración ni engagement medido, el caso no es evidencia poblacional.
+Permite descartar el clúster como fuente de práctica sin descartar el ítem como señal temática. Con un documento, un reporte sobre este tema será esencialmente una paráfrasis del título.
 
-Es la cara cuantitativa del mismo singleton cuya falta de cuerpo registra la nota de título-sin-contenido. Reproduce en pequeño el patrón ya anotado de generalizar desde clústeres de un solo documento, y comparte el modo de fallo con la nota sobre reconstruir una lección personal desde un titular.
+Depende de `fixing-my-tooltip-accessibility-mistake-titulo-sin-contenido-ingerido` para establecer la ausencia de cuerpo. Es el caso particular de una regla general ya presente en `generalizar-un-error-de-un-post-sin-corrobracion` y `cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion`.
 
 ## Links
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
@@ -60,3 +67,6 @@ Es la cara cuantitativa del mismo singleton cuya falta de cuerpo registra la not
 - relates_to → [[fixing-my-tooltip-accessibility-mistake-titulo-sin-contenido-ingerido]]
 - relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[afirmacion-de-mistake-personal-desde-titulo]]
+- derived_from → [[fixing-my-tooltip-accessibility-mistake-titulo-sin-contenido-ingerido]]
+- relates_to → [[generalizar-un-error-de-un-post-sin-corrobracion]]
+- relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]

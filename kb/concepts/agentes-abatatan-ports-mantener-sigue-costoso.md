@@ -9,36 +9,42 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-28'
 sources:
 - 01910c0f29cb0570
 tags:
 - agentes
+- costo
 - electron
 - mantenimiento
 - ports
-- costo
 base_confidence: 0.5
 half_life_days: 180
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-28'
 provenance:
   scale: XL
   query: null
 links:
 - to: complejidad-esencial-vs-accidental-brooks
   type: supports
+- to: mantenimiento-sigue-costoso-electron-app
+  type: relates_to
+- to: agentes-y-complejidad-esencial-limite-de-lo-abaratado
+  type: supports
 ---
 
 ## What it is
-La tesis de que los agentes de codificación abaratan la producción inicial de un port nativo, pero que el mantenimiento continuo sigue siendo costoso, lo que explica por qué Anthropic sigue usando Electron para Claude. La propuesta separa costo de primera implementación y costo de ciclo de vida.
+Aunque los agentes de código abaratan la escritura de ports nativos, eso no elimina el coste de mantener la aplicación resultante. Anthropic sigue distribuyendo Claude como app Electron pese a que un port nativo sería más barato de escribir con agentes.
 
 ## Evidence
-- Los agentes de codificación abaratan los ports nativos, pero el mantenimiento sigue siendo costoso, lo que explica por qué Anthropic sigue usando Electron para Claude — source: 01910c0f29cb0570
+- Los agentes de código abaratan los ports nativos, pero el mantenimiento sigue siendo costoso, por lo que Anthropic sigue publicando Claude como app Electron — source: 01910c0f29cb0570
 
 ## Why it matters
-Es una instancia concreta del argumento de Brooks: una herramienta reduce complejidad accidental pero no la esencial. Sugiere que las decisiones de arquitectura (Electron vs. nativo) no se invierten por una caída en el costo de port inicial, porque el mantenimiento domina el ciclo de vida. Relevante para secuenciamiento y alcance en liderazgo técnico.
+Abaratar la *escritura* de código no mueve la aguja si el coste dominante está en el mantenimiento. Para un dev-líder, la palanca de adopción de agentes no es «cuánto código escribo más rápido» sino «cuánto mantenimiento me ahorro».
 
-Es una instancia del argumento de complejidad esencial vs. accidental de Brooks: la caída en complejidad accidental (port inicial) no elimina la esencial (mantenimiento). Se relaciona con el patrón de decisiones de arquitectura condicionadas por costo de ciclo de vida.
+Refuerza la nota de mantenimiento del caso Electron de Claude: ambas describen el mismo documento de evidencia. Se relaciona con la lectura de la complejidad esencial como límite inferior de lo que una herramienta puede abaratar.
 
 ## Links
 - supports → [[complejidad-esencial-vs-accidental-brooks]]
+- relates_to → [[mantenimiento-sigue-costoso-electron-app]]
+- supports → [[agentes-y-complejidad-esencial-limite-de-lo-abaratado]]
