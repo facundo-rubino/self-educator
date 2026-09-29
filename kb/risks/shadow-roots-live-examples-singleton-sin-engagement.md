@@ -9,12 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - df4836a1d89bcba4
 tags:
 - cluster-singleton
+- corroboracion
 - css
+- engagement
 - engagement-cero
 - falso-positivo
 - ruido-de-cluster
@@ -23,7 +25,7 @@ tags:
 - singleton
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -44,18 +46,21 @@ links:
   type: derived_from
 - to: shadow-roots-mismatch-lexico-clustering-css-frente-brief
   type: relates_to
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: supports
 ---
 
 ## What it is
-El clúster de «Shadow roots, explained with live examples» se sostiene en un único documento [df4836a1d89bcba4] etiquetado solo con `css`, con métrica de engagement igual a 0. Un clúster de un documento sin alcance demostrado no permite generalizar sobre shadow roots, CSS ni la fuente que lo publica.
+El clúster se compone de un único documento RSS con engagement registrado en 0. Un singleton sin circulación no sostiene ninguna generalización sobre shadow roots, sobre la ingesta de prompts ni sobre las prácticas del brief.
 
 ## Evidence
-- El documento está etiquetado únicamente con `css` y su métrica de engagement es 0, sin alcance ni discusión demostrados — source: df4836a1d89bcba4
+- El clúster contiene un solo documento, sin corroboración entre fuentes dentro del signal — source: df4836a1d89bcba4
+- El engagement registrado es 0, lo que sugiere que el documento no circuló ni generó discusión — source: df4836a1d89bcba4
 
 ## Why it matters
-Cualquier afirmación sobre la fuente o el tema a partir de este clúster sería unreliable y podría contradecirse con contexto más completo que no está presente. El engagement nulo descarta tratarlo como señal de interés sostenido.
+Novelty 0.00 más engagement 0 más cero corroboración implican que no hay base para extraer conclusiones firmes. Cualquier inferencia poblacional a partir de este ítem sería una generalización desde n=1.
 
-Acompaña a la nota de título sin contenido del mismo ítem, que cubre la dimensión de ingesta. Se relaciona con el caso ya registrado de singleton CSS con engagement cero y relevance tangencial al brief, y deriva de la regla general de que un clúster de un documento con engagement=0 no sostiene generalización. También se vincula con el falso positivo léxico de «shadow» frente al brief.
+Evidencia de apoyo para `cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion`. Se relaciona con `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido`, que documenta la ausencia de cuerpo sustantivo en el mismo ítem.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
@@ -66,3 +71,4 @@ Acompaña a la nota de título sin contenido del mismo ítem, que cubre la dimen
 - relates_to → [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]]
 - derived_from → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
 - relates_to → [[shadow-roots-mismatch-lexico-clustering-css-frente-brief]]
+- supports → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]

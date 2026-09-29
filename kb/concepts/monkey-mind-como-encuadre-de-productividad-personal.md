@@ -9,13 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
 - atencion
 - attention-management
+- autorregulacion
 - encuadre
 - foco
 - framing
@@ -28,7 +29,7 @@ tags:
 - self-management
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -53,18 +54,22 @@ links:
   type: relates_to
 - to: monkey-mind-sin-contenido-ingerido
   type: relates_to
+- to: cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional
+  type: relates_to
 ---
 
 ## What it is
-«Monkey mind» es la etiqueta que el autor usa para describir su problema de atención y foco. Funciona como encuadre narrativo de una herramienta de productividad personal; no es un constructo operacionalizado en el documento.
+«Monkey mind» designa aquí la mente inquieta o dispersa que el autor busca domar con su herramienta; el objetivo declarado del AI coach es autorregulación cognitiva o gestión de la atención, no liderazgo técnico, estimación ni secuenciamiento. El término es ambiguo entre mindfulness y distractibilidad.
 
 ## Evidence
-- El autor enmarca el objetivo del coach como «tame my monkey mind» — source: 49140f9d5133d3c7
+- El propósito declarado de la herramienta es «tame my monkey mind», apuntando a autorregulación cognitiva o gestión de la atención. — source: 49140f9d5133d3c7
+- El título del documento es «Building an AI Coach to Help Tame My Monkey Mind». — source: 49140f9d5133d3c7
+- El reporter advierte que «monkey mind» puede referirse a mindfulness o a distractibilidad, cambiando la interpretación del propósito. — source: 49140f9d5133d3c7
 
 ## Why it matters
-Nada en el artefacto operacionaliza «domar», la atención ni la eficacia, así que el vínculo entre el coach y un resultado real queda como empaquetado narrativo. El término sirve como gancho léxico, no como variable medible.
+Si el encuadre es de productividad personal, la conexión con los ejes del brief (agentes para programar, gestionar o enseñar; liderazgo técnico; oficio) es inferida, no evidenciada. Asumirla introduciría afirmaciones sin respaldo.
 
-Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo` (el uso que se le da) y con `monkey-mind-sin-contenido-ingerido`, que registra la ausencia de cuerpo más allá del stack y el encuadre.
+`ai-coach-voz-a-voz-ensamblado-de-servicios` es el artefacto que usa este encuadre. `cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional` y `monkey-mind-sin-contenido-ingerido` documentan que el clúster no contiene evidencia de práctica profesional.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
@@ -77,3 +82,4 @@ Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo` (el uso que
 - supports → [[puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia]]
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - relates_to → [[monkey-mind-sin-contenido-ingerido]]
+- relates_to → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]

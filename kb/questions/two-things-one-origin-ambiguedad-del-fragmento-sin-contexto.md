@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-29'
 sources:
 - dec9f3cc9a87f904
+- sig-fade19e1d50a
 tags:
-- interpretacion
-- fragmento
-- react
 - fabrica-de-inferencias
+- fragmento
+- fragmento-aislado
+- interpretacion
+- react
+- react-for-two-computers
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -30,22 +33,28 @@ links:
   type: relates_to
 - to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
   type: relates_to
+- to: react-for-two-computers-titulo-sin-contenido-ingerido-2
+  type: relates_to
+- to: reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin
+  type: supports
 ---
 
 ## What it is
-«Two things, one origin» es una formulación genérica que, aislada, no permite decidir a qué se refiere: puede aludir a dos computadoras con un origen común, a dos runtimes bajo un único modelo de programación, o a otra cosa. El documento no incluye el referente ni el desarrollo que lo fijaría.
+«Two things, one origin.» es la única frase recuperada del documento titulado «React for Two Computers» [dec9f3cc9a87f904]. La frase afirma una dualidad con un origen común, pero no identifica ni las dos cosas ni el origen. Sin el cuerpo que la enmarca, la frase es un eslogan sin referente verificable.
 
 ## Evidence
-- El fragmento íntegro del documento es «Two things, one origin.», sin más texto que lo desambigüe. — source: dec9f3cc9a87f904
-- El analista identifica el fragmento con un ensayo de react.dev apoyándose en su memoria («as I recall»), no en contenido del documento. — source: dec9f3cc9a87f904
-- El crítico señala que el fragmento «could attach to countless topics» y que la conexión temática es, en el mejor caso, una coincidencia léxica no demostrada. — source: dec9f3cc9a87f904
+- El contenido visible del documento se reduce a «Two things, one origin.» — source: dec9f3cc9a87f904
+- No hay texto adicional recuperado que defina qué son las «two things» ni cuál es el «origin» — source: dec9f3cc9a87f904
+- El clúster tiene un solo documento, relevancia 0.33 y novedad 0.00 — source: sig-fade19e1d50a
 
 ## Why it matters
-Fija el límite de lo que esta evidencia puede sostener: la existencia del fragmento, no una lectura determinada. Cualquier tesis sobre el modelo servidor/cliente de React a partir de aquí es inferencia externa y podría ser falsa; la pregunta abierta es si el cuerpo completo —no ingerido— la resolvía.
+Construir una lectura de la frase exigiría postular qué son las dos cosas (¿servidor y cliente?, ¿render y runtime?, ¿móvil y escritorio?) y esa postulación sería enteramente del analista. La nota bloquea esa construcción.
 
-Es consecuencia de `react-for-two-computers-titulo-sin-contenido-ingerido`: sin cuerpo no hay desambiguación. Comparte con `react-for-two-computers-cluster-de-uno-sin-corroboracion` la falta de material adicional del que tirar. Ilustra el mismo problema que `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion`: convertir un fragmento en un claim fuerte sobre el referente que solo la memoria del analista postula.
+Depende de la nota que registra la ausencia de cuerpo en el clúster. Y respalda, con un segundo caso, el riesgo ya registrado de reconstruir lecturas desde la frase ambigua «Two things, one origin».
 
 ## Links
 - derived_from → [[react-for-two-computers-titulo-sin-contenido-ingerido]]
 - relates_to → [[react-for-two-computers-cluster-de-uno-sin-corroboracion]]
 - relates_to → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[react-for-two-computers-titulo-sin-contenido-ingerido-2]]
+- supports → [[reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin]]

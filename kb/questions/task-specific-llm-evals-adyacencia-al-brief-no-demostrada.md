@@ -9,18 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-25'
+updated: '2026-09-29'
 sources:
 - 93963a5f93e58d05
 tags:
 - brief
+- clustering
 - evals
 - llm
 - matching
 - relevancia
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -44,16 +45,16 @@ links:
 ---
 
 ## What it is
-Pregunta abierta: el ítem entra al brief por la palabra «evals», pero no hay evidencia ingerida de que trate sobre evals de agentes de código, de gestión o de docencia. La proximidad temática es de vocabulario compartido, no de contenido.
+La relevancia declarada del ítem es 0.67, pero no se aporta análisis semántico que demuestre solapamiento con el brief más allá de la palabra «evals». El crítico señala que «evals» es una preocupación metodológica central para cualquier dev que despliega agentes, de modo que el descarte por coincidencia léxica es en sí mismo una afirmación no demostrada.
 
 ## Evidence
-- El ítem es un único documento RSS con novelty=0.00 y corroboración=0.50 — source: 93963a5f93e58d05
-- El documento no aporta evidencia directa sobre cómo un líder técnico o docente usa agentes — source: 93963a5f93e58d05
+- La relevancia declarada del cluster es 0.67 — source: 93963a5f93e58d05
+- El crítico argumenta que no se aporta análisis semántico para probar que el solapamiento es solo léxico, y que «evals» sí es central para un dev que despliega agentes — source: 93963a5f93e58d05
 
 ## Why it matters
-Si el match fuera solo léxico, revisar este ítem tiene retorno esperado bajo frente a material que sí cubre los ejes del brief. Queda como pregunta porque el texto completo, si se ingiere, podría cambiar el veredicto.
+Deja abierta una pregunta operativa: ¿qué criterio de filtrado arrastra documentos de LLMOps genérico al brief, y con qué evidencia se decide que la coincidencia es léxica? Sin ese criterio, tanto el descarte como la inclusión quedan sin justificar.
 
-`derived_from` el alcance declarado: la lista de familias de tarea es lo que permite sospechar que el match es léxico. Se relaciona con el patrón de falsos positivos por vocabulario genérico de infraestructura.
+Se relaciona con task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo (la lista de tareas es la prueba disponible sobre el alcance) y con matching-llm-patterns-relevancia-lexica-al-brief-de-agentes, mismo patrón de match por vocabulario en este clúster.
 
 ## Links
 - supports → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]

@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-28'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - 1bfe45ede61ee575
 tags:
-- pipeline
-- filtrado
+- falso-positivo
 - falsos-positivos
+- filtrado
+- pipeline
 - xml
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -35,19 +36,26 @@ links:
   type: supports
 - to: solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering
   type: relates_to
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: relates_to
+- to: relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista
+  type: supports
+- to: etiqueta-determinista-como-falso-positivo-de-categoria
+  type: supports
 ---
 
 ## What it is
-El ítem de XML entró al conjunto evaluado con relevance=0.33, novelty=0.00 y corroboration/velocity/surprise en 0.50 plano — un perfil de ítem de baja información retenido por coincidencia de keywords del título («XML», «human-readable» leídos como tooling de desarrollo). La acción correcta es cerrarlo como falso positivo y revisarlo solo si llegan documentos corroborantes.
+Riesgo de precisión del pipeline: un ítem cuyo cuerpo es una sola línea pasa el filtrado y llega a revisión. Las palabras clave de programación en el título bastan para que el documento sobreviva aunque no contenga información.
 
 ## Evidence
-- Relevance 0.33, novelty cero y corroboration/velocity/surprise planos en 0.50, consistente con retención por solapamiento de keywords del título — source: 1bfe45ede61ee575
-- El ítem es una entrada RSS con engagement=0 — source: 1bfe45ede61ee575
+- El documento tiene como único cuerpo «JavaScript is right there.» — source: 1bfe45ede61ee575
+- El documento es de origen rss y tiene engagement cero — source: 1bfe45ede61ee575
+- Relevance 0.33 (débil) y novelty 0.00 según el scoring del clúster — source: 1bfe45ede61ee575
 
 ## Why it matters
-Refuerza que el filtro determinista deja pasar ítems cuyo único vínculo con el brief es léxico. Compute spend sobre este clúster debe ser cercano a cero; revisitarlo solo ante tutoriales, benchmarks o write-ups reales.
+Confirma un coste operativo ya observado: abrir la compuerta por coincidencia léxica obliga a gastar tiempo de revisión en stubs. Un umbral de longitud mínima de cuerpo, antes del análisis, eliminaría este caso sin pérdida.
 
-Deriva de la nota que describe el contenido real del ítem. Es evidencia adicional para `xml-human-readable-entra-por-coincidencia-lexica` y `xml-human-readable-singleton-engagement-cero`, y para el patrón general `clustering-por-embedding-produce-falsos-positivos`.
+Es el ejemplo concreto detrás de `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`. Apoya a `relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista` y a `etiqueta-determinista-como-falso-positivo-de-categoria`: el filtro por keywords de título es la causa común de estos falsos positivos.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-solo-afirmacion-javascript]]
@@ -55,3 +63,6 @@ Deriva de la nota que describe el contenido real del ítem. Es evidencia adicion
 - supports → [[xml-human-readable-singleton-engagement-cero]]
 - supports → [[clustering-por-embedding-produce-falsos-positivos]]
 - relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]
+- relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- supports → [[relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista]]
+- supports → [[etiqueta-determinista-como-falso-positivo-de-categoria]]

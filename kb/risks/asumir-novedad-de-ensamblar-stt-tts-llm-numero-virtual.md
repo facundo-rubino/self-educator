@@ -9,19 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
 - composicion
+- ensamblado
+- monkey-mind
 - novedad
 - novelty
 - off-the-shelf
 - overinterpretation
+- riesgo
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -40,18 +43,23 @@ links:
   type: supports
 - to: prototipado-por-composicion-de-apis-sin-entrenamiento
   type: relates_to
+- to: stack-de-ai-coach-voz-a-voz
+  type: relates_to
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: relates_to
 ---
 
 ## What it is
-El documento describe una combinación de componentes existentes (STT, TTS, LLM, número virtual). No hay línea base contra la cual reclamar que ese ensamblado sea nuevo.
+Riesgo de tratar la combinación STT + TTS + LLM + número virtual como un hallazgo novedoso, cuando en la evidencia disponible no hay nada que demuestre novedad, implementación efectiva ni aprendizaje transferible.
 
 ## Evidence
-- El coach se construye combinando componentes ya disponibles: speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El documento parece ser una nota o descripción breve; no está claro si el proyecto fue implementado, probado o si produjo aprendizajes transferibles. — source: 49140f9d5133d3c7
+- El reporter advierte que el clúster se basa en un solo documento y que cualquier generalización sobre el tema del brief sería especulativa. — source: 49140f9d5133d3c7
 
 ## Why it matters
-Presentar la composición como innovación sin comparación sería sobreafirmar. Lo verificable es que el patrón de ensamblado aplica a asistentes de voz; la novedad requeriría búsqueda previa o contraste con implementaciones conocidas.
+Evita inflar la señal. Un ensamblado de servicios estándar descrito sin demo ni métricas no es evidencia de práctica, solo de intención.
 
-Soporta `ai-coach-voz-a-voz-ensamblado-de-servicios` al fijar qué se puede afirmar. Se relaciona con `prototipado-por-composicion-de-apis-sin-entrenamiento`, marco bajo el cual la composición es esperada, no novedosa.
+`stack-de-ai-coach-voz-a-voz` y `ai-coach-voz-a-voz-ensamblado-de-servicios` describen el ensamblado; esta nota marca el límite de lo que puede afirmarse sobre él. `prototipado-por-composicion-de-apis-sin-entrenamiento` es el patrón subyacente, ya conocido.
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
@@ -61,3 +69,5 @@ Soporta `ai-coach-voz-a-voz-ensamblado-de-servicios` al fijar qué se puede afir
 - supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - supports → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
+- relates_to → [[stack-de-ai-coach-voz-a-voz]]
+- relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]

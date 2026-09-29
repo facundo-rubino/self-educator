@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-24'
+updated: '2026-09-29'
 sources:
 - 19cb8032958cd964
 tags:
+- afirmacion-sin-metodologia
 - capacidad
 - capacidad-vs-politica
 - epistemologia
@@ -21,6 +22,7 @@ tags:
 - evidencia
 - falsa-capacidad
 - fuente-unica
+- identificacion-de-figuras-publicas
 - metodologia
 - modo-de-fallo
 - multimodal
@@ -29,7 +31,7 @@ tags:
 - titular-rss
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -58,19 +60,26 @@ links:
   type: supports
 - to: legitimidad-de-identificacion-no-implica-practica-de-ingenieria
   type: relates_to
+- to: identificacion-de-figuras-publicas-ya-existia
+  type: contradicts
+- to: relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief
+  type: relates_to
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: derived_from
 ---
 
 ## What it is
-A single unverifiable sentence cannot establish a capability claim. La única evidencia del clúster es un titular más una frase de comentario en un ítem RSS con engagement 0 y novelty 0.00 [19cb8032958cd964]. El texto afirma que los LLMs «can now identify public figures» y que ChatGPT y Claude se niegan mientras Gemini cumple, pero no aporta benchmark, metodología, versión ni fecha.
+La fuente es un titular RSS [19cb8032958cd964] sin cuerpo verificado: afirma un salto de capacidad («ya pueden identificar figuras públicas») a partir de la conducta observable de tres productos. Sin mecanismo, sin tasas de acierto y sin pruebas reproducibles, la afirmación de capacidad no se sigue de la evidencia. El registro correcto es observar la política, no postular la competencia.
 
 ## Evidence
-- El documento afirma que los LLMs ya identifican figuras públicas en imágenes y contrasta la negativa de ChatGPT y Claude con el cumplimiento de Gemini — source: 19cb8032958cd964.
-- No hay corroboración independiente, benchmark, metodología, versión ni fecha en el texto del documento — source: 19cb8032958cd964.
+- El documento afirma que los LLM ya pueden identificar figuras públicas en imágenes — source: 19cb8032958cd964
+- Sin mecanismo, tasas de acierto ni pruebas reproducibles más allá del titular — source: 19cb8032958cd964
+- Sin engagement ni corroboración dentro del cluster; novelty=0.00 — source: 19cb8032958cd964
 
 ## Why it matters
-Sin fuente de imagen, prompt, controles adversarios ni protocolo de evaluación, «identificar» no tiene definición operativa y el «now» carece de línea base [19cb8032958cd964]. Construir cualquier inferencia sobre elección de herramientas, currícula o flujos de equipo desde esta línea produce relevancia fabricada.
+Cada «ya pueden» de política leído como capacidad se acumula como falsa línea base en el grafo. La confusión es direccional: la negativa de un proveedor no prueba incapacidad, y el permiso de otro no prueba competencia. Sin replicación independiente, el techo de la conclusión es «tres productos responden distinto a este insumo».
 
-Se relaciona con la divergencia de rechazo entre proveedores ya registrada: el contraste ChatGPT/Claude vs. Gemini es una instancia nueva del mismo patrón, no un hallazgo. Apoya al principio de que una afirmación poblacional sobre capacidades multimodales requiere un segundo corpus. También conecta con que identificar figuras públicas no es evidencia de práctica de ingeniería.
+Nota duplicada por solapamiento de título con `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`; se enlaza `derived_from` y debería fusionarse en la compilación. Misma tensión que `identificacion-de-figuras-publicas-ya-existia`: el «now» carece de línea base.
 
 ## Links
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
@@ -85,3 +94,6 @@ Se relaciona con la divergencia de rechazo entre proveedores ya registrada: el c
 - relates_to → [[identificacion-de-figuras-publicas-ya-existia]]
 - supports → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
 - relates_to → [[legitimidad-de-identificacion-no-implica-practica-de-ingenieria]]
+- contradicts → [[identificacion-de-figuras-publicas-ya-existia]]
+- relates_to → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
+- derived_from → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]

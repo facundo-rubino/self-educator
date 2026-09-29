@@ -9,20 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - df4836a1d89bcba4
 tags:
 - brief-mismatch
 - cluster-singleton
 - css
+- falso-positivo
+- ingesta
 - ingesta-truncada
 - shadow-roots
 - sin-cuerpo
 - titulo-sin-cuerpo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -33,21 +35,27 @@ links:
   type: supports
 - to: restatement-de-titulo-no-es-hallazgo
   type: derived_from
+- to: shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada
+  type: relates_to
+- to: shadow-roots-mismatch-lexico-clustering-css-frente-brief
+  type: relates_to
 ---
 
 ## What it is
-El documento [df4836a1d89bcba4] no entrega la explicación que promete su titular: su cuerpo es un prompt dirigido a una herramienta («Fable 5.1 Medium») que instruye *construir* un artefacto interactivo sobre shadow roots en CSS. No hay explicación sustantiva de shadow roots, ni ejemplos vivos, ni discusión del tema.
+El documento titulado «Shadow roots, explained with live examples» no contiene ninguna explicación de shadow roots de CSS. Consiste únicamente en un prompt dirigido a una herramienta generativa llamada «Fable 5.1 Medium», pidiendo construir un artefacto interactivo para explicar ese tema. Es una instrucción de generación, no una pieza de contenido sustantivo.
 
 ## Evidence
-- El contenido real del documento es un prompt a una herramienta de IA pidiendo construir un artefacto interactivo que explique shadow roots en CSS, no una explicación de shadow roots — source: df4836a1d89bcba4
-- El documento no aporta contenido sobre liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, agentes de IA para gestionar/enseñar, ni técnicas de estudio/productividad — source: df4836a1d89bcba4
+- El documento es un prompt a «Fable 5.1 Medium» solicitando construir un artefacto interactivo para explicar shadow roots en CSS — source: df4836a1d89bcba4
+- No aporta explicación, ejemplos ni resultados sobre shadow roots — source: df4836a1d89bcba4
 
 ## Why it matters
-El ítem no puede sostener ningún claim sobre shadow roots, arquitectura CSS ni el brief. Cualquier lectura de su cuerpo como hallazgo sería circular: repetiría la palabra-tópico que el propio prompt introduce.
+Cualquier afirmación sobre shadow roots o sobre la mecánica de explicarlos basada en este documento sería especulativa: el cuerpo ingerido no contiene el contenido prometido por el título. El título funciona como artefacto de ingesta, no como fuente.
 
-Se relaciona con la nota de singleton sin engagement del mismo ítem, que cubre la dimensión de alcance. Apoya el patrón de que el pipeline evalúa clústeres cuyo cuerpo no recuperó, y deriva de la regla general de que reformular un título no es un hallazgo.
+Se relaciona con `shadow-roots-live-examples-singleton-sin-engagement` (mismo clúster, misma falta de cuerpo), con `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada` (el prompt como objeto, no como práctica) y con `shadow-roots-mismatch-lexico-clustering-css-frente-brief` (el falso positivo léxico que lo trajo al clúster).
 
 ## Links
 - relates_to → [[shadow-roots-live-examples-singleton-sin-engagement]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - derived_from → [[restatement-de-titulo-no-es-hallazgo]]
+- relates_to → [[shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada]]
+- relates_to → [[shadow-roots-mismatch-lexico-clustering-css-frente-brief]]

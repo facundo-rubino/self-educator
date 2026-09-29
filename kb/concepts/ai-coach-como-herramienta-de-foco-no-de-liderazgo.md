@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -24,7 +24,7 @@ tags:
 - scope
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -43,19 +43,23 @@ links:
   type: relates_to
 - to: puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia
   type: relates_to
+- to: cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional
+  type: derived_from
+- to: ai-es-multiplicador-de-especificacion-para-expertos-tla-mas
+  type: contradicts
 ---
 
 ## What it is
-El propósito declarado del AI coach es ayudar a «tame my monkey mind»: una ayuda de foco o autogestión personal. No se presenta como instrumento de enseñanza, flujo de codificación agéntica ni práctica de liderazgo técnico.
+El artefacto del clúster es un coach de foco personal (atención, autorregulación) construido por un dev. No es una herramienta de liderazgo técnico ni de gestión de equipos, y la evidencia no lo vincula a estimación, secuenciamiento, alcance u organización de un equipo.
 
 ## Evidence
-- El propósito declarado del coach es ayudar a «tame my monkey mind», es decir, una ayuda personal de foco o autogestión — source: 49140f9d5133d3c7
-- El documento se presenta como build log, no como anuncio de producto ni benchmark — source: 49140f9d5133d3c7
+- El clúster contiene un único documento [49140f9d5133d3c7] que describe la construcción de un 'AI coach' con objetivo declarado de 'domar la mente de mono'. — source: 49140f9d5133d3c7
+- No hay evidencia en el clúster sobre agentes de IA aplicados a programar, gestión o enseñanza; tampoco sobre liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de software engineering, productividad ni técnicas de estudio. — source: 49140f9d5133d3c7
 
 ## Why it matters
-Acota el alcance real del artefacto dentro del brief: es productividad personal, no liderazgo, docencia ni ingeniería de agentes. Cualquier lección sobre estimación, secuenciamiento, alcance de equipo o pedagogía tendría que venir de otra fuente.
+Delimita qué NO se puede afirmar desde este clúster. Si el brief busca agentes aplicados a programar, gestionar o enseñar, esta señal es tangencial y no lo cubre.
 
-Deriva de `monkey-mind-como-encuadre-de-productividad-personal`, que fija el encuadre. Se relaciona con `ai-coach-voz-a-voz-ensamblado-de-servicios` (el artefacto) y con `puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia`, que registra el salto no sostenido hacia liderazgo.
+`monkey-mind-como-encuadre-de-productividad-personal` define el encuadre real. `cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional` es la pregunta que documenta la ausencia. `hipotesis-de-coach-de-voz-como-accountability-de-equipo` es una hipótesis de extensión a equipos, hoy sin respaldo. `ai-es-multiplicador-de-especificacion-para-expertos-tla-mas` describe un uso de IA como multiplicador de trabajo experto, distinto del uso de foco personal aquí descrito.
 
 ## Links
 - relates_to → [[monkey-mind-como-encuadre-de-productividad-personal]]
@@ -65,3 +69,5 @@ Deriva de `monkey-mind-como-encuadre-de-productividad-personal`, que fija el enc
 - derived_from → [[monkey-mind-como-encuadre-de-productividad-personal]]
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - relates_to → [[puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia]]
+- derived_from → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
+- contradicts → [[ai-es-multiplicador-de-especificacion-para-expertos-tla-mas]]

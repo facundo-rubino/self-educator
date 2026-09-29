@@ -10,19 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-21'
+updated: '2026-09-29'
 sources:
 - 93963a5f93e58d05
 tags:
 - corpus-truncado
 - evals
+- ingesta
 - ingesta-truncada
 - llm
 - matching-por-titulo
 - modo-de-fallo
+- ruido
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -41,19 +43,21 @@ links:
   type: relates_to
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: supports
 ---
 
 ## What it is
-El material recuperado de este documento consiste en título y línea de resumen. El título promete un juicio evaluativo («that Do & Don't Work») y el resumen enumera tareas, pero no hay cuerpo, criterios, autores ni texto que sostenga el juicio prometido.
+El título promete un juicio sobre qué evals funcionan y cuáles no, pero no hay cuerpo ingerido que desarrolle ese juicio. Lo único recuperado es la descripción de alcance (clasificación, resumen, traducción, copyright, toxicidad).
 
 ## Evidence
-- El título del documento es «Task-Specific LLM Evals that Do & Don't Work» — source: 93963a5f93e58d05
-- El resumen sólo lista tareas evaluadas, sin datos, benchmarks ni metodología — source: 93963a5f93e58d05
+- El cluster contiene un único documento titulado «Task-Specific LLM Evals that Do & Don't Work» — source: 93963a5f93e58d05
+- Su descripción se limita a enumerar las familias de tarea cubiertas; no se incluye el texto completo — source: 93963a5f93e58d05
 
 ## Why it matters
-Cualquier afirmación sobre qué evals funcionan y cuáles no, extraída de esta fuente, sería invención: el documento en el pipeline es una cáscara. El riesgo es asimétrico: el título invita a citarlo como marco de criterios y el cuerpo que lo respaldaría no fue ingerido.
+Sin cuerpo no hay «do & don't work» que citar. Cualquier afirmación sobre qué evals fallan o funcionan sería invención a partir del título.
 
-`relates_to` la nota que registra el singleton sin engagement; ambas describen el mismo vacío desde ángulos distintos. Se apoya en `mecanica-de-evals-afirmada-desde-solo-titulo-rss` —el modo de fallo nombrado exactamente— y en `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`. Se relaciona con `afirmacion-de-capacidad-desde-fragmento-de-una-linea`: afirmar un juicio desde un fragmento de una línea.
+Sostiene el registro del alcance declarado en task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad y se relaciona con task-specific-llm-evals-singleton-engagement-cero, que documenta el otro artefacto de ingesta del mismo documento.
 
 ## Links
 - relates_to → [[evals-llm-genericas-fuera-del-alcance-del-brief]]
@@ -63,3 +67,4 @@ Cualquier afirmación sobre qué evals funcionan y cuáles no, extraída de esta
 - supports → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
 - relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- supports → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]

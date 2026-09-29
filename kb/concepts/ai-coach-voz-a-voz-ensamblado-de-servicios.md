@@ -9,22 +9,27 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
 - composicion-de-apis
 - integration
+- llm
+- monkey-mind
 - prototipado
 - prototyping
 - proyecto-personal
 - stack
+- stt
+- telefonia
+- tts
 - voice
 - voz
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -46,15 +51,16 @@ links:
 ---
 
 ## What it is
-Un AI coach personal se construye ensamblando componentes ya existentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. No hay entrenamiento de modelo ni producto publicado; el documento se presenta como build log.
+Un asistente conversacional personal construido ensamblando componentes estándar: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual, de modo que el usuario interactúa por voz telefónica.
 
 ## Evidence
-- El documento describe un AI coach construido combinando speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El documento describe un 'AI coach' que integra speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. — source: 49140f9d5133d3c7
+- El título del documento es «Building an AI Coach to Help Tame My Monkey Mind», lo que lo identifica como un proyecto personal de asistencia conversacional por IA. — source: 49140f9d5133d3c7
 
 ## Why it matters
-Confirma que el patrón de prototipado por composición de APIs sin entrenamiento aplica también a asistentes de voz personales, no solo a agentes de código. No demuestra novedad: ensamblar STT + TTS + LLM + telefonía es una combinación de piezas disponibles, no una técnica nueva.
+Es un ejemplo de que el ensamblado de piezas ya existentes (STT + TTS + LLM + telefonía) basta para prototipar un agente conversacional sin entrenar modelos. No hay en la evidencia nada sobre su implementación efectiva, despliegue o resultados.
 
-Soporta `prototipado-por-composicion-de-apis-sin-entrenamiento` como un caso más del mismo patrón. Se relaciona con `stack-de-ai-coach-voz-a-voz`, que detalla las piezas, y con `ai-coach-como-herramienta-de-foco-no-de-liderazgo`, que acota su propósito.
+`stack-de-ai-coach-voz-a-voz` nombra el mismo stack desde el ángulo de sus componentes; esta nota lo nombra como artefacto. `prototipado-por-composicion-de-apis-sin-entrenamiento` generaliza el método. `monkey-mind-como-encuadre-de-productividad-personal` conecta con el propósito declarado.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]

@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-29'
 sources:
 - abf61eeec75462f9
 tags:
-- docencia
-- agentes
-- prompt
 - abstraccion
+- agentes
+- agents
+- docencia
+- prompt
+- prompt-engineering
 base_confidence: 0.3
 half_life_days: 365
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -32,22 +34,31 @@ links:
   type: relates_to
 - to: claude-code-system-prompt-conditional-composition
   type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: derived_from
+- to: ensamblado-condicional-de-prompts
+  type: relates_to
+- to: corregir-un-error-propio-en-publico-como-artefacto-pedagogico
+  type: relates_to
 ---
 
 ## What it is
-Modelar el system prompt como una composición de secciones gateadas por features, en lugar de un bloque monolítico, es una abstracción enseñable para agentes de código: separa qué texto se incluye de cuándo se incluye. La evidencia del cluster es la aserción sobre Claude Code, no una demostración didáctica.
+La idea, enunciada en las implicaciones del informe y no en el documento fuente, de que mostrar a estudiantes que un agente real ensambla su prompt de fragmentos condicionales es una lección más honesta sobre ingeniería de LLM que presentar el prompt como un texto monolítico.
 
 ## Evidence
-- El prompt descrito como ensamblado de docenas de partes condicionales es la base de la abstracción propuesta — source: abf61eeec75462f9
-- La única fuente es un ítem RSS con engagement=0; el report no aporta material didáctico ni medición de aprendizaje — source: abf61eeec75462f9
+- El documento fuente solo afirma el ensamblado condicional; el uso pedagógico es inferencia del analista, no contenido ingerido — source: abf61eeec75462f9
+- El propio informe declara que toda inferencia aguas abajo es especulativa dada la ausencia de corroboración — source: abf61eeec75462f9
 
 ## Why it matters
-Si se adopta como unidad de enseñanza, el objetico es que el estudiante vea el prompt como configuración con partes y condiciones, no como texto a editar. La evidencia disponible sostiene el ejemplo, no la efectividad de la secuencia didáctica, que requeriría su propia validación en el KB de docencia.
+Sería un buen encuadre didáctico si el artefacto fuera real y verificable; hoy es una hipótesis de enseñanza construida sobre un claim débil. Vale como candidato a preparar, no como material de clase.
 
-Deriva del patrón general de ensamblado condicional de prompts y lo proyecta al aula. Se alinea con el system prompt entendido como artefacto de ingeniería (versionado, revisado, testeado) y con la observación de que el prompt modular y condicional ya es conocido en productos LLM.
+Deriva de `claude-code-system-prompt-conditional-composition` y comparte tema con `ensamblado-condicional-de-prompts`. Se apoya en la idea, ya presente en el grafo, de que corregir o mostrar el mecanismo real es mejor artefacto pedagógico que presentar la versión limpia.
 
 ## Links
 - derived_from → [[ensamblado-condicional-de-prompts]]
 - relates_to → [[system-prompt-como-artefacto-de-ingenieria]]
 - relates_to → [[prompt-condicional-conocimiento-comun-en-productos-llm]]
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
+- derived_from → [[claude-code-system-prompt-conditional-composition]]
+- relates_to → [[ensamblado-condicional-de-prompts]]
+- relates_to → [[corregir-un-error-propio-en-publico-como-artefacto-pedagogico]]

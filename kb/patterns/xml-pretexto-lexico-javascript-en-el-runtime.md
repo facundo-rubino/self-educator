@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-09-29'
 sources:
 - 1bfe45ede61ee575
 tags:
-- matching-lexico
 - falsos-positivos
-- xml
+- heuristica
 - javascript
+- matching-lexico
+- stub
+- xml
 base_confidence: 0.5
 half_life_days: 365
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -31,22 +33,28 @@ links:
   type: derived_from
 - to: js-como-lenguaje-general-ya-presente-en-el-runtime
   type: relates_to
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: relates_to
+- to: js-como-lenguaje-general-ya-presente-en-el-runtime
+  type: supports
 ---
 
 ## What it is
-Regularidad de clasificación: un ítem entra al clúster por co-ocurrencia de vocabulario («JavaScript» y «XML»), no por desarrollar un claim técnico. El documento [1bfe45ede61ee575] no ofrece mecanismo, comparación con XSLT ni evidencia de adopción; su único contenido es una frase de cuatro palabras.
+Patrón inferido del titular más una línea: cuando un lenguaje declarativo de transformación (XSLT) se percibe más pesado que la tarea, se propone el lenguaje de propósito general ya presente en el runtime (JavaScript en navegador o Node) porque el entorno garantiza su disponibilidad. Aquí se enuncia como aserción, no se demuestra.
 
 ## Evidence
-- El payload sustantivo del documento es «JavaScript is right there» — source: 1bfe45ede61ee575
-- El crítico del signal califica la inferencia como «pretexto»: presencia léxica confundida con afirmación técnica, sin mecanismo causal ni evaluación comparativa — source: 1bfe45ede61ee575
-- El contexto que decidiría la afirmación (por qué JavaScript en lugar de XSLT, en qué caso) no está ingerido — source: 1bfe45ede61ee575
+- El único contenido es «JavaScript is right there.» — source: 1bfe45ede61ee575
+- No hay mecanismo (DOMParser + serialización, recorrido de DOM), código, ejemplo ni comparación con alternativas — source: 1bfe45ede61ee575
+- Engagement cero y documento único — source: 1bfe45ede61ee575
 
 ## Why it matters
-Es un caso concreto de un modo de fallo recurrente del pipeline: cuando el contexto no se recupera, el solapamiento de vocabulario produce señal aparente. Sirve como ejemplo operativo para calibrar el filtro, no como hallazgo sobre XML.
+El patrón es plausiblemente cierto pero tautológico en su forma actual: la disponibilidad del lenguaje no es una solución, y el documento no discute los compromisos reales (contenido mixto, namespaces, normalización de espacios en blanco). No transferible a docencia ni a decisiones de equipo sin el mecanismo que falta.
 
-`supports` la nota sobre el contexto no ingerido: la ausencia de contexto es la condición que habilita el falso positivo. `relates_to` la nota sobre un lenguaje de propósito general ya presente en el runtime, que sí formula un argumento de coste.
+Se relaciona con el concepto `xml-human-readable-without-xslt-afirmacion-sin-cuerpo` como su extracción inferida. Apoya a `js-como-lenguaje-general-ya-presente-en-el-runtime` al aportar un caso —no demostrado— del mismo argumento de coste de evitar una herramienta especializada.
 
 ## Links
 - supports → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]
 - derived_from → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
 - relates_to → [[js-como-lenguaje-general-ya-presente-en-el-runtime]]
+- relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- supports → [[js-como-lenguaje-general-ya-presente-en-el-runtime]]

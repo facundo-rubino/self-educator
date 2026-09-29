@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-09-29'
 sources:
 - 1bfe45ede61ee575
 tags:
-- xml
+- ingesta
 - javascript
-- xslt
 - rss-stub
+- stub
+- xml
+- xslt
 base_confidence: 0.03
 half_life_days: 180
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -31,22 +33,32 @@ links:
   type: relates_to
 - to: xslt-fuera-del-brief-de-agentes-y-liderazgo
   type: relates_to
+- to: xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro
+  type: relates_to
+- to: xml-pretexto-lexico-javascript-en-el-runtime
+  type: derived_from
+- to: anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica
+  type: supports
 ---
 
 ## What it is
-El único contenido sustantivo del documento [1bfe45ede61ee575] es la frase «JavaScript is right there», presentada como respuesta a cómo hacer XML legible para humanos sin XSLT. El título enmarca el tema como evitar XSLT, no como presentar una técnica [1bfe45ede61ee575]. No hay método, ejemplo, benchmark ni contexto.
+El documento [1bfe45ede61ee575] se titula «Making XML human-readable without XSLT» y su único cuerpo es la frase «JavaScript is right there.». No hay mecanismo, código, ejemplo, comparación con alternativas (CSS, librerías de pretty-printing, formateo en servidor) ni explicación de por qué se evita XSLT.
 
 ## Evidence
-- El documento se titula «Making XML human-readable without XSLT», enmarcando el tema como evitación de XSLT — source: 1bfe45ede61ee575
-- La única aserción sustantiva es «JavaScript is right there», posicionada como la respuesta al problema del título — source: 1bfe45ede61ee575
-- La relevancia del signal es 0.33, la novedad 0.00 y la corroboración 0.5: sin confirmación independiente de ninguna técnica — source: 1bfe45ede61ee575
+- El documento se titula «Making XML human-readable without XSLT» — source: 1bfe45ede61ee575
+- El cuerpo entero del documento es la frase «JavaScript is right there.» — source: 1bfe45ede61ee575
+- El documento tiene engagement cero registrado — source: 1bfe45ede61ee575
+- El documento está clasificado como de origen rss — source: 1bfe45ede61ee575
 
 ## Why it matters
-Registra la existencia de la postura (preferir JavaScript a XSLT para hacer XML legible) sin concederle estatus de hallazgo. Cualquier uso de esta nota debe tratar la afirmación como gesto retórico, no como práctica validada.
+La afirmación no es evaluable: no enuncia nada falsable más allá de que JavaScript existe en el runtime. Cualquier confianza asignada a este ítem sería sobrelectura de un eslogan; no sostiene guía sobre oficio ni material docente.
 
-`derived_from` la nota que documenta la ausencia de cuerpo ingerido del mismo ítem. `relates_to` la nota sobre la coincidencia léxica que trajo el ítem al brief y la nota sobre por qué XSLT queda fuera de sus ejes.
+Es el caso concreto del mismo falso positivo léxico ya registrado en `xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro`. Se deriva del patrón `xml-pretexto-lexico-javascript-en-el-runtime`: «JavaScript is right there» operando como pretexto léxico, no como técnica. Es evidencia de apoyo para `anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica`: fuente única sin demostración no es evidencia de práctica.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
 - relates_to → [[xml-human-readable-entra-por-coincidencia-lexica]]
 - relates_to → [[xslt-fuera-del-brief-de-agentes-y-liderazgo]]
+- relates_to → [[xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro]]
+- derived_from → [[xml-pretexto-lexico-javascript-en-el-runtime]]
+- supports → [[anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica]]

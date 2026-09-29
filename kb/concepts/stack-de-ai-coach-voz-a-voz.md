@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -30,7 +30,7 @@ tags:
 - voz
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -51,18 +51,20 @@ links:
   type: supports
 - to: ai-coach-voz-a-voz-ensamblado-de-servicios
   type: relates_to
+- to: asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual
+  type: relates_to
 ---
 
 ## What it is
-El stack descrito para un AI coach por voz se compone de cuatro piezas: reconocimiento de voz (STT), síntesis de voz (TTS), un LLM como motor de diálogo y un número de teléfono virtual como interfaz de acceso.
+El stack mínimo de un coach conversacional por voz son cuatro piezas, todas disponibles como servicios: reconocimiento de voz (STT), síntesis de voz (TTS), un LLM como motor de diálogo y un número de teléfono virtual como canal. No requiere entrenar ningún modelo.
 
 ## Evidence
-- El coach se arma combinando speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El AI coach descrito integra speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es una enumeración de componentes, no una arquitectura evaluada. Sirve como inventario de piezas para quien quiera replicar el ensamblado, pero el documento no reporta latencia, costo, tasa de error ni calidad de conversación.
+La lista de componentes define la superficie de integración del prototipo, pero la evidencia no incluye precios, latencias, proveedores concretos ni resultados de uso. La novedad del ensamblado no está establecida: es una combinación de piezas estándar.
 
-Se relaciona con `ai-coach-voz-a-voz-ensamblado-de-servicios` (el artefacto construido con este stack) y soporta `prototipado-por-composicion-de-apis-sin-entrenamiento` al listar las APIs compuestas.
+`ai-coach-voz-a-voz-ensamblado-de-servicios` describe el artefacto completo; esta nota enumera sus piezas. `prototipado-por-composicion-de-apis-sin-entrenamiento` es el patrón general. `asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual` marca que la combinación no es novedosa per se.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
@@ -73,3 +75,4 @@ Se relaciona con `ai-coach-voz-a-voz-ensamblado-de-servicios` (el artefacto cons
 - relates_to → [[composicion-condicional-de-prompts-ensenable-a-principiantes]]
 - supports → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- relates_to → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]

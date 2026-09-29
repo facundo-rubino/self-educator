@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-21'
+updated: '2026-09-29'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -23,13 +23,14 @@ tags:
 - clustering
 - falso-positivo
 - falsos-positivos
+- filtrado
 - mcp
 - pipeline
 - relevancia
 - ruido
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -54,21 +55,25 @@ links:
   type: supports
 - to: cadencia-de-release-unificada-sugiere-monorepo-mcp
   type: relates_to
+- to: release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica
+  type: derived_from
+- to: mcp-release-bumps-no-revelan-practica-de-ingenieria
+  type: supports
+- to: solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering
+  type: relates_to
 ---
 
 ## What it is
-Las ocho fuentes del clúster son notas de release autogeneradas de la suite de MCP servers (filesystem, everything, memory, sequential-thinking, git, time, fetch): cada documento lista nombres de paquete y versiones alineadas con el tag del título, sin narrativa, metodología ni claim alguno [16a4e3995d6c827e] [2221814efbefaa3b] [30a26335a9988ba2] [5a4df6bef0a4905f] [748f8b0a02cd7524] [9750590bbfe6b285] [b9106690f5dfd849] [ffbd76916d1dfdc5]. El clúster entra al brief porque el token «agents» matchea el tema de agentes de IA, no porque los documentos digan algo sobre cómo un dev lidera, gestiona o enseña. Es un falso positivo de recuperación, no un hallazgo.
+El clúster de releases MCP probablemente entró al brief por solapamiento léxico entre «agentes de IA» del topic y los nombres de paquetes MCP, no por afinidad temática. Es un artefacto del filtro de feed de releases, candidato a down-weight o exclusión.
 
 ## Evidence
-- Cada documento repite la misma plantilla: tag de release más lista paquete/versión — source: 16a4e3995d6c827e, 2221814efbefaa3b, 30a26335a9988ba2, 5a4df6bef0a4905f, 748f8b0a02cd7524, 9750590bbfe6b285, b9106690f5dfd849, ffbd76916d1dfdc5
-- El release más reciente (v2026.8.31) vuelve a listar solo nombres y versiones, sin texto descriptivo ni instruccional — source: 30a26335a9988ba2
-- Subconjuntos distintos de paquetes rotan por la misma plantilla (filesystem, time, fetch, git / everything, memory, time / everything, filesystem, sequential-thinking, memory) — source: 5a4df6bef0a4905f, b9106690f5dfd849, ffbd76916d1dfdc5
-- La relevancia 0.33 y novedad 0.00 del clúster son consistentes con la lectura de ruido, no con señal temática — source: 30a26335a9988ba2
+- El propio analista concluye que con relevance=0.33, novelty=0.00 y engagement=0 en cada ítem el clúster es ruido del feed y no un hallazgo — source: 30a26335a9988ba2
+- Los ocho documentos son stubs templados del mismo origen RSS, sin cuerpo más allá de la lista de paquetes — source: 16a4e3995d6c827e, 5a4df6bef0a4905f, 748f8b0a02cd7524
 
 ## Why it matters
-Consumir este clúster como evidencia del brief produce claims inventados sobre práctica de ingeniería a partir de metadata de versiones. Si el pipeline necesita señal sobre agentes de IA aplicados al trabajo de ingeniería, debe recuperarla de documentos con narrativa o evaluación, no de feeds de release autogenerados. La lección operativa: filtrar por forma del documento (¿tiene prosa argumental?) antes de puntuar relevancia temática.
+Si el pipeline sigue surfacing stubs puros de bumps de versión bajo este topic, diluye investigación de mayor señal bajo el mismo brief y sesga métricas de relevancia y velocidad.
 
-`mcp-release-bumps-no-revelan-practica-de-ingenieria` es la regla general de la que este clúster es instancia; este note la fundamenta con ocho documentos en vez de uno. `mcp-servers-sin-changelog-legible` explica por qué los stubs no tienen contenido extraíble: el feed no publica rationale. `mismatch-query-tema-por-vocabulario-generico-de-infraestructura` describe el mecanismo de recuperación que produjo el falso positivo. La conexión con `cadencia-de-release-unificada-sugiere-monorepo-mcp` es temática: ambas observan el mismo patrón de release sin poder leer práctica de ingeniería detrás.
+Derivado de `release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica`. Refuerza `mcp-release-bumps-no-revelan-practica-de-ingenieria`. Comparte mecanismo con `solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering`: coincidencia de vocabulario genérico de infraestructura.
 
 ## Links
 - derived_from → [[mcp-servers-versionado-por-fecha]]
@@ -81,3 +86,6 @@ Consumir este clúster como evidencia del brief produce claims inventados sobre 
 - derived_from → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]
 - supports → [[mcp-servers-sin-changelog-legible]]
 - relates_to → [[cadencia-de-release-unificada-sugiere-monorepo-mcp]]
+- derived_from → [[release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica]]
+- supports → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]
+- relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]

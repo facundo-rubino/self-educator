@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-25'
+updated: '2026-09-29'
 sources:
 - 31820ad25e39a34b
 tags:
@@ -19,11 +19,12 @@ tags:
 - falso-positivo
 - falsos-positivos
 - llm
+- llm-anthropic
 - matching
 - pipeline
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -36,22 +37,28 @@ links:
   type: supports
 - to: relevancia-no-es-verdad
   type: relates_to
+- to: llm-anthropic-0-29-anuncio-de-release
+  type: relates_to
+- to: mcp-release-stubs-como-artefacto-de-feed
+  type: relates_to
 ---
 
 ## What it is
-La relevancia del ítem para el topic se sostiene en la coincidencia de vocabulario (`llm`, `anthropic`) con el ecosistema de herramientas de IA, no en contenido que dialogue con los ejes del brief. El documento no contiene nada sobre liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, docencia de programación, productividad ni técnicas de estudio [31820ad25e39a34b].
+El documento entró al clúster del brief por coincidencia de vocabulario: sus tags son `llm` y `anthropic`, y el brief menciona «agentes de IA» [31820ad25e39a34b]. No hay solapamiento semántico con ningún eje del brief (liderazgo técnico, estimación, secuenciamiento, alcance, docencia, oficio) [31820ad25e39a34b].
 
 ## Evidence
-- El documento se ubica en el ecosistema de herramientas CLI por sus tags `llm` y `anthropic`, no por práctica de ingeniería ni docencia — source: 31820ad25e39a34b
-- No hay en el documento contenido sobre ningún eje del brief — source: 31820ad25e39a34b
+- Tags del documento: `llm`, `anthropic` — source: 31820ad25e39a34b
+- El documento no aborda ningún eje del brief; el match es vocabulario de infraestructura, no contenido — source: 31820ad25e39a34b
 
 ## Why it matters
-Un match por etiquetas produce clústeres que parecen relevantes sin cubrir el tema. Cualquier conclusión sobre agentes de IA aplicados a programar, gestionar o enseñar excede lo que este documento soporta.
+Ilustra el modo de fallo de matching por vocabulario genérico: releases de herramientas de LLM se cuelan en un brief de práctica profesional. La consecuencia operativa es la misma que ya se aplicó a docencia entry-level: rerutear estos ítems a un topic de tooling/model releases en lugar de forzarlos en el brief [31820ad25e39a34b].
 
-Deriva de `llm-anthropic-0-29-anuncio-de-release`. Se relaciona con `relevancia-no-es-verdad`: la utilidad instrumental del ítem no valida ninguna afirmación sobre el brief.
+Instancia el patrón `mismatch-query-tema-por-vocabulario-generico-de-infraestructura` y se relaciona con `mcp-release-stubs-como-artefacto-de-feed`: ambos son artefactos de feed de releases sin contenido de práctica. Conecta con el anuncio de release como el artefacto concreto mal clasificado.
 
 ## Links
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
 - derived_from → [[llm-anthropic-0-29-anuncio-de-release]]
 - supports → [[clustering-por-embedding-produce-falsos-positivos]]
 - relates_to → [[relevancia-no-es-verdad]]
+- relates_to → [[llm-anthropic-0-29-anuncio-de-release]]
+- relates_to → [[mcp-release-stubs-como-artefacto-de-feed]]

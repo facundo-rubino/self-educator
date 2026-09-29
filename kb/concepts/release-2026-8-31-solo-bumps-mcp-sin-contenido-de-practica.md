@@ -10,23 +10,29 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - 16a4e3995d6c827e
+- 2221814efbefaa3b
 - 30a26335a9988ba2
 - 5a4df6bef0a4905f
+- 748f8b0a02cd7524
+- 9750590bbfe6b285
 - b9106690f5dfd849
+- ffbd76916d1dfdc5
 tags:
 - changelog
 - false-positive
+- filtrado
 - ingesta
 - mcp
 - release-notes
 - releases
 - senal-no-editorial
+- senal-nula
 base_confidence: 0.82
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -45,21 +51,23 @@ links:
   type: supports
 - to: release-2026-8-31-bumps-recurrentes-server-everything-filesystem
   type: relates_to
+- to: mcp-releases-versionado-por-fecha-subconjunto-varia
+  type: supports
 ---
 
 ## What it is
-El release 2026.8.31 y los restantes de la serie (2025.11.25–2026.8.31) son notas automatizadas de RSS que únicamente listan paquetes MCP con versión bumpeada (server-sequential-thinking, server-everything, server-filesystem, server-memory, mcp-server-git, mcp-server-time, mcp-server-fetch). No incluyen descripción, changelog, rationale ni discusión.
+El release 2026.8.31 y los demás ítems de su serie son stubs auto-generados de RSS que solo anuncian bumps de versión de paquetes MCP (server-filesystem, server-memory, server-sequential-thinking, server-everything, mcp-server-time, mcp-server-fetch, mcp-server-git) bajo versionado por fecha. Ninguno discute práctica de desarrollo, liderazgo técnico, estimación, docencia ni oficio.
 
 ## Evidence
-- El documento de v2026.8.31 (fecha homónima del signal) lista solo bumps de paquetes MCP, sin contenido explicativo — source: 30a26335a9988ba2
-- El documento de v2025.11.25 lista bumps (server-sequential-thinking, server-everything, server-filesystem, server-memory, mcp-server-git) sin contenido descriptivo — source: 16a4e3995d6c827e
-- El documento de v2026.7.10 lista bumps incluyendo mcp-server-time y mcp-server-fetch, sin contenido descriptivo — source: 5a4df6bef0a4905f
-- El documento de v2026.1.26 lista bumps de paquetes MCP, sin contenido explicativo — source: b9106690f5dfd849
+- El ítem top del clúster (Release 2026.8.31) es solo una lista de bumps de server-filesystem, server-memory, server-sequential-thinking y server-everything; sin contenido sobre productividad, estudio ni liderazgo — source: 30a26335a9988ba2
+- Un stub lista server-sequential-thinking, server-everything, server-filesystem y mcp-server-git sin narrativa acompañante — source: 16a4e3995d6c827e y 2221814efbefaa3b
+- Un stub añade mcp-server-time y mcp-server-fetch al conjunto, señalando un roster rotativo de tooling y no un análisis temático — source: 5a4df6bef0a4905f
+- v2026.1.14 lista solo tres paquetes; v2026.8.18 solo versiones; v2026.1.26 bumps de server-everything, server-memory y mcp-server-time; v2026.7.4 bumps de server-everything, server-filesystem, server-sequential-thinking y server-memory — source: 748f8b0a02cd7524, 9750590bbfe6b285, b9106690f5dfd849, ffbd76916d1dfdc5
 
 ## Why it matters
-El release no aporta evidencia sobre cómo se aplican agentes de IA a programar, gestionar o enseñar. Cualquier lectura temática (p. ej. «server-memory implica orquestación de memoria de agentes») sería sobreinterpretación de nombres de paquete, no hallazgo sobre práctica.
+Confirma que la serie MCP es un feed de releases, no una fuente de hallazgos sobre la práctica profesional del brief. Cualquier afirmación positiva sobre agentes, liderazgo o docencia extraída de estos ítems sería inventada.
 
-Soporta la tesis de que los release stubs MCP carecen de changelog (mcp-release-stub-sin-changelog) y de que los bumps no revelan práctica de ingeniería (mcp-release-bumps-no-revelan-practica-de-ingenieria). Se relaciona con la nota que ya registra los bumps recurrentes de server-everything y server-filesystem.
+Refuerza `mcp-servers-sin-changelog-legible` y `mcp-releases-versionado-por-fecha-subconjunto-varia`: los stubs carecen de changelog legible y confirman el patrón de versionado por fecha con roster variable. Se relaciona con `release-2026-8-31-bumps-recurrentes-server-everything-filesystem`, que describe el mismo release desde el ángulo de los paquetes recurrentes.
 
 ## Links
 - derived_from → [[mcp-servers-versionado-por-fecha]]
@@ -69,3 +77,4 @@ Soporta la tesis de que los release stubs MCP carecen de changelog (mcp-release-
 - relates_to → [[release-de-parche-no-revela-practica-de-ingenieria]]
 - supports → [[mcp-release-stub-sin-changelog]]
 - relates_to → [[release-2026-8-31-bumps-recurrentes-server-everything-filesystem]]
+- supports → [[mcp-releases-versionado-por-fecha-subconjunto-varia]]

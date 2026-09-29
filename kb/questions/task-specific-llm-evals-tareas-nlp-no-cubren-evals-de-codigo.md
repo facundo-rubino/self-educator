@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-28'
+updated: '2026-09-29'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -24,7 +24,7 @@ tags:
 - llm
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -60,16 +60,16 @@ links:
 ---
 
 ## What it is
-Pregunta abierta: las cinco categorías de eval declaradas (clasificación, resumen, traducción, regurgitación de copyright, toxicidad) son tareas NLP de propósito general. Ninguna corresponde a evaluación de generación de código, revisión de código, resúmenes de documentación técnica, clasificación de issues ni feedback de ejercicios.
+El documento trata sobre metodología de evaluación de LLM en tareas de NLP genéricas, no sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo técnico, oficio de software engineering o productividad personal.
 
 ## Evidence
-- La descripción del documento enumera clasificación, resumen, traducción, regurgitación de copyright y toxicidad como las tareas cubiertas — source: 93963a5f93e58d05
-- El clúster es un documento único con engagement registrado 0 y sin corroboración cruzada — source: 93963a5f93e58d05
+- El documento trata sobre metodología de evaluación de LLMs en tareas de NLP genéricas y no sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo técnico, oficio o productividad — source: 93963a5f93e58d05
+- El alcance declarado del documento son clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
 
 ## Why it matters
-Si las tareas evaluadas no incluyen tareas de código ni de docencia, el documento no puede informar sobre fiabilidad de agentes en los ejes del brief aunque su título mencione «evals». La adyacencia al brief es léxica (la palabra «evals»), no temática.
+Marca la frontera entre «metodología de evals de NLP» y «evals de agentes de código o de asistentes de enseñanza». Importa porque el salto entre ambas no está autorizado por este documento: cualquier puente habría que construirlo, no citarlo.
 
-Deriva del alcance declarado. Refuerza `aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion`. Entra en tensión con `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad`, que afirma sin este documento que la eval específica por tarea es infraestructura de fiabilidad al adoptar asistentes: aquí la única evidencia disponible no cubre las tareas de ese uso.
+Deriva de task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad: sin la lista de tareas no se puede afirmar esta exclusión. Se relaciona con aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion, que registra el modo de fallo si se ignora esta frontera.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]

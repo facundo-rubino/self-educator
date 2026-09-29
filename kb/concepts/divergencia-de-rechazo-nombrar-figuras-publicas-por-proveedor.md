@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-25'
+updated: '2026-09-29'
 sources:
 - 19cb8032958cd964
 tags:
@@ -26,7 +26,7 @@ tags:
 - rechazo
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -59,20 +59,23 @@ links:
   type: supports
 - to: afirmacion-poblacional-desde-un-solo-proveedor
   type: contradicts
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: relates_to
+- to: divergencia-de-rechazo-entre-proveedores
+  type: supports
 ---
 
 ## What it is
-Ante la misma petición de nombrar una figura pública en una imagen, tres proveedores principales responden de forma distinta: Gemini la nombra, ChatGPT y Claude la rechazan. La divergencia es de política de producto y de filtros de seguridad aplicados, no una diferencia demostrada de capacidad de reconocimiento entre los modelos.
+Observación de un documento RSS: ante una imagen con una figura pública, ChatGPT y Claude se niegan a identificarla y Gemini sí lo hace [19cb8032958cd964]. El comportamiento de rechazo es dependiente del proveedor para el mismo insumo. Es una asimetría de política de contenido, no una diferencia de capacidad demostrada.
 
 ## Evidence
-- El documento afirma que ChatGPT y Claude no identifican figuras públicas en imágenes, pero Gemini sí [19cb8032958cd964].
-- No se declara metodología, fecha, versión de modelo, cuenta ni región para ninguna de las tres observaciones [19cb8032958cd964].
-- La corroboración del pipeline es de 0.50, es decir, parcial [19cb8032958cd964].
+- El documento distingue por proveedor: ChatGPT y Claude no lo hacen, pero Gemini sí — source: 19cb8032958cd964
+- El proveedor se atribuye por nombre de producto; no se cita versión, cuenta, región ni prompt — source: 19cb8032958cd964
 
 ## Why it matters
-Convierte «¿puede el modelo hacer X?» en «¿qué proveedor, en qué versión y bajo qué cuenta deja hacer X?». Para cualquier flujo que dependa del comportamiento de rechazo, la decisión de compra es una decisión de política, y la sonda de compatibilidad debe hacerse por proveedor antes de comprometer una feature.
+Si un dev o educador integra modelos multimodales, la elección de proveedor incorpora una decisión de política de contenido, no solo técnica. La asimetría, si se replicara, permitiría usar la negativa/permisión como sonda barata de un proveedor frente a otro. Con una sola fuente sin metodología, es un dato a verificar, no una caracterización estable de los tres productos.
 
-Es la instancia multimodal de `divergencia-de-rechazo-entre-proveedores`, y su lectura correcta pasa por `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`. Sustenta operativamente `spike-por-proveedor-para-comportamiento-de-rechazo`: si tres proveedores divergen en una frase, el spike es obligatorio. Se apoya en la observación registrada en `gemini-no-rechaza-nombrar-figuras-publicas`. La nota `identificacion-de-figuras-publicas-ya-existia` contiene el encuadre general del que esta es el caso concreto. Contradice a `afirmacion-poblacional-desde-un-solo-proveedor` en el sentido de que el reporte fuente sí generaliza desde un solo proveedor; el enlace registra esa tensión sin resolverla.
+`supports` `divergencia-de-rechazo-entre-proveedores`, que ya recoge el mismo objeto en un caso distinto. Se lee con `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`: lo que diverge es la política observable. `probe-de-rechazo-por-identidad-en-produccion` propone cómo usarlo como sonda, precisamente por no estar establecido.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -89,3 +92,5 @@ Es la instancia multimodal de `divergencia-de-rechazo-entre-proveedores`, y su l
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
 - supports → [[spike-por-proveedor-para-comportamiento-de-rechazo]]
 - contradicts → [[afirmacion-poblacional-desde-un-solo-proveedor]]
+- relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- supports → [[divergencia-de-rechazo-entre-proveedores]]

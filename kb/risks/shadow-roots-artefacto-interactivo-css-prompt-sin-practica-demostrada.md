@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-09-29'
 sources:
 - df4836a1d89bcba4
 tags:
-- prompt-a-artefacto
-- practica-no-demostrada
+- agentes
 - brief-mismatch
 - css
+- docencia
+- inferencia
+- practica-no-demostrada
+- prompt-a-artefacto
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-29'
 provenance:
   scale: XL
   query: null
@@ -30,21 +33,27 @@ links:
   type: supports
 - to: promocion-personal-no-es-evidencia-de-practica
   type: relates_to
+- to: shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: shadow-roots-mismatch-lexico-clustering-css-frente-brief
+  type: relates_to
 ---
 
 ## What it is
-La lectura más caritativa del clúster —que el prompt es un dato sobre cómo un dev usa un agente de IA para generar artefactos didácticos— sigue siendo demasiado delgada: un prompt único no es evidencia de una práctica, un resultado ni un hallazgo.
+El único contenido verificable del documento es una instrucción a una herramienta generativa. Leer esa instrucción como evidencia de uso real de agentes de IA en docencia es sobreinterpretación: no hay artefacto construido, resultado, ni verificación de ejecución.
 
 ## Evidence
-- El único documento del clúster es un prompt corto que instruye a un modelo de IA a construir un artefacto interactivo que explique CSS shadow roots — source: df4836a1d89bcba4
-- El documento está etiquetado solo con «css», sin señales de práctica de ingeniería, liderazgo o docencia — source: df4836a1d89bcba4
+- El documento es un prompt pidiendo construir un artefacto interactivo para explicar shadow roots — source: df4836a1d89bcba4
+- El clúster contiene un solo documento: no hay corroboración interna de que el artefacto se haya producido o usado — source: df4836a1d89bcba4
 
 ## Why it matters
-Un prompt es una intención de autoría, no un artefacto entregado ni una práctica observada. Promoverlo como hallazgo sobre agentes de IA, liderazgo técnico o docencia sería invención. Además, el sub-tópico de docencia se movió explícitamente a otro profile, por lo que incluso el ángulo pedagógico queda fuera de alcance para este brief.
+La mención de «Fable 5.1 Medium» solo prueba que alguien formuló una petición, no que exista un flujo de docencia asistida por IA evaluable. Tratar el prompt como evidencia de práctica inflaría un hallazgo a partir de una instrucción no ejecutada.
 
-Deriva del singleton sin engagement (misma evidencia, lectura de práctica). Refuerza la nota preexistente de que un prompt para un artefacto interactivo no es evidencia de docencia asistida por IA. Se relaciona con la nota genérica sobre posts personales que no constituyen evidencia de práctica técnica.
+Refuerza `prompt-para-artefacto-interactivo-no-es-evidencia-de-docencia`. Se relaciona con `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido` (misma fuente única) y con `shadow-roots-mismatch-lexico-clustering-css-frente-brief` (el encuadre temático que hizo pasar el ítem).
 
 ## Links
 - derived_from → [[shadow-roots-live-examples-singleton-sin-engagement]]
 - supports → [[prompt-para-artefacto-interactivo-no-es-evidencia-de-docencia]]
 - relates_to → [[promocion-personal-no-es-evidencia-de-practica]]
+- relates_to → [[shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido]]
+- relates_to → [[shadow-roots-mismatch-lexico-clustering-css-frente-brief]]
