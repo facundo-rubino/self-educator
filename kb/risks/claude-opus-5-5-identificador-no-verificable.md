@@ -9,19 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-28'
+updated: '2026-09-30'
 sources:
 - 31820ad25e39a34b
 tags:
 - anthropic
 - identificador-de-modelo
 - llm
+- modelo
 - nombres-de-modelo
 - verificabilidad
 - verificacion
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -38,19 +39,21 @@ links:
   type: supports
 - to: hy3-identidad-no-establecida
   type: relates_to
+- to: claude-opus-5-5-identificador-no-verificable
+  type: relates_to
 ---
 
 ## What it is
-El nombre de modelo `Claude Opus 5.5` no es verificable dentro de este clúster. Nada en la evidencia corrobora que corresponda a un modelo público, a un alias, a un placeholder o a un artefacto sintético del corpus.
+El nombre de modelo `claude-opus-5.5` aparece únicamente en el texto de este release [31820ad25e39a34b]. No viene acompañado de benchmarks, latencia, costo ni calidad de código generado que permitan situarlo frente a otros modelos.
 
 ## Evidence
-- El documento cita un modelo denominado `Claude Opus 5.5`, invocado como `llm -m claude-opus-5.5` — source: 31820ad25e39a34b
-- El clúster no contiene ninguna segunda fuente que confirme el release ni el identificador — source: 31820ad25e39a34b
+- El documento solo declara compatibilidad con el identificador `claude-opus-5.5` y los tags `llm` y `anthropic` — source: 31820ad25e39a34b
+- El documento no reporta benchmarks, latencia, costo ni calidad de código generado — source: 31820ad25e39a34b
 
 ## Why it matters
-Cualquier afirmación sobre capacidades, adopción o relevancia de ese modelo sería una coincidencia léxica entre un nombre de producto y un tema de IA, no un hallazgo empírico. El identificador debe tratarse como no establecido hasta que exista fuente primaria.
+Sin fuente independiente no se puede confirmar qué es ese identificador ni qué capacidades tiene. Cualquier inferencia sobre sus capacidades sería especulativa, y cualquier decisión de tooling basada en el nombre sería over-indexar en una etiqueta.
 
-Deriva de `llm-anthropic-0-29-anuncio-de-release`, que es donde aparece el identificador. Es una instancia concreta de `riesgo-de-over-indexar-nombres-de-modelos` y comparte forma con `hy3-identidad-no-establecida`: nombres sin procedencia establecida dentro del corpus.
+Deriva del anuncio de release (`llm-anthropic-0-29-anuncio-de-release`) y refuerza el patrón existente `riesgo-de-over-indexar-nombres-de-modelos`. Se relaciona con `claude-opus-5-5-identificador-no-verificable`, que documenta el mismo riesgo de identificador no verificable.
 
 ## Links
 - contradicts → [[llm-anthropic-0-29-anuncio-de-release]]
@@ -59,3 +62,4 @@ Deriva de `llm-anthropic-0-29-anuncio-de-release`, que es donde aparece el ident
 - derived_from → [[llm-anthropic-0-29-anuncio-de-release]]
 - supports → [[riesgo-de-over-indexar-nombres-de-modelos]]
 - relates_to → [[hy3-identidad-no-establecida]]
+- relates_to → [[claude-opus-5-5-identificador-no-verificable]]

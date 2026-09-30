@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-23'
+updated: '2026-09-30'
 sources:
 - 43e006f4538b71dd
 tags:
 - corroboracion
 - engagement
 - engagement-cero
+- metricas-de-pipeline
 - pipeline
 - react
 - singleton
+- the-two-reacts
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -40,18 +42,25 @@ links:
   type: relates_to
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: supports
+- to: the-two-reacts-cluster-artefacto-de-ingesta-no-senal
+  type: derived_from
+- to: corroboracion-y-velocidad-como-artefactos-del-scorer
+  type: supports
+- to: the-two-reacts-metricas-sin-corroboracion
+  type: relates_to
 ---
 
 ## What it is
-El clúster de «The Two Reacts» es un singleton con engagement nulo y novelty=0.00, corroboración 0.50 proveniente de la propia serie. No hay señal externa que valide ni difunda el contenido.
+La única métrica que acompaña a «The Two Reacts» es un engagement=0 y una corroboración de 0.50 no respaldada por otros documentos. No hay evidencia independiente de que el contenido del post importe.
 
 ## Evidence
-- El clúster contiene un único documento [43e006f4538b71dd] y el informe registra novelty=0.00 y corroboración 0.50.
+- El documento proviene de una fuente RSS con engagement=0, sin señales de discusión o adopción comunitaria — source: 43e006f4538b71dd
+- El análisis declara corroboración de 0.50 sin otros documentos que respalden el contenido — source: 43e006f4538b71dd
 
 ## Why it matters
-Un singleton sin engagement no sostiene generalización. Un resultado nulo es un resultado, no una señal débil.
+Una corroboración de 0.50 sin segundo documento verificable no es validación independiente: es una métrica del scorer. Tratar esa cifra como evidencia externa sobrestima la fiabilidad del cluster.
 
-Refuerza el patrón ya registrado de que un clúster de un solo documento con engagement=0 no generaliza; se relaciona con la nota sobre el truncamiento del mismo clúster.
+Se deriva de `the-two-reacts-cluster-artefacto-de-ingesta-no-senal` y refuerza el patrón general `corroboracion-y-velocidad-como-artefactos-del-scorer`.
 
 ## Links
 - derived_from → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
@@ -61,3 +70,6 @@ Refuerza el patrón ya registrado de que un clúster de un solo documento con en
 - relates_to → [[corroboracion-0-5-por-repeticion-de-serie-no-es-validacion-independiente]]
 - relates_to → [[the-two-reacts-titulo-sin-contenido-ingerido]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
+- derived_from → [[the-two-reacts-cluster-artefacto-de-ingesta-no-senal]]
+- supports → [[corroboracion-y-velocidad-como-artefactos-del-scorer]]
+- relates_to → [[the-two-reacts-metricas-sin-corroboracion]]

@@ -9,13 +9,15 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-28'
+updated: '2026-09-30'
 sources:
 - 19cb8032958cd964
 tags:
 - ambiguedad-lexica
+- capacidad-multimodal
 - claims
 - definiciones
+- evals
 - llm
 - metodologia
 - multimodal
@@ -24,7 +26,7 @@ tags:
 - vision
 base_confidence: 0.12
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-30'
 provenance:
   scale: M
   query: null
@@ -49,18 +51,24 @@ links:
   type: supports
 - to: nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria
   type: relates_to
+- to: confundir-rechazo-por-politica-con-capacidad-de-modelo
+  type: supports
 ---
 
 ## What it is
-En el documento, que un modelo «identifique» una figura pública significa que no emitió un rechazo ante la petición, no que haya verificado o reconocido correctamente a la persona. La conducta observable es la ausencia de bloqueo; la identidad correcta es una inferencia que la fuente no comprueba.
+
+En el titular, «identify public figures» puede leerse como «el modelo reconoce y nombra a la persona» o como «el modelo no rechaza la petición». Son afirmaciones distintas y la evidencia disponible (una frase, sin definición) no permite distinguirlas. El reporte advierte explícitamente que el documento no define «identificar»: ¿nombre? ¿contexto? ¿reconocimiento facial?
 
 ## Evidence
-- La descripción disponible es de comportamiento de rechazo (ChatGPT y Claude no identifican; Gemini sí), sin verificación de que la identidad atribuida sea correcta — source: 19cb8032958cd964
+
+- El documento no aporta definición operativa de «identificar» ni ejemplos de salida — source: 19cb8032958cd964
+- El titular usa la misma frase para la afirmación general y el matiz por proveedor, sin separar reconocimiento de cumplimiento — source: 19cb8032958cd964
 
 ## Why it matters
-Leer «no rechazó» como «acertó» infla la afirmación y la vuelve inútil para decidir si un flujo de identificación es fiable. Para evaluar esa fiabilidad haría falta exactitud medida, no ausencia de bloqueo.
 
-Se relaciona con `confundir-rechazo-por-politica-con-capacidad-de-modelo`, porque la ambigüedad del verbo es parte de la misma confusión. Apoya a `identificacion-de-figuras-publicas-ya-existia`, ya que solo se puede discutir la novedad de la capacidad si se distingue de la tolerancia del filtro. Se relaciona con `nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria`, que niega el valor de práctica de esta observación.
+La elección de la definición decide si el titular describe una capacidad nueva o solo una diferencia de política. Sin definición operativa, cualquier lectura fuerte —«los LLMs ahora reconocen personas»— es una sobreinterpretación del texto. El error se comete en el paso de verbo ambiguo a claim técnico.
+
+Apoya «confundir-rechazo-por-politica-con-capacidad-de-modelo»: nombra el mecanismo concreto de la confusión. Se relaciona con «capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo»: distinción que este caso ilustra a nivel léxico.
 
 ## Links
 - derived_from → [[divergencia-de-rechazo-entre-proveedores]]
@@ -73,3 +81,4 @@ Se relaciona con `confundir-rechazo-por-politica-con-capacidad-de-modelo`, porqu
 - relates_to → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]
 - supports → [[identificacion-de-figuras-publicas-ya-existia]]
 - relates_to → [[nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria]]
+- supports → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]

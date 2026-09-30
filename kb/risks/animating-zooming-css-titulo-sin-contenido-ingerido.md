@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - b0df1f50a76ba564
 tags:
-- ingesta-truncada
-- titulo-solo
+- css
 - extraccion
+- ingesta
+- ingesta-truncada
+- pipeline
+- titulo-solo
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -27,19 +30,33 @@ links:
   type: supports
 - to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
   type: relates_to
+- to: animating-zooming-css-titulo-con-documento-unico-engagement-cero
+  type: supports
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: supports
+- to: transform-order-en-css-afecta-el-zoom
+  type: relates_to
 ---
 
 ## What it is
-Del ítem solo se recuperó el título y el subtítulo («How to get the right transform animation»). No hay código, navegador objetivo, versiones, mediciones, ejemplos de excepción ni atestación del autor. La afirmación sobre el orden de transform no puede validarse ni acotarse con este material.
+
+El clúster del signal `sig-173dfdbcdcc9` contiene un único documento cuyo contenido sustantivo no está disponible: solo se expone el título y el subtítulo del post. Cualquier lectura del contenido sería reconstrucción, no compilación.
 
 ## Evidence
-- El ítem RSS se titula «Animating zooming using CSS: transform order is important… sometimes» y se posiciona como how-to, pero sin cuerpo ingerido — fuente: b0df1f50a76ba564
+
+- El único documento del clúster es un post RSS con engagement=0 titulado «Animating zooming using CSS: transform order is important… sometimes». — source: b0df1f50a76ba564
+- El subtítulo disponible es «How to get the right transform animation.», sin más material. — source: b0df1f50a76ba564
+- Métricas del signal: relevance=0.33, novelty=0.00, corroboration=0.50. — source: b0df1f50a76ba564
 
 ## Why it matters
-Sin cuerpo, «a veces» es infalsable: cualquier desarrollo posterior sobre CSS transform/zoom tendría que inventarse. La nota marca que la ausencia es de extracción, no del artículo, y que no autoriza suponer contenido relevante.
 
-Es la causa concreta del singleton en `animating-zooming-css-singleton-sin-engagement` y una instancia de `ingesta-truncada-como-riesgo-sistemico-de-cobertura`. Nota asociada ya existente: `transform-order-y-zoom-css-sin-cuerpo-ingerido`.
+El condicional «sometimes» del propio título sugiere que el autor matiza la regla, y sin el texto que la justifica no se puede distinguir un hallazgo técnico de una repetición de conocimiento común (novelty=0.00). Incorporar este documento como evidencia de práctica llevaría a citas vacías.
+
+Comparte patrón con las notas que registran clústeres de un solo documento sin engagement y con el riesgo sistémico de evaluar clústeres RSS cuyo cuerpo el pipeline no recuperó. Es la nota madre de la lectura crítica de este signal.
 
 ## Links
 - supports → [[animating-zooming-css-singleton-sin-engagement]]
 - relates_to → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]
+- supports → [[animating-zooming-css-titulo-con-documento-unico-engagement-cero]]
+- supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- relates_to → [[transform-order-en-css-afecta-el-zoom]]

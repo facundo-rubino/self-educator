@@ -10,13 +10,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 19cb8032958cd964
 tags:
 - afirmacion-sin-metodologia
 - capacidad
 - capacidad-vs-politica
+- capacidades-llm
 - epistemologia
 - evals
 - evidencia
@@ -31,7 +32,7 @@ tags:
 - titular-rss
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -66,20 +67,29 @@ links:
   type: relates_to
 - to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
   type: derived_from
+- to: identificar-no-es-reconocer-en-la-fuente
+  type: derived_from
+- to: politica-de-face-recognition-como-variable-de-producto
+  type: supports
+- to: afirmacion-de-novedad-sin-linea-base
+  type: relates_to
 ---
 
 ## What it is
-La fuente es un titular RSS [19cb8032958cd964] sin cuerpo verificado: afirma un salto de capacidad («ya pueden identificar figuras públicas») a partir de la conducta observable de tres productos. Sin mecanismo, sin tasas de acierto y sin pruebas reproducibles, la afirmación de capacidad no se sigue de la evidencia. El registro correcto es observar la política, no postular la competencia.
+
+Un titular RSS que afirma «LLMs can now identify public figures in images» no sostiene una afirmación de capacidad: en el mismo titular se concede que ChatGPT y Claude no lo hacen y que solo Gemini sí. «Identificar» en la fuente significa «no rechazar», no «reconocer»; es una diferencia de cumplimiento de política, no de capacidad de modelo. El documento es un titular con una frase, sin metodología, ejemplos, enlaces ni mediciones.
 
 ## Evidence
-- El documento afirma que los LLM ya pueden identificar figuras públicas en imágenes — source: 19cb8032958cd964
-- Sin mecanismo, tasas de acierto ni pruebas reproducibles más allá del titular — source: 19cb8032958cd964
-- Sin engagement ni corroboración dentro del cluster; novelty=0.00 — source: 19cb8032958cd964
+
+- El cluster contiene un único documento y su contenido es el titular más una frase: «LLMs can now identify public figures in images» y «ChatGPT and Claude won't, but Gemini will» — source: 19cb8032958cd964
+- El documento tiene engagement=0, ninguna interacción registrada en la fuente RSS — source: 19cb8032958cd964
+- No se especifican versiones, fecha, condiciones de prueba, cifras de accuracy ni línea base — source: 19cb8032958cd964
 
 ## Why it matters
-Cada «ya pueden» de política leído como capacidad se acumula como falsa línea base en el grafo. La confusión es direccional: la negativa de un proveedor no prueba incapacidad, y el permiso de otro no prueba competencia. Sin replicación independiente, el techo de la conclusión es «tres productos responden distinto a este insumo».
 
-Nota duplicada por solapamiento de título con `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`; se enlaza `derived_from` y debería fusionarse en la compilación. Misma tensión que `identificacion-de-figuras-publicas-ya-existia`: el «now» carece de línea base.
+Tomar el titular como hecho verificado es un modo de fallo documentado: la afirmación se contradice con su propio matiz. Leer «los LLMs ahora pueden» cuando la evidencia dice «un proveedor no rechaza esta tarea» confunde capacidad con política. Cualquier conclusión de capacidad sobre modelos exige fuente con condiciones y medición; este documento no las aporta.
+
+Se deriva de «identificar-no-es-reconocer-en-la-fuente»: la ambigüedad del verbo es el mecanismo del error. Apoya «politica-de-face-recognition-como-variable-de-producto»: la asimetría es de política, no de modelo. Se relaciona con «afirmacion-de-novedad-sin-linea-base»: sin medición previa, el «ahora» no está establecido.
 
 ## Links
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
@@ -97,3 +107,6 @@ Nota duplicada por solapamiento de título con `afirmar-capacidad-desde-un-titul
 - contradicts → [[identificacion-de-figuras-publicas-ya-existia]]
 - relates_to → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
 - derived_from → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- derived_from → [[identificar-no-es-reconocer-en-la-fuente]]
+- supports → [[politica-de-face-recognition-como-variable-de-producto]]
+- relates_to → [[afirmacion-de-novedad-sin-linea-base]]

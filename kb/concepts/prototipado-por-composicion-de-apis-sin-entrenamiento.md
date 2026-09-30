@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-24'
+updated: '2026-09-30'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -20,7 +20,7 @@ tags:
 - prototipado
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -33,22 +33,22 @@ links:
   type: relates_to
 - to: agentes-abatatan-ports-mantener-sigue-costoso
   type: relates_to
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: supports
 ---
 
 ## What it is
-Ensamblar servicios existentes (STT, TTS, LLM, telefonía) en un asistente pequeño es una forma rápida de probar una hipótesis de flujo personal con código propio mínimo. El valor es como hipótesis a medir, no como técnica de productividad probada.
+El proyecto descrito se construye ensamblando servicios existentes (STT, TTS, LLM, número virtual) en lugar de entrenar un modelo propio [49140f9d5133d3c7]. Es la construcción de un agente por composición de APIs, un patrón que no requiere datos de entrenamiento ni ajuste fino [49140f9d5133d3c7].
 
 ## Evidence
-- El coach descrito se construye combinando speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
-- El clúster no incluye artefacto, código ni métricas que demuestren el resultado de la composición — source: 49140f9d5133d3c7
+- La lista de componentes del proyecto sugiere ensamblado de APIs existentes, sin mención de entrenamiento — source: 49140f9d5133d3c7
 
 ## Why it matters
-Reconoce la actividad como práctica de ingeniería legítima — combinar componentes off-the-shelf — sin confundirla con evidencia de mejora. El coste real está en el mantenimiento posterior, no en el ensamblado inicial.
-
-Se relaciona con `stack-de-ai-coach-voz-a-voz`, que es su instancia concreta. Conecta con `agentes-abatatan-ports-mantener-sigue-costoso` por el contraste entre coste de construcción y coste de mantenimiento.
+Componer APIs existentes abarata prototipar, pero no dice nada sobre si el prototipo resuelve el problema que declara resolver. La composición es condición de posibilidad, no evidencia de eficacia [49140f9d5133d3c7].
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[agent-based-stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[agentes-abatatan-ports-mantener-sigue-costoso]]
+- supports → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]

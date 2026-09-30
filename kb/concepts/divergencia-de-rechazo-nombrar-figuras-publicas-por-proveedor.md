@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 19cb8032958cd964
 tags:
@@ -20,13 +20,15 @@ tags:
 - gemini
 - identificacion-facial
 - multimodal
+- politica-de-modelo
 - politica-de-modelos
 - politica-de-proveedor
 - politicas-de-proveedor
+- proveedores
 - rechazo
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -63,19 +65,24 @@ links:
   type: relates_to
 - to: divergencia-de-rechazo-entre-proveedores
   type: supports
+- to: confundir-rechazo-por-politica-con-capacidad-de-modelo
+  type: relates_to
 ---
 
 ## What it is
-Observación de un documento RSS: ante una imagen con una figura pública, ChatGPT y Claude se niegan a identificarla y Gemini sí lo hace [19cb8032958cd964]. El comportamiento de rechazo es dependiente del proveedor para el mismo insumo. Es una asimetría de política de contenido, no una diferencia de capacidad demostrada.
+
+Según un único titular RSS, ante la tarea de identificar figuras públicas en imágenes, Gemini no rechaza y ChatGPT y Claude sí. La divergencia es de política de rechazo entre proveedores, no de capacidad demostrada. El documento no especifica versiones de modelo, fecha, cuenta, región ni condiciones de prueba.
 
 ## Evidence
-- El documento distingue por proveedor: ChatGPT y Claude no lo hacen, pero Gemini sí — source: 19cb8032958cd964
-- El proveedor se atribuye por nombre de producto; no se cita versión, cuenta, región ni prompt — source: 19cb8032958cd964
+
+- «ChatGPT and Claude won't, but Gemini will», sobre identificación de figuras públicas en imágenes — source: 19cb8032958cd964
+- Documento único con engagement=0; novelty=0.00 y corroboración=0.50 según el reporte del cluster — source: 19cb8032958cd964
 
 ## Why it matters
-Si un dev o educador integra modelos multimodales, la elección de proveedor incorpora una decisión de política de contenido, no solo técnica. La asimetría, si se replicara, permitiría usar la negativa/permisión como sonda barata de un proveedor frente a otro. Con una sola fuente sin metodología, es un dato a verificar, no una caracterización estable de los tres productos.
 
-`supports` `divergencia-de-rechazo-entre-proveedores`, que ya recoge el mismo objeto en un caso distinto. Se lee con `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`: lo que diverge es la política observable. `probe-de-rechazo-por-identidad-en-produccion` propone cómo usarlo como sonda, precisamente por no estar establecido.
+Recuerda que los criterios de aceptación de una feature multimodal dependen del proveedor y que la misma tarea recibe tratamientos distintos. Pero el documento solo asevera la asimetría; no la mide, no la cuantifica y no cita fuente primaria. Un dev que integre agentes debería verificarla por sí mismo antes de asumir paridad entre modelos.
+
+Apoya «divergencia-de-rechazo-entre-proveedores»: es un caso concreto de la divergencia ya registrada. Se relaciona con «confundir-rechazo-por-politica-con-capacidad-de-modelo»: la asimetría es de política. Apoya «gemini-no-rechaza-nombrar-figuras-publicas», de la que es la fuente concreta.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -94,3 +101,4 @@ Si un dev o educador integra modelos multimodales, la elección de proveedor inc
 - contradicts → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - supports → [[divergencia-de-rechazo-entre-proveedores]]
+- relates_to → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]

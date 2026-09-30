@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -23,7 +23,7 @@ tags:
 - task-specific
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -52,18 +52,24 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-titulo-sin-contenido-ingerido
   type: supports
+- to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
+  type: relates_to
+- to: task-specific-llm-evals-singleton-engagement-cero
+  type: supports
 ---
 
 ## What it is
-El único documento del cluster [93963a5f93e58d05], titulado «Task-Specific LLM Evals that Do & Don't Work», se describe como evals para clasificación, resumen, traducción, regurgitación de copyright y toxicidad. Es una enumeración de familias de tarea de NLP genérico, no de evals de agentes de código ni de asistentes de docencia.
+El clúster de esta señal se reduce a un único documento [93963a5f93e58d05] cuyo título anuncia evaluaciones de LLM específicas por tarea. Las tareas nombradas —clasificación, resumen, traducción, regurgitación de copyright y toxicidad— son lo único que el clúster declara sobre el contenido. No hay cuerpo, método ni resultados disponibles.
 
 ## Evidence
-- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y su contenido se describe como evals para clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
+- El clúster contiene un solo documento titulado «Task-Specific LLM Evals that Do & Don't Work» — source: 93963a5f93e58d05
+- El documento abarca clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
+- El documento proviene de un feed RSS — source: 93963a5f93e58d05
 
 ## Why it matters
-Fija el alcance real del ítem: lo que hay que comparar contra el brief no es «evals» en abstracto, sino exactamente esas cinco familias de tarea. Cualquier claim sobre evaluación de agentes o de asistentes de enseñanza queda fuera de este alcance declarado.
+Enumerar las familias de tarea es todo lo que se puede verificar. Sirve como índice de búsqueda (si en el futuro aparece el texto completo, se busca por estas categorías) pero no como hallazgo sobre qué evals funcionan.
 
-Se relaciona con task-specific-llm-evals-adyacencia-al-brief-no-demostrada (la lista de tareas es lo que hace visible la distancia al brief) y sostiene task-specific-llm-evals-titulo-sin-contenido-ingerido: el alcance declarado es lo único que puede citarse, porque no hay cuerpo ingerido.
+Se relaciona con la nota existente que ya registra las familias de tarea como el único contenido verificable, y sostiene la nota sobre el engagement cero del singleton.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -78,3 +84,5 @@ Se relaciona con task-specific-llm-evals-adyacencia-al-brief-no-demostrada (la l
 - relates_to → [[task-specific-llm-evals-singleton-engagement-cero]]
 - relates_to → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
 - supports → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- relates_to → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
+- supports → [[task-specific-llm-evals-singleton-engagement-cero]]

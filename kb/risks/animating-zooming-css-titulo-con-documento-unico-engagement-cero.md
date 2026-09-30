@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-25'
+updated: '2026-09-30'
 sources:
 - b0df1f50a76ba564
 tags:
@@ -17,13 +17,15 @@ tags:
 - engagement-cero
 - evidencia
 - falso-positivo
+- generalizacion
+- ingesta
 - pipeline
 - rss
 - singleton
 - soporte-empirico
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -46,18 +48,26 @@ links:
   type: supports
 - to: css-transform-order-importa-solo-a-veces
   type: relates_to
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: supports
+- to: animating-zooming-css-titulo-sin-contenido-ingerido
+  type: relates_to
 ---
 
 ## What it is
-El clúster que produce esta señal es un singleton: un post RSS con engagement=0 y novelty=0.00. Con esos valores no hay material poblacional ni impacto medible que sostenga generalización alguna sobre práctica de frontend o sobre el estado del arte de la animación CSS.
+
+El signal se apoya en N=1 con engagement=0. Un singleton sin tracción no sostiene ninguna generalización sobre práctica de front-end ni sobre interés del tema.
 
 ## Evidence
-- El clúster contiene exactamente un documento, un post RSS con engagement=0 y puntajes relevance=0.33, novelty=0.00, corroboration=0.50, velocity=0.50, surprise=0.50 — source: b0df1f50a76ba564
+
+- El clúster contiene un único documento con engagement=0. — source: b0df1f50a76ba564
+- corroboration=0.50 no es validación independiente cuando N=1 y falta el cuerpo. — source: b0df1f50a76ba564
 
 ## Why it matters
-Un post RSS con engagement=0 no es representativo de prácticas de ingeniería ni del estado del arte en animación CSS. Además, novelty=0.00 sugiere conocimiento ya establecido (el propio material señala que está abundantemente documentado en MDN y blogs de frontend), de modo que incluso en su carril correcto tendría bajo valor de novedad.
 
-Refuerza [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]] y [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]: el mismo patrón de singleton sin engagement que no sostiene claims. Se relaciona con [[css-transform-order-importa-solo-a-veces]], la única nota con contenido sustantivo que puede extraerse del clúster.
+Tratar la presencia del clúster como evidencia de interés («devs que enseñan CSS») confunde un post tangencial aislado con señal de tema. El pipeline no debería elevar este tipo de clúster a hallazgo.
+
+Confirma la regularidad ya registrada: un clúster de un solo documento con engagement=0 no sostiene generalización. Depende de la nota sobre contenido no ingerido, que es la razón por la que ni siquiera la lectura técnica del post es posible.
 
 ## Links
 - supports → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]
@@ -69,3 +79,5 @@ Refuerza [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]] y [[docume
 - supports → [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]]
 - supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
 - relates_to → [[css-transform-order-importa-solo-a-veces]]
+- supports → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- relates_to → [[animating-zooming-css-titulo-sin-contenido-ingerido]]

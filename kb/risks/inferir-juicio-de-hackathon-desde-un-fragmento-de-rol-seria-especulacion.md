@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - d2a0c86ca8027978
 tags:
 - especulacion
+- evaluacion
 - evidencia
 - hackathon
-- evaluacion
+- llm-eval
+- sobreinterpretacion
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -30,21 +32,23 @@ links:
   type: relates_to
 - to: criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido
   type: supports
+- to: juez-humano-como-rol-sin-contenido-metodologico
+  type: relates_to
 ---
 
 ## What it is
-El fragmento [d2a0c86ca8027978] no describe cómo juzgó el autor, qué criterios usó ni qué aprendió. Cualquier inferencia sobre metodología de evaluación de LLM, criterios de juicio o lecciones del hackathon sería contenido añadido por el analista, no por la fuente.
+Leer «juez humano en el hackathon LLM-as-a-Judge» como descripción de cómo se juzgó, con qué criterios o con qué resultados sería inventar contenido que el documento no tiene.
 
 ## Evidence
-- El cuerpo entero es «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon» — source: d2a0c86ca8027978
-- No hay descripción de criterios, proceso ni conclusiones en el documento — source: d2a0c86ca8027978
+- El documento solo declara el rol; no contiene rúbrica, criterios, resultados ni descripción del proceso — source: d2a0c86ca8027978
 
 ## Why it matters
-Un rol en primera persona no es un método. Si el pipeline convierte este fragmento en una lección sobre LLM-as-a-judge, el grafo acumularía afirmaciones sin fuente. La disciplina aquí es dejar el hueco abierto como pregunta, no rellenarlo.
+Marca el techo epistémico de este ítem: mantenerlo como artefacto de ingesta y no dejar que futuras notas lo traten como fuente sobre metodología de evaluación.
 
-Se deriva directamente del fragmento del rol. Es la misma clase de modo de fallo que inventar hallazgos positivos desde un clúster sin cuerpo, y refuerza la nota sobre criterios de juicio de hackathon sin cuerpo ingerido.
+Se solapa con la nota de riesgo sobre el rol como marcador sin contenido metodológico.
 
 ## Links
 - derived_from → [[juez-humano-we-and-b-llm-evaluator-hackathon]]
 - relates_to → [[afirmar-hallazgo-positivo-sobre-agentic-engineering-seria-invencion]]
 - supports → [[criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido]]
+- relates_to → [[juez-humano-como-rol-sin-contenido-metodologico]]

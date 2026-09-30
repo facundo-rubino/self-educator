@@ -9,16 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-09-30'
 sources:
 - 0248fdb60811e91e
+- 49140f9d5133d3c7
 tags:
-- singleton
-- engagement-cero
 - corroboracion
+- engagement-cero
+- evidencia
+- fuente-unica
+- generalizacion
+- riesgo
+- singleton
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -31,22 +36,29 @@ links:
   type: supports
 - to: engagement-cero-en-singleton-de-ranking-no-accionable
   type: relates_to
+- to: post-unico-como-plantilla-de-demostracion-end-to-end
+  type: contradicts
+- to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
+  type: supports
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: relates_to
 ---
 
 ## What it is
-El clúster [0248fdb60811e91e] contiene exactamente un documento, con engagement=0. La corroboración entre fuentes es, por construcción, cero. Ninguna inferencia sobre práctica profesional — y menos sobre cómo un dev que lidera y enseña hace mejor su trabajo — puede apoyarse en un singleton sin cuerpo y sin señal de engagement.
+La evidencia de este clúster es un solo documento descrito a alto nivel, sin corroboración independiente ni mediciones [49140f9d5133d3c7]. Cualquier generalización más allá de la mera existencia del proyecto sería especulativa.
 
 ## Evidence
-- El documento es un ítem RSS con engagement=0: sin lectura, compartición ni discusión registrada — source: 0248fdb60811e91e
-- El clúster contiene un único documento, de modo que ningún hallazgo puede corroborarse entre fuentes — source: 0248fdb60811e91e
+- El clúster se sostiene sobre un único documento — source: 49140f9d5133d3c7
+- La novelty es 0.00 y no hay datos de engagement que indiquen tracción — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es la restricción de fondo que hace inútil este clúster incluso antes de discutir su contenido: con n=1 y engagement nulo, la confianza de cualquier afirmación derivada queda severamente acotada. La lectura superviviente es sólo «existe un título que comparte palabras con el topic», que no es un hallazgo.
-
-Apoya a `single-document-cluster-engagement-cero-no-generaliza` y a `generalizacion-desde-cluster-de-un-solo-documento`, que formulan la misma restricción para otros clústeres. Se relaciona con `matching-llm-patterns-to-problems-singleton-sin-corroboracion` (mismo clúster, misma restricción) y con `engagement-cero-en-singleton-de-ranking-no-accionable` por la regla compartida de que engagement nulo bloquea la acción.
+Impide tratar este ítem como hallazgo sobre práctica de ingeniería, liderazgo o docencia. El techo de la inferencia legítima es «existe un proyecto personal de este tipo» [49140f9d5133d3c7].
 
 ## Links
 - relates_to → [[matching-llm-patterns-to-problems-singleton-sin-corroboracion]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[engagement-cero-en-singleton-de-ranking-no-accionable]]
+- contradicts → [[post-unico-como-plantilla-de-demostracion-end-to-end]]
+- supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
+- relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]

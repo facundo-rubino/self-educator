@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-28'
-updated: '2026-09-28'
+updated: '2026-09-30'
 sources:
 - 43e006f4538b71dd
 tags:
-- metricas
 - corroboracion
+- metricas
+- metricas-de-pipeline
 - novelty-cero
+- relevance-baja
 - the-two-reacts
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -31,22 +33,30 @@ links:
   type: relates_to
 - to: react-for-two-computers-singleton-engagement-cero
   type: relates_to
+- to: the-two-reacts-singleton-engagement-cero
+  type: relates_to
+- to: relevancia-no-es-verdad
+  type: supports
+- to: the-two-reacts-relevancia-tangencial-al-brief
+  type: relates_to
 ---
 
 ## What it is
-El ítem «The Two Reacts» tiene novelty=0.00, relevance=0.33 y engagement=0. La corroboración de 0.50 es nominal: proviene de la repetición de un documento único, no de fuentes independientes. Las métricas describen el comportamiento del scorer sobre este ítem, no aportan acuerdo externo.
+Las métricas declaradas para «The Two Reacts» son relevance=0.33, novelty=0.00 y corroboration=0.50. Son cifras producidas por el scorer del pipeline, no evidencia externa sobre el contenido.
 
 ## Evidence
-- El documento llegó por RSS con engagement=0 — source: 43e006f4538b71dd
-- novelty=0.00 y relevance=0.33 acompañan al documento y el propio análisis los cita como coherentes con una confianza interpretativa muy baja — source: transcript del analista sobre 43e006f4538b71dd
-- La corroboración (0.50) es nominal sobre una fuente única, no sustantiva — source: transcript del crítico sobre 43e006f4538b71dd
+- El solapamiento con el tema es prácticamente nulo: relevance=0.33, novelty=0.00 (el contenido es un meme/idea ampliamente conocida en el ecosistema React) y corrobora con 0.50 — source: 43e006f4538b71dd
+- El documento proviene de una fuente RSS con engagement=0 — source: 43e006f4538b71dd
 
 ## Why it matters
-Una corroboración construida sobre un solo documento no valida ninguna lectura. Usar 0.50 como si indicara acuerdo independiente sobreestimaría la señal. Para el brief de agentes, liderazgo y docencia, este ítem debe depriorizarse salvo que documentos posteriores del mismo origen aporten la argumentación faltante.
+Un novelty=0.00 no demuestra que la fórmula sea conocida; demuestra que el pipeline no detectó novedad, lo cual puede ser tanto propiedad del contenido como límite del scorer. La novedad no se mide contra el corpus React completo.
 
-`derived_from` la nota que fija el contenido verificable del ítem. `relates_to` la nota sobre corroboración y velocidad como artefactos del scorer, que generaliza el mismo problema: los scores internos no son evidencia sobre el contenido.
+Extiende `the-two-reacts-singleton-engagement-cero` y refuerza `relevancia-no-es-verdad`: ni la relevancia ni la novedad del scorer validan una afirmación temática.
 
 ## Links
 - derived_from → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
 - relates_to → [[corroboracion-y-velocidad-como-artefactos-del-scorer]]
 - relates_to → [[react-for-two-computers-singleton-engagement-cero]]
+- relates_to → [[the-two-reacts-singleton-engagement-cero]]
+- supports → [[relevancia-no-es-verdad]]
+- relates_to → [[the-two-reacts-relevancia-tangencial-al-brief]]

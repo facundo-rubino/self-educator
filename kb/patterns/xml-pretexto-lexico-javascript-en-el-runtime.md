@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 1bfe45ede61ee575
 tags:
@@ -18,11 +18,13 @@ tags:
 - heuristica
 - javascript
 - matching-lexico
+- patron-de-ingesta
 - stub
 - xml
+- xslt
 base_confidence: 0.5
 half_life_days: 365
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -37,20 +39,23 @@ links:
   type: relates_to
 - to: js-como-lenguaje-general-ya-presente-en-el-runtime
   type: supports
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: supports
+- to: xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido
+  type: supports
 ---
 
 ## What it is
-Patrón inferido del titular más una línea: cuando un lenguaje declarativo de transformación (XSLT) se percibe más pesado que la tarea, se propone el lenguaje de propósito general ya presente en el runtime (JavaScript en navegador o Node) porque el entorno garantiza su disponibilidad. Aquí se enuncia como aserción, no se demuestra.
+El documento no enuncia un método: enuncia la presencia de un lenguaje. «JavaScript is right there.» no describe una transformación, un parseo ni una alternativa evaluada; solo señala que el runtime ya dispone de un lenguaje de propósito general, lo que convierte el ítem en un gesto retórico sobre disponibilidad léxica, no en una técnica verificable. El clúster sobrevive al filtro por la coincidencia de palabras («XML», «human-readable», «XSLT», «JavaScript») y no por un argumento [1bfe45ede61ee575].
 
 ## Evidence
-- El único contenido es «JavaScript is right there.» — source: 1bfe45ede61ee575
-- No hay mecanismo (DOMParser + serialización, recorrido de DOM), código, ejemplo ni comparación con alternativas — source: 1bfe45ede61ee575
-- Engagement cero y documento único — source: 1bfe45ede61ee575
+- El documento entero es el título más «JavaScript is right there.» — source: 1bfe45ede61ee575
+- No hay mención explícita de transformación, renderizado de XML ni comparación con XSLT — source: 1bfe45ede61ee575
 
 ## Why it matters
-El patrón es plausiblemente cierto pero tautológico en su forma actual: la disponibilidad del lenguaje no es una solución, y el documento no discute los compromisos reales (contenido mixto, namespaces, normalización de espacios en blanco). No transferible a docencia ni a decisiones de equipo sin el mecanismo que falta.
+Cuando el contenido de un ítem es la disponibilidad de una herramienta común, el patrón se repite entre casos de ingestas RSS mal filtradas: el tema aparente y el tema real divergen. Registrarlo evita tratarlo como hallazgo de craft y orienta hacia la nota sobre el mecanismo de filtrado.
 
-Se relaciona con el concepto `xml-human-readable-without-xslt-afirmacion-sin-cuerpo` como su extracción inferida. Apoya a `js-como-lenguaje-general-ya-presente-en-el-runtime` al aportar un caso —no demostrado— del mismo argumento de coste de evitar una herramienta especializada.
+Es el patrón que sostiene la nota de la afirmación sin cuerpo y la del contexto no ingerido. Concuerda con la nota preexistente que ya describía esta coincidencia léxica, sin duplicarla.
 
 ## Links
 - supports → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]
@@ -58,3 +63,5 @@ Se relaciona con el concepto `xml-human-readable-without-xslt-afirmacion-sin-cue
 - relates_to → [[js-como-lenguaje-general-ya-presente-en-el-runtime]]
 - relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
 - supports → [[js-como-lenguaje-general-ya-presente-en-el-runtime]]
+- supports → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- supports → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]

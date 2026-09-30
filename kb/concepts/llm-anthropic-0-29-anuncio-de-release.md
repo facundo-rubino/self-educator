@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 31820ad25e39a34b
 tags:
@@ -25,7 +25,7 @@ tags:
 - tooling
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -54,19 +54,21 @@ links:
   type: relates_to
 - to: llm-anthropic-0-29-topic-match-espurio-por-vocabulario
   type: relates_to
+- to: llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica
+  type: relates_to
 ---
 
 ## What it is
-La versión 0.29 de `llm-anthropic`, el plugin de acceso a modelos de Anthropic para el CLI `llm`, anuncia soporte para un modelo invocable con `llm -m claude-opus-5.5 "prompt goes here"` [31820ad25e39a34b]. El documento es un changelog operativo de librería: registra un cambio de versión y una etiqueta de modelo, no una afirmación sobre práctica de ingeniería [31820ad25e39a34b].
+La release 0.29 del plugin `llm-anthropic` agrega soporte para invocar el modelo `claude-opus-5.5` desde la CLI de `llm`, con la forma `llm -m claude-opus-5.5 "prompt goes here"` [31820ad25e39a34b]. El documento es un anuncio de integración y versionado de tooling: declara compatibilidad con un identificador de modelo y aporta los tags `llm` y `anthropic` [31820ad25e39a34b].
 
 ## Evidence
-- `llm-anthropic` 0.29 añade soporte para el modelo 'Claude Opus 5.5', usable vía `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
-- El documento está etiquetado `llm` y `anthropic`: es un release de una herramienta de acceso a modelos, no material sobre ingeniería, liderazgo ni docencia — source: 31820ad25e39a34b
+- La release 0.29 de llm-anthropic agrega soporte para Claude Opus 5.5, invocable vía `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
+- El documento está etiquetado con los tags `llm` y `anthropic`, y proviene de un feed RSS con engagement=0 — source: 31820ad25e39a34b
 
 ## Why it matters
-El único contenido verificable es que un modelo nuevo queda disponible a través de una herramienta ya existente. El documento no dice nada sobre calidad del modelo, costo, latencia, ni sobre cómo un dev-líder o docente debería cambiar su flujo de trabajo; cualquier inferencia de ese tipo es especulación del analista, no del documento [31820ad25e39a34b].
+Es el único contenido verificable del clúster: una capacidad de acceso a un modelo desde terminal, sin benchmark, latencia, costo ni calidad de código generado [31820ad25e39a34b]. No contiene afirmaciones sobre liderazgo técnico, docencia, estimación, secuenciamiento, productividad ni técnicas de estudio.
 
-Se relaciona con `llm-anthropic-0-29-singleton-sin-corroboracion` (el mismo artefacto leído como fuente única sin corroboración independiente) y con `llm-anthropic-0-29-topic-match-espurio-por-vocabulario` (el motivo por el que este documento entró al brief: coincidencia de tags `llm`/`anthropic`, no de contenido). También conecta con `modelo-nuevo-en-cli-habilita-sin-demostrar-mejora`: la clase general a la que pertenece este ítem.
+Se relaciona con el resto del clúster `llm-anthropic 0.29`, que documenta que este changelog no aporta claims sobre práctica (`llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica`), que es un singleton sin corroboración (`llm-anthropic-0-29-singleton-sin-corroboracion`) y cuyo match con el topic es léxico por vocabulario `llm`/`anthropic` (`llm-anthropic-0-29-topic-match-espurio-por-vocabulario`).
 
 ## Links
 - supports → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
@@ -81,3 +83,4 @@ Se relaciona con `llm-anthropic-0-29-singleton-sin-corroboracion` (el mismo arte
 - supports → [[claude-opus-5-5-identificador-no-verificable]]
 - relates_to → [[llm-anthropic-0-29-singleton-sin-corroboracion]]
 - relates_to → [[llm-anthropic-0-29-topic-match-espurio-por-vocabulario]]
+- relates_to → [[llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica]]

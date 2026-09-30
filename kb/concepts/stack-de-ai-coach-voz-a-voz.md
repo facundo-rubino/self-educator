@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -25,12 +25,14 @@ tags:
 - personal-productivity
 - prototipado
 - stack
+- stt
 - telefonia
+- tts
 - voice
 - voz
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -53,18 +55,18 @@ links:
   type: relates_to
 - to: asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual
   type: relates_to
+- to: prototipado-por-composicion-de-apis-sin-entrenamiento
+  type: relates_to
 ---
 
 ## What it is
-El stack mínimo de un coach conversacional por voz son cuatro piezas, todas disponibles como servicios: reconocimiento de voz (STT), síntesis de voz (TTS), un LLM como motor de diálogo y un número de teléfono virtual como canal. No requiere entrenar ningún modelo.
+La pila técnica declarada del AI coach se compone de cuatro piezas: reconocimiento de voz (STT), síntesis de voz (TTS), un modelo de lenguaje (LLM) y un número de teléfono virtual [49140f9d5133d3c7]. Es una composición de servicios existentes, sin indicios de entrenamiento propio de modelos [49140f9d5133d3c7].
 
 ## Evidence
-- El AI coach descrito integra speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. — source: 49140f9d5133d3c7
+- La pila declarada es speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-La lista de componentes define la superficie de integración del prototipo, pero la evidencia no incluye precios, latencias, proveedores concretos ni resultados de uso. La novedad del ensamblado no está establecida: es una combinación de piezas estándar.
-
-`ai-coach-voz-a-voz-ensamblado-de-servicios` describe el artefacto completo; esta nota enumera sus piezas. `prototipado-por-composicion-de-apis-sin-entrenamiento` es el patrón general. `asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual` marca que la combinación no es novedosa per se.
+Enumerar el stack no equivale a documentar decisiones técnicas: no hay comparación de proveedores, medición de latencia ni evaluación de calidad conversacional [49140f9d5133d3c7]. El valor del artefacto como evidencia de práctica es por tanto mínimo.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
@@ -76,3 +78,4 @@ La lista de componentes define la superficie de integración del prototipo, pero
 - supports → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - relates_to → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
+- relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]

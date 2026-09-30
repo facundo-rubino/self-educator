@@ -9,16 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-09-30'
 sources:
 - 43e006f4538b71dd
 tags:
-- react
-- relevancia
 - brief
+- brief-mismatch
+- ejes-del-brief
+- react
+- relevance-baja
+- relevancia
+- the-two-reacts
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -27,21 +31,26 @@ links:
   type: derived_from
 - to: the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo
   type: relates_to
+- to: the-two-reacts-metafora-data-state-a-liderazgo-es-puente-del-analista
+  type: supports
+- to: relevancia-tematica-baja-no-es-ruido
+  type: contradicts
 ---
 
 ## What it is
-El clúster «The Two Reacts» no aborda agentes de IA aplicados a programar, liderazgo técnico, productividad ni docencia; su relevance=0.33 lo sitúa como tangencial al brief. El crítico señala que la fórmula `UI = f(data)(state)` es «arguably directly within software engineering craft», por lo que calificarla de tangencial podría subestimar una conexión real aunque delgada.
+«The Two Reacts» no menciona ningún eje del brief: ni agentes de IA aplicados a programar/gestionar/enseñar, ni liderazgo técnico, ni estimación, secuenciamiento, alcance, organización personal, oficio de software engineering, productividad ni técnicas de estudio. La conexión con esos ejes no está demostrada en el documento.
 
 ## Evidence
-- El material no contiene evidencia que conecte el contenido con los ejes del brief (agentes de IA, liderazgo, oficio, productividad) — source: 43e006f4538b71dd.
-- relevance=0.33: solo tangencial al brief — source: 43e006f4538b71dd.
-- El crítico advierte que la fórmula podría caer dentro de «software engineering craft», por lo que la conexión no es nula, solo delgada — source: 43e006f4538b71dd.
+- No hay evidencia de que el documento trate sobre liderazgo técnico, estimación, secuenciamiento, alcance, productividad, técnicas de estudio ni docencia de programación — source: 43e006f4538b71dd
+- El solapamiento con el tema es prácticamente nulo: relevance=0.33, novelty=0.00 — source: 43e006f4538b71dd
 
 ## Why it matters
-Incluir este documento en el análisis principal diluye la señal útil del pipeline. La conexión con el oficio de software engineering existe pero no está desarrollada ni evidenciada en el material aportado.
+Un match léxico sobre «React» y «UI» no es cobertura de los ejes del brief. Marcar esto como tangencial evita compilar un claim de liderazgo o docencia desde una fórmula de frontend.
 
-Deriva de `the-two-reacts-fragmento-aislado-ui-f-data-state`. Se relaciona con `the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo`, que registra el mismo juicio de irrelevancia para el brief.
+Se relaciona con `the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo` y respalda el puente-del-analista que documenta `the-two-reacts-metafora-data-state-a-liderazgo-es-puente-del-analista`.
 
 ## Links
 - derived_from → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
 - relates_to → [[the-two-reacts-ruido-para-el-brief-de-agentes-y-liderazgo]]
+- supports → [[the-two-reacts-metafora-data-state-a-liderazgo-es-puente-del-analista]]
+- contradicts → [[relevancia-tematica-baja-no-es-ruido]]

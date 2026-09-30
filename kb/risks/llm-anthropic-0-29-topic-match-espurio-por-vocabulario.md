@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 31820ad25e39a34b
 tags:
+- anthropic
 - brief
 - clustering
 - falso-positivo
@@ -24,7 +25,7 @@ tags:
 - pipeline
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -41,19 +42,23 @@ links:
   type: relates_to
 - to: mcp-release-stubs-como-artefacto-de-feed
   type: relates_to
+- to: llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica
+  type: supports
+- to: relevancia-tematica-baja-no-es-ruido
+  type: contradicts
 ---
 
 ## What it is
-El documento entró al clúster del brief por coincidencia de vocabulario: sus tags son `llm` y `anthropic`, y el brief menciona «agentes de IA» [31820ad25e39a34b]. No hay solapamiento semántico con ningún eje del brief (liderazgo técnico, estimación, secuenciamiento, alcance, docencia, oficio) [31820ad25e39a34b].
+El pipeline asigna relevancia=1.00 al documento, pero el único vínculo con el tema es compartir vocabulario (`llm`, `anthropic`, «IA», «programar») con la categoría amplia «agentes/herramientas de IA aplicadas a programar» [31820ad25e39a34b]. No hay en el texto contenido sustantivo sobre cómo un dev que lidera y enseña hace mejor su trabajo.
 
 ## Evidence
-- Tags del documento: `llm`, `anthropic` — source: 31820ad25e39a34b
-- El documento no aborda ningún eje del brief; el match es vocabulario de infraestructura, no contenido — source: 31820ad25e39a34b
+- El score de relevancia=1.00 del pipeline parece un falso positivo: por contenido, el documento es periférico al tema del brief — source: 31820ad25e39a34b
+- El documento aporta los tags `llm` y `anthropic` como único solapamiento con el tema — source: 31820ad25e39a34b
 
 ## Why it matters
-Ilustra el modo de fallo de matching por vocabulario genérico: releases de herramientas de LLM se cuelan en un brief de práctica profesional. La consecuencia operativa es la misma que ya se aplicó a docencia entry-level: rerutear estos ítems a un topic de tooling/model releases en lugar de forzarlos en el brief [31820ad25e39a34b].
+Marca un modo de fallo de precisión del filtro: relevancia alta sobre documentos cuyo vínculo es exclusivamente léxico. Consumir cupo del brief con estos ítems desplaza documentos con contenido sustantivo.
 
-Instancia el patrón `mismatch-query-tema-por-vocabulario-generico-de-infraestructura` y se relaciona con `mcp-release-stubs-como-artefacto-de-feed`: ambos son artefactos de feed de releases sin contenido de práctica. Conecta con el anuncio de release como el artefacto concreto mal clasificado.
+Deriva del anuncio de release (`llm-anthropic-0-29-anuncio-de-release`) y apoya la lectura de que el changelog no contiene claims de práctica (`llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica`). Se relaciona con `relevancia-no-es-verdad`. Contradice parcialmente `relevancia-tematica-baja-no-es-ruido`: en este caso la relevancia alta sí resultó ruido de matching, no señal.
 
 ## Links
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
@@ -62,3 +67,5 @@ Instancia el patrón `mismatch-query-tema-por-vocabulario-generico-de-infraestru
 - relates_to → [[relevancia-no-es-verdad]]
 - relates_to → [[llm-anthropic-0-29-anuncio-de-release]]
 - relates_to → [[mcp-release-stubs-como-artefacto-de-feed]]
+- supports → [[llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica]]
+- contradicts → [[relevancia-tematica-baja-no-es-ruido]]

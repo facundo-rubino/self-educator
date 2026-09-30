@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - df4836a1d89bcba4
 tags:
@@ -17,6 +17,7 @@ tags:
 - css
 - falso-positivo
 - falso-positivo-clustering
+- falsos-positivos
 - filtro
 - gating-topico
 - matching-lexico
@@ -25,7 +26,7 @@ tags:
 - shadow-roots
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -46,19 +47,22 @@ links:
   type: relates_to
 - to: hypothe-rewrite-not-a-real-id
   type: relates_to
+- to: validacion-de-senal-por-contenido-no-por-titulo
+  type: supports
 ---
 
 ## What it is
-Un ítem de CSS sobre shadow roots entró al pipeline pese a relevance=0.33 y novelty=0.00. El solapamiento léxico de vocabulario técnico genérico es un mecanismo plausible de admisión, pero el reporte no demuestra que el filtro determinista haya fallado más allá de este ítem aislado.
+El clúster se sostiene sobre una coincidencia léxica: la palabra «shadow» del título colisiona con la etiqueta del clúster, mientras el tema real (Shadow DOM, una API de web components) no toca ningún eje del brief. Que un término coincida con el nombre de un clúster no es relevancia topical.
 
 ## Evidence
-- Relevancia marginal (0.33) y novedad nula (0.00) para un documento etiquetado «css», sin relación declarada con agentes de IA, liderazgo o docencia — source: df4836a1d89bcba4
-- El clúster contiene un solo documento: no hay corroboración interna — source: df4836a1d89bcba4
+- El único tag del documento es `css`; ningún tag referencia agentes de IA, liderazgo de equipos, estimación, productividad ni docencia — fuente: df4836a1d89bcba4.
+- El título «Shadow roots, explained with live examples» sitúa el tema en Shadow DOM (web components), adyacente al craft de CSS pero fuera de los temas declarados del brief — fuente: df4836a1d89bcba4.
+- La relevancia declarada es baja (0.33) y la novedad 0.00 — fuente: df4836a1d89bcba4.
 
 ## Why it matters
-Un único ítem fuera de tema es un artefacto de recuperación común y benigno, no por sí solo una prueba de defecto del filtro. La conclusión generalizable que sí sostiene la evidencia es más estrecha: la etiqueta «css» de un título no implica pertenencia al tema del brief.
+El caso es un ejemplo limpio de cómo el matching por vocabulario convierte un ítem periférico de CSS en un «clúster» que compite por cupo. Refuerza la necesidad de validar la señal por contenido y no por etiqueta o título.
 
-Se apoya en el mismo documento único que `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido` y `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada`. Comparte el modo de fallo «coincidencia léxica en el título» con otros falsos positivos del corpus.
+Se enlaza con `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido` y `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada` como las otras dos caras del mismo ítem. Aporta evidencia a `clustering-por-embedding-produce-falsos-positivos` y al patrón `validacion-de-senal-por-contenido-no-por-titulo`.
 
 ## Links
 - relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]
@@ -69,3 +73,4 @@ Se apoya en el mismo documento único que `shadow-roots-explained-with-live-exam
 - relates_to → [[shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido]]
 - relates_to → [[shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada]]
 - relates_to → [[hypothe-rewrite-not-a-real-id]]
+- supports → [[validacion-de-senal-por-contenido-no-por-titulo]]

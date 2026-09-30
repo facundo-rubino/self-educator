@@ -9,16 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-16'
+updated: '2026-09-30'
 sources:
 - 93963a5f93e58d05
+- d2a0c86ca8027978
 tags:
 - evals
-- rss
 - inferencia-desde-titular
+- ingesta
+- llm-eval
+- rss
+- sobreinterpretacion
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-16'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -27,21 +31,25 @@ links:
   type: relates_to
 - to: evals-llm-genericas-fuera-del-alcance-del-brief
   type: supports
+- to: mecanica-css-afirmada-desde-solo-titulo-rss
+  type: relates_to
+- to: afirmar-constraint-de-diseno-desde-solo-titulo-rss
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de fabricar afirmaciones sobre qué evals de LLM funcionan o fallan a partir de un título y una lista de temas. El documento no aporta metodología, resultados ni la distinción real entre «do» y «don't work» [93963a5f93e58d05]. La frase «Do & Don't Work» es un encuadre editorial, no un hallazgo validado [93963a5f93e58d05].
+Modo de fallo recurrente del pipeline: un ítem que llega solo como título o marcador de rol, sin cuerpo, se lee como si describiera la mecánica de lo que nombra. En este caso, «LLM-as-a-Judge» se trataría como si el documento describiera cómo se juzga con LLM, cuando solo dice que alguien fue juez.
 
 ## Evidence
-- No hay información sobre en qué consiste la distinción «do» versus «don't work» — source: 93963a5f93e58d05
-- Cualquier inferencia sobre qué prácticas específicas de eval funcionan en esas tareas sería inventada, no citada — source: 93963a5f93e58d05
-- El cluster es un único documento con engagement=0: sin confirmación independiente — source: 93963a5f93e58d05
+- El clúster del hackathon W&B contiene un único documento que es marcador de rol/título, sin cuerpo — source: d2a0c86ca8027978
 
 ## Why it matters
-Marca el límite de lo escribible: el documento sirve como puntero a un artículo externo potencialmente útil, no como evidencia sobre el tema del brief. Tratar el encuadre del título como resultado validado misrepresentaría la evidencia.
+Generaliza un patrón ya registrado para CSS y para constraints de diseño: cuando el pipeline no recupera cuerpo, el título es la única señal y confundirlo con contenido envenena el grafo.
 
-Se relaciona con `task-families-evaluadas-en-el-documento-evals` (lo único afirmable es la lista). Apoya a `evals-llm-genericas-fuera-del-alcance-del-brief`, porque la ausencia de cuerpo técnico es la razón de que no se pueda integrar contenido sustantivo.
+Replica la forma del riesgo «mecánica CSS afirmada desde un título RSS» y del riesgo sobre constraints de diseño desde títulos RSS.
 
 ## Links
 - relates_to → [[task-families-evaluadas-en-el-documento-evals]]
 - supports → [[evals-llm-genericas-fuera-del-alcance-del-brief]]
+- relates_to → [[mecanica-css-afirmada-desde-solo-titulo-rss]]
+- relates_to → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]

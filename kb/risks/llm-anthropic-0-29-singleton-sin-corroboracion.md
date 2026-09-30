@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 31820ad25e39a34b
 tags:
+- anthropic
 - corroboracion
 - engagement
 - llm
 - llm-anthropic
+- n1
 - release
 - singleton
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -36,19 +38,21 @@ links:
   type: supports
 - to: llm-anthropic-0-29-topic-match-espurio-por-vocabulario
   type: relates_to
+- to: mcp-release-bumps-no-revelan-practica-de-ingenieria
+  type: relates_to
 ---
 
 ## What it is
-El ítem de `llm-anthropic` 0.29 es un clúster de un solo documento con novelty=0, velocity=0.5 y engagement=0 [31820ad25e39a34b]. No hay segunda fuente que corrobore el anuncio ni métrica de uso que indique impacto [31820ad25e39a34b].
+El clúster se sostiene en un único documento con engagement=0, novelty=0.00 y corroboración=0.50 [31820ad25e39a34b]. Un solo documento no puede corroborarse a sí mismo, y 0.50 queda por debajo de cualquier umbral de triangulación significativa.
 
 ## Evidence
-- Clúster de un único documento — source: 31820ad25e39a34b
-- novelty=0, velocity=0.5, engagement=0 — source: 31820ad25e39a34b
+- El documento proviene de un feed RSS con engagement=0 — source: 31820ad25e39a34b
+- El clúster no aporta señal temática nueva ni triangulada (novelty=0.00, corroboración=0.50) — source: 31820ad25e39a34b
 
 ## Why it matters
-Cualquier conclusión generalizada sobre adopción, calidad del modelo o cambio de práctica extraída de esta nota sería estadísticamente frágil: no hay corroboración independiente ni señal de engagement [31820ad25e39a34b].
+No se puede generalizar nada sobre capacidades del modelo, práctica de ingeniería ni adopción a partir de n=1 sin engagement. Cualquier inferencia sobre impacto del release exigiría una segunda fuente independiente que no existe en este clúster.
 
-Este riesgo instancia el patrón `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica`. Se relaciona con el anuncio de release y con `llm-anthropic-0-29-topic-match-espurio-por-vocabulario`: las dos razones por las que este clúster no rinde señal.
+Deriva del anuncio de release (`llm-anthropic-0-29-anuncio-de-release`) y refuerza la nota de patrón ya existente `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica`. Se relaciona con `mcp-release-bumps-no-revelan-practica-de-ingenieria`: en ambos casos un feed de releases sin cuerpo de práctica es la única evidencia.
 
 ## Links
 - derived_from → [[llm-anthropic-0-29-anuncio-de-release]]
@@ -56,3 +60,4 @@ Este riesgo instancia el patrón `documento-unico-sin-engagement-no-sostiene-cla
 - relates_to → [[llm-anthropic-0-29-anuncio-de-release]]
 - supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
 - relates_to → [[llm-anthropic-0-29-topic-match-espurio-por-vocabulario]]
+- relates_to → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]

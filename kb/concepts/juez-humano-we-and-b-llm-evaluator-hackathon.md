@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - d2a0c86ca8027978
 tags:
-- llm-evaluation
+- artefacto-de-feed
 - hackathon
-- weights-and-biases
 - ingesta
+- llm-eval
+- llm-evaluation
+- weights-and-biases
 base_confidence: 0.6
 half_life_days: 180
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -31,22 +33,24 @@ links:
   type: supports
 - to: criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido
   type: supports
+- to: wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo
+  type: relates_to
 ---
 
 ## What it is
-El documento [d2a0c86ca8027978] se titula «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge» y su único cuerpo es el fragmento «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon». No hay más contenido ingerido que ese rol en primera persona.
+El clúster del hackathon «LLM-as-a-Judge» de Weights & Biases contiene un único documento (d2a0c86ca8027978) cuyo contenido es un marcador de título/rol: ser juez humano en ese hackathon. No hay cuerpo capturado.
 
 ## Evidence
-- El título identifica un hackathon de W&B sobre evaluación de LLM y un rol de «Hackathon Judge» — source: d2a0c86ca8027978
-- El cuerpo es un único fragmento en primera persona: «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon» — source: d2a0c86ca8027978
-- El documento lleva engagement=0 y novelty=0.00 con relevance=0.67 — source: d2a0c86ca8027978
+- El único documento del clúster es un marcador de rol/título «juez humano en el hackathon LLM-as-a-Judge de W&B», sin contenido de cuerpo — source: d2a0c86ca8027978
+- El clúster sobrevivió al filtrado con relevance=0.67, novelty=0.00 y corroboration=0.50 — source: d2a0c86ca8027978
 
 ## Why it matters
-El único contenido verificable es una descripción de rol, no una metodología. Confirma que existe un artefacto de ingesta alrededor de un hackathon de evaluación de LLM con un juez humano, pero no habilita ninguna afirmación sobre cómo se juzgó, con qué criterios, ni qué se aprendió.
+Unificación del stub ya existente en el grafo: el ítem no aporta cuerpo nuevo, solo confirma (vía id de documento distinto y nuevo scoring) que sigue siendo un marcador de rol sin contenido.
 
-Se relaciona con la nota preexistente sobre el hackathon (juez-humano-en-hackathon-llm-as-a-judge-de-wandb) y refuerza tanto la observación de que «juez humano» es un rol declarado sin contenido metodológico como la de que los criterios de juicio del hackathon no vienen con cuerpo ingerido.
+Se relaciona con las notas previas del mismo ítem de W&B. No hay borde `supports` hacia ninguna nota sustantiva porque el documento no sostiene ningún claim sobre el brief.
 
 ## Links
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - supports → [[juez-humano-como-rol-sin-contenido-metodologico]]
 - supports → [[criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido]]
+- relates_to → [[wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo]]

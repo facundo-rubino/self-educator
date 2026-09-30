@@ -9,18 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-18'
+updated: '2026-09-30'
 sources:
 - abf61eeec75462f9
 tags:
 - agentes
+- artefacto-de-ingesta
+- llm
 - novedad
 - patrones
 - patrones-llm
 - prompt-engineering
 base_confidence: 0.6
 half_life_days: 180
-last_reinforced: '2026-09-18'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -31,21 +33,24 @@ links:
   type: supports
 - to: system-prompt-como-artefacto-de-ingenieria
   type: supports
+- to: restatement-de-titulo-como-evidencia-de-composicion-condicional
+  type: relates_to
 ---
 
 ## What it is
-La composición del system prompt a partir de partes condicionales no es un hallazgo nuevo: es una práctica establecida en productos LLM. El reporte lo registra explícitamente como novedad 0.00 respecto de la práctica de agentes. El caso de Claude Code sería una instancia del patrón, no su origen.
+El «system prompt ensamblado de docenas de partes condicionales» (abf61eeec75462f9) es una descripción genérica de cualquier pipeline de prompt-engineering no trivial. Sería verdad de innumerables aplicaciones LLM, no solo de Claude Code.
 
 ## Evidence
-- El reporte califica la novedad del ensamblado condicional de prompts como 0.00: el patrón ya es conocido en la práctica de agentes — source: abf61eeec75462f9
-- El system prompt de Claude Code se ensambla de partes condicionales según una filtración — source: abf61eeec75462f9
+- El documento abf61eeec75462f9 describe el system prompt de Claude Code como ensamblado de docenas de partes condicionales.
+- La descripción no aporta información discriminante sobre Claude Code en particular: aplica a cualquier sistema de plantillas condicionales (abf61eeec75462f9, inferencia del crítico).
 
 ## Why it matters
-Desplaza la pregunta de «¿existe este patrón?» a «¿cómo se gobierna?»: versionado, revisión y testeo de bloques condicionales pasan a ser el problema real. Un dev que construye agentes no necesita justificar la modularidad; necesita decidir qué bloques existen y cómo se testean.
+Un claim que sería cierto de casi cualquier producto LLM no informa sobre el producto concreto. Enseñarlo como hallazgo sobre Claude Code propaga un modelo mental erróneo.
 
-Sostiene a `ensamblado-condicional-de-prompts` como patrón y a `system-prompt-como-artefacto-de-ingenieria` como consecuencia de gobernanza. Se relaciona con `claude-code-system-prompt-conditional-composition` como caso particular dentro del patrón general.
+Refuerza el patrón `ensamblado-condicional-de-prompts` (la composición condicional como abstracción). Se relaciona con `restatement-de-titulo-como-evidencia-de-composicion-condicional` (circularidad) y con `claude-code-system-prompt-conditional-composition` (el mismo artefacto de ingesta).
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
 - supports → [[ensamblado-condicional-de-prompts]]
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
+- relates_to → [[restatement-de-titulo-como-evidencia-de-composicion-condicional]]

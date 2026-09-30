@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-28'
-updated: '2026-09-28'
+updated: '2026-09-30'
 sources:
 - 43e006f4538b71dd
 tags:
-- ingesta
+- artefacto-de-ingesta
 - cluster-singleton
+- clusters-rss
+- engagement-cero
+- ingesta
 - ruido
 - the-two-reacts
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -32,23 +35,28 @@ links:
   type: relates_to
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: the-two-reacts-titulo-sin-contenido-ingerido
+  type: supports
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: supports
 ---
 
 ## What it is
-El clúster «The Two Reacts» es un artefacto de ingesta: un único documento RSS con engagement=0 y novelty 0.00, cuyo cuerpo sustantivo falta. Puede tratarse de un post truncado, una extracción defectuosa o ruido de feed, no de un argumento completo. Un clúster así infla el conteo de señales sin sumar payload.
+El clúster «The Two Reacts» está formado por un solo documento [43e006f4538b71dd] con engagement=0. Un cluster de un documento sin señales de discusión, adopción o réplica es indistinguible de ruido de ingesta, no de una tendencia.
 
 ## Evidence
-- El clúster consta de un solo documento (`43e006f4538b71dd`) con engagement=0 y novelty 0.00 — source: transcript del analista sobre 43e006f4538b71dd
-- El crítico registra como riesgo que «this may be a feed artifact or a truncated post rather than a complete argument» — source: transcript del crítico sobre 43e006f4538b71dd
-- El único contenido sustantivo recuperado es la expresión `UI = f(data)(state)`; no hay más cuerpo — source: 43e006f4538b71dd
+- El documento proviene de una fuente RSS con engagement=0, sin señales de discusión o adopción comunitaria — source: 43e006f4538b71dd
+- El análisis declara corroboración de 0.50 sin otros documentos que respalden el contenido — source: 43e006f4538b71dd
 
 ## Why it matters
-Un clúster de un documento con engagement cero no sostiene generalización ni hallazgo. La acción razonable es clasificarlo como candidato a descarte y vigilar si el mismo origen provee documentos con cuerpo completo. Si reaparece sin argumentación, la depriorización es la respuesta correcta.
+Un engagement=0 y ningún segundo documento significa que no hay evidencia externa de que el tema importe ni de que el contenido sea correcto. Elevar este cluster a señal del brief viola la regla de corroboración: hace falta al menos un segundo documento independiente.
 
-`derived_from` la nota que fija el contenido verificable. `supports` la nota sobre métricas sin corroboración, ya que ambas describen la falta de base sustantiva. `relates_to` el caso paralelo de «React for Two Computers», mismo patrón de singleton RSS sin corroboración.
+Es una instancia concreta de `cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion`, y comparte su debilidad estructural con `the-two-reacts-titulo-sin-contenido-ingerido`.
 
 ## Links
 - derived_from → [[the-two-reacts-fragmento-aislado-ui-f-data-state]]
 - supports → [[the-two-reacts-metricas-sin-corroboracion]]
 - relates_to → [[react-for-two-computers-singleton-rss-sin-corroboracion]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- supports → [[the-two-reacts-titulo-sin-contenido-ingerido]]
+- supports → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]

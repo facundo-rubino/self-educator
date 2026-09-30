@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-29'
+updated: '2026-09-30'
 sources:
 - 1bfe45ede61ee575
 tags:
+- documento-unico
 - ingesta
 - javascript
 - rss-stub
@@ -22,7 +23,7 @@ tags:
 - xslt
 base_confidence: 0.03
 half_life_days: 180
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -39,21 +40,26 @@ links:
   type: derived_from
 - to: anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica
   type: supports
+- to: xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido
+  type: supports
+- to: xml-human-readable-sin-xslt-contexto-no-ingerido
+  type: supports
+- to: xml-pretexto-lexico-javascript-en-el-runtime
+  type: supports
 ---
 
 ## What it is
-El documento [1bfe45ede61ee575] se titula «Making XML human-readable without XSLT» y su único cuerpo es la frase «JavaScript is right there.». No hay mecanismo, código, ejemplo, comparación con alternativas (CSS, librerías de pretty-printing, formateo en servidor) ni explicación de por qué se evita XSLT.
+Documento cuyo cuerpo completo es el título «Making XML human-readable without XSLT» seguido de la única línea «JavaScript is right there.» [1bfe45ede61ee575]. Afirma implícitamente que JavaScript basta para hacer XML legible sin la pipeline XSLT, pero no aporta ejemplo, código, manejo de errores ni discusión de tradeoffs. Es una nota de vocabulario, no una técnica demostrada.
 
 ## Evidence
-- El documento se titula «Making XML human-readable without XSLT» — source: 1bfe45ede61ee575
-- El cuerpo entero del documento es la frase «JavaScript is right there.» — source: 1bfe45ede61ee575
-- El documento tiene engagement cero registrado — source: 1bfe45ede61ee575
-- El documento está clasificado como de origen rss — source: 1bfe45ede61ee575
+- El contenido entero del documento es el título más una línea — source: 1bfe45ede61ee575
+- El documento implica JavaScript como mecanismo pero no lo desarrolla — source: 1bfe45ede61ee575
+- Engagement=0 y llegada por RSS: sin reacción medida ni discusión corroborante — source: 1bfe45ede61ee575
 
 ## Why it matters
-La afirmación no es evaluable: no enuncia nada falsable más allá de que JavaScript existe en el runtime. Cualquier confianza asignada a este ítem sería sobrelectura de un eslogan; no sostiene guía sobre oficio ni material docente.
+El ítem no aporta material al brief de agentes, liderazgo técnico, docencia ni craft. Cualquier lectura sobre cómo se evita XSLT en un navegador o en un pipeline es una extrapolación que el lector debe suministrar; el grafo debe registrarla como hueco y no como hallazgo.
 
-Es el caso concreto del mismo falso positivo léxico ya registrado en `xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro`. Se deriva del patrón `xml-pretexto-lexico-javascript-en-el-runtime`: «JavaScript is right there» operando como pretexto léxico, no como técnica. Es evidencia de apoyo para `anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica`: fuente única sin demostración no es evidencia de práctica.
+Es la nota base del ítem; las notas de contexto no ingerido y del pretexto léxico detallan por qué no se puede extraer un método. Refuerza la nota preexistente de título sin contenido ingerido sin contradecirla.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
@@ -62,3 +68,6 @@ Es el caso concreto del mismo falso positivo léxico ya registrado en `xml-human
 - relates_to → [[xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro]]
 - derived_from → [[xml-pretexto-lexico-javascript-en-el-runtime]]
 - supports → [[anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica]]
+- supports → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
+- supports → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]
+- supports → [[xml-pretexto-lexico-javascript-en-el-runtime]]

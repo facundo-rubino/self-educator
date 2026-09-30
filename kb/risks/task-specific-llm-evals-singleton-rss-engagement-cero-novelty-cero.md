@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-25'
+updated: '2026-09-30'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -20,11 +20,12 @@ tags:
 - ingesta
 - llm
 - rss
+- rss-stub
 - senal-debil
 - singleton
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -47,19 +48,26 @@ links:
   type: derived_from
 - to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
   type: supports
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: derived_from
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de tratar este clúster como señal: tamaño de clúster uno, engagement medido cero, novelty=0.00. Los metadatos no aportan corroboración independiente, solo autodescripción del pipeline.
+Un clúster de un único documento RSS con engagement=0 y novelty=0.00 no sostiene ninguna afirmación sustantiva. El crítico degrada la confianza a 0.05: no hay evidencia textual, ni datos, ni método, ni resultados sobre los que razonar.
 
 ## Evidence
-- Cluster size uno, novelty=0.00, corroboración=0.50, engagement cero — source: 93963a5f93e58d05
-- El clúster contiene un único ítem RSS con engagement medido de cero — source: 93963a5f93e58d05
+- Documento único procedente de un feed RSS con engagement=0 — source: 93963a5f93e58d05
+- novelty=0.00 y corroboration=0.50 en el clúster — source: 93963a5f93e58d05
+- El crítico califica el veredicto como WEAK con confianza ajustada a 0.05 — source: 93963a5f93e58d05
 
 ## Why it matters
-Un singleton sin engagement no sostiene generalización alguna sobre evals específicas por tarea, ni sobre si funcionan o fallan. Presentarlo como hallazgo sobrestima la evidencia disponible.
+Cualquier afirmación sobre qué evals funcionan o no, extraída de este clúster, sería especulativa. La única acción defendible es registrar el ítem como candidato a retrieval de texto completo y no priorizarlo.
 
-`derived_from` el patrón general de que un clúster de un documento con engagement cero no generaliza; `supports` la nota sobre documentos únicos sin engagement que no sostienen claims de práctica.
+Se deriva de la nota sobre el alcance declarado y refuerza el patrón más amplio ya registrado sobre afirmar práctica desde feeds sin contenido. También complementa la nota existente sobre el título sin cuerpo ingerido.
 
 ## Links
 - relates_to → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -71,3 +79,6 @@ Un singleton sin engagement no sostiene generalización alguna sobre evals espec
 - relates_to → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]
 - derived_from → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- derived_from → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- relates_to → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]

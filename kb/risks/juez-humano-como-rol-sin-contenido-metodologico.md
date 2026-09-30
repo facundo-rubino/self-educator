@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-25'
+updated: '2026-09-30'
 sources:
 - d2a0c86ca8027978
 tags:
@@ -17,16 +17,19 @@ tags:
 - evaluacion
 - human-in-the-loop
 - inferencia
+- ingesta
 - llm-as-a-judge
+- llm-eval
 - metodologia
 - rol
 - rol-vs-contenido
 - rss
 - sin-cuerpo
+- sobreinterpretacion
 - wandb
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -47,19 +50,20 @@ links:
   type: relates_to
 - to: generalizacion-desde-cluster-de-un-solo-documento
   type: supports
+- to: inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion
+  type: relates_to
 ---
 
 ## What it is
-En el ítem sobre el hackathon de W&B, «juez humano» aparece como un rol declarado en el subtítulo, sin que el documento describa cómo se ejerció ese juicio: no hay criterios, rúbrica, ni comparación entre juicio humano y juicio LLM. Leer «human judge» como evidencia de una metodología de evaluación humano-en-el-loop sería atribuir contenido al titular.
+Declarar el rol de «juez humano» en un hackathon no aporta criterios de juicio, rúbrica ni metodología. Es un marcador de identidad, no un contenido evaluable.
 
 ## Evidence
-- El subtítulo menciona «Being a human judge», sin cuerpo que describa el ejercicio del juicio — source: d2a0c86ca8027978
-- No hay criterios, rúbrica ni datos de jueces en el documento — source: d2a0c86ca8027978
+- El único documento del clúster declara el rol de juez humano en el hackathon LLM-as-a-Judge de W&B sin cuerpo asociado — source: d2a0c86ca8027978
 
 ## Why it matters
-Un rol nombrado no es un método. Si se quiere citar este hackathon como ejemplo de evaluación humana junto a evaluadores LLM, la cita se limita a la existencia del rol; cualquier detalle sobre cómo se juzgó, con qué criterios o con qué resultados es invención. La distinción es la misma que separa «capacidad técnica» de «política declarada».
+Evita que futuras ingestas del mismo ítem se lean como evidencia sobre metodología de evaluación con LLM. La línea entre «fui juez» y «cómo se juzga» no se cruza con un marcador de rol.
 
-Depende del título-sin-cuerpo del hackathon de W&B. Se relaciona con los stubs de título sin contenido ingerido del clúster de evals: mismo problema de granularidad de señal. Refuerza la advertencia general de que un clúster de un solo documento no sostiene generalización.
+Refuerza la nota de stub del hackathon de W&B y coincide con el riesgo ya registrado de inferir metodología desde un fragmento de rol.
 
 ## Links
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
@@ -70,3 +74,4 @@ Depende del título-sin-cuerpo del hackathon de W&B. Se relaciona con los stubs 
 - derived_from → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - relates_to → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- relates_to → [[inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion]]

@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-09-30'
 sources:
 - 0248fdb60811e91e
 tags:
-- llm-patterns
-- taxonomy
 - circularidad
+- ingesta
+- llm-patterns
 - stub
+- taxonomia-no-validada
+- taxonomy
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-09-30'
 provenance:
   scale: XL
   query: null
@@ -33,22 +35,29 @@ links:
   type: relates_to
 - to: taxonomia-dos-ejes-llm-externo-interno-datos
   type: relates_to
+- to: how-to-match-llm-patterns-taxonomia-sin-contenido
+  type: supports
+- to: bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados
+  type: supports
 ---
 
 ## What it is
-La única afirmación disponible sobre la taxonomía propuesta (LLMs externos vs. internos, patrones con datos vs. sin datos) proviene de la descripción de ingest del propio pipeline, no del texto del documento. Citarla como evidencia de que la taxonomía existe es circular: el metadato se usa para probar lo que el metadato dice.
+La única sustancia del documento es una frase que distingue problemas según requieran LLMs externos vs. internos, y patrones con datos vs. sin datos [0248fdb60811e91e]. Esa frase llega como descripción del material ingerido, no como un claim desarrollado y validado dentro del documento [0248fdb60811e91e]. Los ejes de la taxonomía quedan enunciados sin criterios, ejemplos ni bordes [0248fdb60811e91e].
 
 ## Evidence
-- La caracterización «externo vs. interno y datos vs. no-datos» es la única descripción de contenido en la señal — source: 0248fdb60811e91e
-- Esa descripción es metadato de ingest, no texto extraído del documento — source: 0248fdb60811e91e
+- El contenido declarado del documento es la distinción externo/interno y datos/no-datos — fuente: 0248fdb60811e91e
+- El texto ingerido no proporciona criterios, ejemplos ni método para esa distinción — fuente: 0248fdb60811e91e
+- Los scores del clúster (relevance=0.33, novelty=0.00, corroboration=0.50) son coherentes con la ausencia de contenido sustantivo — fuente: 0248fdb60811e91e
 
 ## Why it matters
-Cualquier afirmación de que existe un marco de decisión utilizable sería inventada; lo defendible es solo que un marco puede existir en un documento que no podemos leer.
+Una taxonomía enunciada pero no desarrollada no sirve para decidir cuándo merece la pena conectar un agente de IA a un flujo de trabajo. Los ejes podrían ser un encuadre útil si se desarrollaran en otro sitio, pero ese desarrollo no está en este clúster [0248fdb60811e91e].
 
-Deriva del ítem sin cuerpo ingerido y ejemplifica el patrón de reformular el título o el metadato como si fuera hallazgo. Se relaciona con la pregunta abierta sobre una taxonomía de dos ejes externo/interno y datos/no-datos, que aquí no queda validada ni refutada.
+Se deriva de `how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido`, que establece la ausencia de cuerpo. Sostiene la nota existente `taxonomia-dos-ejes-llm-externo-interno-datos` como su única formulación. Refuerza `bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados`: aquí ni siquiera los bordes llegan a aparecer.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
 - relates_to → [[restatement-de-titulo-no-es-hallazgo]]
 - relates_to → [[validacion-de-senal-por-contenido-no-por-titulo]]
 - relates_to → [[taxonomia-dos-ejes-llm-externo-interno-datos]]
+- supports → [[how-to-match-llm-patterns-taxonomia-sin-contenido]]
+- supports → [[bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados]]
