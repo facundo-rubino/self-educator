@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-28'
+updated: '2026-10-02'
 sources:
 - 19cb8032958cd964
 tags:
@@ -17,10 +17,11 @@ tags:
 - multimodal
 - politica-de-proveedor
 - rechazo
+- refusal-policy
 - vision
 base_confidence: 0.15
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -39,18 +40,20 @@ links:
   type: relates_to
 - to: prueba-con-proveedores-y-cuentas-especificas
   type: relates_to
+- to: aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales
+  type: supports
 ---
 
 ## What it is
-Un ítem RSS reporta que Gemini sí nombra figuras públicas en imágenes mientras ChatGPT y Claude no lo hacen. La observación es una sola y no viene con versión de modelo, cuenta, región ni condiciones de prompt, así que describe un caso, no la conducta actual de ninguno de los tres productos.
+El documento [19cb8032958cd964] contrasta el comportamiento de proveedores ante imágenes de figuras públicas: ChatGPT y Claude no las identifican, Gemini sí.
 
 ## Evidence
-- El documento ingerido afirma que ChatGPT y Claude no identifican figuras públicas en imágenes, pero Gemini sí — source: 19cb8032958cd964
+- «ChatGPT and Claude will not identify public figures in images, but Gemini will» — source: 19cb8032958cd964
 
 ## Why it matters
-Si se confirma, es un dato de selección de proveedor para cualquier flujo donde la identificación de personas en imágenes sea un requisito. Sin versión ni fecha no se puede saber si sigue siendo cierto hoy, y la conducta de rechazo cambia con frecuencia.
+Es un dato de divergencia de política de rechazo entre proveedores, no un dato de capacidad. Alimenta el patrón de que los criterios de aceptación en features multimodales dependen del proveedor.
 
-Sostiene a `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`, que registra la asimetría entre Gemini y el resto en el caso específico de figuras públicas. Contradice a `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` en el sentido de que el titular lo presenta como capacidad universal mientras este actor describe una diferencia de política entre productos concretos. Se relaciona con `divergencia-de-rechazo-entre-proveedores` (mismo prompt, distinta respuesta), con `probe-de-rechazo-por-identidad-en-produccion` como sonda operativa derivable, y con `prueba-con-proveedores-y-cuentas-especificas`, que exige acotar la observación a versión, cuenta y región antes de generalizar.
+Refuerza las notas existentes de divergencia de rechazo entre proveedores y la específica sobre nombrar figuras públicas. Aporta evidencia a la nota de patrón sobre criterios de aceptación dependientes de proveedor.
 
 ## Links
 - supports → [[divergencia-de-rechazo-entre-proveedores]]
@@ -60,3 +63,4 @@ Sostiene a `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`, que 
 - relates_to → [[divergencia-de-rechazo-entre-proveedores]]
 - relates_to → [[probe-de-rechazo-por-identidad-en-produccion]]
 - relates_to → [[prueba-con-proveedores-y-cuentas-especificas]]
+- supports → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]

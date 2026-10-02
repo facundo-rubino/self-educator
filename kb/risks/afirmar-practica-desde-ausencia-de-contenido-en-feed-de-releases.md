@@ -9,22 +9,27 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-23'
+updated: '2026-10-02'
 sources:
+- 16a4e3995d6c827e
 - 30a26335a9988ba2
 - 5a4df6bef0a4905f
 - d2a0c86ca8027978
 - ffbd76916d1dfdc5
 tags:
 - ausencia
+- epistemics
+- evidence
 - evidencia
+- false-positive
 - falso-positivo
 - feed
+- mcp
 - metodo
 - practica
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -39,19 +44,25 @@ links:
   type: relates_to
 - to: relevancia-no-es-verdad
   type: relates_to
+- to: mcp-release-stub-sin-changelog
+  type: relates_to
+- to: confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido
+  type: relates_to
+- to: release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica
+  type: relates_to
 ---
 
 ## What it is
-Cuando el único material es una entrada de blog o un feed sin cuerpo sustantivo, inferir prácticas de ingeniería, docencia, agentes o liderazgo es un modo de fallo recurrente del pipeline. La ausencia de contenido no es un hallazgo.
+Un changelog que solo lista bumps de versión no contiene prosa, autoría ni discusión. Cualquier claim sobre agentes de IA aplicados a ingeniería, liderazgo, estimación, secuenciamiento, alcance, organización personal, craft o estudio apoyado en estos documentos sería invención, no hallazgo.
 
 ## Evidence
-- El documento analizado no contiene evidencia sobre agentes de IA aplicados a programar, gestión, enseñanza, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de ingeniería ni productividad — source: d2a0c86ca8027978.
-- El crítico advierte que presentar «el documento existe y es poco informativo» como conclusión con confianza alta es circular, y ajusta la confianza de 0.90 a 0.10 — source: d2a0c86ca8027978.
+- Los ocho documentos del clúster son changelogs plantilla sin contenido narrativo sobre agentes de IA en ingeniería, docencia, estimación, liderazgo de equipo ni craft de software — source: 16a4e3995d6c827e
+- El release 2026.8.31 es solo una lista de bumps a v2026.8.31 — source: 30a26335a9988ba2
 
 ## Why it matters
-Evita que un clúster ruidoso contamine futuras síntesis temáticas. La relevancia léxica superficial (palabras como «LLM», «hackathon», «evaluator») no equivale a conexión demostrada con el brief — source: d2a0c86ca8027978.
+Marca el límite del documento como evidencia: sirve para versionado y composición de releases, no para afirmar nada sobre cómo trabaja quien lidera un proyecto o enseña a programar.
 
-Se relaciona con `wandb-llm-as-a-judge-hackathon-sin-corroboracion` al compartir el mismo caso base y con `relevancia-no-es-verdad`, que ya establece que la utilidad temática no valida una afirmación.
+`mcp-release-stub-sin-changelog` recoge el mismo modo de fallo desde la forma del documento; `confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido` describe el error inverso (puntuar alto un hallazgo negativo).
 
 ## Links
 - derived_from → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]
@@ -59,3 +70,6 @@ Se relaciona con `wandb-llm-as-a-judge-hackathon-sin-corroboracion` al compartir
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
 - relates_to → [[wandb-llm-as-a-judge-hackathon-sin-corroboracion]]
 - relates_to → [[relevancia-no-es-verdad]]
+- relates_to → [[mcp-release-stub-sin-changelog]]
+- relates_to → [[confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido]]
+- relates_to → [[release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica]]

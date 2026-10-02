@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-30'
+updated: '2026-10-02'
 sources:
 - 31820ad25e39a34b
 tags:
@@ -25,7 +25,7 @@ tags:
 - tooling
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -59,16 +59,16 @@ links:
 ---
 
 ## What it is
-La release 0.29 del plugin `llm-anthropic` agrega soporte para invocar el modelo `claude-opus-5.5` desde la CLI de `llm`, con la forma `llm -m claude-opus-5.5 "prompt goes here"` [31820ad25e39a34b]. El documento es un anuncio de integración y versionado de tooling: declara compatibilidad con un identificador de modelo y aporta los tags `llm` y `anthropic` [31820ad25e39a34b].
+`llm-anthropic` 0.29 es una nota de release del plugin que conecta la CLI `llm` con modelos de Anthropic. La versión añade soporte para un modelo identificado en el propio release como «Claude Opus 5.5», invocable con `llm -m claude-opus-5.5 "prompt goes here"`.
 
 ## Evidence
-- La release 0.29 de llm-anthropic agrega soporte para Claude Opus 5.5, invocable vía `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
-- El documento está etiquetado con los tags `llm` y `anthropic`, y proviene de un feed RSS con engagement=0 — source: 31820ad25e39a34b
+- La versión 0.29 del plugin `llm-anthropic` añade soporte para un modelo llamado «Claude Opus 5.5», invocable vía `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
+- El documento está etiquetado con las categorías `llm` y `anthropic` y proviene de un feed RSS — source: 31820ad25e39a34b
 
 ## Why it matters
-Es el único contenido verificable del clúster: una capacidad de acceso a un modelo desde terminal, sin benchmark, latencia, costo ni calidad de código generado [31820ad25e39a34b]. No contiene afirmaciones sobre liderazgo técnico, docencia, estimación, secuenciamiento, productividad ni técnicas de estudio.
+Habilita, para quien ya usa la CLI `llm`, apuntar a un modelo de Anthropic más sin cambiar de herramienta. No hay en el documento ningún claim sobre calidad del modelo, coste, latencia ni adecuación a ninguna tarea.
 
-Se relaciona con el resto del clúster `llm-anthropic 0.29`, que documenta que este changelog no aporta claims sobre práctica (`llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica`), que es un singleton sin corroboración (`llm-anthropic-0-29-singleton-sin-corroboracion`) y cuyo match con el topic es léxico por vocabulario `llm`/`anthropic` (`llm-anthropic-0-29-topic-match-espurio-por-vocabulario`).
+Es la evidencia primaria (y única) del clúster; las notas de contenido-operativo y de singleton sin corroboración la toman como fuente. El match con el brief es el que registra `llm-anthropic-0-29-topic-match-espurio-por-vocabulario`.
 
 ## Links
 - supports → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]

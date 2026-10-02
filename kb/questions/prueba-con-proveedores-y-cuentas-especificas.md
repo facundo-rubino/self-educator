@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-02'
 sources:
 - 19cb8032958cd964
 tags:
+- metodologia
 - politica-de-proveedor
 - rechazo
+- refusal-policy
+- reproducibilidad
+- vendors
 - versionado
-- metodologia
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -31,21 +34,26 @@ links:
   type: relates_to
 - to: stale-policy-rip-current-flows
   type: relates_to
+- to: spike-por-proveedor-para-comportamiento-de-rechazo
+  type: supports
+- to: probe-de-rechazo-por-identidad-en-produccion
+  type: supports
 ---
 
 ## What it is
-The observed refusal split may be version-, account-, or region-dependent, and the document gives no way to tell. La frase reporta un contraste ChatGPT/Claude vs. Gemini, pero el propio ítem carece de versión, cuenta, región y fecha [19cb8032958cd964].
+El reporte describe una divergencia de rechazo entre ChatGPT, Claude y Gemini basada en una sola frase sin fecha, versión, cuenta ni región [19cb8032958cd964]. Esa observación no es generalizable.
 
 ## Evidence
-- El documento no incluye versión de modelo, tipo de cuenta, región ni fecha para las conductas de rechazo descritas — source: 19cb8032958cd964.
-- El analista y la crítica señalan ambos la ausencia de metodología y de anclaje temporal; el riesgo de fragilidad temporal es explícito — source: 19cb8032958cd964.
+- El contraste ChatGPT/Claude vs. Gemini se enuncia sin metodología, fecha ni prompt — source: 19cb8032958cd964
 
 ## Why it matters
-Las políticas de rechazo cambian con frecuencia, así que una conducta observada hoy puede estar invertida mañana (Gemini endureciendo, OpenAI relajando). Cualquier decisión de proveedor para un flujo de docencia o equipo requiere una sonda propia con versión y fecha.
+Las políticas de rechazo cambian con la versión, la cuenta y la región; hay que hacer un spike por proveedor antes de comprometer una feature.
 
-Extiende la nota sobre divergencia de rechazo por identidad sin metodología ni fecha. Se apoya en el patrón de divergencia de rechazo entre proveedores y en la nota sobre que las políticas obsoletas rompen flujos vigentes.
+Refuerza el patrón de spike por proveedor para comportamiento de rechazo y la nota específica de divergencia de rechazo. Se apoya en la nota de probe de rechazo por identidad en producción.
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-por-identidad-sin-metodologia-ni-fecha]]
 - relates_to → [[divergencia-de-rechazo-entre-proveedores]]
 - relates_to → [[stale-policy-rip-current-flows]]
+- supports → [[spike-por-proveedor-para-comportamiento-de-rechazo]]
+- supports → [[probe-de-rechazo-por-identidad-en-produccion]]

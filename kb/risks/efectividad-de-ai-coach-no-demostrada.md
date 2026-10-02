@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-30'
+updated: '2026-10-02'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -26,12 +26,13 @@ tags:
 - evidencia
 - generalizacion
 - inferencia
+- proyecto-personal
 - riesgo
 - un-solo-documento
 - validacion
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -60,17 +61,23 @@ links:
   type: relates_to
 - to: ai-coach-voz-a-voz-ensamblado-de-servicios
   type: relates_to
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: derived_from
+- to: efectividad-de-ai-coach-no-demostrada
+  type: relates_to
 ---
 
 ## What it is
-El documento no aporta outcomes, datos de coste o latencia, ni ninguna forma de evaluación del AI coach [49140f9d5133d3c7]. Por tanto no hay base para afirmar que cumpla su propósito declarado.
+Un proyecto personal de AI coach descrito como arquitectura (STT + TTS + LLM + número virtual) no aporta datos de resultados, efectividad, adopción ni metodología. Confundir disponibilidad tecnológica con efectividad es un modo de fallo documentado.
 
 ## Evidence
-- No hay outcomes, coste, latencia ni evaluación en el documento — source: 49140f9d5133d3c7
-- El documento solo enumera componentes e intención — source: 49140f9d5133d3c7
+- El documento es una entrada RSS con engagement=0: sin señales observadas de difusión o discusión — source: 49140f9d5133d3c7
+- El documento describe componentes, sin métricas ni evaluación de resultados — source: 49140f9d5133d3c7
 
 ## Why it matters
-Sin medición, cualquier claim de mejora de la atención o la productividad personal queda sin soporte. El artefacto documenta intención, no efecto [49140f9d5133d3c7].
+El sesgo de fuente única (un documento, engagement 0, corroboración 0.50, novelty 0.00) hace que cualquier hallazgo sea anecdótico y no replicado. Tratar este proyecto como evidencia sobre cómo un dev-líder hace mejor su trabajo excede lo que el documento afirma.
+
+Se deriva del ensamblado del AI coach por voz y se relaciona con el encuadre de productividad personal. Apoya la nota existente de que un proyecto personal de herramienta no es hallazgo de práctica profesional, y refuerza la línea de riesgo sobre efectividad de AI coach (ya registrada) en lugar de duplicarla.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
@@ -85,3 +92,5 @@ Sin medición, cualquier claim de mejora de la atención o la productividad pers
 - supports → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
 - relates_to → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- derived_from → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- relates_to → [[efectividad-de-ai-coach-no-demostrada]]

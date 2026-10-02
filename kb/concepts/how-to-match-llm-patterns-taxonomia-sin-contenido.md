@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-02'
 sources:
 - 0248fdb60811e91e
 tags:
+- ingesta
+- ingesta-truncada
 - llm-patterns
+- rss
 - rss-singleton
 - sin-contenido
-- ingesta
+- taxonomia-sin-validar
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -33,23 +36,29 @@ links:
   type: relates_to
 - to: restatement-de-titulo-no-es-hallazgo
   type: supports
+- to: how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: how-to-match-llm-patterns-titulo-como-match-lexico-sin-ejes-del-brief
+  type: relates_to
 ---
 
 ## What it is
-El único contenido verificable del documento [0248fdb60811e91e] es su título, «How to Match LLM Patterns to Problems», y una tagline que menciona distinguir LLMs externos vs. internos y patrones con datos vs. sin datos. No hay cuerpo ingerido, autor, metodología ni texto citado. Cualquier afirmación sobre una taxonomía de patrones LLM se deriva del titular, no del documento.
+El clúster de la señal «How to Match LLM Patterns to Problems» contiene un único documento de feed [0248fdb60811e91e], con engagement=0. Lo único verificable es el título y un subtítulo que propone dos ejes de clasificación: problemas con LLMs externos vs. internos, y patrones de datos vs. no-datos. No hay texto que describa la taxonomía, los criterios de decisión ni casos concretos.
 
 ## Evidence
-- El documento se titula «How to Match LLM Patterns to Problems» y lleva una tagline sobre externo/interno y datos/no-datos — source: 0248fdb60811e91e
-- Es un singleton de RSS: no hay documentos corroborantes en el clúster — source: 0248fdb60811e91e
-- El clúster tiene engagement cero, novelty 0.00 y relevance 0.33 — source: 0248fdb60811e91e
+- El clúster consiste en un único documento RSS titulado «How to Match LLM Patterns to Problems», con engagement=0 — source: 0248fdb60811e91e.
+- El subtítulo propone distinguir problemas con LLMs externos vs. internos, y patrones de datos vs. no-datos como ejes de clasificación — source: 0248fdb60811e91e.
+- El documento no aporta texto que detalle criterios, casos o validación; solo se dispone de título y subtítulo — source: 0248fdb60811e91e.
 
 ## Why it matters
-Fija el límite de lo que este clúster puede sostener: una taxonomía descrita en un titular no es una taxonomía disponible. Sin cuerpo, la nota solo sirve como candidata a recuperación de texto completo o a descarte, nunca como claim sobre cómo elegir patrones LLM.
+No puede reconstruirse el argumento del artículo ni afirmarse nada sobre su validez técnica. Cualquier uso de la taxonomía (por ejemplo, como criterio de secuenciamiento o apalancamiento en equipos chicos) sería una inferencia del analista desde el título, no evidencia del documento.
 
-Se relaciona con la nota que ya evalúa este ítem como candidato a retrieval o a descarte, cuyo criterio comparte. Apoya a la nota sobre la ausencia de contenido ingerido (misma evidencia, mismo límite). Se relaciona con la nota sobre la taxonomía de dos ejes externo/interno y datos/no-datos, que describe el mismo artefacto de ingest. Es un caso de la regla general «reformular el título no es un hallazgo».
+Se relaciona con la nota de riesgo sobre el mismo ítem sin contenido ingerido y con el match léxico que lo trajo al brief. La taxonomía de dos ejes (externo/interno, datos/no-datos) existe aquí solo como descripción de la ingesta; su validación queda como nota aparte.
 
 ## Links
 - relates_to → [[how-to-match-llm-patterns-candidato-a-retrieval-o-descarte]]
 - supports → [[how-to-match-llm-patterns-titulo-sin-contenido-ingerido]]
 - relates_to → [[taxonomia-dos-ejes-llm-externo-interno-datos]]
 - supports → [[restatement-de-titulo-no-es-hallazgo]]
+- relates_to → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
+- relates_to → [[how-to-match-llm-patterns-titulo-como-match-lexico-sin-ejes-del-brief]]

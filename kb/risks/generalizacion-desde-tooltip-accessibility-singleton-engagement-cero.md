@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-10-02'
 sources:
 - ded7560510c137bc
 tags:
-- singleton
+- accesibilidad
+- brief
 - engagement-cero
+- evidencia
 - generalizacion
 - metodologia
+- singleton
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -31,22 +34,31 @@ links:
   type: supports
 - to: corroboracion-y-velocidad-como-artefactos-del-scorer
   type: relates_to
+- to: aria-describedby-no-basta-para-tooltips-accesibles
+  type: supports
+- to: accesibilidad-de-tooltip-sin-corroboracion-ni-engagement-no-es-hallazgo
+  type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: relates_to
 ---
 
 ## What it is
-Un clúster de un solo documento, sin engagement, sin corroboración independiente y con novelty=0.00 no puede sostener ninguna generalización sobre práctica de ingeniería, accesibilidad front-end ni conducta de la comunidad. El corpus disponible no contiene un segundo ítem que permita triangular.
+Extraer una conclusión general desde este clúster supone apoyarse en una única fuente no corroborada, lo que constituye evidencia débil. El post es además extremadamente corto (`aria-describedby isn't always enough`), de modo que el error técnico real y su fix no están descritos (ded7560510c137bc).
 
 ## Evidence
-- El clúster consiste en un único ítem RSS — source: ded7560510c137bc
-- El documento registró engagement cero en el feed — source: ded7560510c137bc
-- Corroboration=0.50 con un solo doc: no evaluable más allá del ítem único — source: ded7560510c137bc
+- Clúster de un único documento — source: ded7560510c137bc
+- Sin métricas de engagement — source: ded7560510c137bc
+- Sin detalle del error ni del fix aplicado: interpretar qué significa sería especulación, no evidencia — source: ded7560510c137bc
 
 ## Why it matters
-Un singleton sin corroboración es la forma más débil de evidencia del pipeline: puede señalizar que un tema existe, pero no que una práctica se extienda ni que una regla se sostenga. La acción correcta es dejarlo como evidencia marginal de oficio o descartarlo, no inflarlo.
+Cualquier generalización sobre práctica de accesibilidad, sobre el error cometido o sobre la disciplina de mantenimiento del oficio extraída de este ítem sería invención. El modo de fallo es tratar la coincidencia léxica (`tooltip`, `accessibility`, `fixing`) con el cajón de oficio del brief como una conexión sustantiva.
 
-Instancia el riesgo genérico de generalización desde clústeres de un solo documento y la nota ya existente sobre que el engagement cero en este caso no sostiene generalización. También conecta con el patrón de que corroboración y velocidad suelen ser artefactos del scorer, no evidencia.
+Sostiene la nota sobre la afirmación de `aria-describedby`, que es el único contenido verificable. Se relaciona con la nota sobre clústeres de un solo documento sin engagement, que es el problema estructural aquí, y con la pregunta sobre el estatus de hallazgo del caso de tooltip.
 
 ## Links
 - supports → [[fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[corroboracion-y-velocidad-como-artefactos-del-scorer]]
+- supports → [[aria-describedby-no-basta-para-tooltips-accesibles]]
+- relates_to → [[accesibilidad-de-tooltip-sin-corroboracion-ni-engagement-no-es-hallazgo]]
+- relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]

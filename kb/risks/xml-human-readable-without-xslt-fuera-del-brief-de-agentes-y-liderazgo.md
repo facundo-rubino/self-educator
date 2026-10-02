@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-10-02'
 sources:
 - 1bfe45ede61ee575
 tags:
+- alcance
 - brief
 - fuera-de-alcance
+- ruido-de-ingesta
 - xml
 - xslt
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -30,22 +32,28 @@ links:
   type: relates_to
 - to: xml-human-readable-entra-por-coincidencia-lexica
   type: relates_to
+- to: xml-human-readable-sin-xslt-solo-afirmacion-javascript
+  type: derived_from
+- to: xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de ponderación: incluir este ítem con peso en el brief de agentes de IA, liderazgo técnico, oficio de software engineering y productividad desvía el informe. El documento no trata agentes, liderazgo, estimación, secuenciamiento ni estudio; trata presentación de XML [1bfe45ede61ee575].
+La señal [1bfe45ede61ee575] roza tangencialmente el «oficio de software engineering» por la manipulación de XML, pero no toca ninguno de los ejes operativos del brief: agentes de IA aplicados a programar, liderazgo técnico, estimación, secuenciamiento, docencia o productividad.
 
 ## Evidence
-- El documento solo cubre hacer XML legible para humanos evitando XSLT — source: 1bfe45ede61ee575
-- Relevancia 0.33, por debajo del punto medio del scorer — source: 1bfe45ede61ee575
-- Ninguno de los ejes declarados del topic (agentes de IA, liderazgo de equipos chicos, oficio, productividad) aparece en el contenido ingerido — source: 1bfe45ede61ee575
+- El cuerpo recuperado no contiene metodología, datos ni benchmarks — source: 1bfe45ede61ee575
+- No hay contexto docente, de gestión de equipos ni de agentes de IA — source: 1bfe45ede61ee575
+- novelty=0.00, corroboration=0.50, un solo documento de evidencia — source: 1bfe45ede61ee575
 
 ## Why it matters
-Marca el techo de uso de esta señal: como anécdota sobre la forma de un titular, no como evidencia de práctica. Ponderarla alto sesgaría el informe hacia tooling de XML irrelevante al brief.
+Marca el límite: este ítem no justifica cupo en un brief con esos ejes. Registrar el fuera-de-alcance evita que un futuro pase de compilación lo recicle como hallazgo de oficio.
 
-`supports` la nota sobre el título sin contenido ingerido. `relates_to` las notas de exclusión por brief ya existentes sobre XSLT y sobre la coincidencia léxica de entrada.
+Se deriva del análisis de contenido de `xml-human-readable-sin-xslt-solo-afirmacion-javascript`. Comparte causa con `xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro` y con el descarte previo registrado en `xslt-fuera-del-brief-de-agentes-y-liderazgo`.
 
 ## Links
 - supports → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
 - relates_to → [[xslt-fuera-del-brief-de-agentes-y-liderazgo]]
 - relates_to → [[xml-human-readable-entra-por-coincidencia-lexica]]
+- derived_from → [[xml-human-readable-sin-xslt-solo-afirmacion-javascript]]
+- relates_to → [[xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro]]

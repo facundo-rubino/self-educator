@@ -10,18 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-28'
-updated: '2026-09-28'
+updated: '2026-10-02'
 sources:
 - 1bfe45ede61ee575
 tags:
+- afirmacion-sin-cuerpo
+- ingesta
+- javascript
+- senal-debil
 - xml
 - xslt
-- javascript
-- ingesta
-- afirmacion-sin-cuerpo
 base_confidence: 0.9
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -34,23 +35,26 @@ links:
   type: relates_to
 - to: xml-human-readable-without-xslt-fuera-del-brief-de-agentes-y-liderazgo
   type: relates_to
+- to: xml-human-readable-entra-por-coincidencia-lexica
+  type: relates_to
 ---
 
 ## What it is
-El documento ingerido bajo el título «Making XML human-readable without XSLT» consiste en ese título y un cuerpo de seis palabras: «JavaScript is right there.» No hay código, arquitectura, comparación ni técnica demostrada. El texto afirma implícitamente JavaScript como reemplazo de XSLT para presentar XML sin elaborar, ejemplificar ni justificar.
+El documento [1bfe45ede61ee575] se titula «Making XML human-readable without XSLT» y su único contenido sustantivo recuperado es la frase «JavaScript is right there.» No hay método, código, benchmark ni argumento más allá de esa línea.
 
 ## Evidence
-- El documento completo consta del título y el cuerpo «JavaScript is right there.» — source: 1bfe45ede61ee575
-- El documento afirma JavaScript como reemplazo implícito de XSLT sin elaboración, ejemplo ni justificación — source: 1bfe45ede61ee575
-- Es una entrada de RSS con engagement=0, sin interacción posterior observada — source: 1bfe45ede61ee575
+- El documento se titula «Making XML human-readable without XSLT» — source: 1bfe45ede61ee575
+- El único contenido sustantivo recuperado es la frase «JavaScript is right there.» — source: 1bfe45ede61ee575
+- Proviene de una fuente RSS y registra engagement=0 — source: 1bfe45ede61ee575
 
 ## Why it matters
-Establece el límite superior de lo extraíble de este ítem: una opinión de una línea, no un método. Cualquier nota derivada que describa una técnica estaría inventando el contenido ausente.
+Describe exactamente qué evidencia existe (una aserción de una línea) y qué no existe (método, comparación XSLT vs JavaScript, datos de legibilidad). Cualquier claim técnico o pedagógico atribuido a este documento excede lo ingerido.
 
-Se relaciona con las notas existentes del mismo ítem (`xml-human-readable-without-xslt-afirmacion-sin-cuerpo`, `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`) porque todas describen el mismo artefacto de ingesta. Conecta con `xml-pretexto-lexico-javascript-en-el-runtime`, que ya nombra el patrón de «JavaScript is right there» como pretexto léxico. Y con `xml-human-readable-without-xslt-fuera-del-brief-de-agentes-y-liderazgo`, que fija su posición respecto al brief.
+Misma señal que `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`, y satélite de `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`. Entra al corpus por solapamiento léxico (XML, JavaScript) con el eje de oficio, recogido en `xml-human-readable-entra-por-coincidencia-lexica`.
 
 ## Links
 - relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
 - relates_to → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
 - relates_to → [[xml-pretexto-lexico-javascript-en-el-runtime]]
 - relates_to → [[xml-human-readable-without-xslt-fuera-del-brief-de-agentes-y-liderazgo]]
+- relates_to → [[xml-human-readable-entra-por-coincidencia-lexica]]

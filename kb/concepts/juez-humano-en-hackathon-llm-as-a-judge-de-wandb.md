@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-28'
+updated: '2026-10-02'
 sources:
 - d2a0c86ca8027978
 tags:
@@ -27,7 +27,7 @@ tags:
 - weave
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -68,20 +68,25 @@ links:
   type: relates_to
 - to: criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido
   type: supports
+- to: juez-humano-we-and-b-llm-evaluator-hackathon
+  type: relates_to
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb-engagement-cero
+  type: relates_to
+- to: wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo
+  type: relates_to
 ---
 
 ## What it is
-Un ítem RSS cuyo único contenido es el título «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon». El documento registra que el autor actuó como juez humano en un hackathon de Weights & Biases sobre LLM-as-a-judge. No hay cuerpo, metodología ni hallazgos.
+El único contenido sustantivo del ítem RSS [d2a0c86ca8027978] es una autodescripción: el autor afirma haber actuado como juez humano en el «Weights & Biases LLM-as-a-Judge Hackathon». El documento no aporta detalle sobre el evento, los proyectos juzgados, los criterios de evaluación ni ningún insight metodológico.
 
 ## Evidence
-- El documento consiste solo en el título/fragmento «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge», sin cuerpo extraído — source: d2a0c86ca8027978
-- Procede de una fuente RSS con engagement=0, sin señal de interacción observada — source: d2a0c86ca8027978
-- Describe el rol del autor como juez humano en un hackathon de Weights & Biases sobre LLM-as-a-judge — source: d2a0c86ca8027978
+- El documento consiste únicamente en la autodescripción del autor como juez humano en el hackathon; no contiene detalle adicional sobre evento, criterios de juicio o resultados — source: d2a0c86ca8027978
+- El artefacto es un ítem de origen RSS con engagement=0, sin señal observada de engagement de lectores — source: d2a0c86ca8027978
 
 ## Why it matters
-El ítem documenta únicamente un rol declarado (juez humano en un hackathon de evaluación de LLM). No aporta hechos sobre agentes de IA para programar, liderazgo técnico, estimación, secuenciamiento, alcance, docencia ni oficio. Cualquier afirmación más fuerte —que juzgar evaluadores de LLM mejora el trabajo de un dev-líder— sería fabricada a partir del título.
+Señala una proximidad biográfica del autor al trabajo de evaluación de LLMs, pero no constituye evidencia sobre práctica de ingeniería, liderazgo técnico ni evaluación aplicada. Cualquier generalización sobre LLM-as-a-judge a partir de este clúster carece de base documental.
 
-`derived_from` las dos notas existentes sobre el hackathon de W&B, que ya registran que solo existe como artefacto de título RSS sin cuerpo. `supports` la nota sobre el «juez humano» como rol declarado sin contenido metodológico y la que señala que los criterios de juicio del hackathon no vienen con cuerpo ingerido. `relates_to` el falso match entre LLM-as-a-judge y el brief de agentes y liderazgo.
+Se relaciona con la nota existente del mismo clúster (`juez-humano-we-and-b-llm-evaluator-hackathon`), con la nota de engagement cero del fragmento y con el stub de título sin cuerpo; las tres describen el mismo artefacto desde ángulos distintos (rol declarado, métrica de engagement, ausencia de cuerpo).
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
@@ -102,3 +107,6 @@ El ítem documenta únicamente un rol declarado (juez humano en un hackathon de 
 - derived_from → [[wandb-llm-as-a-judge-hackathon-sin-corroboracion]]
 - relates_to → [[falso-match-llm-as-a-judge-evaluacion-vs-brief-de-agentes-y-liderazgo]]
 - supports → [[criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido]]
+- relates_to → [[juez-humano-we-and-b-llm-evaluator-hackathon]]
+- relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb-engagement-cero]]
+- relates_to → [[wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo]]

@@ -9,11 +9,12 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-28'
+updated: '2026-10-02'
 sources:
 - 19cb8032958cd964
 tags:
 - afirmacion-de-novedad
+- face-recognition
 - figuras-publicas
 - linea-base
 - multimodal
@@ -24,7 +25,7 @@ tags:
 - vision
 base_confidence: 0.4
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -47,18 +48,22 @@ links:
   type: relates_to
 - to: afirmacion-de-novedad-sin-linea-base
   type: relates_to
+- to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: supports
+- to: afirmacion-de-capacidad-multimodal-sin-metodologia
+  type: supports
 ---
 
 ## What it is
-El artículo de novedad de la afirmación —«can now»— no está establecido. Los modelos con visión llevan tiempo reconociendo personas en imágenes; lo que varía entre proveedores es si la identificación se permite o se rechaza. Sin línea base, «ahora» describe un cambio de política percibido, no una capacidad que antes no existiera.
+El crítico del reporte señala que la capacidad subyacente (reconocimiento facial de figuras públicas) tiene décadas de antigüedad y ya era atribuible a sistemas de visión por computadora dedicados [19cb8032958cd964]. Llamarla un hallazgo «novedoso» es circular.
 
 ## Evidence
-- La afirmación ingerida se enuncia como capacidad nueva («LLMs can now identify public figures in images») sin metodología, sin fijación de versión y sin condiciones de prueba — source: 19cb8032958cd964
+- «The underlying capability (face recognition of public figures) is decades old and already attributable to dedicated CV systems» — source: 19cb8032958cd964
 
 ## Why it matters
-Si el cambio real es de cumplimiento y no de capacidad, entonces el eje de la investigación debería ser el comportamiento de rechazo por proveedor y su estabilidad, no la celebración de un umbral de capacidad cruzado. La distinción decide qué se vigila y con qué frecuencia.
+El «ahora» del titular no tiene línea base: se confunde una capacidad antigua con una novedad. Sin línea base, un claim de «ahora» no es verificable.
 
-Se relaciona con `identificar-no-es-reconocer-en-la-fuente`, que fija que «identificar» en la fuente significa «no rechazar» y no «reconocer». Se relaciona con `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` porque ambos cuestionan la lectura del titular, y con `afirmacion-de-novedad-sin-linea-base`, que generaliza el problema al «now» sin referencia.
+Refuerza las notas de riesgo sobre afirmar capacidad desde un titular RSS sobre identificación y sobre afirmación de capacidad multimodal sin metodología.
 
 ## Links
 - supports → [[afirmacion-de-novedad-sin-linea-base]]
@@ -70,3 +75,5 @@ Se relaciona con `identificar-no-es-reconocer-en-la-fuente`, que fija que «iden
 - relates_to → [[identificar-no-es-reconocer-en-la-fuente]]
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
+- supports → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- supports → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]

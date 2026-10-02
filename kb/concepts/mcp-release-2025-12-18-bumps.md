@@ -10,16 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-02'
 sources:
 - 2221814efbefaa3b
 tags:
+- changelog
 - mcp
+- release
 - releases
 - versionado
 base_confidence: 0.78
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -28,19 +30,22 @@ links:
   type: supports
 - to: mcp-roster-de-paquetes-varia-entre-releases
   type: supports
+- to: mcp-releases-versionado-por-fecha-subconjunto-varia
+  type: supports
 ---
 
 ## What it is
-La release v2025.12.18 bumpea server-sequential-thinking, server-everything, server-filesystem y mcp-server-git.
+El release 2025.12.18 bumpea server-sequential-thinking, server-everything, server-filesystem y mcp-server-git a v2025.12.18, dejando fuera server-memory respecto al release anterior de la serie.
 
 ## Evidence
-- v2025.12.18 bumpea server-sequential-thinking, server-everything, server-filesystem y mcp-server-git — source: 2221814efbefaa3b
+- El release 2025.12.18 bumpea server-sequential-thinking, server-everything, server-filesystem y mcp-server-git a v2025.12.18, quitando server-memory de la lista — source: 2221814efbefaa3b
 
 ## Why it matters
-Es una de las releases que sostiene la observación de que el conjunto de paquetes publicados varía entre versiones, no es un bundle fijo.
+Marca un cambio de composición del conjunto publicado: cuatro paquetes en lugar de cinco, con una caída de server-memory.
 
-Refuerza el patrón de roster variable entre releases y el versionado por fecha.
+`mcp-releases-versionado-por-fecha-subconjunto-varia` recoge este cambio de composición como patrón de la serie.
 
 ## Links
 - supports → [[mcp-servers-versionado-por-fecha]]
 - supports → [[mcp-roster-de-paquetes-varia-entre-releases]]
+- supports → [[mcp-releases-versionado-por-fecha-subconjunto-varia]]

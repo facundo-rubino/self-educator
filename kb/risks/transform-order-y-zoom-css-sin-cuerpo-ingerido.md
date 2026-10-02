@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-09-28'
+updated: '2026-10-02'
 sources:
 - b0df1f50a76ba564
 tags:
+- artefacto-de-pipeline
 - css
 - evidencia
 - evidencia-ausente
@@ -24,9 +25,10 @@ tags:
 - ingesta-truncada
 - pipeline
 - riesgo
+- transform
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -63,19 +65,39 @@ links:
   type: relates_to
 - to: argumento-ex-silentio-en-corpus-truncado
   type: relates_to
+- to: css-transform-order-importa-a-veces-sin-detalle-de-casos
+  type: relates_to
+- to: css-transform-order-importa-solo-a-veces
+  type: relates_to
+- to: animating-zooming-css-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: orden-de-transform-importa-a-veces-sin-detalle-de-casos
+  type: relates_to
+- to: transform-order-css-condicional-sin-casos-de-excepcion
+  type: relates_to
+- to: transform-order-zoom-coincidencia-lexica-con-craft
+  type: relates_to
+- to: regla-css-desde-solo-titulo-es-inferencia
+  type: supports
+- to: animating-zooming-css-singleton-sin-engagement
+  type: relates_to
+- to: animating-zooming-css-titulo-con-documento-unico-engagement-cero
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de compilación: la única evidencia de este clúster es un título. Cualquier nota que afirme cómo se comporta el orden de `transform` bajo zoom estaría escrita desde memoria, no desde el documento.
+El único documento del clúster es un ítem RSS titulado «Animating zooming using CSS: transform order is important… sometimes» [b0df1f50a76ba564]. No hay cuerpo ingerido: lo único verificable en el clúster es lo que el propio título enuncia, con la cautela «sometimes» incluida. Ninguna explicación de mecanismo, ningún orden concreto de funciones `transform` y ningún caso de excepción están disponibles en el material ingestado [b0df1f50a76ba564].
 
 ## Evidence
-- El clúster tiene un único miembro con engagement=0 y sin cuerpo ingerido — source: b0df1f50a76ba564
-- La condicionalidad del título («sometimes») queda sin condiciones especificadas, por lo que no puede confirmarse ni refutarse — source: b0df1f50a76ba564
+- El título afirma que el orden de `transform` importa al animar zoom con CSS — source: b0df1f50a76ba564
+- El título matiza con «sometimes»: la regla sería condicional, no absoluta — source: b0df1f50a76ba564
+- Es un ítem de feed RSS con engagement cero, recuperado a relevance 0.33 — source: b0df1f50a76ba564
+- El clúster no contiene ningún documento sobre agentes de IA para programar, gestionar o enseñar, ni sobre liderazgo de equipos chicos — source: b0df1f50a76ba564
 
 ## Why it matters
-Un downstream que cite este clúster sobrestima una fuente única y no leída. Además, la relevancia baja (0.33) frente al brief sugiere que admitirlo diluye el foco en agentes de IA, liderazgo y productividad sin aportar señal.
+Cualquier afirmación de mecanismo («el orden X produce Y en zoom») inferida desde este clúster sería invención: el cuerpo no está ingerido [b0df1f50a76ba564]. El ítem es utilizable, como mucho, como pista a inspeccionar en la fuente, no como hallazgo establecido. Además, la conexión con el brief de agentes, liderazgo y docencia es solo el cajón genérico de «oficio de software engineering»: ningún eje sustantivo del brief queda cubierto por este clúster [b0df1f50a76ba564].
 
-Deriva de `transform-order-en-css-afecta-el-zoom`, la nota que registra el claim. Comparte modo de fallo con `reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin` (construir lecturas desde un fragmento sin contexto) y con `argumento-ex-silentio-en-corpus-truncado` (tratar ausencia de cuerpo como si autorizara inferencias).
+Contradice a `transform-order-en-css-afecta-el-zoom` en el sentido de que aquella nota enuncia el efecto sobre el zoom como hecho, mientras que aquí solo hay un titular matizado y sin cuerpo que lo respalde. Se relaciona con `transform-order-solo-importa-con-multiples-funciones` y con `css-transform-order-importa-a-veces-sin-detalle-de-casos`/`css-transform-order-importa-solo-a-veces`: comparten el mismo hueco — regla condicional enunciada sin condiciones. Apoya a `mecanica-css-afirmada-desde-solo-titulo-rss` y `regla-css-desde-solo-titulo-es-inferencia`: este documento es un caso concreto de ese modo de fallo. Se relaciona con las otras notas de riesgo del mismo ítem (`animating-zooming-css-titulo-sin-contenido-ingerido`, `animating-zooming-css-singleton-sin-engagement`, `animating-zooming-css-titulo-con-documento-unico-engagement-cero`) por compartir la misma fuente única y las mismas limitaciones.
 
 ## Links
 - supports → [[mecanica-css-afirmada-desde-solo-titulo-rss]]
@@ -94,3 +116,12 @@ Deriva de `transform-order-en-css-afecta-el-zoom`, la nota que registra el claim
 - derived_from → [[transform-order-en-css-afecta-el-zoom]]
 - relates_to → [[reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin]]
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
+- relates_to → [[css-transform-order-importa-a-veces-sin-detalle-de-casos]]
+- relates_to → [[css-transform-order-importa-solo-a-veces]]
+- relates_to → [[animating-zooming-css-titulo-sin-contenido-ingerido]]
+- relates_to → [[orden-de-transform-importa-a-veces-sin-detalle-de-casos]]
+- relates_to → [[transform-order-css-condicional-sin-casos-de-excepcion]]
+- relates_to → [[transform-order-zoom-coincidencia-lexica-con-craft]]
+- supports → [[regla-css-desde-solo-titulo-es-inferencia]]
+- relates_to → [[animating-zooming-css-singleton-sin-engagement]]
+- relates_to → [[animating-zooming-css-titulo-con-documento-unico-engagement-cero]]

@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-02'
 sources:
 - d2a0c86ca8027978
 tags:
+- evaluacion
+- gap-de-evidencia
 - hackathon
-- wandb
 - ingesta-truncada
+- wandb
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -27,20 +29,26 @@ links:
   type: derived_from
 - to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
   type: supports
+- to: criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido-2
+  type: relates_to
+- to: analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub
+  type: relates_to
 ---
 
 ## What it is
-El clúster declara que no hay descripción de criterios de juicio, cuenta de lo construido ni conclusiones extraíbles. No puede determinarse si esa ausencia refleja el estado real de la fuente o un fallo de ingesta del pipeline.
+El clúster del hackathon de Weights & Biases no responde qué criterios se usaron para juzgar, cómo se estructuró la evaluación ni qué se aprendió. El reporte declara explícitamente que el documento no contiene criterios de juicio, proyectos ni insight metodológico.
 
 ## Evidence
-- El clúster afirma que no hay contenido sustantivo: ni descripción de criterios de juicio, ni cuenta de lo construido, ni conclusiones — source: d2a0c86ca8027978
-- El documento muestra novelty=0.00 y corroboration=0.50, sin documentos corroborantes — source: d2a0c86ca8027978
+- El documento no contiene detalle sobre los proyectos juzgados, los criterios de evaluación ni ningún insight metodológico — source: d2a0c86ca8027978
+- `relevance=0.67` no está respaldado por evidencia extraíble del documento — source: d2a0c86ca8027978
 
 ## Why it matters
-Si el snippet solo no fue recuperado o parseado, declarar «sin evidencia utilizable» sería un artefacto de procesamiento disfrazado de juicio sustantivo. Queda abierto si el documento es un stub, un error de feed o un anuncio, y si su tema declarado se desarrolla en algún lugar del corpus.
+Si el KB quiere usar este clúster para algo relacionado con evaluación, la pregunta queda abierta: haría falta recuperar el cuerpo completo del documento o fuentes independientes del evento. La brecha entre el score de relevancia y el contenido cero sugiere que el scorer keya sobre solapamiento de entidades («LLM», «hackathon») más que sobre claims que sostengan el brief.
 
-Depende de `juez-humano-en-hackathon-llm-as-a-judge-de-wandb` para el hecho de la ingesta. Refuerza `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss`: la evaluación del clúster ocurrió sobre un cuerpo que el pipeline no recuperó.
+Deriva de la nota del juez humano en el hackathon. Se relaciona con la variante «2» del mismo gap y con la nota que advierte que la analogía LLM-as-a-Judge a agentes no está sostenida por este stub.
 
 ## Links
 - derived_from → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- relates_to → [[criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido-2]]
+- relates_to → [[analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub]]

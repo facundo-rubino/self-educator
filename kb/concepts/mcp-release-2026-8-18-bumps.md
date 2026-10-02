@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-02'
 sources:
 - 9750590bbfe6b285
 tags:
+- changelog
 - mcp
+- release
 - releases
 - versionado
 base_confidence: 0.78
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -27,19 +29,22 @@ links:
   type: supports
 - to: mcp-release-2026-7-10-bumps
   type: relates_to
+- to: mcp-roster-de-paquetes-varia-entre-releases
+  type: supports
 ---
 
 ## What it is
-La release v2026.8.18 bumpea server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git.
+El release 2026.8.18 lista server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git, todos a v2026.8.18.
 
 ## Evidence
-- v2026.8.18 bumpea server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git — source: 9750590bbfe6b285
+- El release 2026.8.18 lista server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git a v2026.8.18 — source: 9750590bbfe6b285
 
 ## Why it matters
-Ejemplo inmediatamente anterior a la 2026.8.31; junto con 2026.7.10 muestra la aparición tardía de mcp-server-fetch en el muestreo.
+Consolida la presencia de time y fetch tras su aparición en 2026.7.10, con git todavía presente antes de desaparecer en 2026.8.31.
 
-Relacionada con 2026.7.10 por solapamiento de paquetes tardíos y con 2026.8.31 por continuidad temporal.
+`mcp-roster-de-paquetes-varia-entre-releases` recoge la composición cambiante que este release ilustra.
 
 ## Links
 - supports → [[mcp-servers-versionado-por-fecha]]
 - relates_to → [[mcp-release-2026-7-10-bumps]]
+- supports → [[mcp-roster-de-paquetes-varia-entre-releases]]

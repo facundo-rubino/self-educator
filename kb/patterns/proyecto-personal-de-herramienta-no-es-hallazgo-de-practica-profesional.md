@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-10-02'
 sources:
 - 49140f9d5133d3c7
+- abf61eeec75462f9
 tags:
+- engagement
 - epistemics
+- evidencia-debil
+- pipeline
+- practica-profesional
 - scope
 - single-source
-- engagement
 base_confidence: 0.3
 half_life_days: 365
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -32,22 +36,28 @@ links:
   type: relates_to
 - to: ruido-de-agregacion-como-senal-falsa
   type: relates_to
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: relates_to
+- to: aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion
+  type: relates_to
 ---
 
 ## What it is
-Regularidad del pipeline: un documento único, de fuente rss, con engagement=0 y novelty=0.00, que describe algo que su autor construyó para sí mismo, no sostiene ninguna afirmación sobre práctica profesional. La exclusión justificada no es un hallazgo positivo.
+Un artefacto publicado (post, release, leak) puede ser interesante en sí mismo y, a la vez, no ser evidencia de práctica profesional generalizable. La distinción importa cuando el brief pregunta cómo un dev que lidera y enseña hace mejor su trabajo: la respuesta no puede apoyarse en la existencia de un proyecto o una publicación sin corroboración de práctica.
 
 ## Evidence
-- El clúster consta de un único documento de fuente rss con engagement=0, sin corroboración interna de ninguna afirmación — source: 49140f9d5133d3c7
-- El documento no reporta resultados medidos, adopción ni efectividad — source: 49140f9d5133d3c7
+- Un único documento con engagement=0 y novelty=0.00 no sostiene ningún claim sobre práctica — source: abf61eeec75462f9
+- La evidencia disponible es un artefacto de ingesta, no una fuente verificable — source: abf61eeec75462f9
 
 ## Why it matters
-Da un criterio de descarte reutilizable: separar «alguien construyó algo» de «esto es evidencia de cómo se hace el trabajo». Aplicarlo evita poblar el grafo de notas basadas en autodescripción de un solo origen.
+Evita la confusión entre «alguien publicó algo» y «alguien practica de una manera». Es el filtro que separa señal útil para liderazgo/docencia de ruido de feed.
 
-Concreta `promocion-personal-no-es-evidencia-de-practica` y `single-document-cluster-engagement-cero-no-generaliza`. Es el complemento inverso de `ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo` (aquí la ausencia sí es concluyente porque el objeto declarado es personal) y una instancia de `ruido-de-agregacion-como-senal-falsa`.
+Se relaciona con `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica` y con la familia de riesgos sobre extrapolar de artefactos aislados a conclusiones de práctica.
 
 ## Links
 - relates_to → [[promocion-personal-no-es-evidencia-de-practica]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
 - relates_to → [[ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo]]
 - relates_to → [[ruido-de-agregacion-como-senal-falsa]]
+- relates_to → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- relates_to → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]

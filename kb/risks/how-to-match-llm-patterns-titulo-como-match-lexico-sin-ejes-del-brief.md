@@ -10,16 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-30'
-updated: '2026-09-30'
+updated: '2026-10-02'
 sources:
 - 0248fdb60811e91e
 tags:
-- match-lexico
-- relevancia-baja
 - brief
+- falso-positivo-lexico
+- match-lexico
+- relevance
+- relevancia-baja
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -30,22 +32,29 @@ links:
   type: relates_to
 - to: how-to-match-llm-patterns-to-problems-titulo-sin-contenido
   type: supports
+- to: how-to-match-llm-patterns-taxonomia-sin-contenido
+  type: derived_from
+- to: how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic
+  type: supports
+- to: matching-llm-patterns-relevancia-lexica-al-brief-de-agentes
+  type: supports
 ---
 
 ## What it is
-El ítem entró al brief por solapamiento de vocabulario: «LLM patterns» resuena con «agentes de IA aplicados a programar», pero no toca programación, gestión, docencia ni liderazgo técnico [0248fdb60811e91e]. Con relevance=0.33 y novelty=0.00, el match es léxico, no semántico [0248fdb60811e91e]. El clúster no sostiene ningún hallazgo sobre estimación, secuenciamiento, alcance ni organización personal [0248fdb60811e91e].
+El ítem entró al brief por el solapamiento entre «LLM patterns» y «agentes de IA». Ninguno de los ejes del brief (agentes aplicados a programar, gestionar o enseñar; liderazgo técnico; estimación; secuenciamiento; oficio) queda cubierto por el título y el subtítulo disponibles.
 
 ## Evidence
-- El clúster es un único ítem RSS con engagement=0 — fuente: 0248fdb60811e91e
-- relevance=0.33 y novelty=0.00: coincidencia de vocabulario, no desarrollo temático — fuente: 0248fdb60811e91e
-- El material ingerido no menciona ningún eje del brief ni la docencia entry-level, ya movida al profile `teaching` de # pogba — fuente: 0248fdb60811e91e
+- La señal tiene relevance=0.33 frente al brief de agentes, liderazgo y docencia, con un único documento y sin corroboración — source: 0248fdb60811e91e.
 
 ## Why it matters
-Tratar un título que contiene «LLM» como hallazgo sobre agentes aplicados al trabajo de un dev-líder infla el conteo de clústeres sin sumar señal. El ítem deben ser una pista para recuperar el texto completo o descartarse, no una evidencia.
+Compilar esta señal como contribución temática introduciría ruido de recuperación en el grafo. Su único valor posible es como candidato a retrieval de texto completo si alguna vez se ingiere el cuerpo, no como insight corroborado.
 
-Se deriva de `how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido`, que fija la falta de cuerpo. Comparte con `restatement-de-titulo-no-es-hallazgo` la mecánica circular de tomar la etiqueta por contenido. Sostiene `how-to-match-llm-patterns-to-problems-titulo-sin-contenido`, variante de la misma observación.
+Confirma el patrón de match léxico por vocabulario compartido. Se apoya en las notas de riesgo ya existentes sobre la baja relevancia de este ítem respecto al topic.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
 - relates_to → [[restatement-de-titulo-no-es-hallazgo]]
 - supports → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido]]
+- derived_from → [[how-to-match-llm-patterns-taxonomia-sin-contenido]]
+- supports → [[how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic]]
+- supports → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-30'
+updated: '2026-10-02'
 sources:
 - 31820ad25e39a34b
 tags:
@@ -17,12 +17,13 @@ tags:
 - identificador-de-modelo
 - llm
 - modelo
+- modelos
 - nombres-de-modelo
 - verificabilidad
 - verificacion
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -41,19 +42,21 @@ links:
   type: relates_to
 - to: claude-opus-5-5-identificador-no-verificable
   type: relates_to
+- to: etiqueta-de-modelo-gemma4-26b-a4b-no-verificable
+  type: relates_to
 ---
 
 ## What it is
-El nombre de modelo `claude-opus-5.5` aparece únicamente en el texto de este release [31820ad25e39a34b]. No viene acompañado de benchmarks, latencia, costo ni calidad de código generado que permitan situarlo frente a otros modelos.
+El identificador «Claude Opus 5.5» proviene únicamente del texto del release y no corresponde a ningún modelo público conocido. Podría ser un nombre provisional, un error de publicación o un artefacto de la fuente.
 
 ## Evidence
-- El documento solo declara compatibilidad con el identificador `claude-opus-5.5` y los tags `llm` y `anthropic` — source: 31820ad25e39a34b
-- El documento no reporta benchmarks, latencia, costo ni calidad de código generado — source: 31820ad25e39a34b
+- El nombre «Claude Opus 5.5» figura en el release como el modelo soportado por el plugin — source: 31820ad25e39a34b
+- No hay verificación independiente del identificador en el documento — source: 31820ad25e39a34b
 
 ## Why it matters
-Sin fuente independiente no se puede confirmar qué es ese identificador ni qué capacidades tiene. Cualquier inferencia sobre sus capacidades sería especulativa, y cualquier decisión de tooling basada en el nombre sería over-indexar en una etiqueta.
+Cualquier inferencia de capacidad, disponibilidad o roadmap a partir del nombre sería sobreinterpretación. Registrar el nombre como dato del release, no como modelo establecido.
 
-Deriva del anuncio de release (`llm-anthropic-0-29-anuncio-de-release`) y refuerza el patrón existente `riesgo-de-over-indexar-nombres-de-modelos`. Se relaciona con `claude-opus-5-5-identificador-no-verificable`, que documenta el mismo riesgo de identificador no verificable.
+Deriva del anuncio de release y refuerza el patrón general de no over-indexar un nombre de modelo sin evidencia.
 
 ## Links
 - contradicts → [[llm-anthropic-0-29-anuncio-de-release]]
@@ -63,3 +66,4 @@ Deriva del anuncio de release (`llm-anthropic-0-29-anuncio-de-release`) y refuer
 - supports → [[riesgo-de-over-indexar-nombres-de-modelos]]
 - relates_to → [[hy3-identidad-no-establecida]]
 - relates_to → [[claude-opus-5-5-identificador-no-verificable]]
+- relates_to → [[etiqueta-de-modelo-gemma4-26b-a4b-no-verificable]]

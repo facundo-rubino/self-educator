@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-30'
+updated: '2026-10-02'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -21,6 +21,7 @@ sources:
 - b9106690f5dfd849
 - ffbd76916d1dfdc5
 tags:
+- changelog
 - date-versioned
 - dependencias
 - mcp
@@ -31,7 +32,7 @@ tags:
 - versionado
 base_confidence: 0.78
 half_life_days: 180
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -51,17 +52,15 @@ links:
 ---
 
 ## What it is
-Nota de release automática del ecosistema MCP (Model Context Protocol) correspondiente a la fecha 2026.8.31. Lista versiones datadas de paquetes como `@modelcontextprotocol/server-filesystem`, `server-memory`, `server-sequential-thinking`, `server-everything`, `mcp-server-git`, `mcp-server-time` y `mcp-server-fetch`, con el mismo formato plantilla «Release : vX / Updated packages» y sin cuerpo argumental.
+El release 2026.8.31 publica server-filesystem, server-memory, server-sequential-thinking y server-everything, todos versionados v2026.8.31. mcp-server-git no aparece en esta entrada.
 
 ## Evidence
-- Se listan paquetes del ecosistema MCP: server-filesystem, server-memory, server-sequential-thinking, server-everything, además de mcp-server-git, mcp-server-time y mcp-server-fetch — source: ffbd76916d1dfdc5
-- El cluster contiene únicamente notas de release con el formato «Release : vX / Updated packages», sin cuerpo argumental ni texto temático — source: 30a26335a9988ba2
-- La composición de paquetes varía entre releases (algunos incluyen server-memory, otros mcp-server-time/fetch), lo que sugiere versionado independiente o agrupamiento de monorepo, no cambio temático — source: b9106690f5dfd849
+- El release 2026.8.31 bumpea server-filesystem, server-memory, server-sequential-thinking y server-everything a v2026.8.31; mcp-server-git no está incluido — source: 30a26335a9988ba2
 
 ## Why it matters
-Aporta un punto más a la serie de releases datadas, pero por sí sola no sustenta ninguna afirmación sobre capacidades nuevas, changelog detallado ni práctica de ingeniería. Es señal de infraestructura de tooling MCP, no de los ejes del brief (liderazgo, docencia, estimación, productividad).
+Es un punto de la serie date-versioned de MCP servers: permite registrar qué paquetes entran y salen del conjunto publicado por release.
 
-Deriva de la serie de cadencia alta MCP 2025.11–2026.8 (mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia) y respalda la observación de que el subconjunto de paquetes varía entre releases (mcp-releases-versionado-por-fecha-subconjunto-varia).
+`mcp-servers-versionado-por-fecha` describe el esquema de versionado que esta entrada ejemplifica. `release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica` es la lectura sobre qué evidencia aporta (ninguna sobre práctica).
 
 ## Links
 - supports → [[mcp-servers-versionado-por-fecha]]

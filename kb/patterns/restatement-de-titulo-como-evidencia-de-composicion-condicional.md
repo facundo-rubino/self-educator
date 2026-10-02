@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-24'
+updated: '2026-10-02'
 sources:
 - abf61eeec75462f9
 tags:
+- circularidad
 - evidencia-circular
 - evidencia-debil
 - metodo
@@ -22,7 +23,7 @@ tags:
 - restatement
 base_confidence: 0.5
 half_life_days: 365
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -43,20 +44,23 @@ links:
   type: relates_to
 - to: validacion-de-senal-por-contenido-no-por-titulo
   type: supports
+- to: restatement-de-titulo-no-es-hallazgo
+  type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: contradicts
 ---
 
 ## What it is
-Cuando una fuente dice que un system prompt se compone de «decenas de partes condicionales» y no aporta ninguna parte, condición o versión, lo que se está repitiendo es la definición de un system prompt modular, no un hallazgo sobre un producto concreto. La regularidad: el restatement de una descripción genérica se presenta como evidencia y sobrevive al filtrado por parecer específico.
+Cuando un documento sobre Claude Code afirma que su prompt tiene «docenas de partes condicionales», está reformulando una creencia previa muy extendida («prompt engineering como arquitectura de software») en lugar de aportar novedad. La novedad declarada es 0.00 y la evidencia es una única fuente no corroborada.
 
 ## Evidence
-- La única afirmación del clúster es que el system prompt de Claude Code se ensambla de decenas de partes condicionales, según una filtración — source: abf61eeec75462f9
-- El clúster tiene corroboración=0.50 y un único documento con engagement=0 — source: abf61eeec75462f9
-- El crítico la clasifica como «non-finding»: descripción de la arquitectura de un producto propietario, sin validación independiente ni medición — source: abf61eeec75462f9
+- Novelty=0.00 en un cluster de un solo documento con engagement=0 — source: abf61eeec75462f9
+- La descomposición en partes condicionales es un patrón conocido anecdóticamente, no un hallazgo del cluster — source: abf61eeec75462f9
 
 ## Why it matters
-Un dev que diseñe sus propios flujos con agentes obtiene de aquí solo la confirmación de algo ya sabido: los prompts de producto se componen por ramas. Confundir eso con evidencia sobre cómo se construye Claude Code infla el valor de la fuente y contamina el grafo con un `concept` que describe un mecanismo no observado.
+Reformular un patrón previo no lo valida en un caso concreto. La lección transferible («modularidad importa») es demasiado general para constituir evidencia sobre un producto específico, y proyectarla sobre detalles no verificados es sobreinterpretación.
 
-Es un caso particular de `restatement-de-titulo-no-es-hallazgo`, aplicado al vocabulario de prompts condicionales. Se relaciona con `ensamblado-condicional-de-prompts` (el patrón real) y con `prompt-condicional-conocimiento-comun-en-productos-llm` (el patrón ya conocido en productos LLM). Sustenta `prompt-modular-sin-mecanica-verificable` y comparte método con `validacion-de-senal-por-contenido-no-por-titulo`.
+Instancia específica del patrón general «restatement de título no es hallazgo». Contradice la presentación del claim como novedoso; se relaciona con la familia de riesgos de circularidad en la evidencia.
 
 ## Links
 - derived_from → [[restatement-de-titulo-no-es-hallazgo]]
@@ -67,3 +71,5 @@ Es un caso particular de `restatement-de-titulo-no-es-hallazgo`, aplicado al voc
 - supports → [[prompt-modular-sin-mecanica-verificable]]
 - relates_to → [[prompt-condicional-conocimiento-comun-en-productos-llm]]
 - supports → [[validacion-de-senal-por-contenido-no-por-titulo]]
+- relates_to → [[restatement-de-titulo-no-es-hallazgo]]
+- contradicts → [[claude-code-system-prompt-conditional-composition]]

@@ -9,18 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-21'
+updated: '2026-10-02'
 sources:
 - ded7560510c137bc
 tags:
 - accesibilidad
 - aria
 - frontend
+- oficio
 - tooltip
 - tooltips
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-10-02'
 provenance:
   scale: M
   query: null
@@ -33,22 +34,26 @@ links:
   type: relates_to
 - to: tooltip-accesible-no-basta-con-aria-describedby
   type: relates_to
+- to: criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo
+  type: supports
 ---
 
 ## What it is
-Un tooltip no queda accesible solo por asignarle `aria-describedby`. El único contenido ingerido que sostiene esto es la frase del propio post: «aria-describedby isn't always enough» — source: ded7560510c137bc. No hay en el corpus mecanismo, caso reproducible ni alcance declarado.
+La afirmación central del post es que `aria-describedby` no basta para que un tooltip sea accesible. Es un heurístico desnudo: no viene acompañado de mecanismo, ejemplo, ni especificación del fallo concreto (ded7560510c137bc).
 
 ## Evidence
-- El documento «Fixing my tooltip accessibility mistake» afirma que «aria-describedby isn't always enough» — source: ded7560510c137bc
-- El clúster consta de un único documento RSS con engagement=0 — source: ded7560510c137bc
+- El clúster consta de un único documento titulado «Fixing my tooltip accessibility mistake» — source: ded7560510c137bc
+- La única aserción de cuerpo es `aria-describedby isn't always enough` para la accesibilidad de tooltips — source: ded7560510c137bc
+- El documento no detalla cuál fue el error, qué fix se aplicó, ni en qué circunstancias surgió — source: ded7560510c137bc
 
 ## Why it matters
-Si la afirmación se sostiene, cualquier checklist que dé por resuelta la accesibilidad de un tooltip tras añadir `aria-describedby` está incompleta. Pero con una sola frase sin desarrollo no se puede decidir qué falta (foco, teclado, anuncio del rol, relación con el disparador): la nota marca la duda, no la resuelve.
+Refuerza un punto estrecho de oficio: los atributos ARIA como `aria-describedby` no son una solución completa para la accesibilidad de tooltips; puede requerirse trabajo adicional (gestión de foco, comportamiento de teclado, regiones vivas o patrones nativos). No hay evidencia en el clúster sobre agentes de IA, liderazgo técnico, estimación, docencia ni técnicas de estudio (ded7560510c137bc).
 
-Se relaciona con [[tooltip-accesible-no-basta-con-aria-describedby]], que registra la misma afirmación desde otro ángulo, y con [[aria-describedby-tooltip-sin-detalle-de-mecanismo]], que ya señalaba la ausencia de mecanismo y alcance en esta misma evidencia.
+Sostiene el patrón de que un criterio de accesibilidad se verifica con lector de pantalla, no con la presencia del atributo (ded7560510c137bc). Se relaciona con la nota sobre el fallo de `aria-describedby` en tooltips sin detalle de mecanismo, de la que esta es la cara concreta.
 
 ## Links
 - relates_to → [[relevancia-no-es-verdad]]
 - relates_to → [[aria-describedby-tooltip-sin-detalle-de-mecanismo]]
 - relates_to → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - relates_to → [[tooltip-accesible-no-basta-con-aria-describedby]]
+- supports → [[criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo]]

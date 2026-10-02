@@ -9,13 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-24'
+updated: '2026-10-02'
 sources:
 - d2a0c86ca8027978
 tags:
 - corroboracion
 - engagement
 - engagement-cero
+- evidencia-unica
 - hackathon
 - novelty
 - pipeline
@@ -24,7 +25,7 @@ tags:
 - wandb
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -41,19 +42,25 @@ links:
   type: relates_to
 - to: generalizacion-desde-cluster-de-un-solo-documento
   type: supports
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb
+  type: derived_from
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb-engagement-cero
+  type: relates_to
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: relates_to
 ---
 
 ## What it is
-El clúster consta de un único ítem RSS con engagement=0, corroboration=0.50, velocity=0.50 y novelty=0.00. Es una fuente única sin corroboración independiente.
+El clúster se sostiene en un solo documento con engagement=0 y novelty=0.00. Con `corroboration=0.50` y una única fuente, cualquier hallazgo derivado es irreproducible desde documentos independientes.
 
 ## Evidence
-- El documento muestra engagement=0, corroboration=0.50 y novelty=0.00, indicando ausencia de documentos corroborantes y de información nueva — source: d2a0c86ca8027978
-- No hay documentos adicionales en el clúster — source: d2a0c86ca8027978
+- El artefacto es un ítem RSS único con engagement=0 — source: d2a0c86ca8027978
+- El metadata de señal (novelty=0.00, corroboration=0.50, velocity=0.50) es consistente con un artefacto de baja información y fuente única — source: d2a0c86ca8027978
 
 ## Why it matters
-Tratar un ítem único de bajo engagement como tendencia sería un error: los propios scores advierten contra afirmaciones de patrón. El clúster debe registrarse como ruido respecto al brief, no como soporte de ninguna tesis.
+Rankear este clúster alto por su `relevance=0.67` puede desplazar material que sí porta evidencia. Antes de citarlo para cualquier afirmación sobre evaluación de LLMs, hay que asumir que es un artefacto de feed sin corroboración independiente.
 
-Se relaciona con `juez-humano-en-hackathon-llm-as-a-judge-de-wandb` como su único documento. Refuerza `generalizacion-desde-cluster-de-un-solo-documento`: un clúster de uno con engagement=0 no sostiene generalización.
+Deriva de la nota del juez humano. Se relaciona con la variante de engagement cero del mismo stub y con el patrón general «un documento único sin engagement no sostiene claims sobre práctica».
 
 ## Links
 - supports → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
@@ -62,3 +69,6 @@ Se relaciona con `juez-humano-en-hackathon-llm-as-a-judge-de-wandb` como su úni
 - relates_to → [[juez-humano-como-rol-sin-contenido-metodologico]]
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- derived_from → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
+- relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb-engagement-cero]]
+- relates_to → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]

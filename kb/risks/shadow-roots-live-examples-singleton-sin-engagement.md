@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-29'
+updated: '2026-10-02'
 sources:
 - df4836a1d89bcba4
 tags:
+- artefacto-de-feed
 - cluster-singleton
 - corroboracion
 - css
@@ -25,7 +26,7 @@ tags:
 - singleton
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -48,19 +49,25 @@ links:
   type: relates_to
 - to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
   type: supports
+- to: shadow-roots-mismatch-lexico-clustering-css-frente-brief
+  type: supports
+- to: shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido
+  type: supports
+- to: functional-html-singleton-engagement-cero
+  type: relates_to
 ---
 
 ## What it is
-El clúster se compone de un único documento RSS con engagement registrado en 0. Un singleton sin circulación no sostiene ninguna generalización sobre shadow roots, sobre la ingesta de prompts ni sobre las prácticas del brief.
+El cluster es un único documento con engagement 0 y novedad 0.00. Un singleton sin interacción observable ni respaldo cruzado no sostiene generalización ni hallazgo sobre el dominio.
 
 ## Evidence
-- El clúster contiene un solo documento, sin corroboración entre fuentes dentro del signal — source: df4836a1d89bcba4
-- El engagement registrado es 0, lo que sugiere que el documento no circuló ni generó discusión — source: df4836a1d89bcba4
+- El documento registra engagement 0 — source: df4836a1d89bcba4
+- La novedad del cluster es 0.00 y la corroboración 0.50, consistente con un artefacto aislado — source: df4836a1d89bcba4
 
 ## Why it matters
-Novelty 0.00 más engagement 0 más cero corroboración implican que no hay base para extraer conclusiones firmes. Cualquier inferencia poblacional a partir de este ítem sería una generalización desde n=1.
+La novedad nula y la corroboración parcial deben leerse como artefacto del pipeline, no como hallazgo incipiente. Priorizar este cluster sesga la cola del pipeline hacia ruido.
 
-Evidencia de apoyo para `cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion`. Se relaciona con `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido`, que documenta la ausencia de cuerpo sustantivo en el mismo ítem.
+Se alinea con otros singleton de CSS y con el diagnóstico general de ítems de feed con engagement cero que pasan el filtro.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
@@ -72,3 +79,6 @@ Evidencia de apoyo para `cluster-de-un-documento-sin-engagement-no-sostiene-gene
 - derived_from → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
 - relates_to → [[shadow-roots-mismatch-lexico-clustering-css-frente-brief]]
 - supports → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- supports → [[shadow-roots-mismatch-lexico-clustering-css-frente-brief]]
+- supports → [[shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido]]
+- relates_to → [[functional-html-singleton-engagement-cero]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-30'
+updated: '2026-10-02'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -31,7 +31,7 @@ tags:
 - voz
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -55,14 +55,16 @@ links:
 ---
 
 ## What it is
-Un proyecto personal descrito como un «AI coach» que combina cuatro componentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual [49140f9d5133d3c7]. El documento presenta únicamente la lista de componentes y la intención; no describe elecciones de arquitectura, selección de modelo, prompting, coste, latencia, resultados ni evaluación [49140f9d5133d3c7].
+Un coach de IA por voz se construye ensamblando cuatro servicios: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. Es una receta de arquitectura, no un producto evaluado: la evidencia describe componentes, no resultados.
 
 ## Evidence
-- El proyecto se describe como un AI coach que usa speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
-- El documento no aporta detalle sobre arquitectura, modelo elegido, prompting, coste, latencia, outcomes ni evaluación — source: 49140f9d5133d3c7
+- El documento describe construir un coach de IA con speech-to-text, text-to-speech, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
+- El título del documento sitúa la motivación en la autorregulación/productividad personal más que en ingeniería de equipos o docencia — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es un ejemplo de ensamblado de servicios heterogéneos (voz + LLM + telefonía) sin entrenamiento de modelos, lo cual es un patrón genérico y repetido en proyectos de voice-bot. Su valor documental es la existencia del ensamblado, no sus resultados ni su novedad (novelty=0.00 en la señal) [49140f9d5133d3c7].
+Es un ejemplo concreto de prototipado por composición de APIs sin entrenamiento de modelos, en la intersección «LLM aplicado a productividad personal». Su existencia no implica que funcione ni que sea adoptable por otros.
+
+Se relaciona con el stack de AI coach por voz (misma evidencia, distinto recorte); apoya la nota de prototipado por composición de APIs; y su límite lo marca la nota de efectividad no demostrada. Se integra aquí la evidencia del documento 49140f9d5133d3c7 en lugar de duplicar el concepto.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]

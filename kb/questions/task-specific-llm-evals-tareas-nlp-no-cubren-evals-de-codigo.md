@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-29'
+updated: '2026-10-02'
 sources:
 - 93963a5f93e58d05
 tags:
+- agentes-de-codigo
 - alcance
 - brief
 - cobertura
@@ -22,9 +23,10 @@ tags:
 - docencia
 - evals
 - llm
+- nlp
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -57,19 +59,23 @@ links:
   type: relates_to
 - to: eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
   type: contradicts
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: relates_to
+- to: task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto
+  type: relates_to
 ---
 
 ## What it is
-El documento trata sobre metodología de evaluación de LLM en tareas de NLP genéricas, no sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo técnico, oficio de software engineering o productividad personal.
+La lista de categorías declarada (clasificación, resumen, traducción, copyright regurgitation, toxicidad) es de NLP general. No incluye evaluación de código generado, de asistentes de coding ni de asistentes de enseñanza.
 
 ## Evidence
-- El documento trata sobre metodología de evaluación de LLMs en tareas de NLP genéricas y no sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo técnico, oficio o productividad — source: 93963a5f93e58d05
-- El alcance declarado del documento son clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
+- Tareas enumeradas: clasificación, summarization, translation, copyright regurgitation, toxicity — source: 93963a5f93e58d05
+- No aparece ninguna categoría de eval de código ni de docencia — source: 93963a5f93e58d05
 
 ## Why it matters
-Marca la frontera entre «metodología de evals de NLP» y «evals de agentes de código o de asistentes de enseñanza». Importa porque el salto entre ambas no está autorizado por este documento: cualquier puente habría que construirlo, no citarlo.
+Para un dev que lidera y enseña, ninguna de estas tareas mapea directamente a los artefactos que quiere evaluar (parches, specs, explicaciones didácticas). Pretender transferirlas sin más sería extrapolación no sostenida.
 
-Deriva de task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad: sin la lista de tareas no se puede afirmar esta exclusión. Se relaciona con aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion, que registra el modo de fallo si se ignora esta frontera.
+Deriva de `task-families-evaluadas-en-el-documento-evals` y refina `task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad`. Conecta con `aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion` como su versión negativa explícita. Se relaciona con `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` (la idea metodológica sí podría ser transferible, no las tareas concretas) y con `task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto` (una categoría sí toca un riesgo de producto, pero un solo documento no lo sustenta).
 
 ## Links
 - derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -86,3 +92,5 @@ Deriva de task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduc
 - relates_to → [[embedding-de-eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
 - relates_to → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]
 - contradicts → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
+- relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- relates_to → [[task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto]]

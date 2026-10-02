@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-02'
 sources:
 - 16a4e3995d6c827e
 tags:
+- changelog
 - mcp
+- release
 - releases
 - versionado
 base_confidence: 0.78
 half_life_days: 180
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -27,19 +29,22 @@ links:
   type: supports
 - to: release-2026-8-31-bumps-recurrentes-server-everything-filesystem
   type: relates_to
+- to: mcp-releases-versionado-por-fecha-subconjunto-varia
+  type: supports
 ---
 
 ## What it is
-La release v2025.11.25 bumpea server-sequential-thinking, server-everything, server-filesystem, server-memory y mcp-server-git. Es el punto más temprano del muestreo de la serie.
+Las release notes del 2025.11.25 listan un conjunto de paquetes MCP server bumpeados a la versión de la fecha: server-sequential-thinking, server-everything, server-filesystem, server-memory y mcp-server-git.
 
 ## Evidence
-- v2025.11.25 bumpea server-sequential-thinking, server-everything, server-filesystem, server-memory y mcp-server-git — source: 16a4e3995d6c827e
+- El release 2025.11.25 lista server-sequential-thinking, server-everything, server-filesystem, server-memory y mcp-server-git a v2025.11.25 — source: 16a4e3995d6c827e
 
 ## Why it matters
-Marca el inicio del rango 2025.11–2026.8 cubierto por el clúster, con cinco paquetes en el bundle. No hay changelog asociado.
+Documenta un punto temprano de la serie: cinco paquetes coordinados bajo una sola fecha, incluyendo `server-memory` que desaparece en releases posteriores.
 
-Evidencia del mismo patrón de versionado por fecha. Relacionada con la release 2026.8.31 como extremo opuesto de la serie.
+`mcp-servers-versionado-por-fecha` aporta el esquema; `mcp-releases-versionado-por-fecha-subconjunto-varia` generaliza la variación del conjunto entre releases.
 
 ## Links
 - supports → [[mcp-servers-versionado-por-fecha]]
 - relates_to → [[release-2026-8-31-bumps-recurrentes-server-everything-filesystem]]
+- supports → [[mcp-releases-versionado-por-fecha-subconjunto-varia]]

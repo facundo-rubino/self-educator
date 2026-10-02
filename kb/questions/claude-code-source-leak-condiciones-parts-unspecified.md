@@ -9,18 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-29'
+updated: '2026-10-02'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
 - evidence-quality
 - evidencia-debil
+- evidencia-faltante
+- leak
 - prompt-engineering
 - system-prompt
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -33,21 +35,28 @@ links:
   type: supports
 - to: claude-code-condiciones-que-gatean-secciones-sin-observar
   type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: derived_from
+- to: leak-sin-autenticidad-establecida
+  type: relates_to
 ---
 
 ## What it is
-Pregunta abierta: ¿qué condiciones activan qué secciones del prompt, en qué orden y con qué granularidad? El documento afirma «docenas de partes condicionales» sin enumerar ninguna condición, ninguna parte ni la secuencia de ensamblado.
+La descripción del system prompt de Claude Code llega como un leak, no como documentación oficial ni inspección reproducible. Quedan abiertas las preguntas que decidirían si la observación tiene valor arquitectónico: qué condiciones gatean qué secciones, cuáles son los fragmentos, y si el ensamblado es intencional o resultado de acumulación.
 
 ## Evidence
-- La única caracterización disponible es «docenas de partes condicionales», una formulación que no se puede confirmar ni refutar con el material del clúster — source: abf61eeec75462f9
+- La descripción se remonta a un supuesto leak de un prompt interno, sin documentación oficial ni inspección reproducible — source: abf61eeec75462f9
+- No se aportan detalles concretos sobre la estructura condicional — source: abf61eeec75462f9
 
 ## Why it matters
-Sin las condiciones no se puede extraer ninguna regla de diseño trasladable a agentes propios. La pregunta marca exactamente qué evidencia faltaría para convertir el claim en algo operable.
+Sin especificar condiciones, partes ni secuenciación, cualquier inferencia sobre el diseño del agente es extrapolación. La pregunta delimita el techo de lo que este cluster puede sostener.
 
-Es la laguna concreta de `claude-code-system-prompt-conditional-composition` y solapa con `claude-code-condiciones-que-gatean-secciones-sin-observar` y `leak-de-claude-code-sin-fragmentos-citados`, que registran la misma ausencia desde otros ángulos.
+Deriva del claim de composición condicional; se relaciona con el problema general de autenticidad de leaks, ya registrado para el mismo artefacto.
 
 ## Links
 - relates_to → [[leak-de-claude-code-sin-fragmentos-citados]]
 - supports → [[vista-filtrada-del-codigo-no-confirma-composicion-condicional]]
 - supports → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[claude-code-condiciones-que-gatean-secciones-sin-observar]]
+- derived_from → [[claude-code-system-prompt-conditional-composition]]
+- relates_to → [[leak-sin-autenticidad-establecida]]

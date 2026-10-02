@@ -9,15 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-02'
 sources:
 - abf61eeec75462f9
 tags:
-- signal-quality
+- claude-code
 - evidence-quality
+- leak
+- pipeline
+- signal-quality
+- verificabilidad
 base_confidence: 0.65
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -26,20 +30,24 @@ links:
   type: contradicts
 - to: validacion-de-senal-por-contenido-no-por-titulo
   type: relates_to
+- to: leak-sin-autenticidad-establecida
+  type: supports
 ---
 
 ## What it is
-Lo que el clúster contiene es un documento RSS que reporta una afirmación secundaria; el cuerpo sustantivo del artefacto fuente no está ingerido. La validación por título daría una señal falsa; solo el solapamiento de contenido permitiría decidir.
+El único soporte del claim sobre el system prompt de Claude Code es un documento RSS con engagement=0 y novelty=0.00, cuya procedencia se declara como leak. No hay documentación oficial, inspección reproducible ni verificación independiente. La procedencia «leaked source» es inverificable y podría ser inexacta o quedar obsoleta respecto del producto actual.
 
 ## Evidence
-- El clúster ofrece un único documento RSS sin código, extracto, autor ni release note — source: abf61eeec75462f9
-- El título del documento coincide con el tema del clúster, lo que puede inflar el matching — source: abf61eeec75462f9
+- Un solo documento, engagement=0, noveldad=0.00, sin corroboración más allá de un medio-score binario — source: abf61eeec75462f9
+- La procedencia declarada es un leak, no documentación oficial ni inspección reproducible — source: abf61eeec75462f9
+- El leak no viene acompañado de fragmentos, disparadores ni versión — source: abf61eeec75462f9
 
 ## Why it matters
-Explica por qué este ítem pudo superar el filtro sin aportar contenido verificable, y qué haría falta para promoverlo: recuperar el artefacto fuente.
+Un leak sin autenticidad establecida no confirma lo que el leak afirma. Cualquier uso de esta nota como base para decisiones de arquitectura de agentes propios debe degradarse a la categoría de anécdota, no de hallazgo.
 
-Contradice la materialidad de `claude-code-system-prompt-conditional-composition` y aplica la cautela de `validacion-de-senal-por-contenido-no-por-titulo`.
+Contradice la solidez implícita en el claim de composición condicional; refuerza el riesgo general de leaks sin autenticidad. Es la cara de fiabilidad del mismo artefacto que `claude-code-system-prompt-conditional-composition` describe en su cara de contenido.
 
 ## Links
 - contradicts → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[validacion-de-senal-por-contenido-no-por-titulo]]
+- supports → [[leak-sin-autenticidad-establecida]]

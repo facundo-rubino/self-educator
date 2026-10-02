@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-29'
+updated: '2026-10-02'
 sources:
 - 93963a5f93e58d05
 tags:
 - brief
 - clustering
 - evals
+- fuera-del-brief
 - llm
 - matching
+- matching-lexico
 - relevancia
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -42,19 +44,25 @@ links:
   type: relates_to
 - to: mismatch-query-tema-por-vocabulario-generico-de-infraestructura
   type: relates_to
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: evals-llm-genericas-fuera-del-alcance-del-brief
+  type: relates_to
+- to: confirmacion-de-evaluacion-por-terceros-no-es-adopcion
+  type: relates_to
 ---
 
 ## What it is
-La relevancia declarada del ítem es 0.67, pero no se aporta análisis semántico que demuestre solapamiento con el brief más allá de la palabra «evals». El crítico señala que «evals» es una preocupación metodológica central para cualquier dev que despliega agentes, de modo que el descarte por coincidencia léxica es en sí mismo una afirmación no demostrada.
+Ninguna evidencia del clúster conecta evaluación específica por tarea con agentes de código, liderazgo técnico, craft o productividad. La adyacencia al brief es léxica («evals», «LLM»), no semántica.
 
 ## Evidence
-- La relevancia declarada del cluster es 0.67 — source: 93963a5f93e58d05
-- El crítico argumenta que no se aporta análisis semántico para probar que el solapamiento es solo léxico, y que «evals» sí es central para un dev que despliega agentes — source: 93963a5f93e58d05
+- El alcance declarado son tareas NLP generales (clasificación, resumen, traducción, copyright regurgitation, toxicidad) — source: 93963a5f93e58d05
+- No hay claim en el clúster que ligue esas tareas a los ejes del brief — source: 93963a5f93e58d05
 
 ## Why it matters
-Deja abierta una pregunta operativa: ¿qué criterio de filtrado arrastra documentos de LLMOps genérico al brief, y con qué evidencia se decide que la coincidencia es léxica? Sin ese criterio, tanto el descarte como la inclusión quedan sin justificar.
+Importar este ítem como si abordara el brief sería un error de categoría. La pregunta operativa es si el término «eval» funciona como match léxico suficiente o si el pipeline debería filtrar por eje temático.
 
-Se relaciona con task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo (la lista de tareas es la prueba disponible sobre el alcance) y con matching-llm-patterns-relevancia-lexica-al-brief-de-agentes, mismo patrón de match por vocabulario en este clúster.
+Depende de `task-specific-llm-evals-titulo-sin-contenido-ingerido` y `task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo`. Análoga a `matching-llm-patterns-relevancia-lexica-al-brief-de-agentes` y a `evals-llm-genericas-fuera-del-alcance-del-brief`. Conecta con `confirmacion-de-evaluacion-por-terceros-no-es-adopcion`: cosignar categorías de eval no es adoptar práctica.
 
 ## Links
 - supports → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
@@ -65,3 +73,6 @@ Se relaciona con task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo (l
 - relates_to → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
 - relates_to → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]
 - relates_to → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
+- relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- relates_to → [[evals-llm-genericas-fuera-del-alcance-del-brief]]
+- relates_to → [[confirmacion-de-evaluacion-por-terceros-no-es-adopcion]]

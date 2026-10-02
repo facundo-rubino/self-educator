@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-30'
+updated: '2026-10-02'
 sources:
 - 31820ad25e39a34b
 tags:
@@ -23,9 +23,10 @@ tags:
 - llm-anthropic
 - matching
 - pipeline
+- scoring
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-02'
 provenance:
   scale: XL
   query: null
@@ -46,19 +47,25 @@ links:
   type: supports
 - to: relevancia-tematica-baja-no-es-ruido
   type: contradicts
+- to: llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica
+  type: derived_from
+- to: relevancia-no-es-verdad
+  type: supports
+- to: confirmacion-de-evaluacion-por-terceros-no-es-adopcion
+  type: relates_to
 ---
 
 ## What it is
-El pipeline asigna relevancia=1.00 al documento, pero el único vínculo con el tema es compartir vocabulario (`llm`, `anthropic`, «IA», «programar») con la categoría amplia «agentes/herramientas de IA aplicadas a programar» [31820ad25e39a34b]. No hay en el texto contenido sustantivo sobre cómo un dev que lidera y enseña hace mejor su trabajo.
+Riesgo de scoring: la relevancia asignada (1.00) parece provenir del encuadre temático del brief —«agentes de IA aplicados a programar»— y de las etiquetas `llm`/`anthropic` del documento, no de un solapamiento real con el texto.
 
 ## Evidence
-- El score de relevancia=1.00 del pipeline parece un falso positivo: por contenido, el documento es periférico al tema del brief — source: 31820ad25e39a34b
-- El documento aporta los tags `llm` y `anthropic` como único solapamiento con el tema — source: 31820ad25e39a34b
+- La relevancia asignada es 1.00 mientras el documento no aborda el tema — source: 31820ad25e39a34b
+- El documento está etiquetado `llm` y `anthropic` y proviene de un feed RSS — source: 31820ad25e39a34b
 
 ## Why it matters
-Marca un modo de fallo de precisión del filtro: relevancia alta sobre documentos cuyo vínculo es exclusivamente léxico. Consumir cupo del brief con estos ítems desplaza documentos con contenido sustantivo.
+Si el pipeline interpreta «agentes de IA aplicados a programar» a partir de la mera mención de un modelo o de tags de vocabulario, el brief se llena de ruido en lugar de evidencia de práctica. Es una revisión del criterio de scoring, no del documento.
 
-Deriva del anuncio de release (`llm-anthropic-0-29-anuncio-de-release`) y apoya la lectura de que el changelog no contiene claims de práctica (`llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica`). Se relaciona con `relevancia-no-es-verdad`. Contradice parcialmente `relevancia-tematica-baja-no-es-ruido`: en este caso la relevancia alta sí resultó ruido de matching, no señal.
+Se apoya en la ausencia de contenido operativo del propio release, y es el caso llm-anthropic del patrón general de match por vocabulario genérico de infraestructura.
 
 ## Links
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
@@ -69,3 +76,6 @@ Deriva del anuncio de release (`llm-anthropic-0-29-anuncio-de-release`) y apoya 
 - relates_to → [[mcp-release-stubs-como-artefacto-de-feed]]
 - supports → [[llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica]]
 - contradicts → [[relevancia-tematica-baja-no-es-ruido]]
+- derived_from → [[llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica]]
+- supports → [[relevancia-no-es-verdad]]
+- relates_to → [[confirmacion-de-evaluacion-por-terceros-no-es-adopcion]]
