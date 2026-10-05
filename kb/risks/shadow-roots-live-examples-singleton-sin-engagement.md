@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-10-02'
+updated: '2026-10-05'
 sources:
 - df4836a1d89bcba4
 tags:
@@ -20,13 +20,15 @@ tags:
 - engagement
 - engagement-cero
 - falso-positivo
+- metricas
+- pipeline
 - ruido-de-cluster
 - shadow-dom
 - shadow-roots
 - singleton
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -55,19 +57,22 @@ links:
   type: supports
 - to: functional-html-singleton-engagement-cero
   type: relates_to
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: supports
+- to: corroboration-1-00-con-relevance-0-20-metrica-degenerada
+  type: relates_to
 ---
 
 ## What it is
-El cluster es un único documento con engagement 0 y novedad 0.00. Un singleton sin interacción observable ni respaldo cruzado no sostiene generalización ni hallazgo sobre el dominio.
+El clúster se sostiene sobre un solo documento con scores relevance=0.33, novelty=0.00, corroboration=0.50, velocity=0.50, surprise=0.50. Sin documentos corroborantes y con novedad nula, la única lectura posible es la de un artefacto de ingesta.
 
 ## Evidence
-- El documento registra engagement 0 — source: df4836a1d89bcba4
-- La novedad del cluster es 0.00 y la corroboración 0.50, consistente con un artefacto aislado — source: df4836a1d89bcba4
+- Scores del clúster: relevance=0.33, novelty=0.00, corroboration=0.50, velocity=0.50, surprise=0.50 — source: df4836a1d89bcba4.
 
 ## Why it matters
-La novedad nula y la corroboración parcial deben leerse como artefacto del pipeline, no como hallazgo incipiente. Priorizar este cluster sesga la cola del pipeline hacia ruido.
+Un singleton con novelty nula no sostiene generalización sobre práctica de CSS, docencia ni sobre el uso de LLM del autor. Los scores describen el pipeline, no corroboran una lectura del contenido.
 
-Se alinea con otros singleton de CSS y con el diagnóstico general de ítems de feed con engagement cero que pasan el filtro.
+Se relaciona con `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido` (mismo clúster) y apoya `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica`. La combinación relevance baja con corroboration intermedia comparte la forma degenerada descrita en `corroboration-1-00-con-relevance-0-20-metrica-degenerada`.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
@@ -82,3 +87,5 @@ Se alinea con otros singleton de CSS y con el diagnóstico general de ítems de 
 - supports → [[shadow-roots-mismatch-lexico-clustering-css-frente-brief]]
 - supports → [[shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido]]
 - relates_to → [[functional-html-singleton-engagement-cero]]
+- supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- relates_to → [[corroboration-1-00-con-relevance-0-20-metrica-degenerada]]

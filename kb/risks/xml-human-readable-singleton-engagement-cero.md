@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-24'
+updated: '2026-10-05'
 sources:
 - 1bfe45ede61ee575
 tags:
@@ -18,6 +18,7 @@ tags:
 - engagement
 - engagement-cero
 - evidence-quality
+- filtro-determinista
 - meta-analysis
 - pipeline
 - rss
@@ -27,7 +28,7 @@ tags:
 - xslt
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -56,19 +57,23 @@ links:
   type: relates_to
 - to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
   type: supports
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: relates_to
+- to: xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro
+  type: supports
 ---
 
 ## What it is
-El clúster se compone de un solo documento, con engagement=0, corroboración de una sola fuente y novedad nula. No hay señal social ni segunda fuente que lo respalde.
+Riesgo de inferencia: este clúster se sostiene en un único ítem RSS con engagement=0, novelty=0.00 y corroboración=0.50. Un singleton sin circulación comunitaria no sostiene generalización alguna sobre práctica de ingeniería.
 
 ## Evidence
-- El documento proviene de un feed RSS con engagement=0, es decir, sin interacción registrada — source: 1bfe45ede61ee575
-- Es el único documento del clúster, sin triangulación posible — source: 1bfe45ede61ee575
+- Un solo documento [1bfe45ede61ee575] compone el clúster — source: 1bfe45ede61ee575
+- engagement=0: nunca circuló en las comunidades medidas por el pipeline — source: 1bfe45ede61ee575
 
 ## Why it matters
-El engagement=0 no es validación: es ausencia de señal. Cualquier generalización sobre práctica de oficio desde este ítem sería un modo de fallo de muestreo.
+Cualquier afirmación derivada de este clúster —incluida «JS sustituye a XSLT»— sería una extrapolación desde n=1 sin señales externas de validación. El dato relevante no es el contenido sino la estructura: el clúster no puede sostener ningún claim.
 
-Refuerza el patrón ya registrado en «documento-unico-sin-engagement-no-sostiene-claim-sobre-practica». Es el soporte cuantitativo de los dos riesgos de ingesta del mismo documento.
+Refuerza `single-document-cluster-engagement-cero-no-generaliza`, el riesgo estructural ya documentado para clústeres de un solo documento. Se relaciona con la afirmación de contenido de este mismo clúster (`xml-human-readable-without-xslt-afirmacion-sin-cuerpo`), que queda sin base por esta razón.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
@@ -83,3 +88,5 @@ Refuerza el patrón ya registrado en «documento-unico-sin-engagement-no-sostien
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
 - supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- supports → [[xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro]]

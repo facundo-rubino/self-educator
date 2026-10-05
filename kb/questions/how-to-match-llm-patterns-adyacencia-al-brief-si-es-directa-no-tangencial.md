@@ -10,16 +10,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-05'
 sources:
 - 0248fdb60811e91e
 tags:
-- encuadre
 - brief
+- encuadre
 - relevance
+- taxonomia-de-patrones
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -30,22 +31,30 @@ links:
   type: contradicts
 - to: how-to-match-llm-patterns-candidato-a-retrieval-o-descarte
   type: relates_to
+- to: how-to-match-llm-patterns-taxonomia-sin-contenido
+  type: contradicts
+- to: taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion
+  type: relates_to
+- to: taxonomia-dos-ejes-llm-externo-interno-datos
+  type: relates_to
 ---
 
 ## What it is
-La señal describe el ítem como «solo tangencialmente relacionado» con el brief y, en la misma frase, lo describe como una taxonomía para elegir entre patrones LLM externos/internos y con/sin datos. Eso es una inconsistencia de encuadre: si existiese tal taxonomía con cuerpo, caería dentro del eje «agentes de IA aplicados a programar» como marco de decisión. El problema no es la relevancia temática, es la ausencia de contenido.
+El analista enmarca la relevancia de este clúster como «solo indirecta»: una heurística de decisión que podría informar cómo un lead técnico elige herramientas o explica conceptos, pero que en sí misma no es un hallazgo [0248fdb60811e91e]. Ese encuadre merece corrección: un criterio para emparejar patrón LLM con tipo de problema es exactamente el tipo de material que un dev que lidera y enseña necesitaría para decidir con qué abstracción encarar cada tarea.
 
 ## Evidence
-- El encuadre del analista califica el tema de «only tangentially related» al brief — source: 0248fdb60811e91e
-- El mismo texto describe el contenido como una taxonomía de patrones LLM por tipo de problema — source: 0248fdb60811e91e
-- El critic señala esta contradicción explícitamente — source: 0248fdb60811e91e
+- El analista describe el vínculo como heurística de decisión indirecta y lo califica de extrapolación, no de hallazgo — source: 0248fdb60811e91e
+- El topic pide explícitamente agentes de IA aplicados a programar, gestionar y enseñar: elegir qué patrón aplicar a qué problema cae dentro de ese eje, no fuera — source: 0248fdb60811e91e
 
 ## Why it matters
-Si la irrelevancia se usase como motivo de descarte, se desecharía por la razón equivocada. El motivo correcto es que no hay cuerpo ingerido para evaluar la taxonomía, no que el tema quede fuera del brief. Corregir el criterio evita perder el ítem si en el futuro se recupera texto completo.
+Si la taxonomía existiera con desarrollo, su lugar natural es el núcleo del brief (selección de herramienta y secuenciación de trabajo), no el margen. La discusión sobre adyacencia no debería zanjarse con el argumento de que el tema es tangencial, sino con el de que falta el cuerpo: es un problema de ingesta, no de encuadre.
 
-Contradice las notas que atribuyen al ítem una relevancia puramente léxica o baja al topic: una taxonomía de decisión sobre patrones LLM es temáticamente central aunque hoy no esté ingerida. Se relaciona con la nota que lo marca como candidato a retrieval o descarte.
+Contradice el encuadre de `how-to-match-llm-patterns-taxonomia-sin-contenido`, que describe el vínculo como indirecto. Se relaciona con `taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion` y `taxonomia-dos-ejes-llm-externo-interno-datos`, que abordan el mismo material clasificatorio desde la pregunta de si constituye criterio de secuenciación o taxonomía operativa.
 
 ## Links
 - contradicts → [[how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic]]
 - contradicts → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]
 - relates_to → [[how-to-match-llm-patterns-candidato-a-retrieval-o-descarte]]
+- contradicts → [[how-to-match-llm-patterns-taxonomia-sin-contenido]]
+- relates_to → [[taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion]]
+- relates_to → [[taxonomia-dos-ejes-llm-externo-interno-datos]]

@@ -9,16 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-05'
 sources:
 - 1bfe45ede61ee575
 tags:
 - brief
-- topico
+- fuera-del-brief
+- ruido
 - senal
+- topico
+- xml
+- xslt
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -27,19 +31,32 @@ links:
   type: derived_from
 - to: xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido
   type: supports
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: supports
+- to: xml-human-readable-entra-por-coincidencia-lexica
+  type: supports
+- to: xslt-fuera-del-brief-de-agentes-y-liderazgo
+  type: supports
+- to: xml-human-readable-sin-xslt-contexto-no-ingerido
+  type: relates_to
 ---
 
 ## What it is
-El contenido del clúster trata formateo de XML en navegador o tooling: infraestructura de datos, no agentes de IA, liderazgo técnico, docencia ni productividad. No hay hallazgo sustantivo extraíble para el brief.
+El ítem sobre presentar XML sin XSLT no cubre ninguno de los ejes del brief (agentes de IA para programar/gestionar/enseñar, liderazgo técnico de equipos chicos, estimación, secuenciamiento, alcance, organización personal, oficio de software, productividad y técnicas de estudio) más allá del paraguas genérico «software engineering».
 
 ## Evidence
-- El documento no cubre ningún eje operativo del brief: el tema declarado no tiene relación temática con su contenido — source: 1bfe45ede61ee575
+- El documento no menciona agentes, gestión, docencia, estimación ni organización — source: 1bfe45ede61ee575
+- Superó el filtro determinista con relevance=0.33, novelty=0.00 y engagement=0, consistente con un straggler fuera de tema — source: 1bfe45ede61ee575
 
 ## Why it matters
-Corresponde descartar o reencolar el ítem. Forzar un puente con liderazgo o docencia para justificar su inclusión sería invención.
+Tratarlo como evidencia sobre agentes, liderazgo o docencia sería un error de categoría. Es ruido que no contribuye; consumir esfuerzo analítico en él no rinde.
 
-Es la conclusión operativa del diagnóstico léxico: si entró por coincidencia (xml-human-readable-entra-por-coincidencia-lexica) y no tiene cuerpo (xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido), no hay material compilable para el brief.
+Refuerza `xslt-fuera-del-brief-de-agentes-y-liderazgo` en el mismo eje temático. Es consistente con `xml-human-readable-entra-por-coincidencia-lexica`: el ítem entró al brief por solapamiento de vocabulario, no por conexión sustantiva. Se apoya en el análisis de contenido de `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`.
 
 ## Links
 - derived_from → [[xml-human-readable-entra-por-coincidencia-lexica]]
 - supports → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
+- supports → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- supports → [[xml-human-readable-entra-por-coincidencia-lexica]]
+- supports → [[xslt-fuera-del-brief-de-agentes-y-liderazgo]]
+- relates_to → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]

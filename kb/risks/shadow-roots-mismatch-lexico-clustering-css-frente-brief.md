@@ -1,6 +1,6 @@
 ---
 id: shadow-roots-mismatch-lexico-clustering-css-frente-brief
-title: «Shadow» como falso positivo léxico de clustering frente al brief
+title: «Shadow roots» como falso positivo léxico de clustering frente al brief
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-10-02'
+updated: '2026-10-05'
 sources:
 - df4836a1d89bcba4
 tags:
+- brief
 - clustering
 - css
 - falso-positivo
@@ -27,7 +28,7 @@ tags:
 - shadow-roots
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -56,20 +57,23 @@ links:
   type: supports
 - to: xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro
   type: relates_to
+- to: shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos
+  type: relates_to
+- to: deuda-tecnica-como-puente-lexico-al-brief
+  type: relates_to
 ---
 
 ## What it is
-El documento sobre shadow roots tiene un único tag (`css`) y no cubre ninguno de los ejes del brief (agentes de IA aplicados a programar, gestión, enseñanza, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio, productividad o técnicas de estudio). Su supervivencia al filtro es un falso positivo de categoría, análogo a otros ítems conservados por solapamiento léxico de título.
+El tema «shadow roots» (CSS) no figura entre los ejes del brief (agentes de IA, liderazgo técnico, oficio, productividad y estudio). El ítem entró al clúster por vocabulario de CSS, no por conexión temática demostrada.
 
 ## Evidence
-- El único tag asociado al documento es `css` — source: df4836a1d89bcba4
-- El documento registra engagement 0 y novedad 0, sin respaldo cruzado en el corpus — source: df4836a1d89bcba4
-- El cluster no contiene material sobre ninguno de los ejes del brief temático — source: df4836a1d89bcba4
+- El documento está etiquetado únicamente con `css` — source: df4836a1d89bcba4.
+- El clúster se describe con relevance=0.33 frente al topic — source: df4836a1d89bcba4.
 
 ## Why it matters
-El ítem infla el conteo de clusters sin aportar señal. Debía descartarse en el filtro determinista o marcarse como fuera de alcance.
+Forzar una conexión entre shadow roots y el brief produciría confabulación. La lectura honesta es que se trata de un falso positivo léxico del filtro, y que su único valor potencial es como metadato de flujo de trabajo con LLM, no como hallazgo técnico.
 
-Confirma el patrón general de que la etiqueta determinista puede producir falsos positivos de categoría, y se relaciona con otros ítems conservados por coincidencia léxica de título (XML/XSLT).
+Se relaciona con `shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos` (la señal léxica) y con `deuda-tecnica-como-puente-lexico-al-brief` (mismo modo de fallo: puente léxico sin contenido temático). También con `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada`.
 
 ## Links
 - relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]
@@ -84,3 +88,5 @@ Confirma el patrón general de que la etiqueta determinista puede producir falso
 - supports → [[shadow-roots-live-examples-singleton-sin-engagement]]
 - supports → [[etiqueta-determinista-como-falso-positivo-de-categoria]]
 - relates_to → [[xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro]]
+- relates_to → [[shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos]]
+- relates_to → [[deuda-tecnica-como-puente-lexico-al-brief]]

@@ -9,12 +9,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-29'
+updated: '2026-10-05'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
 - composicion
+- composicion-de-apis
 - ensamblado
 - monkey-mind
 - novedad
@@ -22,9 +23,10 @@ tags:
 - off-the-shelf
 - overinterpretation
 - riesgo
+- sin-linea-base
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -47,19 +49,20 @@ links:
   type: relates_to
 - to: ai-coach-voz-a-voz-ensamblado-de-servicios
   type: relates_to
+- to: prompt-modular-sin-mecanica-verificable
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de tratar la combinación STT + TTS + LLM + número virtual como un hallazgo novedoso, cuando en la evidencia disponible no hay nada que demuestre novedad, implementación efectiva ni aprendizaje transferible.
+El ensamblado de STT + TTS + LLM + número virtual es una composición de componentes estándar. El post lo presenta como proyecto personal, sin línea base que establezca novedad técnica. Tratarlo como aportación original sería un salto no sostenido.
 
 ## Evidence
-- El documento parece ser una nota o descripción breve; no está claro si el proyecto fue implementado, probado o si produjo aprendizajes transferibles. — source: 49140f9d5133d3c7
-- El reporter advierte que el clúster se basa en un solo documento y que cualquier generalización sobre el tema del brief sería especulativa. — source: 49140f9d5133d3c7
+- El documento describe el stack compuesto (STT, TTS, LLM, número virtual) sin comparación con alternativas ni métricas — source: 49140f9d5133d3c7
 
 ## Why it matters
-Evita inflar la señal. Un ensamblado de servicios estándar descrito sin demo ni métricas no es evidencia de práctica, solo de intención.
+Fija el nivel de la contribución: integración, no invención. Quien cite el ítem en docencia o configuración debe verificar contra upstream antes de presentarlo como técnica nueva.
 
-`stack-de-ai-coach-voz-a-voz` y `ai-coach-voz-a-voz-ensamblado-de-servicios` describen el ensamblado; esta nota marca el límite de lo que puede afirmarse sobre él. `prototipado-por-composicion-de-apis-sin-entrenamiento` es el patrón subyacente, ya conocido.
+Se apoya en `ai-coach-voz-a-voz-ensamblado-de-servicios` como descripción del artefacto. Comparte la forma de `prompt-modular-sin-mecanica-verificable`: plausible pero no verificado.
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
@@ -71,3 +74,4 @@ Evita inflar la señal. Un ensamblado de servicios estándar descrito sin demo n
 - relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- relates_to → [[prompt-modular-sin-mecanica-verificable]]

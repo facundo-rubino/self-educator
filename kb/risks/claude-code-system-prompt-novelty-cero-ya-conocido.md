@@ -9,15 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-05'
 sources:
 - abf61eeec75462f9
 tags:
+- claude-code
+- novelty
+- patron-conocido
 - prompt-engineering
 - signal-quality
+- system-prompt
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -28,21 +32,29 @@ links:
   type: relates_to
 - to: relevancia-baja-novedad-nula-corroboracion-alta-no-son-senal
   type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: contradicts
+- to: ensamblado-condicional-de-prompts
+  type: supports
+- to: restatement-de-titulo-como-evidencia-de-composicion-condicional
+  type: relates_to
 ---
 
 ## What it is
-El clúster tiene novelty 0.00, lo que sugiere que el contenido no aporta información nueva a la audiencia objetivo. Actuar sobre él rendiría poco apalancamiento aunque el claim fuera cierto.
+El scorer marca el clúster con novelty=0.00. La arquitectura de system prompts modulares/condicionales y el ensamblado dinámico de contexto en agentes de codificación era ya un patrón documentado y ampliamente asumido antes del leak. La supuesta revelación es una re-descripción de un patrón conocido, no un descubrimiento.
 
 ## Evidence
-- El clúster se reporta con novelty 0.00 y relevancia 0.33 — source: abf61eeec75462f9
-- El informe concluye que es probablemente ya conocido en la audiencia objetivo — source: abf61eeec75462f9
+- novelty=0.00 indica que el clúster no aporta información nueva respecto a lo ya conocido en el pipeline — source: abf61eeec75462f9
 
 ## Why it matters
-Modula el valor esperado del hallazgo: incluso verificándolo, el retorno de adoptarlo sería escaso. Es un argumento para no promover el ítem a la parte alta del brief.
+Impedir que un novelty bajo pase por hallazgo depende de que exista una nota donde el patrón conocido esté anclado. Sin ella, cada leak que reformula el patrón se leería como avance. Esta nota cumple esa función de anclaje.
 
-Matiza cualquier uso de `claude-code-system-prompt-conditional-composition` y solapa con `restatement-de-titulo-no-es-hallazgo` y `relevancia-baja-novedad-nula-corroboracion-alta-no-son-senal`.
+No contradice el hecho del leak, sino su valor informativo: por eso enlaza a la nota de concepto con antecedente negativo. Refuerza la nota existente sobre ensamblado condicional de prompts, que ya recogía el patrón general.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[restatement-de-titulo-no-es-hallazgo]]
 - relates_to → [[relevancia-baja-novedad-nula-corroboracion-alta-no-son-senal]]
+- contradicts → [[claude-code-system-prompt-conditional-composition]]
+- supports → [[ensamblado-condicional-de-prompts]]
+- relates_to → [[restatement-de-titulo-como-evidencia-de-composicion-condicional]]

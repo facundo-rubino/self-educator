@@ -9,16 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-05'
 sources:
 - 19cb8032958cd964
 tags:
-- brief
 - alcance
+- brief
 - multimodal
+- relevancia-tangencial
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -29,21 +30,27 @@ links:
   type: supports
 - to: relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief
   type: relates_to
+- to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  type: relates_to
+- to: relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief
+  type: supports
 ---
 
 ## What it is
-A capability claim about naming public figures says nothing about the practice of the dev who leads and teaches. El clúster cae fuera de los ejes del topic: agentes de código, liderazgo técnico, gestión de equipos, oficio y productividad [19cb8032958cd964]. El único puente plausible es la dimensión general de privacidad y confianza al usar herramientas de IA alojadas en docencia o flujos de equipo, pero el documento no menciona ninguna de esas aplicaciones.
+Una capacidad de reconocimiento de figuras públicas en imágenes no es evidencia sobre los ejes del brief: agentes de IA aplicados a programar, gestionar y enseñar; liderazgo técnico; oficio de software engineering. La conexión con el brief solo existe si se enmarca como insumo multimodal para flujos de trabajo, algo que el documento no desarrolla.
 
 ## Evidence
-- El documento no menciona docencia, programación, liderazgo ni ninguna aplicación a flujos de equipo — source: 19cb8032958cd964.
-- El analista marca el vínculo con el brief como forzado; la critic marca el ítem como ruido — source: 19cb8032958cd964.
+- La relevancia para el tema del brief es tangencial y la conexión como capacidad multimodal incorporable a flujos «no está desarrollada en el documento» — source: sig-237cc97a9794
+- El clúster se apoya en un único documento sin metodología ni corroboración (novedad 0.00, corroboración 0.50) — source: sig-237cc97a9794
 
 ## Why it matters
-Mantener este ítem en el brief lo diluye en lugar de agudizarlo. Si el interés es privacidad y postura de proveedor, exige re-scopar con evidencia específica de uso en docencia o equipo, no inferirla desde una frase [19cb8032958cd964].
+Gastar presupuesto de atención del brief en este ítem desplaza temas centrales (agentes aplicados a código, estimación, docencia). El riesgo no es que la afirmación sea falsa, es que es irrelevante al brief incluso si fuera cierta.
 
-Extiende la nota existente sobre que nombrar figuras públicas no demuestra práctica de ingeniería. También refuerza el registro de relevancia tangencial de la identificación de figuras públicas al brief. Y sostiene la nota de capacidad desde titular RSS: ambos modos de fallo vienen del mismo ítem.
+Es la cara de riesgo de `llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia` y refuerza `relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief`: aunque se verificara el claim, seguiría sin cubrir los ejes.
 
 ## Links
 - relates_to → [[nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria]]
 - supports → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
+- relates_to → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- supports → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]

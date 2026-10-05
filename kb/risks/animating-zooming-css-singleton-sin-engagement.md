@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-30'
+updated: '2026-10-05'
 sources:
 - b0df1f50a76ba564
 tags:
 - engagement-cero
 - evidencia-pobre
 - metricas
+- metricas-degeneradas
 - novelty
 - pipeline
+- rss
 - singleton
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -34,26 +36,34 @@ links:
   type: supports
 - to: animating-zooming-css-titulo-con-documento-unico-engagement-cero
   type: relates_to
+- to: animating-zooming-css-fuera-del-brief-de-agentes-y-liderazgo
+  type: relates_to
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: supports
+- to: scores-neutrales-de-cluster-no-corroboran-una-lectura-de-contenido
+  type: supports
+- to: corroboration-1-0-no-es-validacion-independiente-en-clusters-rss-genericos
+  type: relates_to
 ---
 
 ## What it is
-
-Las métricas del signal (novelty=0.00, corroboration=0.50, relevance=0.33) describen un ítem sin novedad para la audiencia y sin corroboración real. No constituyen señal para el brief.
+El clúster se compone de un único documento RSS con engagement=0, novelty=0.00 y corroboración 0.50. Los tres valores son línea base neutra o nula, no confirmación de nada.
 
 ## Evidence
-
-- novelty=0.00: el tema ya era conocido. — source: b0df1f50a76ba564
-- corroboration=0.50 con N=1 y contenido ausente es vacua. — source: b0df1f50a76ba564
-- relevance=0.33: tangencial, en el mejor de los casos. — source: b0df1f50a76ba564
+- Un solo documento [b0df1f50a76ba564] en el clúster, con engagement=0 — source: b0df1f50a76ba564
+- novelty=0.00 y corroboración 0.50: ninguna confirmación independiente dentro del clúster — source: b0df1f50a76ba564
 
 ## Why it matters
+Cualquier inferencia de tendencia o de relevancia extraída de estos números sería leer señal donde solo hay plantilla de scoring. Un singleton sin engagement no sostiene generalización, corrobore o no el filtro.
 
-Un ítem con estas métricas no debe competir por cuota en un brief sobre agentes de IA, liderazgo técnico y productividad. Si el filtro determinista lo dejó pasar, conviene revisar el filtro.
-
-Instancia concreta del patrón ya registrado: relevancia baja, novedad nula y corroboración alta no constituyen señal. Complementa la nota sobre engagement y la de contenido no ingerido.
+Se relaciona con `animating-zooming-css-fuera-del-brief-de-agentes-y-liderazgo` (sin eje temático, tampoco hay con qué agrupar). Apoya el patrón general de `cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion` y es un caso más de `scores-neutrales-de-cluster-no-corroboran-una-lectura-de-contenido`. Conecta también con la crítica de corroboración por repetición en clústeres RSS (`corroboration-1-0-no-es-validacion-independiente-en-clusters-rss-genericos`).
 
 ## Links
 - supports → [[animating-zooming-css-fuera-del-brief-de-agentes-y-liderazgo]]
 - relates_to → [[relevancia-baja-novedad-nula-corroboracion-alta-no-son-senal]]
 - supports → [[relevancia-baja-novedad-nula-corroboracion-alta-no-son-senal]]
 - relates_to → [[animating-zooming-css-titulo-con-documento-unico-engagement-cero]]
+- relates_to → [[animating-zooming-css-fuera-del-brief-de-agentes-y-liderazgo]]
+- supports → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- supports → [[scores-neutrales-de-cluster-no-corroboran-una-lectura-de-contenido]]
+- relates_to → [[corroboration-1-0-no-es-validacion-independiente-en-clusters-rss-genericos]]

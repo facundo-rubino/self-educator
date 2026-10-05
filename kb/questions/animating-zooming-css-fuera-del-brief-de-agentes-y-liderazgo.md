@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-29'
+updated: '2026-10-05'
 sources:
 - b0df1f50a76ba564
 tags:
@@ -17,11 +17,12 @@ tags:
 - brief-alcance
 - clasificacion
 - css
+- fuera-de-alcance
 - relevancia
 - relevancia-lexica
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -40,18 +41,27 @@ links:
   type: relates_to
 - to: post-css-sin-engagement-y-relevancia-tangencial-al-brief
   type: supports
+- to: animating-zooming-css-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: animating-zooming-css-singleton-sin-engagement
+  type: relates_to
+- to: use-client-relevancia-al-brief-no-demostrada
+  type: relates_to
+- to: shadow-roots-mismatch-lexico-clustering-css-frente-brief
+  type: supports
 ---
 
 ## What it is
-El ítem «Animating zooming using CSS: transform order is important… sometimes» entra al brief por adyacencia genérica de «software engineering craft», no por solapamiento demostrado con agentes de IA para programar/gestionar/enseñar, liderazgo técnico de equipos chicos, estimación, secuenciamiento, alcance, organización personal ni productividad y técnicas de estudio.
+Pregunta abierta: ¿existe algún eje del brief (agentes de IA aplicados a programar/gestionar/enseñar, liderazgo técnico de equipos chicos, oficio de SE, productividad o estudio) que este ítem cubra? La evidencia no muestra ninguno.
 
 ## Evidence
-- El clúster contiene un único documento RSS y su relevancia de 0.33 se sostiene sobre adyacencia genérica de craft, sin solapamiento demostrado con los ejes del brief — fuente: b0df1f50a76ba564
+- El documento [b0df1f50a76ba564] es una pieza de técnica front-end sobre ordenar operaciones de `transform` al animar zoom — source: b0df1f50a76ba564
+- El clúster no contiene evidencia de conexión con liderazgo técnico, estimación/secuenciamiento/alcance, organización personal, agentes de IA ni docencia — source: b0df1f50a76ba564
 
 ## Why it matters
-Si el ítem se compila como señal de práctica del brief, se infla el grafo con contenido de front-end sin relación con agentes, liderazgo ni docencia (que además ya se mudó al profile `teaching`). Marcarlo aquí evita que futuras compilaciones lo traten como hallazgo.
+Es un caso limpio de relevancia puramente léxica: sobrevive al filtro determinista sin cubrir ningún eje declarado. Documentarlo evita que un compilador posterior lo expanda a un hallazgo de craft.
 
-Se relaciona con las notas de transform order ya existentes: si alguna vez se recupera cuerpo, la afirmación CSS vive ahí, no aquí. `post-css-sin-engagement-y-relevancia-tangencial-al-brief` documenta el mismo patrón de singleton CSS con relevancia tangencial.
+Se relaciona con `animating-zooming-css-titulo-sin-contenido-ingerido` (cuerpo ausente) y con `animating-zooming-css-singleton-sin-engagement` (señal nula). Es del mismo tipo de falso positivo temático que `use-client-relevancia-al-brief-no-demostrada` y confirma el patrón general de `shadow-roots-mismatch-lexico-clustering-css-frente-brief`.
 
 ## Links
 - relates_to → [[transform-order-y-zoom-css-sin-cuerpo-ingerido]]
@@ -61,3 +71,7 @@ Se relaciona con las notas de transform order ya existentes: si alguna vez se re
 - supports → [[animating-zooming-css-titulo-con-documento-unico-engagement-cero]]
 - relates_to → [[css-transform-order-importa-solo-a-veces]]
 - supports → [[post-css-sin-engagement-y-relevancia-tangencial-al-brief]]
+- relates_to → [[animating-zooming-css-titulo-sin-contenido-ingerido]]
+- relates_to → [[animating-zooming-css-singleton-sin-engagement]]
+- relates_to → [[use-client-relevancia-al-brief-no-demostrada]]
+- supports → [[shadow-roots-mismatch-lexico-clustering-css-frente-brief]]

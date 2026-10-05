@@ -10,19 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-25'
+updated: '2026-10-05'
 sources:
 - 49140f9d5133d3c7
 tags:
 - contenido
+- falso-positivo
 - ingesta
 - modo-de-fallo
 - rss
 - sin-contenido
+- sin-cuerpo
 - stub
 base_confidence: 0.2
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -37,20 +39,23 @@ links:
   type: supports
 - to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
   type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: supports
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: relates_to
 ---
 
 ## What it is
-El documento es un ítem RSS de engagement cero cuyo único contenido concreto es la lista de cuatro componentes del stack. No reporta si el coach funcionó, ni metodología, ni comparación con alternativas, ni base teórica. Leerlo como hallazgo sobre productividad de desarrolladores o práctica con agentes sería sobreinterpretación.
+El único contenido verificable del documento es la descripción del stack (STT, TTS, LLM, número virtual) y el encuadre personal. No hay outcomes medibles, ni corroboración, ni engagement. Confiar en este ítem como evidencia de práctica profesional es el modo de fallo.
 
 ## Evidence
-- El documento es un ítem RSS con engagement=0 — source: 49140f9d5133d3c7
-- El documento solo describe el stack de cuatro componentes; no reporta resultados, evaluación ni metodología — source: 49140f9d5133d3c7
-- El esquema exige citar doc_ids para cada claim, y este documento solo sostiene la descripción literal del stack — source: 49140f9d5133d3c7
+- El documento es un post RSS con engagement cero y sin corroboración de otros documentos — source: 49140f9d5133d3c7
+- La relevance registrada frente al brief es 0.33 (tangencial) — source: 49140f9d5133d3c7
 
 ## Why it matters
-Evita dos errores simétricos: inflar la nota del stack hasta convertirla en recomendación de práctica, y descartar el ítem como si no contuviera nada. Contiene una descripción técnica acotada y nada más. La ausencia de resultados no prueba que el coach no funcione; solo impide afirmar que funcione.
+Es el caso canónico de nota que debe quedar a baja confianza y sin puente a los ejes del brief. Si se cita, debe citarse solo como ejemplo de ensamblado de APIs, nunca como evidencia de mejora en liderazgo o docencia.
 
-Contradice el impulso de tratar `ai-coach-voz-a-voz-ensamblado-de-servicios` como evidencia de eficacia: la nota describe un ensamblado, no un resultado. Apoya a `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica`, que generaliza la misma regla. Se relaciona con `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` como instancia del mismo modo de fallo en otro dominio.
+Refuerza `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` (evaluar clústeres RSS cuyo cuerpo no se recuperó) y `single-document-cluster-engagement-cero-no-generaliza`. Se apoya en `ai-coach-voz-a-voz-ensamblado-de-servicios` como sustrato único.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
@@ -58,3 +63,5 @@ Contradice el impulso de tratar `ai-coach-voz-a-voz-ensamblado-de-servicios` com
 - contradicts → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- supports → [[single-document-cluster-engagement-cero-no-generaliza]]
+- relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]

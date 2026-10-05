@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-02'
-updated: '2026-10-02'
+updated: '2026-10-05'
 sources:
 - 19cb8032958cd964
 tags:
-- vision
-- policy
 - claim-sin-metodologia
+- figuras-publicas
+- multimodal
+- policy
+- sin-metodologia
+- vision
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -31,21 +34,29 @@ links:
   type: supports
 - to: politica-de-face-recognition-como-variable-de-producto
   type: relates_to
+- to: identificacion-de-figuras-publicas-ya-existia
+  type: relates_to
+- to: gemini-no-rechaza-nombrar-figuras-publicas
+  type: derived_from
 ---
 
 ## What it is
-El único documento ingerido del clúster [19cb8032958cd964] afirma que los LLM ya identifican figuras públicas en imágenes. El claim llega desde un ítem RSS sin engagement medido, sin novelty, y sin corroboración de ningún otro documento.
+Un único documento [19cb8032958cd964] afirma que los LLMs ahora pueden identificar figuras públicas en imágenes, y concreta la asimetría entre proveedores: ChatGPT y Claude se niegan a hacerlo, Gemini sí lo hace. El documento no aporta metodología, prompts, versiones de modelo, fechas ni URLs a pruebas reproducibles. La observación es anecdótica y de segunda mano, sin verificación independiente dentro del clúster.
 
 ## Evidence
-- «LLMs can now identify public figures in images» — source: 19cb8032958cd964
+- ChatGPT y Claude no identifican figuras públicas en imágenes, pero Gemini sí — source: 19cb8032958cd964
+- No se aportan URLs, imágenes de prueba, fechas, versiones de modelo ni comparación controlada — source: 19cb8032958cd964 (ausencia verificada en el reporte del clúster)
+- Novedad reportada 0.00 y corroboración 0.50: la señal ya circulaba y no está confirmada por fuentes múltiples — source: sig-237cc97a9794
 
 ## Why it matters
-Un claim de capacidad poblacional sobre modelos no se sostiene con un único documento anónimo sin metodología. La confianza ajustada por el crítico es 0.08.
+Si la asimetría fuera real y estable, un dev que construye agentes multimodales tendría que elegir proveedor por tarea y no asumir paridad de capacidades. Pero con base de evidencia 0.10 y un solo documento anecdótico, la afirmación no sostiene ninguna decisión de adopción: queda como claim a verificar, no como hallazgo.
 
-Confirma las notas de riesgo ya existentes sobre afirmar capacidad multimodal sin metodología y sobre afirmar capacidad desde un titular RSS. Se relaciona con la nota que trata la política de face recognition como variable de producto, porque el contenido real del documento es de política, no de capacidad.
+`identificacion-de-figuras-publicas-ya-existia` acota la novedad: la capacidad ya estaba sobre la mesa, y este documento solo la reafirma con una observación sin controles. `afirmacion-de-capacidad-multimodal-sin-metodologia` y `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` son el patrón de fallo que este ítem ilustra. `gemini-no-rechaza-nombrar-figuras-publicas` es la nota-actor que aporta el único dato concreto (el proveedor que sí lo hace).
 
 ## Links
 - supports → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
 - supports → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
 - supports → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[politica-de-face-recognition-como-variable-de-producto]]
+- relates_to → [[identificacion-de-figuras-publicas-ya-existia]]
+- derived_from → [[gemini-no-rechaza-nombrar-figuras-publicas]]

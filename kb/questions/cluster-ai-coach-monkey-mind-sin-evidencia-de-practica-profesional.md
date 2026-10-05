@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-28'
+updated: '2026-10-05'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -17,13 +17,15 @@ tags:
 - brief
 - cluster
 - cluster-metadata
+- clustering
 - cobertura
+- falso-positivo
 - gap
 - scope
 - sin-evidencia
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -44,19 +46,23 @@ links:
   type: relates_to
 - to: ai-coach-como-herramienta-de-foco-no-de-liderazgo
   type: relates_to
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: supports
+- to: relevancia-tematica-baja-no-es-ruido
+  type: contradicts
 ---
 
 ## What it is
-El clúster se sostiene en un único documento, un build log de un AI coach personal. No contiene práctica de ingeniería, gestión, liderazgo técnico ni docencia; es un artefacto de productividad individual.
+El clúster se sostiene en un único documento con engagement cero y relevance 0.33. No hay corroboración, ni outcomes, ni conexión con los ejes del brief. Queda abierto si el clúster debe descartarse o mantenerse como candidato a retrieval de texto completo.
 
 ## Evidence
-- El clúster contiene un solo documento RSS de baja señal — source: 49140f9d5133d3c7
-- El documento es un build log personal, no un anuncio de producto ni un benchmark — source: 49140f9d5133d3c7
+- El clúster contiene un solo documento, post RSS personal, con engagement cero — source: 49140f9d5133d3c7
+- La relevance frente al brief es 0.33 (tangencial) — source: 49140f9d5133d3c7
 
 ## Why it matters
-No hay de dónde compilar un hallazgo sobre los ejes del brief. Queda como pregunta si el interés en asistentes de voz personales señala un tema latente o es solo ruido de ingest; en cualquier caso, este clúster no lo responde.
+Si se mantiene, debe hacerse sin elevar la confianza del KB. La pregunta útil es de proceso: ¿sobrevive este clúster al filtro por vocabulario de IA aunque no cubra ningún eje del brief?
 
-Soporta `puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia` al mostrar que no hay material de práctica. Se relaciona con `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion` y `ai-coach-como-herramienta-de-foco-no-de-liderazgo`.
+Deriva de `monkey-mind-sin-contenido-ingerido`. Refuerza `generalizacion-desde-cluster-de-un-solo-documento`. Contradice, en la práctica, `relevancia-tematica-baja-no-es-ruido`: aquí la baja relevancia sí coincide con ausencia de señal utilizable.
 
 ## Links
 - derived_from → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
@@ -67,3 +73,5 @@ Soporta `puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia` al mostrar que
 - supports → [[puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia]]
 - relates_to → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
 - relates_to → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
+- supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
+- contradicts → [[relevancia-tematica-baja-no-es-ruido]]

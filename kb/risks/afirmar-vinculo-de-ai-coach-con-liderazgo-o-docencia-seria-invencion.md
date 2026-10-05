@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-10-05'
 sources:
 - 49140f9d5133d3c7
 tags:
-- overinterpretation
+- brief
 - fabrication
+- falso-positivo
+- overinterpretation
 - scope
+- sobreinterpretacion
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -29,21 +32,30 @@ links:
   type: relates_to
 - to: puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia
   type: supports
+- to: monkey-mind-como-encuadre-de-productividad-personal
+  type: supports
+- to: efectividad-de-ai-coach-no-demostrada
+  type: supports
+- to: generalizar-desde-goodbye-clean-code-sin-corroboracion
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de fabricación: el documento no afirma vínculo alguno con programar, gestionar equipos o enseñar. Toda inferencia de mejora de desempeño del dev que lidera y enseña a partir de este texto es invención.
+El documento no menciona estimación, secuenciación, alcance, organización personal, pedagogía ni estudio. Leer el proyecto como evidencia de práctica de liderazgo o docencia es un puente del analista, no del documento. El techo de lo afirmable es: un dev aplica IA a su propia productividad.
 
 ## Evidence
-- El documento no afirma vínculo alguno con programar, gestionar equipos o enseñar; cualquier inferencia de ese tipo sería fabricada — source: 49140f9d5133d3c7
-- La ausencia de resultados, métricas o uso real significa que no se puede inferir ninguna mejora de desempeño — source: 49140f9d5133d3c7
+- El documento no aborda estimación, secuenciación, alcance, pedagogía ni técnicas de estudio — source: 49140f9d5133d3c7
+- El encuadre declarado es personal y con engagement cero — source: 49140f9d5133d3c7
 
 ## Why it matters
-Marca el límite de lectura del clúster antes de que un paso posterior (síntesis, reconcile) construya un puente hacia los ejes del brief.
+Evita que un ítem tangencial se propague como evidencia sobre los ejes del brief. Marca el límite explícito de la lectura admisible.
 
-Es el mismo modo de fallo que `afirmar-hallazgo-positivo-sobre-agentic-engineering-seria-invencion`; instancia concreta de `puente-especulativo-de-eval-por-tarea-a-practica-de-liderazgo`. Soporta el puente ya registrado `puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia`.
+Se apoya en `monkey-mind-como-encuadre-de-productividad-personal` (el encuadre es personal) y en `efectividad-de-ai-coach-no-demostrada` (sin outcomes no hay eficacia que transferir). `generalizar-desde-goodbye-clean-code-sin-corroboracion` es el patrón análogo: no generalizar desde un clúster de uno con engagement cero.
 
 ## Links
 - relates_to → [[afirmar-hallazgo-positivo-sobre-agentic-engineering-seria-invencion]]
 - relates_to → [[puente-especulativo-de-eval-por-tarea-a-practica-de-liderazgo]]
 - supports → [[puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia]]
+- supports → [[monkey-mind-como-encuadre-de-productividad-personal]]
+- supports → [[efectividad-de-ai-coach-no-demostrada]]
+- relates_to → [[generalizar-desde-goodbye-clean-code-sin-corroboracion]]

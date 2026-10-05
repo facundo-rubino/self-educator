@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-10-02'
+updated: '2026-10-05'
 sources:
 - df4836a1d89bcba4
 tags:
@@ -21,14 +21,16 @@ tags:
 - falso-positivo
 - ingesta
 - ingesta-truncada
+- prompt
 - ruido
 - shadow-dom
 - shadow-roots
+- sin-contenido
 - sin-cuerpo
 - titulo-sin-cuerpo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -49,20 +51,21 @@ links:
   type: supports
 - to: shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada
   type: supports
+- to: react-for-two-computers-titulo-sin-contenido-ingerido
+  type: relates_to
 ---
 
 ## What it is
-Un post de feed RSS titulado «Shadow roots, explained with live examples» no contiene ninguna explicación de shadow roots: su cuerpo es una instrucción de una línea. Afirmar cualquier hallazgo sobre CSS shadow DOM desde este ítem sería inventar contenido que el documento no tiene.
+El clúster «Shadow roots, explained with live examples» contiene un único documento [df4836a1d89bcba4] cuyo contenido es una petición a un modelo, no una explicación: «Build an artifact to explain shadow roots in CSS with interactive examples». No hay artículo, ni shadow roots explicados, ni ejemplo interactivo dentro del registro ingerido.
 
 ## Evidence
-- El documento del cluster es un post titulado «Shadow roots, explained with live examples» — source: df4836a1d89bcba4
-- El contenido del documento es una instrucción/prompt dirigida a un modelo, no un análisis o explicación desarrollada — source: df4836a1d89bcba4
-- El único tag asociado al documento es `css` — source: df4836a1d89bcba4
+- El documento consiste en un prompt dirigido a un modelo de IA: «Build an artifact to explain shadow roots in CSS with interactive examples» — source: df4836a1d89bcba4.
+- El documento solo lleva la etiqueta `css` y no incluye texto explicativo ni ejemplos de shadow roots — source: df4836a1d89bcba4.
 
 ## Why it matters
-Cualquier nota que pretenda describir la mecánica de shadow roots a partir de esta fuente sería fabricación. El ítem solo sirve como caso de etiquetado erróneo en el pipeline.
+El título describe un output que nunca se produjo en la ingesta. Cualquier afirmación sobre shadow roots o sobre la calidad del artefacto tendría que venir de memoria y violaría la restricción de citar solo lo ingerido. El título funciona como afirmación de contenido que el cuerpo no respalda.
 
-Se relaciona con el diagnóstico de mismatch léxico del clustering CSS frente al brief (shadow roots no tiene conexión con agentes de IA, liderazgo, docencia ni productividad) y con el análisis del prompt-como-contenido (el texto describe una tarea en lugar de ejecutarla).
+Se relaciona con `shadow-roots-live-examples-singleton-sin-engagement` (mismo patrón de singleton CSS sin cuerpo) y con `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada` (el prompt como artefacto de ingesta). Comparte la forma «título que promete contenido ausente» con `react-for-two-computers-titulo-sin-contenido-ingerido`.
 
 ## Links
 - relates_to → [[shadow-roots-live-examples-singleton-sin-engagement]]
@@ -73,3 +76,4 @@ Se relaciona con el diagnóstico de mismatch léxico del clustering CSS frente a
 - supports → [[titulo-solo-como-artefacto-de-ingesta-infla-conteo-de-clusters]]
 - supports → [[shadow-roots-mismatch-lexico-clustering-css-frente-brief]]
 - supports → [[shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada]]
+- relates_to → [[react-for-two-computers-titulo-sin-contenido-ingerido]]

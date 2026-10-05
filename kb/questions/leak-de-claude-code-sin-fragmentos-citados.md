@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-28'
+updated: '2026-10-05'
 sources:
 - abf61eeec75462f9
 tags:
@@ -19,11 +19,12 @@ tags:
 - fuente-primaria
 - leak
 - prompt-engineering
+- prompts-condicionales
 - verificabilidad
 - verificacion
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -48,19 +49,22 @@ links:
   type: supports
 - to: legibilidad-de-la-afirmacion-sin-fuente-primaria
   type: relates_to
+- to: claude-code-source-leak-condiciones-parts-unspecified
+  type: relates_to
+- to: claude-code-system-prompt-doc-sin-analisis-de-condiciones
+  type: relates_to
 ---
 
 ## What it is
-El documento [abf61eeec75462f9] no cita ningún archivo, función, extracto de código ni versión concreta del supuesto leak de Claude Code. Tampoco indica qué condiciones activan qué secciones ni cuándo se observó el estado del código. La afirmación es de segunda mano y autorreferencial: su único apoyo es su propio titular.
+El documento del clúster afirma que el system prompt de Claude Code se ensambla de «docenas de partes condicionales», pero no cita fragmentos de prompt, no describe la lógica de ensamblado, no enumera disparadores y no fija una versión del producto. Es una pregunta abierta que el corpus actual no puede cerrar.
 
 ## Evidence
-- Afirmación sobre «leaked source» sin extracto ni referencia de archivo — source: abf61eeec75462f9
-- engagement=0 y novelty=0.00 en el único documento del clúster — source: abf61eeec75462f9
+- El clúster no contiene evidencia sobre el contenido real de las partes condicionales, cómo se ensamblan ni sus consecuencias para la calidad del agente — source: abf61eeec75462f9
 
 ## Why it matters
-Un leak sin autenticidad establecida ni fragmentos no confirma lo que el leak dice. Cualquier claim derivado —composición condicional, número de partes, mecanismo— queda sin base comprobable y no debe citarse como hecho en el KB. Esta falta de cita es el motivo directo de la confianza 0.05 de la nota que afirma el ensamblado.
+Sin fragmentos citados ni reglas de ensamblado, la afirmación no es accionable para un líder técnico: no hay nada que copiar, versionar o auditar. Cualquier inferencia sobre composición condicional en agentes propios partiría de una premisa no verificada.
 
-Soporta `afirmacion-de-capacidad-desde-fragmento-de-una-linea` y `vista-filtrada-del-codigo-no-confirma-composicion-condicional`, ambos modos de fallo del mismo tipo. Se relaciona con `claude-code-system-prompt-conditional-composition` como su límite de evidencia.
+Es la cara de laguna de la nota de concepto sobre el ensamblado condicional de Claude Code, y comparte terreno con las notas que ya registran la ausencia de condiciones, partes y secuenciación observadas en el leak.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
@@ -73,3 +77,5 @@ Soporta `afirmacion-de-capacidad-desde-fragmento-de-una-linea` y `vista-filtrada
 - supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - supports → [[vista-filtrada-del-codigo-no-confirma-composicion-condicional]]
 - relates_to → [[legibilidad-de-la-afirmacion-sin-fuente-primaria]]
+- relates_to → [[claude-code-source-leak-condiciones-parts-unspecified]]
+- relates_to → [[claude-code-system-prompt-doc-sin-analisis-de-condiciones]]

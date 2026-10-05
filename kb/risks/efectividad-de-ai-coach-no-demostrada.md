@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-02'
+updated: '2026-10-05'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -20,6 +20,7 @@ tags:
 - baseline
 - efectividad
 - eficacia
+- engagement-cero
 - evaluacion
 - evaluation
 - evidence-quality
@@ -28,11 +29,12 @@ tags:
 - inferencia
 - proyecto-personal
 - riesgo
+- sin-metricas
 - un-solo-documento
 - validacion
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -65,19 +67,23 @@ links:
   type: derived_from
 - to: efectividad-de-ai-coach-no-demostrada
   type: relates_to
+- to: monkey-mind-como-encuadre-de-productividad-personal
+  type: supports
+- to: bajo-relevance-no-implica-cluster-de-ruido-excepcion-matthew-green
+  type: relates_to
 ---
 
 ## What it is
-Un proyecto personal de AI coach descrito como arquitectura (STT + TTS + LLM + número virtual) no aporta datos de resultados, efectividad, adopción ni metodología. Confundir disponibilidad tecnológica con efectividad es un modo de fallo documentado.
+El proyecto se describe como un experimento autodirigido sin outcomes medibles ni validación externa. No hay evidencia de que mejore nada: ni productividad, ni foco, ni práctica profesional. La ausencia de engagement refuerza que el ítem no circuló ni fue discutido.
 
 ## Evidence
-- El documento es una entrada RSS con engagement=0: sin señales observadas de difusión o discusión — source: 49140f9d5133d3c7
-- El documento describe componentes, sin métricas ni evaluación de resultados — source: 49140f9d5133d3c7
+- El documento es una descripción de proyecto sin outcomes medibles — source: 49140f9d5133d3c7
+- Engagement cero registrado; sin corroboración de otros documentos — source: 49140f9d5133d3c7
 
 ## Why it matters
-El sesgo de fuente única (un documento, engagement 0, corroboración 0.50, novelty 0.00) hace que cualquier hallazgo sea anecdótico y no replicado. Tratar este proyecto como evidencia sobre cómo un dev-líder hace mejor su trabajo excede lo que el documento afirma.
+Bloquea que cualquier afirmación de eficacia se derive de este ítem. Para usarlo en docencia o gestión habría que aportar métricas propias, que aquí no existen.
 
-Se deriva del ensamblado del AI coach por voz y se relaciona con el encuadre de productividad personal. Apoya la nota existente de que un proyecto personal de herramienta no es hallazgo de práctica profesional, y refuerza la línea de riesgo sobre efectividad de AI coach (ya registrada) en lugar de duplicarla.
+Se apoya en `monkey-mind-como-encuadre-de-productividad-personal` (experimento personal) y en `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion` (puente no sostenido). Contraste con la excepción documentada en `bajo-relevance-no-implica-cluster-de-ruido-excepcion-matthew-green`: aquí no hay excepción que rescatar.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
@@ -94,3 +100,5 @@ Se deriva del ensamblado del AI coach por voz y se relaciona con el encuadre de 
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - derived_from → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - relates_to → [[efectividad-de-ai-coach-no-demostrada]]
+- supports → [[monkey-mind-como-encuadre-de-productividad-personal]]
+- relates_to → [[bajo-relevance-no-implica-cluster-de-ruido-excepcion-matthew-green]]

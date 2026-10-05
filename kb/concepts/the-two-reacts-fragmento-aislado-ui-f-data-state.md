@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-28'
+updated: '2026-10-05'
 sources:
 - 43e006f4538b71dd
 tags:
+- clustering
 - contenido-verificable
 - cuerpo-vacio
 - documento-unico
@@ -25,9 +26,10 @@ tags:
 - ruido-tematico
 - sin-cuerpo
 - ui
+- ui-architecture
 base_confidence: 0.75
 half_life_days: 180
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -50,20 +52,21 @@ links:
   type: supports
 - to: the-two-reacts-titulo-formula-sin-argumento
   type: supports
+- to: the-two-reacts-singleton-engagement-cero
+  type: derived_from
 ---
 
 ## What it is
-El documento `43e006f4538b71dd` («The Two Reacts») tiene como único contenido técnico verificable la expresión `UI = f(data)(state)`: la UI como función curryada de los datos y, luego, del estado. El resto del ítem es metadato de ingesta RSS, no argumento. No hay cuerpo que desarrolle la fórmula ni la conecte con ninguna práctica.
+«The Two Reacts» es un documento único (doc `43e006f4538b71dd`) cuyo contenido capturado se reduce a la fórmula `UI = f(data)(state)`. No hay desarrollo argumental ingerido más allá de esa expresión. El cluster que lo contiene se sostiene sobre ese solo documento, con novelty=0.00 y velocity=0.50.
 
 ## Evidence
-- El contenido técnico entero del documento es la expresión `UI = f(data)(state)` — source: 43e006f4538b71dd
-- El título es «The Two Reacts», lo que sugiere un encuadre sobre dos preocupaciones reactivas/funcionales distintas, no una sola — source: 43e006f4538b71dd
-- El documento llegó por RSS con engagement=0, sin interacción de audiencia observada en este pipeline — source: 43e006f4538b71dd
+- El único documento del cluster se titula «The Two Reacts» y su contenido mostrado es `UI = f(data)(state)` — source: 43e006f4538b71dd
+- El cluster no tiene corroboración cruzada: un doc, engagement=0 — source: 43e006f4538b71dd
 
 ## Why it matters
-La fórmula es un fragmento de un modelo mental de renderizado de UI, no un claim sobre agentes de IA, estimación, secuenciamiento, alcance, organización personal, oficio ni técnica de estudio. Cualquier lectura que extraiga práctica de ingeniería desde aquí sería fabricación. Su valor en el grafo es como marcador de lo que el pipeline efectivamente recuperó: una fórmula aislada con título sugerente y cero engagement.
+Registra que la noción de UI-como-función-pura llegó al corpus, pero sin el artículo completo no se puede citar ningún argumento: solo la fórmula. Para el brief (agentes, liderazgo técnico, docencia, productividad) no aporta nada accionable; a lo sumo toca «oficio de software engineering» de forma léxica. La acción correcta es marcar para re-ingesta con contenido completo, no producir análisis temático.
 
-`supports` las notas de riesgo que documentan el cuerpo vacío y la falta de corroboración de este ítem. `relates_to` la nota ya existente sobre la misma fórmula (`ui-como-funcion-de-data-y-state`), que cubre el mismo contenido desde el ángulo de la UI como función; esta nota lo cubre desde el ángulo de la ingesta de «The Two Reacts». Ambas deben coexistir sin duplicar: la fórmula se integra allí, la evidencia de corpus truncado se registra aquí.
+`supports` la nota sobre UI = f(data)(state), que es la idea arquitectónica que la fórmula enuncia. `derived_from` las notas de alcance (`titulo-sin-contenido-ingerido` y `singleton-engagement-cero`) que documentan por qué este documento no sostiene una tesis. No se enlaza a ningún eje del brief: no hay claims ingeridos sobre IA, docencia, liderazgo ni productividad.
 
 ## Links
 - relates_to → [[ui-como-funcion-de-data-y-state]]
@@ -75,3 +78,4 @@ La fórmula es un fragmento de un modelo mental de renderizado de UI, no un clai
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - supports → [[the-two-reacts-metricas-sin-corroboracion]]
 - supports → [[the-two-reacts-titulo-formula-sin-argumento]]
+- derived_from → [[the-two-reacts-singleton-engagement-cero]]

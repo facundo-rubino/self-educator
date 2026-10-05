@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-05'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
+- epistemologia
 - evidence-quality
+- leak
 - provenance
+- verificabilidad
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -27,20 +30,23 @@ links:
   type: contradicts
 - to: leak-sin-autenticidad-establecida
   type: relates_to
+- to: leak-de-claude-code-sin-fragmentos-citados
+  type: relates_to
 ---
 
 ## What it is
-La palabra «leaked» hace todo el trabajo probatorio del claim sin aportar verificabilidad. Material filtrado puede estar desactualizado, ser parcial o haber sido alterado, y nada en el clúster permite comprobarlo.
+La única evidencia del clúster es un enunciado sobre código «filtrado». Sin verificación de autenticidad, vigencia y completitud, el leak no puede confirmar la estructura que describe. La afirmación y la evidencia son circulares: el claim del documento se trata como hallazgo en lugar de contrastarse contra un artefacto.
 
 ## Evidence
-- El documento fuente referencia un leak cuya procedencia no es verificable dentro del clúster — source: abf61eeec75462f9
-- No existe documento de corroboración en el clúster (corroboration 0.50) — source: abf61eeec75462f9
+- La evidencia proviene de una única fuente con corroboration=0.50, sin verificación independiente — source: abf61eeec75462f9
+- La base de la afirmación es código filtrado, lo que plantea dudas sobre vigencia, completitud y aplicabilidad a versiones actuales del producto — source: abf61eeec75462f9
 
 ## Why it matters
-Es la razón por la que la confianza del hallazgo debe quedarse en ~0.24 y no inflarse: la carga probatoria recae en un término, no en un artefacto.
+Si un líder técnico actúa sobre la estructura interna descrita (versionar partes condicionales, auditar disparadores) sin artefacto verificable, organiza trabajo en torno a una premisa no establecida. El coste del error es de asignación y secuenciamiento, no solo de curiosidad técnica.
 
-Contradice la solidez implícita de `claude-code-system-prompt-conditional-composition` y reutiliza el riesgo ya registrado en `leak-sin-autenticidad-establecida`, aplicado ahora al caso concreto de Claude Code.
+Marca el límite de la nota de concepto: no la niega, pero le impide elevarse a hallazgo. Conecta con la nota existente sobre no autenticidad establecida de un leak, que ya establecía esta regla de forma general.
 
 ## Links
 - contradicts → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[leak-sin-autenticidad-establecida]]
+- relates_to → [[leak-de-claude-code-sin-fragmentos-citados]]

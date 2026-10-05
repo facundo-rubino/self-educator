@@ -9,15 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-05'
 sources:
 - abf61eeec75462f9
 tags:
-- signal-quality
 - claude-code
+- engagement
+- muestra
+- signal-quality
+- singleton
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -28,21 +31,23 @@ links:
   type: relates_to
 - to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
   type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: relates_to
 ---
 
 ## What it is
-El clúster se sostiene en un único documento con engagement=0 y novelty=0.00. Eso no sostiene ninguna generalización sobre arquitectura de prompts en agentes de producción.
+El clúster se sostiene en un único documento [abf61eeec75462f9], sin corroboración independiente (corroboration=0.50) y sin engagement. No hay segundo corpus que permita contrastar la afirmación ni medir su recepción.
 
 ## Evidence
-- El clúster contiene un solo documento, sin corroboración (corroboration 0.50) — source: abf61eeec75462f9
-- El engagement es cero y la novelty 0.00 — source: abf61eeec75462f9
+- Solo hay una fuente en el clúster y no existe verificación independiente — source: abf61eeec75462f9
 
 ## Why it matters
-Es la razón estructural, independiente del contenido, por la que el hallazgo no debe promoverse: con n=1 sin engagement no se construye un patrón.
+Un singleton no sostiene generalización sobre práctica. Cualquier extensión de esta afirmación a la práctica de agentes internos de un equipo hereda la fragilidad de la muestra.
 
-Contradice toda inferencia poblacional desde `claude-code-system-prompt-conditional-composition` y reutiliza `leak-de-claude-code-como-cluster-de-un-solo-documento` y `cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion`.
+Jaula de alcance de la nota de concepto y continuación de la línea ya registrada sobre clústeres de un solo documento con engagement cero.
 
 ## Links
 - contradicts → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[leak-de-claude-code-como-cluster-de-un-solo-documento]]
 - relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- relates_to → [[claude-code-system-prompt-conditional-composition]]

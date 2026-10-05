@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-02'
+updated: '2026-10-05'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -17,6 +17,7 @@ tags:
 - atencion
 - attention-management
 - autorregulacion
+- bienestar
 - encuadre
 - foco
 - framing
@@ -29,7 +30,7 @@ tags:
 - self-management
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-05'
 provenance:
   scale: XL
   query: null
@@ -62,18 +63,20 @@ links:
   type: supports
 - to: efectividad-de-ai-coach-no-demostrada
   type: derived_from
+- to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
+  type: supports
 ---
 
 ## What it is
-El título «Building an AI Coach to Help Tame My Monkey Mind» enmarca el proyecto en la autorregulación y la productividad personal, no en liderazgo técnico, estimación, secuenciamiento ni docencia. El documento no desarrolla ni evalúa ese vínculo.
+El encuadre declarado del proyecto es personal: «to help tame my monkey mind». Sitúa la herramienta en productividad y bienestar individuales, no en gestión de equipo, docencia ni liderazgo técnico. Un solo post con engagement cero sostiene esta lectura como descripción, no como hallazgo.
 
 ## Evidence
-- El título del documento es «Building an AI Coach to Help Tame My Monkey Mind», lo que sitúa su motivación en la autorregulación/productividad personal más que en ingeniería de equipos o docencia — source: 49140f9d5133d3c7
+- El encuadre es personal («to help tame my monkey mind»), indicando un experimento autodirigido de productividad/bienestar más que una práctica de equipo, docencia o liderazgo — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es el único punto de contacto con el tema del brief («LLM aplicado a productividad personal», mapeable débilmente a organización personal), y queda fuera de los ejes centrales. Cualquier inferencia hacia liderazgo o docencia sería extrapolación del analista.
+Delimita el techo de lo que se puede afirmar: el ítem sirve como ejemplo marginal de un dev aplicando IA a su propia productividad. No autoriza ninguna afirmación sobre estimación, secuenciación, alcance, pedagogía ni craft.
 
-Se relaciona con el ensamblado del AI coach por voz (el objeto que el título enmarca) y apoya la nota existente sobre la ausencia de evidencia de práctica profesional en este clúster. La brecha entre título y ejes del brief es el límite que fija su bajo peso.
+Se apoya en `ai-coach-voz-a-voz-ensamblado-de-servicios` como sustrato técnico. Refuerza `cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional` (el clúster no contiene evidencia de práctica profesional) y `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion` (cualquier puente a liderazgo o docencia sería invención).
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
@@ -90,3 +93,4 @@ Se relaciona con el ensamblado del AI coach por voz (el objeto que el título en
 - supports → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
 - supports → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
 - derived_from → [[efectividad-de-ai-coach-no-demostrada]]
+- supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]

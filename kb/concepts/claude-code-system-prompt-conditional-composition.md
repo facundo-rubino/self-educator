@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-02'
+updated: '2026-10-05'
 sources:
 - abf61eeec75462f9
 tags:
@@ -28,10 +28,11 @@ tags:
 - prompt-architecture
 - prompt-engineering
 - prompting
+- prompts-modulares
 - system-prompt
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-05'
 provenance:
   scale: M
   query: null
@@ -72,18 +73,28 @@ links:
   type: relates_to
 - to: system-prompt-como-artefacto-de-ingenieria-claude-code
   type: relates_to
+- to: claude-code-system-prompt-doc-sin-analisis-de-condiciones
+  type: relates_to
+- to: vista-filtrada-de-codigo-no-confirma-composicion-condicional
+  type: supports
+- to: leak-sin-autenticidad-establecida
+  type: supports
+- to: claude-code-system-prompt-novelty-cero-ya-conocido
+  type: supports
+- to: claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion
+  type: supports
 ---
 
 ## What it is
-El system prompt de Claude Code se describe, según un supuesto leak de código interno, como ensamblado a partir de docenas de partes condicionales en lugar de un bloque monolítico. No se especifica qué fragmentos existen, cómo se evalúan las condiciones ni si la descomposición es diseño deliberado o acreción posterior.
+Afirmación de fuente única: el código fuente filtrado de Claude Code revelaría un system prompt ensamblado a partir de «docenas de partes condicionales», no un prompt monolítico. El clúster no expone ninguna de esas partes, su lógica de ensamblado ni sus disparadores. El único hecho verificable dentro del clúster es la existencia del documento y su enunciado.
 
 ## Evidence
-- El system prompt de Claude Code se ensambla a partir de docenas de partes condicionales, según fuente filtrada — source: abf61eeec75462f9
+- El código fuente filtrado de Claude Code muestra un system prompt ensamblado a partir de docenas de partes condicionales — source: abf61eeec75462f9
 
 ## Why it matters
-Es una instancia concreta del patrón general «prompt engineering como arquitectura de software»: el prompt como artefacto compuesto y condicional, no como texto estático. Para quien construye agentes de coding o de enseñanza, refuerza la idea de modularidad en la capa de prompt/configuración. Ninguna conclusión arquitectónica específica (condiciones, fragmentos, intención) está sostenida por la evidencia.
+Si se confirmara, implicaría que el comportamiento del agente se compone condicionalmente según contexto activo, y no solo según un texto base. Eso tendría consecuencias para reproducibilidad, estimación y auditoría de agentes internos. Nada de eso está respaldado por evidencia en el clúster: la afirmación se reduce a un rumor plausible sin artefacto chequeable.
 
-Sostiene `system-prompt-como-artefacto-de-ingenieria` y `ensamblado-condicional-de-prompts` como caso anecdótico; se relaciona con `system-prompt-como-artefacto-de-ingenieria-claude-code`, que trata el mismo artefacto desde la verificabilidad del leak.
+Recoge el hilo ya presente en el grafo sobre el ensamblado condicional de prompts y lo extiende al caso Claude Code, pero queda anclado a las notas de alcance que registran la ausencia de condiciones, partes y secuenciación observadas. La nota sobre la vista filtrada del código es el soporte crítico: una vista filtrada no confirma composición condicional. La nota sobre no autenticidad establecida de un leak aplica directamente: sin verificar el artefacto, el leak no confirma lo que dice el leak.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
@@ -104,3 +115,8 @@ Sostiene `system-prompt-como-artefacto-de-ingenieria` y `ensamblado-condicional-
 - relates_to → [[claude-code-source-leak-condiciones-parts-unspecified]]
 - relates_to → [[entrega-de-prompt-monolitico-vs-condicional]]
 - relates_to → [[system-prompt-como-artefacto-de-ingenieria-claude-code]]
+- relates_to → [[claude-code-system-prompt-doc-sin-analisis-de-condiciones]]
+- supports → [[vista-filtrada-de-codigo-no-confirma-composicion-condicional]]
+- supports → [[leak-sin-autenticidad-establecida]]
+- supports → [[claude-code-system-prompt-novelty-cero-ya-conocido]]
+- supports → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]
