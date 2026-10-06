@@ -9,12 +9,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-30'
+updated: '2026-10-06'
 sources:
 - d2a0c86ca8027978
 tags:
 - evals
 - evaluacion
+- hackathon
 - human-in-the-loop
 - inferencia
 - ingesta
@@ -29,7 +30,7 @@ tags:
 - wandb
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -52,18 +53,23 @@ links:
   type: supports
 - to: inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion
   type: relates_to
+- to: criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido
+  type: relates_to
+- to: inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion
+  type: supports
 ---
 
 ## What it is
-Declarar el rol de «juez humano» en un hackathon no aporta criterios de juicio, rúbrica ni metodología. Es un marcador de identidad, no un contenido evaluable.
+Declarar en un post que se fue juez humano de un hackathon no aporta criterios, rúbricas ni método de evaluación: aporta un rol. El documento del clúster solo informa que el autor ocupó ese rol en el hackathon «LLM-as-a-Judge» de Weights & Biases [d2a0c86ca8027978]. Sin cuerpo ingerido no hay forma de reconstruir cómo se juzgó ni con qué criterios.
 
 ## Evidence
-- El único documento del clúster declara el rol de juez humano en el hackathon LLM-as-a-Judge de W&B sin cuerpo asociado — source: d2a0c86ca8027978
+- El snippet del único documento del clúster declara la posición de juez humano en el hackathon de Weights & Biases — source: d2a0c86ca8027978
+- El documento llega por RSS con engagement=0 — source: d2a0c86ca8027978
 
 ## Why it matters
-Evita que futuras ingestas del mismo ítem se lean como evidencia sobre metodología de evaluación con LLM. La línea entre «fui juez» y «cómo se juzga» no se cruza con un marcador de rol.
+Un rol declarado no es un método. Si se quiere aprender algo sobre evaluación de LLMs como jueces, hace falta el cuerpo del documento o una fuente primaria del hackathon; el snippet no reemplaza ninguno de los dos. Esta distinción evita compilar «experiencia de jurado» como si fuera conocimiento transferible sobre evaluación.
 
-Refuerza la nota de stub del hackathon de W&B y coincide con el riesgo ya registrado de inferir metodología desde un fragmento de rol.
+Se relaciona con la nota sobre el juez humano en el hackathon de W&B y con la nota sobre criterios de juicio sin cuerpo ingerido. Refuerza la advertencia de que inferir la metodología de juicio desde un fragmento de rol sería especulación.
 
 ## Links
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
@@ -75,3 +81,5 @@ Refuerza la nota de stub del hackathon de W&B y coincide con el riesgo ya regist
 - relates_to → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion]]
+- relates_to → [[criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido]]
+- supports → [[inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion]]

@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-30'
-updated: '2026-09-30'
+updated: '2026-10-06'
 sources:
 - 19cb8032958cd964
 tags:
+- claim-sin-metodologia
 - evals
 - metodologia
+- multimodal
 - reproducibilidad
+- verificabilidad
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -32,26 +35,34 @@ links:
   type: relates_to
 - to: criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo
   type: relates_to
+- to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  type: derived_from
+- to: segundo-corpus-necesario-para-afirmar-capacidad-multimodal
+  type: relates_to
+- to: divergencia-de-rechazo-por-identidad-sin-metodologia-ni-fecha
+  type: relates_to
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: supports
 ---
 
 ## What it is
-
-Una afirmación de capacidad multimodal —«los LLMs ahora identifican figuras públicas en imágenes»— sin nombre y versión de modelo, sin fecha, sin condiciones de prueba, sin cifras de accuracy y sin baseline no es una afirmación evaluable. El documento se limita al titular; no aporta metodología, ejemplos, enlaces ni mediciones.
+Una afirmación sobre lo que un modelo puede hacer con imágenes no es verificable si no especifica modelo y versión, condiciones de la prueba, fecha y fuente primaria. Sin esos elementos, la afirmación describe a lo sumo el comportamiento observado de un producto en un momento dado.
 
 ## Evidence
-
-- El texto completo del documento es el titular más una frase: sin metodología, ejemplos, enlaces ni mediciones — source: 19cb8032958cd964
-- No se especifican versiones de modelo, fecha ni condiciones de prueba — source: 19cb8032958cd964
-- engagement=0 y novelty=0.00 en el cluster de un solo documento — source: 19cb8032958cd964
+- El claim multimodal del documento llega sin metodología, benchmark, fechas ni fuentes verificables más allá de la aserción — source: 19cb8032958cd964
+- El ítem es un titular de RSS con engagement=0, novelty=0.00 y corroboration=0.50 — source: 19cb8032958cd964
 
 ## Why it matters
+Cualquier conclusión operativa sobre capacidades multimodales exige un segundo corpus y condiciones declaradas. Sin ello, la afirmación no sobrevive como hecho científico ni operativo, solo como posibilidad trivial.
 
-Sin condiciones no hay forma de reproducir ni de comparar: la capacidad queda declarada, no establecida. La consecuencia práctica de una asimetría observada en una frase es la misma que la de un benchmark de prefill frente a la generación interactiva: el número o la anécdota no informan la tarea real. Verificar por proveedor, con versión y cuenta concretas, es el único paso útil desde esta evidencia.
-
-Se relaciona con «task-specific-llm-evals...»: ambas dependen del alcance declarado como único contenido verificable. Apoya «prueba-con-proveedores-y-cuentas-especificas»: la observación no se generaliza sin versión, cuenta y región. Se relaciona con «benchmark-pp512...» y con «criterio-de-accesibilidad-verificado-con-lector-de-pantalla...»: medir la tarea real, no el sustituto.
+Es la nota de patrón/riesgo general que instancia el caso del titular. Conecta con la necesidad de un segundo corpus para afirmar capacidad multimodal y con la falta de metodología y fecha en la divergencia de rechazo por identidad.
 
 ## Links
 - relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - supports → [[prueba-con-proveedores-y-cuentas-especificas]]
 - relates_to → [[benchmark-pp512-no-informa-generacion-interactiva]]
 - relates_to → [[criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo]]
+- derived_from → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- relates_to → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
+- relates_to → [[divergencia-de-rechazo-por-identidad-sin-metodologia-ni-fecha]]
+- supports → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]

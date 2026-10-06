@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-05'
+updated: '2026-10-06'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -20,14 +20,17 @@ sources:
 - 9750590bbfe6b285
 - b9106690f5dfd849
 - ffbd76916d1dfdc5
+- sig-d0acf338c3a6
 tags:
-- mcp
-- release-feed
-- off-topic
 - artefacto-de-ingesta
+- changelog
+- ingesta
+- mcp
+- off-topic
+- release-feed
 base_confidence: 0.82
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -44,20 +47,26 @@ links:
   type: supports
 - to: relevancia-no-es-verdad
   type: relates_to
+- to: mcp-servers-sin-changelog-legible
+  type: supports
+- to: mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades
+  type: supports
+- to: release-2026-8-31-mcp-token-como-falso-positivo-de-filtro
+  type: relates_to
 ---
 
 ## What it is
-La señal sig-d0acf338c3a6 corresponde al release MCP 2026.8.31, un post de feed que sigue la plantilla fecha + lista de paquetes pineados a esa misma fecha: server-filesystem, server-memory, server-sequential-thinking, server-everything, server-git, server-time y fetch [16a4e3995d6c827e][30a26335a9988ba2][5a4df6bef0a4905f][9750590bbfe6b285][b9106690f5dfd849][ffbd76916d1dfdc5][2221814efbefaa3b][748f8b0a02cd7524]. No incluye prosa, rationale ni descripción de cambios por paquete.
+El documento headline del release 2026.8.31 actualiza server-filesystem, server-memory, server-sequential-thinking y server-everything, pero el texto ingerido es solo fecha más número de versión más lista de paquetes. No hay changelog que declare qué cambió ni por qué.
 
 ## Evidence
-- Cada uno de los ocho documentos del clúster es un post plantilla de release que enumera paquetes MCP con bump de versión por fecha — fuentes: 16a4e3995d6c827e, 30a26335a9988ba2, 5a4df6bef0a4905f, 9750590bbfe6b285, b9106690f5dfd849, ffbd76916d1dfdc5, 2221814efbefaa3b, 748f8b0a02cd7524.
-- El subconjunto de paquetes varía entre releases y ningún documento aporta changelog ni rationale — fuentes: 5a4df6bef0a4905f, b9106690f5dfd849, 748f8b0a02cd7524.
-- Los valores de engagement del RSS son 0 en todo el clúster — inferido del reporte sig-d0acf338c3a6.
+- El release headline v2026.8.31 actualiza server-filesystem, server-memory, server-sequential-thinking y server-everything — source: 30a26335a9988ba2
+- Across the eight documents del clúster, el único patrón de contenido es fecha de release, versión y lista de paquetes, sin narrativa ni análisis — source: ffbd76916d1dfdc5
+- El analista concluye que ningún hallazgo sustantivo sobre el tema declarado puede fundamentarse en estos documentos — source: sig-d0acf338c3a6
 
 ## Why it matters
-Un consumidor que siga estos servidores obtendría como máximo un changelog de baja fidelidad: sabe que hubo bump, no qué cambió. Cualquier afirmación sobre estabilidad, salud del proyecto o dirección a partir de las cadenas de versión es sobrelectura de automatización plantillada.
+Un bump sin changelog no permite afirmar capacidades nuevas, correcciones ni deprecaciones. Cualquier beneficio técnico que se atribuya a este release sería inferencia del analista, no contenido de la fuente.
 
-`supports` las notas existentes del mismo release (mcp-release-2026-8-31-bumps, release-2026-8-31-bumps-recurrentes-server-everything-filesystem, release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica) y los patrones generales mcp-release-stubs-como-artefacto-de-feed y mcp-release-bumps-no-revelan-practica-de-ingenieria. Se conecta a relevancia-no-es-verdad como recordatorio de que la utilidad aparente del feed no valida ninguna afirmación sobre práctica.
+Sostiene `mcp-servers-sin-changelog-legible` y `mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades`, que generalizan la misma carencia a la serie MCP. Se relaciona con `release-2026-8-31-mcp-token-como-falso-positivo-de-filtro`: el stub es la causa, el falso positivo la consecuencia.
 
 ## Links
 - supports → [[mcp-release-2026-8-31-bumps]]
@@ -66,3 +75,6 @@ Un consumidor que siga estos servidores obtendría como máximo un changelog de 
 - supports → [[mcp-release-stubs-como-artefacto-de-feed]]
 - supports → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]
 - relates_to → [[relevancia-no-es-verdad]]
+- supports → [[mcp-servers-sin-changelog-legible]]
+- supports → [[mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades]]
+- relates_to → [[release-2026-8-31-mcp-token-como-falso-positivo-de-filtro]]

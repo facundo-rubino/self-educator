@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-10-05'
+updated: '2026-10-06'
 sources:
 - 1bfe45ede61ee575
 tags:
+- corpus
 - docencia-de-programacion
 - documento-unico
 - fuera-del-brief
@@ -21,11 +22,12 @@ tags:
 - javascript
 - rss-stub
 - stub
+- tooling
 - xml
 - xslt
 base_confidence: 0.03
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -54,19 +56,24 @@ links:
   type: relates_to
 - to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
   type: relates_to
+- to: xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: xml-human-readable-sin-xslt-contexto-no-ingerido
+  type: relates_to
 ---
 
 ## What it is
-Un ítem RSS titulado «Making XML human-readable without XSLT» cuyo único contenido sustantivo es la frase «JavaScript is right there.». Enuncia que JavaScript en el navegador puede sustituir a XSLT para presentar XML a humanos, sin implementación, ejemplo ni evaluación.
+Un ítem RSS titulado «Making XML human-readable without XSLT» cuyo cuerpo entero es la frase «JavaScript is right there.» Afirma que JavaScript es la herramienta obvia para transformar/leer XML en lugar de redactar hojas XSLT, sin aportar razonamiento, ejemplos ni demo. Es una aserción de herramienta, no un método ni una práctica.
 
 ## Evidence
-- El documento completo es título más «JavaScript is right there.»: afirmación de sustitución de XSLT por JS, sin código, ejemplo ni benchmark — source: 1bfe45ede61ee575
-- El ítem tiene engagement=0: no fue circulado ni discutido en ninguna comunidad que el pipeline mida — source: 1bfe45ede61ee575
+- El cuerpo completo del documento es la frase «JavaScript is right there» — source: 1bfe45ede61ee575
+- El título declara el tema: hacer XML legible para humanos sin XSLT — source: 1bfe45ede61ee575
+- El ítem llega con engagement=0 en el corpus ingerido — source: 1bfe45ede61ee575
 
 ## Why it matters
-No sostiene ningún claim sobre agentes de IA para programar, gestionar o enseñar, ni sobre liderazgo técnico, estimación, secuenciamiento, alcance u oficio. Cualquier lección que se extraiga de aquí —«usa la plataforma que ya tienes en lugar de una herramienta declarativa especializada»— queda sin evidencia sobre cuándo ese trade-off es favorable. Tratarlo como hallazgo sería un error de categoría.
+No rinde ningún claim transferible sobre liderazgo, agentes, estimación, docencia ni oficio. Su único valor es como ejemplo de ítem con solapamiento léxico («XML») que entra al brief sin conexión temática. Consumirlo como evidencia técnica sería leer una opinión de seis palabras como argumento de ingeniería.
 
-Es un caso particular del patrón `xml-pretexto-lexico-javascript-en-el-runtime` (el fragmento funciona como pretexto léxico, no como técnica). Se apoya en `xml-human-readable-sin-xslt-contexto-no-ingerido` y en `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`, que documentan la misma laguna desde el ángulo del contexto ausente y del título sin cuerpo.
+Se relaciona con las otras notas del mismo ítem (`xml-human-readable-sin-xslt-solo-afirmacion-javascript`, `...-titulo-sin-contenido-ingerido`) y con la nota de contexto no ingerido: todas describen facetas del mismo documento mínimo y no deben fusionarse en una sola nota, porque cada una captura una carencia distinta (afirmación, cuerpo, contexto).
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
@@ -81,3 +88,5 @@ Es un caso particular del patrón `xml-pretexto-lexico-javascript-en-el-runtime`
 - derived_from → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]
 - relates_to → [[xml-human-readable-sin-xslt-solo-afirmacion-javascript]]
 - relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- relates_to → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
+- relates_to → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]

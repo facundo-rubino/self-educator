@@ -10,12 +10,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-28'
+updated: '2026-10-06'
 sources:
 - dec9f3cc9a87f904
 tags:
 - alucinacion
+- doble-entorno
 - especulacion
+- evidencia-citada
 - fragmento-aislado
 - matching-lexico
 - react
@@ -23,7 +25,7 @@ tags:
 - sobreinterpretacion
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -38,20 +40,29 @@ links:
   type: derived_from
 - to: react-for-two-computers-fuera-del-brief-de-agentes-y-liderazgo
   type: relates_to
+- to: react-for-two-computers-corroboracion-y-sorpresa-0-50-valores-por-defecto
+  type: relates_to
+- to: react-for-two-computers-titulo-formula-sin-argumento
+  type: relates_to
+- to: two-things-one-origin-ambiguedad-del-fragmento-sin-contexto
+  type: relates_to
+- to: dos-mundos-dos-puertas-no-es-evidencia-de-separacion-servidor-cliente
+  type: relates_to
+- to: react-for-two-computers-singleton-rss-sin-corroboracion
+  type: supports
 ---
 
 ## What it is
-Mapear «React for Two Computers» a la historia de doble runtime de React (cliente + servidor / RSC) es una asociación puramente de nivel de título [dec9f3cc9a87f904]. El fragmento «Two things, one origin.» no menciona React, renderizado, runtimes ni computadoras en sentido técnico; podría describir igualmente un fork, una secuela, una comparación de hardware o un post esotérico [dec9f3cc9a87f904].
+El título «React for Two Computers» sugiere un tema de renderizado dual o separación servidor/cliente, pero el registro ingerido no contiene el argumento. Atribuirle esa tesis sería imponer una narrativa al texto.
 
 ## Evidence
-- El scaffold admite explícitamente que el documento no afirma la conexión con el doble runtime y que «cualquier mapeo así sería inferido del título solo» — source: dec9f3cc9a87f904
-- El crítico: «una inferencia a partir de un título no es evidencia» — source: dec9f3cc9a87f904
-- El fragmento «Two things, one origin.» no contiene referencia técnica alguna que fije su referente — source: dec9f3cc9a87f904
+- El único contenido disponible del clúster es la cadena del título «React for Two Computers» — source: dec9f3cc9a87f904.
+- El registro no trae fragmentos adicionales, triggers, ni versión del material referenciado — source: dec9f3cc9a87f904.
 
 ## Why it matters
-Es el modo de fallo concreto que produce notas React fantasma: el título nombra una tecnología conocida y el compilador rellena el cuerpo con conocimiento externo no citado. El brief de agentes y liderazgo no gana nada con esa fabricación.
+La distinción entre «la frase es significativa» y «el registro permite afirmar algo» es la que evita el modo de fallo de compilar claims poblacionales desde un titular. Aquí no hay base para ninguna tesis técnica.
 
-Deriva de `react-for-two-computers-titulo-sin-contenido-ingerido-2`. Comparte estructura con `reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin`: en ambos casos una frase ambigua invita a construir un relato sin base documental.
+Se relaciona con `react-for-two-computers-corroboracion-y-sorpresa-0-50-valores-por-defecto` (los scores no corroboran ninguna lectura) y con `react-for-two-computers-titulo-formula-sin-argumento`. Conecta con las notas existentes sobre fragmentos-fórmula ambiguos (`two-things-one-origin-ambiguedad-del-fragmento-sin-contexto`, `dos-mundos-dos-puertas-no-es-evidencia-de-separacion-servidor-cliente`) y refuerza `react-for-two-computers-singleton-rss-sin-corroboracion`.
 
 ## Links
 - relates_to → [[reconstruir-lecturas-desde-frase-ambigua-two-things-one-origin]]
@@ -59,3 +70,8 @@ Deriva de `react-for-two-computers-titulo-sin-contenido-ingerido-2`. Comparte es
 - relates_to → [[analogia-teaching-two-audiences-fuera-de-alcance]]
 - derived_from → [[react-for-two-computers-titulo-sin-contenido-ingerido-2]]
 - relates_to → [[react-for-two-computers-fuera-del-brief-de-agentes-y-liderazgo]]
+- relates_to → [[react-for-two-computers-corroboracion-y-sorpresa-0-50-valores-por-defecto]]
+- relates_to → [[react-for-two-computers-titulo-formula-sin-argumento]]
+- relates_to → [[two-things-one-origin-ambiguedad-del-fragmento-sin-contexto]]
+- relates_to → [[dos-mundos-dos-puertas-no-es-evidencia-de-separacion-servidor-cliente]]
+- supports → [[react-for-two-computers-singleton-rss-sin-corroboracion]]

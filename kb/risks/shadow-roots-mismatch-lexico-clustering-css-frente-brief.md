@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-10-05'
+updated: '2026-10-06'
 sources:
 - df4836a1d89bcba4
 tags:
@@ -19,6 +19,7 @@ tags:
 - falso-positivo
 - falso-positivo-clustering
 - falsos-positivos
+- filtrado-determinista
 - filtro
 - gating-topico
 - matching-lexico
@@ -28,7 +29,7 @@ tags:
 - shadow-roots
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -61,19 +62,22 @@ links:
   type: relates_to
 - to: deuda-tecnica-como-puente-lexico-al-brief
   type: relates_to
+- to: accesibilidad-tooltip-como-falso-positivo-del-filtro-determinista
+  type: relates_to
 ---
 
 ## What it is
-El tema «shadow roots» (CSS) no figura entre los ejes del brief (agentes de IA, liderazgo técnico, oficio, productividad y estudio). El ítem entró al clúster por vocabulario de CSS, no por conexión temática demostrada.
+El ítem de shadow roots trata sobre CSS, no sobre los ejes del brief (agentes de IA aplicados a programar, gestionar y enseñar; liderazgo técnico de equipos chicos; oficio de software engineering; productividad y técnicas de estudio). El match aparente es una coincidencia léxica —solapamiento en patrones de «explain»/«examples» y en el token de tema— no un hallazgo. Con relevance=0.33, novelty=0.00, corroboration=0.50 y engagement=0, es un singleton ruidoso que sobrevivió al filtrado determinista por solapamiento superficial.
 
 ## Evidence
-- El documento está etiquetado únicamente con `css` — source: df4836a1d89bcba4.
-- El clúster se describe con relevance=0.33 frente al topic — source: df4836a1d89bcba4.
+- El documento lleva la etiqueta «css» y su sujeto son los shadow roots de CSS, no los temas del brief — source: df4836a1d89bcba4
+- El clúster consta de un solo documento con engagement=0 — source: df4836a1d89bcba4
+- El propio resumen del report describe el ítem como «a noisy singleton that survived deterministic filtering on keyword overlap rather than an actionable finding» — source: df4836a1d89bcba4
 
 ## Why it matters
-Forzar una conexión entre shadow roots y el brief produciría confabulación. La lectura honesta es que se trata de un falso positivo léxico del filtro, y que su único valor potencial es como metadato de flujo de trabajo con LLM, no como hallazgo técnico.
+Incluso un explicador de shadow roots bien desarrollado pertenecería a otro perfil o KB: el brief declara que la docencia de programación entry-level se mudó al profile `teaching`. Llevar este ítem adelante en el KB actual es riesgo de deriva temática. Además sugiere que las firmas de keywords del filtro determinista podrían necesitar ajuste, porque «explain» y «examples» no son señal de encaje topical.
 
-Se relaciona con `shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos` (la señal léxica) y con `deuda-tecnica-como-puente-lexico-al-brief` (mismo modo de fallo: puente léxico sin contenido temático). También con `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada`.
+Se relaciona con `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido` y con `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada` (el mismo ítem leído por título y por contenido). Es el mismo modo de fallo que `accesibilidad-tooltip-como-falso-positivo-del-filtro-determinista` y que `xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro`: ítems que entran al brief por tokens del título, no por tema.
 
 ## Links
 - relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]
@@ -90,3 +94,4 @@ Se relaciona con `shadow-roots-hay-interes-en-explicar-css-con-artefactos-intera
 - relates_to → [[xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro]]
 - relates_to → [[shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos]]
 - relates_to → [[deuda-tecnica-como-puente-lexico-al-brief]]
+- relates_to → [[accesibilidad-tooltip-como-falso-positivo-del-filtro-determinista]]

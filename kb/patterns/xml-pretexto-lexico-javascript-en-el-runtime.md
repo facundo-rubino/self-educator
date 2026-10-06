@@ -10,13 +10,15 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-30'
+updated: '2026-10-06'
 sources:
 - 1bfe45ede61ee575
 tags:
+- corpus
 - falsos-positivos
 - heuristica
 - javascript
+- matching
 - matching-lexico
 - patron-de-ingesta
 - stub
@@ -24,7 +26,7 @@ tags:
 - xslt
 base_confidence: 0.5
 half_life_days: 365
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -43,19 +45,24 @@ links:
   type: supports
 - to: xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido
   type: supports
+- to: xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro
+  type: supports
+- to: xml-human-readable-without-xslt-fuera-del-brief-de-agentes-y-liderazgo
+  type: supports
 ---
 
 ## What it is
-El documento no enuncia un método: enuncia la presencia de un lenguaje. «JavaScript is right there.» no describe una transformación, un parseo ni una alternativa evaluada; solo señala que el runtime ya dispone de un lenguaje de propósito general, lo que convierte el ítem en un gesto retórico sobre disponibilidad léxica, no en una técnica verificable. El clúster sobrevive al filtro por la coincidencia de palabras («XML», «human-readable», «XSLT», «JavaScript») y no por un argumento [1bfe45ede61ee575].
+Patrón de ingest: un ítem cuyo único contenido es una apelación a la disponibilidad del lenguaje («JavaScript is right there») se registra como argumento de sustitución de herramienta, pero no contiene método, benchmark ni caso. El reclamo es un pretexto léxico —el runtime ya tiene JS, luego úsalo— y no una técnica de transformación.
 
 ## Evidence
-- El documento entero es el título más «JavaScript is right there.» — source: 1bfe45ede61ee575
-- No hay mención explícita de transformación, renderizado de XML ni comparación con XSLT — source: 1bfe45ede61ee575
+- El cuerpo del documento es solo la frase «JavaScript is right there» — source: 1bfe45ede61ee575
+- No hay benchmarks, ejemplos, ni razonamiento en el cuerpo ingerido — source: 1bfe45ede61ee575
+- El ítem entra al clúster con relevance=0.33 y novelty=0.00 — source: 1bfe45ede61ee575
 
 ## Why it matters
-Cuando el contenido de un ítem es la disponibilidad de una herramienta común, el patrón se repite entre casos de ingestas RSS mal filtradas: el tema aparente y el tema real divergen. Registrarlo evita tratarlo como hallazgo de craft y orienta hacia la nota sobre el mecanismo de filtrado.
+Reconocer este patrón evita promover apelaciones al lenguaje disponible como hallazgos de ingeniería. La heurística yace sin argumentar en el documento; citarla como si el documento la sostuviera sería circular.
 
-Es el patrón que sostiene la nota de la afirmación sin cuerpo y la del contexto no ingerido. Concuerda con la nota preexistente que ya describía esta coincidencia léxica, sin duplicarla.
+Soporta la nota de falso positivo léxico del filtro y la de fuera-de-brief. Se relaciona con `js-como-lenguaje-general-ya-presente-en-el-runtime` en tanto comparten la premisa de disponibilidad del runtime, pero aquí es un reclamo sin evidencia y allí una observación distinta del corpus.
 
 ## Links
 - supports → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]
@@ -65,3 +72,5 @@ Es el patrón que sostiene la nota de la afirmación sin cuerpo y la del context
 - supports → [[js-como-lenguaje-general-ya-presente-en-el-runtime]]
 - supports → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
 - supports → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
+- supports → [[xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro]]
+- supports → [[xml-human-readable-without-xslt-fuera-del-brief-de-agentes-y-liderazgo]]

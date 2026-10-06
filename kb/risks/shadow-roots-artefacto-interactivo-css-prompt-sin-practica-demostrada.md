@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-10-05'
+updated: '2026-10-06'
 sources:
 - df4836a1d89bcba4
 tags:
 - agentes
 - artefacto-de-feed
 - artefactos
+- artefactos-interactivos
 - brief-mismatch
 - css
 - docencia
 - evidencia
+- fable-5-1-medium
 - inferencia
 - ingesta
 - practica
@@ -30,7 +32,7 @@ tags:
 - prompting
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -55,19 +57,22 @@ links:
   type: supports
 - to: shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos
   type: relates_to
+- to: post-unico-como-plantilla-de-demostracion-end-to-end
+  type: relates_to
 ---
 
 ## What it is
-El único contenido ingerido sobre shadow roots es una instrucción a un modelo para construir un artefacto explicativo. Un prompt es una petición, no un resultado: no hay artefacto, ni medición de su uso, ni indicio de que se haya empleado para enseñar.
+El único contenido recuperado sobre el clúster de shadow roots es un prompt —dirigido a «Fable 5.1 Medium»— que pide construir un artefacto para explicar shadow roots en CSS con ejemplos interactivos [df4836a1d89bcba4]. La petición está en el documento; el artefacto, la explicación y los ejemplos no. Un prompt de este tipo no es evidencia de docencia asistida por IA ni de práctica de generación de artefactos: es el input, no el resultado.
 
 ## Evidence
-- El documento registra la instrucción «Build an artifact to explain shadow roots in CSS with interactive examples» — source: df4836a1d89bcba4.
-- El modelo destinatario se nombra como «Fable 5.1 Medium» — source: df4836a1d89bcba4.
+- El documento no contiene explicación sustantiva de shadow roots, ni ejemplos vivos, ni artefacto generado más allá de la petición — source: df4836a1d89bcba4
+- La única instrucción registrada es «Build an artifact to explain shadow roots in CSS with interactive examples», dirigida a «Fable 5.1 Medium» — source: df4836a1d89bcba4
+- El documento lleva la etiqueta «css» — source: df4836a1d89bcba4
 
 ## Why it matters
-Tratar la existencia del prompt como evidencia de una práctica de docencia asistida por IA es un salto no sostenido: el artefacto generado está ausente del registro. Lo único defendible es un metadato débil sobre cómo un practicante usa un LLM para producir material didáctico.
+Si el pipeline quiere tratar prompts-que-funcionan como ejemplares de estudio o productividad, debería capturarlos con sus salidas adjuntas; de lo contrario quedan inertes. Afirmar a partir de esta evidencia qué produjo el prompt, qué tan bien lo hizo o qué demuestra sobre la práctica de quien lo escribió sería invención. La nota queda como registro de por qué el ítem no rinde un artefacto pedagógico reutilizable.
 
-Se relaciona con `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido` (mismo documento, ángulo distinto) y con `prompt-para-artefacto-interactivo-no-es-evidencia-de-docencia`. También con `shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos`: la señal léxica existe, pero no pasa de ser interés declarado en un prompt.
+Se relaciona con `shadow-roots-explained-with-live-examples-titulo-sin-contenido-ingerido`, que documenta el desajuste título/cuerpo del mismo documento. Refuerza `prompt-para-artefacto-interactivo-no-es-evidencia-de-docencia`. Se relaciona con `shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos` (señal débil sobre la existencia de interés, no sobre la práctica demostrada) y con `post-unico-como-plantilla-de-demostracion-end-to-end`, que plantea la misma pregunta —si un proyecto de integración LLM sirve como demo— para un caso distinto.
 
 ## Links
 - derived_from → [[shadow-roots-live-examples-singleton-sin-engagement]]
@@ -80,3 +85,4 @@ Se relaciona con `shadow-roots-explained-with-live-examples-titulo-sin-contenido
 - supports → [[prompt-a-herramienta-en-feed-rss-como-artefacto-de-ingesta]]
 - supports → [[shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos]]
 - relates_to → [[shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos]]
+- relates_to → [[post-unico-como-plantilla-de-demostracion-end-to-end]]

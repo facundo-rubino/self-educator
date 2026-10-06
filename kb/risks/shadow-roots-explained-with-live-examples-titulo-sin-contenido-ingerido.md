@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-10-05'
+updated: '2026-10-06'
 sources:
 - df4836a1d89bcba4
 tags:
 - artefacto-de-feed
+- artefacto-de-ingesta
 - brief-mismatch
 - cluster-singleton
 - cluster-unitario
 - css
 - falso-positivo
+- falso-positivo-de-filtro
 - ingesta
 - ingesta-truncada
 - prompt
@@ -30,7 +32,7 @@ tags:
 - titulo-sin-cuerpo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -56,16 +58,17 @@ links:
 ---
 
 ## What it is
-El clúster «Shadow roots, explained with live examples» contiene un único documento [df4836a1d89bcba4] cuyo contenido es una petición a un modelo, no una explicación: «Build an artifact to explain shadow roots in CSS with interactive examples». No hay artículo, ni shadow roots explicados, ni ejemplo interactivo dentro del registro ingerido.
+El clúster «Shadow roots, explained with live examples» se sostiene sobre un único documento RSS [df4836a1d89bcba4]. Ese documento no es la pieza explicativa que el título promete: es un log de entrada de herramienta — un prompt dirigido a «Fable 5.1 Medium» pidiendo que construya un artefacto que explique shadow roots en CSS con ejemplos interactivos. No hay explicación sustantiva de shadow roots, ni ejemplos vivos, ni artefacto generado en el documento, solo la petición.
 
 ## Evidence
-- El documento consiste en un prompt dirigido a un modelo de IA: «Build an artifact to explain shadow roots in CSS with interactive examples» — source: df4836a1d89bcba4.
-- El documento solo lleva la etiqueta `css` y no incluye texto explicativo ni ejemplos de shadow roots — source: df4836a1d89bcba4.
+- El clúster consta de un solo documento, identificado como «Shadow roots, explained with live examples», con engagement=0 — source: df4836a1d89bcba4
+- El contenido real del documento es un prompt a «Fable 5.1 Medium» pidiendo construir un artefacto que explique shadow roots en CSS con ejemplos interactivos, no la explicación ni el artefacto — source: df4836a1d89bcba4
+- El documento lleva la etiqueta «css», lo que confirma que su sujeto son los shadow roots de CSS — source: df4836a1d89bcba4
 
 ## Why it matters
-El título describe un output que nunca se produjo en la ingesta. Cualquier afirmación sobre shadow roots o sobre la calidad del artefacto tendría que venir de memoria y violaría la restricción de citar solo lo ingerido. El título funciona como afirmación de contenido que el cuerpo no respalda.
+La etiqueta del clúster está haciendo todo el trabajo: se trata el clúster como evidencia sobre shadow roots cuando el único contenido es una instrucción que nombra shadow roots. Escribir cualquier claim sobre shadow roots, sobre el artefacto resultante o sobre la eficacia del prompt sería fabricar contenido más allá de [df4836a1d89bcba4]. El patrón —título que promete explicación con ejemplos, cuerpo que solo contiene la petición— es un modo de fallo de ingesta reutilizable como señal de descarte.
 
-Se relaciona con `shadow-roots-live-examples-singleton-sin-engagement` (mismo patrón de singleton CSS sin cuerpo) y con `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada` (el prompt como artefacto de ingesta). Comparte la forma «título que promete contenido ausente» con `react-for-two-computers-titulo-sin-contenido-ingerido`.
+Se relaciona con `shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada` (mismo documento, mismo prompt, leído como ausencia de práctica demostrada) y con `shadow-roots-mismatch-lexico-clustering-css-frente-brief` (el mismo ítem leído como falso positivo temático). Refuerza `titulo-solo-como-artefacto-de-ingesta-infla-conteo-de-clusters`: aquí el título-solo no solo infla el conteo, además nombra un tema (shadow roots) que ningún cuerpo del clúster desarrolla. Se relaciona con `shadow-roots-live-examples-singleton-sin-engagement`, que registra el perfil de scores del mismo ítem.
 
 ## Links
 - relates_to → [[shadow-roots-live-examples-singleton-sin-engagement]]

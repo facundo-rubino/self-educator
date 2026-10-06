@@ -9,19 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-02'
-updated: '2026-10-05'
+updated: '2026-10-06'
 sources:
 - 19cb8032958cd964
 tags:
 - claim-sin-metodologia
 - figuras-publicas
+- identificacion-figuras-publicas
 - multimodal
 - policy
 - sin-metodologia
 - vision
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -38,20 +39,24 @@ links:
   type: relates_to
 - to: gemini-no-rechaza-nombrar-figuras-publicas
   type: derived_from
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: relates_to
+- to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: supports
 ---
 
 ## What it is
-Un único documento [19cb8032958cd964] afirma que los LLMs ahora pueden identificar figuras públicas en imágenes, y concreta la asimetría entre proveedores: ChatGPT y Claude se niegan a hacerlo, Gemini sí lo hace. El documento no aporta metodología, prompts, versiones de modelo, fechas ni URLs a pruebas reproducibles. La observación es anecdótica y de segunda mano, sin verificación independiente dentro del clúster.
+Un titular de RSS afirma que los LLMs ya pueden identificar figuras públicas en imágenes, con un único matiz: ChatGPT y Claude no lo hacen, Gemini sí. El documento no aporta metodología, benchmark, fecha ni fuente verificable. La confianza ajustada tras la crítica es 0.07.
 
 ## Evidence
-- ChatGPT y Claude no identifican figuras públicas en imágenes, pero Gemini sí — source: 19cb8032958cd964
-- No se aportan URLs, imágenes de prueba, fechas, versiones de modelo ni comparación controlada — source: 19cb8032958cd964 (ausencia verificada en el reporte del clúster)
-- Novedad reportada 0.00 y corroboración 0.50: la señal ya circulaba y no está confirmada por fuentes múltiples — source: sig-237cc97a9794
+- El documento afirma que los LLMs ya pueden identificar figuras públicas en imágenes — source: 19cb8032958cd964
+- Matiza que ChatGPT y Claude no realizan esa identificación, mientras que Gemini sí — source: 19cb8032958cd964
+- El ítem proviene de un feed RSS con engagement=0, sin tracción observable en la muestra — source: 19cb8032958cd964
 
 ## Why it matters
-Si la asimetría fuera real y estable, un dev que construye agentes multimodales tendría que elegir proveedor por tarea y no asumir paridad de capacidades. Pero con base de evidencia 0.10 y un solo documento anecdótico, la afirmación no sostiene ninguna decisión de adopción: queda como claim a verificar, no como hallazgo.
+El claim no debe tratarse como hecho operativo sobre capacidades de modelos: carece de método, versión, fecha y replicación. Lo único defendible es la posibilidad trivial de que algún sistema visión-lenguaje tenga una feature de reconocimiento de celebridades, muy por debajo de lo que el titular afirma.
 
-`identificacion-de-figuras-publicas-ya-existia` acota la novedad: la capacidad ya estaba sobre la mesa, y este documento solo la reafirma con una observación sin controles. `afirmacion-de-capacidad-multimodal-sin-metodologia` y `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` son el patrón de fallo que este ítem ilustra. `gemini-no-rechaza-nombrar-figuras-publicas` es la nota-actor que aporta el único dato concreto (el proveedor que sí lo hace).
+Se relaciona con la divergencia de rechazo al nombrar figuras públicas por proveedor (misma asimetría entre ChatGPT/Claude y Gemini, otro corpus). Es un caso concreto del patrón de afirmación de capacidad multimodal sin metodología y de la afirmación de capacidad desde un titular RSS. Conecta con la nota sobre política de reconocimiento facial como variable de producto, no de modelo.
 
 ## Links
 - supports → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
@@ -60,3 +65,5 @@ Si la asimetría fuera real y estable, un dev que construye agentes multimodales
 - relates_to → [[politica-de-face-recognition-como-variable-de-producto]]
 - relates_to → [[identificacion-de-figuras-publicas-ya-existia]]
 - derived_from → [[gemini-no-rechaza-nombrar-figuras-publicas]]
+- relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- supports → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]

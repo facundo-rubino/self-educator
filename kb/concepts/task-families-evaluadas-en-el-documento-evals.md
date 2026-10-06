@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-21'
+updated: '2026-10-06'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -18,11 +18,12 @@ tags:
 - ingesta
 - llm
 - llm-evals
+- nlp
 - rss
 - task-specific
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -35,23 +36,27 @@ links:
   type: supports
 - to: mecanica-de-evals-afirmada-desde-solo-titulo-rss
   type: supports
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: relates_to
+- to: eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
+  type: supports
 ---
 
 ## What it is
-El documento [93963a5f93e58d05] enumera, en su título y línea de resumen, cinco ámbitos de evaluación de LLMs: classification, summarization, translation, copyright regurgitation y toxicity. Es una lista de familias de tarea, no un conjunto de hallazgos: no incluye datos, benchmarks, metodología ni autoría en el material recuperado.
+El documento `93963a5f93e58d05` enumera, como alcance declarado, cinco familias de evaluación para LLMs: clasificación, resumización, traducción, regurgitación de copyright y toxicidad. Son tareas NLP generales, no evaluaciones de agentes de código ni de asistentes de docencia.
 
 ## Evidence
-- El título del documento es «Task-Specific LLM Evals that Do & Don't Work» — source: 93963a5f93e58d05
-- El resumen lista las tareas evaluadas: classification, summarization, translation, copyright regurgitation y toxicity — source: 93963a5f93e58d05
-- El ítem proviene de RSS y registra engagement=0, sin señales de discusión o amplificación — source: 93963a5f93e58d05
+- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y su contenido anunciado cubre evals para clasificación, resumización, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05.
 
 ## Why it matters
-La única información recuperable de esta fuente es el conjunto de tareas que declara cubrir. Esa enumeración sirve para acotar el alcance del documento, y por sí sola no permite inferir ninguna práctica de ingeniería, docencia o liderazgo técnico. Un dev-líder que quiera reutilizar evaluación por tarea al adoptar asistentes de código no obtiene de aquí ni criterios ni ejemplos.
+Delimita qué puede y qué no puede sostenerse desde este clúster: cualquier inferencia sobre evals de agentes de coding, de gestión o de docencia sería extrapolación, porque esas familias no están en el alcance declarado.
 
-Se enlaza con `task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo` porque esa nota registra precisamente la brecha entre las tareas NLP enumeradas y las evals de código o de asistentes de enseñanza. Se apoya también en `mecanica-de-evals-afirmada-desde-solo-titulo-rss`, que nombra el modo de fallo de atribuir mecánica a un documento del que sólo se tiene el título.
+Se solapa con la nota existente sobre el alcance declarado del mismo documento y respalda la tesis de la evaluación específica por tarea como infraestructura de fiabilidad, aunque limitada a tareas NLP.
 
 ## Links
 - supports → [[evals-llm-genericas-fuera-del-alcance-del-brief]]
 - relates_to → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
 - supports → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
 - supports → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
+- relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- supports → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]

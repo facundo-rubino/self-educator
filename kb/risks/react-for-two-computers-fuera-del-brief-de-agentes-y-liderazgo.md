@@ -9,18 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-28'
+updated: '2026-10-06'
 sources:
 - dec9f3cc9a87f904
 tags:
 - brief
+- craft
 - falso-positivo
 - fuera-del-brief
 - react
+- relevancia
 - topic-drift
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-06'
 provenance:
   scale: XL
   query: null
@@ -35,19 +37,23 @@ links:
   type: relates_to
 - to: react-hooks-call-order-como-fundamento-fuera-del-brief
   type: relates_to
+- to: react-for-two-computers-periferico-al-tema-de-agentes
+  type: relates_to
+- to: react-hooks-call-order-como-fundamento-fuera-del-brief
+  type: supports
 ---
 
 ## What it is
-Aun si el artículo tratara de runtimes de React, quedaría solo débilmente bajo el topic declarado (agentes de IA, liderazgo técnico, docencia): incluirlo diluiría el brief [dec9f3cc9a87f904]. Con relevance=0.33 frente al brief, el ítem se sitúa en la periferia [dec9f3cc9a87f904].
+El brief cubre agentes de IA aplicados a programar/gestionar/enseñar, liderazgo técnico de equipos chicos, oficio de software engineering, y productividad y técnicas de estudio. Un título de React sin cuerpo no conecta con ninguno de esos ejes.
 
 ## Evidence
-- El scaffold lista el topic-drift como riesgo: «incluso si el artículo fuera sobre runtimes de React... incluirlo podría diluir el brief» — source: dec9f3cc9a87f904
-- relevance=0.33 en un clúster de un solo documento sin engagement — source: dec9f3cc9a87f904
+- El clúster contiene solo el título «React for Two Computers» más el score relevance=0.33 — source: dec9f3cc9a87f904.
+- No hay cuerpo ingerido ni documento adicional del que extraer afirmaciones sobre los ejes del brief — source: dec9f3cc9a87f904.
 
 ## Why it matters
-Evita que el cajón de «oficio de software engineering en general» absorba cualquier ítem de frontend con etiqueta reconocible. La proximidad léxica a «programar» no es aplicación al brief.
+Incluir este clúster en un informe sobre el brief, o inferir de él una lección de ingeniería, sería fabricación. El clúster es un null/non-signal respecto al topic declarado.
 
-Se relaciona con `react-for-two-computers-titulo-sin-contenido-ingerido-2` y con el patrón ya registrado en `react-hooks-call-order-como-fundamento-fuera-del-brief`: material de fundamentos de React que no cubre los ejes operativos del brief.
+Deriva de `react-for-two-computers-titulo-sin-contenido-ingerido-2`: si no hay cuerpo, no hay conexión demostrable con los ejes. Se relaciona con `react-for-two-computers-periferico-al-tema-de-agentes` (misma lectura desde el lado de agentes) y refuerza el patrón ya documentado en `react-hooks-call-order-como-fundamento-fuera-del-brief`.
 
 ## Links
 - derived_from → [[react-for-two-computers-titulo-sin-contenido-ingerido-2]]
@@ -55,3 +61,5 @@ Se relaciona con `react-for-two-computers-titulo-sin-contenido-ingerido-2` y con
 - relates_to → [[cluster-heterogeneo-como-vertedero-de-firehose]]
 - relates_to → [[react-for-two-computers-titulo-sin-contenido-ingerido-2]]
 - relates_to → [[react-hooks-call-order-como-fundamento-fuera-del-brief]]
+- relates_to → [[react-for-two-computers-periferico-al-tema-de-agentes]]
+- supports → [[react-hooks-call-order-como-fundamento-fuera-del-brief]]
