@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-02'
+updated: '2026-10-07'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -26,7 +26,7 @@ tags:
 - nlp
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -63,19 +63,20 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto
   type: relates_to
+- to: task-specific-llm-evals-sin-conexion-con-agentes-o-docencia
+  type: supports
 ---
 
 ## What it is
-La lista de categorías declarada (clasificación, resumen, traducción, copyright regurgitation, toxicidad) es de NLP general. No incluye evaluación de código generado, de asistentes de coding ni de asistentes de enseñanza.
+Las familias de tarea que el documento enumera —clasificación, resumen, traducción, regurgitación de copyright, toxicidad— son tareas de NLP general [93963a5f93e58d05]. Ninguna de ellas es evaluación de generación de código, de resolución de issues ni de asistencia a la enseñanza. El documento no menciona evals de código ni de docencia.
 
 ## Evidence
-- Tareas enumeradas: clasificación, summarization, translation, copyright regurgitation, toxicity — source: 93963a5f93e58d05
-- No aparece ninguna categoría de eval de código ni de docencia — source: 93963a5f93e58d05
+- Las familias de tarea declaradas por el resumen son clasificación, resumen, traducción, regurgitación de copyright y toxicidad — fuente: 93963a5f93e58d05
 
 ## Why it matters
-Para un dev que lidera y enseña, ninguna de estas tareas mapea directamente a los artefactos que quiere evaluar (parches, specs, explicaciones didácticas). Pretender transferirlas sin más sería extrapolación no sostenida.
+Corrige el paso habitual de «evals de LLM» a «evals de agentes que programan o enseñan»: la lista declarada no contiene esas tareas, así que ninguna conclusión sobre evals de código o de docencia se apoya en este documento.
 
-Deriva de `task-families-evaluadas-en-el-documento-evals` y refina `task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad`. Conecta con `aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion` como su versión negativa explícita. Se relaciona con `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` (la idea metodológica sí podría ser transferible, no las tareas concretas) y con `task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto` (una categoría sí toca un riesgo de producto, pero un solo documento no lo sustenta).
+Se deriva del alcance declarado del documento. Respalda la nota sobre la ausencia de conexión del documento con agentes de código y docencia.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -94,3 +95,4 @@ Deriva de `task-families-evaluadas-en-el-documento-evals` y refina `task-specifi
 - contradicts → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
 - relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - relates_to → [[task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto]]
+- supports → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]

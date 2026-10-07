@@ -1,7 +1,7 @@
 ---
 id: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
-title: 'Divergencia de rechazo al nombrar figuras públicas: Gemini sí, ChatGPT y Claude
-  no'
+title: 'Divergencia de rechazo al nombrar figuras públicas en imágenes: Gemini sí,
+  ChatGPT y Claude no'
 type: concept
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-30'
+updated: '2026-10-07'
 sources:
 - 19cb8032958cd964
 tags:
@@ -18,7 +18,9 @@ tags:
 - claude
 - figuras-publicas
 - gemini
+- guardrails
 - identificacion-facial
+- imagenes
 - multimodal
 - politica-de-modelo
 - politica-de-modelos
@@ -28,7 +30,7 @@ tags:
 - rechazo
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -67,22 +69,22 @@ links:
   type: supports
 - to: confundir-rechazo-por-politica-con-capacidad-de-modelo
   type: relates_to
+- to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  type: relates_to
+- to: privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas
+  type: relates_to
 ---
 
 ## What it is
-
-Según un único titular RSS, ante la tarea de identificar figuras públicas en imágenes, Gemini no rechaza y ChatGPT y Claude sí. La divergencia es de política de rechazo entre proveedores, no de capacidad demostrada. El documento no especifica versiones de modelo, fecha, cuenta, región ni condiciones de prueba.
+Un único documento RSS reporta que, ante una imagen con figuras públicas, ChatGPT y Claude se niegan a identificarlas mientras Gemini sí lo hace. El documento presenta esta asimetría como el comportamiento distintivo del caso. Es una observación de política de producto sobre asistentes desplegados, no un resultado de investigación ni una medición de capacidad.
 
 ## Evidence
-
-- «ChatGPT and Claude won't, but Gemini will», sobre identificación de figuras públicas en imágenes — source: 19cb8032958cd964
-- Documento único con engagement=0; novelty=0.00 y corroboración=0.50 según el reporte del cluster — source: 19cb8032958cd964
+- ChatGPT y Claude no identifican figuras públicas en imágenes; Gemini sí lo hace, y el documento lo enmarca como el comportamiento que los distingue — source: 19cb8032958cd964
 
 ## Why it matters
+La selección de modelo para una demo docente o para cualquier pipeline que procese imágenes suministradas por usuarios no puede apoyarse solo en la calidad de benchmark: prompts idénticos producen rechazos distintos según el proveedor. Una feature multimodal construida sobre una abstracción multi-proveedor puede regresar en silencio cuando un proveedor endurece o relaja su política de identificación. Para docencia, la divergencia sirve como ejemplo en vivo de política frente a capacidad, siempre que no se lea como prueba de lo segundo.
 
-Recuerda que los criterios de aceptación de una feature multimodal dependen del proveedor y que la misma tarea recibe tratamientos distintos. Pero el documento solo asevera la asimetría; no la mide, no la cuantifica y no cita fuente primaria. Un dev que integre agentes debería verificarla por sí mismo antes de asumir paridad entre modelos.
-
-Apoya «divergencia-de-rechazo-entre-proveedores»: es un caso concreto de la divergencia ya registrada. Se relaciona con «confundir-rechazo-por-politica-con-capacidad-de-modelo»: la asimetría es de política. Apoya «gemini-no-rechaza-nombrar-figuras-publicas», de la que es la fuente concreta.
+Se apoya en la distinción entre capacidad técnica y política de rechazo (`capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`, `confundir-rechazo-por-politica-con-capacidad-de-modelo`): el rechazo es una decisión de producto, no un límite técnico. Es un caso concreto dentro del patrón general de divergencia de rechazo entre proveedores. Refuerza la nota sobre Gemini (`gemini-no-rechaza-nombrar-figuras-publicas`) y comparte el eje de la afirmación de capacidad sin metodología (`llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia`, `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`). Conecta con `identificar-no-es-reconocer-en-la-fuente` por la ambigüedad del verbo y con `privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas` por el riesgo que el documento no aborda.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -102,3 +104,5 @@ Apoya «divergencia-de-rechazo-entre-proveedores»: es un caso concreto de la di
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - supports → [[divergencia-de-rechazo-entre-proveedores]]
 - relates_to → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]
+- relates_to → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- relates_to → [[privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas]]

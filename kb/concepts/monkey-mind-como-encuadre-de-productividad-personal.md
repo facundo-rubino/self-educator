@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-05'
+updated: '2026-10-07'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -27,10 +27,11 @@ tags:
 - productividad
 - productividad-personal
 - productivity
+- scope-limit
 - self-management
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -68,15 +69,16 @@ links:
 ---
 
 ## What it is
-El encuadre declarado del proyecto es personal: «to help tame my monkey mind». Sitúa la herramienta en productividad y bienestar individuales, no en gestión de equipo, docencia ni liderazgo técnico. Un solo post con engagement cero sostiene esta lectura como descripción, no como hallazgo.
+«Monkey mind» —la mente que salta de un objeto a otro— se usa como encuadre de un problema de foco personal. El artefacto construido para tratarlo es un coach, no una herramienta de gestión de equipos ni de docencia.
 
 ## Evidence
-- El encuadre es personal («to help tame my monkey mind»), indicando un experimento autodirigido de productividad/bienestar más que una práctica de equipo, docencia o liderazgo — source: 49140f9d5133d3c7
+- El título presenta el proyecto como herramienta para «domar la mente de mono» — source: 49140f9d5133d3c7
+- El documento no menciona ningún eje del brief de liderazgo técnico, estimación, alcance o enseñanza — source: 49140f9d5133d3c7
 
 ## Why it matters
-Delimita el techo de lo que se puede afirmar: el ítem sirve como ejemplo marginal de un dev aplicando IA a su propia productividad. No autoriza ninguna afirmación sobre estimación, secuenciación, alcance, pedagogía ni craft.
+Identifica el eje temático real del clúster (foco individual) para que no se lea como señal sobre práctica profesional. El vocabulario de productividad personal es contaminante en un brief de liderazgo si no se delimita.
 
-Se apoya en `ai-coach-voz-a-voz-ensamblado-de-servicios` como sustrato técnico. Refuerza `cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional` (el clúster no contiene evidencia de práctica profesional) y `afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion` (cualquier puente a liderazgo o docencia sería invención).
+Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo` (mismo recorte de alcance) y con `cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional` (el clúster previo, ya marcado como sin evidencia profesional).
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]

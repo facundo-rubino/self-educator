@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-07'
 sources:
 - 93963a5f93e58d05
 tags:
+- alcance
 - evals
 - evidencia
-- alcance
+- ingesta
+- llm
+- pipeline
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -27,20 +30,26 @@ links:
   type: supports
 - to: task-specific-llm-evals-titulo-sin-contenido-ingerido
   type: supports
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: relates_to
+- to: task-specific-llm-evals-singleton-engagement-cero
+  type: relates_to
 ---
 
 ## What it is
-Del documento [93963a5f93e58d05] solo es citable la enumeración de familias de tarea (clasificación, resumen, traducción, regurgitación de copyright, toxicidad). El resto del contenido no está ingerido: no hay texto completo que describa el «do & don't work» del título.
+El documento «Task-Specific LLM Evals that Do & Don't Work» solo aporta, como contenido verificable, la enumeración de familias de tarea que su resumen declara: clasificación, resumen y traducción por un lado; regurgitación de copyright y toxicidad por otro [93963a5f93e58d05]. No hay datos, metodología ni resultados cuantitativos más allá de esa enumeración. Lo único que puede afirmarse es qué tareas nombra el ítem, no qué se midió sobre ellas.
 
 ## Evidence
-- El único contenido atribuido al documento es la descripción de evals para clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
-- La descripción del documento es breve y no se incluye su texto completo — source: 93963a5f93e58d05
+- El resumen del documento afirma que las evals funcionan para clasificación, resumen y traducción, y no para regurgitación de copyright ni toxicidad — fuente: 93963a5f93e58d05
+- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y trata sobre evaluaciones específicas por tarea — fuente: 93963a5f93e58d05
 
 ## Why it matters
-Fija qué puede escribirse con trazabilidad y qué no. Cualquier detalle sobre metodología, resultados o comparaciones del documento sería especulativo con la evidencia disponible.
+Fija el techo de lo compilable desde esta señal: cualquier claim sobre *por qué* unas evals funcionan y otras no, o sobre *cuánto* mejoran, excede lo que el documento sostiene. Cualquier uso aguas abajo debe limitarse a la lista de tareas declarada.
 
-Sostiene task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad (la lista es el contenido) y task-specific-llm-evals-titulo-sin-contenido-ingerido (explica por qué el título no se puede desarrollar).
+Es la lectura mínima del mismo documento que sostiene `task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad`, y respalda directamente la nota de que el título no viene con cuerpo ingerido. Se relaciona con el singleton sin engagement porque comparten el mismo único documento fuente.
 
 ## Links
 - supports → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - supports → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- relates_to → [[task-specific-llm-evals-singleton-engagement-cero]]

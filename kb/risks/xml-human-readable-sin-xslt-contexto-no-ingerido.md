@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-30'
+updated: '2026-10-07'
 sources:
 - 1bfe45ede61ee575
 tags:
@@ -17,13 +17,14 @@ tags:
 - evidence-gap
 - evidencia-faltante
 - ingesta
+- ingesta-truncada
 - javascript
 - recomendacion-no-generalizable
 - xml
 - xslt
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -42,20 +43,23 @@ links:
   type: supports
 - to: xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido
   type: supports
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: derived_from
+- to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
+  type: relates_to
 ---
 
 ## What it is
-El documento solo contiene el título «Making XML human-readable without XSLT» y la línea «JavaScript is right there.» [1bfe45ede61ee575]. No trae código, ejemplo, benchmark ni discusión de tradeoffs. El contexto que permitiría leer la frase como una decisión técnica (¿transformar en cliente con DOMParser y recorrido del DOM? ¿usar una librería XML de un lenguaje general en lugar de un motor XSLT en un pipeline?) no está en el texto ingerido y tendría que aportarlo el lector.
+Riesgo de sobreinterpretación cuando se intenta reconstruir la comparación XSLT vs. JavaScript a partir de un ítem cuyo cuerpo entero es «JavaScript is right there.» El contexto —runtime asumido, tipo de documento XML, requisito de presentación— no está ingerido.
 
 ## Evidence
-- El contenido entero del documento es el título más la línea «JavaScript is right there.» — source: 1bfe45ede61ee575
-- El documento no aporta código, ejemplo ni argumento que desarrolle el mecanismo implícito — source: 1bfe45ede61ee575
-- El ítem llega por RSS con engagement=0, sin reacción de audiencia medida — source: 1bfe45ede61ee575
+- El cuerpo entero del documento es la frase «JavaScript is right there», sin descripción del runtime ni del caso de uso. — source: 1bfe45ede61ee575
+- No se aporta método, código, benchmark ni ejemplo que fije el contexto de la afirmación. — source: 1bfe45ede61ee575
 
 ## Why it matters
-Cualquier afirmación sobre cómo se haría la transformación sin XSLT es extrapolación del lector, no contenido del documento. Reconocer este hueco evita compilar una técnica no observada y protege la trazabilidad del grafo.
+Cualquier lectura concreta de la comparación (por ejemplo, «en el navegador JS ya está disponible, XSLT es redundante») sería fabricación de contexto. El ítem no permite decidir entre varias interpretaciones incompatibles.
 
-Refuerza la nota sobre la afirmación sin cuerpo del mismo documento y la lectura de «JavaScript is right there» como pretexto léxico. Es el mismo hueco ya registrado en la nota de título sin contenido ingerido.
+Se deriva de `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`, que documenta la ausencia de método. Se relaciona con `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido` por compartir la misma carencia de cuerpo. Conecta con `ingesta-truncada-como-riesgo-sistemico-de-cobertura` porque este caso es un ejemplo concreto de ese riesgo: el titular sobrevive pero el cuerpo no sostiene ninguna lectura.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
@@ -65,3 +69,5 @@ Refuerza la nota sobre la afirmación sin cuerpo del mismo documento y la lectur
 - supports → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
 - supports → [[xml-pretexto-lexico-javascript-en-el-runtime]]
 - supports → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
+- derived_from → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- relates_to → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]

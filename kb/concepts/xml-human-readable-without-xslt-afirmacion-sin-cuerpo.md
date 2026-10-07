@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-10-06'
+updated: '2026-10-07'
 sources:
 - 1bfe45ede61ee575
 tags:
+- afirmacion-sin-cuerpo
 - corpus
 - docencia-de-programacion
 - documento-unico
@@ -23,11 +24,12 @@ tags:
 - rss-stub
 - stub
 - tooling
+- tooling-choice
 - xml
 - xslt
 base_confidence: 0.03
 half_life_days: 180
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -60,20 +62,21 @@ links:
   type: relates_to
 - to: xml-human-readable-sin-xslt-contexto-no-ingerido
   type: relates_to
+- to: xml-pretexto-lexico-javascript-en-el-runtime
+  type: relates_to
 ---
 
 ## What it is
-Un ítem RSS titulado «Making XML human-readable without XSLT» cuyo cuerpo entero es la frase «JavaScript is right there.» Afirma que JavaScript es la herramienta obvia para transformar/leer XML en lugar de redactar hojas XSLT, sin aportar razonamiento, ejemplos ni demo. Es una aserción de herramienta, no un método ni una práctica.
+Documento titulado «Making XML human-readable without XSLT» cuyo cuerpo entero es la frase «JavaScript is right there.» Afirma una preferencia por renderizar o prettificar XML directamente con JavaScript en lugar de hojas de estilo XSLT, pero no aporta método, código, benchmark ni ejemplo. Es una aserción de una línea, no una técnica documentada.
 
 ## Evidence
-- El cuerpo completo del documento es la frase «JavaScript is right there» — source: 1bfe45ede61ee575
-- El título declara el tema: hacer XML legible para humanos sin XSLT — source: 1bfe45ede61ee575
-- El ítem llega con engagement=0 en el corpus ingerido — source: 1bfe45ede61ee575
+- El documento se titula «Making XML human-readable without XSLT» y su cuerpo completo es la frase «JavaScript is right there.» — source: 1bfe45ede61ee575
+- El documento propone JavaScript como alternativa a XSLT para hacer XML legible, sin ofrecer detalle de implementación, ejemplo ni comparación. — source: 1bfe45ede61ee575
 
 ## Why it matters
-No rinde ningún claim transferible sobre liderazgo, agentes, estimación, docencia ni oficio. Su único valor es como ejemplo de ítem con solapamiento léxico («XML») que entra al brief sin conexión temática. Consumirlo como evidencia técnica sería leer una opinión de seis palabras como argumento de ingeniería.
+No se puede extraer ninguna técnica, herramienta o práctica: solo consta que un ítem RSS hace esa afirmación. La única evidencia defendible es la existencia del documento y su frase. Cualquier implicación práctica sobre elección de tooling sería especulativa.
 
-Se relaciona con las otras notas del mismo ítem (`xml-human-readable-sin-xslt-solo-afirmacion-javascript`, `...-titulo-sin-contenido-ingerido`) y con la nota de contexto no ingerido: todas describen facetas del mismo documento mínimo y no deben fusionarse en una sola nota, porque cada una captura una carencia distinta (afirmación, cuerpo, contexto).
+Se relaciona con `xml-human-readable-sin-xslt-solo-afirmacion-javascript`, que registra la misma afirmación sin método, y con `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido`, que registra la ausencia de cuerpo. Enlaza con `xml-human-readable-sin-xslt-contexto-no-ingerido` porque el contexto que decidiría la comparación XSLT vs. JS no está disponible, y con `xml-pretexto-lexico-javascript-en-el-runtime`, que enmarca «JavaScript is right there» como guiño léxico más que como técnica de transformación.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
@@ -90,3 +93,4 @@ Se relaciona con las otras notas del mismo ítem (`xml-human-readable-sin-xslt-s
 - relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
 - relates_to → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
 - relates_to → [[xml-human-readable-sin-xslt-contexto-no-ingerido]]
+- relates_to → [[xml-pretexto-lexico-javascript-en-el-runtime]]

@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-10-06'
+updated: '2026-10-07'
 sources:
 - 19cb8032958cd964
 tags:
@@ -29,11 +29,12 @@ tags:
 - modo-de-fallo
 - multimodal
 - politica-de-modelos
+- politica-vs-capacidad
 - rss
 - titular-rss
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -80,20 +81,27 @@ links:
   type: relates_to
 - to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
   type: relates_to
+- to: afirmar-capacidad-desde-fragmento-de-una-linea
+  type: relates_to
+- to: afirmacion-de-capacidad-multimodal-sin-metodologia
+  type: relates_to
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: relates_to
+- to: segundo-corpus-necesario-para-afirmar-capacidad-multimodal
+  type: relates_to
 ---
 
 ## What it is
-Tomar un titular de RSS sin cuerpo, sin fuente primaria y sin fecha como evidencia de una capacidad general de los LLMs confunde el comportamiento de un producto (una feature opt-in de reconocimiento de celebridades) con una propiedad del modelo.
+Tomar un único ítem RSS sobre la negativa de ChatGPT/Claude y la disposición de Gemini a nombrar figuras públicas, y compilarlo como «los LLM ahora identifican figuras públicas», confunde cumplimiento observado con capacidad demostrada. La disposición a responder no prueba la exactitud de la identificación, y el rechazo puede provenir de política, no de incapacidad.
 
 ## Evidence
-- El documento que sostiene el claim es un titular de RSS con engagement=0 y sin metodología ni fuente verificable — source: 19cb8032958cd964
-- El matiz «ChatGPT y Claude no, Gemini sí» apunta a comportamiento de producto, no a capacidad de modelo — source: 19cb8032958cd964
-- La crítica ajusta la confianza a 0.07, cerca del suelo — source: 19cb8032958cd964 (veredicto del crítico)
+- El clúster contiene un solo documento, sin replicación independiente, sin benchmark y sin tasa de error de identificación de personas no públicas — source: 19cb8032958cd964
+- La puntuación de novelty de 0.00 registrada para el clúster indica que la capacidad subyacente no es nueva — source: 19cb8032958cd964
 
 ## Why it matters
-Derivar decisiones de arquitectura, cumplimiento o docencia desde un titular así es base insuficiente. El matiz entre proveedores es de política/cumplimiento, no de capacidad: «no lo hace» no implica «no puede».
+Es un modo de fallo reproducible del pipeline de compilación: atribuir capacidad desde comportamiento de rechazo es circular. Cualquier afirmación sobre lo que un modelo multimodal puede hacer requiere corpus, versiones y condiciones, y el dato importante no medido aquí es la tasa de falsos positivos al identificar a personas que no son figuras públicas.
 
-Deriva de la nota del claim multimodal sin metodología. Repite el modo de fallo ya registrado en «afirmar capacidad desde un titular RSS sobre identificación» y en «identificar no es reconocer en la fuente».
+Es el modo de fallo del que depende la lectura de `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`. Se alinea con `afirmar-capacidad-desde-fragmento-de-una-linea`, `afirmacion-de-capacidad-multimodal-sin-metodologia`, `afirmacion-de-novedad-sin-linea-base`, `identificar-no-es-reconocer-en-la-fuente` y `segundo-corpus-necesario-para-afirmar-capacidad-multimodal`. Se apoya además en la distinción capacidad/política y no la contradice: la complementa para el caso multimodal.
 
 ## Links
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
@@ -117,3 +125,7 @@ Deriva de la nota del claim multimodal sin metodología. Repite el modo de fallo
 - derived_from → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[afirmar-capacidad-desde-fragmento-de-una-linea]]
+- relates_to → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
+- relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- relates_to → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]

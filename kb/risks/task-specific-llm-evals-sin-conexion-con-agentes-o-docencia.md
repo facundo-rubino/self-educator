@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-05'
+updated: '2026-10-07'
 sources:
 - 93963a5f93e58d05
 tags:
-- evals
 - agentes
-- docencia
+- alcance
+- brief
 - brief-mismatch
+- docencia
+- evals
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -32,22 +34,30 @@ links:
   type: supports
 - to: aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion
   type: supports
+- to: task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo
+  type: derived_from
+- to: task-specific-llm-evals-adyacencia-al-brief-no-demostrada
+  type: relates_to
+- to: task-specific-llm-evals-relevancia-lexica-no-tematica
+  type: relates_to
 ---
 
 ## What it is
-Las familias de eval que declara el documento (clasificación, resumen, traducción, regurgitación de copyright, toxicidad) son NLP general. Ninguna de ellas cubre agentes de IA aplicados a programar, gestión de equipos chicos ni docencia de programación entry-level.
+El clúster no contiene ningún documento que una las evals específicas por tarea con liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, productividad ni técnicas de estudio [93963a5f93e58d05]. La conexión con esos ejes queda abierta.
 
 ## Evidence
-- El único documento enumera evaluaciones para clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
-- El clúster no contiene afirmaciones sustantivas sobre agentes de IA aplicados a programar, gestión o docencia — source: 93963a5f93e58d05
+- El único contenido del clúster son las familias de tarea declaradas por el resumen; ninguna menciona agentes de código, gestión ni docencia — fuente: 93963a5f93e58d05
 
 ## Why it matters
-Si el interés es incorporar evals de LLM al oficio de programar o enseñar, este documento es un punto de partida genérico y requeriría fuentes adicionales que lo conecten con docencia o ingeniería de software. Usarlo como evidencia de que las evals mejoran el trabajo de un dev/docente sería extrapolación.
+Es una laguna explícita: la pregunta de si las evals por tarea ayudan a un dev que lidera y enseña queda sin responder desde esta evidencia. La respuesta requeriría un corpus distinto.
 
-Refuerza `task-specific-llm-evals-adyacencia-al-brief-no-demostrada`. Coincide con `evals-llm-genericas-fuera-del-alcance-del-brief` y con `aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion`, que ya delimitan el alcance. La nota `task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto` toca el único borde de producto, pero sin cuerpo que lo sostenga.
+Se deriva de la nota sobre las familias NLP que no cubren evals de código. Se relaciona con la nota existente sobre la adyacencia no demostrada al brief y con la de relevancia léxica: las tres describen el mismo hueco desde ángulos distintos — léxico, temático y de ausencia de documento.
 
 ## Links
 - supports → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
 - relates_to → [[task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto]]
 - supports → [[evals-llm-genericas-fuera-del-alcance-del-brief]]
 - supports → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]
+- derived_from → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
+- relates_to → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
+- relates_to → [[task-specific-llm-evals-relevancia-lexica-no-tematica]]

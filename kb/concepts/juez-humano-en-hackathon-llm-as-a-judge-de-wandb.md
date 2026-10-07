@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-02'
+updated: '2026-10-07'
 sources:
 - d2a0c86ca8027978
 tags:
+- artefacto-de-ingesta
 - evaluacion
 - evaluacion-llm
 - evento
@@ -27,7 +28,7 @@ tags:
 - weave
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -77,16 +78,18 @@ links:
 ---
 
 ## What it is
-El único contenido sustantivo del ítem RSS [d2a0c86ca8027978] es una autodescripción: el autor afirma haber actuado como juez humano en el «Weights & Biases LLM-as-a-Judge Hackathon». El documento no aporta detalle sobre el evento, los proyectos juzgados, los criterios de evaluación ni ningún insight metodológico.
+El clúster corresponde a un único documento RSS [d2a0c86ca8027978] que es una nota en primera persona sobre haber ejercido de juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases. El contenido ingerido se limita al enunciado de nivel de titular y al encuadre hackathon/juez; no describe estructura del evento, criterios de juicio, proyectos presentados ni conclusiones.
 
 ## Evidence
-- El documento consiste únicamente en la autodescripción del autor como juez humano en el hackathon; no contiene detalle adicional sobre evento, criterios de juicio o resultados — source: d2a0c86ca8027978
-- El artefacto es un ítem de origen RSS con engagement=0, sin señal observada de engagement de lectores — source: d2a0c86ca8027978
+- El documento es una nota de rol en primera persona sobre ser juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases — source: d2a0c86ca8027978
+- El documento se asocia al rol de juicio del hackathon y al tema de evaluación «LLM-as-a-Judge», lo que indica que el evento gira en torno a usar LLMs como evaluadores — source: d2a0c86ca8027978
+- El contenido ingerido es esencialmente de nivel de titular: no aporta métodos, proyectos ni lecciones descritas — source: d2a0c86ca8027978
+- El documento llegó por feed RSS con engagement registrado igual a cero — source: d2a0c86ca8027978
 
 ## Why it matters
-Señala una proximidad biográfica del autor al trabajo de evaluación de LLMs, pero no constituye evidencia sobre práctica de ingeniería, liderazgo técnico ni evaluación aplicada. Cualquier generalización sobre LLM-as-a-judge a partir de este clúster carece de base documental.
+No aporta evidencia sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo técnico de equipos chicos, estimación, secuenciamiento, alcance, organización personal, oficio de software engineering, productividad o técnicas de estudio. Como mucho es un punto de contacto periférico y débil sobre evaluación de salidas de modelo.
 
-Se relaciona con la nota existente del mismo clúster (`juez-humano-we-and-b-llm-evaluator-hackathon`), con la nota de engagement cero del fragmento y con el stub de título sin cuerpo; las tres describen el mismo artefacto desde ángulos distintos (rol declarado, métrica de engagement, ausencia de cuerpo).
+Se relaciona con las notas existentes sobre el mismo stub de W&B: «wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo» y «juez-humano-we-and-b-llm-evaluator-hackathon», que registran el mismo artefacto de ingesta desde ángulos distintos. La conexión se sostiene por identidad de documento fuente, no por una tesis compartida sobre el brief.
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]

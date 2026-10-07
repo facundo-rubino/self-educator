@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-06'
+updated: '2026-10-07'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -26,11 +26,12 @@ tags:
 - falsos-positivos
 - filtrado
 - filtro-determinista
+- matching-lexico
 - mcp
 - pipeline
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -49,20 +50,25 @@ links:
   type: supports
 - to: mcp-cluster-2026-8-31-sin-relacion-con-el-brief
   type: supports
+- to: mcp-release-2026-8-31-bumps
+  type: relates_to
+- to: relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista
+  type: relates_to
+- to: mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades
+  type: supports
 ---
 
 ## What it is
-El clúster del release 2026.8.31 no contiene discusión sobre cómo un dev-líder-docente hace su trabajo: contiene únicamente cadenas de versión de paquetes MCP. La relevancia 0.33 y la novedad 0.00 son consistentes con ruido topical que superó el filtrado determinista por solapamiento léxico del título, no por contenido temático.
+El clúster fue retenido con relevance=0.33, novelty=0.00 y corroboration=0.50, y todos sus ítems tienen engagement cero. El patrón que mejor explica su presencia en el brief es el solapamiento léxico superficial en «agents»/«AI»/«server» de un feed de releases, no una afinidad temática.
 
 ## Evidence
-- Across eight documents, el único patrón de contenido es una fecha de release, un número de versión y una lista de paquetes, sin narrativa, guía ni análisis relevante a programar, gestionar o enseñar — source: ffbd76916d1dfdc5
-- El analista puntúa novelty 0.00 y relevance 0.33 sobre el clúster entero, y el crítico confirma que se trata de un resultado nulo bien sostenido, no de un hallazgo positivo débil — source: sig-d0acf338c3a6
-- El veredicto del crítico ajusta la confianza a 0.08: el único punto discutible es si la cadencia MCP sigue siendo marginalmente relevante para «AI agents for coding» tooling — source: sig-d0acf338c3a6
+- El analista atribuye la retención a solapamiento superficial de keywords sobre «agents»/«AI», no a contenido — source: sig-d0acf338c3a6
+- relevance=0.33 con novelty=0.00 y corroboration=0.50 acompañan a ítems de engagement cero — source: sig-d0acf338c3a6
 
 ## Why it matters
-Prohíbe compilar cualquier claim sobre agentes, liderazgo o docencia a partir de este clúster. Si el pipeline no distingue bumps de versión de discurso de práctica, cualquier conclusión derivada aquí es un artefacto del scorer, no evidencia.
+Un feed de changelog versionado por fecha puede reingresar en este topic en cada fecha futura mientras la regla de matching siga mirando tokens de superficie. Es un candidato directo a regla determinista de exclusión («aviso de release / digest de versiones de paquete») o a reasignarse a un stream dedicado de ecosistema/tooling.
 
-Sostiene `release-2026-8-31-stub-sin-changelog` (el clúster es un stub de bumps) y `mcp-cluster-2026-8-31-sin-relacion-con-el-brief` (la etiqueta temática no coincide con el contenido). Se relaciona con `mcp-release-stubs-como-artefacto-de-feed`: ambos describen el mismo modo de fallo del pipeline sobre feeds de releases.
+Se relaciona con el release 2026.8.31 como el caso concreto que dispara esta regla, y con el riesgo general de que un clúster con relevance muy baja sobreviva al filtrado determinista. `supports` la nota sobre por qué un feed de releases MCP sin changelog no permite afirmar capacidades.
 
 ## Links
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
@@ -72,3 +78,6 @@ Sostiene `release-2026-8-31-stub-sin-changelog` (el clúster es un stub de bumps
 - relates_to → [[mcp-release-stubs-como-artefacto-de-feed]]
 - supports → [[release-2026-8-31-stub-sin-changelog]]
 - supports → [[mcp-cluster-2026-8-31-sin-relacion-con-el-brief]]
+- relates_to → [[mcp-release-2026-8-31-bumps]]
+- relates_to → [[relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista]]
+- supports → [[mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades]]

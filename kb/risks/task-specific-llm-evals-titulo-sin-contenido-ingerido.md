@@ -10,11 +10,12 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-10-02'
+updated: '2026-10-07'
 sources:
 - 19cb8032958cd964
 - 93963a5f93e58d05
 tags:
+- corpus-truncado
 - evals
 - evidencia
 - firehose
@@ -27,7 +28,7 @@ tags:
 - titulo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -60,18 +61,23 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
   type: supports
+- to: task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido
+  type: contradicts
+- to: afirmar-mejora-de-liderazgo-por-juzgar-evaluadores-de-llm-seria-invencion
+  type: relates_to
 ---
 
 ## What it is
-El reporte incluye un ítem de «Task-Specific LLM Evals that Do & Don’t Work» del que solo se recupera el título y el alcance declarado, sin contenido ingerido [19cb8032958cd964].
+El ítem llega solo como título más un resumen de una línea; no hay cuerpo, ni tabla de resultados, ni metodología [93963a5f93e58d05]. El engagement del documento es 0, lo que indica ausencia de interacción medible en la fuente RSS [93963a5f93e58d05].
 
 ## Evidence
-- Título y alcance declarado del documento, sin cuerpo recuperado — source: 19cb8032958cd964
+- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y trata sobre evaluaciones específicas por tarea — fuente: 93963a5f93e58d05
+- El engagement del documento es 0 — fuente: 93963a5f93e58d05
 
 ## Why it matters
-Un título sin cuerpo es artefacto de ingesta, no hallazgo. Las familias de tarea declaradas son el único contenido verificable.
+Sin cuerpo ingerido no se puede reconstruir la metodología ni verificar la afirmación del resumen. Cualquier detalle sobre qué se midió, con qué modelos o bajo qué condiciones sería invención.
 
-Refuerza la nota sobre que las familias declaradas son el único contenido verificable y la que señala que las tareas declaradas son NLP general, no evals de código.
+Respalda las dos notas que solo pueden apoyarse en el alcance declarado. Entra en tensión con la nota existente `task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido`, que enuncia el mismo diagnóstico bajo otro id: se marca contradicción para que la reconciliación unifique ambas, en vez de sobrescribir una. Se relaciona con la nota sobre no inferir mejora de liderazgo desde juzgar evaluadores: mismo modo de fallo, el puente sin cadena de evidencia.
 
 ## Links
 - supports → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -88,3 +94,5 @@ Refuerza la nota sobre que las familias declaradas son el único contenido verif
 - relates_to → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
 - relates_to → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]
 - supports → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
+- contradicts → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
+- relates_to → [[afirmar-mejora-de-liderazgo-por-juzgar-evaluadores-de-llm-seria-invencion]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-05'
+updated: '2026-10-07'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -19,6 +19,7 @@ tags:
 - integration
 - llm
 - monkey-mind
+- personal-productivity
 - prototipado
 - prototyping
 - proyecto-personal
@@ -32,7 +33,7 @@ tags:
 - voz
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -55,19 +56,21 @@ links:
   type: relates_to
 - to: asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual
   type: contradicts
+- to: stack-de-ai-coach-voz-a-voz-ensamblado
+  type: relates_to
 ---
 
 ## What it is
-Un AI coach personal construido ensamblando componentes existentes: reconocimiento de voz (STT), síntesis de voz (TTS), un LLM y un número de teléfono virtual. No hay entrenamiento de modelo propio; el artefacto es la composición del pipeline de voz. La fuente es un post RSS personal con engagement cero, sin métricas de resultado.
+Construcción de un coach personal por voz ensamblando servicios existentes: STT, TTS, un LLM y un número telefónico virtual. Sin modelo propio ni entrenamiento; la pieza novedosa es la composición.
 
 ## Evidence
-- El documento describe un AI coach compuesto por STT, TTS, un LLM y un número virtual — source: 49140f9d5133d3c7
-- Es un ítem de RSS con engagement cero registrado, sin validación externa ni discusión — source: 49140f9d5133d3c7
+- El documento describe la construcción de un «AI coach» personal combinando STT, TTS, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
+- El engagement registrado del documento es 0: sin evidencia de recepción ni adopción — source: 49140f9d5133d3c7
 
 ## Why it matters
-Marca el nivel mínimo de entrada para un asistente de voz personal: todo el trabajo está en la integración, no en el modelo. Como pieza de este brief aporta poco: no cubre estimación, secuenciación, alcance, docencia ni liderazgo.
+Delimita el techo de lo que se puede afirmar: el ensamblado es factible y documentado, la eficacia como coach no está demostrada. Cualquier extrapolación a liderazgo técnico o docencia sería inferencia del analista.
 
-`prototipado-por-composicion-de-apis-sin-entrenamiento` cubre el mismo modo de construcción (componer APIs, no entrenar). `asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual` marca el riesgo de tratar este ensamblado como aportación novedosa, que esta evidencia no sostiene. `stack-de-ai-coach-voz-a-voz` es la nota hermana que enumera el stack; esta nota registra el artefacto completo.
+Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo` (mismo artefacto, distinto recorte: stack vs. encuadre) y con `stack-de-ai-coach-voz-a-voz-ensamblado`; apoya a `prototipado-por-composicion-de-apis-sin-entrenamiento` como caso adicional del patrón.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
@@ -79,3 +82,4 @@ Marca el nivel mínimo de entrada para un asistente de voz personal: todo el tra
 - relates_to → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
 - relates_to → [[post-unico-como-plantilla-de-demostracion-end-to-end]]
 - contradicts → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
+- relates_to → [[stack-de-ai-coach-voz-a-voz-ensamblado]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-06'
+updated: '2026-10-07'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -17,6 +17,7 @@ tags:
 - alcance
 - brief
 - foco
+- focus
 - liderazgo
 - limites-del-brief
 - monkey-mind
@@ -24,9 +25,10 @@ tags:
 - productividad
 - productividad-personal
 - scope
+- scope-limit
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -55,19 +57,21 @@ links:
   type: relates_to
 - to: monkey-mind-como-encuadre-de-productividad-personal
   type: supports
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios-2024
+  type: relates_to
 ---
 
 ## What it is
-El único documento del clúster describe un «AI coach» orientado a domar el «monkey mind» del autor — un encuadre de productividad y organización personal [49140f9d5133d3c7]. No hay cuerpo, autor, resultado ni evaluación más allá del titular [49140f9d5133d3c7]. Ninguna evidencia del clúster conecta esta herramienta con liderazgo técnico, gestión de equipos o docencia.
+El «AI coach» se enmarca en productividad y gestión personal (domar la «monkey mind»), no en liderazgo técnico, docencia ni ingeniería de software. Su dominio de aplicación declarado es el foco individual, no la coordinación de equipos ni la enseñanza.
 
 ## Evidence
-- Documento titulado «Building an AI Coach to Help Tame My Monkey Mind», único del clúster — source: 49140f9d5133d3c7
-- El ítem es un RSS con engagement=0 y sin contenido de cuerpo en el clúster — source: 49140f9d5133d3c7
+- El título lo presenta como herramienta para «domar la mente de mono» (monkey mind), esto es, uso de productividad/gestión personal — source: 49140f9d5133d3c7
+- No contiene afirmaciones sobre agentes aplicados a programar, gestión de equipos chicos, estimación, secuenciación, alcance, liderazgo técnico o enseñanza de programación — source: 49140f9d5133d3c7
 
 ## Why it matters
-Delimita el alcance: un coach de voz anecdótico es dato de productividad personal, no hallazgo sobre liderazgo o docencia. Vincularlo a los ejes del brief sería invención del analista.
+Evita el error de arrastrar un artefacto de productividad personal al brief de liderazgo y docencia. El stack compartido con agentes (LLM, voz, telefonía) no implica aplicación compartida.
 
-Se relaciona con el stack de AI coach por voz que el mismo documento enuncia brevemente, y con la nota sobre el clúster «AI coach / monkey mind» como evidencia insuficiente de práctica profesional.
+Se deriva de `monkey-mind-como-encuadre-de-productividad-personal` (mismo encuadre de foco personal) y se relaciona con `ai-coach-voz-a-voz-ensamblado-de-servicios` (el stack concreto descrito).
 
 ## Links
 - relates_to → [[monkey-mind-como-encuadre-de-productividad-personal]]
@@ -82,3 +86,4 @@ Se relaciona con el stack de AI coach por voz que el mismo documento enuncia bre
 - supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
 - relates_to → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
 - supports → [[monkey-mind-como-encuadre-de-productividad-personal]]
+- relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios-2024]]

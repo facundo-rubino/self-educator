@@ -10,18 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-28'
-updated: '2026-09-29'
+updated: '2026-10-07'
 sources:
 - 1bfe45ede61ee575
 tags:
+- clustering
 - falso-positivo
 - falsos-positivos
 - filtrado
+- filtro-determinista
 - pipeline
 - xml
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -42,20 +44,28 @@ links:
   type: supports
 - to: etiqueta-determinista-como-falso-positivo-de-categoria
   type: supports
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: derived_from
+- to: relevancia-baja-novedad-nula-corroboracion-alta-no-son-senal
+  type: supports
+- to: relevancia-0-67-sin-evidencia-extraible-como-artefacto-del-scorer
+  type: relates_to
+- to: etiqueta-determinista-como-falso-positivo-de-categoria
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de precisión del pipeline: un ítem cuyo cuerpo es una sola línea pasa el filtrado y llega a revisión. Las palabras clave de programación en el título bastan para que el documento sobreviva aunque no contenga información.
+El ítem pasó el filtrado determinista con métricas relevance=0.33, novelty=0.00 y corroboration=0.50 pese a que su cuerpo entero es una sola frase. El match probable con el vocabulario del brief es léxico, no semántico: «programar» o términos de tooling pueden haber disparado la retención.
 
 ## Evidence
-- El documento tiene como único cuerpo «JavaScript is right there.» — source: 1bfe45ede61ee575
-- El documento es de origen rss y tiene engagement cero — source: 1bfe45ede61ee575
-- Relevance 0.33 (débil) y novelty 0.00 según el scoring del clúster — source: 1bfe45ede61ee575
+- El clúster consiste en un único ítem RSS [1bfe45ede61ee575] de bajo engagement cuyo cuerpo es la frase «JavaScript is right there.» — source: 1bfe45ede61ee575
+- El signal reporta relevance=0.33, novelty=0.00 y corroboration=0.50. — source: 1bfe45ede61ee575
+- El analista señala que el ítem queda tangencial a los ejes del brief (estimación, secuenciación, alcance, pedagogía). — source: 1bfe45ede61ee575
 
 ## Why it matters
-Confirma un coste operativo ya observado: abrir la compuerta por coincidencia léxica obliga a gastar tiempo de revisión en stubs. Un umbral de longitud mínima de cuerpo, antes del análisis, eliminaría este caso sin pérdida.
+Confirma el patrón de que un título con vocabulario técnico afín puede sobrevivir al filtro sin que el cuerpo respalde ningún eje del brief. Si estos ítems consumen cupo de compilación, desplazan señal real.
 
-Es el ejemplo concreto detrás de `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`. Apoya a `relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista` y a `etiqueta-determinista-como-falso-positivo-de-categoria`: el filtro por keywords de título es la causa común de estos falsos positivos.
+Se deriva de `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`, que documenta la vacuidad del cuerpo. Da soporte empírico a `relevancia-baja-novedad-nula-corroboracion-alta-no-son-senal` con un caso concreto. Se relaciona con `relevancia-0-67-sin-evidencia-extraible-como-artefacto-del-scorer` porque ambos describen desajustes entre score y contenido, y con `etiqueta-determinista-como-falso-positivo-de-categoria`, que generaliza el mismo fenómeno.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-solo-afirmacion-javascript]]
@@ -66,3 +76,7 @@ Es el ejemplo concreto detrás de `xml-human-readable-without-xslt-afirmacion-si
 - relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
 - supports → [[relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista]]
 - supports → [[etiqueta-determinista-como-falso-positivo-de-categoria]]
+- derived_from → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- supports → [[relevancia-baja-novedad-nula-corroboracion-alta-no-son-senal]]
+- relates_to → [[relevancia-0-67-sin-evidencia-extraible-como-artefacto-del-scorer]]
+- relates_to → [[etiqueta-determinista-como-falso-positivo-de-categoria]]

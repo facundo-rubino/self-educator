@@ -9,15 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-07'
 sources:
+- 49140f9d5133d3c7
 - abf61eeec75462f9
 tags:
 - claude-code
 - evidence-quality
+- prompt-engineering
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -26,20 +28,26 @@ links:
   type: contradicts
 - to: vista-filtrada-del-codigo-no-confirma-composicion-condicional
   type: relates_to
+- to: claude-code-source-leak-sin-artefacto-primario
+  type: supports
+- to: vista-filtrada-de-codigo-no-confirma-composicion-condicional
+  type: relates_to
 ---
 
 ## What it is
-Aun disponiendo de una vista parcial del código, esta no bastaría para confirmar cómo se ensambla el prompt en runtime: la composición efectiva depende de la ejecución, no solo de la presencia de fragmentos en el código.
+Una vista parcial o filtrada del código de un producto no permite confirmar cómo se ensambla su system prompt ni qué condiciones activan qué secciones. La inspección incompleta sostiene la sospecha, no la afirmación.
 
 ## Evidence
-- El material disponible no incluye código ni extracto, solo la afirmación de que el leak lo muestra — source: abf61eeec75462f9
-- La distinción entre lo que el código contiene y lo que efectivamente se ensambla no está establecida — source: abf61eeec75462f9
+- El clúster de AI coach, aunque sin relación con Claude Code, comparte el mismo modo de fallo: inferir mecánicas internas desde fragmentos — source: 49140f9d5133d3c7
+- El documento único sin engagement no aporta mecanismo verificable — source: 49140f9d5133d3c7
 
 ## Why it matters
-Bloquea el salto de «hay fragmentos condicionales en el código» a «el prompt se ensambla condicionalmente en producción». Es una cautela de verificación, no una refutación.
+Antes de citar una feature de tooling en docencia o configuración de equipo hay que verificar contra upstream. Una vista filtrada no es un artefacto primario.
 
-Contradice la lectura directa de `claude-code-system-prompt-conditional-composition` y coincide con `vista-filtrada-del-codigo-no-confirma-composicion-condicional`.
+Apoya a `claude-code-source-leak-sin-artefacto-primario` (misma exigencia de artefacto primario) y se relaciona con su homónima previa en el grafo.
 
 ## Links
 - contradicts → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[vista-filtrada-del-codigo-no-confirma-composicion-condicional]]
+- supports → [[claude-code-source-leak-sin-artefacto-primario]]
+- relates_to → [[vista-filtrada-de-codigo-no-confirma-composicion-condicional]]

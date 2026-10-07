@@ -10,23 +10,25 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-09-25'
+updated: '2026-10-07'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
 - 30a26335a9988ba2
+- 5a4df6bef0a4905f
 - 748f8b0a02cd7524
+- 9750590bbfe6b285
 - b9106690f5dfd849
 - ffbd76916d1dfdc5
-- 5a4df6bef0a4905f
-- 9750590bbfe6b285
 tags:
-- riesgo
+- artefacto-de-feed
 - mcp
 - muestreo
+- riesgo
+- serie-temporal
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-09-25'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -37,23 +39,28 @@ links:
   type: relates_to
 - to: mcp-release-stub-sin-changelog
   type: relates_to
+- to: mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia
+  type: relates_to
+- to: mcp-fechas-2026-sinteticas-no-corroborables
+  type: supports
 ---
 
 ## What it is
-La serie de releases fechados 2025.11.25–2026.8.31 admite a lo sumo una lectura descriptiva de cadencia. Tomarla como serie temporal con significado, o como evidencia del tema del brief, es sobreinterpretar un conjunto de documentos no aleatorio y auto-generado.
+El único hecho estructural que el clúster expone es qué paquetes aparecen en cada release con fecha. El conjunto rastreado varía entre releases: uno de diciembre de 2025 lista sequential-thinking, everything, filesystem y git, mientras que uno de julio de 2026 incluye time y fetch. La ausencia de paquetes en un release no es un hecho del mundo, es selección por release.
 
 ## Evidence
-- El conjunto son notas de release autogeneradas, que pueden publicarse incluso por bumps triviales o no-op — source: 30a26335a9988ba2
-- El conjunto de documentos es una muestra no aleatoria: solo entradas de feed de releases que sobrevivieron al filtrado, lo que hace frágil cualquier inferencia de cadencia o popularidad de paquetes a partir de 8 documentos — source: 16a4e3995d6c827e
-- Las cadenas de versión pueden leerse como fechas de eventos reales (por ejemplo 2026.8.31), lo que corrompería cualquier análisis temporal tomado al pie de la letra — source: 9750590bbfe6b285
-- Afirmar «el ecosistema MCP evoluciona rápido» o «llegaron nuevas capacidades» sería fabricado: ningún documento describe cambio de comportamiento o API, solo bumps — source: 30a26335a9988ba2
+- Un release de diciembre de 2025 lista server-sequential-thinking, server-everything, server-filesystem y mcp-server-git en la misma fecha versionada — source: 2221814efbefaa3b
+- Un release de julio de 2026 incluye mcp-server-time y mcp-server-fetch, mostrando que el conjunto de paquetes varía — source: 5a4df6bef0a4905f
+- Un release de enero de 2026 omite paquetes (p. ej. time, fetch) que sí aparecen en otros, indicando selección por release y no un ensamble fijo — source: 748f8b0a02cd7524
 
 ## Why it matters
-Bloquea el uso de este clúster como insumo del brief: el único uso legítimo es el registro de formato y cadencia. Cualquier claim de capacidades o de práctica profesional queda fuera de lo que la evidencia sostiene.
+Trazar una serie temporal con estos puntos produce una curva sobre el formato del feed, no sobre el ecosistema. Cualquier tendencia que se lea —adopción, madurez, actividad— sería un artefacto del subconjunto elegido en cada publicación.
 
-`contradicts` la nota de versionado por fecha y subconjunto variable en su alcance explicativo: esa nota describe el patrón, pero el patrón no debe leerse como señal de tema ni como serie temporal robusta. `relates_to` las notas sobre release stubs y sobre feeds como no-evidencia, que son la base de esta advertencia.
+Comparte territorio con la nota sobre la cadencia date-versioned de MCP, pero el foco aquí es distinto: allí la cadencia, aquí la fragilidad de tratar los puntos como serie. `supports` el riesgo de que las fechas 2026 no sean corroborables.
 
 ## Links
 - contradicts → [[mcp-releases-versionado-por-fecha-subconjunto-varia]]
 - relates_to → [[feed-de-dependencias-no-es-evidencia-de-practica-profesional]]
 - relates_to → [[mcp-release-stub-sin-changelog]]
+- relates_to → [[mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia]]
+- supports → [[mcp-fechas-2026-sinteticas-no-corroborables]]

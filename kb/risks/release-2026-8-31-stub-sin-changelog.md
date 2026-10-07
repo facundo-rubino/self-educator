@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-06'
+updated: '2026-10-07'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -24,13 +24,14 @@ sources:
 tags:
 - artefacto-de-ingesta
 - changelog
+- filtro-determinista
 - ingesta
 - mcp
 - off-topic
 - release-feed
 base_confidence: 0.82
 half_life_days: 120
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -53,20 +54,24 @@ links:
   type: supports
 - to: release-2026-8-31-mcp-token-como-falso-positivo-de-filtro
   type: relates_to
+- to: mcp-servers-sin-changelog-legible
+  type: relates_to
+- to: mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia
+  type: relates_to
 ---
 
 ## What it is
-El documento headline del release 2026.8.31 actualiza server-filesystem, server-memory, server-sequential-thinking y server-everything, pero el texto ingerido es solo fecha más número de versión más lista de paquetes. No hay changelog que declare qué cambió ni por qué.
+El documento semilla de esta señal es un aviso de release desnudo: una cadena de versión (v2026.8.31) seguida solo de una lista de paquetes de servidores MCP fijados a esa fecha, sin prosa, sin rationale y sin changelog. Otro aviso del mismo clúster sigue la plantilla idéntica con distinta fecha y subconjunto de paquetes, lo que confirma un formato de feed automatizado y recurrente, no contenido con autoría. No hay nada aquí que un dev-líder o docente pueda leer como hallazgo.
 
 ## Evidence
-- El release headline v2026.8.31 actualiza server-filesystem, server-memory, server-sequential-thinking y server-everything — source: 30a26335a9988ba2
-- Across the eight documents del clúster, el único patrón de contenido es fecha de release, versión y lista de paquetes, sin narrativa ni análisis — source: ffbd76916d1dfdc5
-- El analista concluye que ningún hallazgo sustantivo sobre el tema declarado puede fundamentarse en estos documentos — source: sig-d0acf338c3a6
+- El documento semilla es un aviso de release pelado: versión más lista de paquetes MCP fijados a esa fecha — source: 30a26335a9988ba2
+- Un segundo aviso sigue la plantilla idéntica con otra fecha y otro subconjunto de paquetes, confirmando un formato de feed automatizado — source: 2221814efbefaa3b
+- El engagement es cero en los ítems muestreados, consistente con entradas de changelog sindicadas que ninguna audiencia interactúa — source: ffbd76916d1dfdc5
 
 ## Why it matters
-Un bump sin changelog no permite afirmar capacidades nuevas, correcciones ni deprecaciones. Cualquier beneficio técnico que se atribuya a este release sería inferencia del analista, no contenido de la fuente.
+Fija el techo epistémico de todo el clúster: un documento que solo contiene una etiqueta de versión y una lista de nombres de paquete no puede enseñar nada sobre agentes aplicados a programar, liderazgo técnico ni docencia, independientemente de cómo se haya recuperado. Cualquier nota que extraiga una lección de práctica desde aquí estaría inventándola.
 
-Sostiene `mcp-servers-sin-changelog-legible` y `mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades`, que generalizan la misma carencia a la serie MCP. Se relaciona con `release-2026-8-31-mcp-token-como-falso-positivo-de-filtro`: el stub es la causa, el falso positivo la consecuencia.
+`supports` la nota de bumps del release 2026.8.31: aquí está la evidencia documental de que ese release es una plantilla de bumps. Se relaciona con la ausencia de changelog legible en las releases MCP y con la cadencia date-versioned de la serie. No lleva `contradicts`: no hay contenido rival que refutar.
 
 ## Links
 - supports → [[mcp-release-2026-8-31-bumps]]
@@ -78,3 +83,5 @@ Sostiene `mcp-servers-sin-changelog-legible` y `mcp-feed-de-releases-sin-changel
 - supports → [[mcp-servers-sin-changelog-legible]]
 - supports → [[mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades]]
 - relates_to → [[release-2026-8-31-mcp-token-como-falso-positivo-de-filtro]]
+- relates_to → [[mcp-servers-sin-changelog-legible]]
+- relates_to → [[mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia]]

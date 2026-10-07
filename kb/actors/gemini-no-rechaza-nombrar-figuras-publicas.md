@@ -9,11 +9,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-02'
+updated: '2026-10-07'
 sources:
 - 19cb8032958cd964
 tags:
 - gemini
+- guardrails
+- imagenes
 - multimodal
 - politica-de-proveedor
 - rechazo
@@ -21,7 +23,7 @@ tags:
 - vision
 base_confidence: 0.15
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -42,18 +44,24 @@ links:
   type: relates_to
 - to: aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales
   type: supports
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: relates_to
+- to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: relates_to
+- to: afirmacion-poblacional-desde-un-solo-proveedor
+  type: relates_to
 ---
 
 ## What it is
-El documento [19cb8032958cd964] contrasta el comportamiento de proveedores ante imágenes de figuras públicas: ChatGPT y Claude no las identifican, Gemini sí.
+Un único ítem RSS reporta que Gemini no se niega a nombrar figuras públicas presentes en una imagen, en contraste con ChatGPT y Claude. Es un dato de política observada de un proveedor, sin metodología, versión ni fecha publicadas en la evidencia disponible.
 
 ## Evidence
-- «ChatGPT and Claude will not identify public figures in images, but Gemini will» — source: 19cb8032958cd964
+- Gemini identifica figuras públicas en imágenes donde ChatGPT y Claude rechazan hacerlo — source: 19cb8032958cd964
 
 ## Why it matters
-Es un dato de divergencia de política de rechazo entre proveedores, no un dato de capacidad. Alimenta el patrón de que los criterios de aceptación en features multimodales dependen del proveedor.
+El dato es directamente relevante para elegir proveedor en cualquier demo docente o herramienta que procese imágenes: si el flujo asume uniformidad entre asistentes, el comportamiento de Gemini lo rompe. Al mismo tiempo, una observación de un solo proveedor en un solo documento no sostiene ninguna afirmación poblacional sobre «los LLM».
 
-Refuerza las notas existentes de divergencia de rechazo entre proveedores y la específica sobre nombrar figuras públicas. Aporta evidencia a la nota de patrón sobre criterios de aceptación dependientes de proveedor.
+Es el actor concreto del caso descrito en `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor` y evidencia del patrón general de divergencia entre proveedores. Queda condicionada por `afirmacion-poblacional-desde-un-solo-proveedor` y por `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion`: la fuente no es una medición, es una anécdota de feed.
 
 ## Links
 - supports → [[divergencia-de-rechazo-entre-proveedores]]
@@ -64,3 +72,6 @@ Refuerza las notas existentes de divergencia de rechazo entre proveedores y la e
 - relates_to → [[probe-de-rechazo-por-identidad-en-produccion]]
 - relates_to → [[prueba-con-proveedores-y-cuentas-especificas]]
 - supports → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]
+- relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]

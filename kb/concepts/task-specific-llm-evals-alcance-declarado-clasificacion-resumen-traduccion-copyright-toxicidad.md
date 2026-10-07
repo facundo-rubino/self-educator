@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-06'
+updated: '2026-10-07'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -22,10 +22,11 @@ tags:
 - nlp
 - rss-stub
 - scoping
+- task-families
 - task-specific
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -60,18 +61,20 @@ links:
   type: supports
 - to: aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion
   type: supports
+- to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
+  type: derived_from
 ---
 
 ## What it is
-El único contenido verificable del clúster «Task-Specific LLM Evals» es la lista de tareas que el propio documento declara cubrir. No hay cuerpo ingerido con metodología, resultados ni comparativas; todo lo que puede afirmarse se reduce a esa delimitación de alcance.
+El documento declara dos grupos de familias de tarea para evals de LLM: las que «funcionan» (clasificación, resumen, traducción) y las que «no funcionan» (regurgitación de copyright, toxicidad) [93963a5f93e58d05]. La declaración viene sin mecanismo, sin condiciones ni sin métrica. El documento no explica la frontera entre ambos grupos.
 
 ## Evidence
-- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y su contenido anunciado cubre clasificación, resumización, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05.
+- El resumen afirma que las evals funcionan para clasificación, resumen y traducción, pero no para regurgitación de copyright ni toxicidad — fuente: 93963a5f93e58d05
 
 ## Why it matters
-Convierte al documento en un objeto de alcance, no en una fuente de hallazgos: cualquier nota derivada debe limitarse a repetir qué tareas declara tratar, sin atribuirle conclusiones sobre su eficacia o sobre qué evals «funcionan».
+Es una taxonomía enunciada, no un resultado: sirve como vocabulario de familias de tarea, no como guía de qué evaluar. Tomarla como guía operativa requeriría la metodología que el documento no ingiere.
 
-Es la contraparte operativa de la nota de familias de tarea; respalda el riesgo de que aplicar estas evals a agentes de código sería extrapolación no sostenida.
+Se deriva de la nota sobre las familias de tarea como único contenido verificable. Respalda la nota del título sin cuerpo ingerido. Se relaciona con la nota sobre la adyacencia no demostrada al brief, porque la lista de tareas no contiene ningún eje de agentes aplicados a programar, gestionar o enseñar.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -89,3 +92,4 @@ Es la contraparte operativa de la nota de familias de tarea; respalda el riesgo 
 - relates_to → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
 - supports → [[task-specific-llm-evals-singleton-engagement-cero]]
 - supports → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]
+- derived_from → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]

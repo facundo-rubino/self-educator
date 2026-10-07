@@ -1,6 +1,6 @@
 ---
 id: task-specific-llm-evals-singleton-engagement-cero
-title: '«Task-Specific LLM Evals»: singleton RSS con engagement=0 y novelty=0.00'
+title: '«Task-Specific LLM Evals»: singleton RSS con engagement cero y novelty 0.00'
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-29'
+updated: '2026-10-07'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -26,7 +26,7 @@ tags:
 - singleton
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-07'
 provenance:
   scale: XL
   query: null
@@ -55,19 +55,22 @@ links:
   type: relates_to
 - to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
   type: relates_to
+- to: task-specific-llm-evals-singleton-rss-engagement-cero-novelty-cero
+  type: contradicts
+- to: relevancia-1-00-no-es-validacion-del-cluster
+  type: relates_to
 ---
 
 ## What it is
-El ítem es un cluster de un solo documento, con novelty 0.00, corroboration 0.50 y sin señales de engagement. Un cluster de tamaño uno no puede aportar corroboración interna por construcción.
+El clúster se sostiene sobre un solo documento RSS con engagement 0 y novedad 0.00 [93963a5f93e58d05]. La corroboración reportada (0.50) es plana y no procede de una segunda fuente, dado que solo hay una.
 
 ## Evidence
-- El cluster contiene un único documento — source: 93963a5f93e58d05
-- La novedad es nula (0.00) y la corroboración es 0.50 dentro del cluster — source: 93963a5f93e58d05
+- El engagement del documento es 0 — fuente: 93963a5f93e58d05
 
 ## Why it matters
-Advierte contra el argumento «no hay corroboración» como hallazgo: en un singleton esa ausencia está garantizada por la definición del cluster, no descubierta. La observación solo es válida como límite de inferencia, nunca como resultado.
+Un documento único sin engagement no sostiene generalización alguna sobre evals de LLM. Las métricas del clúster son autodescripción del pipeline, no corroboración externa.
 
-Comparte patrón con cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion y sostiene task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido: ambas condiciones explican por qué el documento no rinde claims.
+Se relaciona con la nota de cuerpo no ingerido, porque ambas describen el mismo ítem desde su debilidad de ingesta. Marca contradicción con `task-specific-llm-evals-singleton-rss-engagement-cero-novelty-cero`, que registra el mismo diagnóstico bajo otro id: la reconciliación debe unificarlas, no duplicar. Respalda la nota general sobre generalización desde clústeres de un solo documento.
 
 ## Links
 - supports → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -82,3 +85,5 @@ Comparte patrón con cluster-de-un-documento-sin-engagement-no-sostiene-generali
 - relates_to → [[relevancia-no-es-verdad]]
 - relates_to → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
 - relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- contradicts → [[task-specific-llm-evals-singleton-rss-engagement-cero-novelty-cero]]
+- relates_to → [[relevancia-1-00-no-es-validacion-del-cluster]]
