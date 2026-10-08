@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - fdf5991b8ee77588
 tags:
 - llm
-- mistral
 - llm-reasoning
+- mistral
 - release
+- releases
 base_confidence: 0.35
 half_life_days: 180
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -30,22 +31,26 @@ links:
   type: derived_from
 - to: mcp-release-stub-sin-changelog
   type: relates_to
+- to: release-de-plugin-no-es-evidencia-de-practica
+  type: relates_to
 ---
 
 ## What it is
-La versión `llm-mistral 0.16` añade soporte para modelos de razonamiento dentro del plugin de Mistral para la CLI `llm`, citando a «Mistral Large 4» como ejemplo recién lanzado [fdf5991b8ee77588]. El documento viene etiquetado con `llm`, `mistral` y `llm-reasoning` [fdf5991b8ee77588]. Es un anuncio de release de plugin, sin changelog, rationale ni demo.
+La versión `llm-mistral 0.16` de la librería `llm` (Simon Willison) añade soporte para modelos de razonamiento, mencionando 'Mistral Large 4' como modelo recién liberado [fdf5991b8ee77588]. Es una nota de release de plugin: reporta disponibilidad de la herramienta, no capacidad evaluada ni práctica aplicada.
 
 ## Evidence
-- Se anuncia la versión `llm-mistral 0.16` — source: fdf5991b8ee77588
-- La versión añade soporte para modelos de razonamiento, mencionando a «Mistral Large 4» como ejemplo recién lanzado — source: fdf5991b8ee77588
-- El documento está etiquetado con `llm`, `mistral` y `llm-reasoning` — source: fdf5991b8ee77588
+- Se lanza `llm-mistral 0.16` [fdf5991b8ee77588].
+- Añade soporte para modelos de razonamiento; cita 'Mistral Large 4' como ejemplo [fdf5991b8ee77588].
+- Etiquetado con `llm`, `mistral`, `llm-reasoning`: clasificado como noticia de librería/herramienta LLM [fdf5991b8ee77588].
+- El clúster contiene un solo documento con engagement=0: sin corroboración interna [fdf5991b8ee77588].
 
 ## Why it matters
-El único punto de contacto con el brief es indirecto: si un dev que lidera y enseña usa la librería `llm` para orquestar agentes, esta versión ampliaría las opciones de proveedor con capacidad de razonamiento sin cambiar de stack. El documento no afirma ni desarrolla aplicación a programación, gestión, docencia, liderazgo o productividad [fdf5991b8ee77588].
+Un modelo de razonamiento accesible vía una CLI/API unificada (`llm`) sería una vía de bajo coste para tareas de descomposición (revisión, estimación, explicaciones). Pero el documento solo prueba disponibilidad del plugin: no aporta benchmarks, evaluación de calidad del razonamiento ni fecha verificable más allá del título. La mención a 'Mistral Large 4' no tiene confirmación independiente.
 
-Se relaciona con llm-anthropic-0.29 como otro anuncio de release de la misma familia de plugins de `llm` (relates_to). Es un caso concreto del patrón de que un release de plugin no es evidencia de práctica profesional ni de claims sobre el oficio (derived_from). Comparte con el feed de releases MCP el ser un anuncio de versión sin changelog ni rationale verificable (relates_to).
+Relacionada con `llm-anthropic-0-29-anuncio-de-release`: mismo patrón de changelog de plugin en la misma familia `llm`. Se apoya en `release-de-plugin-no-es-evidencia-de-practica` y en `mcp-release-stub-sin-changelog` para el patrón general: un anuncio de release es artefacto de feed, no evidencia de práctica ni de capacidad medida.
 
 ## Links
 - relates_to → [[llm-anthropic-0-29-anuncio-de-release]]
 - derived_from → [[release-de-plugin-no-es-evidencia-de-practica]]
 - relates_to → [[mcp-release-stub-sin-changelog]]
+- relates_to → [[release-de-plugin-no-es-evidencia-de-practica]]

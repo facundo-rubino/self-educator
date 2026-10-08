@@ -9,20 +9,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-02'
-updated: '2026-10-06'
+updated: '2026-10-08'
 sources:
 - 19cb8032958cd964
+- sig-237cc97a9794
 tags:
 - claim-sin-metodologia
 - figuras-publicas
 - identificacion-figuras-publicas
 - multimodal
 - policy
+- reconocimiento-facial
+- rss
 - sin-metodologia
 - vision
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -43,20 +46,22 @@ links:
   type: relates_to
 - to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
   type: supports
+- to: concepto-precedente-identificacion-de-figuras-publicas
+  type: relates_to
 ---
 
 ## What it is
-Un titular de RSS afirma que los LLMs ya pueden identificar figuras públicas en imágenes, con un único matiz: ChatGPT y Claude no lo hacen, Gemini sí. El documento no aporta metodología, benchmark, fecha ni fuente verificable. La confianza ajustada tras la crítica es 0.07.
+Un único documento RSS [19cb8032958cd964] afirma que los LLMs ya identifican figuras públicas en imágenes, con divergencia entre proveedores: ChatGPT y Claude rechazan, Gemini no. El documento es un titular breve sin cuerpo, sin metodología, sin fecha y sin evaluación independiente. El clúster tiene novelty=0.00 y corroboración=0.50: una sola fuente, sin confirmación adicional.
 
 ## Evidence
-- El documento afirma que los LLMs ya pueden identificar figuras públicas en imágenes — source: 19cb8032958cd964
-- Matiza que ChatGPT y Claude no realizan esa identificación, mientras que Gemini sí — source: 19cb8032958cd964
-- El ítem proviene de un feed RSS con engagement=0, sin tracción observable en la muestra — source: 19cb8032958cd964
+- ChatGPT y Claude no identifican figuras públicas en imágenes; Gemini sí lo hace — source: 19cb8032958cd964
+- El documento se limita a un titular sin cuerpo argumental, datos de prueba, fecha ni enlace a evaluación independiente — source: 19cb8032958cd964
+- Clúster de un solo documento, novelty 0.00, corroboración 0.50: sin fuentes adicionales que confirmen o refuten — source: sig-237cc97a9794
 
 ## Why it matters
-El claim no debe tratarse como hecho operativo sobre capacidades de modelos: carece de método, versión, fecha y replicación. Lo único defendible es la posibilidad trivial de que algún sistema visión-lenguaje tenga una feature de reconocimiento de celebridades, muy por debajo de lo que el titular afirma.
+La afirmación no es verificable como está formulada. «Identificar» cubre al menos dos capacidades distintas —nombrar una figura obvia en una caption frente a identificación fiable desde imágenes crudas— que el titular colapsa. La parte comparativa (quién rechaza, quién no) es un snapshot de política de producto que puede cambiar sin aviso, no una capacidad durable. Para el brief (agentes de IA aplicados a programar, gestionar y enseñar) no aporta nada accionable.
 
-Se relaciona con la divergencia de rechazo al nombrar figuras públicas por proveedor (misma asimetría entre ChatGPT/Claude y Gemini, otro corpus). Es un caso concreto del patrón de afirmación de capacidad multimodal sin metodología y de la afirmación de capacidad desde un titular RSS. Conecta con la nota sobre política de reconocimiento facial como variable de producto, no de modelo.
+Se apoya en `afirmacion-de-capacidad-multimodal-sin-metodologia` como caso concreto del mismo modo de fallo: afirmar capacidad desde un titular sin evaluación reproducible. Conecta con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`, otra observación de asimetría entre proveedores ante el mismo tipo de contenido. Y con `concepto-precedente-identificacion-de-figuras-publicas`: la identificación de figuras por modelos multimodales no es nueva, lo que erosiona aún más la novelty del claim.
 
 ## Links
 - supports → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
@@ -67,3 +72,4 @@ Se relaciona con la divergencia de rechazo al nombrar figuras públicas por prov
 - derived_from → [[gemini-no-rechaza-nombrar-figuras-publicas]]
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - supports → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[concepto-precedente-identificacion-de-figuras-publicas]]

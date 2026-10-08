@@ -9,13 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 49140f9d5133d3c7
 tags:
 - agentes
 - ai-coach
 - composicion-de-apis
+- ensamblado-de-servicios
 - integration
 - llm
 - monkey-mind
@@ -33,7 +34,7 @@ tags:
 - voz
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -58,19 +59,22 @@ links:
   type: contradicts
 - to: stack-de-ai-coach-voz-a-voz-ensamblado
   type: relates_to
+- to: privacidad-y-costo-en-asistentes-de-voz-continuos
+  type: relates_to
 ---
 
 ## What it is
-Construcción de un coach personal por voz ensamblando servicios existentes: STT, TTS, un LLM y un número telefónico virtual. Sin modelo propio ni entrenamiento; la pieza novedosa es la composición.
+Un coach de IA personal construido ensamblando cuatro servicios preexistentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. El número virtual implica una interfaz de telefonía entrante, de modo que la interacción se dispara con una llamada y no con una ventana de chat. Todos los componentes son servicios componibles ya existentes, no modelos nuevos.
 
 ## Evidence
-- El documento describe la construcción de un «AI coach» personal combinando STT, TTS, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
-- El engagement registrado del documento es 0: sin evidencia de recepción ni adopción — source: 49140f9d5133d3c7
+- El coach se construyó como herramienta personal, enmarcada explícitamente como respuesta al «monkey mind» del propio autor — source: 49140f9d5133d3c7
+- El stack consiste en speech-to-text, text-to-speech, un LLM y un número virtual, es decir componentes preexistentes y componibles en lugar de modelos novedosos — source: 49140f9d5133d3c7
+- El número virtual sugiere una interfaz de telefonía entrante: la interacción se dispara por llamada, no por chat — source: 49140f9d5133d3c7
 
 ## Why it matters
-Delimita el techo de lo que se puede afirmar: el ensamblado es factible y documentado, la eficacia como coach no está demostrada. Cualquier extrapolación a liderazgo técnico o docencia sería inferencia del analista.
+Es un caso de ensamblado de servicios, no de entrenamiento: el valor está en la composición y en el diseño del prompt, no en el modelo. La telefonía como superficie de entrada mantiene al coach ambiente en lugar de atado a una app. No hay en la fuente ningún detalle de implementación, elección de LLM, manejo de latencia, costo ni privacidad de la voz.
 
-Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo` (mismo artefacto, distinto recorte: stack vs. encuadre) y con `stack-de-ai-coach-voz-a-voz-ensamblado`; apoya a `prototipado-por-composicion-de-apis-sin-entrenamiento` como caso adicional del patrón.
+Instancia concreta del patrón general de prototipado por composición de APIs sin entrenamiento (supports). Se relaciona con la lectura del AI coach como herramienta de foco personal y no de liderazgo técnico, y con las preguntas abiertas sobre privacidad y costo de asistentes de voz continuos.
 
 ## Links
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
@@ -83,3 +87,4 @@ Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo` (mismo arte
 - relates_to → [[post-unico-como-plantilla-de-demostracion-end-to-end]]
 - contradicts → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
 - relates_to → [[stack-de-ai-coach-voz-a-voz-ensamblado]]
+- relates_to → [[privacidad-y-costo-en-asistentes-de-voz-continuos]]

@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - fdf5991b8ee77588
 tags:
-- singleton
-- rss
-- engagement-cero
 - cluster-de-uno
+- corroboracion
+- engagement
+- engagement-cero
+- llm-mistral
+- rss
+- singleton
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -28,21 +31,30 @@ links:
   type: supports
 - to: llm-anthropic-0-29-singleton-sin-corroboracion
   type: relates_to
+- to: llm-mistral-0-16-soporte-razonamiento
+  type: relates_to
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: derived_from
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: supports
 ---
 
 ## What it is
-El clúster de `llm-mistral 0.16` contiene un único documento RSS con engagement=0; no hay corroboración independiente del lanzamiento ni de la mención a «Mistral Large 4» [fdf5991b8ee77588]. Un clúster de un solo ítem no sostiene generalización sobre práctica ni sobre tendencias.
+El clúster de `llm-mistral 0.16` es un singleton: un único documento con engagement=0 y novelty=0.00. Un solo ítem de feed sin interacción externa no sostiene generalización sobre adopción, capacidad o utilidad para el brief.
 
 ## Evidence
-- El clúster contiene un único documento tipo RSS — source: fdf5991b8ee77588
-- El engagement del ítem es cero — source: fdf5991b8ee77588
-- La referencia a «Mistral Large 4» proviene únicamente del propio anuncio y no está corroborada por otra fuente del clúster — source: fdf5991b8ee77588
+- El clúster contiene un solo documento (engagement=0), sin corroboración interna entre fuentes [fdf5991b8ee77588].
+- Los scores del sistema son relevance=0.33 y novelty=0.00: baja relevancia declarada y sin novedad real para el brief [fdf5991b8ee77588].
+- El engagement=0 indica que la fuente no generó interacción en los datos disponibles [fdf5991b8ee77588].
 
 ## Why it matters
-Cualquier lectura de esta versión como tendencia o como base para un cambio de práctica del brief es especulativa: el propio clúster no aporta corroboración más allá del único ítem. La relevancia medida (0.33) y la novedad (0.48) apuntan a que el ítem no justifica por sí solo una acción [fdf5991b8ee77588].
+Cualquier inferencia sobre cómo el soporte de razonamiento mejora el trabajo de un dev que lidera y enseña es extrapolación desde un solo ítem. El propio critiquer bajó la confianza a 0.08 por este motivo. La nota de release sobrevive solo como contexto de ecosistema, no como hallazgo accionable.
 
-Sostiene la nota de contenido del lanzamiento al condicionar qué se puede afirmar desde ella (supports). Es el mismo modo de fallo documentado para el anuncio de `llm-anthropic 0.29`: singleton RSS con novelty nula y sin corroboración independiente (relates_to).
+Es la cara de riesgo de `llm-mistral-0-16-soporte-razonamiento`. Instancia concreta de `cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion` y refuerza `single-document-cluster-engagement-cero-no-generaliza`.
 
 ## Links
 - supports → [[llm-mistral-0-16-soporte-razonamiento]]
 - relates_to → [[llm-anthropic-0-29-singleton-sin-corroboracion]]
+- relates_to → [[llm-mistral-0-16-soporte-razonamiento]]
+- derived_from → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- supports → [[single-document-cluster-engagement-cero-no-generaliza]]

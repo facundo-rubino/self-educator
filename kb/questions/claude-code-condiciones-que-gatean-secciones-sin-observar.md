@@ -9,13 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-28'
+updated: '2026-10-08'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
 - evidencia-debil
 - hipotesis
+- observacion
 - prompt-engineering
 - prompting
 - prompts
@@ -23,7 +24,7 @@ tags:
 - verificacion
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -46,18 +47,21 @@ links:
   type: relates_to
 - to: test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes
   type: relates_to
+- to: claude-code-source-leak-condiciones-parts-unspecified
+  type: supports
 ---
 
 ## What it is
-El único dato disponible es el número aproximado («docenas») y la palabra «condicionales» [abf61eeec75462f9]. No hay enumeración de condiciones, ni orden de ensamblado, ni ejemplo de una sección que se active o se omita. La estructura interna del prompt no es observable desde este documento.
+No hay observación directa de qué condiciones (tipo de tarea, repo, herramienta, turno de conversación) activan qué secciones del system prompt de Claude Code. La pregunta queda abierta y no puede resolverse desde este documento.
 
 ## Evidence
-- «dozens of conditional parts», sin listado ni mecanismo — source: abf61eeec75462f9
+- El documento afirma el ensamblado condicional sin detallar condiciones ni secciones — source: abf61eeec75462f9
+- No hay observación directa del mecanismo más allá de la afirmación — source: abf61eeec75462f9 (ausencia)
 
 ## Why it matters
-Sin condiciones identificables no se puede replicar el ensamblado, ni escribir tests de regresión por rama habilitada, ni depurar un comportamiento inesperado atribuyéndolo a una sección concreta. La pregunta es el prerrequisito técnico de cualquier uso práctico de la afirmación.
+Sin observar las condiciones, no se puede transferir el diseño a agentes propios ni evaluar si merece la pena replicarlo. Cualquier réplica hoy sería un experimento, no una adopción informada.
 
-Deriva directamente de `claude-code-system-prompt-conditional-composition`. `reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria` explica por qué la carencia bloquea el uso práctico, y `test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes` sería la herramienta que solo funciona una vez resuelta esta pregunta.
+Es variante específica de la nota sobre el leak sin especificar condiciones, partes ni secuenciación. Se relaciona con control del agente como composición de secciones y con el problema de reproducibilidad/depuración de prompts.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
@@ -69,3 +73,4 @@ Deriva directamente de `claude-code-system-prompt-conditional-composition`. `rep
 - derived_from → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria]]
 - relates_to → [[test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes]]
+- supports → [[claude-code-source-leak-condiciones-parts-unspecified]]

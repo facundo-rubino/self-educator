@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 1bfe45ede61ee575
 tags:
@@ -24,7 +24,7 @@ tags:
 - xslt
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -47,19 +47,23 @@ links:
   type: derived_from
 - to: ingesta-truncada-como-riesgo-sistemico-de-cobertura
   type: relates_to
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: contradicts
+- to: react-for-two-computers-titulo-sin-contenido-ingerido
+  type: relates_to
 ---
 
 ## What it is
-Riesgo de sobreinterpretación cuando se intenta reconstruir la comparación XSLT vs. JavaScript a partir de un ítem cuyo cuerpo entero es «JavaScript is right there.» El contexto —runtime asumido, tipo de documento XML, requisito de presentación— no está ingerido.
+La única frase ingerida es «JavaScript is right there.». El contexto que determinaría si la afirmación es una práctica general, una observación de pasillo o un fragmento de un artículo mayor —autoría, audiencia, fecha, resto del texto— no está disponible en el documento [1bfe45ede61ee575].
 
 ## Evidence
-- El cuerpo entero del documento es la frase «JavaScript is right there», sin descripción del runtime ni del caso de uso. — source: 1bfe45ede61ee575
-- No se aporta método, código, benchmark ni ejemplo que fije el contexto de la afirmación. — source: 1bfe45ede61ee575
+- El cuerpo citado del documento es una sola frase — source: 1bfe45ede61ee575
+- No hay fecha, autoría ni resto del texto en la evidencia ingerida — source: 1bfe45ede61ee575
 
 ## Why it matters
-Cualquier lectura concreta de la comparación (por ejemplo, «en el navegador JS ya está disponible, XSLT es redundante») sería fabricación de contexto. El ítem no permite decidir entre varias interpretaciones incompatibles.
+Una frase corta no distingue una tendencia genuina de un comentario casual. Tratar «JavaScript is right there» como guía de ingeniería evaluada reproduce una aserción no testeada.
 
-Se deriva de `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`, que documenta la ausencia de método. Se relaciona con `xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido` por compartir la misma carencia de cuerpo. Conecta con `ingesta-truncada-como-riesgo-sistemico-de-cobertura` porque este caso es un ejemplo concreto de ese riesgo: el titular sobrevive pero el cuerpo no sostiene ninguna lectura.
+Contradice la lectura implícita en `xml-human-readable-without-xslt-afirmacion-sin-cuerpo` de que la frase constituye una propuesta técnica. Comparte modo de fallo con `react-for-two-computers-titulo-sin-contenido-ingerido`: título y fragmento sin desarrollo argumental.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
@@ -71,3 +75,5 @@ Se deriva de `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`, que docume
 - supports → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
 - derived_from → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
 - relates_to → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]
+- contradicts → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- relates_to → [[react-for-two-computers-titulo-sin-contenido-ingerido]]

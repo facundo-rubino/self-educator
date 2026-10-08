@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-06'
-updated: '2026-10-06'
+updated: '2026-10-08'
 sources:
 - d2a0c86ca8027978
 tags:
+- artefacto-de-ingesta
+- clustering
 - evals
 - hackathon
 - rss
 - ruido
+- senal-debil
+- wandb
 base_confidence: 0.65
 half_life_days: 120
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -34,20 +38,30 @@ links:
   type: relates_to
 - to: matching-llm-as-a-judge-relevancia-lexica-sin-ejes-del-brief
   type: supports
+- to: wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo
+  type: relates_to
+- to: juez-humano-we-and-b-llm-evaluator-hackathon-sin-contenido-para-el-brief
+  type: relates_to
+- to: juez-humano-we-and-b-llm-evaluator-hackathon-engagement-cero
+  type: relates_to
+- to: single-document-cluster-engagement-cero-no-generaliza
+  type: supports
+- to: juez-humano-we-and-b-llm-as-a-judge-hackathon
+  type: derived_from
 ---
 
 ## What it is
-Tratar un clúster de un único documento RSS con engagement=0 [d2a0c86ca8027978] como un hallazgo infla ruido en señal. Los scores del clúster (relevance=0.67, novelty=0.00, corroboration=0.50) son autodescripción del pipeline, no validación independiente. El verdicto del crítico es WEAK con confianza ajustada de 0.10.
+El clúster completo se sostiene sobre un único documento RSS con engagement=0 y sin contenido sustantivo: la única sustancia es una línea de autodescripción de rol. Es un artefacto de agrupación, no un conjunto temático con material para compilar claims sobre práctica.
 
 ## Evidence
-- El clúster contiene un solo documento, proveniente de RSS con engagement=0 — source: d2a0c86ca8027978
-- Los scores reportados son novelty=0.00 y corroboration=0.50 [d2a0c86ca8027978], valores base que no corroboran ninguna lectura del contenido.
-- El crítico marca el claim como débil: la única evidencia es el mismo documento no corroborado, y la relevancia=0.67 es un score débil y no validado [d2a0c86ca8027978 → critic].
+- El clúster contiene exactamente un documento (d2a0c86ca8027978) — source: d2a0c86ca8027978
+- El ítem registra engagement=0, sin interacción medida — source: d2a0c86ca8027978
+- No hay descripción de criterios, equipos, modelos evaluados ni resultados — source: d2a0c86ca8027978
 
 ## Why it matters
-Reportar esto como hallazgo contaminaría el grafo con un pseudo-resultado negativo construido sobre el mismo artefacto que pretende evaluar. La conducta correcta es registrar el riesgo de sobrevaloración y no compilar ningún claim positivo sobre evaluación de LLMs ni sobre agentes de código a partir de este clúster.
+Confirma el patrón general de que un singleton RSS con engagement cero no sostiene generalización. También señala un posible falso positivo del filtro determinista: el token «LLM» en el título basta para entrarlo al brief aunque el documento no cubra ningún eje del topic.
 
-Refuerza las notas existentes sobre el stub de W&B sin cuerpo y sobre el engagement cero del ítem del hackathon. Se deriva del patrón general de que un clúster de un documento sin engagement no sostiene generalización, y apoya la advertencia de que el match «LLM-as-a-Judge» es léxico y no cubre los ejes del brief.
+Se apoya en el patrón general de singletons sin engagement que no generalizan; se relaciona con las notas hermanas del mismo stub de hackathon que registran la ausencia de contenido desde otros ángulos.
 
 ## Links
 - supports → [[wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo]]
@@ -55,3 +69,8 @@ Refuerza las notas existentes sobre el stub de W&B sin cuerpo y sobre el engagem
 - derived_from → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
 - relates_to → [[generalizar-desde-goodbye-clean-code-sin-corroboracion]]
 - supports → [[matching-llm-as-a-judge-relevancia-lexica-sin-ejes-del-brief]]
+- relates_to → [[wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo]]
+- relates_to → [[juez-humano-we-and-b-llm-evaluator-hackathon-sin-contenido-para-el-brief]]
+- relates_to → [[juez-humano-we-and-b-llm-evaluator-hackathon-engagement-cero]]
+- supports → [[single-document-cluster-engagement-cero-no-generaliza]]
+- derived_from → [[juez-humano-we-and-b-llm-as-a-judge-hackathon]]

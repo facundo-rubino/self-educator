@@ -10,15 +10,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 19cb8032958cd964
+- sig-237cc97a9794
 tags:
 - afirmacion-sin-metodologia
 - capacidad
 - capacidad-vs-politica
 - capacidades-llm
 - claim-sin-evidencia
+- claim-sin-metodologia
 - epistemologia
 - evals
 - evidencia
@@ -30,11 +32,12 @@ tags:
 - multimodal
 - politica-de-modelos
 - politica-vs-capacidad
+- riesgo-de-inferencia
 - rss
 - titular-rss
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -89,19 +92,26 @@ links:
   type: relates_to
 - to: segundo-corpus-necesario-para-afirmar-capacidad-multimodal
   type: relates_to
+- to: afirmacion-de-capacidad-multimodal-sin-metodologia
+  type: derived_from
+- to: afirmacion-de-novedad-sin-linea-base
+  type: supports
+- to: privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas
+  type: relates_to
 ---
 
 ## What it is
-Tomar un único ítem RSS sobre la negativa de ChatGPT/Claude y la disposición de Gemini a nombrar figuras públicas, y compilarlo como «los LLM ahora identifican figuras públicas», confunde cumplimiento observado con capacidad demostrada. La disposición a responder no prueba la exactitud de la identificación, y el rechazo puede provenir de política, no de incapacidad.
+El titular «LLMs can now identify public figures in images» sobre un documento RSS sin cuerpo [19cb8032958cd964] convierte una asimetría de rechazo entre proveedores en una afirmación de capacidad general. El «now» no tiene línea base: no se contrasta con una fecha ni con un modelo previo, y el clúster tiene novelty=0.00 (nada nuevo) y corroboración=0.50 (una sola fuente).
 
 ## Evidence
-- El clúster contiene un solo documento, sin replicación independiente, sin benchmark y sin tasa de error de identificación de personas no públicas — source: 19cb8032958cd964
-- La puntuación de novelty de 0.00 registrada para el clúster indica que la capacidad subyacente no es nueva — source: 19cb8032958cd964
+- El documento se limita a un titular sin cuerpo, datos de prueba ni fecha — source: 19cb8032958cd964
+- Novelty 0.00 y corroboración 0.50 sin fuentes adicionales — source: sig-237cc97a9794
+- El crítico ajusta la confianza a 0.08: lo que sobrevive es «algunos modelos multimodales a veces nombran a personas conocidas» — source: sig-237cc97a9794
 
 ## Why it matters
-Es un modo de fallo reproducible del pipeline de compilación: atribuir capacidad desde comportamiento de rechazo es circular. Cualquier afirmación sobre lo que un modelo multimodal puede hacer requiere corpus, versiones y condiciones, y el dato importante no medido aquí es la tasa de falsos positivos al identificar a personas que no son figuras públicas.
+Tomar el titular como verdadero sin prompts, imágenes de prueba ni métricas es el modo de fallo que esta nota marca. Además, «el modelo no rechaza» (política) se lee como «el modelo ahora puede» (capacidad): son afirmaciones distintas con implicaciones distintas. Y la observación de un proveedor no sostiene un claim poblacional sobre LLMs en general. El efecto práctico de colar este ítem en un brief de agentes, liderazgo o docencia es desplazar señal relevante por ruido.
 
-Es el modo de fallo del que depende la lectura de `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`. Se alinea con `afirmar-capacidad-desde-fragmento-de-una-linea`, `afirmacion-de-capacidad-multimodal-sin-metodologia`, `afirmacion-de-novedad-sin-linea-base`, `identificar-no-es-reconocer-en-la-fuente` y `segundo-corpus-necesario-para-afirmar-capacidad-multimodal`. Se apoya además en la distinción capacidad/política y no la contradice: la complementa para el caso multimodal.
+Deriva de `afirmacion-de-capacidad-multimodal-sin-metodologia` —la forma general del modo de fallo— y se apoya en `afirmacion-de-novedad-sin-linea-base`, porque el «now» del titular no se contrasta contra nada. Se relaciona con `identificar-no-es-reconocer-en-la-fuente`, que registra el mismo equívoco en el verbo, y con `privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas`, que apunta a las consecuencias no abordadas del claim.
 
 ## Links
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
@@ -129,3 +139,6 @@ Es el modo de fallo del que depende la lectura de `divergencia-de-rechazo-nombra
 - relates_to → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
 - relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
 - relates_to → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
+- derived_from → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
+- supports → [[afirmacion-de-novedad-sin-linea-base]]
+- relates_to → [[privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas]]

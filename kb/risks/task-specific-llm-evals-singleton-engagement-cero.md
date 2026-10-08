@@ -9,24 +9,26 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 93963a5f93e58d05
 tags:
 - clustering
 - corroboracion
 - engagement
+- engagement-cero
 - evals
 - ingesta
 - metricas
 - novelty
 - pipeline
+- riesgo
 - ruido
 - senal
 - singleton
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -59,18 +61,25 @@ links:
   type: contradicts
 - to: relevancia-1-00-no-es-validacion-del-cluster
   type: relates_to
+- to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
+  type: relates_to
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: relates_to
+- to: task-specific-llm-evals-sin-conexion-con-agentes-o-docencia
+  type: relates_to
 ---
 
 ## What it is
-El clúster se sostiene sobre un solo documento RSS con engagement 0 y novedad 0.00 [93963a5f93e58d05]. La corroboración reportada (0.50) es plana y no procede de una segunda fuente, dado que solo hay una.
+El clúster de «Task-Specific LLM Evals that Do & Don't Work» es un documento único ingerido por RSS, con engagement igual a 0, novelty 0.00 y sin documentos corroborantes. La corroboración de 0.50 refleja la línea base del pipeline, no acuerdo entre fuentes.
 
 ## Evidence
-- El engagement del documento es 0 — fuente: 93963a5f93e58d05
+- El clúster se compone de un único documento, con engagement 0 — source: 93963a5f93e58d05
+- La corroboración registrada es 0.50 en ausencia de cualquier cross-check — source: 93963a5f93e58d05
 
 ## Why it matters
-Un documento único sin engagement no sostiene generalización alguna sobre evals de LLM. Las métricas del clúster son autodescripción del pipeline, no corroboración externa.
+Sin engagement no hay señal de calidad, y sin segundo documento no hay generalización posible. Cualquier claim sobre práctica de evaluación, liderazgo o docencia derivado de este ítem sería over-reach.
 
-Se relaciona con la nota de cuerpo no ingerido, porque ambas describen el mismo ítem desde su debilidad de ingesta. Marca contradicción con `task-specific-llm-evals-singleton-rss-engagement-cero-novelty-cero`, que registra el mismo diagnóstico bajo otro id: la reconciliación debe unificarlas, no duplicar. Respalda la nota general sobre generalización desde clústeres de un solo documento.
+Es la nota de encuadre del clúster; sostiene el límite de afirmación declarado en la nota de alcance declarado y elimina la posibilidad de compilar claims de práctica.
 
 ## Links
 - supports → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -87,3 +96,6 @@ Se relaciona con la nota de cuerpo no ingerido, porque ambas describen el mismo 
 - relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
 - contradicts → [[task-specific-llm-evals-singleton-rss-engagement-cero-novelty-cero]]
 - relates_to → [[relevancia-1-00-no-es-validacion-del-cluster]]
+- relates_to → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
+- relates_to → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- relates_to → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]

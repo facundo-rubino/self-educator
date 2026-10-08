@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-06'
-updated: '2026-10-06'
+updated: '2026-10-08'
 sources:
 - 0248fdb60811e91e
 tags:
+- decision-de-tooling
+- ingesta
 - llm-patterns
 - retrieval
-- decision-de-tooling
 - secuenciacion
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -30,22 +31,27 @@ links:
   type: relates_to
 - to: how-to-match-llm-patterns-adyacencia-al-brief-si-es-directa-no-tangencial
   type: relates_to
+- to: how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido
+  type: derived_from
+- to: how-to-match-llm-patterns-to-problems-candidato-a-retrieval-o-descarte
+  type: relates_to
 ---
 
 ## What it is
-Pregunta abierta: si el título y subtítulo son lo único ingerido, ¿vale la pena recuperar el cuerpo completo antes de descartar el ítem del brief? El subtítulo sugiere un eje de decisión (externo vs. interno, datos vs. no-datos) que, si el texto lo desarrolla, sería directamente relevante para elegir cómo integrar LLMs en flujos de programación, gestión y docencia. Sin cuerpo, no se puede confirmar ni refutar.
+Dado que el clúster contiene un único documento [0248fdb60811e91e] cuya única señal es el título y la descripción de una taxonomía, la acción correcta no es ni descartarlo ni compilar un claim desde él, sino recuperar el texto completo del documento. El título promete un mapeo problema→patrón que, si existe en el cuerpo, sería directamente relevante al brief; sin ese cuerpo, no hay nada que afirmar.
 
 ## Evidence
-- El subtítulo enuncia la distinción externo/interno y datos/no-datos — source: 0248fdb60811e91e
-- No hay cuerpo, ejemplos ni criterios en el clúster — source: 0248fdb60811e91e
-- El crítico concluye que el signal no sostiene ninguna afirmación en ninguna dirección — source: 0248fdb60811e91e
+- El clúster contiene un único documento RSS, sin engagement, novelty 0.00 — source: 0248fdb60811e91e
+- La señal disponible se limita al título y a la descripción de los dos ejes de la taxonomía — source: 0248fdb60811e91e
 
 ## Why it matters
-Si el cuerpo tuviera la taxonomía, sería material directamente aplicable a la fase de secuenciación de trabajo con LLMs; si no la tuviera, el ítem se descarta definitivamente. El coste de recuperarlo es bajo y el beneficio potencial es alto porque el eje «clasificar el problema antes de elegir el patrón» es exactamente lo que el brief pide para estimación y alcance. La decisión pendiente es operativa: full-text retrieval o descarte.
+Evita dos errores simétricos: fabricar un hallazgo sobre liderazgo, estimación o docencia a partir de un titular, y descartar un documento que podría contener la rúbrica operativa que el brief sí necesita. La decisión de retrieval es barata comparada con la de inventar contenido.
 
-Depende de `how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido-3`: sin cuerpo verificado, esta pregunta queda abierta. Conecta con `taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion`: si la taxonomía existe, se aplica a secuenciación. Y corrige el encuadre registrado en `how-to-match-llm-patterns-adyacencia-al-brief-si-es-directa-no-tangencial`: la adyacencia sería directa, no tangencial, si el cuerpo existiera.
+Deriva de la nota sobre el título sin contenido ingerido, que es el hecho que motiva la recuperación. Se relaciona con la nota previa que ya marcaba este mismo documento como candidato a retrieval o a descarte, no a insight corroborado.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido-3]]
 - relates_to → [[taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion]]
 - relates_to → [[how-to-match-llm-patterns-adyacencia-al-brief-si-es-directa-no-tangencial]]
+- derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
+- relates_to → [[how-to-match-llm-patterns-to-problems-candidato-a-retrieval-o-descarte]]

@@ -9,14 +9,16 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-10-05'
+updated: '2026-10-08'
 sources:
 - 0248fdb60811e91e
 tags:
 - agentes
+- alcance
 - brief
 - docencia
 - falso-positivo-de-filtro
+- liderazgo
 - llm-patterns
 - matching-lexico
 - relevance
@@ -28,7 +30,7 @@ tags:
 - scoring
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -57,19 +59,23 @@ links:
   type: derived_from
 - to: how-to-match-llm-patterns-titulo-como-match-lexico-sin-ejes-del-brief
   type: relates_to
+- to: how-to-match-llm-patterns-relevancia-lexica-sin-ejes-del-brief-3
+  type: relates_to
+- to: puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista
+  type: relates_to
 ---
 
 ## What it is
-El topic exige evidencia sobre agentes de IA aplicados a programar, gestionar y enseñar; liderazgo técnico de equipos chicos; craft de software; productividad y técnicas de estudio. Ningún documento de este clúster aborda esos ejes [0248fdb60811e91e]. El solapamiento con «LLM»/«patterns» y «agentes de IA» es léxico: la sigla compartida no implica aplicación al brief.
+Riesgo de compilar este ítem como si cubriera liderazgo técnico, estimación, secuenciación, alcance, organización personal o técnicas de estudio. El documento no toca ninguno de esos ejes: son áreas del brief que el clúster no aborda, y extenderlo hacia ellas sería especulación.
 
 ## Evidence
-- Ningún documento del clúster contiene evidencia sobre agentes aplicados a programar, gestionar o enseñar; liderazgo técnico; estimación; secuenciación; alcance; organización personal; craft; productividad o técnicas de estudio — source: 0248fdb60811e91e
-- El analista reconoce que el único vínculo plausible es indirecto: «matching patterns to problems» como heurística de decisión del lead o docente, y lo califica explícitamente de extrapolación, no de hallazgo — source: 0248fdb60811e91e
+- El documento no aborda liderazgo técnico, estimación, secuenciación, alcance, organización personal ni técnicas de estudio — source: 0248fdb60811e91e
+- El clúster contiene un único documento, engagement=0, novelty 0.00 — source: 0248fdb60811e91e
 
 ## Why it matters
-Tratar este clúster como evidencia para el brief convertiría una coincidencia de vocabulario en un hallazgo. El clúster debe marcarse como periférico: ampliarlo con documentos que sí aborden agentes o el oficio, o restringir el alcance del topic para admitir guía genérica de selección de patrones LLM.
+Un dev que lidera y enseña podría verse tentado a derivar de «elegir patrón por tipo de problema» una rúbrica de estimación o delegación. El documento no ofrece la cadena: el salto de taxonomía a práctica de gestión es del analista, no del texto. Nombrarlo aquí evita que la nota de secuenciación absorba una base que no tiene.
 
-Se apoya en `how-to-match-llm-patterns-taxonomia-sin-contenido`, que documenta que el corpus solo aporta el enunciado. Se relaciona con `matching-llm-patterns-relevancia-lexica-al-brief-de-agentes` y `how-to-match-llm-patterns-titulo-como-match-lexico-sin-ejes-del-brief`, que registran el mismo modo de fallo del filtro por título.
+Deriva del título sin contenido ingerido. Se relaciona con las notas que ya marcaban la relevancia léxica de «LLM patterns» frente al brief, y con el riesgo de que el puente de una taxonomía a la práctica de liderazgo sea inferencia del analista.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
@@ -84,3 +90,5 @@ Se apoya en `how-to-match-llm-patterns-taxonomia-sin-contenido`, que documenta q
 - supports → [[etiqueta-cluster-desde-titulo-de-un-documento]]
 - derived_from → [[how-to-match-llm-patterns-taxonomia-sin-contenido]]
 - relates_to → [[how-to-match-llm-patterns-titulo-como-match-lexico-sin-ejes-del-brief]]
+- relates_to → [[how-to-match-llm-patterns-relevancia-lexica-sin-ejes-del-brief-3]]
+- relates_to → [[puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista]]

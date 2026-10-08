@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-08'
 sources:
 - 1bfe45ede61ee575
 tags:
 - clustering
+- filtro-determinista
+- matching-lexico
 - pipeline
 - relevancia
 - topico
+- xml
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -28,20 +31,29 @@ links:
   type: derived_from
 - to: afirmar-constraint-de-diseno-desde-solo-titulo-rss
   type: relates_to
+- to: xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro
+  type: supports
+- to: validacion-de-senal-por-contenido-no-por-titulo
+  type: derived_from
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: relates_to
 ---
 
 ## What it is
-El documento no tiene relación temática con el brief declarado (agentes de IA aplicados a programar, liderazgo técnico, oficio, productividad). Entró pese a relevancia=0.33 y novedad=0.00, lo que apunta a solapamiento por vocabulario genérico.
+Ningún eje del brief (agentes de IA aplicados a programar, gestión, liderazgo técnico, oficio de software, productividad o estudio) aparece en el documento. La conexión observada es vocabulario de plataforma («XML», «JavaScript», «renderizar») que solapa superficialmente con «programar» [1bfe45ede61ee575].
 
 ## Evidence
-- El tema del pipeline (agentes de IA, liderazgo técnico, docencia, productividad) no tiene relación temática con el contenido del clúster, que trata presentación/formateo de XML — source: 1bfe45ede61ee575
-- Cayó en el clúster pese a relevancia=0.33 y novedad=0.00, probablemente por coincidencia léxica con términos genéricos («programar», «hacer mejor») — source: 1bfe45ede61ee575
+- `relevance=0.33` frente al brief, con `novelty=0.00` y `corroboration=0.50` — source: 1bfe45ede61ee575
+- El cuerpo ingerido es una sola frase sin contenido sobre práctica de ingeniería ni docencia — source: 1bfe45ede61ee575
 
 ## Why it matters
-Si el agrupamiento es por similitud léxica, conviene revisar el criterio: el ítem debería descartarse o reencolarse en un topic de tooling/XML. La pregunta abierta es qué umbral deja pasar vocabulario genérico.
+La pregunta abierta es si el filtro determinista debe admitir ítems cuyo único vínculo con el brief es léxico. Si la respuesta es sí, el costo es ruido de clústeres de un solo documento; si es no, hace falta un criterio de contenido mínimo antes del clustering.
 
-Deriva del diagnóstico de ingesta del propio documento. Resuena con el patrón de «afirmar-constraint-de-diseno-desde-solo-titulo-rss»: ambos son fallos de precisión del pipeline, no hallazgos del brief.
+Refuerza `xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro` y deriva del patrón general `validacion-de-senal-por-contenido-no-por-titulo`. Se relaciona con el ítem compilado en `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`.
 
 ## Links
 - derived_from → [[xml-human-readable-sin-xslt-titulo-sin-contenido-ingerido]]
 - relates_to → [[afirmar-constraint-de-diseno-desde-solo-titulo-rss]]
+- supports → [[xml-human-readable-sin-xslt-titulo-keyword-falso-positivo-del-filtro]]
+- derived_from → [[validacion-de-senal-por-contenido-no-por-titulo]]
+- relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]

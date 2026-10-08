@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-07 — 699 entries, highest priority first._
+_Updated 2026-10-08 — 711 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -393,6 +393,16 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-05'
+- id: gap-53a9d2c35c
+  type: contradiction
+  description: Unresolved contradiction between 'how-to-match-llm-patterns-adyacencia-al-brief-si-es-directa-no-tangencial'
+    and 'task-specific-llm-evals-adyacencia-al-brief-no-demostrada'
+  related_notes:
+  - how-to-match-llm-patterns-adyacencia-al-brief-si-es-directa-no-tangencial
+  - task-specific-llm-evals-adyacencia-al-brief-no-demostrada
+  priority: 0.9
+  status: open
+  created: '2026-10-08'
 - id: gap-890ec766ca
   type: contradiction
   description: Unresolved contradiction between 'argumento-ex-silentio-en-corpus-truncado'
@@ -883,6 +893,16 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-21'
+- id: gap-01ed9a5b23
+  type: contradiction
+  description: Unresolved contradiction between 'xml-human-readable-sin-xslt-contexto-no-ingerido'
+    and 'xml-human-readable-without-xslt-afirmacion-sin-cuerpo'
+  related_notes:
+  - xml-human-readable-sin-xslt-contexto-no-ingerido
+  - xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  priority: 0.9
+  status: open
+  created: '2026-10-08'
 - id: gap-2055934870
   type: open_question
   description: Note 'aef-1-estandar-de-evaluadores-de-terceros' has decayed — does
@@ -892,6 +912,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-d2fd9c98e6
+  type: open_question
+  description: Note 'animating-zooming-css-transform-order-importa-a-veces' has decayed
+    — does it still hold?
+  related_notes:
+  - animating-zooming-css-transform-order-importa-a-veces
+  priority: 0.7
+  status: open
+  created: '2026-10-08'
 - id: gap-274a29a343
   type: open_question
   description: Note 'animating-zooming-css-transform-order-importa-solo-a-veces' has
@@ -1189,15 +1218,6 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-18'
-- id: gap-e971c02252
-  type: open_question
-  description: Note 'prototipado-por-composicion-de-apis-sin-entrenamiento' has decayed
-    — does it still hold?
-  related_notes:
-  - prototipado-por-composicion-de-apis-sin-entrenamiento
-  priority: 0.7
-  status: open
-  created: '2026-10-02'
 - id: gap-bf39d8dc6c
   type: open_question
   description: Note 'stack-de-ai-coach-voz-a-voz-ensamblado' has decayed — does it
@@ -1503,6 +1523,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-25'
+- id: gap-f78370512d
+  type: open_question
+  description: Note 'anti-patterns-in-software-blogging-etiqueta-sin-claim' has decayed
+    — does it still hold?
+  related_notes:
+  - anti-patterns-in-software-blogging-etiqueta-sin-claim
+  priority: 0.7
+  status: open
+  created: '2026-10-08'
 - id: gap-604d9d9433
   type: open_question
   description: Note 'auditoria-del-lenguaje-de-planificacion-personal' has decayed
@@ -1664,6 +1693,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-05'
+- id: gap-861cf1b64e
+  type: open_question
+  description: Note 'ranking-de-figuras-publicas-sin-metodologia-ni-fecha' has decayed
+    — does it still hold?
+  related_notes:
+  - ranking-de-figuras-publicas-sin-metodologia-ni-fecha
+  priority: 0.7
+  status: open
+  created: '2026-10-08'
 - id: gap-ecab853c31
   type: open_question
   description: Note 'reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria'
@@ -1916,6 +1954,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-02'
+- id: gap-07c7339f31
+  type: open_question
+  description: Note 'privacidad-de-uso-de-llm-como-cuaderno-personal' has decayed
+    — does it still hold?
+  related_notes:
+  - privacidad-de-uso-de-llm-como-cuaderno-personal
+  priority: 0.7
+  status: open
+  created: '2026-10-08'
 - id: gap-56699b78fb
   type: open_question
   description: Note 'privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia'
@@ -1961,15 +2008,6 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-23'
-- id: gap-2a2c754b1b
-  type: open_question
-  description: Note 'task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido'
-    has decayed — does it still hold?
-  related_notes:
-  - task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido
-  priority: 0.7
-  status: open
-  created: '2026-09-30'
 - id: gap-6431943cc4
   type: open_question
   description: Note 'the-two-reacts-titulo-sin-contenido-ingerido' has decayed — does
@@ -2057,6 +2095,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-d13a3a334f
+  type: thin_evidence
+  description: Note 'animating-zooming-css-transform-order-importa-a-veces' rests
+    on 1 source(s)
+  related_notes:
+  - animating-zooming-css-transform-order-importa-a-veces
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-6f2fea5d59
   type: thin_evidence
   description: Note 'animating-zooming-css-transform-order-importa-solo-a-veces' rests
@@ -2255,15 +2302,6 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
-- id: gap-5cb24c9acf
-  type: thin_evidence
-  description: Note 'divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor'
-    rests on 1 source(s)
-  related_notes:
-  - divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
-  priority: 0.5
-  status: open
-  created: '2026-09-17'
 - id: gap-f9ee2b54ed
   type: thin_evidence
   description: Note 'docencia-entry-level-mudada-a-profile-teaching-de-pogba' rests
@@ -2417,6 +2455,14 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-a6509ec4db
+  type: thin_evidence
+  description: Note 'juez-humano-we-and-b-llm-as-a-judge-hackathon' rests on 1 source(s)
+  related_notes:
+  - juez-humano-we-and-b-llm-as-a-judge-hackathon
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-1661b92f2c
   type: thin_evidence
   description: Note 'juez-humano-we-and-b-llm-evaluator-hackathon' rests on 1 source(s)
@@ -2483,15 +2529,6 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-23'
-- id: gap-c9054756a1
-  type: thin_evidence
-  description: Note 'llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia'
-    rests on 1 source(s)
-  related_notes:
-  - llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
-  priority: 0.5
-  status: open
-  created: '2026-10-02'
 - id: gap-8aad8cf76d
   type: thin_evidence
   description: Note 'llms-malos-para-especificaciones-formales' rests on 1 source(s)
@@ -3014,6 +3051,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-a5804f74cd
+  type: thin_evidence
+  description: Note 'quoting-ben-affleck-etiqueta-sin-referente-en-el-cluster' rests
+    on 1 source(s)
+  related_notes:
+  - quoting-ben-affleck-etiqueta-sin-referente-en-el-cluster
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-32e8d8fa0e
   type: thin_evidence
   description: Note 'restatement-de-titulo-como-evidencia-de-composicion-condicional'
@@ -3145,6 +3191,14 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-30'
+- id: gap-5063ac61e8
+  type: thin_evidence
+  description: Note 'version-nominal-coincide-con-fecha-del-release' rests on 1 source(s)
+  related_notes:
+  - version-nominal-coincide-con-fecha-del-release
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-7635d80098
   type: thin_evidence
   description: Note 'xml-pretexto-lexico-javascript-en-el-runtime' rests on 1 source(s)
@@ -3276,6 +3330,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-1ba71cd080
+  type: thin_evidence
+  description: Note 'ben-affleck-cluster-mismatch-topico-para-el-brief' rests on 1
+    source(s)
+  related_notes:
+  - ben-affleck-cluster-mismatch-topico-para-el-brief
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-689dd133cd
   type: thin_evidence
   description: Note 'claude-code-condiciones-que-gatean-secciones-sin-observar' rests
@@ -3946,15 +4009,6 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-17'
-- id: gap-4216f62993
-  type: thin_evidence
-  description: Note 'afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion'
-    rests on 1 source(s)
-  related_notes:
-  - afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
-  priority: 0.5
-  status: open
-  created: '2026-09-21'
 - id: gap-452c3b3711
   type: thin_evidence
   description: Note 'afirmacion-de-capacidad-multimodal-sin-metodologia' rests on
@@ -4078,6 +4132,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-83a600fce3
+  type: thin_evidence
+  description: Note 'animating-zooming-css-singleton-engagement-cero-y-ausencia-de-linea-base'
+    rests on 1 source(s)
+  related_notes:
+  - animating-zooming-css-singleton-engagement-cero-y-ausencia-de-linea-base
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-d064b2f9b5
   type: thin_evidence
   description: Note 'animating-zooming-css-singleton-engagement-cero' rests on 1 source(s)
@@ -4218,6 +4281,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-22'
+- id: gap-57799c4dd1
+  type: thin_evidence
+  description: Note 'ben-affleck-lexical-coincidence-cluster-unsupportable' rests
+    on 1 source(s)
+  related_notes:
+  - ben-affleck-lexical-coincidence-cluster-unsupportable
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-ad61a96ad0
   type: thin_evidence
   description: Note 'black-and-white-archive-photos-cluster-sin-senal' rests on 1
@@ -4592,6 +4664,24 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-17'
+- id: gap-ac34adbf99
+  type: thin_evidence
+  description: Note 'ensamblado-condicional-como-truismo-no-como-hallazgo' rests on
+    1 source(s)
+  related_notes:
+  - ensamblado-condicional-como-truismo-no-como-hallazgo
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
+- id: gap-a185111e20
+  type: thin_evidence
+  description: Note 'ensamblado-condicional-no-implica-mejor-rendimiento' rests on
+    1 source(s)
+  related_notes:
+  - ensamblado-condicional-no-implica-mejor-rendimiento
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-10b8f38744
   type: thin_evidence
   description: Note 'ensayo-como-dato-no-como-conclusion' rests on 1 source(s)
@@ -5051,6 +5141,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-09d5e47f52
+  type: thin_evidence
+  description: Note 'leap-de-ensamblado-condicional-a-liderazgo-es-inferencia-del-analista'
+    rests on 1 source(s)
+  related_notes:
+  - leap-de-ensamblado-condicional-a-liderazgo-es-inferencia-del-analista
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-512691a57f
   type: thin_evidence
   description: Note 'leer-llm-as-a-judge-como-practica-de-agentes-seria-invencion'
@@ -6008,6 +6107,15 @@ _Updated 2026-10-07 — 699 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-973f12aca5
+  type: thin_evidence
+  description: Note 'tres-clusters-de-un-documento-con-engagement-cero-sin-generalizacion'
+    rests on 1 source(s)
+  related_notes:
+  - tres-clusters-de-un-documento-con-engagement-cero-sin-generalizacion
+  priority: 0.5
+  status: open
+  created: '2026-10-08'
 - id: gap-4cddf86b0e
   type: thin_evidence
   description: Note 'two-worlds-two-doors-no-es-evidencia-de-separacion-servidor-cliente'

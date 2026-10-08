@@ -9,16 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 0248fdb60811e91e
 tags:
+- ingesta
+- ingesta-truncada
 - llm-patterns
 - taxonomia
-- ingesta
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -27,20 +28,30 @@ links:
   type: relates_to
 - to: how-to-match-llm-patterns-taxonomia-sin-contenido
   type: relates_to
+- to: how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion
+  type: relates_to
+- to: taxonomia-dos-ejes-llm-externo-interno-datos
+  type: relates_to
 ---
 
 ## What it is
-La única estructura verificable del ítem son dos ejes: LLM externo vs. interno, y patrones con datos vs. sin datos. No se especifica qué clases de problema caen a cada lado, ni cuál es el criterio de decisión entre ellos, ni si los ejes son ortogonales o correlacionados.
+El documento [0248fdb60811e91e] propone clasificar problemas según dos ejes: si requieren un LLM externo o interno, y si involucran patrones con datos o sin datos. La afirmación existe solo como enunciado de los ejes: no se listan las clases de problema que caerían en cada cuadrante, ni se da un criterio operativo para asignar un problema concreto a uno de ellos. El «cómo» del título queda, por tanto, sin desarrollar en lo ingerido.
 
 ## Evidence
-- La descripción del documento distingue problemas con LLM externo vs. interno, y patrones con datos vs. sin datos — fuente: 0248fdb60811e91e
-- No hay cuerpo ingerido que enumere las clases de problema ni los criterios de selección — fuente: 0248fdb60811e91e
+- El documento propone distinguir problemas por LLM externo vs. interno y por patrones con datos vs. sin datos — source: 0248fdb60811e91e
+- El clúster consiste en un único documento RSS con engagement=0, sin discusión ni amplificación observadas — source: 0248fdb60811e91e
+- El título «How to Match LLM Patterns to Problems» indica que el tema central es seleccionar patrones según características del problema — source: 0248fdb60811e91e
 
 ## Why it matters
-Sin las clases de problema, los dos ejes quedan como una cuadrícula sin contenido: útil como recordatorio de que la decisión tiene al menos dos dimensiones, inútil como guía de secuenciación. La pregunta abierta (qué problema cae en qué celda) es lo único accionable de este ítem.
+Sin clases de problema nombradas, la taxonomía no es usable como rúbrica de triaje: un dev no puede decidir a qué cuadrante pertenece su tarea de coding, gestión o docencia. Queda como vocabulario, no como criterio. Si en algún momento aparecen las clases, esta nota será el lugar donde integrarlas.
 
-Duplica en sustancia la pregunta ya abierta en `how-to-match-llm-patterns-taxonomia-dos-ejes-llm-externo-interno-datos`; se mantiene separada solo para registrar el matiz de que tampoco vienen las clases de problema. `how-to-match-llm-patterns-taxonomia-sin-contenido` documenta el mismo vacío desde el lado del titular.
+Se relaciona con las notas que registran la ausencia de cuerpo ingerido para este mismo título: el patrón de fallo es el mismo (título y subtítulo sin desarrollo). También conecta con la nota sobre elegir patrón por tipo de problema como criterio de secuenciación, que asume precisamente la existencia de esas clases, y con la nota que nombra los dos ejes: ambas describen la misma taxonomía desde ángulos distintos.
 
 ## Links
 - relates_to → [[how-to-match-llm-patterns-taxonomia-dos-ejes-llm-externo-interno-datos]]
 - relates_to → [[how-to-match-llm-patterns-taxonomia-sin-contenido]]
+- relates_to → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
+- relates_to → [[taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion]]
+- relates_to → [[taxonomia-dos-ejes-llm-externo-interno-datos]]

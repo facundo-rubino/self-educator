@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-05'
+updated: '2026-10-08'
 sources:
 - ded7560510c137bc
 tags:
 - accesibilidad
-- tooltips
 - aria
 - artefacto-de-ingesta
+- front-end
+- tooltips
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -31,22 +32,28 @@ links:
   type: relates_to
 - to: aria-describedby-no-basta-para-tooltips-accesibles-integracion
   type: relates_to
+- to: criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo
+  type: relates_to
+- to: tooltip-accessibility-corregir-error-propio-como-ejemplo-de-oficio
+  type: relates_to
 ---
 
 ## What it is
-La entrada «Fixing my tooltip accessibility mistake» afirma que `aria-describedby` no siempre basta para resolver la accesibilidad de un tooltip. El único contenido recuperado del documento es la frase «aria-describedby isn't always enough»; no hay cuerpo, ejemplo de código ni explicación del caso concreto [ded7560510c137bc].
+El documento [ded7560510c137bc] sostiene que `aria-describedby` no basta para que un tooltip sea accesible. La afirmación llega solo como titular y una línea de tesis: no hay cuerpo, código, referencias WCAG ni resultados de pruebas con lector de pantalla.
 
 ## Evidence
-- El autor publicó una entrada señalando que cometió un error de accesibilidad al implementar tooltips y que lo está corrigiendo — source: ded7560510c137bc
-- El autor sostiene explícitamente que `aria-describedby` no siempre es suficiente para resolver la accesibilidad de un tooltip — source: ded7560510c137bc
-- El único contenido disponible del documento es la frase «aria-describedby isn't always enough»; no hay ejemplos de código ni explicación del caso — source: ded7560510c137bc
+- La aserción central del documento es que `aria-describedby` no es siempre una solución suficiente para la accesibilidad de tooltips — source: ded7560510c137bc
+- El documento se enmarca como retrospectiva de un error propio del autor («Fixing my tooltip accessibility mistake»), no como estudio general — source: ded7560510c137bc
+- El contenido ingerido se reduce a título más una línea; sin código, WCAG, pruebas de lector de pantalla ni remediación paso a paso — source: ded7560510c137bc
 
 ## Why it matters
-Del documento solo se extrae una afirmación negativa («el atributo X no basta») sin la parte constructiva que la haría reutilizable. Para un dev que lidera y enseña, una corrección de error propia podría ser material de estudio de caso breve, pero sin el cuerpo del artículo no hay lección operativa transferible ni mecanismo que verificar.
+La afirmación no es evaluable en su forma ingerida: sin mecanismo, alcance ni reproducción, no puede verificarse ni generalizarse. Solo registra que existe un pitfall de accesibilidad de tooltips conocido por su autor.
 
-Se relaciona con las notas existentes que registran la misma frase sin desarrollo (`aria-describedby-no-basta-para-tooltips-accesibles`, `tooltip-accesible-no-basta-con-aria-describedby`) y con la variante que ya señala el hueco de integración (`aria-describedby-no-basta-para-tooltips-accesibles-integracion`). Todas comparten el mismo fragmento como único contenido verificable.
+Se relaciona con `tooltip-accesible-no-basta-con-aria-describedby` (misma afirmación, otra ingesta). Se relaciona con `criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo`: la presencia del atributo no equivale a accesibilidad verificada. Se relaciona con `tooltip-accessibility-corregir-error-propio-como-ejemplo-de-oficio` por el encuadre retrospectivo del autor.
 
 ## Links
 - relates_to → [[aria-describedby-no-basta-para-tooltips-accesibles]]
 - relates_to → [[tooltip-accesible-no-basta-con-aria-describedby]]
 - relates_to → [[aria-describedby-no-basta-para-tooltips-accesibles-integracion]]
+- relates_to → [[criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo]]
+- relates_to → [[tooltip-accessibility-corregir-error-propio-como-ejemplo-de-oficio]]

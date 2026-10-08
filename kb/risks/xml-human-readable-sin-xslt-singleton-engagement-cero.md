@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-06'
-updated: '2026-10-06'
+updated: '2026-10-08'
 sources:
 - 1bfe45ede61ee575
 tags:
+- artefacto-de-ingesta
 - corpus
-- metricas
 - engagement
+- engagement-cero
+- metricas
 - singleton
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -28,21 +30,29 @@ links:
   type: supports
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: relates_to
+- to: xml-human-readable-without-xslt-afirmacion-sin-cuerpo
+  type: relates_to
+- to: singleton-rss-engagement-cero-novelty-cero-no-sostiene-generalizacion
+  type: derived_from
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: supports
 ---
 
 ## What it is
-El clúster se sostiene en un único documento RSS con engagement=0 y novelty=0.00. Corroboration=0.50 no cita una segunda fuente independiente: o duplica el mismo blurb o es arbitraria. Estas métricas no permiten inferir impacto, tendencia ni desarrollo del tema.
+El clúster se sostiene sobre un único documento RSS con engagement medido en cero. `novelty=0.00` significa que el pipeline no encontró nada nuevo respecto del corpus, y `corroboration=0.50` es el valor por defecto de un singleton, no confirmación independiente [1bfe45ede61ee575].
 
 ## Evidence
-- engagement=0 en el único ítem del clúster — source: 1bfe45ede61ee575
-- novelty=0.00 y relevance=0.33 en el scoring del clúster — source: 1bfe45ede61ee575
-- corroboration=0.50 no cita segunda fuente independiente — source: 1bfe45ede61ee575
+- Documento único `1bfe45ede61ee575`, con engagement cero — source: 1bfe45ede61ee575
+- Scores de la señal: `relevance=0.33`, `novelty=0.00`, `corroboration=0.50`, `velocity=0.50`, `surprise=0.50` — source: 1bfe45ede61ee575
 
 ## Why it matters
-Elegir este clúster como señal de tendencia sería over-reading de una autodescripción del pipeline. Las métricas del scorer no son corroboración externa.
+Cualquier generalización sobre cómo los desarrolladores tratan XML quedaría sin base. El clúster puede ser un artefacto del umbral de filtrado más que una señal real, y sobre ese artefacto no se puede construir un claim sobre práctica profesional.
 
-Soporta la nota de fuera-de-brief del mismo ítem. Se relaciona con `single-document-cluster-engagement-cero-no-generaliza`, patrón del que este caso es una instancia.
+Se relaciona con el ítem compilado en `xml-human-readable-without-xslt-afirmacion-sin-cuerpo`. Es una instancia de `singleton-rss-engagement-cero-novelty-cero-no-sostiene-generalizacion` y refuerza `generalizacion-desde-cluster-de-un-solo-documento`.
 
 ## Links
 - supports → [[xml-human-readable-without-xslt-fuera-del-brief-de-agentes-y-liderazgo]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
+- relates_to → [[xml-human-readable-without-xslt-afirmacion-sin-cuerpo]]
+- derived_from → [[singleton-rss-engagement-cero-novelty-cero-no-sostiene-generalizacion]]
+- supports → [[generalizacion-desde-cluster-de-un-solo-documento]]

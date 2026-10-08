@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -24,9 +24,10 @@ tags:
 - scoping
 - task-families
 - task-specific
+- taxonomia-de-tareas
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -66,15 +67,15 @@ links:
 ---
 
 ## What it is
-El documento declara dos grupos de familias de tarea para evals de LLM: las que «funcionan» (clasificación, resumen, traducción) y las que «no funcionan» (regurgitación de copyright, toxicidad) [93963a5f93e58d05]. La declaración viene sin mecanismo, sin condiciones ni sin métrica. El documento no explica la frontera entre ambos grupos.
+El documento declara explícitamente cinco familias de tarea sobre las que aplica evals específicas: clasificación, resumen, traducción, copyright regurgitation y toxicidad. Es una taxonomía de tareas NLP generales, no de evaluación de código ni de asistentes de enseñanza.
 
 ## Evidence
-- El resumen afirma que las evals funcionan para clasificación, resumen y traducción, pero no para regurgitación de copyright ni toxicidad — fuente: 93963a5f93e58d05
+- El documento enumera clasificación, resumen, traducción, copyright regurgitation y toxicidad como las tareas que cubre — source: 93963a5f93e58d05
 
 ## Why it matters
-Es una taxonomía enunciada, no un resultado: sirve como vocabulario de familias de tarea, no como guía de qué evaluar. Tomarla como guía operativa requeriría la metodología que el documento no ingiere.
+Un líder que construye flujos con agentes puede comprobar que las evals orientadas a tareas NLP no coinciden con la evaluación de cambios de código. Esa divergencia de dominio es el dato más útil del clúster, aunque el documento no la desarrolle.
 
-Se deriva de la nota sobre las familias de tarea como único contenido verificable. Respalda la nota del título sin cuerpo ingerido. Se relaciona con la nota sobre la adyacencia no demostrada al brief, porque la lista de tareas no contiene ningún eje de agentes aplicados a programar, gestionar o enseñar.
+La nota de tareas-no-código sostiene la lectura de que este alcance no cubre evaluación agéntica de código; el resto del solapamiento con el brief es léxico, según `task-specific-llm-evals-sin-conexion-con-agentes-o-docencia`.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]

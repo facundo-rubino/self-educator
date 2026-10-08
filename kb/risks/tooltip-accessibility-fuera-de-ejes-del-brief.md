@@ -10,16 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-05'
+updated: '2026-10-08'
 sources:
 - ded7560510c137bc
 tags:
-- fuera-de-alcance
-- brief
 - accesibilidad
+- alcance
+- brief
+- fuera-de-alcance
+- tooltip
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -30,21 +32,30 @@ links:
   type: relates_to
 - to: fixing-my-tooltip-accessibility-mistake-fuera-del-brief-de-agentes-y-liderazgo
   type: relates_to
+- to: tooltip-accessibility-aria-describedby-insuficiente-sin-detalle
+  type: relates_to
+- to: accesibilidad-como-correccion-no-como-tema-del-brief
+  type: supports
+- to: accesibilidad-tooltip-como-falso-positivo-del-filtro-determinista
+  type: supports
 ---
 
 ## What it is
-El tema del clúster (accesibilidad de tooltips en front-end) no toca ninguno de los ejes del brief: agentes de IA aplicados a programar, gestión, estimación, secuenciamiento, alcance, organización personal, liderazgo técnico, oficio de software engineering ni productividad/estudio [ded7560510c137bc]. Además, el propio brief indica que la docencia de programación entry-level se movió al profile `teaching` de `pogba` y ya no compite por cupo aquí.
+El documento de tooltip accessibility no aborda ninguno de los ejes del brief: ni agentes de IA aplicados a programar/gestionar/enseñar, ni liderazgo técnico de equipos chicos, ni estimación, secuenciamiento, alcance, organización personal, oficio general ni productividad.
 
 ## Evidence
-- El clúster no contiene evidencia sobre agentes de IA, liderazgo, estimación, secuenciamiento, alcance, organización personal, oficio ni productividad/estudio — source: ded7560510c137bc
-- El brief indica que la docencia entry-level se movió al profile `teaching` de `pogba` — source: ded7560510c137bc
+- El documento se limita a una afirmación sobre tooltips y `aria-describedby` — source: ded7560510c137bc
+- Los ejes del brief (agentes, liderazgo, docencia, productividad) no aparecen en el material ingerido — source: ded7560510c137bc
 
 ## Why it matters
-Añadir una noticia de accesibilidad sin conexión con los ejes del brief diluiría la señal y consumiría cupo que otros clústeres podrían aprovechar mejor. La baja afinidad temática refuerza la decisión de no tratarlo como hallazgo del brief.
+Mantener el ítem en el brief como señal de práctica profesional requeriría sobreinterpretación; su lugar natural es un cajón de oficio front-end, no el corpus principal.
 
-Repite el juicio ya registrado en `accesibilidad-como-correccion-no-como-tema-del-brief`, `accesibilidad-de-tooltip-no-cubre-ejes-del-brief-de-agentes-y-liderazgo` y `fixing-my-tooltip-accessibility-mistake-fuera-del-brief-de-agentes-y-liderazgo`.
+Se apoya en `accesibilidad-como-correccion-no-como-tema-del-brief` y `accesibilidad-tooltip-como-falso-positivo-del-filtro-determinista`. Relacionado con `tooltip-accessibility-aria-describedby-insuficiente-sin-detalle`.
 
 ## Links
 - relates_to → [[accesibilidad-como-correccion-no-como-tema-del-brief]]
 - relates_to → [[accesibilidad-de-tooltip-no-cubre-ejes-del-brief-de-agentes-y-liderazgo]]
 - relates_to → [[fixing-my-tooltip-accessibility-mistake-fuera-del-brief-de-agentes-y-liderazgo]]
+- relates_to → [[tooltip-accessibility-aria-describedby-insuficiente-sin-detalle]]
+- supports → [[accesibilidad-como-correccion-no-como-tema-del-brief]]
+- supports → [[accesibilidad-tooltip-como-falso-positivo-del-filtro-determinista]]

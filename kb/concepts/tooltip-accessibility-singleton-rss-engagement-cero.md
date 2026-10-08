@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-05'
+updated: '2026-10-08'
 sources:
 - ded7560510c137bc
 tags:
 - artefacto-de-ingesta
-- singleton
+- clustering
+- engagement
 - engagement-cero
+- singleton
+- tooltip
 base_confidence: 0.7
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -30,22 +33,24 @@ links:
   type: relates_to
 - to: fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion
   type: supports
+- to: tooltip-accessibility-singleton-rss-engagement-cero
+  type: relates_to
 ---
 
 ## What it is
-El clúster asociado a la señal se reduce a un único documento de un feed RSS con engagement cero. La relevancia calculada es baja (0.33), la novedad nula (0.00), la corroboración intermedia (0.50) y surprise/velocity neutros (0.50); no hay otros documentos que citen o refuercen el contenido [ded7560510c137bc].
+El clúster de tooltip accessibility se levanta sobre un único documento RSS sin engagement. Ninguna de las afirmaciones puede elevarse por encima del nivel de anécdota.
 
 ## Evidence
-- El clúster contiene un solo documento, no corroborado por otros — source: ded7560510c137bc
-- relevance=0.33, novelty=0.00, corroboration=0.50, surprise=0.50, velocity=0.50 — source: ded7560510c137bc
-- No hay en el clúster evidencia sobre agentes de IA, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio ni productividad/estudio — source: ded7560510c137bc
+- El clúster contiene un único documento de bajo engagement — source: ded7560510c137bc
+- Solo el título y una línea de tesis son extraíbles — source: ded7560510c137bc
 
 ## Why it matters
-Un singleton con engagement cero y novelty nula es una unidad de compilación de señal débil: el fragmento recuperado es un artefacto de retrieval, no un hallazgo corroborado. Incorporarlo al brief consumiría cupo sin aportar conexión con sus ejes.
+Levantar un clúster sobre un solo documento sin engagement infla el conteo de clústeres sin sumar señal al brief.
 
-Es el mismo caso ya registrado en `tooltip-accessibility-engagement-cero-item-de-feed` y sostiene la nota `fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion`, que formaliza la imposibilidad de generalizar desde este singleton.
+Se relaciona consigo mismo temáticamente (`tooltip-accessibility-singleton-rss-engagement-cero`) como variante de la misma observación sobre el clúster.
 
 ## Links
 - relates_to → [[aria-describedby-no-basta-para-tooltips-accesibles]]
 - relates_to → [[tooltip-accessibility-engagement-cero-item-de-feed]]
 - supports → [[fixing-my-tooltip-accessibility-mistake-engagement-cero-no-sostiene-generalizacion]]
+- relates_to → [[tooltip-accessibility-singleton-rss-engagement-cero]]

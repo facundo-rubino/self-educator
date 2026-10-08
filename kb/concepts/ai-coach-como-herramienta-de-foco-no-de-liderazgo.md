@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -21,6 +21,7 @@ tags:
 - liderazgo
 - limites-del-brief
 - monkey-mind
+- persona
 - personal-productivity
 - productividad
 - productividad-personal
@@ -28,7 +29,7 @@ tags:
 - scope-limit
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -59,19 +60,21 @@ links:
   type: supports
 - to: ai-coach-voz-a-voz-ensamblado-de-servicios-2024
   type: relates_to
+- to: efectividad-de-ai-coach-no-demostrada
+  type: relates_to
 ---
 
 ## What it is
-El «AI coach» se enmarca en productividad y gestión personal (domar la «monkey mind»), no en liderazgo técnico, docencia ni ingeniería de software. Su dominio de aplicación declarado es el foco individual, no la coordinación de equipos ni la enseñanza.
+El artefacto del clúster es tooling de coaching personal, formulado como respuesta al «monkey mind» del propio autor. No es una herramienta de gestión de equipo, ni de docencia, ni de ingeniería: no afirma nada sobre liderazgo técnico ni sobre pedagogía.
 
 ## Evidence
-- El título lo presenta como herramienta para «domar la mente de mono» (monkey mind), esto es, uso de productividad/gestión personal — source: 49140f9d5133d3c7
-- No contiene afirmaciones sobre agentes aplicados a programar, gestión de equipos chicos, estimación, secuenciación, alcance, liderazgo técnico o enseñanza de programación — source: 49140f9d5133d3c7
+- El AI coach se construyó como herramienta personal, enmarcada explícitamente como respuesta al «monkey mind» del autor — source: 49140f9d5133d3c7
+- La única conexión con agentes aplicados a programar, gestionar o enseñar es adyacencia temática, no un hallazgo — source: 49140f9d5133d3c7
 
 ## Why it matters
-Evita el error de arrastrar un artefacto de productividad personal al brief de liderazgo y docencia. El stack compartido con agentes (LLM, voz, telefonía) no implica aplicación compartida.
+Cualquier lectura de este artefacto como evidencia sobre liderazgo técnico o docencia es extrapolación del analista, no algo que la fuente afirme. Su lugar en el brief es el de dato sobre difusión de construcción agéntica hacia productividad personal, no el de hallazgo sobre práctica profesional.
 
-Se deriva de `monkey-mind-como-encuadre-de-productividad-personal` (mismo encuadre de foco personal) y se relaciona con `ai-coach-voz-a-voz-ensamblado-de-servicios` (el stack concreto descrito).
+Se relaciona con el AI coach por voz ensamblado con servicios, del que es la lectura de alcance, y con la nota que registra que el clúster AI coach / monkey mind no contiene evidencia de práctica profesional. También con la nota sobre efectividad no demostrada.
 
 ## Links
 - relates_to → [[monkey-mind-como-encuadre-de-productividad-personal]]
@@ -87,3 +90,4 @@ Se deriva de `monkey-mind-como-encuadre-de-productividad-personal` (mismo encuad
 - relates_to → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
 - supports → [[monkey-mind-como-encuadre-de-productividad-personal]]
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios-2024]]
+- relates_to → [[efectividad-de-ai-coach-no-demostrada]]

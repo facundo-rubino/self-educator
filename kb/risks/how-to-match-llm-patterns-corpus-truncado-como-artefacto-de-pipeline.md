@@ -10,16 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-30'
-updated: '2026-09-30'
+updated: '2026-10-08'
 sources:
 - 0248fdb60811e91e
 tags:
+- ingesta
 - ingesta-truncada
+- llm-patterns
 - modo-de-fallo
 - pipeline
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -32,23 +34,28 @@ links:
   type: supports
 - to: argumento-ex-silentio-en-corpus-truncado
   type: relates_to
+- to: pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss
+  type: relates_to
+- to: umbral-de-contenido-minimo-antes-de-clustering
+  type: relates_to
 ---
 
 ## What it is
-Concluir «el documento no contiene claims» desde un texto ingerido vacío ignora los modos de fallo de la ingesta: fuentes de pago, renderizadas por JS o truncadas rinden texto vacío llevando contenido sustantivo [0248fdb60811e91e]. En este clúster no hay forma de distinguir si la ausencia refleja el documento o el pipeline de recuperación [0248fdb60811e91e]. Los scores neutrales (novelty=0.00, corroboration=0.50) no confirman ninguna lectura del contenido [0248fdb60811e91e].
+El clúster de este ítem tiene novelty 0.00, engagement 0 y un solo documento, y su contenido verificable se reduce al título y a la descripción de la señal. Eso no dice que el documento original carezca de contenido, sino que el pipeline no recuperó ni citó su cuerpo. La conclusión correcta apunta al proceso de ingesta, no a la calidad del texto fuente.
 
 ## Evidence
-- El único documento del clúster es un ítem RSS con engagement=0 — fuente: 0248fdb60811e91e
-- No hay segundo documento independiente que confirme o desmienta el contenido — fuente: 0248fdb60811e91e
-- El propio summary reconoce que el texto puede ser un resumen truncado o boilerplate, no el cuerpo del artículo — fuente: 0248fdb60811e91e
+- El clúster consiste en un único documento RSS con engagement=0, sin discusión ni amplificación — source: 0248fdb60811e91e
+- Los únicos claims disponibles son el título y la descripción de dos ejes, sin clases de problema — source: 0248fdb60811e91e
 
 ## Why it matters
-Permite leer correctamente el resultado: la conclusión robusta es sobre el pipeline (no recuperó cuerpo antes de evaluar), no sobre la calidad del artículo. Evita tanto el descarte prematuro como la afirmación positiva desde el vacío.
+Confundir ausencia de evidencia con evidencia de ausencia produce descartes prematuros de documentos que podrían ser útiles una vez recuperado su cuerpo. También infla la aparente debilidad de la señal: parte de la debilidad es del corpus, no del tema.
 
-Se deriva de `how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido`. Sostiene `pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss` e `ingesta-truncada-como-riesgo-sistemico-de-cobertura`, que generalizan el mismo fallo. Se relaciona con `argumento-ex-silentio-en-corpus-truncado`, que nombra la falacia subyacente.
+Se relaciona con las notas sobre pipelines que evalúan clústeres cuyo cuerpo no recuperaron y sobre el umbral de contenido mínimo antes de agrupar. Deriva de la nota que documenta el título sin contenido ingerido, que es la manifestación concreta de este riesgo.
 
 ## Links
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
 - supports → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
 - supports → [[ingesta-truncada-como-riesgo-sistemico-de-cobertura]]
 - relates_to → [[argumento-ex-silentio-en-corpus-truncado]]
+- relates_to → [[pipeline-no-recupera-cuerpo-antes-de-evaluar-clusters-rss]]
+- relates_to → [[umbral-de-contenido-minimo-antes-de-clustering]]

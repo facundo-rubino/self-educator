@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-30'
+updated: '2026-10-08'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -20,7 +20,7 @@ tags:
 - prototipado
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -35,16 +35,20 @@ links:
   type: relates_to
 - to: ai-coach-voz-a-voz-ensamblado-de-servicios
   type: supports
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: derived_from
 ---
 
 ## What it is
-El proyecto descrito se construye ensamblando servicios existentes (STT, TTS, LLM, número virtual) en lugar de entrenar un modelo propio [49140f9d5133d3c7]. Es la construcción de un agente por composición de APIs, un patrón que no requiere datos de entrenamiento ni ajuste fino [49140f9d5133d3c7].
+Construir un sistema de agentes encadenando servicios ya existentes —STT, TTS, un LLM, telefonía— en lugar de entrenar o ajustar un modelo. El caso del clúster es un coach de voz armado enteramente con componentes preexistentes y componibles.
 
 ## Evidence
-- La lista de componentes del proyecto sugiere ensamblado de APIs existentes, sin mención de entrenamiento — source: 49140f9d5133d3c7
+- El stack del AI coach del clúster son cuatro servicios preexistentes y componibles, no modelos nuevos — source: 49140f9d5133d3c7
 
 ## Why it matters
-Componer APIs existentes abarata prototipar, pero no dice nada sobre si el prototipo resuelve el problema que declara resolver. La composición es condición de posibilidad, no evidencia de eficacia [49140f9d5133d3c7].
+Es un proyecto lateral de alcance bajo y aprendizaje alto: ejercita integración de sistemas y diseño de prompts sin requerir entrenamiento. La fuente no aporta detalle de implementación que permita evaluar la calidad del ensamblado.
+
+El AI coach por voz es una instancia concreta de este patrón; la nota de composición se apoya en él como evidencia puntual (derived_from).
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
@@ -52,3 +56,4 @@ Componer APIs existentes abarata prototipar, pero no dice nada sobre si el proto
 - relates_to → [[stack-de-ai-coach-voz-a-voz]]
 - relates_to → [[agentes-abatatan-ports-mantener-sigue-costoso]]
 - supports → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- derived_from → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]

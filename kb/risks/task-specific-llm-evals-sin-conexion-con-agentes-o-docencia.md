@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -19,9 +19,10 @@ tags:
 - brief-mismatch
 - docencia
 - evals
+- riesgo
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -40,18 +41,25 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-relevancia-lexica-no-tematica
   type: relates_to
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: derived_from
+- to: task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo
+  type: relates_to
+- to: evals-llm-genericas-fuera-del-alcance-del-brief
+  type: relates_to
 ---
 
 ## What it is
-El clúster no contiene ningún documento que una las evals específicas por tarea con liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, productividad ni técnicas de estudio [93963a5f93e58d05]. La conexión con esos ejes queda abierta.
+El documento entra al corpus por el encuadre amplio «IA aplicada a la práctica profesional», pero su alcance declarado —clasificación, resumen, traducción, copyright, toxicidad— no cubre agentes de codificación, estimación, secuenciamiento, gestión de equipo ni docencia. La conexión es de vocabulario, no de dominio.
 
 ## Evidence
-- El único contenido del clúster son las familias de tarea declaradas por el resumen; ninguna menciona agentes de código, gestión ni docencia — fuente: 93963a5f93e58d05
+- El alcance declarado es exclusivamente tareas NLP generales — source: 93963a5f93e58d05
+- No hay documento en el clúster que establezca conexión con los ejes del brief — source: 93963a5f93e58d05
 
 ## Why it matters
-Es una laguna explícita: la pregunta de si las evals por tarea ayudan a un dev que lidera y enseña queda sin responder desde esta evidencia. La respuesta requeriría un corpus distinto.
+Evita que futuras compilaciones citen este ítem como referencia sobre fiabilidad de agentes de código. El material utilizable se agota en la taxonomía de tareas, sin consecuencia para ningún eje del brief.
 
-Se deriva de la nota sobre las familias NLP que no cubren evals de código. Se relaciona con la nota existente sobre la adyacencia no demostrada al brief y con la de relevancia léxica: las tres describen el mismo hueco desde ángulos distintos — léxico, temático y de ausencia de documento.
+Refuerza desde el lado del brief el límite declarado en `task-specific-llm-evals-singleton-engagement-cero`; se relaciona con otros casos de evals genéricas fuera del alcance recogidos en el grafo.
 
 ## Links
 - supports → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
@@ -61,3 +69,6 @@ Se deriva de la nota sobre las familias NLP que no cubren evals de código. Se r
 - derived_from → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
 - relates_to → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
 - relates_to → [[task-specific-llm-evals-relevancia-lexica-no-tematica]]
+- derived_from → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- relates_to → [[task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo]]
+- relates_to → [[evals-llm-genericas-fuera-del-alcance-del-brief]]

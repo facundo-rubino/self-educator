@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-28'
+updated: '2026-10-08'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -18,6 +18,7 @@ tags:
 - coste
 - costo
 - llm
+- llm-pipeline
 - privacidad
 - privacy
 - telefonia
@@ -26,7 +27,7 @@ tags:
 - voz
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -48,15 +49,15 @@ links:
 ---
 
 ## What it is
-Un coach por voz que enruta audio por STT, un LLM remoto y TTS a través de un número telefónico virtual implica capturar voz continua, enviarla a servicios de terceros y mantener líneas y llamadas activas.
+Grabar la propia voz hacia un pipeline de LLM de terceros y operar un número de teléfono virtual plantea preguntas de manejo de datos y de costo recurrente que la fuente no aborda.
 
 ## Evidence
-- El stack del coach incluye speech-to-text, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
+- El clúster no contiene detalles de implementación: ni latencia, ni costo, ni privacidad de los datos de voz — source: 49140f9d5133d3c7
 
 ## Why it matters
-Son los dos costos no técnicos del patrón: audio personal persistido o procesado por terceros, y el gasto recurrente de telefonía más inferencia. El documento no los aborda ni los cuantifica, así que quedan como riesgo a resolver antes de reutilizar el diseño.
+Antes de reutilizar la forma para retro de sprint, postmortems de estimación o triaje de preguntas de estudiantes, hay que resolver explícitamente el tratamiento de la voz y el costo del número y del LLM.
 
-Deriva de `stack-de-ai-coach-voz-a-voz` al señalar las consecuencias de cada pieza. Se relaciona con `ai-coach-voz-a-voz-ensamblado-de-servicios` como el artefacto que incurre en estos costos.
+Riesgo asociado al AI coach por voz ensamblado con servicios, del que hereda la superficie de entrada telefónica y el paso de audio a un tercero.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]

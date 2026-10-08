@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - 93963a5f93e58d05
 tags:
+- agentes
 - agentes-de-codigo
 - alcance
 - brief
@@ -24,9 +25,10 @@ tags:
 - evals
 - llm
 - nlp
+- pregunta-abierta
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -65,18 +67,21 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-sin-conexion-con-agentes-o-docencia
   type: supports
+- to: task-specific-llm-evals-sin-conexion-con-agentes-o-docencia
+  type: relates_to
 ---
 
 ## What it is
-Las familias de tarea que el documento enumera —clasificación, resumen, traducción, regurgitación de copyright, toxicidad— son tareas de NLP general [93963a5f93e58d05]. Ninguna de ellas es evaluación de generación de código, de resolución de issues ni de asistencia a la enseñanza. El documento no menciona evals de código ni de docencia.
+Queda abierto si las conclusiones de «do & don't work» del documento aplican a dominios fuera de su alcance declarado: evaluación de cambios de código por un agente, o validación de feedback automático sobre entregas de estudiantes. Nada en la evidencia ingerida lo responde.
 
 ## Evidence
-- Las familias de tarea declaradas por el resumen son clasificación, resumen, traducción, regurgitación de copyright y toxicidad — fuente: 93963a5f93e58d05
+- El alcance declarado es clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
+- No hay documento que describa evals aplicadas a código, agentes de codificación ni docencia — source: 93963a5f93e58d05
 
 ## Why it matters
-Corrige el paso habitual de «evals de LLM» a «evals de agentes que programan o enseñan»: la lista declarada no contiene esas tareas, así que ninguna conclusión sobre evals de código o de docencia se apoya en este documento.
+Es la pregunta operativa que un líder técnico necesitaría responder si quisiera gatear outputs de un agente con una eval automática antes del merge: si las evals que funcionan para resumen funcionan para diffs de código. La evidencia no permite responder.
 
-Se deriva del alcance declarado del documento. Respalda la nota sobre la ausencia de conexión del documento con agentes de código y docencia.
+Deriva de la nota de alcance declarado; su versión como riesgo de extrapolación está en `aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion`.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -96,3 +101,4 @@ Se deriva del alcance declarado del documento. Respalda la nota sobre la ausenci
 - relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - relates_to → [[task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto]]
 - supports → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]
+- relates_to → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]

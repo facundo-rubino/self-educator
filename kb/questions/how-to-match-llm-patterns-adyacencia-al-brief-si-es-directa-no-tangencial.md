@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-10-05'
+updated: '2026-10-08'
 sources:
 - 0248fdb60811e91e
 tags:
+- alcance
 - brief
 - encuadre
+- llm-patterns
 - relevance
 - taxonomia-de-patrones
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -37,19 +39,23 @@ links:
   type: relates_to
 - to: taxonomia-dos-ejes-llm-externo-interno-datos
   type: relates_to
+- to: how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: task-specific-llm-evals-adyacencia-al-brief-no-demostrada
+  type: contradicts
 ---
 
 ## What it is
-El analista enmarca la relevancia de este clúster como «solo indirecta»: una heurística de decisión que podría informar cómo un lead técnico elige herramientas o explica conceptos, pero que en sí misma no es un hallazgo [0248fdb60811e91e]. Ese encuadre merece corrección: un criterio para emparejar patrón LLM con tipo de problema es exactamente el tipo de material que un dev que lidera y enseña necesitaría para decidir con qué abstracción encarar cada tarea.
+El resumen de la señal describe el mapeo problema→patrón como «broadly relevant» al brief por ser prerequisito para usar agentes con eficacia. Si ese mapeo existiera con contenido operativo, sería aplicación directa de LLM a programar, gestionar y enseñar — el núcleo del brief — y no una mera tangencia léxica. La distinción importa: el problema de este ítem no es la irrelevancia temática, sino la ausencia de cuerpo que la sostenga.
 
 ## Evidence
-- El analista describe el vínculo como heurística de decisión indirecta y lo califica de extrapolación, no de hallazgo — source: 0248fdb60811e91e
-- El topic pide explícitamente agentes de IA aplicados a programar, gestionar y enseñar: elegir qué patrón aplicar a qué problema cae dentro de ese eje, no fuera — source: 0248fdb60811e91e
+- El clúster consiste en un único documento RSS con engagement=0 y novelty 0.00 — source: 0248fdb60811e91e
+- El documento no aborda liderazgo técnico, estimación, secuenciación, alcance ni organización personal — source: 0248fdb60811e91e
 
 ## Why it matters
-Si la taxonomía existiera con desarrollo, su lugar natural es el núcleo del brief (selección de herramienta y secuenciación de trabajo), no el margen. La discusión sobre adyacencia no debería zanjarse con el argumento de que el tema es tangencial, sino con el de que falta el cuerpo: es un problema de ingesta, no de encuadre.
+Si un ítem futuro sobre selección de patrones LLM llega con cuerpo, debe juzgarse por su relevancia directa al brief, no archivarse como adyacencia marginal por asociación con este clúster débil. Marcar el encuadre correcto evita que una etiqueta de descarte se propague a documentos que sí merecen análisis completo.
 
-Contradice el encuadre de `how-to-match-llm-patterns-taxonomia-sin-contenido`, que describe el vínculo como indirecto. Se relaciona con `taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion` y `taxonomia-dos-ejes-llm-externo-interno-datos`, que abordan el mismo material clasificatorio desde la pregunta de si constituye criterio de secuenciación o taxonomía operativa.
+Se relaciona con la nota del título sin contenido ingerido, que documenta el único hecho verificable. Contradice a la nota que trata la adyacencia léxica como no demostrada en el caso de «Task-Specific LLM Evals»: allí la adyacencia era léxica, aquí sería temática si el cuerpo existiera. La diferencia es el tipo de vínculo, no su fuerza.
 
 ## Links
 - contradicts → [[how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic]]
@@ -58,3 +64,5 @@ Contradice el encuadre de `how-to-match-llm-patterns-taxonomia-sin-contenido`, q
 - contradicts → [[how-to-match-llm-patterns-taxonomia-sin-contenido]]
 - relates_to → [[taxonomia-por-tipo-de-problema-como-criterio-de-secuenciacion]]
 - relates_to → [[taxonomia-dos-ejes-llm-externo-interno-datos]]
+- relates_to → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido-ingerido]]
+- contradicts → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]

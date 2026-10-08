@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-07'
+updated: '2026-10-08'
 sources:
 - ded7560510c137bc
 tags:
+- accesibilidad
+- brief
+- liderazgo
 - riesgo
 - sobreinterpretacion
-- brief
-- accesibilidad
 base_confidence: 0.88
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -33,22 +34,31 @@ links:
   type: relates_to
 - to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
   type: relates_to
+- to: tooltip-accessibility-fuera-de-ejes-del-brief
+  type: derived_from
+- to: afirmar-aptitud-de-modelo-chico-local-desde-cluster-rss-es-inferencia
+  type: relates_to
+- to: anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica
+  type: supports
 ---
 
 ## What it is
-Leer este clúster como evidencia sobre cómo un dev que lidera y enseña hace mejor su trabajo sería sobreinterpretación: el documento no menciona agentes de IA, liderazgo técnico, estimación, secuenciamiento, docencia ni productividad. La única afirmación que el clúster respalda es que un practicante documentó un fallo de accesibilidad y su remedio. — source: ded7560510c137bc
+Tratar un post anecdótico de accesibilidad de tooltips como evidencia sobre liderazgo técnico, gestión o agentes de código sería sobreinterpretación, no lectura del material.
 
 ## Evidence
-- El documento es un reporte de experiencia personal sobre accesibilidad ARIA — source: ded7560510c137bc
-- El resumen del análisis afirma explícitamente que cualquier extrapolación hacia los ejes del brief sería especulativa — source: ded7560510c137bc
+- El documento es una retrospectiva de un error de implementación del propio autor — source: ded7560510c137bc
+- La única aserción extraíble es sobre `aria-describedby` y tooltips, sin conexión con liderazgo, docencia ni agentes — source: ded7560510c137bc
 
 ## Why it matters
-Evita el error de eslabonamiento léxico: «tooltip accessibility» y «práctica técnica» solapan de vocabulario, no de hallazgo. El brief tiene ejes concretos (agentes, liderazgo, estimación, docencia, productividad); este ítem no toca ninguno. Antes de citarlo en docencia o configuración, verificar contra upstream.
+Permitir el puente abre la puerta a importar cualquier anécdota técnica al eje de liderazgo, degradando la precisión del grafo.
 
-Refuerza las notas existentes que declaran «tooltip accessibility» fuera de los ejes del brief y la que advierte que la accesibilidad de tooltips no cubre esos ejes. Se relaciona con el patrón del clúster como vertedero de firehose y con el riesgo análogo de vincular un AI coach anecdótico al liderazgo.
+Deriva de `tooltip-accessibility-fuera-de-ejes-del-brief`. Se apoya en `anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica`. Relacionado con `afirmar-aptitud-de-modelo-chico-local-desde-cluster-rss-es-inferencia` por analogía de sobreinterpretación.
 
 ## Links
 - supports → [[tooltip-accessibility-fuera-de-ejes-del-brief]]
 - supports → [[accion-de-accesibilidad-tooltip-no-cubre-ejes-del-brief-de-agentes-y-liderazgo]]
 - relates_to → [[cluster-heterogeneo-como-vertedero-de-firehose]]
 - relates_to → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
+- derived_from → [[tooltip-accessibility-fuera-de-ejes-del-brief]]
+- relates_to → [[afirmar-aptitud-de-modelo-chico-local-desde-cluster-rss-es-inferencia]]
+- supports → [[anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-10-02'
+updated: '2026-10-08'
 sources:
 - abf61eeec75462f9
 tags:
@@ -17,12 +17,13 @@ tags:
 - evidence-quality
 - evidencia-debil
 - evidencia-faltante
+- inferencia
 - leak
 - prompt-engineering
 - system-prompt
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-08'
 provenance:
   scale: XL
   query: null
@@ -39,19 +40,23 @@ links:
   type: derived_from
 - to: leak-sin-autenticidad-establecida
   type: relates_to
+- to: claude-code-source-leak-sin-artefacto-primario
+  type: supports
+- to: system-prompt-como-artefacto-de-ingenieria-claude-code
+  type: relates_to
 ---
 
 ## What it is
-La descripción del system prompt de Claude Code llega como un leak, no como documentación oficial ni inspección reproducible. Quedan abiertas las preguntas que decidirían si la observación tiene valor arquitectónico: qué condiciones gatean qué secciones, cuáles son los fragmentos, y si el ensamblado es intencional o resultado de acumulación.
+El leak del código fuente de Claude Code se invoca como evidencia de un system prompt ensamblado de partes condicionales, pero no especifica qué condiciones activan qué secciones, cómo se ordenan ni con qué granularidad se componen. Sin esos detalles, «docenas de partes condicionales» es una descripción de forma, no de mecanismo.
 
 ## Evidence
-- La descripción se remonta a un supuesto leak de un prompt interno, sin documentación oficial ni inspección reproducible — source: abf61eeec75462f9
-- No se aportan detalles concretos sobre la estructura condicional — source: abf61eeec75462f9
+- El código fuente filtrado de Claude Code muestra un system prompt ensamblado a partir de docenas de partes condicionales — source: abf61eeec75462f9
+- No hay especificación de condiciones, partes ni secuenciación más allá de esa afirmación — source: abf61eeec75462f9 (ausencia)
 
 ## Why it matters
-Sin especificar condiciones, partes ni secuenciación, cualquier inferencia sobre el diseño del agente es extrapolación. La pregunta delimita el techo de lo que este cluster puede sostener.
+Cualquier lectura operativa («así se depura un prompt de agente», «así se estructura contexto para un equipo») requeriría los detalles que el documento no trae. Queda como pregunta abierta, no como base para diseño.
 
-Deriva del claim de composición condicional; se relaciona con el problema general de autenticidad de leaks, ya registrado para el mismo artefacto.
+Refuerza la nota sobre la vista filtrada de código que no confirma composición condicional y la que pide un artefacto primario verificable. Se conecta temáticamente con el patrón general del system prompt como artefacto de ingeniería, sin aportarle evidencia nueva.
 
 ## Links
 - relates_to → [[leak-de-claude-code-sin-fragmentos-citados]]
@@ -60,3 +65,5 @@ Deriva del claim de composición condicional; se relaciona con el problema gener
 - relates_to → [[claude-code-condiciones-que-gatean-secciones-sin-observar]]
 - derived_from → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[leak-sin-autenticidad-establecida]]
+- supports → [[claude-code-source-leak-sin-artefacto-primario]]
+- relates_to → [[system-prompt-como-artefacto-de-ingenieria-claude-code]]
