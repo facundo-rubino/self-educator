@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-08'
+updated: '2026-10-09'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -19,15 +19,17 @@ tags:
 - documento-unico
 - evals
 - llm
+- llm-evals
 - nlp
 - rss-stub
 - scoping
+- single-source
 - task-families
 - task-specific
 - taxonomia-de-tareas
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -64,18 +66,21 @@ links:
   type: supports
 - to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
   type: derived_from
+- to: task-specific-llm-evals-singleton-engagement-cero-novelty-cero
+  type: relates_to
 ---
 
 ## What it is
-El documento declara explícitamente cinco familias de tarea sobre las que aplica evals específicas: clasificación, resumen, traducción, copyright regurgitation y toxicidad. Es una taxonomía de tareas NLP generales, no de evaluación de código ni de asistentes de enseñanza.
+Un documento titulado «Task-Specific LLM Evals that Do & Don't Work» enumera las familias de tarea donde las evals de LLM funcionan (clasificación, resumen, traducción) y donde son inadecuadas (copyright regurgitation, toxicidad). Es el único ítem de su clúster y su contenido no se verifica de forma independiente.
 
 ## Evidence
-- El documento enumera clasificación, resumen, traducción, copyright regurgitation y toxicidad como las tareas que cubre — source: 93963a5f93e58d05
+- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y es el único ítem del clúster — source: 93963a5f93e58d05
+- Aborda evals para clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
 
 ## Why it matters
-Un líder que construye flujos con agentes puede comprobar que las evals orientadas a tareas NLP no coinciden con la evaluación de cambios de código. Esa divergencia de dominio es el dato más útil del clúster, aunque el documento no la desarrolle.
+Las familias de tarea nombradas son todo lo que la evidencia sostiene: no hay benchmark, replicación ni contraejemplo en el clúster que respalde la división «funciona / no funciona». El valor del ítem es que fija un vocabulario de familias, no que valide un criterio.
 
-La nota de tareas-no-código sostiene la lectura de que este alcance no cubre evaluación agéntica de código; el resto del solapamiento con el brief es léxico, según `task-specific-llm-evals-sin-conexion-con-agentes-o-docencia`.
+Se relaciona con la nota que registra que estas familias declaradas son el único contenido verificable del documento, y con el registro de que es un singleton RSS sin engagement ni corroboración. También conecta con la idea general de evaluación específica por tarea como infraestructura, que aquí aparece como tema adyacente sin evidencia que la desarrolle.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -94,3 +99,4 @@ La nota de tareas-no-código sostiene la lectura de que este alcance no cubre ev
 - supports → [[task-specific-llm-evals-singleton-engagement-cero]]
 - supports → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]
 - derived_from → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
+- relates_to → [[task-specific-llm-evals-singleton-engagement-cero-novelty-cero]]

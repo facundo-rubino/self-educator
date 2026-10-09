@@ -10,20 +10,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-02'
+updated: '2026-10-09'
 sources:
 - abf61eeec75462f9
 tags:
 - circularidad
+- evidence-quality
 - evidencia-circular
 - evidencia-debil
+- generic-claim
 - metodo
 - patron
+- prompt-composition
 - prompt-engineering
 - restatement
 base_confidence: 0.5
 half_life_days: 365
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -48,19 +51,25 @@ links:
   type: relates_to
 - to: claude-code-system-prompt-conditional-composition
   type: contradicts
+- to: claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente
+  type: derived_from
+- to: composicion-condicional-de-instrucciones-como-hallazgo-ya-conocido
+  type: supports
+- to: restatement-de-titulo-no-es-hallazgo
+  type: supports
 ---
 
 ## What it is
-Cuando un documento sobre Claude Code afirma que su prompt tiene «docenas de partes condicionales», está reformulando una creencia previa muy extendida («prompt engineering como arquitectura de software») en lugar de aportar novedad. La novedad declarada es 0.00 y la evidencia es una única fuente no corroborada.
+Patrón recurrente en este corpus: cuando un documento describe un system prompt como «compuesto de partes condicionales», no aporta un hallazgo nuevo sobre el sistema observado. Es la formulación genérica de cómo funcionan la mayoría de los system prompts de producto actuales.
 
 ## Evidence
-- Novelty=0.00 en un cluster de un solo documento con engagement=0 — source: abf61eeec75462f9
-- La descomposición en partes condicionales es un patrón conocido anecdóticamente, no un hallazgo del cluster — source: abf61eeec75462f9
+- La frase «assembled from dozens of conditional parts» es una descripción genérica de bajo contenido informativo, aplicable a muchos system prompts modernos — source: abf61eeec75462f9
+- El crítico de la señal la califica de coincidencia léxica, no de hallazgo distintivo — source: abf61eeec75462f9
 
 ## Why it matters
-Reformular un patrón previo no lo valida en un caso concreto. La lección transferible («modularidad importa») es demasiado general para constituir evidencia sobre un producto específico, y proyectarla sobre detalles no verificados es sobreinterpretación.
+Evita inflar una nota o una clase con una «arquitectura descubierta» que en realidad es el estado del arte conocido. Para liderar o enseñar, la afirmación solo sería útil si viniera con las partes concretas, las condiciones que las activan y el efecto medido: nada de eso está en la evidencia.
 
-Instancia específica del patrón general «restatement de título no es hallazgo». Contradice la presentación del claim como novedoso; se relaciona con la familia de riesgos de circularidad en la evidencia.
+Deriva directamente del claim sobre el prompt de Claude Code, que es su caso instancia. Refuerza el patrón ya registrado de que la composición condicional de instrucciones no es hallazgo nuevo y el más general de que reformular un título no es un hallazgo.
 
 ## Links
 - derived_from → [[restatement-de-titulo-no-es-hallazgo]]
@@ -73,3 +82,6 @@ Instancia específica del patrón general «restatement de título no es hallazg
 - supports → [[validacion-de-senal-por-contenido-no-por-titulo]]
 - relates_to → [[restatement-de-titulo-no-es-hallazgo]]
 - contradicts → [[claude-code-system-prompt-conditional-composition]]
+- derived_from → [[claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente]]
+- supports → [[composicion-condicional-de-instrucciones-como-hallazgo-ya-conocido]]
+- supports → [[restatement-de-titulo-no-es-hallazgo]]

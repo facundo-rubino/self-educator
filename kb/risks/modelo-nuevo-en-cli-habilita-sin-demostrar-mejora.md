@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-10-09'
 sources:
 - 31820ad25e39a34b
+- fdf5991b8ee77588
 tags:
-- cli
 - agentes
-- inferencia
 - brief
+- cli
+- inferencia
+- limites-de-evidencia
+- patterns
+- tooling
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -30,22 +34,24 @@ links:
   type: relates_to
 - to: llm-anthropic-0-29-anuncio-de-release
   type: relates_to
+- to: llm-mistral-0-16-soporte-razonamiento
+  type: derived_from
 ---
 
 ## What it is
-Que un modelo sea invocable desde la CLI de `llm` habilita incorporarlo a scripts de desarrollo y de docencia asistida; no demuestra que el resultado sea mejor. La inferencia «agentes de IA mejoran la programación, la gestión o la enseñanza» no se sostiene desde este documento, que solo informa de un modelo adicional accesible por línea de comandos.
+Un anuncio de release que añade un modelo a una CLI solo documenta disponibilidad de herramienta. No documenta mejora de capacidad, de resultado de proyecto ni de práctica profesional. La accesibilidad de un modelo vía CLI y su utilidad real son hechos distintos.
 
 ## Evidence
-- El documento solo aporta un dato operativo: existe una nueva versión del plugin con acceso a un modelo adicional, lo que habilita —no demuestra— usarlo en flujos propios de programación y docencia asistida — source: 31820ad25e39a34b
-- No hay afirmación alguna sobre estimación, secuenciamiento, alcance, organización personal, liderazgo de equipos chicos ni técnicas de estudio — source: 31820ad25e39a34b
-- Cualquier inferencia sobre mejores prácticas es especulativa respecto a esta evidencia — source: 31820ad25e39a34b
+- El documento es un anuncio de release sin detalles técnicos, benchmarks ni experiencia de uso — source: fdf5991b8ee77588
+- La accesibilidad de modelos con reasoning vía `llm-mistral` 0.16 puede facilitar tareas de programación asistida, pero el clúster no ofrece evidencia sobre cómo hacerlo ni sobre su efectividad — source: fdf5991b8ee77588
 
 ## Why it matters
-Separa disponibilidad de capacidad: es legítimo registrar el modelo como herramienta candidata para flujos propios, y es ilegítimo escribir en el grafo que su uso mejora algún resultado. La distinción protege las dimensiones del brief —estimación, alcance, organización— de quedar «cubiertas» por una nota que nunca las trató.
+Evita el salto «release con modelo nuevo → ganancia en programación, gestión o docencia», que la evidencia no respalda. Un dev que lidera y enseña puede integrar el release en su flujo, pero la decisión de hacerlo no se apoya en datos de este clúster.
 
-Se deriva del modo de fallo ya catalogado: afirmar un salto de capacidad desde un fragmento de una línea sin método. Se relaciona con el riesgo de sostener un mapeo problema-patrón sin cuerpo que lo respalde. Y se relaciona con la nota de release como su origen concreto: la habilitación es el único contenido verificable del documento.
+Derivada de `llm-mistral-0-16-soporte-razonamiento`. Se relaciona con `llm-anthropic-0-29-anuncio-de-release` como otro caso de release de plugin `llm` con la misma limitación de evidencia.
 
 ## Links
 - derived_from → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - relates_to → [[promesa-de-mapeo-problema-patron-sin-cuerpo-no-sostenida]]
 - relates_to → [[llm-anthropic-0-29-anuncio-de-release]]
+- derived_from → [[llm-mistral-0-16-soporte-razonamiento]]

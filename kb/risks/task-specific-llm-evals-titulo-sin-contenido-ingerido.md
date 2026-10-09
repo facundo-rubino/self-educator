@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-10-07'
+updated: '2026-10-09'
 sources:
 - 19cb8032958cd964
 - 93963a5f93e58d05
@@ -22,13 +22,15 @@ tags:
 - fuera-del-brief
 - ingesta
 - ingesta-truncada
+- ingestion-artifact
 - llm
 - riesgo
 - singleton-rss
+- title-only
 - titulo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -65,19 +67,23 @@ links:
   type: contradicts
 - to: afirmar-mejora-de-liderazgo-por-juzgar-evaluadores-de-llm-seria-invencion
   type: relates_to
+- to: task-specific-llm-evals-singleton-engagement-cero-novelty-cero
+  type: relates_to
+- to: task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido
+  type: relates_to
 ---
 
 ## What it is
-El ítem llega solo como título más un resumen de una línea; no hay cuerpo, ni tabla de resultados, ni metodología [93963a5f93e58d05]. El engagement del documento es 0, lo que indica ausencia de interacción medible en la fuente RSS [93963a5f93e58d05].
+Del documento solo se recupera el título y la enumeración de familias de tarea que aborda. No hay cuerpo que desarrolle los criterios de qué eval funciona o no, ni el argumento que sostendría la división.
 
 ## Evidence
-- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y trata sobre evaluaciones específicas por tarea — fuente: 93963a5f93e58d05
-- El engagement del documento es 0 — fuente: 93963a5f93e58d05
+- Lo recuperado es el título y la lista de familias de tarea — source: 93963a5f93e58d05
+- No hay contenido adicional que desarrolle el criterio do/don't work — source: 93963a5f93e58d05
 
 ## Why it matters
-Sin cuerpo ingerido no se puede reconstruir la metodología ni verificar la afirmación del resumen. Cualquier detalle sobre qué se midió, con qué modelos o bajo qué condiciones sería invención.
+Sin cuerpo no se puede saber si el documento es una charla, un slide deck o una opinión, ni si la división se apoya en mediciones. Leerlo como guía probada sería imponer una narrativa al artefacto.
 
-Respalda las dos notas que solo pueden apoyarse en el alcance declarado. Entra en tensión con la nota existente `task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido`, que enuncia el mismo diagnóstico bajo otro id: se marca contradicción para que la reconciliación unifique ambas, en vez de sobrescribir una. Se relaciona con la nota sobre no inferir mejora de liderazgo desde juzgar evaluadores: mismo modo de fallo, el puente sin cadena de evidencia.
+Se relaciona con el registro de singleton sin engagement, con la nota paralela de título sin contenido ingerido para este documento, y con la nota que aísla las familias declaradas como único contenido verificable.
 
 ## Links
 - supports → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -96,3 +102,5 @@ Respalda las dos notas que solo pueden apoyarse en el alcance declarado. Entra e
 - supports → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
 - contradicts → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
 - relates_to → [[afirmar-mejora-de-liderazgo-por-juzgar-evaluadores-de-llm-seria-invencion]]
+- relates_to → [[task-specific-llm-evals-singleton-engagement-cero-novelty-cero]]
+- relates_to → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]

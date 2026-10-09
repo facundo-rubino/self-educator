@@ -10,18 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-09-29'
+updated: '2026-10-09'
 sources:
-- 30a26335a9988ba2
 - 16a4e3995d6c827e
+- 30a26335a9988ba2
+- ffbd76916d1dfdc5
 tags:
-- mcp
 - agentes
 - brief
+- infraestructura
+- mcp
 - senal-indirecta
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-29'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -32,21 +34,30 @@ links:
   type: relates_to
 - to: server-sequential-thinking-como-primitiva-de-razonamiento-para-agentes
   type: relates_to
+- to: mcp-como-infraestructura-de-agentes-reasignacion-de-track
+  type: supports
+- to: release-2026-8-31-falso-positivo-por-vocabulario-mcp-agentes
+  type: supports
+- to: mcp-serie-release-2026-8-31-no-es-evidencia-de-practica
+  type: relates_to
 ---
 
 ## What it is
-La única conexión defendible entre este clúster y el topic es indirecta: los paquetes MCP son infraestructura que tooling de agentes podría consumir. Eso hace de la serie MCP una señal débil de churn de tooling, no de prácticas de desarrollo.
+MCP es infraestructura que habilita agentes de IA, y el set bumpeado (filesystem, memory, sequential-thinking, git) incluye las primitivas que un dev podría enchufar a un agente para organizar trabajo o estudio. Pero los documentos del clúster no describen uso, aplicación, metodología ni resultado: solo versiones.
 
 ## Evidence
-- El analista concede que los documentos solo son tangencialmente relacionados porque los servidores MCP son tooling de agentes, «a lo sumo una esquina» del tema — source: 30a26335a9988ba2
-- Los stubs enumeran server-sequential-thinking, server-everything, server-filesystem, server-memory y mcp-server-git como paquetes, no como prácticas — source: 16a4e3995d6c827e
+- El clúster incluye server-filesystem, server-memory, server-sequential-thinking y mcp-server-git entre los paquetes actualizados — sources: 16a4e3995d6c827e, 30a26335a9988ba2, ffbd76916d1dfdc5.
+- Ninguno de los documentos describe uso, aplicación, metodología ni resultado sobre esas herramientas — sources: 16a4e3995d6c827e, 30a26335a9988ba2, ffbd76916d1dfdc5.
 
 ## Why it matters
-Queda abierto si la serie merece una señal débil de infraestructura para agentes o directamente exclusión del brief. No hay datos de uso, adopción ni outcomes que decidan la cuestión.
+Queda abierta la pregunta de si el clúster merece reasignación a un track de 'stack de agentes' en lugar de descarte liso. La infraestructura existe y sigue versionada; lo que falta es cualquier documento que documente práctica con ella.
 
-Se relaciona con `release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica` como cara complementaria del mismo clúster. Conecta con `server-memory-como-primitiva-de-estado-para-agentes` y `server-sequential-thinking-como-primitiva-de-razonamiento-para-agentes`, que tratan a esos mismos paquetes como primitivas de agentes.
+Refuerza la nota previa que ya trataba MCP como candidato a track de tooling, no al brief de agentes y liderazgo. Consistente con la nota que declara el release 2026.8.31 como no-evidencia de práctica: infraestructura viva, práctica sin documentar.
 
 ## Links
 - relates_to → [[release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica]]
 - relates_to → [[server-memory-como-primitiva-de-estado-para-agentes]]
 - relates_to → [[server-sequential-thinking-como-primitiva-de-razonamiento-para-agentes]]
+- supports → [[mcp-como-infraestructura-de-agentes-reasignacion-de-track]]
+- supports → [[release-2026-8-31-falso-positivo-por-vocabulario-mcp-agentes]]
+- relates_to → [[mcp-serie-release-2026-8-31-no-es-evidencia-de-practica]]

@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-07'
+updated: '2026-10-09'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -24,14 +24,17 @@ sources:
 tags:
 - artefacto-de-ingesta
 - changelog
+- falso-positivo
 - filtro-determinista
 - ingesta
 - mcp
 - off-topic
+- pipeline
 - release-feed
+- release-notes
 base_confidence: 0.82
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -58,20 +61,24 @@ links:
   type: relates_to
 - to: mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia
   type: relates_to
+- to: release-2026-8-31-mcp-serie-bumps-mantenimiento
+  type: supports
+- to: mcp-release-stub-sin-changelog
+  type: supports
+- to: mcp-serie-release-2026-8-31-no-es-evidencia-de-practica
+  type: supports
 ---
 
 ## What it is
-El documento semilla de esta señal es un aviso de release desnudo: una cadena de versión (v2026.8.31) seguida solo de una lista de paquetes de servidores MCP fijados a esa fecha, sin prosa, sin rationale y sin changelog. Otro aviso del mismo clúster sigue la plantilla idéntica con distinta fecha y subconjunto de paquetes, lo que confirma un formato de feed automatizado y recurrente, no contenido con autoría. No hay nada aquí que un dev-líder o docente pueda leer como hallazgo.
+El release 2026.8.31 que da nombre al signal sig-d0acf338c3a6 es una nota autogenerada con formato 'Release: vFECHA' y una lista de 'Updated packages': server-filesystem, server-memory, server-sequential-thinking y server-everything. No contiene changelog, diffs, rationale ni ningún claim sobre uso, metodología o resultado.
 
 ## Evidence
-- El documento semilla es un aviso de release pelado: versión más lista de paquetes MCP fijados a esa fecha — source: 30a26335a9988ba2
-- Un segundo aviso sigue la plantilla idéntica con otra fecha y otro subconjunto de paquetes, confirmando un formato de feed automatizado — source: 2221814efbefaa3b
-- El engagement es cero en los ítems muestreados, consistente con entradas de changelog sindicadas que ninguna audiencia interactúa — source: ffbd76916d1dfdc5
+- El release 2026.8.31 incluye server-filesystem, server-memory, server-sequential-thinking y server-everything — source: 30a26335a9988ba2.
 
 ## Why it matters
-Fija el techo epistémico de todo el clúster: un documento que solo contiene una etiqueta de versión y una lista de nombres de paquete no puede enseñar nada sobre agentes aplicados a programar, liderazgo técnico ni docencia, independientemente de cómo se haya recuperado. Cualquier nota que extraiga una lección de práctica desde aquí estaría inventándola.
+Permite auditar el signal sin reabrir los ocho documentos: el documento que nombra el clúster es un stub de bumps. Ninguna inferencia sobre práctica de ingeniería, liderazgo o docencia puede sostenerse desde él.
 
-`supports` la nota de bumps del release 2026.8.31: aquí está la evidencia documental de que ese release es una plantilla de bumps. Se relaciona con la ausencia de changelog legible en las releases MCP y con la cadencia date-versioned de la serie. No lleva `contradicts`: no hay contenido rival que refutar.
+Refuerza las notas existentes que ya caracterizan el release 2026.8.31 como eslabón de una serie de mantenimiento (`release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica`, `release-2026-8-31-mcp-serie-bumps-mantenimiento`) y la nota general sobre releases MCP sin changelog (`mcp-release-stub-sin-changelog`). Consistente con la nota de riesgo sobre el release 2026.8.31 como no-evidencia de práctica.
 
 ## Links
 - supports → [[mcp-release-2026-8-31-bumps]]
@@ -85,3 +92,6 @@ Fija el techo epistémico de todo el clúster: un documento que solo contiene un
 - relates_to → [[release-2026-8-31-mcp-token-como-falso-positivo-de-filtro]]
 - relates_to → [[mcp-servers-sin-changelog-legible]]
 - relates_to → [[mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia]]
+- supports → [[release-2026-8-31-mcp-serie-bumps-mantenimiento]]
+- supports → [[mcp-release-stub-sin-changelog]]
+- supports → [[mcp-serie-release-2026-8-31-no-es-evidencia-de-practica]]

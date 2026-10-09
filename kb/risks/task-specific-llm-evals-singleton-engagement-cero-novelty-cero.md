@@ -9,18 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-02'
-updated: '2026-10-02'
+updated: '2026-10-09'
 sources:
 - 93963a5f93e58d05
 tags:
 - evals
 - llm
-- singleton
 - metricas
+- no-corroboration
 - pipeline
+- rss
+- single-source
+- singleton
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -37,19 +40,23 @@ links:
   type: supports
 - to: relevancia-1-00-no-es-validacion-del-cluster
   type: relates_to
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: relates_to
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: relates_to
 ---
 
 ## What it is
-Un clúster de un solo documento RSS con engagement=0 y novelty=0.00 no sostiene ninguna generalización sobre práctica de evaluación. La relevance declarada (0.67) es una aserción del scorer, no un vínculo demostrado.
+El clúster se sostiene sobre un único ítem RSS sin corroboración, sin engagement y con novelty 0.00. La señal no puede distinguirse de los intereses de un solo feed o de un solo ingester.
 
 ## Evidence
-- El clúster contiene un único documento [93963a5f93e58d05] ingerido por RSS — source: 93963a5f93e58d05
-- novelty=0.00, relevance=0.67, engagement=0 — source: 93963a5f93e58d05
+- El clúster contiene un solo documento — source: 93963a5f93e58d05
+- No hay fuentes corroborantes en el clúster y novelty es 0.00 — source: 93963a5f93e58d05
 
 ## Why it matters
-Cualquier claim sobre evals específicas de tarea derivado de este clúster sería una generalización desde n=1 con métricas degeneradas. El único uso legítimo es señalarlo como ruido de ingesta.
+Cualquier conclusión extraída del documento — incluida la disciplina de «clasificar la tarea antes de confiar en la eval» — queda en calidad de hipótesis. Actuar sobre ella como si fuera un hallazgo validado arriesga sobre- o sub-invertir en chequeos automatizados para la familia de tarea equivocada.
 
-Reformula y amplía `task-specific-llm-evals-singleton-engagement-cero` y `task-specific-llm-evals-singleton-rss-engagement-cero-novelty-cero-2` con el mismo diagnóstico. Ejemplifica el patrón más general en `single-document-cluster-engagement-cero-no-generaliza` y `generalizacion-desde-cluster-de-un-solo-documento`. Conecta con `relevancia-1-00-no-es-validacion-del-cluster` porque el score de relevancia no es corroboración.
+Se relaciona con la nota de alcance del documento, con la nota de título sin contenido ingerido, y con el patrón de que un clúster de un documento sin engagement no sostiene generalización.
 
 ## Links
 - relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
@@ -58,3 +65,5 @@ Reformula y amplía `task-specific-llm-evals-singleton-engagement-cero` y `task-
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[generalizacion-desde-cluster-de-un-solo-documento]]
 - relates_to → [[relevancia-1-00-no-es-validacion-del-cluster]]
+- relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]

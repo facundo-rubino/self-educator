@@ -10,12 +10,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-10-05'
+updated: '2026-10-09'
 sources:
 - d2a0c86ca8027978
 tags:
 - artefacto-de-feed
 - artefacto-de-ingesta
+- cuerpo-truncado
+- evaluacion
 - evaluación
 - hackathon
 - ingesta
@@ -26,7 +28,7 @@ tags:
 - weights-and-biases
 base_confidence: 0.6
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -41,20 +43,23 @@ links:
   type: relates_to
 - to: wandb-llm-as-a-judge-hackathon-sin-corroboracion
   type: supports
+- to: mecanica-de-evals-afirmada-desde-solo-titulo-rss-2
+  type: supports
+- to: coincidencia-de-titulo-con-post-conocido-no-es-corroboracion-de-contenido
+  type: supports
 ---
 
 ## What it is
-El único documento de este clúster es un ítem RSS de peso cero titulado «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge», cuyo único contenido sustantivo es la línea «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon» [d2a0c86ca8027978]. Es un artefacto de nivel título/anuncio: no describe metodología, resultados ni argumento [d2a0c86ca8027978]. Lo único verificable es que el autor ocupa o ha ocupado un rol de juez humano en ese evento [d2a0c86ca8027978].
+El ítem de RSS [d2a0c86ca8027978] sobre el hackathon «LLM-as-a-Judge» de Weights & Biases llega al KB con engagement cero y con un texto que se agota en la frase «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon». Lo que hay es un fragmento de rol, no un documento sobre cómo se construyen o evalúan pipelines LLM-as-a-judge.
 
 ## Evidence
-- El único contenido con forma de afirmación es que el autor es/fue juez humano en el Weights & Biases LLM-as-a-Judge Hackathon; no hay más detalle — source: d2a0c86ca8027978
-- El ítem es de origen RSS con engagement=0, sin interacción, discusión ni amplificación observada aguas abajo — source: d2a0c86ca8027978
-- El clúster consta de exactamente un documento, por lo que no hay corroboración cruzada posible — source: d2a0c86ca8027978
+- El ítem tiene engagement registrado de cero y su texto es un título de rol, sin cuerpo recuperado — source: d2a0c86ca8027978
+- El documento no aporta ninguna técnica, herramienta ni flujo extraíble — source: d2a0c86ca8027978
 
 ## Why it matters
-No rinde ningún input accionable para los ejes del brief (agentes de IA en código/gestión/docencia, estimación, alcance, secuenciamiento, organización personal, oficio de SE, productividad, técnicas de estudio) y no debe promoverse a hallazgo. Si se recuperase el artículo completo, el único ángulo plausible sería secundario —cómo las prácticas de evaluación LLM-as-a-judge se mapean sobre flujos humanos de revisión que corre un dev-líder que enseña (p. ej. evaluar PRs de juniors o código de estudiantes)— pero ese argumento no está en el documento y tendría que venir de otra parte.
+Enseñar o configurar un flujo de evaluación a partir de este documento sería inventar la mecánica. Si la fuente original describía cómo se juzgan pipelines de evaluación, solo una re-ingesta completa con el cuerpo permitiría tratarla como material.
 
-Se relaciona con la nota preexistente sobre el mismo hackathon, que registra el mismo fragmento de rol sin metodología; `supports` la evidencia de ausencia de corroboración y de que «juez humano» es un rol declarado, no contenido metodológico. La nota previa sobre el stub sin cuerpo describe el mismo modo de fallo del pipeline.
+Refuerza el patrón ya registrado de que afirmar una mecánica de evaluación desde solo un título RSS es un modo de fallo. También conecta con la nota que distingue coincidencia de título y corroboración de contenido: el título menciona evaluación, pero no la desarrolla.
 
 ## Links
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
@@ -62,3 +67,5 @@ Se relaciona con la nota preexistente sobre el mismo hackathon, que registra el 
 - supports → [[criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido]]
 - relates_to → [[wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo]]
 - supports → [[wandb-llm-as-a-judge-hackathon-sin-corroboracion]]
+- supports → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss-2]]
+- supports → [[coincidencia-de-titulo-con-post-conocido-no-es-corroboracion-de-contenido]]

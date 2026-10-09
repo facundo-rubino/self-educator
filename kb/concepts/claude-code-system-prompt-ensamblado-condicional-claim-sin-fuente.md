@@ -10,17 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-07'
+updated: '2026-10-09'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
-- prompts
-- fuente-no-verificada
 - ensamblado-condicional
+- fuente-no-verificada
+- prompt-composition
+- prompts
+- single-source
+- system-prompt
+- unverified
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -33,22 +37,37 @@ links:
   type: contradicts
 - to: ensamblado-condicional-de-prompts
   type: derived_from
+- to: system-prompt-como-artefacto-de-ingenieria
+  type: relates_to
+- to: ensamblado-condicional-de-prompts
+  type: relates_to
+- to: afirmar-internals-de-claude-code-como-hecho-seria-especulacion
+  type: supports
+- to: leak-sin-autenticidad-establecida
+  type: supports
+- to: vista-filtrada-de-codigo-no-confirma-composicion-condicional
+  type: supports
 ---
 
 ## What it is
-Un único documento RSS [abf61eeec75462f9] afirma que el system prompt de Claude Code se ensambla dinámicamente a partir de docenas de partes condicionales. El documento enmarca el claim como proveniente de «leaked source» sin mostrar el artefacto. No hay segundo documento, código, prompt observado ni test dentro del clúster.
+Un ítem RSS (doc `abf61eeec75462f9`) afirma que el system prompt de Claude Code «se ensambla a partir de docenas de partes condicionales», atribuyéndolo a «leaked source». No hay código, versión, fecha ni confirmación independiente. La descripción es genérica y aplicable a casi cualquier system prompt moderno.
 
 ## Evidence
-- «Claude Code's system prompt is assembled from dozens of conditional parts rather than being a single static block». El autor lo atribuye a «leaked source». — source: abf61eeec75462f9
-- El documento es un ítem RSS con engagement=0 en el pipeline de ingesta: circuló sin discusión medida que lo corrobore. — source: abf61eeec75462f9
+- El system prompt de Claude Code estaría ensamblado a partir de docenas de partes condicionales, según fuente filtrada reportada — source: abf61eeec75462f9
+- El clúster contiene un único documento, con engagement cero, novelty 0.00 y sin corroboración — source: abf61eeec75462f9
 
 ## Why it matters
-Es la afirmación concreta sobre internals de Claude Code que sostiene el resto del clúster. Su confianza real es baja: novelty 0.00, una sola fuente, sin artefacto primario. Cualquier nota derivada debe heredar ese techo, no elevarlo citando plausibilidad como confirmación.
+Como descripción factual de la arquitectura de Claude Code no es utilizable: la procedencia «leaked source» es inverificable y podría ser fabricada, mal atribuida o describir una herramienta distinta o desactualizada. Solo sirve como puntero para verificación posterior, nunca como hecho citable en decisiones técnicas ni en material de clase.
 
-Se relaciona con el patrón genérico de composición condicional (`claude-code-system-prompt-conditional-composition`, `ensamblado-condicional-de-prompts`), pero sin aportar evidencia nueva: el patrón ya era conocido. Contradice `restatement-de-titulo-como-evidencia-de-composicion-condicional` en la medida en que una reformulación del titular no constituye hallazgo. La ausencia de artefacto primario está registrada en `claude-code-source-leak-sin-artefacto-primario`.
+Se apoya en la nota sobre el system prompt como artefacto de ingeniería: si la composición condicional fuera real, reforzaría ese encuadre. También conecta con el patrón de ensamblado condicional de prompts, pero es evidencia de apoyo débil: el propio patrón no depende de este documento. Los riesgos de tratar un leak sin autenticidad establecida y de que una vista filtrada de código no confirme composición condicional son los límites que acotan esta nota.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
 - supports → [[claude-code-source-leak-sin-artefacto-primario]]
 - contradicts → [[restatement-de-titulo-como-evidencia-de-composicion-condicional]]
 - derived_from → [[ensamblado-condicional-de-prompts]]
+- relates_to → [[system-prompt-como-artefacto-de-ingenieria]]
+- relates_to → [[ensamblado-condicional-de-prompts]]
+- supports → [[afirmar-internals-de-claude-code-como-hecho-seria-especulacion]]
+- supports → [[leak-sin-autenticidad-establecida]]
+- supports → [[vista-filtrada-de-codigo-no-confirma-composicion-condicional]]

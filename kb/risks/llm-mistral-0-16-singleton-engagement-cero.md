@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-08'
+updated: '2026-10-09'
 sources:
 - fdf5991b8ee77588
 tags:
@@ -18,11 +18,12 @@ tags:
 - engagement
 - engagement-cero
 - llm-mistral
+- pipeline
 - rss
 - singleton
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -37,20 +38,23 @@ links:
   type: derived_from
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: supports
+- to: llm-mistral-0-16-soporte-razonamiento
+  type: derived_from
+- to: llm-mistral-0-16-tangencial-al-brief-por-vocabulario
+  type: supports
 ---
 
 ## What it is
-El clúster de `llm-mistral 0.16` es un singleton: un único documento con engagement=0 y novelty=0.00. Un solo ítem de feed sin interacción externa no sostiene generalización sobre adopción, capacidad o utilidad para el brief.
+El clúster que sostiene este hallazgo contiene un único documento [fdf5991b8ee77588] con engagement cero y novelty 0.00. Un solo documento de feed no permite generalizar sobre prácticas profesionales, adopción ni impacto.
 
 ## Evidence
-- El clúster contiene un solo documento (engagement=0), sin corroboración interna entre fuentes [fdf5991b8ee77588].
-- Los scores del sistema son relevance=0.33 y novelty=0.00: baja relevancia declarada y sin novedad real para el brief [fdf5991b8ee77588].
-- El engagement=0 indica que la fuente no generó interacción en los datos disponibles [fdf5991b8ee77588].
+- El clúster contiene un único documento — source: fdf5991b8ee77588 (según el propio análisis del reporte)
+- El documento es un anuncio de release sin detalles técnicos, benchmarks ni experiencia de uso — source: fdf5991b8ee77588
 
 ## Why it matters
-Cualquier inferencia sobre cómo el soporte de razonamiento mejora el trabajo de un dev que lidera y enseña es extrapolación desde un solo ítem. El propio critiquer bajó la confianza a 0.08 por este motivo. La nota de release sobrevive solo como contexto de ecosistema, no como hallazgo accionable.
+Cualquier conclusión sobre liderazgo técnico, estimación, secuenciamiento, docencia o productividad derivada de este clúster sería especulativa. El release puede ser accionable para un dev que use específicamente `llm-mistral`, pero no yeva ninguna señal sobre el resto de los ejes del brief.
 
-Es la cara de riesgo de `llm-mistral-0-16-soporte-razonamiento`. Instancia concreta de `cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion` y refuerza `single-document-cluster-engagement-cero-no-generaliza`.
+Derivada de `llm-mistral-0-16-soporte-razonamiento` (el único hecho del clúster). Refuerza la advertencia léxica de `llm-mistral-0-16-tangencial-al-brief-por-vocabulario`: ambas describen por qué este ítem no sostiene inferencia de práctica.
 
 ## Links
 - supports → [[llm-mistral-0-16-soporte-razonamiento]]
@@ -58,3 +62,5 @@ Es la cara de riesgo de `llm-mistral-0-16-soporte-razonamiento`. Instancia concr
 - relates_to → [[llm-mistral-0-16-soporte-razonamiento]]
 - derived_from → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
+- derived_from → [[llm-mistral-0-16-soporte-razonamiento]]
+- supports → [[llm-mistral-0-16-tangencial-al-brief-por-vocabulario]]

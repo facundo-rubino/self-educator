@@ -9,23 +9,25 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-02'
-updated: '2026-10-08'
+updated: '2026-10-09'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
 tags:
 - claim-sin-metodologia
 - figuras-publicas
+- identificacion-de-personas
 - identificacion-figuras-publicas
 - multimodal
 - policy
 - reconocimiento-facial
 - rss
+- rss-singleton
 - sin-metodologia
 - vision
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -48,20 +50,24 @@ links:
   type: supports
 - to: concepto-precedente-identificacion-de-figuras-publicas
   type: relates_to
+- to: afirmacion-de-capacidad-desde-fragmento-de-una-linea
+  type: supports
+- to: segundo-corpus-necesario-para-afirmar-capacidad-multimodal
+  type: supports
 ---
 
 ## What it is
-Un único documento RSS [19cb8032958cd964] afirma que los LLMs ya identifican figuras públicas en imágenes, con divergencia entre proveedores: ChatGPT y Claude rechazan, Gemini no. El documento es un titular breve sin cuerpo, sin metodología, sin fecha y sin evaluación independiente. El clúster tiene novelty=0.00 y corroboración=0.50: una sola fuente, sin confirmación adicional.
+Un único ítem RSS afirma que ChatGPT y Claude no identifican figuras públicas en imágenes, mientras que Gemini sí lo haría. No hay metodología, ni versión de modelo, ni dataset, ni tasa de aciertos o falsos positivos; solo la aserción de comportamiento de producto. El critic lo degrada a coincidencia léxica/asertiva, no a hallazgo empírico, y el resultado final del pipeline es confidence 0.08 sobre un signal con novelty=0.00.
 
 ## Evidence
-- ChatGPT y Claude no identifican figuras públicas en imágenes; Gemini sí lo hace — source: 19cb8032958cd964
-- El documento se limita a un titular sin cuerpo argumental, datos de prueba, fecha ni enlace a evaluación independiente — source: 19cb8032958cd964
-- Clúster de un solo documento, novelty 0.00, corroboración 0.50: sin fuentes adicionales que confirmen o refuten — source: sig-237cc97a9794
+- «ChatGPT y Claude no identificarían figuras públicas en imágenes, mientras que Gemini sí lo haría» — source: 19cb8032958cd964
+- El documento fue ingerido como RSS sin engagement (engagement=0), sin corroboración externa dentro del clúster — source: 19cb8032958cd964
+- Veredicto del pipeline: novedad nula (novelty=0.00) y corroboración por debajo de umbral (0.50) — source: 19cb8032958cd964
 
 ## Why it matters
-La afirmación no es verificable como está formulada. «Identificar» cubre al menos dos capacidades distintas —nombrar una figura obvia en una caption frente a identificación fiable desde imágenes crudas— que el titular colapsa. La parte comparativa (quién rechaza, quién no) es un snapshot de política de producto que puede cambiar sin aviso, no una capacidad durable. Para el brief (agentes de IA aplicados a programar, gestionar y enseñar) no aporta nada accionable.
+Una afirmación de capacidad multimodal que no cita versión, dataset ni condiciones es exactamente el modo de fallo descrito en las notas de riesgo del KB: se convierte en rumor operativo antes de ser resultado. Cualquier decisión sobre paridad entre proveedores basada en este ítem sería prematura; el coste real es que el brief recibe ruido etiquetado como hallazgo.
 
-Se apoya en `afirmacion-de-capacidad-multimodal-sin-metodologia` como caso concreto del mismo modo de fallo: afirmar capacidad desde un titular sin evaluación reproducible. Conecta con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`, otra observación de asimetría entre proveedores ante el mismo tipo de contenido. Y con `concepto-precedente-identificacion-de-figuras-publicas`: la identificación de figuras por modelos multimodales no es nueva, lo que erosiona aún más la novelty del claim.
+Se apoya directamente en `afirmacion-de-capacidad-multimodal-sin-metodologia` (el patrón general de claim multimodal sin condiciones), en `afirmacion-de-capacidad-desde-fragmento-de-una-linea` y en `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` (variantes ya registradas del mismo error). Se conecta temáticamente con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor` porque ambos dependen de la asimetría entre proveedores, y hereda la conclusión de `segundo-corpus-necesario-para-afirmar-capacidad-multimodal` y `relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief`: un singleton no sostiene una afirmación poblacional ni cubre los ejes del brief.
 
 ## Links
 - supports → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
@@ -73,3 +79,5 @@ Se apoya en `afirmacion-de-capacidad-multimodal-sin-metodologia` como caso concr
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - supports → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[concepto-precedente-identificacion-de-figuras-publicas]]
+- supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
+- supports → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]

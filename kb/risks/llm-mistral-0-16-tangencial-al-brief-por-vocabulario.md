@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-08'
+updated: '2026-10-09'
 sources:
 - fdf5991b8ee77588
 tags:
@@ -19,9 +19,10 @@ tags:
 - llm-mistral
 - match-lexico
 - matching-lexico
+- pipeline
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -38,20 +39,21 @@ links:
   type: supports
 - to: release-2026-8-31-mcp-token-como-falso-positivo-de-filtro
   type: supports
+- to: llm-mistral-0-16-soporte-razonamiento
+  type: contradicts
 ---
 
 ## What it is
-El clúster solapa con el brief solo en la parte de «agentes de IA aplicados a programar», y lo hace como noticia de infraestructura/herramientas, no como práctica aplicada. El match se produce por vocabulario (`llm`, tags del clúster), no por semántica del brief.
+La conexión del release `llm-mistral` 0.16 con el topic es una coincidencia léxica: las palabras «LLM» y «programar» aparecen próximas, pero el documento es un anuncio de versión de software, no un hallazgo sobre cómo un dev hace mejor su trabajo. La relevancia score de 0.33 refleja ese solapamiento superficial.
 
 ## Evidence
-- El documento está etiquetado con `llm`, `mistral` y `llm-reasoning` [fdf5991b8ee77588].
-- El clúster es una nota de librería; casi todo el brief (liderazgo, estimación, enseñanza, productividad, estudio) no está cubierto [fdf5991b8ee77588].
-- relevance=0.33 y novelty=0.00: el propio sistema lo clasifica como baja relevancia y sin novedad [fdf5991b8ee77588].
+- El hallazgo real del clúster es una actualización de tooling, no una práctica de ingeniería o de liderazgo — source: fdf5991b8ee77588 (según el propio análisis del reporte)
+- No hay evidencia en los documentos sobre liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, docencia ni productividad — source: fdf5991b8ee77588
 
 ## Why it matters
-Mapear el token 'Mistral Large 4' a «agentes de IA aplicados a programar» es coincidencia léxica, no mecanismo demostrado. Sin evaluación de razonamiento ni experiencia pedagógica reportada, este ítem no cubre ningún eje del brief operativo.
+Tratar este ítem como señal sustantiva del brief infla el conteo de hallazgos con ruido de catálogo. El release pertenece a la categoría «punta del tooling», relevante para un dev que ya use `llm-mistral` pero no para los cuatro ejes centrales del topic.
 
-Instancia concreta del patrón de match léxico en `modelos-locales-y-sdk-de-agentes-relevancia-lexica-al-brief` y `release-2026-8-31-mcp-token-como-falso-positivo-de-filtro`. Se apoya en `llm-mistral-0-16-singleton-engagement-cero` para el límite de inferencia.
+Contradice el alcance de `llm-mistral-0-16-soporte-razonamiento` (el release existe, pero su relación con el brief no está demostrada). Se relaciona con `llm-anthropic-0-29-topic-match-espurio-por-vocabulario` como otro caso del mismo patrón de matching léxico en releases de plugins `llm`.
 
 ## Links
 - derived_from → [[llm-mistral-0-16-soporte-razonamiento]]
@@ -60,3 +62,4 @@ Instancia concreta del patrón de match léxico en `modelos-locales-y-sdk-de-age
 - relates_to → [[llm-mistral-0-16-singleton-engagement-cero]]
 - supports → [[modelos-locales-y-sdk-de-agentes-relevancia-lexica-al-brief]]
 - supports → [[release-2026-8-31-mcp-token-como-falso-positivo-de-filtro]]
+- contradicts → [[llm-mistral-0-16-soporte-razonamiento]]

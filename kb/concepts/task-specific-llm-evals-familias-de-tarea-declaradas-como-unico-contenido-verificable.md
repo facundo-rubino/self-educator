@@ -9,21 +9,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-10-08'
+updated: '2026-10-09'
 sources:
 - 93963a5f93e58d05
 tags:
 - alcance
 - bajo-contenido
 - evals
+- evidence-scope
 - evidencia
 - ingesta
 - llm
+- llm-evals
 - pipeline
 - task-specific
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-09'
 provenance:
   scale: XL
   query: null
@@ -40,19 +42,21 @@ links:
   type: derived_from
 - to: task-specific-llm-evals-titulo-sin-contenido-ingerido
   type: relates_to
+- to: task-families-evaluadas-en-el-documento-evals
+  type: relates_to
 ---
 
 ## What it is
-El único contenido factualmente sostenible del clúster «Task-Specific LLM Evals that Do & Don't Work» es la enumeración de las familias de tarea que el documento declara evaluar: clasificación, resumen, traducción, copyright regurgitation y toxicidad. No hay resultado empírico, medición ni comparación que respalde un hallazgo sobre las evals mismas.
+El clúster de «Task-Specific LLM Evals that Do & Don't Work» contiene un único documento, y lo verificable de él es la lista de familias de tarea que aborda: clasificación, resumen, traducción, copyright regurgitation y toxicidad. Ninguna afirmación sobre qué tareas «funcionan» o «no funcionan» viene acompañada de evidencia recuperable.
 
 ## Evidence
-- El documento enumera las categorías de tarea que sus evals abordan: clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
-- El clúster se compone de un único documento ingerido por RSS, sin documentos corroborantes — source: 93963a5f93e58d05
+- El documento es el único del clúster y aborda esas cinco familias — source: 93963a5f93e58d05
+- No hay documento de soporte adicional que permita contrastar la clasificación — source: 93963a5f93e58d05
 
 ## Why it matters
-Fija el techo de lo que se puede afirmar desde este clúster: bibliografía más taxonomía declarada. Cualquier claim sobre metodología de evals, sobre qué funciona y qué no, o sobre transferencia a evals de código excede lo que la evidencia permite.
+Separa lo que se puede citar (la enumeración) de lo que no (el veredicto do/don't work). Cualquier uso posterior del documento debería limitarse a las familias declaradas hasta que aparezca evidencia independiente.
 
-El detalle de las familias declaradas vive en la nota de alcance; el carácter de fuente única y sin engagement lo trata `task-specific-llm-evals-singleton-engagement-cero`; `task-specific-llm-evals-titulo-sin-contenido-ingerido` documenta el mismo límite desde el ángulo del titular.
+Es la cara verificable de la nota de alcance del documento, y se alinea con la nota que enumera las familias de tarea evaluadas en el documento de evals.
 
 ## Links
 - supports → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
@@ -61,3 +65,4 @@ El detalle de las familias declaradas vive en la nota de alcance; el carácter d
 - relates_to → [[task-specific-llm-evals-singleton-engagement-cero]]
 - derived_from → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- relates_to → [[task-families-evaluadas-en-el-documento-evals]]
