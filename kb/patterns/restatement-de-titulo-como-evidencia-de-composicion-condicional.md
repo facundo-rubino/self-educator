@@ -10,12 +10,15 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-09'
+updated: '2026-10-12'
 sources:
+- 93963a5f93e58d05
 - abf61eeec75462f9
 tags:
 - circularidad
+- ensamblado-condicional
 - evidence-quality
+- evidencia
 - evidencia-circular
 - evidencia-debil
 - generic-claim
@@ -26,7 +29,7 @@ tags:
 - restatement
 base_confidence: 0.5
 half_life_days: 365
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -57,19 +60,21 @@ links:
   type: supports
 - to: restatement-de-titulo-no-es-hallazgo
   type: supports
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: supports
 ---
 
 ## What it is
-Patrón recurrente en este corpus: cuando un documento describe un system prompt como «compuesto de partes condicionales», no aporta un hallazgo nuevo sobre el sistema observado. Es la formulación genérica de cómo funcionan la mayoría de los system prompts de producto actuales.
+Reformular el título de un documento como si fuera su hallazgo es circularidad, no evidencia. En este caso, describir que un documento «distingue evals que funcionan de las que no» porque su título lo dice repite la observación en lugar de inferirla de evidencia independiente.
 
 ## Evidence
-- La frase «assembled from dozens of conditional parts» es una descripción genérica de bajo contenido informativo, aplicable a muchos system prompts modernos — source: abf61eeec75462f9
-- El crítico de la señal la califica de coincidencia léxica, no de hallazgo distintivo — source: abf61eeec75462f9
+- La evidencia del documento de evals se sostiene solo citando repetidamente la misma etiqueta de fuente, sin material adicional — source: 93963a5f93e58d05
+- No se aportan criterios, métodos, ejemplos ni resultados que sustenten la distinción del título — source: 93963a5f93e58d05
 
 ## Why it matters
-Evita inflar una nota o una clase con una «arquitectura descubierta» que en realidad es el estado del arte conocido. Para liderar o enseñar, la afirmación solo sería útil si viniera con las partes concretas, las condiciones que las activan y el efecto medido: nada de eso está en la evidencia.
+Aplicado al reporte: la única evidencia listada del documento es un restatement de su título. El crítico lo identifica como circularidad y baja la confianza a 0.05. La regla operativa es que un título reformulado no eleva el estatus epistémico de un claim.
 
-Deriva directamente del claim sobre el prompt de Claude Code, que es su caso instancia. Refuerza el patrón ya registrado de que la composición condicional de instrucciones no es hallazgo nuevo y el más general de que reformular un título no es un hallazgo.
+`supports` la nota de riesgo sobre el mismo documento: la circularidad es la razón concreta por la que ese título no puede sostener un hallazgo. Se relaciona con la nota existente sobre restatement de título como no-hallazgo, de la que este caso es una confirmación más.
 
 ## Links
 - derived_from → [[restatement-de-titulo-no-es-hallazgo]]
@@ -85,3 +90,4 @@ Deriva directamente del claim sobre el prompt de Claude Code, que es su caso ins
 - derived_from → [[claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente]]
 - supports → [[composicion-condicional-de-instrucciones-como-hallazgo-ya-conocido]]
 - supports → [[restatement-de-titulo-no-es-hallazgo]]
+- supports → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]

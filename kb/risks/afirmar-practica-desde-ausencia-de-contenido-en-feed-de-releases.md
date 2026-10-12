@@ -9,16 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-10-02'
+updated: '2026-10-12'
 sources:
 - 16a4e3995d6c827e
+- 2221814efbefaa3b
 - 30a26335a9988ba2
 - 5a4df6bef0a4905f
+- 748f8b0a02cd7524
+- 9750590bbfe6b285
+- b9106690f5dfd849
 - d2a0c86ca8027978
 - ffbd76916d1dfdc5
 tags:
 - ausencia
 - epistemics
+- epistemologia
 - evidence
 - evidencia
 - false-positive
@@ -26,10 +31,12 @@ tags:
 - feed
 - mcp
 - metodo
+- pipeline
 - practica
+- releases
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -50,19 +57,24 @@ links:
   type: relates_to
 - to: release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica
   type: relates_to
+- to: mcp-feed-releases-ruido-para-brief-de-agentes-y-liderazgo
+  type: relates_to
+- to: mcp-release-bumps-no-revelan-practica-de-ingenieria
+  type: relates_to
+- to: release-de-parche-no-revela-practica-de-ingenieria
+  type: relates_to
 ---
 
 ## What it is
-Un changelog que solo lista bumps de versión no contiene prosa, autoría ni discusión. Cualquier claim sobre agentes de IA aplicados a ingeniería, liderazgo, estimación, secuenciamiento, alcance, organización personal, craft o estudio apoyado en estos documentos sería invención, no hallazgo.
+Un feed de releases con tag y lista de paquetes no contiene claims sobre workflow, estimación, secuenciación, docencia ni oficio. Extraer una afirmación de práctica desde ahí — incluso negativa o «meta» — convierte el silencio del formato en una conclusión.
 
 ## Evidence
-- Los ocho documentos del clúster son changelogs plantilla sin contenido narrativo sobre agentes de IA en ingeniería, docencia, estimación, liderazgo de equipo ni craft de software — source: 16a4e3995d6c827e
-- El release 2026.8.31 es solo una lista de bumps a v2026.8.31 — source: 30a26335a9988ba2
+- Los siete documentos del clúster listan paquetes sin prosa, discusión ni contenido de usuario — source: 30a26335a9988ba2, 2221814efbefaa3b, 5a4df6bef0a4905f, 748f8b0a02cd7524, 9750590bbfe6b285, b9106690f5dfd849, ffbd76916d1dfdc5
 
 ## Why it matters
-Marca el límite del documento como evidencia: sirve para versionado y composición de releases, no para afirmar nada sobre cómo trabaja quien lidera un proyecto o enseña a programar.
+Es el modo de fallo central de este clúster: la ausencia de contenido temático es un hecho sobre el feed, no un hallazgo sobre práctica. Compilar «no habla del brief» como nota de práctica sería circular y lo que corresponde es clasificar el clúster como ruido.
 
-`mcp-release-stub-sin-changelog` recoge el mismo modo de fallo desde la forma del documento; `confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido` describe el error inverso (puntuar alto un hallazgo negativo).
+Se relaciona con la nota de ruido del feed MCP para el brief y con las notas ya existentes sobre bumps y releases de parche como no-evidencia de práctica.
 
 ## Links
 - derived_from → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]
@@ -73,3 +85,6 @@ Marca el límite del documento como evidencia: sirve para versionado y composici
 - relates_to → [[mcp-release-stub-sin-changelog]]
 - relates_to → [[confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido]]
 - relates_to → [[release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica]]
+- relates_to → [[mcp-feed-releases-ruido-para-brief-de-agentes-y-liderazgo]]
+- relates_to → [[mcp-release-bumps-no-revelan-practica-de-ingenieria]]
+- relates_to → [[release-de-parche-no-revela-practica-de-ingenieria]]

@@ -10,20 +10,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-06'
-updated: '2026-10-09'
+updated: '2026-10-12'
 sources:
 - d2a0c86ca8027978
 tags:
 - artefacto-de-cluster
+- artefacto-de-ingesta
 - evals
+- evaluacion
 - hackathon
 - ingesta
 - llm-as-a-judge
 - rss
+- wandb
 - we-and-b
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -36,22 +39,29 @@ links:
   type: relates_to
 - to: afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion
   type: supports
+- to: criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido
+  type: supports
+- to: juez-humano-como-rol-sin-contenido-metodologico
+  type: supports
 ---
 
 ## What it is
-El clúster de la señal sig-b2a3f5dd7004 se sostiene sobre un único documento RSS [d2a0c86ca8027978] cuyo texto es «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon», es decir un título de rol o tarea. No hay cuerpo, no hay método, no hay mecánica de juicio. La pregunta que queda abierta es qué contiene realmente la fuente bajo ese título.
+El clúster contiene un único documento [d2a0c86ca8027978] que se autodescribe como la presencia del autor como juez humano en el «Weights & Biases LLM-as-a-Judge Hackathon». No hay criterios de juicio, equipos, soluciones evaluadas ni aprendizajes transferibles en el material ingerido. Queda abierta la pregunta de si existe contenido metodológico detrás del rol declarado.
 
 ## Evidence
-- El único documento del clúster es un ítem RSS titulado «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge» con engagement registrado de cero — source: d2a0c86ca8027978
-- Su contenido textual se limita a «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon», una descripción de rol sin técnica ni hallazgo — source: d2a0c86ca8027978
+- El clúster contiene un único documento identificado como «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge» — source: d2a0c86ca8027978
+- El documento describe la participación del autor como juez humano en el «Weights & Biases LLM-as-a-Judge Hackathon» — source: d2a0c86ca8027978
+- El documento proviene de una fuente RSS y tiene engagement=0; novelty=0.00 y corroboration=0.50 en el scoring del clúster — source: d2a0c86ca8027978
 
 ## Why it matters
-No se puede compilar ningún claim sobre evaluación, agentes o docencia desde este clúster: el documento es un rol declarado, no contenido metodológico. La relevancia reportada de 0.67 frente al brief parece sobreestimada respecto al contenido extraíble, que refleja solapamiento léxico con «LLM» y «evaluación», no afinidad temática.
+El ítem no aporta material sustantivo sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo técnico. Su utilidad es como metadato de actividad profesional (rol de juez en un hackathon de evaluación), no como fuente de conocimiento transferible.
 
-Se relaciona con las notas ya existentes sobre el mismo hackathon de W&B, que documentan la misma limitación desde otras señales de ingesta. Comparte con `wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo` el diagnóstico de cuerpo ausente, y con las notas de juez humano la distinción entre rol declarado y contenido metodológico.
+Se relaciona con las otras notas del mismo clúster (`juez-humano-we-and-b-llm-evaluator-hackathon`, `juez-humano-en-hackathon-llm-as-a-judge-de-wandb`) que registran el mismo fragmento. La nota `juez-humano-como-rol-sin-contenido-metodologico` sostiene la misma lectura: el rol es lo único verificable. `criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido` plantea la laguna complementaria.
 
 ## Links
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - relates_to → [[juez-humano-we-and-b-llm-evaluator-hackathon]]
 - relates_to → [[wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo]]
 - supports → [[afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion]]
+- supports → [[criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido]]
+- supports → [[juez-humano-como-rol-sin-contenido-metodologico]]

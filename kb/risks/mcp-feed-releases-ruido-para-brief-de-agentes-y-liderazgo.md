@@ -9,18 +9,25 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-08'
-updated: '2026-10-08'
+updated: '2026-10-12'
 sources:
-- 30a26335a9988ba2
 - 2221814efbefaa3b
+- 30a26335a9988ba2
+- 5a4df6bef0a4905f
+- 748f8b0a02cd7524
+- 9750590bbfe6b285
+- b9106690f5dfd849
+- ffbd76916d1dfdc5
 tags:
-- mcp
-- releases
-- filtrado
 - brief
+- filtrado
+- mcp
+- pipeline
+- releases
+- ruido
 base_confidence: 0.84
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -33,23 +40,30 @@ links:
   type: relates_to
 - to: release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica
   type: derived_from
+- to: mcp-release-2026-8-31-bumps
+  type: relates_to
+- to: afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases
+  type: relates_to
+- to: mcp-release-stubs-como-artefacto-de-feed
+  type: relates_to
 ---
 
 ## What it is
-El clúster entró al brief por solapamiento léxico («MCP», «server», «agentes») y no por afinidad temática con liderazgo técnico, estimación, secuenciamiento, alcance, oficio o docencia. La causa raíz más probable es la regla de filtrado/etiquetado que asignó este feed al topic.
+Ninguno de los documentos del clúster menciona estimación, secuenciación, alcance, organización personal, docencia ni técnica de estudio. Son notas de release con etiqueta y lista de paquetes, sin prosa, sin discusión enlazada y sin contenido de usuario.
 
 ## Evidence
-- Ninguno de los documentos contiene prosa, notas de cambios, enlaces ni autores; solo encabezado y lista de paquetes — source: 2221814efbefaa3b
-- El documento de release lista paquetes MCP sin discutir uso, funcionalidad o adopción — source: 30a26335a9988ba2
-- La única conexión con el topic (MCP como infraestructura para agentes de IA) no la afirma ningún documento del clúster — source: 30a26335a9988ba2
+- Todos los ítems tienen la misma estructura (tag de release + lista de paquetes) y ninguno aporta prosa o discusión — source: 30a26335a9988ba2, 2221814efbefaa3b, 5a4df6bef0a4905f, 748f8b0a02cd7524, 9750590bbfe6b285, b9106690f5dfd849, ffbd76916d1dfdc5
 
 ## Why it matters
-Mantener este feed en el brief producirá falsos positivos recurrentes: cada release volverá a puntuar por vocabulario, no por contenido. Vale más revisar la regla de filtrado que el contenido mismo.
+Compilar cualquier claim de práctica sobre este clúster sería un error de categoría: las notas de release no hacen claims sobre workflow, estimación ni enseñanza. El clúster debe depriorizarse o rerutarse, no alimentar el brief.
 
-Refuerza la lectura del clúster como artefacto de feed y comparte causa con el falso positivo del token «MCP server». Se deriva de la nota de ausencia de contenido de práctica del release 2026.8.31.
+Se relaciona con la nota sobre afirmar práctica desde un feed de releases y con la clasificación del clúster como artefacto de feed. Es el mismo juicio aplicado al caso concreto de esta señal.
 
 ## Links
 - supports → [[mcp-release-stubs-como-artefacto-de-feed]]
 - relates_to → [[release-2026-8-31-mcp-token-como-falso-positivo-de-filtro]]
 - relates_to → [[mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades]]
 - derived_from → [[release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica]]
+- relates_to → [[mcp-release-2026-8-31-bumps]]
+- relates_to → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]
+- relates_to → [[mcp-release-stubs-como-artefacto-de-feed]]

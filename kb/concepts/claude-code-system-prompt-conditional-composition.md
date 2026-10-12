@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-05'
+updated: '2026-10-12'
 sources:
 - abf61eeec75462f9
 tags:
@@ -32,7 +32,7 @@ tags:
 - system-prompt
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-12'
 provenance:
   scale: M
   query: null
@@ -83,18 +83,22 @@ links:
   type: supports
 - to: claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion
   type: supports
+- to: claude-code-system-prompt-condicional-composicion-condicional-claim-sin-fuente
+  type: relates_to
+- to: claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion
+  type: contradicts
 ---
 
 ## What it is
-Afirmación de fuente única: el código fuente filtrado de Claude Code revelaría un system prompt ensamblado a partir de «docenas de partes condicionales», no un prompt monolítico. El clúster no expone ninguna de esas partes, su lógica de ensamblado ni sus disparadores. El único hecho verificable dentro del clúster es la existencia del documento y su enunciado.
+Un ítem RSS afirma que el system prompt de Claude Code se ensambla a partir de docenas de partes condicionales, según una fuente filtrada que el propio ítem invoca. Es un claim de arquitectura interna de un agente de codificación, no una observación directa: el artefacto (el supuesto código filtrado) no está presente en el clúster.
 
 ## Evidence
-- El código fuente filtrado de Claude Code muestra un system prompt ensamblado a partir de docenas de partes condicionales — source: abf61eeec75462f9
+- El system prompt de Claude Code se ensambla de docenas de partes condicionales, según su fuente filtrada citada en el ítem — source: abf61eeec75462f9
 
 ## Why it matters
-Si se confirmara, implicaría que el comportamiento del agente se compone condicionalmente según contexto activo, y no solo según un texto base. Eso tendría consecuencias para reproducibilidad, estimación y auditoría de agentes internos. Nada de eso está respaldado por evidencia en el clúster: la afirmación se reduce a un rumor plausible sin artefacto chequeable.
+Si se sostuviera, sería un caso concreto para estudiar arquitectura modular de prompts en herramientas de agentes. Pero con n=1, engagement=0, novelty=0.00 y sin artefacto primario, lo único que el clúster sostiene es que un ítem RSS hizo esa afirmación. No hay base para tratarlo como hallazgo sobre cómo está construido ningún agente.
 
-Recoge el hilo ya presente en el grafo sobre el ensamblado condicional de prompts y lo extiende al caso Claude Code, pero queda anclado a las notas de alcance que registran la ausencia de condiciones, partes y secuenciación observadas. La nota sobre la vista filtrada del código es el soporte crítico: una vista filtrada no confirma composición condicional. La nota sobre no autenticidad establecida de un leak aplica directamente: sin verificar el artefacto, el leak no confirma lo que dice el leak.
+Se relaciona con las demás notas del clúster de Claude Code (leak sin fragmentos, condiciones sin observar). Refuerza tentativamente el patrón general de ensamblado condicional de prompts, que ya existe en el grafo por otras vías. Contradice la nota que señala que la evidencia de Claude Code es artefacto de ingesta sin API de verificación: aquí el artefacto invocado tampoco está disponible.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
@@ -120,3 +124,5 @@ Recoge el hilo ya presente en el grafo sobre el ensamblado condicional de prompt
 - supports → [[leak-sin-autenticidad-establecida]]
 - supports → [[claude-code-system-prompt-novelty-cero-ya-conocido]]
 - supports → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]
+- relates_to → [[claude-code-system-prompt-condicional-composicion-condicional-claim-sin-fuente]]
+- contradicts → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]

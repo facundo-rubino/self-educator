@@ -1,7 +1,7 @@
 ---
 id: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
-title: 'Afirmar «LLMs can now identify public figures» desde un titular RSS: capacidad
-  confundida con cumplimiento'
+title: 'Afirmar capacidad desde un titular RSS sobre identificación: capacidad confundida
+  con cumplimiento'
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-10-08'
+updated: '2026-10-12'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -32,12 +32,13 @@ tags:
 - multimodal
 - politica-de-modelos
 - politica-vs-capacidad
+- riesgo
 - riesgo-de-inferencia
 - rss
 - titular-rss
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -101,17 +102,16 @@ links:
 ---
 
 ## What it is
-El titular «LLMs can now identify public figures in images» sobre un documento RSS sin cuerpo [19cb8032958cd964] convierte una asimetría de rechazo entre proveedores en una afirmación de capacidad general. El «now» no tiene línea base: no se contrasta con una fecha ni con un modelo previo, y el clúster tiene novelty=0.00 (nada nuevo) y corroboración=0.50 (una sola fuente).
+Derivar «los LLM pueden identificar figuras públicas» de un titular que dice que ChatGPT y Claude no las identifican y que Gemini sí es una inferencia autocontradictoria: la evidencia contradice el claim en vez de sostenerlo. El titular afirma comportamiento diferencial de rechazo, no una capacidad general demostrada.
 
 ## Evidence
-- El documento se limita a un titular sin cuerpo, datos de prueba ni fecha — source: 19cb8032958cd964
-- Novelty 0.00 y corroboración 0.50 sin fuentes adicionales — source: sig-237cc97a9794
-- El crítico ajusta la confianza a 0.08: lo que sobrevive es «algunos modelos multimodales a veces nombran a personas conocidas» — source: sig-237cc97a9794
+- El titular afirma que ChatGPT y Claude no identifican figuras públicas en imágenes, pero Gemini sí lo hace — source: 19cb8032958cd964
+- El documento es un ítem RSS sin engagement y sin cuerpo analítico, metodología, ejemplos ni referencias verificables — source: 19cb8032958cd964
 
 ## Why it matters
-Tomar el titular como verdadero sin prompts, imágenes de prueba ni métricas es el modo de fallo que esta nota marca. Además, «el modelo no rechaza» (política) se lee como «el modelo ahora puede» (capacidad): son afirmaciones distintas con implicaciones distintas. Y la observación de un proveedor no sostiene un claim poblacional sobre LLMs en general. El efecto práctico de colar este ítem en un brief de agentes, liderazgo o docencia es desplazar señal relevante por ruido.
+Una afirmación de capacidad extraída de un titular de rechazo confunde capacidad de modelo con política de proveedor. Cualquier decisión de herramienta o de docencia basada en este titular quedaría apoyada en una inferencia que el propio texto desmiente.
 
-Deriva de `afirmacion-de-capacidad-multimodal-sin-metodologia` —la forma general del modo de fallo— y se apoya en `afirmacion-de-novedad-sin-linea-base`, porque el «now» del titular no se contrasta contra nada. Se relaciona con `identificar-no-es-reconocer-en-la-fuente`, que registra el mismo equívoco en el verbo, y con `privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas`, que apunta a las consecuencias no abordadas del claim.
+Se apoya en la distinción entre capacidad técnica y política de rechazo: «Gemini sí lo hace» describe cumplimiento, no una capacidad medida del modelo.
 
 ## Links
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]

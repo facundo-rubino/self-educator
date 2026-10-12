@@ -10,19 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-09'
+updated: '2026-10-12'
 sources:
 - fdf5991b8ee77588
 tags:
+- agentes
 - brief
 - falso-positivo
+- llm
 - llm-mistral
 - match-lexico
 - matching-lexico
 - pipeline
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -41,19 +43,28 @@ links:
   type: supports
 - to: llm-mistral-0-16-soporte-razonamiento
   type: contradicts
+- to: llm-mistral-0-16-soporte-modelos-razonamiento
+  type: supports
+- to: matching-llm-patterns-relevancia-lexica-al-brief-de-agentes
+  type: relates_to
+- to: how-to-match-llm-patterns-titulo-como-match-lexico-sin-ejes-del-brief
+  type: relates_to
+- to: modelos-locales-y-sdk-de-agentes-relevancia-lexica-al-brief
+  type: relates_to
 ---
 
 ## What it is
-La conexión del release `llm-mistral` 0.16 con el topic es una coincidencia léxica: las palabras «LLM» y «programar» aparecen próximas, pero el documento es un anuncio de versión de software, no un hallazgo sobre cómo un dev hace mejor su trabajo. La relevancia score de 0.33 refleja ese solapamiento superficial.
+El vínculo de «llm-mistral 0.16» con el brief (agentes de IA aplicados a programar, gestionar, enseñar; liderazgo técnico; oficio; productividad; técnicas de estudio) descansa en solapamiento léxico en torno a «llm»/«agentes de IA». El documento no menciona ninguno de los ejes del brief.
 
 ## Evidence
-- El hallazgo real del clúster es una actualización de tooling, no una práctica de ingeniería o de liderazgo — source: fdf5991b8ee77588 (según el propio análisis del reporte)
-- No hay evidencia en los documentos sobre liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, docencia ni productividad — source: fdf5991b8ee77588
+- El ítem está etiquetado «llm», «mistral», «llm-reasoning» — source: fdf5991b8ee77588
+- El documento no menciona liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, enseñanza de programación ni técnicas de estudio — source: fdf5991b8ee77588
+- El cluster se describe como ruido con match léxico débil — source: fdf5991b8ee77588
 
 ## Why it matters
-Tratar este ítem como señal sustantiva del brief infla el conteo de hallazgos con ruido de catálogo. El release pertenece a la categoría «punta del tooling», relevante para un dev que ya use `llm-mistral` pero no para los cuatro ejes centrales del topic.
+Si se admite este ítem por vocabulario, el mismo criterio admitirá cualquier release de tooling LLM y degradará la precisión del brief. La regla operativa es exigir cobertura de un eje temático, no coincidencia de tokens.
 
-Contradice el alcance de `llm-mistral-0-16-soporte-razonamiento` (el release existe, pero su relación con el brief no está demostrada). Se relaciona con `llm-anthropic-0-29-topic-match-espurio-por-vocabulario` como otro caso del mismo patrón de matching léxico en releases de plugins `llm`.
+Documenta el mecanismo del falso positivo cuyo contenido concreto es `llm-mistral-0-16-soporte-modelos-razonamiento`. Comparte la estructura de match léxico «LLM»→brief con otros falsos positivos ya registrados en el grafo.
 
 ## Links
 - derived_from → [[llm-mistral-0-16-soporte-razonamiento]]
@@ -63,3 +74,7 @@ Contradice el alcance de `llm-mistral-0-16-soporte-razonamiento` (el release exi
 - supports → [[modelos-locales-y-sdk-de-agentes-relevancia-lexica-al-brief]]
 - supports → [[release-2026-8-31-mcp-token-como-falso-positivo-de-filtro]]
 - contradicts → [[llm-mistral-0-16-soporte-razonamiento]]
+- supports → [[llm-mistral-0-16-soporte-modelos-razonamiento]]
+- relates_to → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]
+- relates_to → [[how-to-match-llm-patterns-titulo-como-match-lexico-sin-ejes-del-brief]]
+- relates_to → [[modelos-locales-y-sdk-de-agentes-relevancia-lexica-al-brief]]

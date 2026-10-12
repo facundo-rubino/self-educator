@@ -10,18 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-08'
+updated: '2026-10-12'
 sources:
 - ded7560510c137bc
 tags:
 - accesibilidad
 - aria
 - artefacto-de-ingesta
+- documento-sin-cuerpo
 - front-end
+- frontend
+- tooltip
 - tooltips
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -36,20 +39,32 @@ links:
   type: relates_to
 - to: tooltip-accessibility-corregir-error-propio-como-ejemplo-de-oficio
   type: relates_to
+- to: aria-describedby-no-basta-para-tooltips-accesibles
+  type: supports
+- to: tooltip-accesible-no-basta-con-aria-describedby
+  type: supports
+- to: aria-describedby-no-basta-para-tooltips-accesibles-integracion
+  type: supports
+- to: tooltip-accessibility-aria-describedby-insuficiente-sin-detalle
+  type: relates_to
+- to: tooltip-accessibility-solo-titulo-y-fragmento-cuerpo-truncado
+  type: derived_from
+- to: inferir-error-y-alternativa-del-post-de-tooltip-seria-alucinacion
+  type: relates_to
 ---
 
 ## What it is
-El documento [ded7560510c137bc] sostiene que `aria-describedby` no basta para que un tooltip sea accesible. La afirmación llega solo como titular y una línea de tesis: no hay cuerpo, código, referencias WCAG ni resultados de pruebas con lector de pantalla.
+El único contenido verificable del documento `ded7560510c137bc` es una tesis técnica acotada: confiar en `aria-describedby` de forma aislada no garantiza la accesibilidad correcta de un tooltip. No hay cuerpo del artículo en el material proporcionado, por lo que el error concreto, el framework, la versión WAI-ARIA y la corrección aplicada no son reconstruibles.
 
 ## Evidence
-- La aserción central del documento es que `aria-describedby` no es siempre una solución suficiente para la accesibilidad de tooltips — source: ded7560510c137bc
-- El documento se enmarca como retrospectiva de un error propio del autor («Fixing my tooltip accessibility mistake»), no como estudio general — source: ded7560510c137bc
-- El contenido ingerido se reduce a título más una línea; sin código, WCAG, pruebas de lector de pantalla ni remediación paso a paso — source: ded7560510c137bc
+- El documento afirma que «aria-describedby isn't always enough» — source: ded7560510c137bc
+- El título indica que narra la corrección de un error propio de accesibilidad en tooltips («Fixing my tooltip accessibility mistake») — source: ded7560510c137bc
+- El documento tiene engagement=0 — source: ded7560510c137bc
 
 ## Why it matters
-La afirmación no es evaluable en su forma ingerida: sin mecanismo, alcance ni reproducción, no puede verificarse ni generalizarse. Solo registra que existe un pitfall de accesibilidad de tooltips conocido por su autor.
+La afirmación es una advertencia ARIA genérica y ampliamente conocida (gestión de foco, estados hover/focus, contenido accesible, relación trigger-tooltip) y no viene acompañada de experimento, diff ni fallo reproducible. Cualquier conclusión más específica —qué atributo alternativo, qué patrón, qué framework— sería inventada.
 
-Se relaciona con `tooltip-accesible-no-basta-con-aria-describedby` (misma afirmación, otra ingesta). Se relaciona con `criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo`: la presencia del atributo no equivale a accesibilidad verificada. Se relaciona con `tooltip-accessibility-corregir-error-propio-como-ejemplo-de-oficio` por el encuadre retrospectivo del autor.
+Refuerza (supports) las notas existentes que ya registran la misma afirmación desde otras entradas del mismo clúster: `aria-describedby-no-basta-para-tooltips-accesibles`, `tooltip-accesible-no-basta-con-aria-describedby` y `aria-describedby-no-basta-para-tooltips-accesibles-integracion`. Se deriva de `tooltip-accessibility-solo-titulo-y-fragmento-cuerpo-truncado`, que documenta el truncamiento del cuerpo. Se relaciona con `inferir-error-y-alternativa-del-post-de-tooltip-seria-alucinacion`, que marca el límite: inferir la mecánica concreta desde el fragmento sería alucinación.
 
 ## Links
 - relates_to → [[aria-describedby-no-basta-para-tooltips-accesibles]]
@@ -57,3 +72,9 @@ Se relaciona con `tooltip-accesible-no-basta-con-aria-describedby` (misma afirma
 - relates_to → [[aria-describedby-no-basta-para-tooltips-accesibles-integracion]]
 - relates_to → [[criterio-de-accesibilidad-verificado-con-lector-de-pantalla-no-desde-el-atributo]]
 - relates_to → [[tooltip-accessibility-corregir-error-propio-como-ejemplo-de-oficio]]
+- supports → [[aria-describedby-no-basta-para-tooltips-accesibles]]
+- supports → [[tooltip-accesible-no-basta-con-aria-describedby]]
+- supports → [[aria-describedby-no-basta-para-tooltips-accesibles-integracion]]
+- relates_to → [[tooltip-accessibility-aria-describedby-insuficiente-sin-detalle]]
+- derived_from → [[tooltip-accessibility-solo-titulo-y-fragmento-cuerpo-truncado]]
+- relates_to → [[inferir-error-y-alternativa-del-post-de-tooltip-seria-alucinacion]]

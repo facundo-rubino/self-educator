@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-10-02'
+updated: '2026-10-12'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -32,7 +32,7 @@ tags:
 - versionado
 base_confidence: 0.78
 half_life_days: 180
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -49,18 +49,20 @@ links:
   type: relates_to
 - to: mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia
   type: derived_from
+- to: release-2026-8-31-stub-sin-changelog
+  type: relates_to
 ---
 
 ## What it is
-El release 2026.8.31 publica server-filesystem, server-memory, server-sequential-thinking y server-everything, todos versionados v2026.8.31. mcp-server-git no aparece en esta entrada.
+El release v2026.8.31 de los MCP servers lista cuatro paquetes actualizados: `@modelcontextprotocol/server-filesystem`, `server-memory`, `server-sequential-thinking` y `server-everything`. Es un ítem de feed con etiqueta de versión más lista de paquetes, sin changelog ni discusión.
 
 ## Evidence
-- El release 2026.8.31 bumpea server-filesystem, server-memory, server-sequential-thinking y server-everything a v2026.8.31; mcp-server-git no está incluido — source: 30a26335a9988ba2
+- Lista de paquetes del release v2026.8.31 — source: 30a26335a9988ba2
 
 ## Why it matters
-Es un punto de la serie date-versioned de MCP servers: permite registrar qué paquetes entran y salen del conjunto publicado por release.
+Es un eslabón más de una serie que se versiona por fecha; sin diff no se puede afirmar qué cambió. Como insumo para el brief de agentes, liderazgo, docencia u oficio: nada.
 
-`mcp-servers-versionado-por-fecha` describe el esquema de versionado que esta entrada ejemplifica. `release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica` es la lectura sobre qué evidencia aporta (ninguna sobre práctica).
+`derived_from` la serie MCP 2025.11–2026.8; `supports` la observación de que el subconjunto de paquetes varía entre releases; se relaciona con la lectura crítica de este tipo de stub.
 
 ## Links
 - supports → [[mcp-servers-versionado-por-fecha]]
@@ -69,3 +71,4 @@ Es un punto de la serie date-versioned de MCP servers: permite registrar qué pa
 - supports → [[mcp-releases-versionado-por-fecha-subconjunto-varia]]
 - relates_to → [[mcp-release-stub-sin-changelog]]
 - derived_from → [[mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia]]
+- relates_to → [[release-2026-8-31-stub-sin-changelog]]

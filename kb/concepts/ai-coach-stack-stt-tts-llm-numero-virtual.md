@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-09'
+updated: '2026-10-12'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
-- voz
-- stack
+- llm
 - monkey-mind
+- proyecto-personal
+- stack
+- voz
 base_confidence: 0.04
 half_life_days: 180
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -38,20 +40,24 @@ links:
   type: derived_from
 - to: efectividad-de-ai-coach-no-demostrada
   type: derived_from
+- to: ai-coach-como-herramienta-de-foco-personal
+  type: relates_to
+- to: asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual
+  type: supports
+- to: efectividad-de-ai-coach-no-demostrada
+  type: supports
 ---
 
 ## What it is
-Un AI coach por voz se describe únicamente como el ensamblado de cuatro componentes: speech-to-text, text-to-speech, un LLM y un número virtual [49140f9d5133d3c7]. El documento no especifica arquitectura, flujo, diseño de prompts, ni métricas. El propósito declarado es auto-coaching contra la propia «monkey mind», es decir un caso de uso de productividad y gestión personal, no de equipo ni de docencia [49140f9d5133d3c7].
+Un «AI coach» personal se construye ensamblando cuatro componentes existentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. El documento describe la combinación de esos componentes, no una arquitectura novedosa.
 
 ## Evidence
-- El stack propuesto es STT + TTS + LLM + número virtual — source: 49140f9d5133d3c7
-- El propósito declarado es auto-coaching contra la propia «monkey mind» — source: 49140f9d5133d3c7
-- El documento es una sola frase de alcance, sin detalle de implementación, evaluación ni resultado — source: 49140f9d5133d3c7
+- El proyecto consiste en construir un «AI coach» que integra speech-to-text, text-to-speech, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-Aporta una enumeración de componentes, no un patrón reproducible: no hay nada que permita replicar, evaluar ni transferir el ensamblado. La única señal extraíble es que el autor dirige su atención a experimentos personales con agentes, lo que no informa estimación, secuenciamiento ni liderazgo de equipo.
+El patrón «asistente conversacional multimodal = voz + LLM + telefonía» es lo bastante accesible como para que un desarrollador individual lo arme como proyecto personal. Saberlo acota qué se puede prototipar sin entrenar modelos; no dice nada sobre calidad, resultados ni adopción.
 
-Se relaciona con el resto de notas sobre el stack de AI coach por voz, que registran la misma enumeración sin cuerpo. Se apoya en la nota de scope de «monkey mind» y en la de efectividad no demostrada: el documento sostiene la existencia del ensamblado, no su funcionamiento ni su utilidad.
+Se relaciona con las notas ya existentes sobre el stack de AI coach por voz (misma lista de componentes, distinto doc_id) y con la nota de foco personal, porque ese es el propósito del artefacto. Sirve de evidencia a las notas de riesgo que advierten que ensamblar estos servicios no es novedad y que la efectividad de un coach así no está demostrada.
 
 ## Links
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
@@ -61,3 +67,6 @@ Se relaciona con el resto de notas sobre el stack de AI coach por voz, que regis
 - relates_to → [[monkey-mind-como-encuadre-de-productividad-personal]]
 - derived_from → [[monkey-mind-sin-contenido-ingerido]]
 - derived_from → [[efectividad-de-ai-coach-no-demostrada]]
+- relates_to → [[ai-coach-como-herramienta-de-foco-personal]]
+- supports → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
+- supports → [[efectividad-de-ai-coach-no-demostrada]]

@@ -1,7 +1,7 @@
 ---
 id: task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido
 title: '«Task-Specific LLM Evals that Do & Don''t Work»: título y alcance declarado
-  sin contenido ingerido'
+  sin contenido ingerido (variante)'
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-08'
+updated: '2026-10-12'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -22,11 +22,12 @@ tags:
 - matching-por-titulo
 - modo-de-fallo
 - riesgo
+- rss
 - ruido
 - titulo-sin-cuerpo
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -51,19 +52,23 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
   type: relates_to
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
+  type: derived_from
 ---
 
 ## What it is
-El titular «Do & Don't Work» promete un veredicto sobre qué evals funcionan y cuáles no. El cuerpo ingerido no contiene ese veredicto: sólo el alcance declarado. Leer la promesa del título como hallazgo sería codificar un claim que el texto ingerido no sostiene.
+Variante de registro del mismo hecho: el clúster de título y alcance declarado carece de cuerpo ingerido. Se mantiene como nodo separado solo para no romper los `contradicts`/`relates_to` que ya apuntan a él desde el grafo existente.
 
 ## Evidence
-- El único contenido ingerido es el titular y la enumeración de tareas cubiertas — source: 93963a5f93e58d05
-- El engagement es 0, de modo que no hay señal externa sobre la calidad del tratamiento — source: 93963a5f93e58d05
+- Único contenido sustantivo: la lista de categorías de tarea — source: 93963a5f93e58d05
+- Sin metodología, sin resultados, sin modos de fallo — source: 93963a5f93e58d05
 
 ## Why it matters
-El modo de fallo del matching por título: usar «evals that don't work» como guía operativa para decidir qué evals aplicar en un flujo de agentes, cuando el texto que lo argumenta no está en el corpus.
+Es duplicado y debe fusionarse con el nodo principal en la próxima pasada de reconciliación. Se deja explícito como riesgo de inflación de conteo: dos nodos describiendo el mismo clúster de un solo documento hacen parecer que hay más señal de la que hay.
 
-Es la cara de riesgo de la nota de alcance declarado; el paso accionable que el analista identifica (retrieval del texto completo) queda fuera del alcance de compilación.
+`relates_to` con el nodo principal, que es su equivalente. `derived_from` la nota sobre las familias declaradas como único contenido verificable, porque ambos describen el mismo material de origen sin añadir evidencia nueva.
 
 ## Links
 - relates_to → [[evals-llm-genericas-fuera-del-alcance-del-brief]]
@@ -76,3 +81,5 @@ Es la cara de riesgo de la nota de alcance declarado; el paso accionable que el 
 - supports → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - relates_to → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
+- relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- derived_from → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]

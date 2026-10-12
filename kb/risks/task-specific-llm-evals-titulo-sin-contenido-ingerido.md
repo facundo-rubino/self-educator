@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-10-09'
+updated: '2026-10-12'
 sources:
 - 19cb8032958cd964
 - 93963a5f93e58d05
@@ -25,12 +25,14 @@ tags:
 - ingestion-artifact
 - llm
 - riesgo
+- rss
+- scoring
 - singleton-rss
 - title-only
 - titulo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -74,16 +76,19 @@ links:
 ---
 
 ## What it is
-Del documento solo se recupera el título y la enumeración de familias de tarea que aborda. No hay cuerpo que desarrolle los criterios de qué eval funciona o no, ni el argumento que sostendría la división.
+El único contenido sustantivo del documento [93963a5f93e58d05] es una lista de categorías de tarea para evals de LLM: clasificación, resumen, traducción, regurgitación de copyright y toxicidad. No hay metodología, ni modos de fallo, ni resultados, ni argumento autoral sobre qué funciona y qué no. El título plantea una distinción («Do & Don't Work») que el cuerpo no desarrolla.
 
 ## Evidence
-- Lo recuperado es el título y la lista de familias de tarea — source: 93963a5f93e58d05
-- No hay contenido adicional que desarrolle el criterio do/don't work — source: 93963a5f93e58d05
+- El documento identifica clasificación, resumen, traducción, regurgitación de copyright y toxicidad como categorías de tarea para evals de LLM — source: 93963a5f93e58d05
+- El documento afirma en su título una distinción entre evals que funcionan y evals que no funcionan — source: 93963a5f93e58d05
+- No se aportan criterios, métodos, ejemplos ni resultados que sustenten esa distinción — source: 93963a5f93e58d05
+- novelty=0.00, engagement=0:
+  perfil consistente con una entrada de agregador sin elaborar, no con un análisis trabajado — source: 93963a5f93e58d05
 
 ## Why it matters
-Sin cuerpo no se puede saber si el documento es una charla, un slide deck o una opinión, ni si la división se apoya en mediciones. Leerlo como guía probada sería imponer una narrativa al artefacto.
+El documento no puede sostener ningún hallazgo sobre diseño de evals. Solo es citable como existencia de una taxonomía nominal de objetivos de eval. Cualquier afirmación sobre qué evals funcionan, qué fallan o cómo diseñarlas sería invención, no lectura del texto.
 
-Se relaciona con el registro de singleton sin engagement, con la nota paralela de título sin contenido ingerido para este documento, y con la nota que aísla las familias declaradas como único contenido verificable.
+`relates_to` con las otras notas del mismo clúster de título-sin-cuerpo: repiten el mismo modo de fallo (título citable, cuerpo ausente). Se conecta también con la nota sobre singleton con engagement cero y novelty cero, porque es el mismo perfil de scoring, y con la nota sobre adyacencia al brief no demostrada, porque ese vínculo es exactamente lo que el crítico marca como coincidencia léxica.
 
 ## Links
 - supports → [[task-specific-llm-evals-singleton-engagement-cero]]

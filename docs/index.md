@@ -1,19 +1,26 @@
-# Brief — 2026-10-09
+# Brief — 2026-10-12
 
 ## Los titulares
 
-1. [Quoting Matthew Green](https://simonwillison.net/2026/Oct/9/matthew-green/) — *IA y agentes en mi trabajo*
+1. [Hello Python 3.15, goodbye 3.10, and now I can use 3.11](https://simonwillison.net/2026/Oct/12/python-3-15/) — *IA y agentes en mi trabajo*
+2. [Release 2026.8.31](tag:github.com,2008:Repository/890668799/2026.8.31) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [Quoting Matthew Green](https://simonwillison.net/2026/Oct/9/matthew-green/)
+### [Hello Python 3.15, goodbye 3.10, and now I can use 3.11](https://simonwillison.net/2026/Oct/12/python-3-15/)
 
-The signal is a single document quoting Matthew Green, but the actual document — 'Willingness to look stupid' [058fd9b64413d16f] — contains no quote from Matthew Green and is not about AI agents, teaching programming, t…
+This cluster is not actually about the stated topic
 
-<sub>fuentes: files, rss · confianza: 2% · en el KB: `ensayo-willingness-to-look-stupid-adyacencia-blanda-a-tecnicas-de-estudio`, `quoting-matthew-green-cluster-sin-documento-de-matthew-green`</sub>
+<sub>fuentes: files, rss · confianza: 5% · en el KB: `cluster-hello-python-3-15-heterogeneo-volcado-rss`, `pluralidad-de-llm-en-software-adjacent-senal-debil-sin-convergencia`, `titular-de-cluster-sin-referente-en-sus-documentos`</sub>
+
+### [Release 2026.8.31](tag:github.com,2008:Repository/890668799/2026.8.31)
+
+This cluster is a set of automated RSS release notes for the Model Context Protocol (MCP) server packages, emitted as versioned releases between 2025.12 and 2026.8 (e.g
+
+<sub>fuentes: rss · confianza: 18%</sub>
 
 ---
 
-<sub>2 señales consideradas, 1 descartadas por no ser de ningún tema, 23 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
+<sub>5 señales consideradas, 3 descartadas por no ser de ningún tema, 23 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>

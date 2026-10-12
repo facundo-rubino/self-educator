@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-09-28'
+updated: '2026-10-12'
 sources:
 - 19cb8032958cd964
 - 4e1f2a7e255ed83a
@@ -19,10 +19,11 @@ tags:
 - llm
 - n-igual-1
 - proveedores
+- riesgo
 - sobre-generalizacion
 base_confidence: 0.12
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-12'
 provenance:
   scale: M
   query: null
@@ -45,19 +46,21 @@ links:
   type: relates_to
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: relates_to
+- to: prueba-con-proveedores-y-cuentas-especificas
+  type: supports
 ---
 
 ## What it is
-Pasar de la conducta observada en un modelo (o en dos o tres) a una afirmación sobre «los LLM» en general requiere una población de modelos, condiciones comparables y criterio de muestreo. Un clúster de un solo documento con engagement=0 describe a lo sumo un caso, no una población.
+Un solo ítem RSS con engagement=0 y corroboración de 0.50 no sostiene un enunciado sobre «los LLM» en general. La observación, en el mejor caso, describe el comportamiento de tres productos nombrados en un momento no especificado.
 
 ## Evidence
-- El clúster se sostiene en un único documento; no hay fuente independiente ni corroboración en el conjunto de señal — source: 19cb8032958cd964
-- La observación reportada cubre como máximo tres productos de proveedor (ChatGPT, Claude, Gemini) bajo condiciones no especificadas — source: 19cb8032958cd964
+- El cluster tiene corroboration=0.50, lo que implica que no hay evidencia independiente que respalde la afirmación dentro del corpus — source: 19cb8032958cd964
+- El documento es un ítem RSS sin engagement y sin cuerpo analítico — source: 19cb8032958cd964
 
 ## Why it matters
-El cuantificador universal es la parte del titular que más se propaga y la que menos evidencia tiene detrás. Para el brief no cambia nada operativo, pero registra el modo de fallo: si el pipeline promueve titulares con cuantificador universal desde singletons, el grafo acumula afirmaciones de alcance creciente y base decreciente.
+Los claims poblacionales sobre LLM se degradan rápido por cambios de producto y regulatorios. Un titular aislado puede ser rumor, observación anecdótica o clickbait, y no debería consumir cupo analítico en el brief.
 
-Es la cara estadística del fallo descrito en `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`. Se relaciona con `segundo-corpus-necesario-para-afirmar-capacidad-multimodal`, que ya establece que un singleton sin engagement no sostiene afirmaciones poblacionales sobre capacidades multimodales, y con `single-document-cluster-engagement-cero-no-generaliza`, que enuncia la regla general.
+Coincide con la regla de no generalizar políticas de rechazo sin fijar proveedor, cuenta, versión y región.
 
 ## Links
 - derived_from → [[divergencia-de-rechazo-entre-proveedores]]
@@ -69,3 +72,4 @@ Es la cara estadística del fallo descrito en `afirmar-capacidad-desde-un-titula
 - supports → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
+- supports → [[prueba-con-proveedores-y-cuentas-especificas]]

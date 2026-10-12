@@ -9,12 +9,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-10-09'
+updated: '2026-10-12'
 sources:
 - 93963a5f93e58d05
 tags:
 - alcance
 - bajo-contenido
+- contenido-verificable
 - evals
 - evidence-scope
 - evidencia
@@ -23,9 +24,10 @@ tags:
 - llm-evals
 - pipeline
 - task-specific
+- taxonomia
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -44,19 +46,21 @@ links:
   type: relates_to
 - to: task-families-evaluadas-en-el-documento-evals
   type: relates_to
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: derived_from
 ---
 
 ## What it is
-El clúster de «Task-Specific LLM Evals that Do & Don't Work» contiene un único documento, y lo verificable de él es la lista de familias de tarea que aborda: clasificación, resumen, traducción, copyright regurgitation y toxicidad. Ninguna afirmación sobre qué tareas «funcionan» o «no funcionan» viene acompañada de evidencia recuperable.
+La lista de categorías de tarea (clasificación, resumen, traducción, regurgitación de copyright, toxicidad) es lo único que el documento [93963a5f93e58d05] enuncia de forma verificable. Todo lo demás — criterios, resultados, argumento comparativo — está ausente.
 
 ## Evidence
-- El documento es el único del clúster y aborda esas cinco familias — source: 93963a5f93e58d05
-- No hay documento de soporte adicional que permita contrastar la clasificación — source: 93963a5f93e58d05
+- Cinco categorías de tarea nombradas explícitamente: classification, summarization, translation, copyright regurgitation, toxicity — source: 93963a5f93e58d05
+- No se aportan definiciones operativas, métricas ni ejemplos para ninguna de las cinco — source: 93963a5f93e58d05
 
 ## Why it matters
-Separa lo que se puede citar (la enumeración) de lo que no (el veredicto do/don't work). Cualquier uso posterior del documento debería limitarse a las familias declaradas hasta que aparezca evidencia independiente.
+Sirve como inventario nominal, no como guía. Tratarlo como guía de selección de evals sería atribuirle al texto una metodología que no contiene. Como inventario, además, estas familias son NLP general: no cubren evals de código ni de asistentes de enseñanza, que son los que tocarían el brief.
 
-Es la cara verificable de la nota de alcance del documento, y se alinea con la nota que enumera las familias de tarea evaluadas en el documento de evals.
+`derived_from` la nota de riesgo sobre el mismo documento, porque esta observación solo tiene sentido como descripción de lo poco que el documento sí entrega. Se relaciona con las notas existentes sobre familias de tarea y sobre el alcance declarado del documento de evals: son la misma observación registrada antes, y esta nota la repite sin añadir evidencia nueva.
 
 ## Links
 - supports → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
@@ -66,3 +70,4 @@ Es la cara verificable de la nota de alcance del documento, y se alinea con la n
 - derived_from → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
 - relates_to → [[task-families-evaluadas-en-el-documento-evals]]
+- derived_from → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]

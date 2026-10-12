@@ -1,7 +1,7 @@
 ---
 id: release-2026-8-31-stub-sin-changelog
-title: El release 2026.8.31 (señal sig-d0acf338c3a6) es un post plantilla de bumps
-  MCP sin changelog
+title: El release 2026.8.31 (sig-806e0d2a2326) es un stub de bumps MCP sin changelog
+  ni rationale
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-09'
+updated: '2026-10-12'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -32,9 +32,10 @@ tags:
 - pipeline
 - release-feed
 - release-notes
+- stub
 base_confidence: 0.82
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -67,18 +68,24 @@ links:
   type: supports
 - to: mcp-serie-release-2026-8-31-no-es-evidencia-de-practica
   type: supports
+- to: mcp-release-2026-8-31-bumps
+  type: relates_to
+- to: mcp-release-stub-sin-changelog
+  type: relates_to
+- to: mcp-releases-conteo-no-es-momentum-tematico
+  type: relates_to
 ---
 
 ## What it is
-El release 2026.8.31 que da nombre al signal sig-d0acf338c3a6 es una nota autogenerada con formato 'Release: vFECHA' y una lista de 'Updated packages': server-filesystem, server-memory, server-sequential-thinking y server-everything. No contiene changelog, diffs, rationale ni ningún claim sobre uso, metodología o resultado.
+El ítem de release 2026.8.31 solo contiene el tag y la lista de paquetes actualizados. No incluye diff, changelog, enlace a issues ni rationale, así que no se puede saber si los cambios son sustantivos o bumps rutinarios de dependencias.
 
 ## Evidence
-- El release 2026.8.31 incluye server-filesystem, server-memory, server-sequential-thinking y server-everything — source: 30a26335a9988ba2.
+- El documento v2026.8.31 lista paquetes sin changelog ni rationale — source: 30a26335a9988ba2
 
 ## Why it matters
-Permite auditar el signal sin reabrir los ocho documentos: el documento que nombra el clúster es un stub de bumps. Ninguna inferencia sobre práctica de ingeniería, liderazgo o docencia puede sostenerse desde él.
+Cualquier afirmación sobre qué cambió en esos paquetes, o sobre su impacto, sería no soportada. Para el brief, la única lectura honesta es contable: cuatro paquetes más bumpeados.
 
-Refuerza las notas existentes que ya caracterizan el release 2026.8.31 como eslabón de una serie de mantenimiento (`release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica`, `release-2026-8-31-mcp-serie-bumps-mantenimiento`) y la nota general sobre releases MCP sin changelog (`mcp-release-stub-sin-changelog`). Consistente con la nota de riesgo sobre el release 2026.8.31 como no-evidencia de práctica.
+Replica el patrón ya registrado de release stubs MCP sin changelog legible; se relaciona con el conteo de releases como cadencia del mantenedor, no como señal temática.
 
 ## Links
 - supports → [[mcp-release-2026-8-31-bumps]]
@@ -95,3 +102,6 @@ Refuerza las notas existentes que ya caracterizan el release 2026.8.31 como esla
 - supports → [[release-2026-8-31-mcp-serie-bumps-mantenimiento]]
 - supports → [[mcp-release-stub-sin-changelog]]
 - supports → [[mcp-serie-release-2026-8-31-no-es-evidencia-de-practica]]
+- relates_to → [[mcp-release-2026-8-31-bumps]]
+- relates_to → [[mcp-release-stub-sin-changelog]]
+- relates_to → [[mcp-releases-conteo-no-es-momentum-tematico]]

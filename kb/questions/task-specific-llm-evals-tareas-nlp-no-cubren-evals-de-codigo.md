@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-08'
+updated: '2026-10-12'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -28,7 +28,7 @@ tags:
 - pregunta-abierta
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
@@ -69,19 +69,21 @@ links:
   type: supports
 - to: task-specific-llm-evals-sin-conexion-con-agentes-o-docencia
   type: relates_to
+- to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
+  type: derived_from
 ---
 
 ## What it is
-Queda abierto si las conclusiones de «do & don't work» del documento aplican a dominios fuera de su alcance declarado: evaluación de cambios de código por un agente, o validación de feedback automático sobre entregas de estudiantes. Nada en la evidencia ingerida lo responde.
+Las cinco familias declaradas (clasificación, resumen, traducción, copyright, toxicidad) son tareas de NLP general. Ninguna de ellas es una eval de generación o edición de código, y ninguna es una eval de un asistente de enseñanza. Queda abierto si el documento completo las cubriría.
 
 ## Evidence
-- El alcance declarado es clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
-- No hay documento que describa evals aplicadas a código, agentes de codificación ni docencia — source: 93963a5f93e58d05
+- El documento solo nombra clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
+- No aparece en el extracto ninguna familia de tarea de código, depuración, estimación ni docencia — source: 93963a5f93e58d05
 
 ## Why it matters
-Es la pregunta operativa que un líder técnico necesitaría responder si quisiera gatear outputs de un agente con una eval automática antes del merge: si las evals que funcionan para resumen funcionan para diffs de código. La evidencia no permite responder.
+Si un dev-líder quiere evaluar un agente antes de confiarle código o material de clase, este listado no le da la familia de tarea que necesita. La pregunta abierta es si eso es un límite del documento o de la extracción; el extracto actual no permite distinguirlo.
 
-Deriva de la nota de alcance declarado; su versión como riesgo de extrapolación está en `aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion`.
+`derived_from` la nota sobre las familias declaradas como único contenido verificable. Se relaciona con la nota ya existente sobre la falta de conexión del documento con agentes o docencia, sin contradecirla: aquí la pregunta es más estrecha — el desajuste está en la nomenclatura de tareas, no solo en la relevancia al brief.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -102,3 +104,4 @@ Deriva de la nota de alcance declarado; su versión como riesgo de extrapolació
 - relates_to → [[task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto]]
 - supports → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]
 - relates_to → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]
+- derived_from → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]

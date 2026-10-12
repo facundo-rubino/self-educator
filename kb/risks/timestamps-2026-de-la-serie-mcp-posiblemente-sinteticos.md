@@ -10,39 +10,45 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-10-12'
 sources:
-- 9750590bbfe6b285
+- 2221814efbefaa3b
+- 30a26335a9988ba2
+- 5a4df6bef0a4905f
 - 748f8b0a02cd7524
+- 9750590bbfe6b285
 - b9106690f5dfd849
 tags:
-- timestamps
+- fechas
 - frescura
-- pipeline
 - mcp
+- pipeline
+- timestamps
+- validez
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-09-22'
+last_reinforced: '2026-10-12'
 provenance:
   scale: XL
   query: null
 links:
 - to: mcp-fechas-2026-sinteticas-no-corroborables
   type: supports
+- to: mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia
+  type: contradicts
 ---
 
 ## What it is
-La serie cubre releases etiquetadas de 2025.11 a 2026.8, un rango futuro respecto a una lectura ingenua de «hoy». Si los timestamps son sintéticos o están mal parseados, la lógica de frescura del pipeline también opera sobre datos incorrectos.
+Las etiquetas de versión del clúster (hasta v2026.8.31) son posteriores a la fecha de generación registrada del informe (2026-10-12). No hay fuente primaria que corrobore que esas fechas correspondan a releases reales y no a un stream mal etiquetado o a timestamps sintéticos.
 
 ## Evidence
-- El release 2026.8.18 actualiza `server-everything`, `mcp-server-time`, `mcp-server-fetch` y `mcp-server-git`, dentro del mismo patrón de changelog — source: 9750590bbfe6b285
-- El release 2026.1.14 lista `server-everything`, `server-filesystem` y `mcp-server-git`, sin texto temático asociado — source: 748f8b0a02cd7524
-- El release 2026.1.26 actualiza `server-everything`, `server-memory` y `mcp-server-time` — source: b9106690f5dfd849
+- Etiquetas de versión 2026.x en los documentos del clúster — source: 30a26335a9988ba2, 2221814efbefaa3b, 5a4df6bef0a4905f
 
 ## Why it matters
-Un error sistemático en los timestamps afectaría a la frescura de todo el corpus, no solo a este clúster: las releases parecerían más recientes (o más antiguas) de lo que son.
+Si los timestamps no son auténticos, cualquier inferencia de cadencia (volumen mensual, ritmo de mantenimiento) es un artefacto del feed, no una medición.
 
-Es una instancia concreta del riesgo ya registrado sobre las fechas 2026 del corpus MCP (mcp-fechas-2026-sinteticas-no-corroborables); aquí se añade la observación del rango 2025.11–2026.8.
+`contradicts` la lectura de la serie como cadencia de alta frecuencia; `supports` la nota ya existente sobre la no corroborabilidad de las fechas 2026 del corpus MCP.
 
 ## Links
 - supports → [[mcp-fechas-2026-sinteticas-no-corroborables]]
+- contradicts → [[mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia]]
