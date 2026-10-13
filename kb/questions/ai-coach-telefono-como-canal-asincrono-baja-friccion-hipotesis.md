@@ -1,7 +1,7 @@
 ---
 id: ai-coach-telefono-como-canal-asincrono-baja-friccion-hipotesis
-title: 'El número virtual como canal asíncrono de baja fricción: intención, no patrón
-  de decisión demostrado'
+title: 'El número virtual como canal asíncrono de baja fricción: hipótesis, no patrón
+  demostrado'
 type: question
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-09'
+updated: '2026-10-13'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
-- telefonia
-- interaccion
+- canal
 - hipotesis
+- interaccion
+- productividad
+- telefonia
+- telefono
 base_confidence: 0.04
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-13'
 provenance:
   scale: XL
   query: null
@@ -29,20 +32,22 @@ links:
   type: derived_from
 - to: hipotesis-de-coach-de-voz-como-accountability-de-equipo
   type: relates_to
+- to: privacidad-y-costo-en-asistentes-de-voz-continuos
+  type: relates_to
 ---
 
 ## What it is
-La inclusión de un número virtual sugiere la intención de que el coach sea accesible por teléfono, es decir un canal asíncrono y de baja fricción frente a una herramienta atada a una UI [49140f9d5133d3c7]. El documento no describe cómo se usa ese canal, ni si externaliza checkpoints de decisión o monitoreo.
+El stack declarado incluye un número de teléfono virtual, lo que sugiere un canal de acceso telefónico y por tanto asíncrono respecto a la sesión de trabajo [49140f9d5133d3c7]. No hay evidencia en el documento sobre por qué se eligió ese canal, qué fricción reduce ni cómo se usa en la práctica [49140f9d5133d3c7]. La hipótesis de que un número virtual es un canal de baja fricción para accountability personal queda sin contrastar.
 
 ## Evidence
-- El número virtual es uno de los cuatro componentes enumerados — source: 49140f9d5133d3c7
-- No hay descripción del flujo de interacción ni de su función — source: 49140f9d5133d3c7
+- El coach de IA se construye con STT, TTS, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es el único indicio de diseño —canal telefónico en lugar de app— que el documento aporta, y por eso merece registrarse como intención y no como patrón. Verificarlo requeriría un documento con el flujo real; hoy sostener que externaliza puntos de decisión sería especulación.
+Si el canal funciona, sería relevante para organización personal — uno de los ejes del brief — pero el documento no aporta ni un caso de uso ni una medición. Queda como pregunta abierta, no como hallazgo.
 
-Deriva del stack enumerado. Se relaciona con la hipótesis ya registrada de un coach de voz como accountability ligero, que también carece de evidencia de implementación.
+Se deriva directamente del stack declarado. Comparte con la nota sobre privacidad y costo de asistentes de voz continuos el interés por las implicaciones de un canal de voz siempre disponible.
 
 ## Links
 - derived_from → [[ai-coach-stack-stt-tts-llm-numero-virtual]]
 - relates_to → [[hipotesis-de-coach-de-voz-como-accountability-de-equipo]]
+- relates_to → [[privacidad-y-costo-en-asistentes-de-voz-continuos]]

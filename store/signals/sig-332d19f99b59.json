@@ -12,15 +12,15 @@
   "theme": "",
   "scores": {
     "relevance": 0.0,
-    "novelty": 0.5115,
+    "novelty": 0.0,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.3279,
+  "aggregate_score": 0.2,
   "first_seen": "2026-10-10T06:45:57Z",
   "sources_count": 1,
-  "status": "promoted",
+  "status": "candidate",
   "outcome": {
     "reviewed_at": null,
     "verdict": null,

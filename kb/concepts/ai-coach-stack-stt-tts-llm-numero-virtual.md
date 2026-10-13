@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-12'
+updated: '2026-10-13'
 sources:
 - 49140f9d5133d3c7
 tags:
+- agentes
 - ai-coach
 - llm
 - monkey-mind
@@ -21,7 +22,7 @@ tags:
 - voz
 base_confidence: 0.04
 half_life_days: 180
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-13'
 provenance:
   scale: XL
   query: null
@@ -46,18 +47,22 @@ links:
   type: supports
 - to: efectividad-de-ai-coach-no-demostrada
   type: supports
+- to: prototipado-por-composicion-de-apis-sin-entrenamiento
+  type: supports
 ---
 
 ## What it is
-Un «AI coach» personal se construye ensamblando cuatro componentes existentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. El documento describe la combinación de esos componentes, no una arquitectura novedosa.
+Un coach de IA por voz se describe como el ensamblado de cuatro servicios: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual [49140f9d5133d3c7]. El documento registrado es un post de RSS titulado 'Building an AI Coach to Help Tame My Monkey Mind' cuyo contenido disponible se limita a esa descripción de arquitectura [49140f9d5133d3c7]. No se documenta entrenamiento de modelos propios, solo composición de APIs existentes [49140f9d5133d3c7].
 
 ## Evidence
-- El proyecto consiste en construir un «AI coach» que integra speech-to-text, text-to-speech, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
+- El coach de IA se construye con speech-to-text, text-to-speech, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
+- El engagement registrado del documento es 0 y su novedad puntúa 0.00 — source: 49140f9d5133d3c7
+- El título del documento es 'Building an AI Coach to Help Tame My Monkey Mind' — source: 49140f9d5133d3c7
 
 ## Why it matters
-El patrón «asistente conversacional multimodal = voz + LLM + telefonía» es lo bastante accesible como para que un desarrollador individual lo arme como proyecto personal. Saberlo acota qué se puede prototipar sin entrenar modelos; no dice nada sobre calidad, resultados ni adopción.
+Es un ejemplo concreto de prototipado de agente por composición de APIs sin entrenar nada propio, aplicado a un caso de uso personal (accountability / foco) y no a programar, gestionar equipos o enseñar. No hay evidencia de que el sistema se use para ninguno de los ejes del brief.
 
-Se relaciona con las notas ya existentes sobre el stack de AI coach por voz (misma lista de componentes, distinto doc_id) y con la nota de foco personal, porque ese es el propósito del artefacto. Sirve de evidencia a las notas de riesgo que advierten que ensamblar estos servicios no es novedad y que la efectividad de un coach así no está demostrada.
+Se relaciona con las notas existentes sobre el stack de AI coach por voz y con el patrón de prototipado por composición de APIs. La conexión con el AI coach como herramienta de foco personal es directa: este es el artefacto técnico del que aquella nota describe el propósito.
 
 ## Links
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
@@ -70,3 +75,4 @@ Se relaciona con las notas ya existentes sobre el stack de AI coach por voz (mis
 - relates_to → [[ai-coach-como-herramienta-de-foco-personal]]
 - supports → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
 - supports → [[efectividad-de-ai-coach-no-demostrada]]
+- supports → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]

@@ -10,22 +10,24 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-10-05'
+updated: '2026-10-13'
 sources:
 - 0248fdb60811e91e
 tags:
 - artefacto-de-pipeline
+- engagement-cero
 - ingesta
 - ingesta-truncada
 - llm-patterns
 - rss
 - rss-singleton
 - sin-contenido
+- sin-cuerpo
 - taxonomia
 - taxonomia-sin-validar
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-13'
 provenance:
   scale: XL
   query: null
@@ -48,19 +50,28 @@ links:
   type: relates_to
 - to: how-to-match-llm-patterns-titulo-sin-contenido-ingerido
   type: derived_from
+- to: how-to-match-llm-patterns-taxonomia-externo-interno-datos
+  type: relates_to
+- to: how-to-match-llm-patterns-titulo-sin-contenido-ingerido
+  type: relates_to
+- to: matching-llm-patterns-relevancia-lexica-al-brief-de-agentes
+  type: relates_to
+- to: promesa-de-mapeo-problema-patron-sin-cuerpo-no-sostenida
+  type: supports
 ---
 
 ## What it is
-Existe un único documento titulado «How to Match LLM Patterns to Problems» [0248fdb60811e91e] que, según el analista, propone una taxonomía para seleccionar patrones LLM sobre dos ejes: problemas que requieren LLM externo vs. interno, y patrones con datos vs. sin datos [0248fdb60811e91e]. El analista califica además que ninguno de los documentos del clúster aborda agentes de IA, liderazgo técnico, estimación, secuenciación, organización personal, craft de software, productividad ni técnicas de estudio [0248fdb60811e91e]. La taxonomía existe, por tanto, solo como enunciado del titular; el corpus no aporta el desarrollo.
+El clúster se sostiene en un solo ítem RSS con engagement 0. Solo están disponibles el título y un encuadre de una línea; no hay ejemplos, benchmarks ni criterios de decisión. Afirmar cualquier hallazgo más allá de eso sería extrapolación.
 
 ## Evidence
-- El documento distingue problemas con LLM externo vs. interno y patrones con datos vs. sin datos — source: 0248fdb60811e91e
-- Ningún documento del clúster contiene evidencia sobre agentes aplicados a programar, gestionar o enseñar; liderazgo técnico de equipos chicos; estimación; secuenciación; alcance; organización personal; craft; productividad; ni técnicas de estudio — source: 0248fdb60811e91e
+- El clúster consiste en un ítem RSS titulado «How to Match LLM Patterns to Problems» con engagement 0 — source: 0248fdb60811e91e
+- No hay contenido de cuerpo, ejemplos, benchmarks ni criterios reproducibles en el documento ingerido — source: 0248fdb60811e91e
+- El crítico marca el veredicto como WEAK y baja la confianza a 0.04: un titular no valida un hallazgo y el ítem es circular como evidencia — source: 0248fdb60811e91e
 
 ## Why it matters
-La taxonomía de dos ejes no es utilizable como guía operativa porque no llega con criterios de decisión, ejemplos ni condiciones de aplicación. Cualquier uso pedagógico o de liderazgo tendría que construirse íntegramente por encima del enunciado, sin respaldo documental.
+La única función defendible de este ítem es servir de puntero de lectura. Citarlo como hallazgo validado propagaría un encuadre no verificado a decisiones de ingeniería o de docencia. Su valor real está en recuperar el texto completo antes de usarlo.
 
-Se relaciona con `task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable`: mismo patrón de documento cuyo único contenido verificable es la enumeración declarada, no el desarrollo. Se relaciona con `how-to-match-llm-patterns-adyacencia-al-brief-si-es-directa-no-tangencial`, que corrige el encuadre sobre la adyacencia al brief. Se apoya en `how-to-match-llm-patterns-titulo-sin-contenido-ingerido`, la nota que registra el estado de ingesta.
+Se relaciona con la nota de la taxonomía de dos ejes del mismo documento, con la nota previa sobre el titular sin contenido ingerido y con la de match léxico al brief de agentes. Apoya la nota sobre una promesa de mapeo problema-patrón sin cuerpo no sostenida.
 
 ## Links
 - relates_to → [[how-to-match-llm-patterns-candidato-a-retrieval-o-descarte]]
@@ -72,3 +83,7 @@ Se relaciona con `task-specific-llm-evals-familias-de-tarea-declaradas-como-unic
 - relates_to → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
 - relates_to → [[how-to-match-llm-patterns-adyacencia-al-brief-si-es-directa-no-tangencial]]
 - derived_from → [[how-to-match-llm-patterns-titulo-sin-contenido-ingerido]]
+- relates_to → [[how-to-match-llm-patterns-taxonomia-externo-interno-datos]]
+- relates_to → [[how-to-match-llm-patterns-titulo-sin-contenido-ingerido]]
+- relates_to → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]
+- supports → [[promesa-de-mapeo-problema-patron-sin-cuerpo-no-sostenida]]

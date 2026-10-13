@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-10-12'
+updated: '2026-10-13'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -23,11 +23,12 @@ tags:
 - llm
 - llm-evals
 - pipeline
+- rss-stub
 - task-specific
 - taxonomia
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-13'
 provenance:
   scale: XL
   query: null
@@ -48,19 +49,21 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-titulo-sin-contenido-ingerido
   type: derived_from
+- to: task-families-evaluadas-en-el-documento-evals
+  type: derived_from
 ---
 
 ## What it is
-La lista de categorías de tarea (clasificación, resumen, traducción, regurgitación de copyright, toxicidad) es lo único que el documento [93963a5f93e58d05] enuncia de forma verificable. Todo lo demás — criterios, resultados, argumento comparativo — está ausente.
+El clúster de «Task-Specific LLM Evals that Do & Don't Work» contiene un único ítem RSS [93963a5f93e58d05] cuyo contenido sustantivo se agota en el título y una lista de cinco familias de tarea evaluadas: clasificación, resumen, traducción, regurgitación de copyright y toxicidad [93963a5f93e58d05]. No hay cuerpo que explique qué enfoques funcionan o fallan, ni metodología, ni resultados de benchmark, ni prácticas o herramientas nombradas [93963a5f93e58d05].
 
 ## Evidence
-- Cinco categorías de tarea nombradas explícitamente: classification, summarization, translation, copyright regurgitation, toxicity — source: 93963a5f93e58d05
-- No se aportan definiciones operativas, métricas ni ejemplos para ninguna de las cinco — source: 93963a5f93e58d05
+- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y se ingirió vía RSS con engagement cero — source: 93963a5f93e58d05
+- Su alcance descrito son evals para clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
 
 ## Why it matters
-Sirve como inventario nominal, no como guía. Tratarlo como guía de selección de evals sería atribuirle al texto una metodología que no contiene. Como inventario, además, estas familias son NLP general: no cubren evals de código ni de asistentes de enseñanza, que son los que tocarían el brief.
+Estas cinco familias son lo único verificable del clúster; cualquier afirmación sobre «qué funciona y qué no» exigiría inventar especificidad ausente en la fuente. El ítem sirve, como máximo, de puntero bibliográfico para quien construya arneses de evaluación, no como conjunto de hallazgos transferibles.
 
-`derived_from` la nota de riesgo sobre el mismo documento, porque esta observación solo tiene sentido como descripción de lo poco que el documento sí entrega. Se relaciona con las notas existentes sobre familias de tarea y sobre el alcance declarado del documento de evals: son la misma observación registrada antes, y esta nota la repite sin añadir evidencia nueva.
+Se deriva de la nota preexistente que enumera las familias de tarea del documento y se relaciona con la nota de alcance declarado, que ya registra la misma lista como techo de contenido verificable. No se enlaza a agentes de código ni a docencia porque la fuente no menciona ningún eje de esos.
 
 ## Links
 - supports → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
@@ -71,3 +74,4 @@ Sirve como inventario nominal, no como guía. Tratarlo como guía de selección 
 - relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
 - relates_to → [[task-families-evaluadas-en-el-documento-evals]]
 - derived_from → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
+- derived_from → [[task-families-evaluadas-en-el-documento-evals]]

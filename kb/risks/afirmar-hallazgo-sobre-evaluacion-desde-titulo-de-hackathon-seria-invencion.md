@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-09'
+updated: '2026-10-13'
 sources:
 - d2a0c86ca8027978
 tags:
-- sobreinterpretacion
-- ingesta
-- evaluacion
 - artefacto-de-cluster
+- evals
+- evaluacion
+- ingesta
+- sobreinterpretacion
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-13'
 provenance:
   scale: XL
   query: null
@@ -30,21 +31,33 @@ links:
   type: relates_to
 - to: afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion
   type: supports
+- to: wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo
+  type: derived_from
+- to: mecanica-de-evals-afirmada-desde-solo-titulo-rss
+  type: relates_to
+- to: inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion
+  type: relates_to
+- to: afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion
+  type: relates_to
 ---
 
 ## What it is
-Tratar el ítem [d2a0c86ca8027978] como evidencia de una tendencia sobre práctica de evaluación con LLM sería proyección: el documento no contiene claims que lo sostengan. Del mismo modo, presentar el haber sido juez en un hackathon como experiencia de evaluación sería sobreinterpretar un rol declarado.
+Riesgo de fabricar conexiones entre el título «LLM-as-a-Judge Hackathon» y los ejes del brief (evaluación de agentes, práctica de liderazgo, docencia) cuando el documento no respalda ninguna de ellas. El solapamiento es léxico: la frase del título comparte vocabulario con «LLM» y «evaluación», no con la práctica de liderar o enseñar.
 
 ## Evidence
-- El único contenido del documento es la frase «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon» — source: d2a0c86ca8027978
-- No hay metodología de juicio, criterios, resultados ni descripción de pipelines en el material ingerido — source: d2a0c86ca8027978
+- El documento es solo título, sin criterios, proyectos ni conclusiones — source: d2a0c86ca8027978
+- El vínculo con el topic se limita al área general de agentes/evaluación de IA, sin desarrollar implicaciones para programar, gestionar o enseñar — source: d2a0c86ca8027978
 
 ## Why it matters
-Citar este ítem ante un equipo o una clase para hablar de evaluación de LLM introduciría una afirmación sin respaldo del material disponible. La distinción entre «ser juez en un hackathon» y «tener práctica de evaluación» es precisamente la que la evidencia no cruza.
+Un artefacto de ingesta con engagement=0 y novelty=0.00 no debe tratarse como evidencia válida ni competir por cupo frente a ejes sustantivos. Con la docencia entry-level ya mudada al profile `teaching`, este ítem no tiene a qué eje apuntar. Si en el futuro se ingiere el contenido completo del hackathon, los claims sobre evaluación de LLMs serían nuevos y requerirían su propia verificación.
 
-Es la misma clase de riesgo que ya registran las notas de afirmar contenido desde títulos de signal en otros contextos (BOFs, releases). Se apoya en la nota sobre sobreinterpretar ser juez como expertise en evaluación, aplicada aquí a la variante del hackathon de W&B.
+Deriva de la nota que establece que el clúster es solo un título sin cuerpo. Se relaciona con las notas existentes sobre mecánicas de evaluación afirmadas desde un título RSS, sobre inferir metodología de juicio desde un fragmento de rol, y sobre afirmar experiencia de evaluación por haber sido juez: la misma familia de modos de fallo por sobreinterpretación de artefactos de ingesta.
 
 ## Links
 - relates_to → [[afirmar-contenido-de-bof-desde-titulo-de-signal]]
 - relates_to → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss-2]]
 - supports → [[afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion]]
+- derived_from → [[wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo]]
+- relates_to → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
+- relates_to → [[inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion]]
+- relates_to → [[afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion]]

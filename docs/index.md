@@ -1,26 +1,26 @@
-# Brief — 2026-10-12
+# Brief — 2026-10-13
 
 ## Los titulares
 
-1. [Hello Python 3.15, goodbye 3.10, and now I can use 3.11](https://simonwillison.net/2026/Oct/12/python-3-15/) — *IA y agentes en mi trabajo*
-2. [Release 2026.8.31](tag:github.com,2008:Repository/890668799/2026.8.31) — *IA y agentes en mi trabajo*
+1. [[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model](https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder) — *IA y agentes en mi trabajo*
+2. [Quoting Geoffrey Huntley](https://simonwillison.net/2026/Oct/13/geoffrey-huntley/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [Hello Python 3.15, goodbye 3.10, and now I can use 3.11](https://simonwillison.net/2026/Oct/12/python-3-15/)
+### [[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model](https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder)
 
-This cluster is not actually about the stated topic
+El clúster contiene un único documento [4004eb9d4bbe0e76], un post de AINews del feed RSS con engagement=0, que afirma que Meta Superintelligence Labs (MSL) ha completado su ascenso como laboratorio de frontera con un m…
 
-<sub>fuentes: files, rss · confianza: 5% · en el KB: `cluster-hello-python-3-15-heterogeneo-volcado-rss`, `pluralidad-de-llm-en-software-adjacent-senal-debil-sin-convergencia`, `titular-de-cluster-sin-referente-en-sus-documentos`</sub>
+<sub>fuentes: rss · confianza: 5%</sub>
 
-### [Release 2026.8.31](tag:github.com,2008:Repository/890668799/2026.8.31)
+### [Quoting Geoffrey Huntley](https://simonwillison.net/2026/Oct/13/geoffrey-huntley/)
 
-This cluster is a set of automated RSS release notes for the Model Context Protocol (MCP) server packages, emitted as versioned releases between 2025.12 and 2026.8 (e.g
+El clúster parece ser un error de agregación: casi ninguno de los documentos aborda el tema declarado (liderazgo técnico, agentes de IA para programar/gestionar/enseñar, oficio de software engineering, productividad y t…
 
-<sub>fuentes: rss · confianza: 18%</sub>
+<sub>fuentes: files, rss · confianza: 72% · en el KB: `quoting-geoffrey-huntley-cluster-error-de-agregacion`, `quoting-geoffrey-huntley-corroboracion-1-00-es-artefacto`, `quoting-geoffrey-huntley-fallo-de-filtrado-determinista`</sub>
 
 ---
 
-<sub>5 señales consideradas, 3 descartadas por no ser de ningún tema, 23 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
+<sub>4 señales consideradas, 2 descartadas por no ser de ningún tema, 23 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>

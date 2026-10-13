@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-10-13'
 sources:
 - 19cb8032958cd964
+- sig-237cc97a9794
 tags:
+- capacidad
+- capacidad-vs-politica
+- evaluacion
+- multimodal
+- politica
 - politicas-de-modelo
 - rechazo
-- capacidad-vs-politica
-- multimodal
 base_confidence: 0.65
 half_life_days: 180
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-10-13'
 provenance:
   scale: XL
   query: null
@@ -30,21 +34,28 @@ links:
   type: relates_to
 - to: probe-de-rechazo-por-identidad-en-produccion
   type: relates_to
+- to: confundir-rechazo-por-politica-con-capacidad-de-modelo
+  type: derived_from
+- to: afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica
+  type: supports
 ---
 
 ## What it is
-Que un modelo se niegue a realizar una acción no implica que no pueda hacerla. El rechazo puede ser una decisión de política del proveedor sobre una capacidad que el modelo conserva. Leer «no lo hará» como «no puede» o como «ahora puede» invierte la relación entre capacidad y política.
+Un modelo puede ser plenamente capaz de identificar a una figura pública y a la vez estar instruido o restringido por política para negarse. Inversamente, un modelo permisivo puede alucinar un nombre plausible. Por tanto, observar una negativa o una respuesta no establece capacidad del modelo.
 
 ## Evidence
-- El crítico señala que un modelo puede rechazar por política conservando la capacidad subyacente, o identificar en algunos contextos y no en otros — source: 19cb8032958cd964
-- El mismo documento que reporta la divergencia entre proveedores no cita ninguna política publicada ni benchmark que separe capacidad de decisión — source: 19cb8032958cd964
+- El documento se limita a registrar negativa/no-negativa, sin verificación contra verdad de referencia — source: 19cb8032958cd964
+- «Gemini identifica figuras públicas» podría ser igual de bien «Gemini confabula un nombre para una cara» — source: sig-237cc97a9794
+- El claim confunde cumplimiento de política con capacidad de modelo — source: sig-237cc97a9794
 
 ## Why it matters
-Define qué evidencia haría falta para afirmar un salto de capacidad: no una conducta observada puntual, sino aislamiento de la política (prompt directo, API vs. app, contexto). Sin esa separación, cualquier titular sobre «los LLM ahora pueden X» es ambiguo en el eje que importa.
+Cualquier decisión de producto o de evaluación que dependa del rechazo de un modelo debe probar la política por tarea, no inferirla de la capacidad nominal. Es un error de razonamiento con consecuencias operativas: elegir un proveedor por lo que «no rechaza» es elegir por política vigente, no por músculo técnico.
 
-Es la distinción que hace ilegible el titular de la nota sobre divergencia de rechazo al nombrar figuras públicas. Conecta con la nota sobre qué significa «identificar» en la fuente (no rechazar ≠ reconocer) y con la sonda de rechazo por identidad como método para separar ambos ejes.
+Se deriva de `confundir-rechazo-por-politica-con-capacidad-de-modelo` y refuerza `afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica`. Se relaciona con `identificar-no-es-reconocer-en-la-fuente`: la palabra «identificar» en la fuente significa «no rechazar», no «reconocer».
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[identificar-no-es-reconocer-en-la-fuente]]
 - relates_to → [[probe-de-rechazo-por-identidad-en-produccion]]
+- derived_from → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]
+- supports → [[afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica]]

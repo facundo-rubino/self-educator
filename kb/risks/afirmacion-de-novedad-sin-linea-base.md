@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-12'
+updated: '2026-10-13'
 sources:
 - 19cb8032958cd964
 - 49140f9d5133d3c7
+- sig-237cc97a9794
 tags:
 - evidencia
 - linea-base
@@ -22,7 +23,7 @@ tags:
 - riesgo
 base_confidence: 0.12
 half_life_days: 120
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-13'
 provenance:
   scale: M
   query: null
@@ -37,19 +38,23 @@ links:
   type: relates_to
 - to: concepto-precedente-identificacion-de-figuras-publicas
   type: contradicts
+- to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
+  type: derived_from
+- to: afirmacion-de-capacidad-multimodal-sin-metodologia
+  type: relates_to
 ---
 
 ## What it is
-El claim «LLMs can now identify public figures» implica una novedad temporal que el documento no sustenta: no hay línea base de cuándo los modelos no podían hacerlo, ni fecha de observación del cambio.
+El «now» del claim implica un avance temporal de capacidad, pero el documento no da baseline, fecha, versión de modelo ni comparación. Sin esos elementos, la novedad no está establecida y el claim no puede situarse en una serie temporal.
 
 ## Evidence
-- El clúster tiene novelty=0.00, lo que indica que la señal no aporta información nueva respecto a lo ya conocido por el pipeline — source: 19cb8032958cd964
-- El documento no indica cuándo se observó el comportamiento — source: 19cb8032958cd964
+- El «now» del claim implica avance temporal, pero no hay baseline, fecha ni comparación — source: sig-237cc97a9794
+- El único documento no ofrece versiones de modelo — source: 19cb8032958cd964
 
 ## Why it matters
-Afirmar que algo ocurre «ahora» exige demostrar que antes no ocurría. Sin esa línea base, el «now» del titular es retórica, no un cambio establecido.
+Un claim sin baseline no puede ser refutado ni confirmado, y por tanto no puede guiar decisiones. Es un modo de fallo recurrente en señales RSS: el titular introduce novedad que el cuerpo no sostiene.
 
-Contradice la nota que documenta precedentes de identificación de figuras públicas por modelos multimodales: si ya existía, el «ahora» es una afirmación de novedad sin base.
+Se deriva de `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`, caso concreto del mismo modo de fallo. Se relaciona con `afirmacion-de-capacidad-multimodal-sin-metodologia`: la ausencia de baseline es una de las formas de la ausencia de metodología.
 
 ## Links
 - derived_from → [[divergencia-de-rechazo-entre-proveedores]]
@@ -57,3 +62,5 @@ Contradice la nota que documenta precedentes de identificación de figuras públ
 - supports → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - contradicts → [[concepto-precedente-identificacion-de-figuras-publicas]]
+- derived_from → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]

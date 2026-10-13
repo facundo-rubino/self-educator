@@ -10,9 +10,10 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-29'
-updated: '2026-10-02'
+updated: '2026-10-13'
 sources:
 - 31820ad25e39a34b
+- abf61eeec75462f9
 tags:
 - alcance
 - anthropic
@@ -20,9 +21,10 @@ tags:
 - llm
 - llm-anthropic
 - release
+- sin-claims-de-practica
 base_confidence: 0.9
 half_life_days: 180
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-13'
 provenance:
   scale: XL
   query: null
@@ -41,19 +43,21 @@ links:
   type: supports
 - to: release-de-plugin-no-es-evidencia-de-practica
   type: supports
+- to: llm-anthropic-0-29-anuncio-de-release
+  type: relates_to
 ---
 
 ## What it is
-El único documento del clúster es un anuncio de compatibilidad de un plugin de CLI. No contiene afirmaciones sobre liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, docencia de programación, productividad ni técnicas de estudio: es decir, no toca ningún eje operativo del brief.
+La señal compilada es un ítem RSS con engagement=0 y novelty=0.00 [abf61eeec75462f9]; su contenido no toca ninguno de los ejes operativos del brief (agentes aplicados a programar, liderazgo técnico, docencia, productividad, estudio). El documento es un release/changelog operativo, no una fuente sobre práctica profesional.
 
 ## Evidence
-- El clúster contiene un único documento y su contenido es puramente un anuncio de compatibilidad de un plugin de CLI; no hay contenido sobre liderazgo, estimación, secuenciamiento, docencia, productividad ni estudio — source: 31820ad25e39a34b
-- Lo único sustantivo es un bump de versión y el nombre de un modelo — source: 31820ad25e39a34b
+- El único documento del clúster es un ítem RSS con engagement=0 y sin cuerpo sustantivo — source: abf61eeec75462f9 (crítico)
+- La novelty es 0.00, lo que indica que la información ya es conocida — source: abf61eeec75462f9
 
 ## Why it matters
-Fija el techo de lo que se puede afirmar desde esta evidencia: disponibilidad de modelo, nada más. Cualquier hallazgo sobre práctica profesional extraído de aquí sería invención.
+Evita que un changelog de plugin entre al grafo como hallazgo sobre agentes, liderazgo o docencia: el pipeline no debe elevar ítems operativos a claims de práctica. La regla general ya existe en el KB; este ítem la confirma.
 
-Deriva del anuncio de release y refuerza el diagnóstico de match espurio. Es el caso particular, para este clúster, del patrón general de que un feed de releases de dependencias no es evidencia de práctica profesional.
+Apoya la nota `feed-de-dependencias-no-es-evidencia-de-practica-profesional` y la nota `release-de-plugin-no-es-evidencia-de-practica`. Se relaciona con `llm-anthropic-0-29-anuncio-de-release`, que registra el mismo tipo de artefacto.
 
 ## Links
 - derived_from → [[llm-anthropic-0-29-anuncio-de-release]]
@@ -63,3 +67,4 @@ Deriva del anuncio de release y refuerza el diagnóstico de match espurio. Es el
 - supports → [[llm-anthropic-0-29-topic-match-espurio-por-vocabulario]]
 - supports → [[feed-de-dependencias-no-es-evidencia-de-practica-profesional]]
 - supports → [[release-de-plugin-no-es-evidencia-de-practica]]
+- relates_to → [[llm-anthropic-0-29-anuncio-de-release]]

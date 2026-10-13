@@ -9,18 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-12'
-updated: '2026-10-12'
+updated: '2026-10-13'
 sources:
 - fdf5991b8ee77588
 tags:
-- llm-mistral
-- mistral
-- llm-reasoning
-- release
 - feed-rss
+- llm
+- llm-mistral
+- llm-reasoning
+- mistral
+- release
+- releases
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-13'
 provenance:
   scale: XL
   query: null
@@ -31,23 +33,43 @@ links:
   type: relates_to
 - to: interpretacion-de-evolucion-de-cli-como-infraestructura-es-especulativa
   type: relates_to
+- to: llm-anthropic-0-29-anuncio-de-release
+  type: relates_to
+- to: feed-de-dependencias-no-es-evidencia-de-practica-profesional
+  type: supports
+- to: release-de-plugin-no-es-evidencia-de-practica
+  type: supports
+- to: llm-mistral-0-16-singleton-engagement-cero
+  type: derived_from
+- to: llm-mistral-0-16-soporte-no-demuestra-capacidad
+  type: derived_from
+- to: llm-mistral-0-16-tangencial-al-brief-por-vocabulario
+  type: derived_from
+- to: llm-mistral-0-16-identificador-version-posible-misparseo
+  type: derived_from
 ---
 
 ## What it is
-«llm-mistral 0.16» es una versión de una librería o integración de LLM distribuida como ítem de feed RSS. El anuncio afirma añadir soporte para «modelos de razonamiento», citando «Mistral Large 4» como ejemplo (source: fdf5991b8ee77588). No hay cuerpo más allá del titular.
+llm-mistral es una librería de integración LLM; su versión 0.16 agrega soporte para modelos de razonamiento y cita como ejemplo el entonces recién lanzado Mistral Large 4. El documento que lo anuncia está etiquetado `llm`, `mistral` y `llm-reasoning`. Es una nota de release, no un informe de uso.
 
 ## Evidence
-- El documento anuncia el release «llm-mistral 0.16» como versión de una librería o integración de LLM — source: fdf5991b8ee77588
-- El release afirma añadir soporte para «modelos de razonamiento», ilustrado con «Mistral Large 4» — source: fdf5991b8ee77588
-- El ítem está etiquetado «llm», «mistral», «llm-reasoning» y es un feed RSS con engagement=0 — source: fdf5991b8ee77588
-- El documento no menciona liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, enseñanza de programación ni técnicas de estudio — source: fdf5991b8ee77588
+- El documento es una entrada de release que anuncia la versión llm-mistral 0.16 — source: fdf5991b8ee77588
+- La versión 0.16 agrega soporte para modelos de razonamiento, como el recién lanzado Mistral Large 4 — source: fdf5991b8ee77588
+- El documento está etiquetado con llm, mistral y llm-reasoning, y no incluye contenido sobre docencia, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de software engineering ni técnicas de estudio — source: fdf5991b8ee77588
 
 ## Why it matters
-El único contenido verificable es un anuncio de soporte, no una capacidad demostrada: no hay benchmarks, casos de uso ni confirmación independiente. Para el brief, el valor es nulo salvo como dato de ecosistema LLM; cualquier inferencia sobre mejora en programar, gestionar o enseñar excede lo que el documento dice.
+Un release de integración habilita flujos de trabajo, no demuestra mejora en el trabajo de programar, gestionar o enseñar. Para el brief de agentes, liderazgo técnico y docencia, este documento es infraestructura de tooling: relevante en el orden de «qué modelos puedo invocar desde mi CLI», sin ningún claim sobre práctica.
 
-Relacionado con el patrón de coincidencias léxicas alrededor de «LLM»/«agentes» que sobreviven al filtro sin cubrir ejes del brief. Comparte con `modelo-nuevo-en-cli-habilita-sin-demostrar-mejora` la estructura «nuevo modelo disponible — habilita, no demuestra». Comparte con `interpretacion-de-evolucion-de-cli-como-infraestructura-es-especulativa` el riesgo de leer releases de tooling como señal de práctica.
+Se emparenta con los otros anuncios de release de plugins LLM (`llm-anthropic 0.29`) como el mismo tipo de artefacto: changelog operativo, sin claims sobre productividad ni liderazgo. Es evidencia de apoyo para el patrón de que un feed de dependencias no es evidencia de práctica profesional, y para el riesgo de leer un release de plugin como hallazgo. Los cuatro riesgos derivados (singleton sin engagement, soporte ≠ capacidad demostrada, match léxico al brief, identificador de versión posiblemente mal parseado) definen los límites de lo que este documento puede sostener.
 
 ## Links
 - relates_to → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]
 - relates_to → [[modelo-nuevo-en-cli-habilita-sin-demostrar-mejora]]
 - relates_to → [[interpretacion-de-evolucion-de-cli-como-infraestructura-es-especulativa]]
+- relates_to → [[llm-anthropic-0-29-anuncio-de-release]]
+- supports → [[feed-de-dependencias-no-es-evidencia-de-practica-profesional]]
+- supports → [[release-de-plugin-no-es-evidencia-de-practica]]
+- derived_from → [[llm-mistral-0-16-singleton-engagement-cero]]
+- derived_from → [[llm-mistral-0-16-soporte-no-demuestra-capacidad]]
+- derived_from → [[llm-mistral-0-16-tangencial-al-brief-por-vocabulario]]
+- derived_from → [[llm-mistral-0-16-identificador-version-posible-misparseo]]
