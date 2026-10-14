@@ -9,10 +9,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-12'
-updated: '2026-10-13'
+updated: '2026-10-14'
 sources:
 - fdf5991b8ee77588
 tags:
+- changelog
 - feed-rss
 - llm
 - llm-mistral
@@ -22,7 +23,7 @@ tags:
 - releases
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-13'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -47,20 +48,28 @@ links:
   type: derived_from
 - to: llm-mistral-0-16-identificador-version-posible-misparseo
   type: derived_from
+- to: llm-mistral-0-16-soporte-razonamiento
+  type: relates_to
+- to: llm-mistral-0-16-singleton-engagement-cero
+  type: relates_to
+- to: llm-mistral-0-16-identificador-version-posible-misparseo
+  type: relates_to
+- to: llm-mistral-0-16-tangencial-al-brief-por-vocabulario
+  type: relates_to
 ---
 
 ## What it is
-llm-mistral es una librería de integración LLM; su versión 0.16 agrega soporte para modelos de razonamiento y cita como ejemplo el entonces recién lanzado Mistral Large 4. El documento que lo anuncia está etiquetado `llm`, `mistral` y `llm-reasoning`. Es una nota de release, no un informe de uso.
+La release 0.16 del plugin `llm-mistral` añade soporte para modelos de razonamiento, mencionando específicamente Mistral Large 4. El documento que lo comunica es una nota de release de RSS etiquetada `llm`, `mistral` y `llm-reasoning`.
 
 ## Evidence
-- El documento es una entrada de release que anuncia la versión llm-mistral 0.16 — source: fdf5991b8ee77588
-- La versión 0.16 agrega soporte para modelos de razonamiento, como el recién lanzado Mistral Large 4 — source: fdf5991b8ee77588
-- El documento está etiquetado con llm, mistral y llm-reasoning, y no incluye contenido sobre docencia, liderazgo técnico, estimación, secuenciamiento, alcance, organización personal, oficio de software engineering ni técnicas de estudio — source: fdf5991b8ee77588
+- El documento anuncia la release «llm-mistral 0.16» y añade soporte para modelos de razonamiento, como Mistral Large 4 — source: fdf5991b8ee77588
+- El documento está etiquetado con `llm`, `mistral` y `llm-reasoning` — source: fdf5991b8ee77588
+- El documento tiene engagement=0 y proviene de una fuente RSS — source: fdf5991b8ee77588
 
 ## Why it matters
-Un release de integración habilita flujos de trabajo, no demuestra mejora en el trabajo de programar, gestionar o enseñar. Para el brief de agentes, liderazgo técnico y docencia, este documento es infraestructura de tooling: relevante en el orden de «qué modelos puedo invocar desde mi CLI», sin ningún claim sobre práctica.
+Es un changelog de herramienta: habilita un modelo en una CLI, no aporta evidencia sobre liderazgo técnico, estimación, secuenciación, docencia ni oficio. Su presencia en el clúster se explica por coincidencia léxica del token `llm` con la temática de agentes de IA del brief.
 
-Se emparenta con los otros anuncios de release de plugins LLM (`llm-anthropic 0.29`) como el mismo tipo de artefacto: changelog operativo, sin claims sobre productividad ni liderazgo. Es evidencia de apoyo para el patrón de que un feed de dependencias no es evidencia de práctica profesional, y para el riesgo de leer un release de plugin como hallazgo. Los cuatro riesgos derivados (singleton sin engagement, soporte ≠ capacidad demostrada, match léxico al brief, identificador de versión posiblemente mal parseado) definen los límites de lo que este documento puede sostener.
+Solapa con las notas ya existentes del mismo clúster (`llm-mistral-0-16-soporte-razonamiento`, `llm-mistral-0-16-singleton-engagement-cero`, `llm-mistral-0-16-identificador-version-posible-misparseo`, `llm-mistral-0-16-tangencial-al-brief-por-vocabulario`), que describen el mismo documento desde el ángulo de release, de singleton sin engagement y de tangencialidad al brief.
 
 ## Links
 - relates_to → [[matching-llm-patterns-relevancia-lexica-al-brief-de-agentes]]
@@ -73,3 +82,7 @@ Se emparenta con los otros anuncios de release de plugins LLM (`llm-anthropic 0.
 - derived_from → [[llm-mistral-0-16-soporte-no-demuestra-capacidad]]
 - derived_from → [[llm-mistral-0-16-tangencial-al-brief-por-vocabulario]]
 - derived_from → [[llm-mistral-0-16-identificador-version-posible-misparseo]]
+- relates_to → [[llm-mistral-0-16-soporte-razonamiento]]
+- relates_to → [[llm-mistral-0-16-singleton-engagement-cero]]
+- relates_to → [[llm-mistral-0-16-identificador-version-posible-misparseo]]
+- relates_to → [[llm-mistral-0-16-tangencial-al-brief-por-vocabulario]]

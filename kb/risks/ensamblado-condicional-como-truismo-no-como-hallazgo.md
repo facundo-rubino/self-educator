@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-08'
-updated: '2026-10-08'
+updated: '2026-10-14'
 sources:
 - abf61eeec75462f9
 tags:
-- system-prompt
-- novelty
 - brief
+- hallazgo
+- novedad
+- novelty
+- prompt-engineering
+- system-prompt
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -29,21 +32,27 @@ links:
   type: supports
 - to: restatement-de-titulo-no-es-hallazgo
   type: relates_to
+- to: composicion-condicional-de-instrucciones-como-hallazgo-ya-conocido
+  type: relates_to
+- to: claude-code-system-prompt-novelty-cero-conocimiento-ya-disponible
+  type: derived_from
 ---
 
 ## What it is
-La conclusión que sobrevive al escrutinio —«el contexto inyectado da forma al comportamiento del agente»— es una verdad general de los harness LLM, no una información sobre cómo Claude Code construye su system prompt. Con novelty=0.00 y engagement=0, no aporta material nuevo.
+El pipeline reporta novedad 0.00 para este clúster [abf61eeec75462f9]. El crítico argumenta que la composición condicional de system prompts es una trivialidad documentada desde los primeros frameworks de plantillas (Jinja, LangChain, prompt flow) y practicada por cualquier equipo que gestione agentes. La afirmación es verdadera y por eso mismo no informa: no hay delta frente a lo ya sabido.
 
 ## Evidence
-- El documento solo describe el ensamblado condicional del prompt — source: abf61eeec75462f9
-- El hallazgo declarado coincide con el conocimiento ya asentado sobre composición condicional de instrucciones — source: abf61eeec75462f9 (comparación con corpus)
+- Novedad declarada 0.00 en el reporte del clúster [abf61eeec75462f9].
+- El crítico señala como documentación previa los frameworks de plantillas de prompts.
 
 ## Why it matters
-Registrar truismos como hallazgos infla el grafo y erosiona la confianza en el resto. Marcar novelty=0.00 como señal de «no compilar» protege el valor del KB.
+Compilar esto como hallazgo infla el grafo con confirmaciones. La consecuencia práctica para un dev-líder es que no hay aquí nada que cambie una decisión: el valor está en el ejemplo didáctico del ensamblado condicional, no en el descubrimiento de que existe.
 
-Se apoya en las notas existentes sobre composición condicional ya conocida y sobre novelty cero en Claude Code. Se relaciona con el patrón de restatement de título que no es hallazgo.
+Deriva de `composicion-condicional-de-instrucciones-como-hallazgo-ya-conocido` y de `claude-code-system-prompt-novelty-cero-conocimiento-ya-disponible`: ambas ya registran que la novedad nula convierte el claim en confirmación de práctica conocida.
 
 ## Links
 - supports → [[composicion-condicional-de-instrucciones-como-hallazgo-ya-conocido]]
 - supports → [[claude-code-system-prompt-novelty-cero-ya-conocido]]
 - relates_to → [[restatement-de-titulo-no-es-hallazgo]]
+- relates_to → [[composicion-condicional-de-instrucciones-como-hallazgo-ya-conocido]]
+- derived_from → [[claude-code-system-prompt-novelty-cero-conocimiento-ya-disponible]]

@@ -10,21 +10,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-06'
-updated: '2026-10-08'
+updated: '2026-10-14'
 sources:
 - d2a0c86ca8027978
 tags:
 - evals
 - evaluacion
 - hackathon
+- juez-humano
 - liderazgo-tecnico
 - llm-as-a-judge
 - oficio
+- sesgo-de-autoridad
 - sobreinterpretacion
 - wandb
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -47,20 +49,23 @@ links:
   type: relates_to
 - to: juez-humano-we-and-b-llm-as-a-judge-hackathon
   type: derived_from
+- to: cosignar-evaluacion-o-participar-en-ella-no-es-adopcion
+  type: supports
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb-rol-declarado
+  type: relates_to
 ---
 
 ## What it is
-Tomar la participación como juez humano en un hackathon como evidencia de expertise en evaluación de LLM (o de práctica de ingeniería, docencia o liderazgo) es sobreinterpretación: el documento fuente solo declara el rol, sin criterios aplicados, modelos juzgados ni resultados.
+El documento solo declara participación como juez humano en un hackathon de LLM-as-a-Judge [d2a0c86ca8027978]. De esa frase no se derivan criterios de evaluación, decisiones de diseño de evals ni experiencia transferible a la evaluación de agentes o de docencia.
 
 ## Evidence
-- El único contenido del documento es la declaración del rol de juez humano, sin criterios ni resultados — source: d2a0c86ca8027978
-- El ítem no describe qué se juzgó, con qué criterios, ni qué equipos o modelos participaron — source: d2a0c86ca8027978
-- Engagement=0 y ausencia total de contenido novedoso o corrobador — source: d2a0c86ca8027978
+- El cuerpo del documento es «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon» — source: d2a0c86ca8027978
+- No hay descripción de rúbricas, criterios, sistemas evaluados ni resultados en el contenido ingerido — source: d2a0c86ca8027978
 
 ## Why it matters
-Evita que un dev-líder cite este ítem como credencial de evaluación de LLM al justificar decisiones de adopción o al enseñar. La diferencia entre «estar en la sala» y «tener método evaluado» importa cuando se transfiere a decisiones sobre agentes de código o a docencia.
+Usar el episodio como credencial de autoridad sobre evaluación de LLM introduciría un sesgo no justificado en decisiones de equipo o material de enseñanza: el rol es real, la práctica no está documentada.
 
-Extiende la nota previa sobre la misma sobreinterpretación con evidencia nueva del mismo clúster; se apoya en la nota de rol sin contenido metodológico y en la de cosignar/participar que no implica adopción.
+Extiende `afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion` con el caso concreto de W&B. Se apoya en `cosignar-evaluacion-o-participar-en-ella-no-es-adopcion` y en el análisis de rol de `juez-humano-en-hackathon-llm-as-a-judge-de-wandb-rol-declarado`.
 
 ## Links
 - supports → [[afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion]]
@@ -72,3 +77,5 @@ Extiende la nota previa sobre la misma sobreinterpretación con evidencia nueva 
 - relates_to → [[cosignar-evaluacion-o-participar-en-ella-no-es-adopcion]]
 - relates_to → [[juez-humano-como-rol-sin-contenido-metodologico]]
 - derived_from → [[juez-humano-we-and-b-llm-as-a-judge-hackathon]]
+- supports → [[cosignar-evaluacion-o-participar-en-ella-no-es-adopcion]]
+- relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb-rol-declarado]]

@@ -1,7 +1,6 @@
 ---
 id: afirmacion-de-capacidad-multimodal-sin-metodologia
-title: Una afirmación de capacidad multimodal sin metodología, versiones ni condiciones
-  no es verificable
+title: Una afirmación de capacidad multimodal sin metodología no es verificable
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,9 +9,10 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-30'
-updated: '2026-10-12'
+updated: '2026-10-14'
 sources:
 - 19cb8032958cd964
+- sig-237cc97a9794
 tags:
 - capacidad-multimodal
 - claim-sin-metodologia
@@ -24,7 +24,7 @@ tags:
 - verificabilidad
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -47,19 +47,25 @@ links:
   type: supports
 - to: afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion
   type: relates_to
+- to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  type: supports
+- to: ranking-de-figuras-publicas-sin-metodologia-ni-fecha
+  type: relates_to
+- to: verificar-features-de-tooling-antes-de-citar-en-docencia-o-config
+  type: relates_to
 ---
 
 ## What it is
-No hay benchmark, versión de modelo, protocolo de evaluación, conjunto de imágenes ni cifra de precisión que distinga un hallazgo real de una capacidad alucinada o una anécdota de proveedor. Sin esos elementos, el claim no es verificable.
+Sin setup de prueba, prompts, versiones de modelo ni fechas, una afirmación de capacidad multimodal no es replicable ni refutable: no se puede distinguir una propiedad del sistema de una anécdota o de una versión caducada.
 
 ## Evidence
-- El documento no aporta metodología, ejemplos ni fuentes primarias — source: 19cb8032958cd964
-- No se indica cuándo se observó el comportamiento ni con qué versiones, prompts o cuentas — source: 19cb8032958cd964
+- El documento no ofrece setup de prueba, prompts, versiones ni fechas — fuente: sig-237cc97a9794
+- El comportamiento puede variar por UI, región, versión de política y juicio del modelo — fuente: sig-237cc97a9794
 
 ## Why it matters
-Sin protocolo, el comportamiento de rechazo observado en una frase no se generaliza: versión, cuenta y región lo condicionan. Cualquier spike de proveedor debe fijar esas variables antes de citarse en decisiones de equipo o de clase.
+Antes de citar una capacidad multimodal en configuración, docencia o decisiones de equipo, hace falta verificación contra el proveedor con versión y fecha.
 
-Reitera la necesidad de probar con proveedores y cuentas específicas antes de generalizar una política de rechazo observada de forma anecdótica.
+Sostiene la nota de claim sin metodología; se relaciona con la falta de fecha y versión en los claims de figuras públicas y con la práctica de verificar features contra upstream antes de citarlas.
 
 ## Links
 - relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
@@ -71,3 +77,6 @@ Reitera la necesidad de probar con proveedores y cuentas específicas antes de g
 - relates_to → [[divergencia-de-rechazo-por-identidad-sin-metodologia-ni-fecha]]
 - supports → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- supports → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- relates_to → [[ranking-de-figuras-publicas-sin-metodologia-ni-fecha]]
+- relates_to → [[verificar-features-de-tooling-antes-de-citar-en-docencia-o-config]]

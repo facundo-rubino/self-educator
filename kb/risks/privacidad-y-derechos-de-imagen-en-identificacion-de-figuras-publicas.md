@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-10-05'
+updated: '2026-10-14'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -25,7 +25,7 @@ tags:
 - vision
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -44,19 +44,21 @@ links:
   type: relates_to
 - to: privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia
   type: supports
+- to: politica-de-face-recognition-como-variable-de-producto
+  type: relates_to
 ---
 
 ## What it is
-Identificar figuras públicas en imágenes tiene implicaciones legales y de privacidad (GDPR, derechos de imagen) que el documento no aborda. En el único escenario donde el brief podría tocarlo — docencia con capturas que contienen personas — estas obligaciones tendrían que gestionarse explícitamente antes de cualquier uso.
+Identificar a una persona por su imagen plantea cuestiones de privacidad y derechos de imagen que el anuncio de producto no aborda. La distinción «figura pública» es además un juicio del modelo, no una categoría legal fija.
 
 ## Evidence
-- El reporte lista como riesgo: implicaciones legales y de privacidad (GDPR, derechos de imagen) no abordadas, que «podrían invalidar su uso en productos reales» — source: sig-237cc97a9794
-- El documento fuente se limita a la asimetría funcional entre proveedores, sin tratamiento legal — source: 19cb8032958cd964
+- El documento no trata privacidad ni consentimiento, solo el comportamiento de identificación — fuente: sig-237cc97a9794
+- Qué cuenta como «figura pública» queda al juicio del modelo — fuente: sig-237cc97a9794
 
 ## Why it matters
-Un helper docente o un agente que analiza material con personas puede quedar bloqueado por cumplimiento incluso cuando el modelo funciona. El costo no es de capacidad, es de licitud y de derechos de terceros.
+Usar imágenes de personas reales en demos o docencia sin resolver consentimiento y derechos convierte una feature técnicamente disponible en un riesgo de uso.
 
-Extiende `privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia` desde el escenario pedagógico al de la identificación automática, y cuelga del claim multimodal como su cara de riesgo legal.
+Se relaciona con la nota de política de reconocimiento facial como variable de producto y con el riesgo de privacidad y consentimiento al usar imágenes de personas reales en docencia.
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
@@ -66,3 +68,4 @@ Extiende `privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia` des
 - relates_to → [[riezgo-de-corte-silencioso-de-politica-en-flujos-de-imagenes]]
 - relates_to → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
 - supports → [[privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia]]
+- relates_to → [[politica-de-face-recognition-como-variable-de-producto]]

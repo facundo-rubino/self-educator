@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-09'
+updated: '2026-10-14'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
+- brief-scope
 - docencia
-- voz
 - hipotesis
+- open-question
+- teaching
+- voice-loop
+- voz
 base_confidence: 0.04
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -30,21 +34,29 @@ links:
   type: relates_to
 - to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
   type: derived_from
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: relates_to
+- to: ai-coach-como-herramienta-de-foco-personal
+  type: relates_to
+- to: ai-coach-telefono-como-canal-asincrono-baja-friccion-hipotesis
+  type: relates_to
 ---
 
 ## What it is
-Un loop de speech-to-text, text-to-speech y LLM es un candidato plausible como primitiva para revisar ejercicios o practicar explicación oral en docencia de programación, pero el documento que enumera esos componentes no demuestra ese uso [49140f9d5133d3c7]. La pregunta queda abierta: ¿el ensamblado de voz descrito sirve como primitiva pedagógica o es únicamente un canal de conversación personal?
+¿Puede el loop STT/TTS/LLM al teléfono servir como interfaz conversacional para práctica guiada o feedback en docencia de programación? El documento [49140f9d5133d3c7] describe únicamente el pipeline; no menciona docencia, feedback ni evaluación. La pregunta queda abierta y sin evidencia de soporte.
 
 ## Evidence
-- El documento enumera STT, TTS y LLM sin declarar ningún uso docente — source: 49140f9d5133d3c7
-- No hay workflow, prompts, métricas ni código que permitan verificar el uso pedagógico — source: 49140f9d5133d3c7
+- El documento describe el stack STT + TTS + LLM + número virtual sin proponer su uso docente — source: 49140f9d5133d3c7
 
 ## Why it matters
-Evita que la adyacencia léxica («coach», «LLM», «voz») se convierta en evidencia sobre la rama de docencia del brief. Si apareciera un documento con el flujo real, esta nota sería el punto de integración.
+Si la primitiva fuese válida, podría reutilizarse para feedback conversacional a bajo coste. Como no hay observación, la transferencia no es admisible en el brief actual. La docencia entry-level, además, fue explícitamente movida fuera de este brief hacia el profile `teaching`.
 
-Deriva del stack enumerado en el documento. Se relaciona con el riesgo ya registrado de que un prompt para generar un artefacto no es evidencia de docencia, y con la nota que prohíbe inventar el vínculo del AI coach con docencia y liderazgo.
+Es la pregunta que el artefacto de `ai-coach-voz-a-voz-ensamblado-de-servicios` deja abierta. El canal de foco personal se documenta en `ai-coach-como-herramienta-de-foco-personal`; la hipótesis paralela sobre el canal telefónico está en `ai-coach-telefono-como-canal-asincrono-baja-friccion-hipotesis`.
 
 ## Links
 - derived_from → [[ai-coach-stack-stt-tts-llm-numero-virtual]]
 - relates_to → [[prompt-para-artefacto-interactivo-no-es-evidencia-de-docencia]]
 - derived_from → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
+- relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- relates_to → [[ai-coach-como-herramienta-de-foco-personal]]
+- relates_to → [[ai-coach-telefono-como-canal-asincrono-baja-friccion-hipotesis]]

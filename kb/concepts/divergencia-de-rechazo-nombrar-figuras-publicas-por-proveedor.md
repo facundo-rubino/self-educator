@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-08'
+updated: '2026-10-14'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -29,9 +29,10 @@ tags:
 - politicas-de-proveedor
 - proveedores
 - rechazo
+- refusal
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -78,20 +79,21 @@ links:
   type: relates_to
 - to: afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica
   type: supports
+- to: asimetria-de-rechazo-gemini-vs-chatgpt-claude-identificacion-de-personas
+  type: relates_to
 ---
 
 ## What it is
-Un ítem RSS [19cb8032958cd964] reporta que ChatGPT y Claude no identifican figuras públicas en imágenes, mientras que Gemini sí lo permite. La observación es una frase sin prompts, versiones, cuentas ni región: no se sabe qué se probó, con qué modelo, ni en qué fecha. Es un snapshot de política de producto, no un resultado de capacidad.
+El mismo tipo de tarea —nombrar una figura pública en una imagen— recibe respuestas divergentes según el proveedor: Gemini lo hace, ChatGPT y Claude no. Es conducta observable de producto, no una propiedad general de «los LLMs».
 
 ## Evidence
-- ChatGPT y Claude no identifican figuras públicas en imágenes; Gemini sí lo hace — source: 19cb8032958cd964
-- Sin cuerpo argumental, prompts, imágenes de prueba, métricas ni condiciones de evaluación — source: 19cb8032958cd964
-- Clúster de un solo documento con engagement=0 y novelty=0.00 — source: sig-237cc97a9794
+- Gemini sí, ChatGPT y Claude no, según el único ítem RSS [19cb8032958cd964] — fuente: sig-237cc97a9794
+- Sin repetición, versiones ni condiciones de prueba en el documento — fuente: sig-237cc97a9794
 
 ## Why it matters
-La observación agrupa dos cosas que conviene mantener separadas: que un modelo *pueda* nombrar a alguien en una imagen (capacidad) y que el proveedor *permita* hacerlo (política). Una asimetría de política puede cambiar de un día para otro y no se extiende a otros modelos del mismo proveedor ni a otras cuentas o regiones. Como sonda de proveedores es interesante; como hallazgo estable, no.
+Obliga a tratar el rechazo como comportamiento por producto, con resultados verificados por proveedor y por tarea, no como una capacidad del modelo genérico.
 
-Es una instancia concreta de `divergencia-de-rechazo-entre-proveedores` —mismo tipo de prompt, distinta respuesta—, y refuerza `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo` y `afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica`: «Gemini sí lo hace» describe una política por defecto, no una capacidad exclusiva. Se solapa con la nota de actor `gemini-no-rechaza-nombrar-figuras-publicas`, que registra el mismo ítem desde el lado del proveedor.
+Se relaciona con la asimetría de rechazo; sostiene la nota general de divergencia de rechazo entre proveedores. Contradice la lectura poblacional: una observación de un proveedor no autoriza un claim sobre «los LLMs».
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -115,3 +117,4 @@ Es una instancia concreta de `divergencia-de-rechazo-entre-proveedores` —mismo
 - relates_to → [[privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas]]
 - relates_to → [[gemini-no-rechaza-nombrar-figuras-publicas]]
 - supports → [[afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica]]
+- relates_to → [[asimetria-de-rechazo-gemini-vs-chatgpt-claude-identificacion-de-personas]]

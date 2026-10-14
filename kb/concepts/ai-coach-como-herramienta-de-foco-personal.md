@@ -9,19 +9,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-12'
+updated: '2026-10-14'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
 - autorregulacion
+- brief-scope
 - monkey-mind
 - organizacion-personal
+- personal-productivity
 - productividad
 - productividad-personal
+- self-regulation
 base_confidence: 0.04
 half_life_days: 180
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -44,18 +47,25 @@ links:
   type: supports
 - to: puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia
   type: supports
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: relates_to
+- to: ai-coach-voz-loop-riesgos-latencia-stt-tts-coste-no-declarados
+  type: relates_to
+- to: ai-coach-stack-stt-tts-llm-numero-virtual
+  type: relates_to
 ---
 
 ## What it is
-El propósito declarado del proyecto es manejar la propia «monkey mind» (mente inquieta, autodiálogo). Eso sitúa el artefacto en el terreno de la autorregulación personal, no en el de la ingeniería de agentes para equipos o docencia.
+El AI coach descrito en [49140f9d5133d3c7] se enmarca explícitamente como herramienta de autorregulación personal («tame my monkey mind»), no como un sistema aplicado a programar, gestionar equipos ni enseñar. Su alcance es el foco y la conversación individual del propio autor.
 
 ## Evidence
-- El propósito declarado del coach es ayudar a manejar la propia «monkey mind», lo que sitúa el proyecto en el terreno de la autorregulación personal más que en el de la ingeniería de agentes para equipos o docencia — source: 49140f9d5133d3c7
+- El título indica que el propósito es lidiar con la propia «monkey mind» (autorregulación y atención personal) — source: 49140f9d5133d3c7
+- El documento describe la construcción del coach, sin reportar resultados ni métricas de efectividad — source: 49140f9d5133d3c7
 
 ## Why it matters
-Un dev que lidera y enseña puede usar herramientas de foco personal, pero este documento no conecta el artefacto con estimación, secuenciamiento, alcance, liderazgo ni enseñanza. Tratar el proyecto como evidencia de esas prácticas sería inferencia del analista, no hallazgo del texto.
+El encaje con el brief (agentes aplicados a programar, liderazgo técnico, productividad y estudio) es débil y no demostrado desde esta fuente. Cualquier extrapolación hacia liderazgo de equipos o docencia sería inferencia del lector, no contenido del documento.
 
-Deriva del stack técnico descrito en la nota del ensamblado STT/TTS/LLM/número virtual. Se relaciona con el encuadre de «monkey mind» como productividad personal y da apoyo a las notas de riesgo que marcan como invención vincular un AI coach anecdótico con liderazgo o docencia.
+Se apoia en `ai-coach-voz-a-voz-ensamblado-de-servicios` (el artefacto concreto) y `ai-coach-stack-stt-tts-llm-numero-virtual` (los componentes). El encuadre de foco personal se conecta con `monkey-mind-como-encuadre-de-productividad-personal`. Las limitaciones operativas del pipeline están en `ai-coach-voz-loop-riesgos-latencia-stt-tts-coste-no-declarados`.
 
 ## Links
 - relates_to → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
@@ -67,3 +77,6 @@ Deriva del stack técnico descrito en la nota del ensamblado STT/TTS/LLM/número
 - supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
 - supports → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
 - supports → [[puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia]]
+- relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- relates_to → [[ai-coach-voz-loop-riesgos-latencia-stt-tts-coste-no-declarados]]
+- relates_to → [[ai-coach-stack-stt-tts-llm-numero-virtual]]

@@ -1,26 +1,19 @@
-# Brief — 2026-10-13
+# Brief — 2026-10-14
 
 ## Los titulares
 
-1. [[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model](https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder) — *IA y agentes en mi trabajo*
-2. [Quoting Geoffrey Huntley](https://simonwillison.net/2026/Oct/13/geoffrey-huntley/) — *IA y agentes en mi trabajo*
+1. [Redesigning source control at Anthropic](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model](https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder)
+### [Redesigning source control at Anthropic](https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/)
 
-El clúster contiene un único documento [4004eb9d4bbe0e76], un post de AINews del feed RSS con engagement=0, que afirma que Meta Superintelligence Labs (MSL) ha completado su ascenso como laboratorio de frontera con un m…
+The signal "Redesigning source control at Anthropic" is not actually represented in this cluster
 
-<sub>fuentes: rss · confianza: 5%</sub>
-
-### [Quoting Geoffrey Huntley](https://simonwillison.net/2026/Oct/13/geoffrey-huntley/)
-
-El clúster parece ser un error de agregación: casi ninguno de los documentos aborda el tema declarado (liderazgo técnico, agentes de IA para programar/gestionar/enseñar, oficio de software engineering, productividad y t…
-
-<sub>fuentes: files, rss · confianza: 72% · en el KB: `quoting-geoffrey-huntley-cluster-error-de-agregacion`, `quoting-geoffrey-huntley-corroboracion-1-00-es-artefacto`, `quoting-geoffrey-huntley-fallo-de-filtrado-determinista`</sub>
+<sub>fuentes: files, rss · confianza: 5% · en el KB: `redesigning-source-control-at-anthropic-sin-referente-en-el-cluster`, `redesigning-source-control-ausencia-de-evidencia-no-es-evidencia-de-ausencia`, `redesigning-source-control-cluster-heterogeneo-volcado-rss`, `redesigning-source-control-critica-critic-vacuous-autoinvalidante`</sub>
 
 ---
 
-<sub>4 señales consideradas, 2 descartadas por no ser de ningún tema, 23 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
+<sub>3 señales consideradas, 2 descartadas por no ser de ningún tema, 25 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>

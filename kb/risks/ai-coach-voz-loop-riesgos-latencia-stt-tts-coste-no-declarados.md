@@ -9,18 +9,24 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-09'
+updated: '2026-10-14'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
-- voz
-- latencia
+- cost
 - coste
+- latencia
+- latency
 - riesgo
+- risk
+- stt
+- tts
+- voice-pipeline
+- voz
 base_confidence: 0.04
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -31,21 +37,26 @@ links:
   type: relates_to
 - to: asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual
   type: relates_to
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: relates_to
+- to: ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica
+  type: relates_to
 ---
 
 ## What it is
-Un coach por voz que ensambla STT, TTS, LLM y un número virtual arrastra riesgos de ingeniería evidentes —latencia del loop completo, calidad del STT y del TTS, coste por llamada— que el documento no reconoce [49140f9d5133d3c7]. Estos riesgos condicionan si el artefacto es usable como canal de interacción continuo.
+Un pipeline de voz bidireccional (STT → LLM → TTS sobre telefonía) acumula latencias en cadena y coste por llamada minuto a minuto. El documento [49140f9d5133d3c7] describe el stack pero no reporta latencias, tasas de error STT/TTS ni coste operativo.
 
 ## Evidence
-- El documento enumera los cuatro componentes sin mencionar latencia, calidad ni coste — source: 49140f9d5133d3c7
-- No hay métricas ni evaluación del flujo de voz — source: 49140f9d5133d3c7
+- El documento describe la composición STT + TTS + LLM + número virtual pero no reporta métricas de latencia, precisión ni coste — source: 49140f9d5133d3c7
 
 ## Why it matters
-Citar el ensamblado como patrón funcional sería prematuro: sin reconocimiento de estos riesgos no hay evidencia de que el loop sea viable en uso real. Cualquier adopción en docencia o en flujos de equipo debería medir latencia y coste antes de comprometerse.
+Sin estas cifras no puede evaluarse si el artefacto es viable más allá de la demo del autor. Un plan de adopción del mismo pipeline en gestión personal o en feedback conversacional exige esos números antes de comprometerse.
 
-Deriva del stack enumerado. Se relaciona con los riesgos ya registrados de privacidad y coste en asistentes de voz continuos, y con el riesgo de asumir novedad en el simple ensamblado de STT, TTS, LLM y número virtual.
+Cuantifica las condiciones prácticas del artefacto descrito en `ai-coach-voz-a-voz-ensamblado-de-servicios`. Los costes recurrentes y la privacidad de una grabación continua de voz se enlazan con `privacidad-y-costo-en-asistentes-de-voz-continuos`. La falta de evaluación sistemática es parte de `ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica`.
 
 ## Links
 - derived_from → [[ai-coach-stack-stt-tts-llm-numero-virtual]]
 - relates_to → [[privacidad-y-costo-en-asistentes-de-voz-continuos]]
 - relates_to → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
+- relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- relates_to → [[ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica]]

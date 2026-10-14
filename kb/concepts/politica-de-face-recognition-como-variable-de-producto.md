@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-10-14'
 sources:
 - 19cb8032958cd964
+- sig-237cc97a9794
 tags:
+- cumplimiento
 - face-recognition
 - gobernanza
-- cumplimiento
 - multimodal
+- politica-de-producto
+- proveedores
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -28,20 +31,26 @@ links:
   type: relates_to
 - to: aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales
   type: relates_to
+- to: asimetria-de-rechazo-gemini-vs-chatgpt-claude-identificacion-de-personas
+  type: derived_from
+- to: criterios-de-aceptacion-dependientes-de-proveedor
+  type: supports
 ---
 
 ## What it is
-Identificar figuras públicas a partir de imágenes de usuario activa regímenes de privacidad biométrica y términos de uso que difieren por API. La política de reconocimiento facial es, por tanto, una variable de gobernanza y cumplimiento del producto, no un atributo del modelo elegido.
+La decisión de identificar o rechazar la identificación de una persona en una imagen es una variable de política de producto de cada proveedor, no una propiedad derivable del modelo. Dos sistemas con capacidad visual comparable pueden diferir solo en esa política.
 
 ## Evidence
-- El análisis identifica la regulación de privacidad biométrica (GDPR, regímenes tipo BIPA) y los términos de uso por API como dominios relevantes para verificar la afirmación — source: 19cb8032958cd964
-- Los riesgos enumerados incluyen la exposición legal y reputacional de construir features de identificación sin consentimiento — source: 19cb8032958cd964
+- Gemini identificará figuras públicas; ChatGPT y Claude no — diferencia de política entre productos, según el ítem RSS [19cb8032958cd964] — fuente: sig-237cc97a9794
+- El comportamiento puede diferir por UI, región, versión de política o por el juicio del modelo sobre qué es una «figura pública» — fuente: sig-237cc97a9794
 
 ## Why it matters
-Desplaza la decisión de «qué modelo es mejor» a «qué proveedor permite qué, bajo qué términos y en qué jurisdicción». Es la pregunta que precede a cualquier feature de subida de imágenes orientada a identificar personas.
+Para un equipo que construye features multimodales, la política es una dependencia externa que puede cambiar sin aviso. Los criterios de aceptación deben fijarse por proveedor, no por supuesta capacidad genérica de «LLMs».
 
-Se relaciona con la divergencia de rechazo entre proveedores, que es su manifestación observable, y con los criterios de aceptación dependientes de proveedor, que deben incorporar la capa de cumplimiento por región.
+Deriva de la asimetría de rechazo entre proveedores; se relaciona con los criterios de aceptación dependientes de proveedor en features multimodales.
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]
+- derived_from → [[asimetria-de-rechazo-gemini-vs-chatgpt-claude-identificacion-de-personas]]
+- supports → [[criterios-de-aceptacion-dependientes-de-proveedor]]

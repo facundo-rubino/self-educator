@@ -10,19 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-09'
+updated: '2026-10-14'
 sources:
 - 19cb8032958cd964
+- sig-237cc97a9794
 tags:
-- gemini
 - chatgpt
 - claude
+- gemini
 - multimodal
 - politica-de-modelo
+- politica-de-rechazo
 - reconocimiento-de-personas
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -39,18 +41,25 @@ links:
   type: supports
 - to: probe-de-rechazo-por-identidad-en-produccion
   type: relates_to
+- to: gemini-no-rechaza-nombrar-figuras-publicas
+  type: relates_to
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: derived_from
+- to: divergencia-de-rechazo-entre-proveedores
+  type: supports
 ---
 
 ## What it is
-La aserción central del documento [19cb8032958cd964] es una asimetría por proveedor: ChatGPT y Claude no identificarían figuras públicas en imágenes, Gemini sí. La afirmación no distingue entre que el modelo no pueda hacerlo y que el proveedor no quiera hacerlo, lo que abre la lectura alternativa de política de uso antes que de capacidad técnica.
+Según un único ítem RSS, Gemini identificará figuras públicas en imágenes mientras ChatGPT y Claude no lo harán. La asimetría es una divergencia de política de producto entre proveedores, no evidencia de una diferencia de capacidad técnica subyacente.
 
 ## Evidence
-- «ChatGPT y Claude no identificarían figuras públicas en imágenes, mientras que Gemini sí lo haría» — source: 19cb8032958cd964
+- Gemini identificará figuras públicas en imágenes mientras ChatGPT y Claude no, según el ítem RSS [19cb8032958cd964] — fuente: sig-237cc97a9794
+- El claim se apoya en un solo documento, sin verificación independiente — fuente: sig-237cc97a9794
 
 ## Why it matters
-Si la diferencia fuese de política y no de rendimiento, entonces la pregunta correcta no es «qué modelo acierta» sino «qué proveedor permite este caso de uso», y la implicación operativa es hacer spike por proveedor antes de comprometer cualquier flujo que dependa de reconocimiento de personas (verificación, moderación, accesibilidad). Tratarla como capacidad llevaría a elegir el modelo equivocado por el criterio equivocado.
+Si se confirma, la elección de proveedor para features multimodales depende de la política de identificación de personas, variable por producto, región y versión. No de la «capacidad» del modelo.
 
-Es evidencia directa de `gemini-no-rechaza-nombrar-figuras-publicas` y coincide con la línea de `divergencia-de-rechazo-al-nombrar-figuras-publicas-por-proveedor`. El puente analítico correcto es `afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica` (la lectura política del mismo dato) y `politica-de-face-recognition-como-variable-de-producto` (la política como variable de selección, no de benchmark). La conclusión práctica se articula en `spike-por-proveedor-para-comportamiento-de-rechazo` y `probe-de-rechazo-por-identidad-en-produccion`.
+Se relaciona con la nota de Gemini que no rechaza nombrar figuras públicas y con la de divergencia de rechazo entre proveedores; deriva de la distinción entre capacidad técnica y política de rechazo.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -59,3 +68,6 @@ Es evidencia directa de `gemini-no-rechaza-nombrar-figuras-publicas` y coincide 
 - relates_to → [[politica-de-face-recognition-como-variable-de-producto]]
 - supports → [[spike-por-proveedor-para-comportamiento-de-rechazo]]
 - relates_to → [[probe-de-rechazo-por-identidad-en-produccion]]
+- relates_to → [[gemini-no-rechaza-nombrar-figuras-publicas]]
+- derived_from → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- supports → [[divergencia-de-rechazo-entre-proveedores]]

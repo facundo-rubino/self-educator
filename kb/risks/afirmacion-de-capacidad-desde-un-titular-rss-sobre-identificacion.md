@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-10-12'
+updated: '2026-10-14'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -34,11 +34,12 @@ tags:
 - politica-vs-capacidad
 - riesgo
 - riesgo-de-inferencia
+- riesgos-de-afirmacion
 - rss
 - titular-rss
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -99,19 +100,25 @@ links:
   type: supports
 - to: privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas
   type: relates_to
+- to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  type: supports
+- to: afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica
+  type: relates_to
+- to: confundir-rechazo-por-politica-con-capacidad-de-modelo
+  type: relates_to
 ---
 
 ## What it is
-Derivar «los LLM pueden identificar figuras públicas» de un titular que dice que ChatGPT y Claude no las identifican y que Gemini sí es una inferencia autocontradictoria: la evidencia contradice el claim en vez de sostenerlo. El titular afirma comportamiento diferencial de rechazo, no una capacidad general demostrada.
+Tomar un anuncio de producto («Gemini identificará figuras públicas») como demostración de capacidad («los LLMs ahora pueden identificar figuras públicas») confunde el compromiso declarado de un proveedor con una capacidad medida del modelo.
 
 ## Evidence
-- El titular afirma que ChatGPT y Claude no identifican figuras públicas en imágenes, pero Gemini sí lo hace — source: 19cb8032958cd964
-- El documento es un ítem RSS sin engagement y sin cuerpo analítico, metodología, ejemplos ni referencias verificables — source: 19cb8032958cd964
+- El ítem RSS reporta un anuncio de producto, no un benchmark ni datos de precisión — fuente: sig-237cc97a9794
+- El título «can now identify» presenta como capacidad lo que la fuente describe como comportamiento de producto diferenciado — fuente: sig-237cc97a9794
 
 ## Why it matters
-Una afirmación de capacidad extraída de un titular de rechazo confunde capacidad de modelo con política de proveedor. Cualquier decisión de herramienta o de docencia basada en este titular quedaría apoyada en una inferencia que el propio texto desmiente.
+Propagar esa conversión contamina el conocimiento del equipo con capacidades no verificadas y decisiones de proveedor basadas en marketing.
 
-Se apoya en la distinción entre capacidad técnica y política de rechazo: «Gemini sí lo hace» describe cumplimiento, no una capacidad medida del modelo.
+Sostiene la nota de claim sin metodología; se relaciona con las notas sobre capacidad por defecto vs rechazo por política y confundir rechazo por política con capacidad de modelo.
 
 ## Links
 - supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
@@ -142,3 +149,6 @@ Se apoya en la distinción entre capacidad técnica y política de rechazo: «Ge
 - derived_from → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
 - supports → [[afirmacion-de-novedad-sin-linea-base]]
 - relates_to → [[privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas]]
+- supports → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- relates_to → [[afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica]]
+- relates_to → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]

@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-13'
+updated: '2026-10-14'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
-- proyecto-personal
-- evidencia
 - brief
+- brief-scope
+- evidence-quality
+- evidencia
+- proyecto-personal
+- risk
+- singleton
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-10-13'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -30,21 +34,37 @@ links:
   type: supports
 - to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
   type: supports
+- to: ai-coach-voz-a-voz-ensamblado-de-servicios
+  type: relates_to
+- to: ai-coach-monkey-mind-singleton-engagement-cero
+  type: relates_to
+- to: generalizar-un-proyecto-personal-a-practica-profesional-es-inferencia
+  type: relates_to
+- to: puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia
+  type: relates_to
+- to: riesgo-de-generalizar-desde-ai-coach-monkey-mind
+  type: relates_to
 ---
 
 ## What it is
-El documento es un anuncio/descripción de proyecto personal de arquitectura de un asistente conversacional [49140f9d5133d3c7]. No contiene análisis sobre liderazgo técnico, estimación, secuenciamiento, oficio ni docencia de programación [49140f9d5133d3c7]. La palabra «coach» no basta para sostener una conexión con mentoring o enseñanza: el documento no menciona ninguna aplicación a programar, gestionar equipos o enseñar [49140f9d5133d3c7].
+El cluster se apoya en un único documento con engagement=0, novelty=0.00 y corroboración parcial 0.50. Un artefacto autodescrito por su autor no es evidencia de práctica profesional, de adopción ni de efectividad. Solo puede afirmarse que alguien describió haber construido la pieza.
 
 ## Evidence
-- El documento describe la construcción de un coach de IA con STT, TTS, un LLM y un número virtual — source: 49140f9d5133d3c7
-- El contenido disponible se limita a una línea descriptiva de arquitectura — source: 49140f9d5133d3c7
+- El cluster contiene un único documento [49140f9d5133d3c7] — source: 49140f9d5133d3c7
+- La novedad registrada es 0.00 y el engagement es cero — source: 49140f9d5133d3c7
+- El documento no reporta resultados ni evaluación de efectividad del coach — source: 49140f9d5133d3c7
 
 ## Why it matters
-Usar este clúster para justificar conclusiones sobre agentes de IA aplicados a docencia o liderazgo sería una generalización indebida desde un solo documento descriptivo. El valor del documento es, como máximo, ilustrativo de un stack, no probatorio de práctica.
+Impedir que un solo anuncio personal se compile como hallazgo de práctica técnica, o que se infiera impacto/tendencia, es exactamente el modo de fallo que el brief previene. El artefacto puede registrar, pero no probar relevancia para los ejes de agentes, liderazgo o docencia.
 
-Extiende el patrón ya establecido sobre proyectos personales de herramienta. Refuerza y se apoya en la nota existente sobre el riesgo de vincular el AI coach con liderazgo o docencia sin evidencia.
+Opera simétricamente a `ai-coach-voz-a-voz-ensamblado-de-servicios`, formulando su límite epistémico. Se enlaza con la métrica cruda ya registrada en `ai-coach-monkey-mind-singleton-engagement-cero`, con la regla general `generalizar-un-proyecto-personal-a-practica-profesional-es-inferencia`, y con los puentes específicos ya rechazados en `puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia` y `riesgo-de-generalizar-desde-ai-coach-monkey-mind`.
 
 ## Links
 - relates_to → [[ai-coach-stack-stt-tts-llm-numero-virtual]]
 - supports → [[proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional]]
 - supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
+- relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
+- relates_to → [[ai-coach-monkey-mind-singleton-engagement-cero]]
+- relates_to → [[generalizar-un-proyecto-personal-a-practica-profesional-es-inferencia]]
+- relates_to → [[puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia]]
+- relates_to → [[riesgo-de-generalizar-desde-ai-coach-monkey-mind]]

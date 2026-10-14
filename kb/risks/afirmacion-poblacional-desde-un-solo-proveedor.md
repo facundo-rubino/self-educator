@@ -9,21 +9,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-12'
+updated: '2026-10-14'
 sources:
 - 19cb8032958cd964
 - 4e1f2a7e255ed83a
+- sig-237cc97a9794
 tags:
 - evidencia
 - generalizacion
 - llm
+- metodologia
 - n-igual-1
 - proveedores
 - riesgo
 - sobre-generalizacion
 base_confidence: 0.12
 half_life_days: 120
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-14'
 provenance:
   scale: M
   query: null
@@ -48,19 +50,23 @@ links:
   type: relates_to
 - to: prueba-con-proveedores-y-cuentas-especificas
   type: supports
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: supports
+- to: ranking-de-figuras-publicas-sin-metodologia-ni-fecha
+  type: relates_to
 ---
 
 ## What it is
-Un solo ítem RSS con engagement=0 y corroboración de 0.50 no sostiene un enunciado sobre «los LLM» en general. La observación, en el mejor caso, describe el comportamiento de tres productos nombrados en un momento no especificado.
+El uso laxo de «LLMs» para describir el comportamiento de un único producto multimodal produce un salto de una observación particular a una generalización poblacional que la evidencia no autoriza.
 
 ## Evidence
-- El cluster tiene corroboration=0.50, lo que implica que no hay evidencia independiente que respalde la afirmación dentro del corpus — source: 19cb8032958cd964
-- El documento es un ítem RSS sin engagement y sin cuerpo analítico — source: 19cb8032958cd964
+- El claim real es sobre una feature de un producto multimodal concreto, no sobre «los LLMs» — fuente: sig-237cc97a9794 (señalado por el crítico)
+- No hay corroboración independiente en el clúster — fuente: sig-237cc97a9794
 
 ## Why it matters
-Los claims poblacionales sobre LLM se degradan rápido por cambios de producto y regulatorios. Un titular aislado puede ser rumor, observación anecdótica o clickbait, y no debería consumir cupo analítico en el brief.
+Un claim poblacional mal formulado se cita luego como si fuera un hecho del campo y condiciona decisiones de arquitectura multimodal sin base.
 
-Coincide con la regla de no generalizar políticas de rechazo sin fijar proveedor, cuenta, versión y región.
+Contradice directamente la lectura poblacional de la divergencia por proveedor; se relaciona con la falta de metodología y fecha en los claims de identificación de figuras públicas.
 
 ## Links
 - derived_from → [[divergencia-de-rechazo-entre-proveedores]]
@@ -73,3 +79,5 @@ Coincide con la regla de no generalizar políticas de rechazo sin fijar proveedo
 - relates_to → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
 - relates_to → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[prueba-con-proveedores-y-cuentas-especificas]]
+- supports → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[ranking-de-figuras-publicas-sin-metodologia-ni-fecha]]

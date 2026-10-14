@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-10-12'
+updated: '2026-10-14'
 sources:
 - 19cb8032958cd964
 - 93963a5f93e58d05
@@ -32,7 +32,7 @@ tags:
 - titulo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -73,22 +73,22 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido
   type: relates_to
+- to: task-specific-llm-evals-adyacencia-al-brief-no-demostrada
+  type: derived_from
 ---
 
 ## What it is
-El único contenido sustantivo del documento [93963a5f93e58d05] es una lista de categorías de tarea para evals de LLM: clasificación, resumen, traducción, regurgitación de copyright y toxicidad. No hay metodología, ni modos de fallo, ni resultados, ni argumento autoral sobre qué funciona y qué no. El título plantea una distinción («Do & Don't Work») que el cuerpo no desarrolla.
+El documento [93963a5f93e58d05] se titula «Task-Specific LLM Evals that Do & Don't Work». Lo único recuperable de su contenido es la enumeración de categorías de tarea evaluadas; no hay métodos, resultados ni recomendaciones. El título promete un veredicto («do & don't work») que el cuerpo ingerido no entrega.
 
 ## Evidence
-- El documento identifica clasificación, resumen, traducción, regurgitación de copyright y toxicidad como categorías de tarea para evals de LLM — source: 93963a5f93e58d05
-- El documento afirma en su título una distinción entre evals que funcionan y evals que no funcionan — source: 93963a5f93e58d05
-- No se aportan criterios, métodos, ejemplos ni resultados que sustenten esa distinción — source: 93963a5f93e58d05
-- novelty=0.00, engagement=0:
-  perfil consistente con una entrada de agregador sin elaborar, no con un análisis trabajado — source: 93963a5f93e58d05
+- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» — source: 93963a5f93e58d05
+- El documento enumera evals para clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
+- engagement=0, ingerido vía RSS — source: 93963a5f93e58d05
 
 ## Why it matters
-El documento no puede sostener ningún hallazgo sobre diseño de evals. Solo es citable como existencia de una taxonomía nominal de objetivos de eval. Cualquier afirmación sobre qué evals funcionan, qué fallan o cómo diseñarlas sería invención, no lectura del texto.
+La nota registra explícitamente el hueco: cualquier claim sobre «qué funciona y qué no» en evals por tarea sería extrapolación no soportada. Recuperar el texto completo antes de citarlo es precondición para usarlo.
 
-`relates_to` con las otras notas del mismo clúster de título-sin-cuerpo: repiten el mismo modo de fallo (título citable, cuerpo ausente). Se conecta también con la nota sobre singleton con engagement cero y novelty cero, porque es el mismo perfil de scoring, y con la nota sobre adyacencia al brief no demostrada, porque ese vínculo es exactamente lo que el crítico marca como coincidencia léxica.
+Se relaciona con las otras notas del mismo clúster que documentan el alcance declarado y las familias de tarea como único contenido verificable. De `task-specific-llm-evals-adyacencia-al-brief-no-demostrada` se deriva este registro de la insuficiencia de cuerpo.
 
 ## Links
 - supports → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -109,3 +109,4 @@ El documento no puede sostener ningún hallazgo sobre diseño de evals. Solo es 
 - relates_to → [[afirmar-mejora-de-liderazgo-por-juzgar-evaluadores-de-llm-seria-invencion]]
 - relates_to → [[task-specific-llm-evals-singleton-engagement-cero-novelty-cero]]
 - relates_to → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
+- derived_from → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]

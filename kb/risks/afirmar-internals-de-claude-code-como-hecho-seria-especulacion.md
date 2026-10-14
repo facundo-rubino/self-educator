@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-07'
+updated: '2026-10-14'
 sources:
 - abf61eeec75462f9
 tags:
+- claude-code
 - docencia
 - etica
 - fuente-no-verificada
-- claude-code
+- system-prompt
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-14'
 provenance:
   scale: XL
   query: null
@@ -31,21 +32,27 @@ links:
   type: supports
 - to: claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion
   type: relates_to
+- to: claude-code-source-leak-sin-artefacto-primario
+  type: relates_to
+- to: leak-sin-autenticidad-establecida-claude-code
+  type: derived_from
 ---
 
 ## What it is
-Riesgo de usar el ejemplo de Claude Code como contenido técnico enseñable sin marcar que proviene de una fuente filtrada no verificada. El diseño interno de un producto no es práctica recomendada, y menos si la fuente es un RSS que no muestra el artefacto.
+El documento [abf61eeec75462f9] afirma que el código fuente filtrado de Claude Code muestra un system prompt ensamblado a partir de docenas de partes condicionales. El crítico ajusta la confianza a 0.05 y marca el veredicto como WEAK. Con esa base, tratar la composición exacta del prompt como hecho verificable ante un equipo o una clase sería especulación, no reporte de un hallazgo.
 
 ## Evidence
-- El documento afirma «leaked source» sin mostrar código ni prompt observado. — source: abf61eeec75462f9
-- El propio analista reconoce que no es verificable desde dentro del clúster. — source: abf61eeec75462f9
+- El único documento del clúster [abf61eeec75462f9] afirma el ensamblado condicional citando un leak.
+- El crítico señala que el pipeline evalúa clústeres cuyo cuerpo no se recuperó y que no existe segunda fuente independiente: "el documento dice que el leak muestra X".
 
 ## Why it matters
-Si se enseña, hay que encuadrarlo como patrón arquitectónico general (composición condicional de instrucciones), no como detalle propietario reverse-engineered. Presentarlo como hecho excede lo que la evidencia soporta y arrastra a los estudiantes a repetir un claim no verificado.
+Un dev-líder o docente que cite este caso como evidencia de diseño tendría que presentar como hecho una cadena de testimonios no verificados. El coste de equivocarse no es solo factual: erosiona la credibilidad al exponer internals de un producto ajeno que pueden estar desactualizados, incompletos o malinterpretados por el autor del documento.
 
-Refuerza `claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente`. Coincide con `sobre-generalizacion-desde-claude-code`: el diseño interno de un producto no es la práctica recomendada para agentes propios. Se relaciona con `claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion`.
+Depende de `leak-sin-autenticidad-establecida-claude-code`: sin autenticidad establecida, el leak no confirma lo que dice el leak. Se relaciona con `claude-code-source-leak-sin-artefacto-primario`, que documenta la ausencia del artefacto verificable.
 
 ## Links
 - supports → [[claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente]]
 - supports → [[sobre-generalizacion-desde-claude-code]]
 - relates_to → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]
+- relates_to → [[claude-code-source-leak-sin-artefacto-primario]]
+- derived_from → [[leak-sin-autenticidad-establecida-claude-code]]
