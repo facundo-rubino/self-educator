@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-07'
+updated: '2026-10-15'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -31,7 +31,7 @@ tags:
 - self-management
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -66,19 +66,24 @@ links:
   type: derived_from
 - to: afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion
   type: supports
+- to: ai-coach-stack-stt-tts-llm-numero-virtual
+  type: relates_to
+- to: cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional
+  type: derived_from
+- to: ai-coach-como-herramienta-de-foco-personal
+  type: supports
 ---
 
 ## What it is
-«Monkey mind» —la mente que salta de un objeto a otro— se usa como encuadre de un problema de foco personal. El artefacto construido para tratarlo es un coach, no una herramienta de gestión de equipos ni de docencia.
+El autor enmarca su AI coach como una herramienta para «domar la mente de mono»: un asistente de autorregulación personal. No es un instrumento de coordinación de equipo, estimación ni docencia, y el documento no lo presenta como tal.
 
 ## Evidence
-- El título presenta el proyecto como herramienta para «domar la mente de mono» — source: 49140f9d5133d3c7
-- El documento no menciona ningún eje del brief de liderazgo técnico, estimación, alcance o enseñanza — source: 49140f9d5133d3c7
+- El texto enmarca el proyecto como una forma de «domar la mente de mono» (monkey mind) del autor, es decir, un asistente personal para autorregulación más que una herramienta de equipo o de enseñanza — source: 49140f9d5133d3c7
 
 ## Why it matters
-Identifica el eje temático real del clúster (foco individual) para que no se lea como señal sobre práctica profesional. El vocabulario de productividad personal es contaminante en un brief de liderazgo si no se delimita.
+Fija el alcance del ítem: en el brief de agentes aplicados a programar, gestionar y enseñar, «monkey mind» pertenece al eje de productividad y técnicas de estudio, no al de liderazgo técnico ni docencia. Cualquier lectura de gestión sería extrapolación.
 
-Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo` (mismo recorte de alcance) y con `cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional` (el clúster previo, ya marcado como sin evidencia profesional).
+Es el encuadre declarado del stack de AI coach (relates_to) y una instancia concreta del hallazgo de que el clúster «AI coach / monkey mind» no contiene evidencia de práctica profesional (derived_from). Apoya la nota que trata el AI coach como herramienta de foco personal y no de liderazgo (supports).
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
@@ -96,3 +101,6 @@ Se relaciona con `ai-coach-como-herramienta-de-foco-no-de-liderazgo` (mismo reco
 - supports → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
 - derived_from → [[efectividad-de-ai-coach-no-demostrada]]
 - supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
+- relates_to → [[ai-coach-stack-stt-tts-llm-numero-virtual]]
+- derived_from → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
+- supports → [[ai-coach-como-herramienta-de-foco-personal]]

@@ -10,18 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-14'
-updated: '2026-10-14'
+updated: '2026-10-15'
 sources:
 - 4004eb9d4bbe0e76
 tags:
-- singleton
+- cluster-de-uno
 - engagement-cero
-- pipeline
+- evidencia
 - falso-positivo
 - modelos-frontera
+- pipeline
+- scoring
+- singleton
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -34,23 +37,35 @@ links:
   type: relates_to
 - to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
   type: relates_to
+- to: meta-muse-wonder-wonder-full-titular-sin-evidencia
+  type: supports
+- to: corroboracion-0-5-en-cluster-de-un-solo-documento-no-es-consenso
+  type: supports
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: supports
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: supports
 ---
 
 ## What it is
-El clúster se compone de un único documento con engagement=0, novelty=0.00, relevance=0.33 y corroboration=0.50. Esas señales son autodescripción del pipeline sobre un ítem presumiblemente reciclado de un roundup de noticias, no corroboración independiente de la afirmación del titular.
+El clúster se sostiene en un único documento RSS con engagement=0. La corroboración de 0.50 en un clúster de un solo documento no es consenso entre fuentes: es el valor por defecto del esquema. novelty=0.00 indica que el pipeline no encontró nada nuevo para el brief.
 
 ## Evidence
-- Un solo documento ingerido, con engagement cero — fuente: 4004eb9d4bbe0e76
-- novelty=0.00, relevance=0.33 y corroboration=0.50 acompañan al clúster en el informe del pipeline — fuente: 4004eb9d4bbe0e76
-- El crítico señala que las señales son circulares: un ítem emergido de un agregador es juzgado por señales derivadas del propio agregador — fuente: 4004eb9d4bbe0e76
+- El clúster contiene un solo documento, con engagement=0 — source: 4004eb9d4bbe0e76
+- novelty=0.00 y corroboration=0.50 según los scores del propio pipeline — source: 4004eb9d4bbe0e76
+- relevance=0.33: el documento no cubre los ejes del brief (docencia, estimación, secuenciación, alcance, craft, estudio) en absoluto — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-No hay contraste independiente que permita tratar la afirmación como hecho ni como refutación. La afirmación defendible es banal —una frase de roundup de baja interacción no sostiene un claim accionable— y el marco de «hallazgo negativo honesto» convierte un caveat de disponibilidad de datos en aparente resultado. Conviene revisar el umbral de admisión para clústeres de un solo documento con engagement cero.
+Evita tratar la mención de un lanzamiento como señal corroborada. El techo de lo compilable desde este clúster es una nota de alcance, no un hallazgo.
 
-Soporta la nota-cuestión sobre el titular sin benchmark y deriva del patrón ya registrado de que un clúster de un documento sin engagement no sostiene generalización. Se relaciona con los riesgos ya catalogados de propagar datos no verificados desde titulares RSS.
+Apoya la nota del titular sin evidencia. Reutiliza el patrón ya establecido sobre corroboración 0.50 en clústeres de un único documento y sobre documentos únicos sin engagement.
 
 ## Links
 - supports → [[muse-wonder-wonder-full-titular-sin-evidencia]]
 - derived_from → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
 - relates_to → [[afirmar-arr-y-valuacion-desde-titular-seria-propagar-dato-no-verificado]]
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- supports → [[meta-muse-wonder-wonder-full-titular-sin-evidencia]]
+- supports → [[corroboracion-0-5-en-cluster-de-un-solo-documento-no-es-consenso]]
+- supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- supports → [[generalizacion-desde-cluster-de-un-solo-documento]]

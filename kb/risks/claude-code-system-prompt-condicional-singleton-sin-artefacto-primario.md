@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-12'
-updated: '2026-10-12'
+updated: '2026-10-15'
 sources:
 - abf61eeec75462f9
+- sig-979a04e33a30
 tags:
 - claude-code
 - evidencia-debil
 - ingerimiento
+- singleton
+- system-prompt
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -32,23 +35,29 @@ links:
   type: supports
 - to: afirmar-internals-de-claude-code-como-hecho-seria-especulacion
   type: supports
+- to: vista-filtrada-de-codigo-no-confirma-composicion-condicional
+  type: relates_to
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: derived_from
 ---
 
 ## What it is
-Todo el hallazgo descansa en un solo doc_id [abf61eeec75462f9] cuyo único fundamento es una apelación a material «filtrado» ausente del clúster. No hay segundo doc_id, ni citas de código, ni artefacto primario inspeccionable.
+La única evidencia de que el system prompt de Claude Code se ensambla de docenas de partes condicionales proviene de un clúster de un solo documento (abf61eeec75462f9) con engagement 0 y sin corroboración independiente. La atribución de autoridad es al «código fuente filtrado»: no hay artefacto, diff ni traza inspeccionable de forma independiente.
 
 ## Evidence
-- El hallazgo completo depende de un único doc_id — source: abf61eeec75462f9
-- El ítem es RSS con engagement=0 y novelty=0.00, lo que indica bajo alcance y ausencia de información nueva frente al conocimiento previo — source: abf61eeec75462f9
-- El artefacto subyacente («código filtrado») no está presente en el clúster, por lo que el claim no es verificable contra un documento primario — source: abf61eeec75462f9
+- El clúster contiene un único documento y su engagement reportado es 0 — fuente: sig-979a04e33a30.
+- La afirmación se apoya en una fuente filtrada no autorizada, sin verificación independiente — fuente: sig-979a04e33a30.
+- El crítico del pipeline marca el razonamiento como circular: «the leaked source shows X» solo se atestigua a sí mismo — fuente: sig-979a04e33a30.
 
 ## Why it matters
-Es un caso de oído de oído: el analista no puede inspeccionar la fuente, no puede citar código y no puede corroborar con un segundo doc_id. El encuadre de «código filtrado» presta autoridad a un objeto inaccesible para sostener un claim arquitectónico. Un dev o docente no debería tratarlo como evidencia de cómo está construido ningún agente concreto.
+Cualquier uso de este claim en docencia, configuración de agentes o documentación de equipo queda sin respaldo verificable. El coste de citarlo como hecho es reproducir una fuente filtrada como si tuviera autoridad de ingeniería.
 
-Contradice directamente el claim de ensamblado condicional al negarle soporte. Refuerza los riesgos ya existentes sobre leaks sin autenticidad establecida y sobre documentos únicos sin engagement que no sostienen claims de práctica. Refuerza también la nota sobre afirmar internals de Claude Code como hecho.
+Contradice `claude-code-system-prompt-conditional-composition` en tanto que el claim ya compilado sobre la composición condicional carece de la base de evidencia que sugiere. Se deriva del patrón general `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica` y se relaciona con `vista-filtrada-de-codigo-no-confirma-composicion-condicional`.
 
 ## Links
 - contradicts → [[claude-code-system-prompt-conditional-composition]]
 - supports → [[leak-sin-autenticidad-establecida]]
 - supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
 - supports → [[afirmar-internals-de-claude-code-como-hecho-seria-especulacion]]
+- relates_to → [[vista-filtrada-de-codigo-no-confirma-composicion-condicional]]
+- derived_from → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]

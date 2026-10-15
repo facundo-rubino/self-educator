@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-14'
+updated: '2026-10-15'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -32,7 +32,7 @@ tags:
 - refusal
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -81,19 +81,21 @@ links:
   type: supports
 - to: asimetria-de-rechazo-gemini-vs-chatgpt-claude-identificacion-de-personas
   type: relates_to
+- to: afirmacion-de-capacidad-multimodal-sin-metodologia
+  type: contradicts
 ---
 
 ## What it is
-El mismo tipo de tarea —nombrar una figura pública en una imagen— recibe respuestas divergentes según el proveedor: Gemini lo hace, ChatGPT y Claude no. Es conducta observable de producto, no una propiedad general de «los LLMs».
+Un ítem RSS reporta que Gemini identifica figuras públicas en imágenes mientras ChatGPT y Claude no. La observación es un reporte de segunda mano sobre comportamiento de rechazo por proveedor, no una medición de capacidad subyacente.
 
 ## Evidence
-- Gemini sí, ChatGPT y Claude no, según el único ítem RSS [19cb8032958cd964] — fuente: sig-237cc97a9794
-- Sin repetición, versiones ni condiciones de prueba en el documento — fuente: sig-237cc97a9794
+- El clúster contiene un solo documento que afirma que ChatGPT y Claude declinan identificar figuras públicas en imágenes mientras Gemini sí lo hace — source: sig-237cc97a9794
+- El documento es un ítem RSS con engagement 0, sin tracción observada en los datos ingeridos — source: sig-237cc97a9794
 
 ## Why it matters
-Obliga a tratar el rechazo como comportamiento por producto, con resultados verificados por proveedor y por tarea, no como una capacidad del modelo genérico.
+Si la identificación de personas en imágenes está disponible en un asistente y no en otros, elegir el asistente para procesar capturas, diagramas o fotos de slides es una decisión de política/arquitectura, no un reemplazo commodity. El rechazo puede ser política deliberada, no incapacidad.
 
-Se relaciona con la asimetría de rechazo; sostiene la nota general de divergencia de rechazo entre proveedores. Contradice la lectura poblacional: una observación de un proveedor no autoriza un claim sobre «los LLMs».
+Relacionado con `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`: el mismo patrón conceptual aquí aplicado a imágenes de personas. Contradice la afirmación de que los LLM «ahora pueden» identificar figuras públicas: la dirección del cambio es de rechazo, no de capacidad.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -118,3 +120,4 @@ Se relaciona con la asimetría de rechazo; sostiene la nota general de divergenc
 - relates_to → [[gemini-no-rechaza-nombrar-figuras-publicas]]
 - supports → [[afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica]]
 - relates_to → [[asimetria-de-rechazo-gemini-vs-chatgpt-claude-identificacion-de-personas]]
+- contradicts → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-02'
+updated: '2026-10-15'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -18,12 +18,13 @@ tags:
 - evals
 - fuera-del-brief
 - llm
+- llm-evals
 - matching
 - matching-lexico
 - relevancia
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -50,19 +51,21 @@ links:
   type: relates_to
 - to: confirmacion-de-evaluacion-por-terceros-no-es-adopcion
   type: relates_to
+- to: task-specific-llm-evals-sin-conexion-con-agentes-o-docencia
+  type: relates_to
 ---
 
 ## What it is
-Ninguna evidencia del clúster conecta evaluación específica por tarea con agentes de código, liderazgo técnico, craft o productividad. La adyacencia al brief es léxica («evals», «LLM»), no semántica.
+Pregunta abierta: ¿qué parte de los ejes del brief (agentes de IA aplicados, liderazgo técnico, oficio, productividad y técnicas de estudio) toca realmente este documento? El texto recuperado no conecta con ninguno.
 
 ## Evidence
-- El alcance declarado son tareas NLP generales (clasificación, resumen, traducción, copyright regurgitation, toxicidad) — source: 93963a5f93e58d05
-- No hay claim en el clúster que ligue esas tareas a los ejes del brief — source: 93963a5f93e58d05
+- Nada en el texto recuperado conecta el ítem con liderazgo técnico, estimación, secuenciación, alcance, organización personal, oficio o técnica de estudio — source: 93963a5f93e58d05
+- La única vecindad con el brief es «eval» de LLM, no la práctica de agentes de código o de gestión — source: 93963a5f93e58d05
 
 ## Why it matters
-Importar este ítem como si abordara el brief sería un error de categoría. La pregunta operativa es si el término «eval» funciona como match léxico suficiente o si el pipeline debería filtrar por eje temático.
+Fija el encuadre correcto: es un ítem de retrieval, no un input accionable. Evita que el trabajo de compilación derive del título una relevancia que el cuerpo no sostiene.
 
-Depende de `task-specific-llm-evals-titulo-sin-contenido-ingerido` y `task-specific-llm-evals-tareas-nlp-no-cubren-evals-de-codigo`. Análoga a `matching-llm-patterns-relevancia-lexica-al-brief-de-agentes` y a `evals-llm-genericas-fuera-del-alcance-del-brief`. Conecta con `confirmacion-de-evaluacion-por-terceros-no-es-adopcion`: cosignar categorías de eval no es adoptar práctica.
+Se deriva del alcance declarado que sí es verificable. Se relaciona con la pregunta sobre evals genéricas fuera de alcance y con el riesgo de falta de conexión con agentes o docencia.
 
 ## Links
 - supports → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
@@ -76,3 +79,4 @@ Depende de `task-specific-llm-evals-titulo-sin-contenido-ingerido` y `task-speci
 - relates_to → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]
 - relates_to → [[evals-llm-genericas-fuera-del-alcance-del-brief]]
 - relates_to → [[confirmacion-de-evaluacion-por-terceros-no-es-adopcion]]
+- relates_to → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]

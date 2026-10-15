@@ -10,9 +10,10 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-02'
+updated: '2026-10-15'
 sources:
 - 31820ad25e39a34b
+- sig-237cc97a9794
 tags:
 - anthropic
 - cli
@@ -25,7 +26,7 @@ tags:
 - tooling
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -56,19 +57,20 @@ links:
   type: relates_to
 - to: llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica
   type: relates_to
+- to: llm-mistral-0-16-soporte-razonamiento
+  type: relates_to
 ---
 
 ## What it is
-`llm-anthropic` 0.29 es una nota de release del plugin que conecta la CLI `llm` con modelos de Anthropic. La versión añade soporte para un modelo identificado en el propio release como «Claude Opus 5.5», invocable con `llm -m claude-opus-5.5 "prompt goes here"`.
+`llm-anthropic` 0.29 publica un bump de release: añade el soporte de un modelo de Anthropic a la CLI `llm`. El changelog solo describe el cambio operativo; no contiene claims sobre práctica de ingeniería, liderazgo ni docencia.
 
 ## Evidence
-- La versión 0.29 del plugin `llm-anthropic` añade soporte para un modelo llamado «Claude Opus 5.5», invocable vía `llm -m claude-opus-5.5 "prompt goes here"` — source: 31820ad25e39a34b
-- El documento está etiquetado con las categorías `llm` y `anthropic` y proviene de un feed RSS — source: 31820ad25e39a34b
+- El clúster contiene un único documento RSS que anuncia `llm-anthropic` 0.29 con la adición de un modelo de Anthropic — source: sig-237cc97a9794
 
 ## Why it matters
-Habilita, para quien ya usa la CLI `llm`, apuntar a un modelo de Anthropic más sin cambiar de herramienta. No hay en el documento ningún claim sobre calidad del modelo, coste, latencia ni adecuación a ninguna tarea.
+Un release de plugin de CLI es infraestructura de tooling, no evidencia de práctica. Sirve para saber que un modelo nuevo queda disponible en la línea de comandos, no para inferir nada sobre cómo se trabaja.
 
-Es la evidencia primaria (y única) del clúster; las notas de contenido-operativo y de singleton sin corroboración la toman como fuente. El match con el brief es el que registra `llm-anthropic-0-29-topic-match-espurio-por-vocabulario`.
+Relacionado con `llm-mistral-0-16-soporte-razonamiento`, otro anuncio de release de plugin que añade capacidades de modelo a la misma familia de tooling.
 
 ## Links
 - supports → [[a-chain-reaction-metricas-no-son-evidencia-independiente]]
@@ -84,3 +86,4 @@ Es la evidencia primaria (y única) del clúster; las notas de contenido-operati
 - relates_to → [[llm-anthropic-0-29-singleton-sin-corroboracion]]
 - relates_to → [[llm-anthropic-0-29-topic-match-espurio-por-vocabulario]]
 - relates_to → [[llm-anthropic-0-29-contenido-solo-operativo-sin-claims-sobre-practica]]
+- relates_to → [[llm-mistral-0-16-soporte-razonamiento]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-10-14'
+updated: '2026-10-15'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -25,7 +25,7 @@ tags:
 - vision
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -49,16 +49,16 @@ links:
 ---
 
 ## What it is
-Identificar a una persona por su imagen plantea cuestiones de privacidad y derechos de imagen que el anuncio de producto no aborda. La distinción «figura pública» es además un juicio del modelo, no una categoría legal fija.
+La identificación facial de figuras públicas plantea preguntas de privacidad y consentimiento que varían por jurisdicción y contexto de despliegue. El clúster no aborda ninguna de ellas y no permite asumir manejo homogéneo entre proveedores.
 
 ## Evidence
-- El documento no trata privacidad ni consentimiento, solo el comportamiento de identificación — fuente: sig-237cc97a9794
-- Qué cuenta como «figura pública» queda al juicio del modelo — fuente: sig-237cc97a9794
+- El clúster no incluye fecha, versión de modelo ni condiciones del despliegue observado — source: sig-237cc97a9794
+- El documento se limita a reportar la asimetría de comportamiento entre asistentes — source: sig-237cc97a9794
 
 ## Why it matters
-Usar imágenes de personas reales en demos o docencia sin resolver consentimiento y derechos convierte una feature técnicamente disponible en un riesgo de uso.
+Cualquier guía derivada de esta observación puede expirar silenciosamente si se hornea en un estándar de equipo o en un curso, y las implicaciones legales varían sin que el proveedor las exponga.
 
-Se relaciona con la nota de política de reconocimiento facial como variable de producto y con el riesgo de privacidad y consentimiento al usar imágenes de personas reales en docencia.
+Relacionado con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`: el hecho observado abre el problema, pero no lo resuelve ni lo acota.
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]

@@ -10,11 +10,12 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-09'
+updated: '2026-10-15'
 sources:
 - 93963a5f93e58d05
 tags:
 - alcance
+- artefacto-de-ingesta
 - docencia
 - documento-unico
 - evals
@@ -26,10 +27,11 @@ tags:
 - single-source
 - task-families
 - task-specific
+- taxonomia
 - taxonomia-de-tareas
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -71,16 +73,16 @@ links:
 ---
 
 ## What it is
-Un documento titulado «Task-Specific LLM Evals that Do & Don't Work» enumera las familias de tarea donde las evals de LLM funcionan (clasificación, resumen, traducción) y donde son inadecuadas (copyright regurgitation, toxicidad). Es el único ítem de su clúster y su contenido no se verifica de forma independiente.
+El documento declara como objeto de evaluación las tareas específicas de LLM: clasificación, resumen, traducción, regurgitación de copyright y toxicidad. Es el único contenido verificable del ítem, que llega como título más una línea de alcance sin cuerpo ingerido.
 
 ## Evidence
-- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» y es el único ítem del clúster — source: 93963a5f93e58d05
-- Aborda evals para clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
+- El sujeto declarado son evals de LLM específicas por tarea: clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
+- Las cinco categorías nombradas son todas tareas de salida de texto; ninguna es una tarea agéntica o de varios pasos — source: 93963a5f93e58d05
 
 ## Why it matters
-Las familias de tarea nombradas son todo lo que la evidencia sostiene: no hay benchmark, replicación ni contraejemplo en el clúster que respalde la división «funciona / no funciona». El valor del ítem es que fija un vocabulario de familias, no que valide un criterio.
+Es un puntero taxonómico a categorías de eval a chequear al validar un asistente, no un hallazgo sobre cómo se trabaja mejor. Que las cinco categorías sean tareas de salida de texto implica que el documento no habla de comportamiento de agente multi-paso, que es lo que domina este brief.
 
-Se relaciona con la nota que registra que estas familias declaradas son el único contenido verificable del documento, y con el registro de que es un singleton RSS sin engagement ni corroboración. También conecta con la idea general de evaluación específica por tarea como infraestructura, que aquí aparece como tema adyacente sin evidencia que la desarrolle.
+Se relaciona con las demás notas que registran las familias de tarea declaradas de este mismo documento, que es el único contenido verificable que trae.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]

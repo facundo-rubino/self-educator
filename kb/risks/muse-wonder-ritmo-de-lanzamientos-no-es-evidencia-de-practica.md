@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-13'
+updated: '2026-10-15'
 sources:
 - 4004eb9d4bbe0e76
 tags:
 - alcance-del-brief
-- estimacion
+- brief
 - ensenanza
+- estimacion
+- evidencia
 - liderazgo-tecnico
+- modelos-frontera
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-10-13'
+last_reinforced: '2026-10-15'
 provenance:
   scale: XL
   query: null
@@ -29,20 +32,30 @@ links:
   type: derived_from
 - to: hy3-tangencial-al-brief-de-agentes-y-liderazgo
   type: relates_to
+- to: muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion
+  type: supports
+- to: brief-de-agentes-y-liderazgo-sin-conexion-demostrada-con-identificacion-de-figuras-publicas
+  type: relates_to
+- to: relevancia-tematica-baja-no-es-ruido
+  type: contradicts
 ---
 
 ## What it is
-El clúster es un punto de datos sobre el ritmo de lanzamiento de modelos frontera, no sobre prácticas de liderazgo, estimación, secuenciación, docencia ni técnicas de estudio. Su conexión con el brief es solo indirecta: presión sobre elección de modelo y decisiones de plataforma para agentes de código [4004eb9d4bbe0e76].
+El clúster anuncia coding agéntico, liderazgo técnico de equipos chicos, craft, productividad y técnicas de estudio, pero este documento no evidencia directamente ninguna de esas prácticas. La relevancia declarada es parcial (0.33). Tampoco aparece docencia, estimación, secuenciación, alcance, craft ni técnicas de estudio.
 
 ## Evidence
-- El reporte declara que el documento no aporta evidencia directa sobre liderazgo, estimación, secuenciación, enseñanza ni técnicas de estudio — source: 4004eb9d4bbe0e76
-- El propio encuadre del brief indica que el tema docente entry-level ya se movió al profile `teaching`, fuera del cupo de este brief — source: 4004eb9d4bbe0e76
+- No aparece en el clúster ninguna práctica de enseñanza, técnica de estimación, método de secuenciación, gestión de alcance, craft ni técnica de estudio — source: 4004eb9d4bbe0e76
+- La docencia de programación entry-level está explícitamente fuera del alcance de este brief y ausente aquí — source: 4004eb9d4bbe0e76
+- relevance=0.33: conexión parcial con el tema declarado — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-Usar este clúster como excusa para reabrir la discusión sobre docencia iría contra el alcance declarado, y presentar un titular de lanzamiento como evidencia de oficio sería un salto. Vale como nota de radar de herramientas, no como insumo para estimación, secuenciación ni plan de aprendizaje.
+Actuar sobre el claim antes de verificarlo arriesga migración prematura de flujos de trabajo o herramientas, con coste de rehacer si la mejora no replica. El gap entre benchmark y producción es conocido y este documento no permite comprobarlo.
 
-Deriva de `muse-wonder-wonder-full-titular-sin-evidencia` y comparte la lógica de `hy3-tangencial-al-brief-de-agentes-y-liderazgo`: una señal de infraestructura/ránking es tangencial al brief y no debe consumir cupo como si fuera un hallazgo sobre práctica.
+Se apoya en la nota sobre sobreinterpretar la paridad de tier. Se relaciona con la desconexión entre brief y corpus ya documentada. Contradice la cautela genérica de que la baja relevancia temática no implica ruido: aquí, con n=1 y novelty=0, sí lo es.
 
 ## Links
 - derived_from → [[muse-wonder-wonder-full-titular-sin-evidencia]]
 - relates_to → [[hy3-tangencial-al-brief-de-agentes-y-liderazgo]]
+- supports → [[muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion]]
+- relates_to → [[brief-de-agentes-y-liderazgo-sin-conexion-demostrada-con-identificacion-de-figuras-publicas]]
+- contradicts → [[relevancia-tematica-baja-no-es-ruido]]
