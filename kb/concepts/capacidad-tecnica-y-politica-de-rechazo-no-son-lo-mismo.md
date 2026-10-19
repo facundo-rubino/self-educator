@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-14'
+updated: '2026-10-19'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -20,12 +20,13 @@ tags:
 - marco-conceptual
 - multimodal
 - politica
+- politica-de-rechazo
 - politicas-de-modelo
 - rechazo
 - refusal
 base_confidence: 0.65
 half_life_days: 180
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -48,19 +49,22 @@ links:
   type: supports
 - to: afirmacion-poblacional-desde-un-solo-proveedor
   type: relates_to
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: derived_from
+- to: afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica
+  type: relates_to
 ---
 
 ## What it is
-El caso de identificación de figuras públicas ilustra la distinción: la divergencia entre proveedores es una diferencia de política observable, no la medición de capacidades visuales distintas bajo las mismas condiciones.
+Que un proveedor se niegue a nombrar figuras públicas en imágenes no dice nada sobre lo que el modelo puede hacer, solo sobre su política por defecto. El ítem del clúster enmarca la diferencia como capacidad («can now identify») cuando el documento describe, en el mejor caso, una diferencia de cumplimiento entre proveedores.
 
 ## Evidence
-- La divergencia Gemini vs. ChatGPT/Claude es una diferencia de comportamiento de producto — fuente: sig-237cc97a9794
-- No hay benchmarks ni condiciones comunes en la fuente — fuente: sig-237cc97a9794
+- El documento presenta la diferencia Gemini vs ChatGPT/Claude como capacidad de identificación, sin separar política de capacidad — source: 19cb8032958cd964
 
 ## Why it matters
-Sin condiciones comunes de prueba, la divergencia no debe leerse como ranking de capacidad sino como diferencia de reglas de uso.
+Confundir ambas cosas lleva a elegir proveedor por una conducta de política que puede cambiar sin aviso, y a atribuir a «capacidad nueva» lo que es una decisión de producto. El riesgo se materializa en flujos que dependen de que el modelo nombre a alguien.
 
-Sostiene la nota de divergencia de rechazo por proveedor; se relaciona con el riesgo de formular claims poblacionales desde una sola observación.
+Se deriva de la divergencia de rechazo por proveedor del clúster. Se relaciona con la nota sobre confundir rechazo por política con capacidad y con la de «puede» frente a «no rechaza».
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
@@ -72,3 +76,5 @@ Sostiene la nota de divergencia de rechazo por proveedor; se relaciona con el ri
 - relates_to → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]
 - supports → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
+- derived_from → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica]]

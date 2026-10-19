@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-12'
+updated: '2026-10-19'
 sources:
 - abf61eeec75462f9
 tags:
@@ -22,17 +22,19 @@ tags:
 - composicion-condicional
 - composición-condicional
 - filtracion
+- fuente-filtrada
 - fuente-unica
 - ingenieria-inversa
 - leak
 - prompt-architecture
+- prompt-arquitectura
 - prompt-engineering
 - prompting
 - prompts-modulares
 - system-prompt
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-19'
 provenance:
   scale: M
   query: null
@@ -87,18 +89,22 @@ links:
   type: relates_to
 - to: claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion
   type: contradicts
+- to: claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente
+  type: relates_to
+- to: claude-code-system-prompt-conditional-composition
+  type: relates_to
 ---
 
 ## What it is
-Un ítem RSS afirma que el system prompt de Claude Code se ensambla a partir de docenas de partes condicionales, según una fuente filtrada que el propio ítem invoca. Es un claim de arquitectura interna de un agente de codificación, no una observación directa: el artefacto (el supuesto código filtrado) no está presente en el clúster.
+Un documento RSS único [abf61eeec75462f9] afirma que el código fuente filtrado de Claude Code muestra un system prompt ensamblado a partir de docenas de partes condicionales. La afirmación describe arquitectura de prompts, no conducta medida del agente: no especifica qué condiciones gatean qué secciones, ni cómo se secuencian.
 
 ## Evidence
-- El system prompt de Claude Code se ensambla de docenas de partes condicionales, según su fuente filtrada citada en el ítem — source: abf61eeec75462f9
+- El código fuente filtrado de Claude Code muestra un system prompt ensamblado de docenas de partes condicionales — source: abf61eeec75462f9
 
 ## Why it matters
-Si se sostuviera, sería un caso concreto para estudiar arquitectura modular de prompts en herramientas de agentes. Pero con n=1, engagement=0, novelty=0.00 y sin artefacto primario, lo único que el clúster sostiene es que un ítem RSS hizo esa afirmación. No hay base para tratarlo como hallazgo sobre cómo está construido ningún agente.
+Si el ensamblado condicional es real, refuerza la idea de configurar un agente por contexto (rol, herramienta, etapa) en lugar de un prompt monolítico. Para el brief, el valor es anecdótico: no hay medición de estimación, secuenciamiento, liderazgo ni docencia en la fuente.
 
-Se relaciona con las demás notas del clúster de Claude Code (leak sin fragmentos, condiciones sin observar). Refuerza tentativamente el patrón general de ensamblado condicional de prompts, que ya existe en el grafo por otras vías. Contradice la nota que señala que la evidencia de Claude Code es artefacto de ingesta sin API de verificación: aquí el artefacto invocado tampoco está disponible.
+Instancia específica del patrón general de `ensamblado-condicional-de-prompts`. Se relaciona con la nota existente `claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente` (misma afirmación, misma carencia) y con `claude-code-condiciones-que-gatean-secciones-sin-observar`, que registra precisamente lo que este documento no dice. `supports` es débil: aporta un caso al patrón, no evidencia de eficacia.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
@@ -126,3 +132,5 @@ Se relaciona con las demás notas del clúster de Claude Code (leak sin fragment
 - supports → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]
 - relates_to → [[claude-code-system-prompt-condicional-composicion-condicional-claim-sin-fuente]]
 - contradicts → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]
+- relates_to → [[claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente]]
+- relates_to → [[claude-code-system-prompt-conditional-composition]]

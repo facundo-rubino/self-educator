@@ -9,18 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-09-28'
+updated: '2026-10-19'
 sources:
 - 19cb8032958cd964
 tags:
 - corroboracion
 - evidencia
+- generalizacion
 - multimodal
 - singleton
 - vision
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -37,19 +38,22 @@ links:
   type: relates_to
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: supports
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: relates_to
+- to: afirmar-capacidad-multimodal-sin-metodologia
+  type: supports
 ---
 
 ## What it is
-Pregunta abierta: ¿qué haría falta para que una observación de identificación de figuras públicas en imágenes fuera evidencia, en lugar de un fragmento? La respuesta mínima es un segundo corpus independiente del mismo proveedor de feed, con la conducta de rechazo fijada por versión, cuenta y región.
+Pregunta abierta: ¿qué segundo corpus haría falta para sostener que «los LLM» identifican figuras públicas en imágenes? El clúster actual es un documento único, sin engagement, con novelty 0.00 y sorpresa 0.50, lo que sugiere información reciclada o ya conocida más que un desarrollo nuevo.
 
 ## Evidence
-- El clúster contiene exactamente una aserción y ninguna corroboración independiente — source: 19cb8032958cd964
-- El único documento tiene engagement=0, por lo que no hay señal externa de que la observación se haya replicado o discutido — source: 19cb8032958cd964
+- El clúster es un solo ítem RSS con corroboración cero, novelty 0.00 y sin métricas de engagement — source: 19cb8032958cd964
 
 ## Why it matters
-Sin segundo corpus no se puede distinguir una asimetría real de proveedor de una anécdota de una sola sesión. La pregunta queda abierta en el grafo y el reconciliador puede cerrarla cuando entre una segunda fuente; hasta entonces, ninguna nota debe tratarla como resultado.
+Sin una segunda fuente independiente y sin protocolo, cualquier afirmación sobre la población de modelos es inferencia. La pregunta delimita qué evidencia cerraría el hueco.
 
-Es la pregunta que `afirmacion-poblacional-desde-un-solo-proveedor` responde negativamente en su forma actual. Se relaciona con `sin-claim-positivo-posible-desde-cluster-de-agentic-engineering`, que registra el mismo tipo de déficit de corpus en otro clúster, y se apoya en `single-document-cluster-engagement-cero-no-generaliza`.
+Se relaciona con la nota de que un clúster de un documento sin engagement no sostiene generalización, y respalda la nota de riesgo sobre afirmar capacidad multimodal sin metodología.
 
 ## Links
 - derived_from → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
@@ -58,3 +62,5 @@ Es la pregunta que `afirmacion-poblacional-desde-un-solo-proveedor` responde neg
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - relates_to → [[sin-claim-positivo-posible-desde-cluster-de-agentic-engineering]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
+- relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- supports → [[afirmar-capacidad-multimodal-sin-metodologia]]

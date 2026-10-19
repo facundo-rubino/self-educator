@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-15'
-updated: '2026-10-15'
+updated: '2026-10-19'
 sources:
 - 4004eb9d4bbe0e76
 tags:
+- claim-sin-metodologia
+- inferencia
 - meta
 - modelos-frontera
-- inferencia
+- nombres-de-modelo
+- tiers
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -27,21 +30,26 @@ links:
   type: derived_from
 - to: muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion
   type: supports
+- to: muse-wonder-wonder-full-titular-sin-evidencia
+  type: derived_from
+- to: riesgo-de-over-indexar-nombres-de-modelos
+  type: relates_to
 ---
 
 ## What it is
-El nombre «Wonder & Wonder Full» en el título sugiere una oferta de dos tiers o un release emparejado, pero el documento no aporta ninguna evidencia sobre qué distingue a los tiers. La única afirmación registrada sobre esa estructura proviene del propio analista, que la admite explícitamente como inferencia.
+La designación «Muse Wonder» / «Wonder Full» sugiere una estructura de dos niveles (base y completa), pero el documento no la explicita ni la describe. Tanto los nombres como la relación entre ellos son una inferencia lectora del titular, no un contenido del texto disponible. 
 
 ## Evidence
-- El título usa «Wonder & Wonder Full», forma que sugiere estructura emparejada — source: 4004eb9d4bbe0e76
-- El documento no contiene ninguna evidencia sobre qué distingue a los tiers — source: 4004eb9d4bbe0e76
-- El propio analista concede que la lectura de tiers es inferencia, no evidencia — source: 4004eb9d4bbe0e76
+- El documento usa ambos nombres «Muse Wonder» y «Wonder Full» en el título sin definir la relación entre ellos — source: 4004eb9d4bbe0e76
+- No hay ficha técnica, tabla de variantes ni descripción de diferencias entre las dos designaciones — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-Documentar la inferencia evita que se propague como hecho. Si se confirmara, la selección de tier por clase de tarea (coste/latencia/capacidad) sería una decisión a registrar; hasta entonces no hay base para ninguna decisión de ese tipo.
+Sostener que existen dos tiers y qué los distingue sería sobreinterpretación del titular. Cualquier decisión de tooling orientada a «elegir variante» quedaría sin base.
 
-Deriva del titular sin evidencia. Apoya la nota que marca como sobreinterpretación afirmar paridad de nivel frontera desde un titular agregado.
+Se deriva de la nota principal del clúster. Conecta con el riesgo general de over-indexar en nombres de modelo sin evidencia.
 
 ## Links
 - derived_from → [[meta-muse-wonder-wonder-full-titular-sin-evidencia]]
 - supports → [[muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion]]
+- derived_from → [[muse-wonder-wonder-full-titular-sin-evidencia]]
+- relates_to → [[riesgo-de-over-indexar-nombres-de-modelos]]

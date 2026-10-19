@@ -9,12 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-10-08'
+updated: '2026-10-19'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
+- condiciones
 - evidencia-debil
+- evidencia-faltante
 - hipotesis
 - observacion
 - prompt-engineering
@@ -24,7 +26,7 @@ tags:
 - verificacion
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -49,19 +51,23 @@ links:
   type: relates_to
 - to: claude-code-source-leak-condiciones-parts-unspecified
   type: supports
+- to: claude-code-source-leak-condiciones-parts-unspecified
+  type: relates_to
+- to: claude-code-system-prompt-singleton-rss-engagement-cero
+  type: relates_to
 ---
 
 ## What it is
-No hay observación directa de qué condiciones (tipo de tarea, repo, herramienta, turno de conversación) activan qué secciones del system prompt de Claude Code. La pregunta queda abierta y no puede resolverse desde este documento.
+El documento afirma que hay "docenas de partes condicionales" pero no nombra ninguna condición, ningún disparador, ninguna sección gateada ni el orden de ensamblado. La pregunta abierta es qué contexto activa qué parte del prompt.
 
 ## Evidence
-- El documento afirma el ensamblado condicional sin detallar condiciones ni secciones — source: abf61eeec75462f9
-- No hay observación directa del mecanismo más allá de la afirmación — source: abf61eeec75462f9 (ausencia)
+- El código fuente filtrado de Claude Code muestra un system prompt ensamblado de docenas de partes condicionales — source: abf61eeec75462f9
+- El documento no especifica qué condiciones gatean qué secciones ni cómo se secuencian — source: abf61eeec75462f9
 
 ## Why it matters
-Sin observar las condiciones, no se puede transferir el diseño a agentes propios ni evaluar si merece la pena replicarlo. Cualquier réplica hoy sería un experimento, no una adopción informada.
+Sin el mapeo condición→sección no se puede ni replicar el diseño ni evaluarlo. Contar partes condicionales es un claim frágil desde fuera; el contenido útil sería el mecanismo, que no está ingerido.
 
-Es variante específica de la nota sobre el leak sin especificar condiciones, partes ni secuenciación. Se relaciona con control del agente como composición de secciones y con el problema de reproducibilidad/depuración de prompts.
+`derived_from` la nota de contenido: registra el hueco exacto que esa nota no cierra. Duplica temáticamente `claude-code-source-leak-condiciones-parts-unspecified`; debe integrarse ahí si aparece nueva evidencia con nombres de condiciones.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
@@ -74,3 +80,5 @@ Es variante específica de la nota sobre el leak sin especificar condiciones, pa
 - relates_to → [[reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria]]
 - relates_to → [[test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes]]
 - supports → [[claude-code-source-leak-condiciones-parts-unspecified]]
+- relates_to → [[claude-code-source-leak-condiciones-parts-unspecified]]
+- relates_to → [[claude-code-system-prompt-singleton-rss-engagement-cero]]

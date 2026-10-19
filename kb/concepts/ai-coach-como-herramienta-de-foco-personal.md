@@ -1,6 +1,6 @@
 ---
 id: ai-coach-como-herramienta-de-foco-personal
-title: AI coach como herramienta de foco personal, no de liderazgo técnico
+title: 'AI coach: herramienta de foco personal, no de liderazgo técnico'
 type: concept
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,13 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-14'
+updated: '2026-10-19'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
 - autorregulacion
 - brief-scope
+- foco
 - monkey-mind
 - organizacion-personal
 - personal-productivity
@@ -24,7 +25,7 @@ tags:
 - self-regulation
 base_confidence: 0.04
 half_life_days: 180
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -53,19 +54,25 @@ links:
   type: relates_to
 - to: ai-coach-stack-stt-tts-llm-numero-virtual
   type: relates_to
+- to: stack-de-ai-coach-voz-a-voz
+  type: derived_from
+- to: ai-coach-como-herramienta-de-foco-no-de-liderazgo
+  type: contradicts
+- to: efectividad-de-ai-coach-no-demostrada
+  type: supports
 ---
 
 ## What it is
-El AI coach descrito en [49140f9d5133d3c7] se enmarca explícitamente como herramienta de autorregulación personal («tame my monkey mind»), no como un sistema aplicado a programar, gestionar equipos ni enseñar. Su alcance es el foco y la conversación individual del propio autor.
+El AI coach del documento se plantea como una ayuda para calmar el «monkey mind» del propio autor: foco personal, no gestión de equipos. No hay mención a estimación, secuenciación, alcance, revisión de código ni docencia. El puente al brief es el cajón de «productividad y técnicas de estudio», y llega sin medición.
 
 ## Evidence
-- El título indica que el propósito es lidiar con la propia «monkey mind» (autorregulación y atención personal) — source: 49140f9d5133d3c7
-- El documento describe la construcción del coach, sin reportar resultados ni métricas de efectividad — source: 49140f9d5133d3c7
+- El AI coach se enmarca como forma de gestionar el «monkey mind» del autor — source: 49140f9d5133d3c7
+- El documento no describe integración con flujos de trabajo, evaluación ni resultados — source: 49140f9d5133d3c7
 
 ## Why it matters
-El encaje con el brief (agentes aplicados a programar, liderazgo técnico, productividad y estudio) es débil y no demostrado desde esta fuente. Cualquier extrapolación hacia liderazgo de equipos o docencia sería inferencia del lector, no contenido del documento.
+Delimita el alcance: si un dev-líder quiere justificar un coach de voz para su equipo o su clase, este documento no aporta nada. Lo único reutilizable es la idea de prototipar asistencia personal con APIs baratas antes de comprometer un flujo de equipo.
 
-Se apoia en `ai-coach-voz-a-voz-ensamblado-de-servicios` (el artefacto concreto) y `ai-coach-stack-stt-tts-llm-numero-virtual` (los componentes). El encuadre de foco personal se conecta con `monkey-mind-como-encuadre-de-productividad-personal`. Las limitaciones operativas del pipeline están en `ai-coach-voz-loop-riesgos-latencia-stt-tts-coste-no-declarados`.
+`contradicts` la nota existente que ya fijaba el mismo encuadre: esta compilación confirma la lectura en vez de integrarla como evidencia nueva, y conviene marcar la duplicación en lugar de sumar confianza. `supports` la nota de que la efectividad del AI coach no está demostrada: el documento no trae outcomes. `relates_to` monkey mind como encuadre de productividad personal.
 
 ## Links
 - relates_to → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
@@ -80,3 +87,6 @@ Se apoia en `ai-coach-voz-a-voz-ensamblado-de-servicios` (el artefacto concreto)
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - relates_to → [[ai-coach-voz-loop-riesgos-latencia-stt-tts-coste-no-declarados]]
 - relates_to → [[ai-coach-stack-stt-tts-llm-numero-virtual]]
+- derived_from → [[stack-de-ai-coach-voz-a-voz]]
+- contradicts → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
+- supports → [[efectividad-de-ai-coach-no-demostrada]]

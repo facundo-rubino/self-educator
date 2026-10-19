@@ -1,7 +1,6 @@
 ---
 id: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
-title: 'Divergencia de rechazo al nombrar figuras públicas en imágenes: Gemini sí,
-  ChatGPT y Claude no'
+title: La divergencia de rechazo por identidad no viene con metodología ni fecha
 type: concept
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-15'
+updated: '2026-10-19'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -22,17 +21,20 @@ tags:
 - guardrails
 - identificacion-facial
 - imagenes
+- metodologia
 - multimodal
 - politica-de-modelo
 - politica-de-modelos
 - politica-de-proveedor
 - politicas-de-proveedor
+- pregunta-abierta
 - proveedores
 - rechazo
+- rechazo-por-proveedor
 - refusal
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -83,19 +85,28 @@ links:
   type: relates_to
 - to: afirmacion-de-capacidad-multimodal-sin-metodologia
   type: contradicts
+- to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  type: derived_from
+- to: criterios-de-aceptacion-dependientes-de-proveedor
+  type: supports
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: derived_from
+- to: prueba-con-proveedores-y-cuentas-especificas
+  type: relates_to
+- to: politica-de-imagenes-cambia-sin-aviso
+  type: relates_to
 ---
 
 ## What it is
-Un ítem RSS reporta que Gemini identifica figuras públicas en imágenes mientras ChatGPT y Claude no. La observación es un reporte de segunda mano sobre comportamiento de rechazo por proveedor, no una medición de capacidad subyacente.
+El clúster plantea, sin responder, bajo qué condiciones se observó la divergencia de rechazo entre Gemini, ChatGPT y Claude: no hay fecha, versión de modelo, cuenta, región ni frase exacta del prompt. Sin eso, la observación no es reproducible.
 
 ## Evidence
-- El clúster contiene un solo documento que afirma que ChatGPT y Claude declinan identificar figuras públicas en imágenes mientras Gemini sí lo hace — source: sig-237cc97a9794
-- El documento es un ítem RSS con engagement 0, sin tracción observada en los datos ingeridos — source: sig-237cc97a9794
+- El documento no aporta metodología, fecha ni condiciones de la comparación entre proveedores — source: 19cb8032958cd964
 
 ## Why it matters
-Si la identificación de personas en imágenes está disponible en un asistente y no en otros, elegir el asistente para procesar capturas, diagramas o fotos de slides es una decisión de política/arquitectura, no un reemplazo commodity. El rechazo puede ser política deliberada, no incapacidad.
+Una política de rechazo observada en una frase no se generaliza: versión, cuenta y región la condicionan. La pregunta queda abierta hasta que exista una sonda reproducible por proveedor.
 
-Relacionado con `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`: el mismo patrón conceptual aquí aplicado a imágenes de personas. Contradice la afirmación de que los LLM «ahora pueden» identificar figuras públicas: la dirección del cambio es de rechazo, no de capacidad.
+Se deriva de la nota de divergencia de rechazo por proveedor. Se relaciona con la nota de que una observación en una frase no generaliza y con el riesgo de que la política de imágenes cambie sin aviso.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -121,3 +132,8 @@ Relacionado con `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`: el mi
 - supports → [[afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica]]
 - relates_to → [[asimetria-de-rechazo-gemini-vs-chatgpt-claude-identificacion-de-personas]]
 - contradicts → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
+- derived_from → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- supports → [[criterios-de-aceptacion-dependientes-de-proveedor]]
+- derived_from → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[prueba-con-proveedores-y-cuentas-especificas]]
+- relates_to → [[politica-de-imagenes-cambia-sin-aviso]]

@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-15'
+updated: '2026-10-19'
 sources:
 - 4004eb9d4bbe0e76
 tags:
@@ -21,9 +21,10 @@ tags:
 - evidencia
 - liderazgo-tecnico
 - modelos-frontera
+- ruido-tematico
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -38,20 +39,25 @@ links:
   type: relates_to
 - to: relevancia-tematica-baja-no-es-ruido
   type: contradicts
+- to: muse-wonder-wonder-full-titular-sin-evidencia
+  type: relates_to
+- to: relevancia-no-es-verdad
+  type: supports
+- to: benchmark-pp512-no-informa-generacion-interactiva
+  type: relates_to
 ---
 
 ## What it is
-El clúster anuncia coding agéntico, liderazgo técnico de equipos chicos, craft, productividad y técnicas de estudio, pero este documento no evidencia directamente ninguna de esas prácticas. La relevancia declarada es parcial (0.33). Tampoco aparece docencia, estimación, secuenciación, alcance, craft ni técnicas de estudio.
+Un anuncio de modelo frontera, aun si fuera cierto, informa sobre la oferta de modelos disponible, no sobre cómo un dev-líder estima, secuencia, organiza equipos ni enseña. El documento del clúster no contiene claims sobre ninguna de esas prácticas.
 
 ## Evidence
-- No aparece en el clúster ninguna práctica de enseñanza, técnica de estimación, método de secuenciación, gestión de alcance, craft ni técnica de estudio — source: 4004eb9d4bbe0e76
-- La docencia de programación entry-level está explícitamente fuera del alcance de este brief y ausente aquí — source: 4004eb9d4bbe0e76
-- relevance=0.33: conexión parcial con el tema declarado — source: 4004eb9d4bbe0e76
+- El documento no documenta capacidades, precios, contexto, herramientas ni resultados reproducibles relevantes al brief — source: 4004eb9d4bbe0e76
+- La afirmación central es una aserción editorial del boletín sin cuerpo técnico — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-Actuar sobre el claim antes de verificarlo arriesga migración prematura de flujos de trabajo o herramientas, con coste de rehacer si la mejora no replica. El gap entre benchmark y producción es conocido y este documento no permite comprobarlo.
+Usar este ítem como insumo para secciones de liderazgo, estimación o docencia sería extrapolación. La única consecuencia legítima es de tooling, y ni eso puede decidirse desde el clúster.
 
-Se apoya en la nota sobre sobreinterpretar la paridad de tier. Se relaciona con la desconexión entre brief y corpus ya documentada. Contradice la cautela genérica de que la baja relevancia temática no implica ruido: aquí, con n=1 y novelty=0, sí lo es.
+Se apoya en la nota principal del clúster. Conecta con el principio de que utilidad temática no es verdad, y con la observación de que las métricas de un benchmark no siempre informan la práctica interactiva.
 
 ## Links
 - derived_from → [[muse-wonder-wonder-full-titular-sin-evidencia]]
@@ -59,3 +65,6 @@ Se apoya en la nota sobre sobreinterpretar la paridad de tier. Se relaciona con 
 - supports → [[muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion]]
 - relates_to → [[brief-de-agentes-y-liderazgo-sin-conexion-demostrada-con-identificacion-de-figuras-publicas]]
 - contradicts → [[relevancia-tematica-baja-no-es-ruido]]
+- relates_to → [[muse-wonder-wonder-full-titular-sin-evidencia]]
+- supports → [[relevancia-no-es-verdad]]
+- relates_to → [[benchmark-pp512-no-informa-generacion-interactiva]]

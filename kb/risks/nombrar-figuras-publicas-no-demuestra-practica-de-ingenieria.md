@@ -9,18 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-28'
+updated: '2026-10-19'
 sources:
 - 19cb8032958cd964
 tags:
 - alcance
 - brief
+- fuera-del-brief
+- multimodal
 - relevancia
 - relevancia-delgada
 - vision
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -41,18 +43,24 @@ links:
   type: relates_to
 - to: privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas
   type: relates_to
+- to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  type: derived_from
+- to: figuras-publicas-no-demuestra-practica-de-ingenieria
+  type: relates_to
+- to: brief-de-agentes-y-liderazgo-sin-conexion-demostrada-con-identificacion-de-figuras-publicas
+  type: supports
 ---
 
 ## What it is
-Incluso si la afirmación fuera verdadera y reproducible, no dice nada sobre liderazgo técnico, agentes de IA aplicados a programar, gestión, docencia, oficio ni productividad. Es una afirmación de capacidad y política de producto sobre visión de consumo, no un hallazgo sobre la práctica del trabajo del brief.
+El clúster no toca agentes, estimación, secuenciación, alcance, organización personal ni docencia. Tratarlo como evidencia sobre práctica de ingeniería o liderazgo sería extrapolación no sostenida: lo único que contiene es un titular de capacidad multimodal.
 
 ## Evidence
-- La afirmación ingerida es sobre identificación de figuras públicas en imágenes; el único documento es un ítem RSS sin engagement ni corroboración — source: 19cb8032958cd964
+- El documento no aborda agentes, estimación, secuenciación, alcance, organización personal ni enseñanza — source: 19cb8032958cd964
 
 ## Why it matters
-El único ángulo con valor potencial para el brief sería la elección de proveedor con visión para materiales de docencia o herramientas donde la identificación de imágenes sea necesaria, y la reproducibilidad de ejercicios bajo políticas de rechazo divergentes. Eso es un requisito de herramienta, no un hallazgo de práctica, y no sostiene ninguna nota sobre cómo se lidera o enseña mejor.
+Incluir este ítem en el brief diluye su foco. Su único uso posible es como puntero débil a diferencias de comportamiento entre proveedores, no como hallazgo de práctica.
 
-Apoya a `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` en el sentido de que refuerza que la afirmación no debe promoverse al brief. Se relaciona con `the-two-reacts-relevancia-tangencial-al-brief` y con `relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief`, que registran el mismo tipo de desalineación temática desde otros clústeres, y con `privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas`, que es donde el tema sí toca un riesgo de producto.
+Se deriva del claim principal del clúster. Se relaciona con la nota existente de que nombrar figuras públicas no demuestra práctica de ingeniería, y respalda el riesgo de que el brief de agentes y liderazgo no tenga conexión demostrada con la identificación de figuras públicas.
 
 ## Links
 - relates_to → [[nombrar-figuras-publicas-sin-evidencia-de-practica-de-ingenieria]]
@@ -63,3 +71,6 @@ Apoya a `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion` en el sent
 - relates_to → [[the-two-reacts-relevancia-tangencial-al-brief]]
 - relates_to → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
 - relates_to → [[privacidad-y-derechos-de-imagen-en-identificacion-de-figuras-publicas]]
+- derived_from → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- relates_to → [[figuras-publicas-no-demuestra-practica-de-ingenieria]]
+- supports → [[brief-de-agentes-y-liderazgo-sin-conexion-demostrada-con-identificacion-de-figuras-publicas]]

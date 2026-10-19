@@ -9,12 +9,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-15'
+updated: '2026-10-19'
 sources:
 - 4004eb9d4bbe0e76
 tags:
 - adopcion-de-herramientas
 - benchmarks
+- comparaciones-nominales
 - fomo
 - frontera
 - marketing
@@ -22,7 +23,7 @@ tags:
 - sobreinterpretacion
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -41,20 +42,23 @@ links:
   type: supports
 - to: claude-5-5-identificador-de-version-no-verificable
   type: relates_to
+- to: muse-wonder-wonder-full-titular-sin-evidencia
+  type: supports
+- to: afirmacion-de-novedad-sin-linea-base
+  type: relates_to
 ---
 
 ## What it is
-El encuadre «Claude 5.5-tier» es una comparación hecha en el propio nombre del titular, sin benchmark ni evaluación que la respalde en el texto recuperado. Tratarlo como equivalencia medida carece de soporte.
+«Tier Claude 5.5» es una comparación nominal relativa a otro sistema, sin definición operacional, sin métricas y sin metodología. Además, «Claude 5.5» es a su vez un marcador de versión no verificable dentro de este corpus. Citar la equivalencia como hecho infla expectativas.
 
 ## Evidence
-- El título afirma «Claude 5.5-tier» sin que el texto aporte benchmark, evaluación ni metodología — source: 4004eb9d4bbe0e76
-- El documento solo contiene el titular y una frase de encuadre sobre «frontier lab complete» — source: 4004eb9d4bbe0e76
-- Las comparaciones de este tipo suelen ser guiadas por el vendedor o la prensa y pueden reflejar posicionamiento de lanzamiento, no capacidad reproducible — source: 4004eb9d4bbe0e76
+- La descripción del modelo se hace por comparación («Claude 5.5-tier») y no mediante métricas propias verificables — source: 4004eb9d4bbe0e76
+- No hay definición operacional del tier ni evaluación que lo respalde — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-Una equivalencia de tier tratada como medida contamina decisiones de selección de herramientas y de estimación. Antes de re-baselinar supuestos del equipo hay que recuperar evals independientes y verificar que la mejora replica en la distribución de tareas propia.
+Cualquier recomendación de tooling o de flujo de agentes basada en una paridad declarada sin métricas es reversible con coste si el modelo no existe o no sostiene esas capacidades en evaluación independiente.
 
-Deriva del titular sin evidencia. Se apoya en la nota sobre estructura de tiers inferida. Conecta con la cautela general sobre novedad sin línea base y con los identificadores de versión no verificables.
+Se apoya en la nota principal del clúster. Conecta con el riesgo de afirmar novedad sin línea base y con la no verificabilidad de identificadores de versión de Claude en el corpus.
 
 ## Links
 - derived_from → [[muse-wonder-wonder-full-titular-sin-evidencia]]
@@ -64,3 +68,5 @@ Deriva del titular sin evidencia. Se apoya en la nota sobre estructura de tiers 
 - supports → [[muse-wonder-wonder-full-titular-sin-evidencia-2]]
 - supports → [[afirmacion-de-novedad-sin-linea-base]]
 - relates_to → [[claude-5-5-identificador-de-version-no-verificable]]
+- supports → [[muse-wonder-wonder-full-titular-sin-evidencia]]
+- relates_to → [[afirmacion-de-novedad-sin-linea-base]]

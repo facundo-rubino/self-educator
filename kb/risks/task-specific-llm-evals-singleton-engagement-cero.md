@@ -1,6 +1,7 @@
 ---
 id: task-specific-llm-evals-singleton-engagement-cero
-title: '«Task-Specific LLM Evals»: singleton RSS con engagement cero y novelty 0.00'
+title: '«Task-Specific LLM Evals»: clúster de un solo documento con engagement cero
+  y novelty 0.00'
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-08'
+updated: '2026-10-19'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -26,9 +27,10 @@ tags:
 - ruido
 - senal
 - singleton
+- singleton-rss
 base_confidence: 0.35
 half_life_days: 120
-last_reinforced: '2026-10-08'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -67,19 +69,25 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-sin-conexion-con-agentes-o-docencia
   type: relates_to
+- to: cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion
+  type: supports
+- to: corroboracion-0-50-en-un-cluster-de-un-solo-documento-no-es-consenso-nueva-evidencia
+  type: relates_to
+- to: task-specific-llm-evals-titulo-sin-contenido-ingerido
+  type: supports
 ---
 
 ## What it is
-El clúster de «Task-Specific LLM Evals that Do & Don't Work» es un documento único ingerido por RSS, con engagement igual a 0, novelty 0.00 y sin documentos corroborantes. La corroboración de 0.50 refleja la línea base del pipeline, no acuerdo entre fuentes.
+El clúster es un singleton: un solo documento, con novedad, velocidad y sorpresa neutras y corroboración de 0.50. No hay segunda fuente que valide nada de lo declarado.
 
 ## Evidence
-- El clúster se compone de un único documento, con engagement 0 — source: 93963a5f93e58d05
-- La corroboración registrada es 0.50 en ausencia de cualquier cross-check — source: 93963a5f93e58d05
+- El clúster contiene un único documento y no hay evidencia de su contenido, solo titular y lista de tareas — source: 93963a5f93e58d05
+- Novedad, velocidad y sorpresa son neutras; la corroboración (0.50) es débil — source: 93963a5f93e58d05
 
 ## Why it matters
-Sin engagement no hay señal de calidad, y sin segundo documento no hay generalización posible. Cualquier claim sobre práctica de evaluación, liderazgo o docencia derivado de este ítem sería over-reach.
+Una corroboración de 0.50 con un solo documento no es consenso entre fuentes: es un artefacto del scorer. El clúster no sostiene ninguna afirmación sobre qué evals son fiables ni sobre el estado del arte en evaluación por tarea. Es un puntero de tema, no evidencia.
 
-Es la nota de encuadre del clúster; sostiene el límite de afirmación declarado en la nota de alcance declarado y elimina la posibilidad de compilar claims de práctica.
+Sostiene el registro de ausencia de contenido y el diagnóstico de relevance léxica. Refuerza el patrón general de que un clúster de un documento sin engagement no sostiene generalización, y coincide con otras notas que ya señalan que la corroboración de 0.50 en un singleton no es consenso.
 
 ## Links
 - supports → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -99,3 +107,6 @@ Es la nota de encuadre del clúster; sostiene el límite de afirmación declarad
 - relates_to → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
 - relates_to → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
 - relates_to → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]
+- supports → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
+- relates_to → [[corroboracion-0-50-en-un-cluster-de-un-solo-documento-no-es-consenso-nueva-evidencia]]
+- supports → [[task-specific-llm-evals-titulo-sin-contenido-ingerido]]

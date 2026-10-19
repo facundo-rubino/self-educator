@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-22'
-updated: '2026-10-14'
+updated: '2026-10-19'
 sources:
 - 19cb8032958cd964
 - 93963a5f93e58d05
@@ -18,12 +18,14 @@ tags:
 - corpus-truncado
 - evals
 - evidencia
+- evidencia-tenue
 - firehose
 - fuera-del-brief
 - ingesta
 - ingesta-truncada
 - ingestion-artifact
 - llm
+- llm-evals
 - riesgo
 - rss
 - scoring
@@ -32,7 +34,7 @@ tags:
 - titulo
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -75,20 +77,23 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-adyacencia-al-brief-no-demostrada
   type: derived_from
+- to: pipelines-que-evaluan-clusters-sin-recuperar-el-cuerpo-del-documento
+  type: supports
+- to: afirmar-aptitud-de-modelo-o-agente-desde-categorias-de-eval-sin-mecanismo
+  type: relates_to
 ---
 
 ## What it is
-El documento [93963a5f93e58d05] se titula «Task-Specific LLM Evals that Do & Don't Work». Lo único recuperable de su contenido es la enumeración de categorías de tarea evaluadas; no hay métodos, resultados ni recomendaciones. El título promete un veredicto («do & don't work») que el cuerpo ingerido no entrega.
+El clúster no ingirió el cuerpo del artículo: solo el titular y la lista de tareas. Cualquier afirmación sobre qué evals «funcionan» y cuáles no sería inferencia desde un título.
 
 ## Evidence
-- El documento se titula «Task-Specific LLM Evals that Do & Don't Work» — source: 93963a5f93e58d05
-- El documento enumera evals para clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
-- engagement=0, ingerido vía RSS — source: 93963a5f93e58d05
+- El documento solo aporta su título y la enumeración de dominios de tarea; no hay métodos, resultados ni cifras — source: 93963a5f93e58d05
+- El propio análisis reconoce que no hay evidencia del contenido, solo titular y lista de tareas — source: 93963a5f93e58d05
 
 ## Why it matters
-La nota registra explícitamente el hueco: cualquier claim sobre «qué funciona y qué no» en evals por tarea sería extrapolación no soportada. Recuperar el texto completo antes de citarlo es precondición para usarlo.
+El título promete un veredicto («Do & Don't Work») que la fuente no entrega en lo ingerido. Citar ese veredicto a un equipo o a una clase como recomendación operativa sería propagar una afirmación sin respaldo. El artículo completo puede ser retrieval de texto completo, pero no es un hallazgo compilable.
 
-Se relaciona con las otras notas del mismo clúster que documentan el alcance declarado y las familias de tarea como único contenido verificable. De `task-specific-llm-evals-adyacencia-al-brief-no-demostrada` se deriva este registro de la insuficiencia de cuerpo.
+Sostiene la nota de alcance declarado (la única evidencia disponible es la lista de familias). Es un caso más del patrón general de pipelines que evalúan clústeres sin recuperar el cuerpo. Se relaciona con el riesgo de afirmar la aptitud de un modelo o agente desde categorías de eval sin mecanismo.
 
 ## Links
 - supports → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -110,3 +115,5 @@ Se relaciona con las otras notas del mismo clúster que documentan el alcance de
 - relates_to → [[task-specific-llm-evals-singleton-engagement-cero-novelty-cero]]
 - relates_to → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
 - derived_from → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
+- supports → [[pipelines-que-evaluan-clusters-sin-recuperar-el-cuerpo-del-documento]]
+- relates_to → [[afirmar-aptitud-de-modelo-o-agente-desde-categorias-de-eval-sin-mecanismo]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-05'
+updated: '2026-10-19'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -19,6 +19,7 @@ tags:
 - arquitectura
 - composicion
 - composicion-de-apis
+- composicion-de-servicios
 - infraestructura
 - integration
 - llm
@@ -32,7 +33,7 @@ tags:
 - voz
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-10-05'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -57,18 +58,25 @@ links:
   type: relates_to
 - to: prototipado-por-composicion-de-apis-sin-entrenamiento
   type: relates_to
+- to: ai-coach-stt-tts-llm-loop-como-primitiva-no-demostrada-para-docencia
+  type: relates_to
+- to: api-coach-telefono-virtual-como-canal-asincrono-hipotesis
+  type: relates_to
+- to: ai-coach-como-herramienta-de-foco-personal
+  type: relates_to
 ---
 
 ## What it is
-Enumeración de los cuatro componentes declarados: reconocimiento de voz, síntesis de voz, un LLM y un número de teléfono virtual. Es el único contenido técnico verificable del documento; el resto es encuadre personal.
+Un «AI coach» personal se puede ensamblar con cuatro piezas de catálogo: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. El documento describe ese ensamblaje como el proyecto completo; no da arquitectura, flujo de integración ni evaluación. Es composición de servicios, no un sistema novedoso.
 
 ## Evidence
-- Los cuatro componentes declarados son STT, TTS, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El AI coach combina speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El proyecto se enmarca como forma de gestionar el «monkey mind» del autor — source: 49140f9d5133d3c7
 
 ## Why it matters
-Sirve como inventario mínimo si alguien quisiera replicar el experimento. No aporta nada a estimación, secuenciación, alcance, docencia ni liderazgo.
+Fija el coste mínimo de un coach de voz: cuatro APIs y un número. Cualquier dev puede replicar el ensamblaje, pero el documento no muestra que el resultado sirva para organizarse ni para estudiar; el valor está en la composición, no en la evidencia.
 
-Nota hermana de `ai-coach-voz-a-voz-ensamblado-de-servicios` (el artefacto); esta versión solo enumera las piezas. Comparte el modo de construcción de `prototipado-por-composicion-de-apis-sin-entrenamiento`.
+`relates_to` el loop STT/TTS/LLM como primitiva no demostrada: es la misma idea vista como mecanismo. `relates_to` el canal telefónico como hipótesis de baja fricción: el número virtual es la única pieza que justifica el «voz a voz» frente a un chat.
 
 ## Links
 - relates_to → [[relevancia-tematica-baja-no-es-ruido]]
@@ -81,3 +89,6 @@ Nota hermana de `ai-coach-voz-a-voz-ensamblado-de-servicios` (el artefacto); est
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
 - relates_to → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
 - relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
+- relates_to → [[ai-coach-stt-tts-llm-loop-como-primitiva-no-demostrada-para-docencia]]
+- relates_to → [[api-coach-telefono-virtual-como-canal-asincrono-hipotesis]]
+- relates_to → [[ai-coach-como-herramienta-de-foco-personal]]

@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-15 — 846 entries, highest priority first._
+_Updated 2026-10-19 — 888 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -43,6 +43,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-29'
+- id: gap-5c212ceb81
+  type: contradiction
+  description: Unresolved contradiction between 'ai-coach-como-herramienta-de-foco-no-de-liderazgo'
+    and 'ai-coach-como-herramienta-de-foco-personal'
+  related_notes:
+  - ai-coach-como-herramienta-de-foco-no-de-liderazgo
+  - ai-coach-como-herramienta-de-foco-personal
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-a957d623c7
   type: contradiction
   description: Unresolved contradiction between 'ai-coach-stack-stt-tts-llm-numero-virtual'
@@ -183,6 +193,26 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-21'
+- id: gap-e6ba26d2d3
+  type: contradiction
+  description: Unresolved contradiction between 'escepticismo-ante-hype-de-ia-calibrado-por-tarea-no-por-superinteligencia'
+    and 'skepsis-sobre-progreso-rapido-hacia-superinteligencia-fuera-de-la-senal-financiera'
+  related_notes:
+  - escepticismo-ante-hype-de-ia-calibrado-por-tarea-no-por-superinteligencia
+  - skepsis-sobre-progreso-rapido-hacia-superinteligencia-fuera-de-la-senal-financiera
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
+- id: gap-d3e0438efd
+  type: contradiction
+  description: Unresolved contradiction between 'eval-especifica-por-tarea-como-infraestructura-de-fiabilidad'
+    and 'puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista'
+  related_notes:
+  - eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
+  - puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-0a0529d946
   type: contradiction
   description: Unresolved contradiction between 'a-chain-reaction-titulo-sin-contenido-ingerido'
@@ -233,6 +263,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-09'
+- id: gap-971d7e0ca8
+  type: contradiction
+  description: Unresolved contradiction between 'identificacion-de-figuras-publicas-ya-existia'
+    and 'llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia'
+  related_notes:
+  - identificacion-de-figuras-publicas-ya-existia
+  - llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-1161b031dc
   type: contradiction
   description: Unresolved contradiction between 'mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia'
@@ -363,6 +403,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-28'
+- id: gap-bb48a5c394
+  type: contradiction
+  description: Unresolved contradiction between 'ai-coach-telefono-como-canal-asincrono-baja-friccion-hipotesis'
+    and 'ai-coach-telefono-virtual-como-canal-de-baja-friccion-hipotesis'
+  related_notes:
+  - ai-coach-telefono-como-canal-asincrono-baja-friccion-hipotesis
+  - ai-coach-telefono-virtual-como-canal-de-baja-friccion-hipotesis
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-1d940b7411
   type: contradiction
   description: Unresolved contradiction between 'animating-zooming-css-fuera-del-brief-de-agentes-y-liderazgo'
@@ -393,6 +443,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-05'
+- id: gap-3ff58daa4d
+  type: contradiction
+  description: Unresolved contradiction between 'contradiccion-force-multiplier-de-especificacion-vs-codegen-que-evita-escribir'
+    and 'llms-malos-para-vibing-specifications-buenos-como-multiplicadores'
+  related_notes:
+  - contradiccion-force-multiplier-de-especificacion-vs-codegen-que-evita-escribir
+  - llms-malos-para-vibing-specifications-buenos-como-multiplicadores
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-3c42fcc53d
   type: contradiction
   description: Unresolved contradiction between 'evals-llm-genericas-fuera-del-alcance-del-brief'
@@ -593,6 +653,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-25'
+- id: gap-78061e51de
+  type: contradiction
+  description: Unresolved contradiction between 'ai-coach-como-herramienta-de-foco-personal'
+    and 'ai-coach-singleton-engagement-cero-novelty-cero'
+  related_notes:
+  - ai-coach-como-herramienta-de-foco-personal
+  - ai-coach-singleton-engagement-cero-novelty-cero
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-808c2fc462
   type: contradiction
   description: Unresolved contradiction between 'arquitectura-de-prompt-cambia-sin-aviso'
@@ -693,6 +763,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-13'
+- id: gap-1ba3dd82c3
+  type: contradiction
+  description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
+    and 'claude-code-system-prompt-singleton-rss-engagement-cero'
+  related_notes:
+  - claude-code-system-prompt-conditional-composition
+  - claude-code-system-prompt-singleton-rss-engagement-cero
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-b45ab091fd
   type: contradiction
   description: Unresolved contradiction between 'bajo-relevance-no-implica-cluster-de-ruido-excepcion-matthew-green'
@@ -703,6 +783,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-12'
+- id: gap-1de25a3f14
+  type: contradiction
+  description: Unresolved contradiction between 'ai-coach-como-herramienta-de-foco-personal'
+    and 'composicion-de-servicios-de-catalogo-no-es-practica-de-ingenieria-demostrada'
+  related_notes:
+  - ai-coach-como-herramienta-de-foco-personal
+  - composicion-de-servicios-de-catalogo-no-es-practica-de-ingenieria-demostrada
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-30355d4789
   type: contradiction
   description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
@@ -713,6 +803,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-12'
+- id: gap-fa349bc6c6
+  type: contradiction
+  description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
+    and 'contar-docenas-de-partes-condicionales-sin-nombres-es-claim-fragil'
+  related_notes:
+  - claude-code-system-prompt-conditional-composition
+  - contar-docenas-de-partes-condicionales-sin-nombres-es-claim-fragil
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-584d367458
   type: contradiction
   description: Unresolved contradiction between 'deuda-tecnica-como-puente-lexico-al-brief'
@@ -743,6 +843,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-28'
+- id: gap-50f9145746
+  type: contradiction
+  description: Unresolved contradiction between 'claude-code-ensamblado-condicional-refuerza-prompt-por-contexto-pero-sin-evidencia-de-eficacia'
+    and 'extrapolar-arquitectura-de-prompt-a-liderazgo-o-docencia-seria-invencion'
+  related_notes:
+  - claude-code-ensamblado-condicional-refuerza-prompt-por-contexto-pero-sin-evidencia-de-eficacia
+  - extrapolar-arquitectura-de-prompt-a-liderazgo-o-docencia-seria-invencion
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-b1660e90b1
   type: contradiction
   description: Unresolved contradiction between 'goodbye-clean-code-mapea-a-temas-del-brief-sin-evidencia'
@@ -783,6 +893,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-18'
+- id: gap-cdd3c17a47
+  type: contradiction
+  description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
+    and 'leak-de-claude-code-no-confirma-el-claim-sobre-su-prompt'
+  related_notes:
+  - claude-code-system-prompt-conditional-composition
+  - leak-de-claude-code-no-confirma-el-claim-sobre-su-prompt
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-832022e817
   type: contradiction
   description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
@@ -963,6 +1083,16 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-22'
+- id: gap-8119b3dfa6
+  type: contradiction
+  description: Unresolved contradiction between 'afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica'
+    and 'task-specific-llm-evals-relevancia-lexica-no-tematica'
+  related_notes:
+  - afirmacion-de-capacidad-por-defecto-vs-rechazo-por-politica
+  - task-specific-llm-evals-relevancia-lexica-no-tematica
+  priority: 0.9
+  status: open
+  created: '2026-10-19'
 - id: gap-da4d9bda13
   type: contradiction
   description: Unresolved contradiction between 'task-specific-llm-evals-singleton-engagement-cero'
@@ -1630,6 +1760,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-18'
+- id: gap-48294ce0c4
+  type: open_question
+  description: Note 'agentes-abaratan-el-ensamblaje-no-la-integracion-con-el-flujo'
+    has decayed — does it still hold?
+  related_notes:
+  - agentes-abaratan-el-ensamblaje-no-la-integracion-con-el-flujo
+  priority: 0.7
+  status: open
+  created: '2026-10-19'
 - id: gap-27dcd09873
   type: open_question
   description: Note 'archivos-de-instruccion-de-proyecto-como-modulos-con-condiciones-de-activacion'
@@ -1846,6 +1985,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-09'
+- id: gap-beaba7d3c7
+  type: open_question
+  description: Note 'ai-coach-telefono-virtual-como-canal-de-baja-friccion-hipotesis'
+    has decayed — does it still hold?
+  related_notes:
+  - ai-coach-telefono-virtual-como-canal-de-baja-friccion-hipotesis
+  priority: 0.7
+  status: open
+  created: '2026-10-19'
 - id: gap-f78370512d
   type: open_question
   description: Note 'anti-patterns-in-software-blogging-etiqueta-sin-claim' has decayed
@@ -1864,6 +2012,24 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-21'
+- id: gap-ae429a2200
+  type: open_question
+  description: Note 'aumento-de-pesos-abiertos-de-eeuu-como-cambio-en-build-vs-buy-hipotesis'
+    has decayed — does it still hold?
+  related_notes:
+  - aumento-de-pesos-abiertos-de-eeuu-como-cambio-en-build-vs-buy-hipotesis
+  priority: 0.7
+  status: open
+  created: '2026-10-19'
+- id: gap-59e86a9e5f
+  type: open_question
+  description: Note 'cadencia-de-release-unificada-sugiere-monorepo-mcp' has decayed
+    — does it still hold?
+  related_notes:
+  - cadencia-de-release-unificada-sugiere-monorepo-mcp
+  priority: 0.7
+  status: open
+  created: '2026-10-19'
 - id: gap-abf1567b50
   type: open_question
   description: Note 'cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional'
@@ -1900,6 +2066,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-28'
+- id: gap-2f0b5ad3c8
+  type: open_question
+  description: Note 'evals-llm-genericas-fuera-del-alcance-del-brief' has decayed
+    — does it still hold?
+  related_notes:
+  - evals-llm-genericas-fuera-del-alcance-del-brief
+  priority: 0.7
+  status: open
+  created: '2026-10-19'
 - id: gap-0d9f85cdc4
   type: open_question
   description: Note 'fix-like-no-one-s-watching-mantenimiento-sin-evidencia' has decayed
@@ -1998,6 +2173,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-21'
+- id: gap-be2db53ab7
+  type: open_question
+  description: Note 'meta-shakes-up-frontiers-single-source-headline-sin-cuerpo' has
+    decayed — does it still hold?
+  related_notes:
+  - meta-shakes-up-frontiers-single-source-headline-sin-cuerpo
+  priority: 0.7
+  status: open
+  created: '2026-10-19'
 - id: gap-48a47352a6
   type: open_question
   description: Note 'muse-wonder-wonder-full-titular-sin-evidencia' has decayed —
@@ -2632,6 +2816,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-07'
+- id: gap-a0779a5d98
+  type: thin_evidence
+  description: Note 'cluster-llm-tools-datasette-0-1-1-grab-bag-rss-sin-tesis' rests
+    on 1 source(s)
+  related_notes:
+  - cluster-llm-tools-datasette-0-1-1-grab-bag-rss-sin-tesis
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-107e9bf24d
   type: thin_evidence
   description: Note 'cluster-quoting-anthropic-frontier-red-team-sin-vinculo-con-su-titulo'
@@ -3126,6 +3319,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-7c4056ce71
+  type: thin_evidence
+  description: Note 'muse-wonder-claude-5-5-tier-comparacion-sin-metrica' rests on
+    1 source(s)
+  related_notes:
+  - muse-wonder-claude-5-5-tier-comparacion-sin-metrica
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-72355d7162
   type: thin_evidence
   description: Note 'muse-wonder-wonder-full-titular-sin-evidencia-2' rests on 1 source(s)
@@ -3423,6 +3625,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-17'
+- id: gap-3e6077b90a
+  type: thin_evidence
+  description: Note 'agentes-abaratan-el-ensamblaje-no-la-integracion-con-el-flujo'
+    rests on 1 source(s)
+  related_notes:
+  - agentes-abaratan-el-ensamblaje-no-la-integracion-con-el-flujo
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-4192c9ba05
   type: thin_evidence
   description: Note 'anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica'
@@ -3477,6 +3688,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-17'
+- id: gap-c1f2109a58
+  type: thin_evidence
+  description: Note 'claude-code-ensamblado-condicional-refuerza-prompt-por-contexto-pero-sin-evidencia-de-eficacia'
+    rests on 1 source(s)
+  related_notes:
+  - claude-code-ensamblado-condicional-refuerza-prompt-por-contexto-pero-sin-evidencia-de-eficacia
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-59e751d075
   type: thin_evidence
   description: Note 'coincidencia-de-titulo-con-post-conocido-no-es-corroboracion-de-contenido'
@@ -3618,6 +3838,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-12'
+- id: gap-4d0dd5bcc1
+  type: thin_evidence
+  description: Note 'muse-wonder-admision-de-anuncios-de-modelo-sin-benchmarks' rests
+    on 1 source(s)
+  related_notes:
+  - muse-wonder-admision-de-anuncios-de-modelo-sin-benchmarks
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-f58e70ee01
   type: thin_evidence
   description: Note 'prompt-a-herramienta-en-feed-rss-como-artefacto-de-ingesta' rests
@@ -3906,6 +4135,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-09'
+- id: gap-d23b371873
+  type: thin_evidence
+  description: Note 'ai-coach-telefono-virtual-como-canal-de-baja-friccion-hipotesis'
+    rests on 1 source(s)
+  related_notes:
+  - ai-coach-telefono-virtual-como-canal-de-baja-friccion-hipotesis
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-157496089a
   type: thin_evidence
   description: Note 'animating-zooming-css-fuera-del-brief-de-agentes-y-liderazgo'
@@ -3942,6 +4180,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-21'
+- id: gap-4dec1f0f11
+  type: thin_evidence
+  description: Note 'aumento-de-pesos-abiertos-de-eeuu-como-cambio-en-build-vs-buy-hipotesis'
+    rests on 1 source(s)
+  related_notes:
+  - aumento-de-pesos-abiertos-de-eeuu-como-cambio-en-build-vs-buy-hipotesis
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-ef2f694f37
   type: thin_evidence
   description: Note 'bajo-relevance-pero-al-menos-cinco-docs-on-topic' rests on 1
@@ -4332,6 +4579,33 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-21'
+- id: gap-3530d1da45
+  type: thin_evidence
+  description: Note 'meta-shakes-up-frontiers-single-source-headline-sin-cuerpo' rests
+    on 1 source(s)
+  related_notes:
+  - meta-shakes-up-frontiers-single-source-headline-sin-cuerpo
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
+- id: gap-a20691b655
+  type: thin_evidence
+  description: Note 'muse-wonder-anuncio-de-modelo-de-meta-tangencial-al-brief' rests
+    on 1 source(s)
+  related_notes:
+  - muse-wonder-anuncio-de-modelo-de-meta-tangencial-al-brief
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
+- id: gap-5aa3c32d44
+  type: thin_evidence
+  description: Note 'muse-wonder-fuera-del-brief-de-agentes-y-liderazgo' rests on
+    1 source(s)
+  related_notes:
+  - muse-wonder-fuera-del-brief-de-agentes-y-liderazgo
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-8de08b1470
   type: thin_evidence
   description: Note 'muse-wonder-wonder-full-titular-sin-evidencia' rests on 1 source(s)
@@ -4464,6 +4738,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-23'
+- id: gap-b020df74f1
+  type: thin_evidence
+  description: Note 'senal-mas-fuerte-del-cluster-son-dos-aforismos-genericos' rests
+    on 1 source(s)
+  related_notes:
+  - senal-mas-fuerte-del-cluster-son-dos-aforismos-genericos
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-417a9bb598
   type: thin_evidence
   description: Note 'shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos'
@@ -4903,6 +5186,14 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-15'
+- id: gap-d722bdfef2
+  type: thin_evidence
+  description: Note 'ai-coach-singleton-engagement-cero-novelty-cero' rests on 1 source(s)
+  related_notes:
+  - ai-coach-singleton-engagement-cero-novelty-cero
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-74b5e1ea30
   type: thin_evidence
   description: Note 'ai-coach-voz-loop-riesgos-latencia-stt-tts-coste-no-declarados'
@@ -5283,6 +5574,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-13'
+- id: gap-9c024c483a
+  type: thin_evidence
+  description: Note 'claude-code-system-prompt-singleton-rss-engagement-cero' rests
+    on 1 source(s)
+  related_notes:
+  - claude-code-system-prompt-singleton-rss-engagement-cero
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-80cbb232a2
   type: thin_evidence
   description: Note 'claude-opus-5-5-identificador-no-verificable' rests on 1 source(s)
@@ -5404,6 +5704,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-07'
+- id: gap-4e5635e7ca
+  type: thin_evidence
+  description: Note 'composicion-de-servicios-de-catalogo-no-es-practica-de-ingenieria-demostrada'
+    rests on 1 source(s)
+  related_notes:
+  - composicion-de-servicios-de-catalogo-no-es-practica-de-ingenieria-demostrada
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-e483cbf0bf
   type: thin_evidence
   description: Note 'confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido' rests
@@ -5440,6 +5749,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-12'
+- id: gap-89cd441079
+  type: thin_evidence
+  description: Note 'contar-docenas-de-partes-condicionales-sin-nombres-es-claim-fragil'
+    rests on 1 source(s)
+  related_notes:
+  - contar-docenas-de-partes-condicionales-sin-nombres-es-claim-fragil
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-dc89b66e6b
   type: thin_evidence
   description: Note 'control-de-agente-como-composicion-de-secciones' rests on 1 source(s)
@@ -5597,6 +5915,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-09'
+- id: gap-354379a2be
+  type: thin_evidence
+  description: Note 'engagament-cero-corroboracion-0-50-en-singleton-no-sostiene-cambio-de-postura'
+    rests on 1 source(s)
+  related_notes:
+  - engagament-cero-corroboracion-0-50-en-singleton-no-sostiene-cambio-de-postura
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-04c0adfa4e
   type: thin_evidence
   description: Note 'engagement-cero-en-cluster-de-un-documento-impide-inferencia-de-efecto'
@@ -5641,6 +5968,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-18'
+- id: gap-958fb700c7
+  type: thin_evidence
+  description: Note 'ensenanza-entry-level-fuera-de-alcance-ausencia-de-evidencia'
+    rests on 1 source(s)
+  related_notes:
+  - ensenanza-entry-level-fuera-de-alcance-ausencia-de-evidencia
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-b1efdb0f8b
   type: thin_evidence
   description: Note 'escribir-semanal-15-5s-sin-evidencia' rests on 1 source(s)
@@ -5666,6 +6002,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
+- id: gap-6852d4df2a
+  type: thin_evidence
+  description: Note 'extrapolar-arquitectura-de-prompt-a-liderazgo-o-docencia-seria-invencion'
+    rests on 1 source(s)
+  related_notes:
+  - extrapolar-arquitectura-de-prompt-a-liderazgo-o-docencia-seria-invencion
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-5281bfe7fd
   type: thin_evidence
   description: Note 'extrapolar-docencia-desde-cluster-de-claude-code-seria-invencion'
@@ -5868,6 +6213,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-17'
+- id: gap-96af882966
+  type: thin_evidence
+  description: Note 'headline-only-no-es-evidencia-de-cambio-estrategico' rests on
+    1 source(s)
+  related_notes:
+  - headline-only-no-es-evidencia-de-cambio-estrategico
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-58162d9dfc
   type: thin_evidence
   description: Note 'hooks-call-order-tema-trillado' rests on 1 source(s)
@@ -6166,6 +6520,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
+- id: gap-116e779fbd
+  type: thin_evidence
+  description: Note 'leak-de-claude-code-no-confirma-el-claim-sobre-su-prompt' rests
+    on 1 source(s)
+  related_notes:
+  - leak-de-claude-code-no-confirma-el-claim-sobre-su-prompt
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-32f814702c
   type: thin_evidence
   description: Note 'leak-sin-autenticidad-establecida-claude-code' rests on 1 source(s)
@@ -6276,6 +6639,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-07'
+- id: gap-1e9be2336e
+  type: thin_evidence
+  description: Note 'loop-de-voz-riesgos-de-privacidad-latencia-y-coste-no-declarados'
+    rests on 1 source(s)
+  related_notes:
+  - loop-de-voz-riesgos-de-privacidad-latencia-y-coste-no-declarados
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-d8e488a87d
   type: thin_evidence
   description: Note 'matching-llm-as-a-judge-relevancia-lexica-sin-ejes-del-brief'
@@ -6355,14 +6727,6 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
-- id: gap-dd312e692a
-  type: thin_evidence
-  description: Note 'muse-wen-senal-solo-titulo-sin-engagement' rests on 1 source(s)
-  related_notes:
-  - muse-wen-senal-solo-titulo-sin-engagement
-  priority: 0.5
-  status: open
-  created: '2026-09-24'
 - id: gap-445b2055d7
   type: thin_evidence
   description: Note 'muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion'
@@ -6372,6 +6736,33 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-13'
+- id: gap-e284b00f3d
+  type: thin_evidence
+  description: Note 'muse-wonder-anuncio-de-modelo-no-demuestra-utilidad-para-agentes'
+    rests on 1 source(s)
+  related_notes:
+  - muse-wonder-anuncio-de-modelo-no-demuestra-utilidad-para-agentes
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
+- id: gap-02c496b07d
+  type: thin_evidence
+  description: Note 'muse-wonder-contaminacion-del-brief-por-capacidades-no-verificadas'
+    rests on 1 source(s)
+  related_notes:
+  - muse-wonder-contaminacion-del-brief-por-capacidades-no-verificadas
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
+- id: gap-3053793e51
+  type: thin_evidence
+  description: Note 'muse-wonder-dos-etiquetas-de-modelo-sin-referente-verificable'
+    rests on 1 source(s)
+  related_notes:
+  - muse-wonder-dos-etiquetas-de-modelo-sin-referente-verificable
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-5a6b90f61d
   type: thin_evidence
   description: Note 'muse-wonder-ritmo-de-lanzamientos-no-es-evidencia-de-practica'
@@ -6390,6 +6781,15 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-14'
+- id: gap-2be83a49c0
+  type: thin_evidence
+  description: Note 'muse-wonder-titular-de-boletin-como-fuente-unica-sin-artefacto-primario'
+    rests on 1 source(s)
+  related_notes:
+  - muse-wonder-titular-de-boletin-como-fuente-unica-sin-artefacto-primario
+  priority: 0.5
+  status: open
+  created: '2026-10-19'
 - id: gap-44677e9e43
   type: thin_evidence
   description: Note 'nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria-2'
@@ -7352,15 +7752,6 @@ _Updated 2026-10-15 — 846 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-02'
-- id: gap-331a92dc4e
-  type: thin_evidence
-  description: Note 'vista-de-titulo-de-evento-infla-importancia-percibida-por-matching-lexico'
-    rests on 1 source(s)
-  related_notes:
-  - vista-de-titulo-de-evento-infla-importancia-percibida-por-matching-lexico
-  priority: 0.5
-  status: open
-  created: '2026-10-15'
 - id: gap-3b5d0cf8af
   type: thin_evidence
   description: Note 'vista-filtrada-del-codigo-no-confirma-composicion-condicional'

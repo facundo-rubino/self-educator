@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-14'
-updated: '2026-10-14'
+updated: '2026-10-19'
 sources:
 - d2a0c86ca8027978
 tags:
-- wandb
-- rol-declarado
 - juez-humano
+- llm-as-a-judge
+- rol-declarado
+- rss
 - stub
+- wandb
 base_confidence: 0.85
 half_life_days: 180
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -30,21 +32,36 @@ links:
   type: supports
 - to: inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion
   type: supports
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb
+  type: relates_to
+- to: juez-humano-we-and-b-llm-as-a-judge-hackathon
+  type: relates_to
+- to: juez-humano-we-and-b-llm-evaluator-hackathon
+  type: relates_to
+- to: mecanica-de-evals-afirmada-desde-solo-titulo-rss
+  type: supports
+- to: leer-llm-as-a-judge-como-practica-de-agentes-seria-invencion
+  type: supports
 ---
 
 ## What it is
-Lo único que declara el documento es haber participado como juez humano en un hackathon de LLM-as-a-Judge de Weights & Biases [d2a0c86ca8027978]. No describe criterios, formato de evaluación, rúbricas ni interacción con los sistemas evaluados.
+El autor del ítem declara haber participado como juez humano en un hackathon «LLM-as-a-Judge» de Weights & Biases. Es un rol enunciado en una entrada RSS corta, sin metodología de juicio, sin criterios y sin resultados — source: d2a0c86ca8027978.
 
 ## Evidence
-- El texto del documento es la frase «Being a human judge at the Weights & Biases LLM-as-a-Judge Hackathon» — source: d2a0c86ca8027978
-- El título del ítem asigna el rol «Hackathon Judge» — source: d2a0c86ca8027978
+- El autor actuó como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases — source: d2a0c86ca8027978
+- El ítem es una entrada de feed RSS con engagement cero y sin detalle técnico más allá del rol — source: d2a0c86ca8027978
 
 ## Why it matters
-Un rol declarado no es práctica de evaluación. Presentarlo como experiencia en evaluación de LLMs aplicada a equipos o como credencial de liderazgo técnico sería sobreinterpretación no sostenida por la fuente.
+Registra el rol, no un hallazgo. Sirve como pieza de contexto biográfico del autor (exposición al espacio de evaluación de salidas de LLM) y nada más: no sostiene claims sobre cómo codifica, lidera o enseña con agentes.
 
-Es la cara «rol» de `juez-humano-en-hackathon-llm-as-a-judge-de-wandb`: mismo documento, foco en la ausencia de contenido metodológico detrás del título. Sustenta `afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion` e `inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion`.
+Converge con las notas previas del mismo clúster de W&B (`juez-humano-en-hackathon-llm-as-a-judge-de-wandb`, `juez-humano-we-and-b-llm-as-a-judge-hackathon`, `juez-humano-we-and-b-llm-evaluator-hackathon`), que ya fijaban «juez humano» como rol declarado. Refuerza `mecanica-de-evals-afirmada-desde-solo-titulo-rss` (una mecánica de evaluación no se deriva de un titular) y `leer-llm-as-a-judge-como-practica-de-agentes-seria-invencion` (leer el rol como práctica de evaluación de agentes sería inventar).
 
 ## Links
 - derived_from → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
 - supports → [[afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion]]
 - supports → [[inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion]]
+- relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
+- relates_to → [[juez-humano-we-and-b-llm-as-a-judge-hackathon]]
+- relates_to → [[juez-humano-we-and-b-llm-evaluator-hackathon]]
+- supports → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
+- supports → [[leer-llm-as-a-judge-como-practica-de-agentes-seria-invencion]]

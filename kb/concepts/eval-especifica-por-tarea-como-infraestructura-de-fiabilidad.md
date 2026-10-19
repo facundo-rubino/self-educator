@@ -10,16 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-21'
-updated: '2026-09-21'
+updated: '2026-10-19'
 sources:
 - 93963a5f93e58d05
 tags:
-- evals
+- adopcion
 - adopcion-de-herramientas
+- evals
 - fiabilidad
+- llm-evals
 base_confidence: 0.25
 half_life_days: 180
-last_reinforced: '2026-09-21'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -28,20 +30,26 @@ links:
   type: supports
 - to: capas-de-verificacion-en-pipeline-de-agentes-de-codigo
   type: relates_to
+- to: task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad
+  type: derived_from
+- to: puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista
+  type: contradicts
 ---
 
 ## What it is
-Evaluar un modelo por familia de tarea, en lugar de por una puntuación agregada, es un modo de verificar aptitud antes de comprometerse a usarlo en una función concreta. En el material recuperado esta idea aparece sólo como implicación atribuida al analista, no como contenido del documento.
+Idea planteada pero no respondida por la evidencia: si elegir o construir herramientas de IA en un equipo chico exige un marco de evals por tarea, y qué evals concretas serían fiables. El clúster solo enumera familias de tarea; no responde qué funciona.
 
 ## Evidence
-- La evaluación específica por tarea se propone como infraestructura de fiabilidad que un dev-líder podría aplicar al adoptar asistentes de código — source: 93963a5f93e58d05 (implicación del analista, no claim del documento)
-- El documento sólo enumera tareas; no aporta mediciones ni evidencia de que la práctica funcione — source: 93963a5f93e58d05
+- El documento declara evals para clasificación, summarization, traducción, copyright y toxicidad — source: 93963a5f93e58d05
+- El clúster no detalla recomendaciones sobre qué evals aplicar al elegir agentes de IA — source: 93963a5f93e58d05
 
 ## Why it matters
-Es una idea plausible y probablemente popular, pero en esta evidencia no tiene respaldo: se sostiene únicamente como implicación y no como hallazgo. La nota existe para que la idea tenga un lugar identificable si en el futuro llega evidencia real —y para que `base_confidence` refleje que hoy no la hay.
+Determina si la evaluación por tarea puede ser infraestructura de fiabilidad real para adoptar asistentes, o solo una lista de categorías. Sin contenido ingerido del artículo, la pregunta queda abierta y no debe responderse por analogía.
 
-`supports` la nota que documenta el carácter especulativo del puente: esa nota acota exactamente hasta dónde llega esta afirmación. Se relaciona con `capas-de-verificacion-en-pipeline-de-agentes-de-codigo` como marco afín, con la advertencia de que ese vínculo tampoco lo sostiene esta fuente.
+Se deriva del alcance declarado del documento. Contradice el puente que convertiría la lista de familias en práctica de liderazgo: esa conexión es inferencia del analista, no hallazgo, y esta nota la deja como pregunta explícita.
 
 ## Links
 - supports → [[bridge-especulativo-de-eval-por-tarea-a-practica-de-liderazgo]]
 - relates_to → [[capas-de-verificacion-en-pipeline-de-agentes-de-codigo]]
+- derived_from → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
+- contradicts → [[puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista]]

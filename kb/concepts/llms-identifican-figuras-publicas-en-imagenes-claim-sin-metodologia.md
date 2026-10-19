@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-02'
-updated: '2026-10-14'
+updated: '2026-10-19'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -25,10 +25,11 @@ tags:
 - rss
 - rss-singleton
 - sin-metodologia
+- singleton
 - vision
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -57,20 +58,24 @@ links:
   type: supports
 - to: identificacion-de-figuras-publicas-ya-existia
   type: derived_from
+- to: identificacion-de-figuras-publicas-ya-existia
+  type: contradicts
+- to: afirmar-capacidad-multimodal-sin-metodologia
+  type: supports
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: relates_to
 ---
 
 ## What it is
-El claim «LLMs can now identify public figures in images» se sostiene en un único ítem RSS [19cb8032958cd964] que reporta que Gemini identificará figuras públicas mientras ChatGPT y Claude no. No aporta setup de prueba, prompts, versiones de modelo, fechas ni datos de precisión: es un anuncio de producto, no una demostración de capacidad.
+Un único ítem RSS afirma que los LLM ya identifican figuras públicas en imágenes, y que ChatGPT y Claude no lo hacen mientras Gemini sí. El documento es un titular: no trae metodología, conjunto de prueba, fecha ni definición de qué significa «identificar». Un solo documento sostiene todo el clúster.
 
 ## Evidence
-- El claim proviene de un solo documento RSS sin metodología, testing ni evidencia de soporte — fuente: sig-237cc97a9794
-- El documento reporta que Gemini lo hará y ChatGPT/Claude no — fuente: sig-237cc97a9794
-- No hay documentos corroborantes en el clúster; corroboration=0.50, novelty=0.00 — fuente: sig-237cc97a9794
+- El documento afirma que los LLM ya pueden identificar figuras públicas en imágenes y que ChatGPT y Claude no lo harán mientras Gemini sí — source: 19cb8032958cd964
 
 ## Why it matters
-Un anuncio de proveedor no es una medición. Sin versiones, condiciones ni línea base, el claim no es citable como capacidad demostrada ni como base para decidir un proveedor multimodal.
+Si fuera cierto, el comportamiento multimodal variaría materialmente entre proveedores, lo que sería criterio de selección al construir flujos con imágenes. Pero el clúster no da base para ninguna afirmación sustantiva sobre esa selección: es un titular aislado.
 
-Deriva de la observación de que la tarea no es nueva; sostiene el riesgo de afirmar capacidad desde un titular RSS sobre identificación. Se relaciona con la nota de divergencia de rechazo entre proveedores observada en el mismo corpus.
+Contradice el registro de que la identificación de figuras públicas ya existía desde la era GPT-4V: «can now» sería encuadre léxico, no hallazgo (`contradicts`). Es evidencia del modo de fallo descrito en `afirmar-capacidad-multimodal-sin-metodologia`. Se relaciona con la divergencia de rechazo por proveedor al nombrar figuras públicas y con la distinción entre capacidad técnica y política de rechazo.
 
 ## Links
 - supports → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
@@ -85,3 +90,6 @@ Deriva de la observación de que la tarea no es nueva; sostiene el riesgo de afi
 - supports → [[afirmacion-de-capacidad-desde-fragmento-de-una-linea]]
 - supports → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
 - derived_from → [[identificacion-de-figuras-publicas-ya-existia]]
+- contradicts → [[identificacion-de-figuras-publicas-ya-existia]]
+- supports → [[afirmar-capacidad-multimodal-sin-metodologia]]
+- relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]

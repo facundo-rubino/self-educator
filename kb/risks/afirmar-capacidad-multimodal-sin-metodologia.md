@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-13'
+updated: '2026-10-19'
 sources:
-- sig-237cc97a9794
 - 19cb8032958cd964
+- sig-237cc97a9794
 tags:
+- claim-sin-metodologia
 - metodologia
-- verificabilidad
 - multimodal
+- verificabilidad
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-13'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -28,20 +29,29 @@ links:
   type: derived_from
 - to: confirmacion-de-evaluacion-por-terceros-no-es-adopcion
   type: relates_to
+- to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
+  type: derived_from
+- to: segundo-corpus-necesario-para-afirmar-capacidad-multimodal
+  type: supports
+- to: identificar-no-es-reconocer-en-la-fuente
+  type: relates_to
 ---
 
 ## What it is
-Una afirmación sobre capacidad de un modelo multimodal sin imágenes de prueba, prompts, versiones ni análisis de errores no es verificable. n=1 documento, sin protocolo reproducible, no sostiene un hallazgo de capacidad.
+Una afirmación de capacidad de modelo multimodal («ahora puede identificar figuras públicas») sin test set, protocolo, fecha ni definición operativa no es un resultado establecido, sino un titular. La afirmación tampoco distingue si «identificar» significa nombrar, describir o cotejar contra una base de datos.
 
 ## Evidence
-- Sin detal técnico, imágenes de prueba, prompts ni análisis de errores, el claim no es reproducible — source: 19cb8032958cd964
-- n=1 documento, sin protocolo reproducible; la evidencia infiere capacidad de un output que puede ser política o alucinación — source: sig-237cc97a9794
+- El documento no da metodología, conjunto de prueba ni fecha para el claim de identificación — source: 19cb8032958cd964
+- El documento no precisa si «identificar» es nombrar, describir o matching contra base de datos, ni menciona rechazos, salvaguardas o variación regional — source: 19cb8032958cd964
 
 ## Why it matters
-La ausencia de protocolo impide distinguir capacidad real de cumplimiento de política o de confabulación. Cualquier nota que afirme capacidad multimodal desde esta base propagaría un dato no verificado.
+Actuar sobre esta afirmación en selección de herramientas o en docencia propagaría un dato no verificado. Un titular de capacidad sin metodología no se cita como característica de producto.
 
-Se deriva de `afirmacion-de-capacidad-multimodal-sin-metodologia` (nota existente que cubre el mismo modo de fallo) y se relaciona con `confirmacion-de-evaluacion-por-terceros-no-es-adopcion`: registrar una observación no equivale a una evaluación.
+Se deriva del claim de identificación de figuras públicas del clúster. Es respaldada por la nota que exige un segundo corpus antes de afirmar capacidad multimodal, y se relaciona con la advertencia de que «identificar» en la fuente puede significar «no rechazar», no «reconocer».
 
 ## Links
 - derived_from → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
 - relates_to → [[confirmacion-de-evaluacion-por-terceros-no-es-adopcion]]
+- derived_from → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- supports → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
+- relates_to → [[identificar-no-es-reconocer-en-la-fuente]]

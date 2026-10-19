@@ -10,10 +10,11 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-15'
+updated: '2026-10-19'
 sources:
 - 93963a5f93e58d05
 tags:
+- agentes
 - alcance
 - artefacto-de-ingesta
 - docencia
@@ -27,11 +28,12 @@ tags:
 - single-source
 - task-families
 - task-specific
+- task-specific-evals
 - taxonomia
 - taxonomia-de-tareas
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -73,16 +75,16 @@ links:
 ---
 
 ## What it is
-El documento declara como objeto de evaluación las tareas específicas de LLM: clasificación, resumen, traducción, regurgitación de copyright y toxicidad. Es el único contenido verificable del ítem, que llega como título más una línea de alcance sin cuerpo ingerido.
+El único contenido verificable del documento es su alcance declarado: anuncia un artículo sobre evals de LLM específicas por tarea, enumerando clasificación, summarization, traducción, regurgitación de copyright y toxicidad. No hay métodos, resultados, números ni criterios de qué eval funciona.
 
 ## Evidence
-- El sujeto declarado son evals de LLM específicas por tarea: clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
-- Las cinco categorías nombradas son todas tareas de salida de texto; ninguna es una tarea agéntica o de varios pasos — source: 93963a5f93e58d05
+- El documento cubre evals de LLM para clasificación, summarization, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
+- El título plantea qué evals específicas por tarea funcionan y cuáles no — source: 93963a5f93e58d05
 
 ## Why it matters
-Es un puntero taxonómico a categorías de eval a chequear al validar un asistente, no un hallazgo sobre cómo se trabaja mejor. Que las cinco categorías sean tareas de salida de texto implica que el documento no habla de comportamiento de agente multi-paso, que es lo que domina este brief.
+La lista de familias de tarea es el único anclaje para decidir si el artículo sirve al brief (agentes de código, gestión, docencia). Esas cinco familias son NLP general: ninguna cubre evals de código ni de asistentes de enseñanza, así que la conexión con el trabajo del dev-líder es léxica («evals»), no temática.
 
-Se relaciona con las demás notas que registran las familias de tarea declaradas de este mismo documento, que es el único contenido verificable que trae.
+Se deriva de la nota de alcance que registra la ausencia de cuerpo. Se relaciona con las familias de tarea ya enumeradas en el corpus y con la idea general de eval por tarea como infraestructura de fiabilidad, sin que este clúster aporte evidencia de esa aplicación.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]

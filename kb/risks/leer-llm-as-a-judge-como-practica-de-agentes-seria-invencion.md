@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-07'
+updated: '2026-10-19'
 sources:
 - d2a0c86ca8027978
 tags:
-- sobreinterpretacion
+- agentes
+- brief
 - evaluacion-de-agentes
+- inferencia
 - llm-as-a-judge
+- sobreinterpretacion
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-19'
 provenance:
   scale: XL
   query: null
@@ -29,22 +32,33 @@ links:
   type: relates_to
 - to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb
   type: relates_to
+- to: leer-llm-as-a-judge-como-practica-de-agentes-seria-invencion
+  type: supports
+- to: falso-match-llm-as-a-judge-evaluacion-vs-brief-de-agentes-y-liderazgo
+  type: relates_to
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb-rol-declarado
+  type: derived_from
+- to: juez-humano-como-rol-sin-contenido-metodologico
+  type: supports
 ---
 
 ## What it is
-Riesgo de completar el vacío documental del anuncio de hackathon con una metodología plausible de evaluación de agentes (jueces automáticos, regresión de salidas, validación de comportamiento) que el documento no suministra. El fragmento ingerido es de nivel de titular y no sostiene ninguna prescripción operativa.
+Un hackathon de evaluación de LLM no se transfiere automáticamente al brief de «agentes de IA aplicados a programar, gestionar y enseñar». La adyacencia es léxica («LLM»), no semántica: el documento no habla de agentes ni de su uso en trabajo de dev o docencia.
 
 ## Evidence
-- El documento no describe métodos, proyectos ni lecciones utilizables para validar comportamiento de agentes — source: d2a0c86ca8027978
-- El clúster se compone de un único documento con engagement cero y sin corroboración interna — source: d2a0c86ca8027978
-- El crítico del pipeline califica el clúster como WEAK y rebaja la confianza a 0.03 — source: d2a0c86ca8027978
+- El documento solo declara el rol de juez en un hackathon sobre jueces-LLM — source: d2a0c86ca8027978
+- No contiene hallazgos ni contenido técnico sobre agentes de código, gestión o docencia — source: d2a0c86ca8027978
 
 ## Why it matters
-Evita que la nota se convierta en fuente aparente de una práctica de evaluación que nadie ha descrito. Una recomendación operativa sobre cómo validar salidas de agente en un equipo chico requiere una fuente que exponga el método, no la mención de un evento.
+Evita que el brief absorba la evaluación de salidas de LLM como si fuera evidencia sobre la práctica de agentes. El documento, como mucho, toca el espacio de evaluación de LLM, tangencialmente adyacente a «usar bien agentes», sin cubrirlo.
 
-Es una aplicación concreta de «analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub» y comparte la lógica de «inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion». Depende del clúster descrito en «juez-humano-en-hackathon-llm-as-a-judge-de-wandb».
+Reaparezco la misma objeción ya registrada en `leer-llm-as-a-judge-como-practica-de-agentes-seria-invencion`; converge con `falso-match-llm-as-a-judge-evaluacion-vs-brief-de-agentes-y-liderazgo` y con `juez-humano-como-rol-sin-contenido-metodologico`. Se deriva de la nota factual del clúster.
 
 ## Links
 - supports → [[analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub]]
 - relates_to → [[inferir-juicio-de-hackathon-desde-un-fragmento-de-rol-seria-especulacion]]
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb]]
+- supports → [[leer-llm-as-a-judge-como-practica-de-agentes-seria-invencion]]
+- relates_to → [[falso-match-llm-as-a-judge-evaluacion-vs-brief-de-agentes-y-liderazgo]]
+- derived_from → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb-rol-declarado]]
+- supports → [[juez-humano-como-rol-sin-contenido-metodologico]]
