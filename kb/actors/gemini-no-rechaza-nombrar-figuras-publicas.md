@@ -9,10 +9,12 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-07'
+updated: '2026-10-20'
 sources:
 - 19cb8032958cd964
 tags:
+- chatgpt
+- claude
 - gemini
 - guardrails
 - imagenes
@@ -23,7 +25,7 @@ tags:
 - vision
 base_confidence: 0.15
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -50,18 +52,20 @@ links:
   type: relates_to
 - to: afirmacion-poblacional-desde-un-solo-proveedor
   type: relates_to
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: relates_to
 ---
 
 ## What it is
-Un único ítem RSS reporta que Gemini no se niega a nombrar figuras públicas presentes en una imagen, en contraste con ChatGPT y Claude. Es un dato de política observada de un proveedor, sin metodología, versión ni fecha publicadas en la evidencia disponible.
+Un solo documento RSS sitúa a Gemini como el proveedor que sí nombra figuras públicas en imágenes, frente a ChatGPT y Claude que declinan hacerlo. No se especifican versión del modelo, cuenta, región ni condiciones de prompt. El comportamiento declarado es de producto, no una medición de reconocimiento.
 
 ## Evidence
-- Gemini identifica figuras públicas en imágenes donde ChatGPT y Claude rechazan hacerlo — source: 19cb8032958cd964
+- Gemini identifica figuras públicas donde ChatGPT y Claude rechazan — source: 19cb8032958cd964
 
 ## Why it matters
-El dato es directamente relevante para elegir proveedor en cualquier demo docente o herramienta que procese imágenes: si el flujo asume uniformidad entre asistentes, el comportamiento de Gemini lo rompe. Al mismo tiempo, una observación de un solo proveedor en un solo documento no sostiene ninguna afirmación poblacional sobre «los LLM».
+Con una sola observación sin metodología, la política de un proveedor no se puede generalizar: versiones, cuentas y ajustes de sistema la condicionan, y el comportamiento de rechazo cambia en cadencia semanal. Sirve como sonda para testear, no como afirmación sobre capacidades.
 
-Es el actor concreto del caso descrito en `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor` y evidencia del patrón general de divergencia entre proveedores. Queda condicionada por `afirmacion-poblacional-desde-un-solo-proveedor` y por `afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion`: la fuente no es una medición, es una anécdota de feed.
+Es el caso de proveedor concreto que sostiene la observación de `divergencia-de-rechazo-entre-proveedores` y se relaciona con `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`, que explica por qué el rechazo no informa de la capacidad.
 
 ## Links
 - supports → [[divergencia-de-rechazo-entre-proveedores]]
@@ -75,3 +79,4 @@ Es el actor concreto del caso descrito en `divergencia-de-rechazo-nombrar-figura
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
+- relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]

@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-19'
+updated: '2026-10-20'
 sources:
 - 4004eb9d4bbe0e76
 tags:
@@ -22,10 +22,11 @@ tags:
 - modelos-frontera
 - msl
 - sin-evidencia
+- titular-sin-cuerpo
 - titular-sin-evidencia
 base_confidence: 0.05
 half_life_days: 120
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -46,20 +47,25 @@ links:
   type: relates_to
 - to: meta-shakes-up-frontiers-single-source-headline-sin-cuerpo
   type: relates_to
+- to: muse-wonder-claude-5-5-tier-comparacion-sin-metrica
+  type: derived_from
+- to: muse-wonder-anuncio-de-modelo-de-meta-tangencial-al-brief
+  type: relates_to
+- to: muse-wonder-admision-de-anuncios-de-modelo-sin-benchmarks
+  type: supports
 ---
 
 ## What it is
-Un ítem de feed AINews (doc `4004eb9d4bbe0e76`) anuncia que Meta MSL habría alcanzado estatus de laboratorio frontera con un modelo llamado «Muse Wonder» / «Wonder Full». El documento afirma que «la emergencia de MSL como laboratorio frontera finalmente se completó», sin aportar benchmarks, datos de entrenamiento ni evaluación independiente en el texto disponible. La descripción del modelo se hace por comparación («tier Claude 5.5»), es decir, relativa a otro sistema y no mediante métricas propias verificables.
+El clúster contiene un único documento que afirma que Meta Superintelligence Labs (MSL) completó su consolidación como laboratorio de frontera con un modelo llamado «Meta Muse Wonder» / «Wonder Full», descrito en el titular como de nivel «Claude 5.5». El documento no aporta benchmarks, arquitectura, datos de entrenamiento, disponibilidad ni evaluación independiente. La afirmación es un titular de agregación, no un resultado de release.
 
 ## Evidence
-- El clúster consiste en un solo documento de tipo rss con engagement=0 titulado «Meta Muse Wonder & Wonder Full: MSL's Claude 5.5-tier Frontier Model» — source: 4004eb9d4bbe0e76
-- Afirmación de que la emergencia de MSL como laboratorio frontera «finalmente se completó», sin benchmarks ni evaluación independiente — source: 4004eb9d4bbe0e76
-- La capacidad se describe como «tier Claude 5.5», una comparación relativa sin métricas propias — source: 4004eb9d4bbe0e76
+- El titular afirma que MSL completó su emergencia como laboratorio de frontera con «Meta Muse Wonder & Wonder Full», descrito como modelo de nivel «Claude 5.5» — source: 4004eb9d4bbe0e76
+- El documento es una entrada de agregación RSS de AINews con engagement=0 y novedad=0.00; sin datos técnicos, benchmarks ni evaluación independiente — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-No hay evidencia accionable para el brief: no documenta capacidades, precios, contexto, herramientas ni resultados reproducibles. Si el anuncio se confirma, amplía la oferta de modelos de nivel frontera; hoy el clúster no permite decidir nada al respecto. Debe tratarse como señal de mercado de baja prioridad, no como insumo para liderazgo técnico, estimación, alcance u oficio de software.
+Para decidir tooling de agentes o docencia no hay nada que usar: no hay capacidades agénticas, context window, precio, latencia ni tooling descritos. La existencia, el nombre y el nivel de capacidad del modelo no están confirmados por una cadena de evidencia primaria.
 
-Se relaciona con la señal previa «Muse wen?» (mismo actor Meta, misma ausencia de cuerpo) y con la nota derivada sobre estructura de tiers inferida. Se apoya en el patrón de que un ranking o un anuncio no mide calidad del modelo. Se relaciona con «Meta shakes up the frontiers» como otro titular de fuente única sobre la posición de Meta en el frente de modelos.
+Deriva de la comparación nominal con «Claude 5.5» (muse-wonder-claude-5-5-tier-comparacion-sin-metrica), que es el único contenido además del nombre. Refuerza la regla de admisión de anuncios sin benchmarks (muse-wonder-admision-de-anuncios-de-modelo-sin-benchmarks) y queda, como ese ítem, fuera de los ejes del brief de agentes y liderazgo.
 
 ## Links
 - relates_to → [[hy3-lidera-ranking-openrouter-sin-datos-de-capacidades]]
@@ -70,3 +76,6 @@ Se relaciona con la señal previa «Muse wen?» (mismo actor Meta, misma ausenci
 - relates_to → [[claude-sonnet-5-5-etiqueta-sin-documento-que-la-respalde]]
 - relates_to → [[muse-wonder-wonder-full-titular-sin-evidencia-2]]
 - relates_to → [[meta-shakes-up-frontiers-single-source-headline-sin-cuerpo]]
+- derived_from → [[muse-wonder-claude-5-5-tier-comparacion-sin-metrica]]
+- relates_to → [[muse-wonder-anuncio-de-modelo-de-meta-tangencial-al-brief]]
+- supports → [[muse-wonder-admision-de-anuncios-de-modelo-sin-benchmarks]]

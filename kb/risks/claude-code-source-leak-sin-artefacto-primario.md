@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-06'
-updated: '2026-10-06'
+updated: '2026-10-20'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
-- verificabilidad
 - fuente-filtrada
+- leak
+- provenance
 - rss
+- unverifiable
+- verificabilidad
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -34,19 +37,25 @@ links:
   type: supports
 - to: vista-filtrada-de-codigo-no-confirma-composicion-condicional
   type: supports
+- to: claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente
+  type: contradicts
+- to: claude-code-source-leak-condiciones-parts-unspecified
+  type: relates_to
+- to: view-filtrada-del-codigo-no-confirma-composicion-condicional
+  type: relates_to
 ---
 
 ## What it is
-La afirmación sobre el system prompt de Claude Code se apoya en «leaked source code», un género de procedencia no verificable y sin artefacto primario presentado: no hay volcado del prompt, repositorio ni diff [abf61eeec75462f9]. Una fuente filtrada sin autenticidad establecida no confirma lo que dice el leak.
+La provenance del claim es un «leak» afirmado: no hay prompt textual, ni inventario de ramas condicionales, ni muestreo reproducible. Un leak sin autenticidad establecida no puede validar lo que el propio leak afirma.
 
 ## Evidence
-- La evidencia del documento rss es la frase «Claude Code's leaked source shows…», sin material primario adjunto — source: abf61eeec75462f9
-- El material suministrado no ofrece contenido sustantivo más allá del titular y un resumen de una línea — source: abf61eeec75462f9
+- El ítem enmarca la afirmación en un código fuente filtrado, sin adjuntar fragmentos ni versión. — source: abf61eeec75462f9
+- El crítico señala la ausencia de artefacto primario y califica el claim como no superviviente al escrutinio. — source: abf61eeec75462f9
 
 ## Why it matters
-Introduce una fecha de caducidad y un riesgo de integridad: si Anthropic cambia la implementación, la afirmación queda obsoleta de inmediato, y sin artefacto reproducible no hay forma de comprobarla antes de citarla. Cualquier uso en docencia, configuración o diseño de agentes propios debe verificar contra upstream primero.
+Sin artefacto primario no hay verificación: la afirmación podría ser especulativa o parafraseada. Cualquier uso en docencia o configuración de agentes debería esperar a la fuente original.
 
-Refuerza las notas previas sobre leaks sin autenticidad establecida y sobre el system prompt de Claude Code como artefacto de ingesta sin API de verificación. Se relaciona con la nota principal del clúster como su condición de validez.
+`contradicts` la nota del claim principal en tanto que la nota afirma como hallazgo algo que esta nota declara no verificable; la contradicción se resuelve en `edu reconcile` con ambas evidencias. `supports` las notas existentes sobre leaks sin autenticidad establecida.
 
 ## Links
 - relates_to → [[claude-code-ensamblado-condicional-de-system-prompt]]
@@ -54,3 +63,6 @@ Refuerza las notas previas sobre leaks sin autenticidad establecida y sobre el s
 - supports → [[leak-sin-autenticidad-establecida-claude-code]]
 - supports → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]
 - supports → [[vista-filtrada-de-codigo-no-confirma-composicion-condicional]]
+- contradicts → [[claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente]]
+- relates_to → [[claude-code-source-leak-condiciones-parts-unspecified]]
+- relates_to → [[view-filtrada-del-codigo-no-confirma-composicion-condicional]]

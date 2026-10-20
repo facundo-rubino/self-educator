@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-15'
-updated: '2026-10-15'
+updated: '2026-10-20'
 sources:
 - abf61eeec75462f9
 - sig-979a04e33a30
 tags:
-- claude-code
-- system-prompt
 - claim-inverificable
+- claude-code
+- prompt-assembly
+- system-prompt
+- unfalsifiable-claim
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -28,20 +30,32 @@ links:
   type: relates_to
 - to: claude-code-system-prompt-condicional-singleton-sin-artefacto-primario
   type: derived_from
+- to: claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente
+  type: derived_from
+- to: contar-docenas-de-partes-condicionales-es-claim-de-conteo-fragil
+  type: supports
+- to: contar-docenas-de-partes-condicionales-sin-nombres-es-claim-fragil
+  type: relates_to
+- to: restatement-de-titulo-no-es-hallazgo
+  type: relates_to
 ---
 
 ## What it is
-La formulación «docenas de partes condicionales» no nombra ensamblador, archivo ni comportamiento en runtime. Sin un mecanismo identificable, el conteo no es falsable y colapsa a la idea genérica de que los prompts de agente son modulares o templated, ya común en ingeniería de LLM antes de este clúster.
+«Docenas de partes condicionales» es un conteo vago que nadie puede contrastar contra el texto provisto: no se nombra ninguna condición, ninguna sección ni ningún disparador. Sin inventario, el número es retórica, no medición.
 
 ## Evidence
-- El crítico del reporte señala la frase como vaga e inverificable, sin mecanismo, archivo ni comportamiento en runtime identificados — fuente: sig-979a04e33a30.
-- El reporte aguas arriba reformula la misma afirmación sin añadir mecanismo — fuente: abf61eeec75462f9.
+- La afirmación del ítem se limita a «dozens of conditional parts», sin fragmentos de prompt ni condiciones identificadas. — source: abf61eeec75462f9
+- El clúster contiene un único documento y el crítico lo marca WEAK por ausencia de artefacto primario. — source: abf61eeec75462f9
 
 ## Why it matters
-Un conteo inverificable no se puede revisar, testear ni versionar. Presentarlo a un equipo o a una clase como detalle del diseño de un producto lo convierte en folklore técnico.
+Un claim de conteo sin mecanismo no se puede refutar ni reproducir, así que no sostiene ninguna inferencia sobre diseño de agentes ni sobre práctica de ingeniería del proveedor.
 
-Se deriva de `claude-code-system-prompt-condicional-singleton-sin-artefacto-primario` y se relaciona con el patrón existente `contar-docenas-de-partes-condicionales-es-claim-de-conteo-fragil`.
+`derived_from` la nota del claim principal: aísla la parte no verificable. `supports` las notas existentes sobre fragilidad de claims de conteo de partes condicionales: mismo modo de fallo, otra instancia.
 
 ## Links
 - relates_to → [[contar-docenas-de-partes-condicionales-es-claim-de-conteo-fragil]]
 - derived_from → [[claude-code-system-prompt-condicional-singleton-sin-artefacto-primario]]
+- derived_from → [[claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente]]
+- supports → [[contar-docenas-de-partes-condicionales-es-claim-de-conteo-fragil]]
+- relates_to → [[contar-docenas-de-partes-condicionales-sin-nombres-es-claim-fragil]]
+- relates_to → [[restatement-de-titulo-no-es-hallazgo]]

@@ -1,6 +1,7 @@
 ---
 id: mcp-release-2026-8-18-bumps
-title: 'Release 2026.8.18: bump de everything, time, fetch y git'
+title: 'Release 2026.8.18: bump de server-everything, mcp-server-time, mcp-server-fetch
+  y mcp-server-git'
 type: concept
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,18 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-10-02'
+updated: '2026-10-20'
 sources:
 - 9750590bbfe6b285
 tags:
 - changelog
 - mcp
+- packaging
 - release
 - releases
 - versionado
 base_confidence: 0.78
 half_life_days: 180
-last_reinforced: '2026-10-02'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -31,20 +33,23 @@ links:
   type: relates_to
 - to: mcp-roster-de-paquetes-varia-entre-releases
   type: supports
+- to: mcp-release-stub-sin-changelog
+  type: supports
 ---
 
 ## What it is
-El release 2026.8.18 lista server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git, todos a v2026.8.18.
+Release v2026.8.18 actualiza `server-everything`, `mcp-server-time`, `mcp-server-fetch` y `mcp-server-git` a la versión 2026.8.18. Entrada de changelog sin contenido descriptivo.
 
 ## Evidence
-- El release 2026.8.18 lista server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git a v2026.8.18 — source: 9750590bbfe6b285
+- Release v2026.8.18 actualiza server-everything, mcp-server-time, mcp-server-fetch y mcp-server-git a 2026.8.18 — source: 9750590bbfe6b285
 
 ## Why it matters
-Consolida la presencia de time y fetch tras su aparición en 2026.7.10, con git todavía presente antes de desaparecer en 2026.8.31.
+Documenta un subconjunto distinto de paquetes que el release 2026.8.31, lo que sostiene la observación de que el roster de paquetes bumpeados varía entre releases.
 
-`mcp-roster-de-paquetes-varia-entre-releases` recoge la composición cambiante que este release ilustra.
+Soporta `mcp-servers-versionado-por-fecha` (misma fecha nominal y versión) y `mcp-roster-de-paquetes-varia-entre-releases` (el subconjunto difiere del 2026.8.31). También es un caso de release-stub sin changelog.
 
 ## Links
 - supports → [[mcp-servers-versionado-por-fecha]]
 - relates_to → [[mcp-release-2026-7-10-bumps]]
 - supports → [[mcp-roster-de-paquetes-varia-entre-releases]]
+- supports → [[mcp-release-stub-sin-changelog]]

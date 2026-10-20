@@ -9,18 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-19'
+updated: '2026-10-20'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
 tags:
+- capacidad
+- claim-sin-evidencia
 - claim-sin-metodologia
 - metodologia
 - multimodal
 - verificabilidad
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -35,19 +37,23 @@ links:
   type: supports
 - to: identificar-no-es-reconocer-en-la-fuente
   type: relates_to
+- to: llms-identifican-figuras-publicas-sin-metodologia
+  type: relates_to
+- to: afirmacion-de-capacidad-multimodal-sin-metodologia
+  type: relates_to
 ---
 
 ## What it is
-Una afirmación de capacidad de modelo multimodal («ahora puede identificar figuras públicas») sin test set, protocolo, fecha ni definición operativa no es un resultado establecido, sino un titular. La afirmación tampoco distingue si «identificar» significa nombrar, describir o cotejar contra una base de datos.
+Un claim de capacidad («los LLM ahora identifican figuras públicas») exige precisión, tasas de error y cobertura. El documento no aporta ninguno: ni número de imágenes, ni versiones, ni redacción de prompts. Lo que sí reporta es qué proveedor nombra y cuál se niega. Sin medición, el claim no es verificable y el contraste puede ser un artefacto de sensibilidad al prompt.
 
 ## Evidence
-- El documento no da metodología, conjunto de prueba ni fecha para el claim de identificación — source: 19cb8032958cd964
-- El documento no precisa si «identificar» es nombrar, describir o matching contra base de datos, ni menciona rechazos, salvaguardas o variación regional — source: 19cb8032958cd964
+- El documento no detalla cuántas imágenes, qué versiones de modelo ni cómo se formularon los prompts — source: 19cb8032958cd964
+- La afirmación de capacidad se apoya en una sola fuente anecdótica («one outlet's testing») — source: 19cb8032958cd964
 
 ## Why it matters
-Actuar sobre esta afirmación en selección de herramientas o en docencia propagaría un dato no verificado. Un titular de capacidad sin metodología no se cita como característica de producto.
+Promover este claim a hallazgo del brief inflaría una anécdota periférica. Confundir rechazo con incapacidad produciría una conclusión engañosa y, en un tema de privacidad y derechos de imagen, tratar «Gemini lo hace» como recomendación sería irresponsable sin examinar consentimiento y jurisdicción.
 
-Se deriva del claim de identificación de figuras públicas del clúster. Es respaldada por la nota que exige un segundo corpus antes de afirmar capacidad multimodal, y se relaciona con la advertencia de que «identificar» en la fuente puede significar «no rechazar», no «reconocer».
+Es el riesgo que pesa sobre `llms-identifican-figuras-publicas-sin-metodologia` y duplica el modo de fallo ya registrado en `afirmacion-de-capacidad-multimodal-sin-metodologia`.
 
 ## Links
 - derived_from → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
@@ -55,3 +61,5 @@ Se deriva del claim de identificación de figuras públicas del clúster. Es res
 - derived_from → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
 - supports → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]
 - relates_to → [[identificar-no-es-reconocer-en-la-fuente]]
+- relates_to → [[llms-identifican-figuras-publicas-sin-metodologia]]
+- relates_to → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]

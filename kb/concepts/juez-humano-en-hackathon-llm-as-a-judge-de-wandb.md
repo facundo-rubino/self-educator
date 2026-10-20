@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-07'
+updated: '2026-10-20'
 sources:
 - d2a0c86ca8027978
 tags:
@@ -25,10 +25,11 @@ tags:
 - senal-debil
 - sin-cuerpo
 - wandb
+- we-and-b
 - weave
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -75,21 +76,23 @@ links:
   type: relates_to
 - to: wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo
   type: relates_to
+- to: afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion
+  type: supports
+- to: analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub
+  type: supports
 ---
 
 ## What it is
-El clúster corresponde a un único documento RSS [d2a0c86ca8027978] que es una nota en primera persona sobre haber ejercido de juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases. El contenido ingerido se limita al enunciado de nivel de titular y al encuadre hackathon/juez; no describe estructura del evento, criterios de juicio, proyectos presentados ni conclusiones.
+Relato en primera persona de haber actuado como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases. El registro ingerido contiene solo la línea de título/descripción: ni cuerpo, ni hallazgos, ni metodología de evaluación. — source: d2a0c86ca8027978
 
 ## Evidence
-- El documento es una nota de rol en primera persona sobre ser juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases — source: d2a0c86ca8027978
-- El documento se asocia al rol de juicio del hackathon y al tema de evaluación «LLM-as-a-Judge», lo que indica que el evento gira en torno a usar LLMs como evaluadores — source: d2a0c86ca8027978
-- El contenido ingerido es esencialmente de nivel de titular: no aporta métodos, proyectos ni lecciones descritas — source: d2a0c86ca8027978
-- El documento llegó por feed RSS con engagement registrado igual a cero — source: d2a0c86ca8027978
+- El documento se presenta como relato en primera persona de juzgar el hackathon «LLM-as-a-Judge» de Weights & Biases. — source: d2a0c86ca8027978
+- El registro contiene únicamente título/descripción; no hay contenido sustantivo sobre métodos de evaluación, diseño de agentes ni práctica de equipo. — source: d2a0c86ca8027978
 
 ## Why it matters
-No aporta evidencia sobre agentes de IA aplicados a programar, gestionar o enseñar, ni sobre liderazgo técnico de equipos chicos, estimación, secuenciamiento, alcance, organización personal, oficio de software engineering, productividad o técnicas de estudio. Como mucho es un punto de contacto periférico y débil sobre evaluación de salidas de modelo.
+No habilita ningún claim sobre agentes de IA aplicados a programar, gestionar o enseñar: no hay hallazgo que citar. El único puente plausible al brief —que la evaluación LLM-as-a-judge es un componente de flujos de evaluación de agentes y software— se infiere del título, no del texto.
 
-Se relaciona con las notas existentes sobre el mismo stub de W&B: «wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo» y «juez-humano-we-and-b-llm-evaluator-hackathon», que registran el mismo artefacto de ingesta desde ángulos distintos. La conexión se sostiene por identidad de documento fuente, no por una tesis compartida sobre el brief.
+El rol de juez existe como declaración sin desarrollo metodológico (`juez-humano-como-rol-sin-contenido-metodologico`). Inferir pericia evaluadora de haber sido juez es el modo de fallo documentado en `afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion`. La analogía con prácticas de evaluación de agentes no está sostenida por el stub (`analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub`).
 
 ## Links
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
@@ -113,3 +116,5 @@ Se relaciona con las notas existentes sobre el mismo stub de W&B: «wandb-llm-as
 - relates_to → [[juez-humano-we-and-b-llm-evaluator-hackathon]]
 - relates_to → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb-engagement-cero]]
 - relates_to → [[wandb-llm-as-a-judge-hackathon-stub-sin-cuerpo]]
+- supports → [[afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion]]
+- supports → [[analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub]]

@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-15'
+updated: '2026-10-20'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -19,8 +19,10 @@ tags:
 - autorregulacion
 - bienestar
 - encuadre
+- enfoque
 - foco
 - framing
+- fuera-de-brief
 - monkey-mind
 - organizacion-personal
 - personal-productivity
@@ -31,7 +33,7 @@ tags:
 - self-management
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -75,15 +77,15 @@ links:
 ---
 
 ## What it is
-El autor enmarca su AI coach como una herramienta para «domar la mente de mono»: un asistente de autorregulación personal. No es un instrumento de coordinación de equipo, estimación ni docencia, y el documento no lo presenta como tal.
+El proyecto se motiva por un problema personal: gestionar una mente dispersa («monkey mind»). El encuadre es productividad y foco individual, no práctica de ingeniería, docencia de programación ni liderazgo de equipos.
 
 ## Evidence
-- El texto enmarca el proyecto como una forma de «domar la mente de mono» (monkey mind) del autor, es decir, un asistente personal para autorregulación más que una herramienta de equipo o de enseñanza — source: 49140f9d5133d3c7
+- El proyecto está motivado por un problema personal — manejar una mente distraída y dispersa («monkey mind») — y no por trabajo de equipo o docencia — source: 49140f9d5133d3c7
 
 ## Why it matters
-Fija el alcance del ítem: en el brief de agentes aplicados a programar, gestionar y enseñar, «monkey mind» pertenece al eje de productividad y técnicas de estudio, no al de liderazgo técnico ni docencia. Cualquier lectura de gestión sería extrapolación.
+Separa este ítem de los ejes del brief: si se busca material sobre agentes aplicados a programar, gestionar o enseñar, esta nota no lo aporta. Sirve como anécdota de foco personal, no como recomendación transferible a un equipo.
 
-Es el encuadre declarado del stack de AI coach (relates_to) y una instancia concreta del hallazgo de que el clúster «AI coach / monkey mind» no contiene evidencia de práctica profesional (derived_from). Apoya la nota que trata el AI coach como herramienta de foco personal y no de liderazgo (supports).
+Se apoya en las notas que ya ubican el AI coach como herramienta de foco personal en vez de liderazgo técnico, y en la que registra que el clúster no contiene evidencia de práctica profesional.
 
 ## Links
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]

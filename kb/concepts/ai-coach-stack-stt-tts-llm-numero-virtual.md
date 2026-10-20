@@ -9,12 +9,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-15'
+updated: '2026-10-20'
 sources:
 - 49140f9d5133d3c7
 tags:
 - agentes
 - ai-coach
+- composicion-de-servicios
 - integracion-de-servicios
 - llm
 - monkey-mind
@@ -23,7 +24,7 @@ tags:
 - voz
 base_confidence: 0.04
 half_life_days: 180
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -60,19 +61,20 @@ links:
   type: derived_from
 - to: asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual
   type: contradicts
+- to: prototipado-por-composicion-de-apis-sin-entrenamiento
+  type: relates_to
 ---
 
 ## What it is
-Un asistente conversacional de uso personal se ensambla hoy a partir de cuatro servicios ya disponibles: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. La barrera es de integración, no de investigación de modelos.
+Un AI coach personal se ensambla con cuatro servicios de catálogo: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. No hay entrenamiento de modelo: el valor está en la composición, no en un artefacto propio.
 
 ## Evidence
-- El documento describe la construcción de un «AI coach» personal usando speech-to-text, text-to-speech, un LLM y un número de teléfono virtual — source: 49140f9d5133d3c7
-- El proyecto se enmarca como una forma de «domar la mente de mono» del autor: asistente personal de autorregulación, no herramienta de equipo ni de enseñanza — source: 49140f9d5133d3c7
+- El documento describe un AI coach construido a partir de speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-Refuerza un patrón técnico conocido: prototipar un asistente conversacional de uso personal hoy es componer servicios existentes. No hay claims en el material sobre estimación, secuenciamiento, liderazgo de equipos chicos ni docencia, así que este stack no sostiene ninguna conclusión sobre esos ejes del brief.
+Es un ejemplo de prototipado por composición de APIs: cualquiera con acceso a esos servicios puede levantar un loop de voz sin infraestructura propia. La evidencia disponible es solo una lista de stack de una línea; no hay implementación ni resultados.
 
-Es una instancia concreta del mismo stack descrito en las notas de AI coach por voz (relates_to). Apoya la idea de prototipado por composición de APIs sin entrenar modelos (supports). Se conecta con el encuadre de productividad personal «monkey mind» (relates_to). Deriva de las notas de alcance que marcan este documento como anuncio de proyecto personal y no como evidencia de práctica (derived_from), y de las notas de riesgo sobre generalizar desde ese caso y sobre privacidad y coste de asistentes de voz continuos (derived_from). Contradice el riesgo de asumir novedad en ensamblar estos cuatro componentes (contradicts): el ensamblado es conocido y reproducible.
+Se relaciona con las notas existentes del stack de AI coach por voz (misma tríada STT/TTS/LLM, con el número virtual como canal). Se vincula también con el encuadre «monkey mind» del mismo documento y con el patrón de prototipado por composición de APIs sin entrenamiento.
 
 ## Links
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
@@ -91,3 +93,4 @@ Es una instancia concreta del mismo stack descrito en las notas de AI coach por 
 - derived_from → [[riesgo-de-generalizar-desde-ai-coach-monkey-mind]]
 - derived_from → [[privacidad-y-costo-en-asistentes-de-voz-continuos]]
 - contradicts → [[asumir-novedad-de-ensamblar-stt-tts-llm-numero-virtual]]
+- relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]

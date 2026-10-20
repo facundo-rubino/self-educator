@@ -9,13 +9,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-02'
-updated: '2026-10-19'
+updated: '2026-10-20'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
 tags:
 - claim-sin-metodologia
 - figuras-publicas
+- identificacion-de-figuras-publicas
 - identificacion-de-personas
 - identificacion-figuras-publicas
 - metodologia
@@ -26,10 +27,11 @@ tags:
 - rss-singleton
 - sin-metodologia
 - singleton
+- singleton-rss
 - vision
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -64,18 +66,23 @@ links:
   type: supports
 - to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
   type: relates_to
+- to: divergencia-de-rechazo-entre-proveedores
+  type: relates_to
+- to: llms-identifican-figuras-publicas-sin-metodologia
+  type: relates_to
 ---
 
 ## What it is
-Un único ítem RSS afirma que los LLM ya identifican figuras públicas en imágenes, y que ChatGPT y Claude no lo hacen mientras Gemini sí. El documento es un titular: no trae metodología, conjunto de prueba, fecha ni definición de qué significa «identificar». Un solo documento sostiene todo el clúster.
+Un único documento RSS afirma que ciertos sistemas de visión LLM «ahora» identifican figuras públicas en imágenes, apoyándose en que Gemini lo hace mientras ChatGPT y Claude se niegan. No se reportan número de imágenes, versiones de modelo, redacción de prompts ni tasas de acierto. Es una observación anecdótica de un solo medio sobre conducta de rechazo, no una medición de capacidad de reconocimiento.
 
 ## Evidence
-- El documento afirma que los LLM ya pueden identificar figuras públicas en imágenes y que ChatGPT y Claude no lo harán mientras Gemini sí — source: 19cb8032958cd964
+- El documento afirma que los LLM pueden ahora identificar figuras públicas en imágenes, presentándolo como un desarrollo actual — source: 19cb8032958cd964
+- Contrasta proveedores: ChatGPT y Claude declinan identificar figuras públicas, Gemini sí lo hace — source: 19cb8032958cd964
 
 ## Why it matters
-Si fuera cierto, el comportamiento multimodal variaría materialmente entre proveedores, lo que sería criterio de selección al construir flujos con imágenes. Pero el clúster no da base para ninguna afirmación sustantiva sobre esa selección: es un titular aislado.
+El dato compilable es la divergencia de rechazo entre proveedores, no un salto de capacidad. Novedad 0.00 y corroboración 0.50 impiden leerlo como frontera nueva; el «ahora» del titular no está sostenido. La relevancia para los ejes del brief (agentes de código, liderazgo de equipos chicos, oficio, productividad y docencia) es marginal.
 
-Contradice el registro de que la identificación de figuras públicas ya existía desde la era GPT-4V: «can now» sería encuadre léxico, no hallazgo (`contradicts`). Es evidencia del modo de fallo descrito en `afirmar-capacidad-multimodal-sin-metodologia`. Se relaciona con la divergencia de rechazo por proveedor al nombrar figuras públicas y con la distinción entre capacidad técnica y política de rechazo.
+Se relaciona con `divergencia-de-rechazo-entre-proveedores`: mismo prompt, distinta respuesta según proveedor. Apoya a `afirmacion-de-capacidad-multimodal-sin-metodologia`: es otro caso de claim de capacidad sin método. Y solapa con `llms-identifican-figuras-publicas-sin-metodologia`.
 
 ## Links
 - supports → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
@@ -93,3 +100,5 @@ Contradice el registro de que la identificación de figuras públicas ya existí
 - contradicts → [[identificacion-de-figuras-publicas-ya-existia]]
 - supports → [[afirmar-capacidad-multimodal-sin-metodologia]]
 - relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- relates_to → [[divergencia-de-rechazo-entre-proveedores]]
+- relates_to → [[llms-identifican-figuras-publicas-sin-metodologia]]

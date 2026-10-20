@@ -9,17 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-19'
-updated: '2026-10-19'
+updated: '2026-10-20'
 sources:
 - 4004eb9d4bbe0e76
 tags:
 - benchmarks
 - comparaciones
+- etiquetas-editoriales
 - marketing
 - modelos-frontera
 base_confidence: 0.5
 half_life_days: 180
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-20'
 provenance:
   scale: XL
   query: null
@@ -30,21 +31,24 @@ links:
   type: relates_to
 - to: claude-5-5-identificador-de-version-no-verificable
   type: relates_to
+- to: muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion
+  type: supports
 ---
 
 ## What it is
-«Tier Claude 5.5» es una etiqueta comparativa que sitúa un modelo respecto de otro sin decir en qué dimensión (código, razonamiento, contexto, precio, latencia) ni con qué medida. El documento no define el tier, no cita evaluación y no fija la versión de referencia.
+«Nivel Claude 5.5» es una etiqueta editorial que ancla la capacidad de un modelo al número de versión de un competidor, sin benchmark citado ni definición operacional del tier. No especifica qué tarea, qué medida ni qué umbral hacen que un modelo pertenezca a ese nivel.
 
 ## Evidence
-- La descripción del modelo se hace por comparación ('tier Claude 5.5') y no mediante métricas propias verificables — source: 4004eb9d4bbe0e76
-- No se define la dimensión de comparación ni la versión exacta de referencia — source: 4004eb9d4bbe0e76
+- El titular describe «Meta Muse Wonder & Wonder Full» como modelo de nivel «Claude 5.5» — source: 4004eb9d4bbe0e76
+- El documento no incluye benchmarks ni evaluación independiente que sostengan la comparación — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-Una comparación nominal no es una capacidad: no permite predecir rendimiento en tareas del brief (coding, gestión, docencia) ni decidir tooling. Cualquier lectura operativa exige definición y medición.
+Una comparación sin métrica no es una evaluación: no permite inferir paridad en tareas agénticas, latencia, coste o calidad de código. Tratarla como dato desplaza expectativas sin base medible.
 
-Se deriva de la nota principal del clúster. Conecta con el riesgo de afirmar novedad sin línea base y con la no verificabilidad de identificadores de versión de Claude en este corpus.
+Deriva de muse-wonder-wonder-full-titular-sin-evidencia como el único contenido sustantivo declarado. Se apoya en claude-5-5-identificador-de-version-no-verificable, que registra la no verificabilidad del marcador de versión, y respalda la advertencia de sobreinterpretación de muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion.
 
 ## Links
 - derived_from → [[muse-wonder-wonder-full-titular-sin-evidencia]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
 - relates_to → [[claude-5-5-identificador-de-version-no-verificable]]
+- supports → [[muse-wonder-afirmar-paridad-de-nivel-frontera-seria-sobreinterpretacion]]
