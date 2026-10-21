@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-18'
-updated: '2026-10-15'
+updated: '2026-10-21'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -18,6 +18,7 @@ tags:
 - derechos-de-imagen
 - docencia
 - etica
+- face-recognition
 - gdpr
 - imagenes
 - multimodal
@@ -25,7 +26,7 @@ tags:
 - vision
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -46,19 +47,20 @@ links:
   type: supports
 - to: politica-de-face-recognition-como-variable-de-producto
   type: relates_to
+- to: gemini-no-rechaza-nombrar-figuras-publicas
+  type: derived_from
 ---
 
 ## What it is
-La identificación facial de figuras públicas plantea preguntas de privacidad y consentimiento que varían por jurisdicción y contexto de despliegue. El clúster no aborda ninguna de ellas y no permite asumir manejo homogéneo entre proveedores.
+El ítem trata la identificación de figuras públicas como hecho de capacidad; no discute consentimiento, derechos de imagen ni qué ocurre con personas que no son figuras públicas. El hueco no es accidental del documento, pero sí relevante para quien adopte la función.
 
 ## Evidence
-- El clúster no incluye fecha, versión de modelo ni condiciones del despliegue observado — source: sig-237cc97a9794
-- El documento se limita a reportar la asimetría de comportamiento entre asistentes — source: sig-237cc97a9794
+- El documento se limita a contrastar la conducta de ChatGPT/Claude frente a Gemini, sin apartado de consentimiento ni de derechos de imagen — source: 19cb8032958cd964
 
 ## Why it matters
-Cualquier guía derivada de esta observación puede expirar silenciosamente si se hornea en un estándar de equipo o en un curso, y las implicaciones legales varían sin que el proveedor las exponga.
+En docencia de programación, usar imágenes de personas reales en demos o ejercicios con reconocimiento facial es una decisión con obligaciones legales y éticas. Un dev-líder que enseña puede convertir este hueco en ejercicio de discusión, no en feature adoptada.
 
-Relacionado con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`: el hecho observado abre el problema, pero no lo resuelve ni lo acota.
+Se apoya en `gemini-no-rechaza-nombrar-figuras-publicas` y conecta con `privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia`, que registra el mismo riesgo en el aula. Depende de `politica-de-face-recognition-como-variable-de-producto` para entender por qué el comportamiento no es estable.
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
@@ -69,3 +71,4 @@ Relacionado con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`:
 - relates_to → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
 - supports → [[privacidad-y-consentimiento-en-imagenes-de-personas-para-docencia]]
 - relates_to → [[politica-de-face-recognition-como-variable-de-producto]]
+- derived_from → [[gemini-no-rechaza-nombrar-figuras-publicas]]

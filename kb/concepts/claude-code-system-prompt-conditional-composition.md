@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-19'
+updated: '2026-10-21'
 sources:
 - abf61eeec75462f9
 tags:
@@ -34,7 +34,7 @@ tags:
 - system-prompt
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-21'
 provenance:
   scale: M
   query: null
@@ -93,18 +93,23 @@ links:
   type: relates_to
 - to: claude-code-system-prompt-conditional-composition
   type: relates_to
+- to: claude-code-ensamblado-condicional-de-system-prompt
+  type: relates_to
+- to: restatement-de-titulo-como-evidencia-de-composicion-condicional
+  type: contradicts
 ---
 
 ## What it is
-Un documento RSS único [abf61eeec75462f9] afirma que el código fuente filtrado de Claude Code muestra un system prompt ensamblado a partir de docenas de partes condicionales. La afirmación describe arquitectura de prompts, no conducta medida del agente: no especifica qué condiciones gatean qué secciones, ni cómo se secuencian.
+El código filtrado de Claude Code mostraría que su system prompt no es un bloque monolítico sino una composición de docenas de partes condicionales [abf61eeec75462f9]. La fuente es un único documento RSS que reporta el leak sin citar fragmentos ni mecanismo de gating [abf61eeec75462f9].
 
 ## Evidence
-- El código fuente filtrado de Claude Code muestra un system prompt ensamblado de docenas de partes condicionales — source: abf61eeec75462f9
+- El system prompt de Claude Code se ensambla de docenas de partes condicionales en lugar de ser estático — source: abf61eeec75462f9
+- No se aportan detalles técnicos, fragmentos citados ni verificación independiente dentro del clúster — source: abf61eeec75462f9
 
 ## Why it matters
-Si el ensamblado condicional es real, refuerza la idea de configurar un agente por contexto (rol, herramienta, etapa) en lugar de un prompt monolítico. Para el brief, el valor es anecdótico: no hay medición de estimación, secuenciamiento, liderazgo ni docencia en la fuente.
+Si se sostuviera, implicaría que la conducta del agente se ajusta por contexto en vez de estar fijada. Con esta evidencia (un solo documento, sin artefacto primario) no autoriza ninguna guía de diseño.
 
-Instancia específica del patrón general de `ensamblado-condicional-de-prompts`. Se relaciona con la nota existente `claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente` (misma afirmación, misma carencia) y con `claude-code-condiciones-que-gatean-secciones-sin-observar`, que registra precisamente lo que este documento no dice. `supports` es débil: aporta un caso al patrón, no evidencia de eficacia.
+Refuerza el patrón `ensamblado-condicional-de-prompts` y el encuadre del system prompt como artefacto de ingeniería, pero solo como anécdota de fuente única. Contrasta con `restatement-de-titulo-como-evidencia-de-composicion-condicional`: describir «docenas de partes condicionales» puede ser la descripción genérica de cualquier agente de producción, no un hallazgo.
 
 ## Links
 - supports → [[system-prompt-como-artefacto-de-ingenieria]]
@@ -134,3 +139,5 @@ Instancia específica del patrón general de `ensamblado-condicional-de-prompts`
 - contradicts → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]
 - relates_to → [[claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente]]
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
+- relates_to → [[claude-code-ensamblado-condicional-de-system-prompt]]
+- contradicts → [[restatement-de-titulo-como-evidencia-de-composicion-condicional]]

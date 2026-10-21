@@ -10,33 +10,47 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-30'
-updated: '2026-09-30'
+updated: '2026-10-21'
 sources:
 - d2a0c86ca8027978
 tags:
+- evals
+- falso-positivo
+- llm-as-a-judge
 - llm-eval
+- pipeline
 - sobreinterpretacion
 base_confidence: 1.0
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
 links:
 - to: mecanica-de-evals-afirmada-desde-solo-titulo-rss
   type: relates_to
+- to: mecanica-de-evals-afirmada-desde-solo-titulo-rss
+  type: derived_from
+- to: juez-humano-we-and-b-llm-evaluator-hackathon-sin-contenido-para-el-brief
+  type: supports
+- to: relevance-0-67-del-titulo-llm-judge-como-artefacto-lexico
+  type: supports
 ---
 
 ## What it is
-Variante concreta del mismo modo de fallo aplicada al ítem de W&B: tratar un marcador de rol como si describiera la mecánica de evaluación con LLM (rúbrica, criterios, asignación de puntuaciones).
+Un título que nombra «LLM-as-a-Judge» no autoriza afirmar cómo funciona el juicio: el único documento del clúster es un relato personal de participación, no una descripción de método, criterios ni resultados. Novedad 0.00 y corroboración nula confirman que no hay mecánica afirmable. El 0.67 de relevance es coincidencia léxica con «LLM» y «judge».
 
 ## Evidence
-- El único documento del clúster es un marcador de rol; no describe mecánica de juicio — source: d2a0c86ca8027978
+- El relato es de primera persona sobre servir de juez, sin especificación de criterios de juicio — source: d2a0c86ca8027978
+- El documento no es instructivo ni analítico sobre práctica de ingeniería — source: d2a0c86ca8027978
 
 ## Why it matters
-Deja trazable la variante específica W&B para auditorías futuras del pipeline, separada del caso CSS y del caso general.
+Evita que un rol declarado («human judge») se confunda con contenido metodológico. Es la variante W&B de un patrón de fallo ya registrado para otros ítems RSS: la ausencia de cuerpo convierte cualquier descripción de mecanismo en fabricación.
 
-Especialización de la nota general sobre mecánicas de evaluación afirmadas desde un título RSS.
+Derivada de [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]. Apoya la lectura del clúster W&B como no-claim ([[juez-humano-we-and-b-llm-evaluator-hackathon-sin-contenido-para-el-brief]]) y coincide con el artefacto léxico del scorer descrito en [[relevance-0-67-del-titulo-llm-judge-como-artefacto-lexico]].
 
 ## Links
 - relates_to → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
+- derived_from → [[mecanica-de-evals-afirmada-desde-solo-titulo-rss]]
+- supports → [[juez-humano-we-and-b-llm-evaluator-hackathon-sin-contenido-para-el-brief]]
+- supports → [[relevance-0-67-del-titulo-llm-judge-como-artefacto-lexico]]

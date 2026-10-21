@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-19'
+updated: '2026-10-21'
 sources:
 - 19cb8032958cd964
 tags:
 - corroboracion
 - evidencia
 - generalizacion
+- metodologia
 - multimodal
 - singleton
+- singleton-rss
 - vision
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -42,18 +44,22 @@ links:
   type: relates_to
 - to: afirmar-capacidad-multimodal-sin-metodologia
   type: supports
+- to: gemini-no-rechaza-nombrar-figuras-publicas
+  type: relates_to
+- to: segundo-corpus-necesario-para-afirmar-capacidad-multimodal
+  type: supports
 ---
 
 ## What it is
-Pregunta abierta: ¿qué segundo corpus haría falta para sostener que «los LLM» identifican figuras públicas en imágenes? El clúster actual es un documento único, sin engagement, con novelty 0.00 y sorpresa 0.50, lo que sugiere información reciclada o ya conocida más que un desarrollo nuevo.
+El clúster contiene un documento único, sin engagement ni corroboración, con novelty 0.00. Para elevarlo a «los LLMs ya identifican figuras públicas» hacen falta, como mínimo, una fuente primaria por proveedor, versiones y cuentas concretas y una tasa de error declarada. Nada de eso está ingerido.
 
 ## Evidence
-- El clúster es un solo ítem RSS con corroboración cero, novelty 0.00 y sin métricas de engagement — source: 19cb8032958cd964
+- El documento es único, llega por RSS con engagement=0, sin evidencia primaria ni benchmarks — source: 19cb8032958cd964
 
 ## Why it matters
-Sin una segunda fuente independiente y sin protocolo, cualquier afirmación sobre la población de modelos es inferencia. La pregunta delimita qué evidencia cerraría el hueco.
+Marca el umbral de admisión: la pregunta no es si la afirmación es interesante, sino qué evidencia adicional convertiría un comportamiento observado una vez en claim sobre capacidad.
 
-Se relaciona con la nota de que un clúster de un documento sin engagement no sostiene generalización, y respalda la nota de riesgo sobre afirmar capacidad multimodal sin metodología.
+Se ata a `gemini-no-rechaza-nombrar-figuras-publicas` como su fuente y apoya `afirmar-capacidad-multimodal-sin-metodologia`, que ya registra el modo de fallo. Es la versión operativa de «qué falta» para el brief.
 
 ## Links
 - derived_from → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
@@ -64,3 +70,5 @@ Se relaciona con la nota de que un clúster de un documento sin engagement no so
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
 - supports → [[afirmar-capacidad-multimodal-sin-metodologia]]
+- relates_to → [[gemini-no-rechaza-nombrar-figuras-publicas]]
+- supports → [[segundo-corpus-necesario-para-afirmar-capacidad-multimodal]]

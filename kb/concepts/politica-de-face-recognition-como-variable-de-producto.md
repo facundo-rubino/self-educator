@@ -9,11 +9,12 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-14'
+updated: '2026-10-21'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
 tags:
+- agentes
 - cumplimiento
 - face-recognition
 - gobernanza
@@ -22,7 +23,7 @@ tags:
 - proveedores
 base_confidence: 0.3
 half_life_days: 180
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -35,22 +36,32 @@ links:
   type: derived_from
 - to: criterios-de-aceptacion-dependientes-de-proveedor
   type: supports
+- to: gemini-no-rechaza-nombrar-figuras-publicas
+  type: derived_from
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: supports
+- to: riesgo-de-corte-silencioso-de-politica-en-flujos-de-imagenes
+  type: supports
 ---
 
 ## What it is
-La decisión de identificar o rechazar la identificación de una persona en una imagen es una variable de política de producto de cada proveedor, no una propiedad derivable del modelo. Dos sistemas con capacidad visual comparable pueden diferir solo en esa política.
+La respuesta de un proveedor ante una imagen con personas es una decisión de producto configurable, no una propiedad estable del modelo. Cambia por proveedor, por versión, por cuenta y por región, y puede cambiar sin aviso. Tratarla como constante de diseño rompe flujos que hoy funcionan.
 
 ## Evidence
-- Gemini identificará figuras públicas; ChatGPT y Claude no — diferencia de política entre productos, según el ítem RSS [19cb8032958cd964] — fuente: sig-237cc97a9794
-- El comportamiento puede diferir por UI, región, versión de política o por el juicio del modelo sobre qué es una «figura pública» — fuente: sig-237cc97a9794
+- ChatGPT y Claude rechazan identificar figuras públicas mientras Gemini no lo hace, en el mismo tipo de tarea — source: 19cb8032958cd964
 
 ## Why it matters
-Para un equipo que construye features multimodales, la política es una dependencia externa que puede cambiar sin aviso. Los criterios de aceptación deben fijarse por proveedor, no por supuesta capacidad genérica de «LLMs».
+Para un equipo chico que integra agentes en revisión de screenshots o material de clase: documentar qué modelo se usa con imágenes, y prever fallback, es más barato que descubrir el cambio en producción o en medio de una clase.
 
-Deriva de la asimetría de rechazo entre proveedores; se relaciona con los criterios de aceptación dependientes de proveedor en features multimodales.
+Se deriva de la observación de `gemini-no-rechaza-nombrar-figuras-publicas`. Es una instancia concreta de `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo` y alimenta el riesgo `riesgo-de-corte-silencioso-de-politica-en-flujos-de-imagenes`.
+
+**Caveat de evidencia:** la afirmación de esta nota descansa en un único documento RSS sin engagement (19cb8032958cd964). La generalización a «variable de producto» es plausible pero no está medida.
 
 ## Links
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]
 - derived_from → [[asimetria-de-rechazo-gemini-vs-chatgpt-claude-identificacion-de-personas]]
 - supports → [[criterios-de-aceptacion-dependientes-de-proveedor]]
+- derived_from → [[gemini-no-rechaza-nombrar-figuras-publicas]]
+- supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- supports → [[riesgo-de-corte-silencioso-de-politica-en-flujos-de-imagenes]]

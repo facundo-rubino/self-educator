@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-19'
+updated: '2026-10-21'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -19,10 +19,12 @@ tags:
 - artefacto-de-ingesta
 - docencia
 - documento-unico
+- eval-taxonomy
 - evals
 - llm
 - llm-evals
 - nlp
+- rss-singleton
 - rss-stub
 - scoping
 - single-source
@@ -33,7 +35,7 @@ tags:
 - taxonomia-de-tareas
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -72,19 +74,25 @@ links:
   type: derived_from
 - to: task-specific-llm-evals-singleton-engagement-cero-novelty-cero
   type: relates_to
+- to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
+  type: supports
+- to: evals-de-llm-especificas-por-tarea-enunciadas-sin-metodologia
+  type: relates_to
+- to: eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
+  type: contradicts
 ---
 
 ## What it is
-El único contenido verificable del documento es su alcance declarado: anuncia un artículo sobre evals de LLM específicas por tarea, enumerando clasificación, summarization, traducción, regurgitación de copyright y toxicidad. No hay métodos, resultados, números ni criterios de qué eval funciona.
+El documento «Task-Specific LLM Evals that Do & Don't Work» [93963a5f93e58d05] enumera cinco dominios de evaluación: clasificación, resumen, traducción, regurgitación de copyright y toxicidad. Es el único contenido verificable del ítem: una lista de familias de tarea, sin métricas, sin benchmarks ni resultados comparativos.
 
 ## Evidence
-- El documento cubre evals de LLM para clasificación, summarization, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
-- El título plantea qué evals específicas por tarea funcionan y cuáles no — source: 93963a5f93e58d05
+- El clúster contiene exactamente un documento, ítem de feed titulado «Task-Specific LLM Evals that Do & Don't Work», con engagement cero registrado — source: 93963a5f93e58d05
+- El documento enumera dominios de eval: clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
 
 ## Why it matters
-La lista de familias de tarea es el único anclaje para decidir si el artículo sirve al brief (agentes de código, gestión, docencia). Esas cinco familias son NLP general: ninguna cubre evals de código ni de asistentes de enseñanza, así que la conexión con el trabajo del dev-líder es léxica («evals»), no temática.
+Para un dev que construye con agentes y además enseña, el único uso defendible de este ítem es como recordatorio de nombrar la familia de tarea al hablar de evaluación: «lo evaluamos» sin tarea ni modo de fallo no dice nada. No habilita ninguna asignación de esfuerzo de evaluación por tipo de tarea, porque el documento no mide esa asignación.
 
-Se deriva de la nota de alcance que registra la ausencia de cuerpo. Se relaciona con las familias de tarea ya enumeradas en el corpus y con la idea general de eval por tarea como infraestructura de fiabilidad, sin que este clúster aporte evidencia de esa aplicación.
+Es la variante concreto-por-familias de `task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable` y de `task-families-evaluadas-en-el-documento-evals`. Contradice el encuadre de `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` en tanto este ítem no aporta ni un dato de fiabilidad; sólo nombres de categorías.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -104,3 +112,6 @@ Se deriva de la nota de alcance que registra la ausencia de cuerpo. Se relaciona
 - supports → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]
 - derived_from → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
 - relates_to → [[task-specific-llm-evals-singleton-engagement-cero-novelty-cero]]
+- supports → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
+- relates_to → [[evals-de-llm-especificas-por-tarea-enunciadas-sin-metodologia]]
+- contradicts → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]

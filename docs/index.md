@@ -1,26 +1,19 @@
-# Brief — 2026-10-20
+# Brief — 2026-10-21
 
 ## Los titulares
 
-1. [llm-tools-datasette 0.1.1](https://simonwillison.net/2026/Oct/18/llm-tools-datasette/) — *IA y agentes en mi trabajo*
-2. [My obituary for programming](https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/) — *IA y agentes en mi trabajo*
+1. [eMudhra Intermediate CA Compromise](https://simonwillison.net/2026/Oct/20/emudhra-certificates/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [llm-tools-datasette 0.1.1](https://simonwillison.net/2026/Oct/18/llm-tools-datasette/)
+### [eMudhra Intermediate CA Compromise](https://simonwillison.net/2026/Oct/20/emudhra-certificates/)
 
-The signal is a single low-engagement RSS release note for llm-tools-datasette 0.1.1 [22e0e79c5f31252d]
+The cluster is mislabeled
 
-<sub>fuentes: rss · confianza: 3%</sub>
-
-### [My obituary for programming](https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/)
-
-This cluster is a low-signal grab-bag of RSS-linked blog posts spanning AI capability debates, JSON grammar pedantry, CSS tricks, TLA+ specification tooling, and voice-driven coding — it does not form a coherent finding…
-
-<sub>fuentes: files, rss · confianza: 5% · en el KB: `my-obituary-for-programming-grab-bag-rss-bajo-senal`</sub>
+<sub>fuentes: files, rss · confianza: 83% · en el KB: `corroboracion-1-00-emudhra-repite-tema-no-valida`, `emudhra-ca-compromise-mismatch-senal-cluster`, `emudhra-intermediate-ca-compromise-senal-sin-documento`</sub>
 
 ---
 
-<sub>5 señales consideradas, 3 descartadas por no ser de ningún tema, 24 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
+<sub>4 señales consideradas, 3 descartadas por no ser de ningún tema, 24 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>

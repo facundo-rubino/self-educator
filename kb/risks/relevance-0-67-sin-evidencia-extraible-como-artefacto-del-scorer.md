@@ -1,6 +1,6 @@
 ---
 id: relevance-0-67-sin-evidencia-extraible-como-artefacto-del-scorer
-title: 'relevance=0.67 sin evidencia extraíble: artefacto del scorer, no acuerdo topical'
+title: 'relevance=0.67 con un solo claim etiquetado: artefacto del scorer'
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,11 +9,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-02'
-updated: '2026-10-09'
+updated: '2026-10-21'
 sources:
+- abf61eeec75462f9
 - d2a0c86ca8027978
 tags:
 - artefacto-de-pipeline
+- clustering
 - falsos-positivos
 - ingesta
 - relevance
@@ -22,7 +24,7 @@ tags:
 - scoring
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-10-09'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -39,19 +41,22 @@ links:
   type: relates_to
 - to: corroboracion-y-velocidad-como-artefactos-del-scorer
   type: supports
+- to: claude-code-cluster-singleton-engagement-cero-novelty-cero
+  type: derived_from
+- to: relevancia-1-00-no-es-validacion-del-cluster
+  type: relates_to
 ---
 
 ## What it is
-El scorer asigna relevance=0.67 al ítem «Weights & Biases LLM-Evaluator Hackathon - Hackathon Judge» [d2a0c86ca8027978] pese a que el documento no contiene ningún eje extraíble del brief. La cifra parece medir solapamiento léxico con «LLM» y «evaluación», no conexión temática con agentes de programación, liderazgo técnico o docencia.
+Un relevance de 0.67 sostenido por un único claim etiquetado, sin cuerpo recuperado, no indica acuerdo topical: es un artefacto del scorer [abf61eeec75462f9].
 
 ## Evidence
-- El documento solo contiene una descripción de rol de juez humano — source: d2a0c86ca8027978
-- No hay en él ningún claim sustantivo sobre programación, gestión, docencia, estimación o craft — source: d2a0c86ca8027978
+- El clúster declara relevancia moderada pero solo aporta un claim extraíble del único documento — source: abf61eeec75462f9
 
 ## Why it matters
-Una relevance alta sobre un documento vacío sesga hacia abajo los resúmenes que leen esa métrica como aval temático y puede fabricar corroboración con otros clústeres que solo comparten vocabulario. Donde no hay ejes del brief, la relevance debería reflejarlo.
+Sugiere revisar el umbral de contenido mínimo antes de aceptar un clúster como señal; de lo contrario el scoring premia coincidencia léxica del título.
 
-Es el mismo fenómeno que ya documentan las notas de relevancia léxica frente al brief en ítems con «LLM» en el título. Refuerza la nota sobre corroboración y velocidad como artefactos del scorer, extendiéndola a la dimensión de relevance.
+Deriva del caso concreto de Claude Code. Se alinea con la observación general de que relevancia 1.00 no valida un clúster cuando novelty es cero y no hay cuerpo.
 
 ## Links
 - supports → [[wandb-llm-as-a-judge-hackathon-sin-corroboracion]]
@@ -60,3 +65,5 @@ Es el mismo fenómeno que ya documentan las notas de relevancia léxica frente a
 - relates_to → [[matching-llm-as-a-judge-relevancia-lexica-sin-ejes-del-brief]]
 - relates_to → [[juez-humano-we-and-b-llm-evaluator-hackathon-relevancia-lexica]]
 - supports → [[corroboracion-y-velocidad-como-artefactos-del-scorer]]
+- derived_from → [[claude-code-cluster-singleton-engagement-cero-novelty-cero]]
+- relates_to → [[relevancia-1-00-no-es-validacion-del-cluster]]

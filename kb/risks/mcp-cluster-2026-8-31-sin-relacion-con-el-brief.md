@@ -1,6 +1,6 @@
 ---
 id: mcp-cluster-2026-8-31-sin-relacion-con-el-brief
-title: El cluster de releases MCP no tiene relación sustantiva con el brief
+title: El clúster de releases MCP 2026.8.31 no tiene relación sustantiva con el brief
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,20 +9,26 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-30'
-updated: '2026-09-30'
+updated: '2026-10-21'
 sources:
-- 30a26335a9988ba2
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
+- 30a26335a9988ba2
+- 5a4df6bef0a4905f
+- 748f8b0a02cd7524
+- 9750590bbfe6b285
+- b9106690f5dfd849
 - ffbd76916d1dfdc5
 tags:
-- mcp
-- falso-positivo
-- clustering
 - brief
+- clustering
+- falso-positivo
+- filtro
+- mcp
+- ruido
 base_confidence: 0.78
 half_life_days: 120
-last_reinforced: '2026-09-30'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -37,22 +43,29 @@ links:
   type: supports
 - to: sonar-expectations-disclaimer
   type: relates_to
+- to: mcp-feed-releases-ruido-para-brief-de-agentes-y-liderazgo
+  type: supports
+- to: mcp-cluster-2026-8-31-sin-relacion-con-el-brief
+  type: relates_to
+- to: release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica
+  type: derived_from
 ---
 
 ## What it is
-Riesgo metodológico: el cluster que motiva el brief de la señal 2026.8.31 agrupa ocho notas de release automáticas de paquetes MCP por similitud de plantilla («Release vYYYY.MM.DD / Updated packages»), no por tópico. Los ejes declarados del brief —liderazgo técnico, docencia entry-level, estimación/alcance, productividad— no aparecen en el contenido de los documentos más allá de que MCP sea una tecnología consumible por un dev que usa agentes de IA.
+Los seis documentos del clúster son listas de bumps de versión, sin notas de cambio, migración, issues ni discusión. No contienen texto del que extraer una tesis sobre liderazgo técnico, estimación, secuenciamiento, alcance, agentes aplicados a programar/gestionar/enseñar, oficio ni técnicas de estudio.
 
 ## Evidence
-- El cluster contiene únicamente notas de release con el mismo formato y sin cuerpo argumental ni texto temático — source: 30a26335a9988ba2
-- Los documentos son versiones datadas y consecutivas (2025.11.25, 2025.12.18, 2026.1.14, 2026.1.26, 2026.7.4, 2026.7.10, 2026.8.18, 2026.8.31), lo que indica un feed de publicación automática más que contenido editorial — source: 16a4e3995d6c827e
-- No hay engagement en ningún documento listado (engagement=0 en todos), consistente con notas de release sin discusión humana asociada — source: 2221814efbefaa3b
-- Se listan paquetes del ecosistema MCP sin más contexto que la versión — source: ffbd76916d1dfdc5
-- Todas las señales (relevance=0.33, novelty=0.00, corroboration/velocity/surprise=0.50) son compatibles con un falso positivo de clustering — source: 16a4e3995d6c827e
+- La entrada 2026.8.31 solo enumera bumps sin notas de cambio — source: 30a26335a9988ba2
+- La entrada 2026.7.10 no describe funcionalidad nueva ni uso — source: 5a4df6bef0a4905f
+- La entrada 2026.1.14 no trae más detalle que la lista de bumps — source: 748f8b0a02cd7524
+- La entrada 2026.8.18 no aporta contenido sustantivo — source: 9750590bbfe6b285
+- La entrada 2026.1.26 solo lista paquetes y versión — source: b9106690f5dfd849
+- La entrada 2026.7.4 solo lista paquetes y versión — source: ffbd76916d1dfdc5
 
 ## Why it matters
-Persistir este cluster en el brief diluye señal y puede inducir a inventar conexiones («MCP se usa para enseñar») no respaldadas por los documentos. La conclusión honesta es que el cluster no debe producir hallazgos temáticos; la falta de conclusión temática es en sí la observación válida. Si acaso, debería reasignarse a un track de infraestructura/tooling de agentes.
+Emitir cualquier hallazgo sobre los ejes del brief desde este clúster sería una invención. El clúster es ruido de release-feed que cayó dentro del filtro determinista.
 
-Se relaciona con la nota del release concreto (mcp-release-2026-8-31-bumps) y contradice la lectura de la serie MCP como hallazgo temático (mcp-serie-2025-11-a-2026-8-cadencia-de-alta-frecuencia). Respalda el patrón general de falsos positivos por clustering (clustering-por-embedding-produce-falsos-positivos) y el riesgo de afirmar práctica desde un feed de releases sin contenido (afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases).
+Se deriva de la nota que documenta que el release 2026.8.31 solo trae bumps, y converge con el riesgo ya registrado de que el feed de releases MCP es ruido para el brief.
 
 ## Links
 - relates_to → [[mcp-release-2026-8-31-bumps]]
@@ -60,3 +73,6 @@ Se relaciona con la nota del release concreto (mcp-release-2026-8-31-bumps) y co
 - supports → [[clustering-por-embedding-produce-falsos-positivos]]
 - supports → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]
 - relates_to → [[sonar-expectations-disclaimer]]
+- supports → [[mcp-feed-releases-ruido-para-brief-de-agentes-y-liderazgo]]
+- relates_to → [[mcp-cluster-2026-8-31-sin-relacion-con-el-brief]]
+- derived_from → [[release-2026-8-31-solo-bumps-mcp-sin-contenido-de-practica]]

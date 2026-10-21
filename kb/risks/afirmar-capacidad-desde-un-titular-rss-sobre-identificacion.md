@@ -1,7 +1,7 @@
 ---
 id: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
-title: 'Afirmar «LLMs can now identify public figures» desde un titular RSS: capacidad
-  confundida con cumplimiento'
+title: 'Afirmar capacidad desde un titular RSS sobre identificación: capacidad confundida
+  con cumplimiento'
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-25'
-updated: '2026-10-06'
+updated: '2026-10-21'
 sources:
 - 19cb8032958cd964
 tags:
@@ -28,7 +28,7 @@ tags:
 - rss
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-06'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -55,19 +55,25 @@ links:
   type: relates_to
 - to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
   type: derived_from
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: supports
+- to: afirmar-capacidad-multimodal-sin-metodologia
+  type: relates_to
+- to: confundir-rechazo-por-politica-con-capacidad-de-modelo
+  type: supports
 ---
 
 ## What it is
-Un titular de RSS sin cuerpo afirma una capacidad poblacional («los LLMs ya pueden…») a partir de un comportamiento de producto observable en una sola herramienta. La confusión subyacente es entre «el modelo no puede» y «el proveedor no lo permite».
+El salto de «Gemini no se niega» a «los LLMs ya identifican figuras públicas» es una inferencia no verificada. La negativa de un modelo no prueba ausencia de capacidad ni fiabilidad; la permisividad de otro no prueba precisión, robustez ni generalización. «Identificar» no está operacionalizado: ¿reconocimiento facial, atribución de nombre, con qué tasa de error?
 
 ## Evidence
-- El documento afirma que los LLMs ya pueden identificar figuras públicas en imágenes — source: 19cb8032958cd964
-- Matiza que ChatGPT y Claude no lo hacen mientras Gemini sí, tratándolo como capacidad y no como política de producto — source: 19cb8032958cd964
+- El documento es único, sin evidencia primaria, benchmarks ni corroboración independiente; novedad 0.00 y sorpresa neutra — source: 19cb8032958cd964
+- El comportamiento observado es rechazo configurado en ChatGPT/Claude frente a permisión en Gemini, no una medición de capacidad — source: 19cb8032958cd964
 
 ## Why it matters
-Si la aserción se sostiene, la identificación de personas en imágenes sería un criterio de selección entre proveedores y no una característica homogénea del ecosistema. Pero desde un titular único y sin corroboración, tratarlo como capacidad general es sobreinterpretación.
+Cualquier nota del KB que eleve este ítem a afirmación de capacidad propaga un error de categoría. La regla operativa: una respuesta de rechazo es política; una respuesta de identificación es capacidad; sin medición, no hay claim de capacidad.
 
-Deriva de la nota del claim multimodal. Conecta con la divergencia de rechazo al nombrar figuras públicas por proveedor, con la nota de que la identificación de figuras públicas no es nueva, y con el riesgo de una afirmación poblacional desde un solo proveedor.
+Contradice directamente la redacción del titular en `gemini-no-rechaza-nombrar-figuras-publicas` y converge con `confundir-rechazo-por-politica-con-capacidad-de-modelo` y `afirmar-capacidad-multimodal-sin-metodologia`, que ya registran este mismo modo de fallo.
 
 ## Links
 - contradicts → [[identificacion-de-figuras-publicas-ya-existia]]
@@ -81,3 +87,6 @@ Deriva de la nota del claim multimodal. Conecta con la divergencia de rechazo al
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
 - relates_to → [[relevancia-tangencial-de-identificacion-de-figuras-publicas-al-brief]]
 - derived_from → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- relates_to → [[afirmar-capacidad-multimodal-sin-metodologia]]
+- supports → [[confundir-rechazo-por-politica-con-capacidad-de-modelo]]

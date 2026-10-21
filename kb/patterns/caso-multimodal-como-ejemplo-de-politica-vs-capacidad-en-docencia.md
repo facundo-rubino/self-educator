@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-17'
+updated: '2026-10-21'
 sources:
 - 19cb8032958cd964
 tags:
-- docencia
-- estudio-de-caso
-- politicas-de-modelo
 - criterios-de-aceptacion
+- docencia
+- ejemplo-pedagogico
+- estudio-de-caso
+- multimodal
+- politica-de-rechazo
+- politicas-de-modelo
 base_confidence: 0.3
 half_life_days: 365
-last_reinforced: '2026-09-17'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -28,20 +31,30 @@ links:
   type: derived_from
 - to: aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales
   type: relates_to
+- to: gemini-no-rechaza-nombrar-figuras-publicas
+  type: derived_from
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: supports
+- to: docencia-entry-level-mudada-a-profile-teaching-de-pogba
+  type: relates_to
 ---
 
 ## What it is
-Un caso donde tres proveedores difieren ante la misma tarea sirve como material didáctico para enseñar que las políticas de seguridad del modelo, y no solo su capacidad, determinan qué se puede construir. El ejercicio derivado es escribir criterios de aceptación agnósticos de proveedor y luego especializarlos por proveedor.
+Usar el contraste ChatGPT/Claude/Gemini sobre identificación de figuras como material de clase para enseñar que «el modelo se niega» no equivale a «el modelo no puede». Es un ejemplo barato de conseguir, actual y con consecuencias prácticas para quien construya con APIs multimodales.
 
 ## Evidence
-- El caso disponible muestra tres proveedores con respuestas distintas ante la misma clase de tarea, aunque sin cuerpo ni corroboración — source: 19cb8032958cd964
-- Las implicaciones del análisis proponen usarlo como caso de estudio sobre cómo la política de seguridad determina lo que se entrega — source: 19cb8032958cd964
+- El documento registra la divergencia de conducta entre proveedores ante la misma tarea de identificación — source: 19cb8032958cd964
 
 ## Why it matters
-Da a un docente un ejemplo concreto y reproducible en clase: pedir a los alumnos que formulen primero un criterio agnóstico y después una matriz por proveedor. El valor pedagógico es la distinción, no la anécdota.
+Enseñar el eje política/capacidad con este caso evita que estudiantes tomen decisiones de arquitectura basadas en un comportamiento observado una vez. No demuestra que el ejemplo funcione en clase: eso sería extrapolación.
 
-Deriva de la distinción capacidad vs. política, que es el concepto que el ejercicio enseña. Se relaciona con los criterios de aceptación dependientes de proveedor, que son el artefacto que los alumnos producen.
+Deriva de `gemini-no-rechaza-nombrar-figuras-publicas` y apoya `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo`. Queda en el margen del brief: la docencia entry-level se trasladó al profile `teaching` de `pogba` (`docencia-entry-level-mudada-a-profile-teaching-de-pogba`).
+
+**Confianza baja (0.25):** el patrón es una propuesta pedagógica plausible sin evidencia de uso en aula en el documento.
 
 ## Links
 - derived_from → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
 - relates_to → [[aceptacion-de-criterios-dependientes-de-proveedor-en-features-multimodales]]
+- derived_from → [[gemini-no-rechaza-nombrar-figuras-publicas]]
+- supports → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- relates_to → [[docencia-entry-level-mudada-a-profile-teaching-de-pogba]]

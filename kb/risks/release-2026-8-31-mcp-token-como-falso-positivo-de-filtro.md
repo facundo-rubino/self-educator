@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-05'
-updated: '2026-10-07'
+updated: '2026-10-21'
 sources:
 - 16a4e3995d6c827e
 - 2221814efbefaa3b
@@ -21,17 +21,19 @@ sources:
 - ffbd76916d1dfdc5
 - sig-d0acf338c3a6
 tags:
+- brief
 - brief-agentes
 - falso-positivo
 - falsos-positivos
 - filtrado
+- filtro
 - filtro-determinista
 - matching-lexico
 - mcp
 - pipeline
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-07'
+last_reinforced: '2026-10-21'
 provenance:
   scale: XL
   query: null
@@ -56,19 +58,24 @@ links:
   type: relates_to
 - to: mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades
   type: supports
+- to: mcp-feed-releases-ruido-para-brief-de-agentes-y-liderazgo
+  type: supports
+- to: solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering
+  type: relates_to
 ---
 
 ## What it is
-El clúster fue retenido con relevance=0.33, novelty=0.00 y corroboration=0.50, y todos sus ítems tienen engagement cero. El patrón que mejor explica su presencia en el brief es el solapamiento léxico superficial en «agents»/«AI»/«server» de un feed de releases, no una afinidad temática.
+El clúster entra al brief por coincidencia de palabras clave del ecosistema MCP («server», «agents», «sequential-thinking», «memory»), no por contenido sobre la práctica de un dev que lidera y enseña. La relevancia medida (0.33) y la novedad (0.00) son coherentes con un match léxico, no semántico.
 
 ## Evidence
-- El analista atribuye la retención a solapamiento superficial de keywords sobre «agents»/«AI», no a contenido — source: sig-d0acf338c3a6
-- relevance=0.33 con novelty=0.00 y corroboration=0.50 acompañan a ítems de engagement cero — source: sig-d0acf338c3a6
+- La relevancia medida del clúster es 0.33 y la novedad 0.00 — source: 30a26335a9988ba2
+- Los seis documentos son de tipo RSS con engagement=0 — source: 30a26335a9988ba2
+- Las entradas solo listan bumps de versión sin descripción de funcionalidad ni uso — source: ffbd76916d1dfdc5
 
 ## Why it matters
-Un feed de changelog versionado por fecha puede reingresar en este topic en cada fecha futura mientras la regla de matching siga mirando tokens de superficie. Es un candidato directo a regla determinista de exclusión («aviso de release / digest de versiones de paquete») o a reasignarse a un stream dedicado de ecosistema/tooling.
+Si el pipeline sigue ingiriendo estos release-feeds sin un gate de contenido, seguirán consumiendo cupo de briefs temáticos sin aportar señal. Etiquetarlos como maintenance/noise evita ese desgaste.
 
-Se relaciona con el release 2026.8.31 como el caso concreto que dispara esta regla, y con el riesgo general de que un clúster con relevance muy baja sobreviva al filtrado determinista. `supports` la nota sobre por qué un feed de releases MCP sin changelog no permite afirmar capacidades.
+Es el mecanismo concreto del solapamiento léxico «agents/servers» ya documentado como falso positivo de clustering, y sostiene la lectura del clúster como ruido para el brief.
 
 ## Links
 - supports → [[mismatch-query-tema-por-vocabulario-generico-de-infraestructura]]
@@ -81,3 +88,5 @@ Se relaciona con el release 2026.8.31 como el caso concreto que dispara esta reg
 - relates_to → [[mcp-release-2026-8-31-bumps]]
 - relates_to → [[relevancia-cero-en-cluster-sobrevive-al-filtrado-determinista]]
 - supports → [[mcp-feed-de-releases-sin-changelog-impide-afirmar-capacidades]]
+- supports → [[mcp-feed-releases-ruido-para-brief-de-agentes-y-liderazgo]]
+- relates_to → [[solapamiento-lexico-agents-servers-como-falso-positivo-de-clustering]]
