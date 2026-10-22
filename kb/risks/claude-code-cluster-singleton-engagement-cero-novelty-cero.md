@@ -1,6 +1,6 @@
 ---
 id: claude-code-cluster-singleton-engagement-cero-novelty-cero
-title: 'El clúster de Claude Code: singleton con engagement cero y novelty 0.00'
+title: 'El clúster de Claude Code: singleton RSS con engagement cero y novelty 0.00'
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-21'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
+- engagement
 - evidencia-debil
-- singleton
+- novelty
 - scoring
+- singleton
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -32,22 +34,31 @@ links:
   type: relates_to
 - to: corroboracion-0-5-en-cluster-de-un-solo-documento-no-es-consenso
   type: supports
+- to: claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente
+  type: supports
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: supports
+- to: generalizacion-desde-cluster-de-un-solo-documento
+  type: relates_to
 ---
 
 ## What it is
-El clúster se sostiene en un único documento RSS con engagement cero y novelty 0.00; la corroboración moderada es un valor por defecto del scorer, no consenso entre fuentes [abf61eeec75462f9].
+El clúster se sostiene en un solo documento RSS, con engagement 0 y novelty 0.00. Tales métricas son autodescripción del pipeline, no corroboración externa, y no sostienen ninguna generalización sobre práctica de ingeniería.
 
 ## Evidence
-- Un solo documento de RSS constituye todo el clúster, con engagement nulo y novelty 0.00 — source: abf61eeec75462f9
-- La corrobación reportada es «moderada» pese a no existir segunda fuente — source: abf61eeec75462f9
+- Clúster de un solo documento [abf61eeec75462f9] con cero corroboración intra-clúster — source: abf61eeec75462f9
+- Novelty 0.00 indica que el encuadre ya es ampliamente conocido — source: abf61eeec75462f9
 
 ## Why it matters
-Cualquier afirmación sobre arquitectura de prompts de producto extraída de este clúster es autodescripción del pipeline, no evidencia verificada. No debe citarse ante un equipo ni en una clase.
+Un singleton de agregación no soporta un hecho específico sobre un sistema propietario. Como mucho, autoriza un apunte cualitativo de baja confianza.
 
-Es la cara de riesgo de `claude-code-system-prompt-conditional-composition`: descarta leer el claim como hallazgo. Coincide con el patrón general de singletons RSS sin engagement y con la regla de que corroboración 0.50 en un clúster de un documento no es consenso.
+Es la condición de admisión del claim; se apoya en las notas previas sobre singletons sin engagement y clústeres de un solo documento.
 
 ## Links
 - contradicts → [[claude-code-system-prompt-conditional-composition]]
 - relates_to → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
 - relates_to → [[cluster-de-un-documento-sin-engagement-no-sostiene-generalizacion]]
 - supports → [[corroboracion-0-5-en-cluster-de-un-solo-documento-no-es-consenso]]
+- supports → [[claude-code-system-prompt-ensamblado-condicional-claim-sin-fuente]]
+- supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]
+- relates_to → [[generalizacion-desde-cluster-de-un-solo-documento]]

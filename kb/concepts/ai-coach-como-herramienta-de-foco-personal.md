@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-19'
+updated: '2026-10-22'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -22,10 +22,11 @@ tags:
 - personal-productivity
 - productividad
 - productividad-personal
+- self-management
 - self-regulation
 base_confidence: 0.04
 half_life_days: 180
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -60,19 +61,22 @@ links:
   type: contradicts
 - to: efectividad-de-ai-coach-no-demostrada
   type: supports
+- to: ai-coach-ensamblado-voz-no-avanza-tesis-del-brief
+  type: supports
+- to: ai-coach-personal-como-anecdota-de-proyecto-de-un-solo-dev
+  type: supports
 ---
 
 ## What it is
-El AI coach del documento se plantea como una ayuda para calmar el «monkey mind» del propio autor: foco personal, no gestión de equipos. No hay mención a estimación, secuenciación, alcance, revisión de código ni docencia. El puente al brief es el cajón de «productividad y técnicas de estudio», y llega sin medición.
+La motivación declarada del proyecto es autogestión personal — «tame my monkey mind» — no resultados de equipo ni de docencia. El artefacto apunta a foco individual.
 
 ## Evidence
-- El AI coach se enmarca como forma de gestionar el «monkey mind» del autor — source: 49140f9d5133d3c7
-- El documento no describe integración con flujos de trabajo, evaluación ni resultados — source: 49140f9d5133d3c7
+- La motivación declarada es autogestión personal («tame my monkey mind»), no resultados de equipo ni docencia — source: 49140f9d5133d3c7
 
 ## Why it matters
-Delimita el alcance: si un dev-líder quiere justificar un coach de voz para su equipo o su clase, este documento no aporta nada. Lo único reutilizable es la idea de prototipar asistencia personal con APIs baratas antes de comprometer un flujo de equipo.
+Fija el alcance: cualquier lectura sobre liderazgo, estimación o secuenciación excede lo que el documento dice. El valor para el brief es analógico, no empírico.
 
-`contradicts` la nota existente que ya fijaba el mismo encuadre: esta compilación confirma la lectura en vez de integrarla como evidencia nueva, y conviene marcar la duplicación en lugar de sumar confianza. `supports` la nota de que la efectividad del AI coach no está demostrada: el documento no trae outcomes. `relates_to` monkey mind como encuadre de productividad personal.
+`derived_from` el stack técnico; `supports` las notas de riesgo que limitan su alcance y niegan su aporte a la tesis del brief.
 
 ## Links
 - relates_to → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
@@ -90,3 +94,5 @@ Delimita el alcance: si un dev-líder quiere justificar un coach de voz para su 
 - derived_from → [[stack-de-ai-coach-voz-a-voz]]
 - contradicts → [[ai-coach-como-herramienta-de-foco-no-de-liderazgo]]
 - supports → [[efectividad-de-ai-coach-no-demostrada]]
+- supports → [[ai-coach-ensamblado-voz-no-avanza-tesis-del-brief]]
+- supports → [[ai-coach-personal-como-anecdota-de-proyecto-de-un-solo-dev]]

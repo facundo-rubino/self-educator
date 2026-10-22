@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-12'
-updated: '2026-10-12'
+updated: '2026-10-22'
 sources:
 - 0248fdb60811e91e
 tags:
-- retrieval-lead
-- corroboracion-ausente
 - brief-adjacencia-lexica
+- corroboracion
+- corroboracion-ausente
+- llm-patterns
+- retrieval
+- retrieval-lead
 base_confidence: 0.9
 half_life_days: 120
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -32,23 +35,28 @@ links:
   type: relates_to
 - to: how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic
   type: supports
+- to: how-to-match-llm-patterns-sin-cuerpo-ingestado
+  type: derived_from
+- to: how-to-match-llm-patterns-adyacencia-al-brief-no-demostrada
+  type: relates_to
 ---
 
 ## What it is
-El clúster se sostiene sobre un único ítem RSS con engagement=0 y sin cuerpo, con relevance 0.33 y novelty 0.00; la única proposición extraíble es una dicotomía de alto nivel sobre LLMs externos/internos y datos/no-datos. Cualquier conclusión sustantiva sobre esa dicotomía leería más allá de la fuente.
+El clúster es un singleton [0248fdb60811e91e]; la puntuación de corroboración de 0.50 no refleja evidencia independiente en los documentos listados. Sin cuerpo recuperado, la acción correcta es recuperar el texto completo antes de citarlo, no compilar un hallazgo.
 
 ## Evidence
-- El artefacto ingerido es un ítem RSS sin cuerpo más allá del título y subtítulo — source: 0248fdb60811e91e
-- La relevancia declarada frente al brief es 0.33 y la novedad 0.00 — source: 0248fdb60811e91e
-- El encuadre de ejes es una dicotomía plausible pero no verificable sin el cuerpo: no se puede comparar ni falsar — source: 0248fdb60811e91e
+- El clúster se apoya en una sola fuente sin corroboración — source: 0248fdb60811e91e
+- El documento registra engagement=0 y no aporta estudios de caso ni métricas — source: 0248fdb60811e91e
 
 ## Why it matters
-Tratar una taxonomía genérica de patrones como evidencia sobre liderazgo técnico, estimación o docencia sería un error de categoría: esos claims no están en la fuente. El clúster además no aporta corroboración independiente al ser de un solo documento, y un encuadre autoevidente no añade señal para decidir.
+Priorizar este ítem frente a fuentes sobre estimación, secuenciación o liderazgo de equipos chicos desplazaría señal más específica del brief por contenido de bajo valor.
 
-Refuerza las notas de riesgo gemelas sobre singleton sin corroboración y sobre ausencia de ejes del brief; ambas nombran el mismo `0248fdb60811e91e` y el mismo vacío de cuerpo. Se relaciona con el candidato a retrieval ya registrado: la acción correcta es recuperar el texto completo antes de citarlo.
+Deriva de la ausencia de cuerpo ingerido y se relaciona con la adyacencia léxica al brief: ambas describen el mismo artefacto de ingesta desde ángulos distintos.
 
 ## Links
 - supports → [[how-to-match-llm-patterns-singleton-sin-contenido-ni-corroboracion]]
 - supports → [[how-to-match-llm-patterns-sin-ejes-del-brief-ni-corroboracion]]
 - relates_to → [[how-to-match-llm-patterns-candidato-a-retrieval-no-a-descarte-2]]
 - supports → [[how-to-match-llm-patterns-relevancia-baja-sin-ejes-del-topic]]
+- derived_from → [[how-to-match-llm-patterns-sin-cuerpo-ingestado]]
+- relates_to → [[how-to-match-llm-patterns-adyacencia-al-brief-no-demostrada]]

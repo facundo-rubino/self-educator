@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-28'
+updated: '2026-10-22'
 sources:
 - 19cb8032958cd964
+- sig-237cc97a9794
 tags:
 - capacidad
+- evidencia-debil
 - evidencia-delgada
 - meta-riesgo
+- metodo
 - metodo-ausente
+- riesgo
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-09-28'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -38,18 +42,23 @@ links:
   type: relates_to
 - to: single-document-cluster-engagement-cero-no-generaliza
   type: supports
+- to: a-chain-reaction-aphorism-lexical-philosophical-coincidence
+  type: relates_to
+- to: afirmar-capacidad-multimodal-sin-metodologia
+  type: derived_from
 ---
 
 ## What it is
-Un fragmento de una o dos líneas sin metodología, sin versión de modelo y sin condiciones de prueba no sostiene una afirmación de salto de capacidad. La plausibilidad direccional de una afirmación («los modelos con visión pueden reconocer personas») no es evidencia de que la capacidad haya cambiado ni de cuándo.
+Una sola frase de un feed RSS con engagement cero no sostiene ninguna afirmación de capacidad, ni positiva ni negativa. El patrón de fallo es colapsar un fragmento de una línea en un juicio fuerte sobre lo que un modelo puede hacer.
 
 ## Evidence
-- El único documento del clúster enuncia comportamiento diferenciado entre proveedores (ChatGPT/Claude rechazan; Gemini cumple) sin metodología, sin fijación de versión, sin condiciones de prompt ni test reproducible — source: 19cb8032958cd964
+- La evidencia del clúster son dos claims atribuidos a un único doc_id — source: 19cb8032958cd964
+- El crítico describe el razonamiento como «self-referentially circular» — source: sig-237cc97a9794
 
 ## Why it matters
-Sin metodología ni versión no hay forma de falsar la afirmación ni de detectar cuándo expira. Cualquier decisión que se apoye en ella (elegir proveedor, prometer una función, diseñar un ejercicio) queda colgada de un comportamiento que puede cambiar en el siguiente release sin aviso.
+Registrar el modo de fallo permite que el reconcile posterior lo reconozca. La regla práctica: un fragmento corto con engagement cero se descarta o se marca como question, nunca se compila como hallazgo.
 
-Es el caso concreto de `afirmar-capacidad-desde-un-titular-rss-sobre-identificacion`; ambas describen el mismo salto indebido de un texto mínimo a una afirmación general, y la segunda es la instancia. Se relaciona con `afirmacion-de-novedad-sin-linea-base` porque el «now» de la afirmación no tiene línea base contra la cual medirse. Se apoya en `single-document-cluster-engagement-cero-no-generaliza`, que establece la insuficiencia estadística del clúster.
+Se relaciona con el patrón de que un aforismo autocontenido no es hallazgo y deriva del riesgo de afirmar capacidad multimodal sin metodología.
 
 ## Links
 - contradicts → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
@@ -59,3 +68,5 @@ Es el caso concreto de `afirmar-capacidad-desde-un-titular-rss-sobre-identificac
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - relates_to → [[afirmacion-de-novedad-sin-linea-base]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
+- relates_to → [[a-chain-reaction-aphorism-lexical-philosophical-coincidence]]
+- derived_from → [[afirmar-capacidad-multimodal-sin-metodologia]]

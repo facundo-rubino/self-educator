@@ -9,16 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-21'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
 - scope
+- topic-drift
 - topical-adjacency
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -31,22 +32,28 @@ links:
   type: supports
 - to: cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional
   type: derived_from
+- to: ai-coach-como-herramienta-de-foco-personal
+  type: derived_from
+- to: ai-coach-efectividad-no-demostrada
+  type: relates_to
 ---
 
 ## What it is
-El clúster no contiene evidencia sobre estimación, secuenciación, alcance, liderazgo técnico de equipos chicos, oficio de software ni enseñanza de programación. Su única conexión es adyacencia léxica con «gestionar» y «organización personal».
+El clúster no contiene evidencia sobre estimación de tareas, secuenciación, gestión de alcance, liderazgo técnico de equipos chicos, oficio de software engineering ni técnicas de estudio. La conexión con el brief es analógica, admitida por el propio análisis.
 
 ## Evidence
-- No hay evidencia en el clúster sobre estimación, secuenciación, alcance, liderazgo técnico de equipos chicos, oficio de software ni docencia — source: 49140f9d5133d3c7
-- La conexión con el brief es adyacencia temática: aplicar agentes de IA a organización personal y auto-gestión — source: 49140f9d5133d3c7
+- No hay evidencia en el clúster sobre estimación, secuenciación, gestión de alcance, liderazgo de equipos chicos, craft ni técnicas de estudio — source: 49140f9d5133d3c7
+- La relevancia defendible es «solo analógica» — source: 49140f9d5133d3c7
 
 ## Why it matters
-Marca el techo de uso: sirve como ejemplo de tooling personal, no como evidencia para los claims centrales del brief. Reutilizarlo para docencia o liderazgo sería un salto no sostenido por el documento.
+Evita doble conteo: el vocabulario «coach» solapa con docencia, pero la docencia entry-level se movió al profile `teaching`. Tratar este ítem como evidencia de enseñanza o liderazgo sería drift de tópico.
 
-Se deriva de la ausencia ya registrada de evidencia de práctica profesional en el clúster de AI coach. Refuerza el riesgo del puente anecdótico a liderazgo y delimita el alcance frente al uso en docencia o gestión.
+`derived_from` el carácter personal de la herramienta; `relates_to` la ausencia de efectividad medida.
 
 ## Links
 - relates_to → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
 - relates_to → [[ai-coach-puente-a-docencia-o-gestion-no-demostrado]]
 - supports → [[puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia]]
 - derived_from → [[cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional]]
+- derived_from → [[ai-coach-como-herramienta-de-foco-personal]]
+- relates_to → [[ai-coach-efectividad-no-demostrada]]

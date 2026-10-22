@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-20'
+updated: '2026-10-22'
 sources:
 - 19cb8032958cd964
 tags:
@@ -19,12 +19,13 @@ tags:
 - multimodal
 - politica-de-producto
 - politica-de-proveedor
+- politica-de-rechazo
 - proveedores
 - rechazo
 - refusal
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-10-20'
+last_reinforced: '2026-10-22'
 provenance:
   scale: M
   query: null
@@ -42,15 +43,15 @@ links:
 ---
 
 ## What it is
-Un mismo prompt sobre identificación de figuras públicas en imágenes produce respuestas opuestas según el proveedor: ChatGPT y Claude se niegan, Gemini nombra. La diferencia observable es de umbral de política, no de capacidad de visión. El documento no aporta metodología ni fecha, así que el contraste queda como descripción de una divergencia de producto.
+Ante la misma tarea de identificar figuras públicas en imágenes, ChatGPT y Claude rechazan y Gemini no, según un único ítem RSS. La divergencia se enuncia como conducta observada de producto, sin metodología, versión, cuenta ni región.
 
 ## Evidence
-- ChatGPT y Claude declinan identificar figuras públicas; Gemini sí lo hace — source: 19cb8032958cd964
+- «ChatGPT and Claude won't, but Gemini will» — source: 19cb8032958cd964
 
 ## Why it matters
-Establece que la paridad entre proveedores no se puede asumir: la política de rechazo es una variable de producto y de runtime. Es la base empírica mínima para diseñar agentes que abstraigan el rechazo.
+Si la conducta difiere por proveedor, un agente que procesa imágenes de usuarios no puede asumir uniformidad: la identificación de personas debe ser un toggle por proveedor, con feature-flag o capa de abstracción para que un swap no cambie silenciosamente lo que el producto hace con imágenes ajenas.
 
-Complementa `capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo` (por qué el rechazo no es capacidad) y sostiene la práctica de `spike-por-proveedor-para-comportamiento-de-rechazo`. Se deriva del caso concreto registrado en `gemini-no-rechaza-nombrar-figuras-publicas`.
+Se relaciona con la separación capacidad/política y respalda el patrón de spike por proveedor antes de comprometer features que dependen del rechazo del modelo.
 
 ## Links
 - relates_to → [[sobre-generalizacion-desde-claude-code]]

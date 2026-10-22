@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-19'
+updated: '2026-10-22'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -34,7 +34,7 @@ tags:
 - refusal
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-10-19'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -95,18 +95,20 @@ links:
   type: relates_to
 - to: politica-de-imagenes-cambia-sin-aviso
   type: relates_to
+- to: reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria
+  type: relates_to
 ---
 
 ## What it is
-El clúster plantea, sin responder, bajo qué condiciones se observó la divergencia de rechazo entre Gemini, ChatGPT y Claude: no hay fecha, versión de modelo, cuenta, región ni frase exacta del prompt. Sin eso, la observación no es reproducible.
+No se sabe si la conducta observada depende de la versión del modelo, de la cuenta, de la región, del idioma del prompt o del phrasing exacto. La fuente única no permite atribuir la divergencia a política de producto con confianza.
 
 ## Evidence
-- El documento no aporta metodología, fecha ni condiciones de la comparación entre proveedores — source: 19cb8032958cd964
+- El documento solo enuncia «ChatGPT and Claude won't, but Gemini will» sin condiciones de prueba — source: 19cb8032958cd964
 
 ## Why it matters
-Una política de rechazo observada en una frase no se generaliza: versión, cuenta y región la condicionan. La pregunta queda abierta hasta que exista una sonda reproducible por proveedor.
+Una política de rechazo observada en una frase no se generaliza. La pregunta abierta es qué condición —proveedor, versión, cuenta, región o prompt— gobierna la respuesta; responderla exige un probe controlado por proveedor.
 
-Se deriva de la nota de divergencia de rechazo por proveedor. Se relaciona con la nota de que una observación en una frase no generaliza y con el riesgo de que la política de imágenes cambie sin aviso.
+Deriva de la nota de divergencia de rechazo y se relaciona con la depuración de prompts como problema de ingeniería cuando la conducta depende de muchas condiciones.
 
 ## Links
 - supports → [[gemini-no-rechaza-nombrar-figuras-publicas]]
@@ -137,3 +139,4 @@ Se deriva de la nota de divergencia de rechazo por proveedor. Se relaciona con l
 - derived_from → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[prueba-con-proveedores-y-cuentas-especificas]]
 - relates_to → [[politica-de-imagenes-cambia-sin-aviso]]
+- relates_to → [[reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria]]

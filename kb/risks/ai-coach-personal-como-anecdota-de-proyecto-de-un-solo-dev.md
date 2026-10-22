@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-15'
-updated: '2026-10-15'
+updated: '2026-10-22'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
-- proyecto-personal
-- sobreinterpretacion
 - evidencia
+- proyecto-personal
+- single-dev
+- sobreinterpretacion
+- team-practice
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -35,19 +37,23 @@ links:
   type: supports
 - to: efectividad-de-ai-coach-no-demostrada
   type: supports
+- to: ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica
+  type: derived_from
+- to: entrega-por-agentes-single-author-no-generaliza-a-equipo
+  type: relates_to
 ---
 
 ## What it is
-El documento es una anécdota de ingeniería de un solo desarrollador: describe un ensamblado, no reporta resultados, métricas de uso ni adopción por un equipo. Presentarlo como evidencia sobre productividad, liderazgo técnico o docencia sería sobreinterpretación.
+El artefacto es de un solo autor con un problema de autogestión; no involucra equipo, proceso compartido ni resultado organizacional. No puede informar estimación, secuenciación ni liderazgo de equipos chicos.
 
 ## Evidence
-- El engagement registrado del documento es 0, lo que sugiere nula tracción o discusión externa en el momento de la ingesta — source: 49140f9d5133d3c7
-- No hay evidencia en el documento sobre liderazgo de equipos, estimación, secuenciamiento ni docencia de programación — source: 49140f9d5133d3c7
+- Proyecto personal de autogestión, sin resultados de equipo ni de docencia — source: 49140f9d5133d3c7
+- Sin datos sobre estimación, secuenciación, alcance o liderazgo — source: 49140f9d5133d3c7
 
 ## Why it matters
-Bloquea la inferencia que el material no permite: extraer recomendaciones de gestión o de enseñanza desde una anécdota personal. Un clúster de un documento con engagement cero no sostiene generalización.
+Marca el techo de generalización: como máximo inspira un prototipo personal barato; no es input para decisiones de equipo.
 
-Deriva del stack descrito en el documento (derived_from). Se apoya en las notas existentes sobre proyectos personales como no-evidencia de práctica (relates_to), sobre el riesgo de generalizar desde este caso (supports) y sobre la invención que sería vincularlo con liderazgo o docencia (supports). Refuerza la nota de que la efectividad del AI coach no está demostrada (supports).
+`derived_from` el riesgo de tomar un anuncio personal como práctica; `relates_to` el patrón de que un autor único no generaliza a escala de equipo.
 
 ## Links
 - derived_from → [[ai-coach-stack-stt-tts-llm-numero-virtual]]
@@ -55,3 +61,5 @@ Deriva del stack descrito en el documento (derived_from). Se apoya en las notas 
 - supports → [[riesgo-de-generalizar-desde-ai-coach-monkey-mind]]
 - supports → [[afirmar-vinculo-de-ai-coach-con-liderazgo-o-docencia-seria-invencion]]
 - supports → [[efectividad-de-ai-coach-no-demostrada]]
+- derived_from → [[ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica]]
+- relates_to → [[entrega-por-agentes-single-author-no-generaliza-a-equipo]]

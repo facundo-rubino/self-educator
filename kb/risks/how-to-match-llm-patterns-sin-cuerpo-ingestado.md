@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-20'
-updated: '2026-10-20'
+updated: '2026-10-22'
 sources:
 - 0248fdb60811e91e
 tags:
-- pipeline
-- ingesta
 - evidencia-tenue
+- ingesta
+- llm-patterns
+- pipeline
+- sin-cuerpo-ingerido
+- singleton
 base_confidence: 0.75
 half_life_days: 120
-last_reinforced: '2026-10-20'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -28,19 +31,26 @@ links:
   type: relates_to
 - to: how-to-match-llm-patterns-framework-opinion-sin-validar
   type: supports
+- to: taxonomia-dos-ejes-llm-externo-interno-datos
+  type: supports
+- to: singleton-rss-engagement-cero-novelty-cero-no-sostiene-generalizacion
+  type: derived_from
 ---
 
 ## What it is
-Lo recuperado del documento se limita a título y resumen: la formulación de los dos ejes. No hay pasajes del argumento, ejemplos, ni criterios derivados del texto completo.
+El clúster se apoya en un único documento RSS [0248fdb60811e91e] del que no consta el cuerpo. El título sugiere un marco de decisión, pero no puede verificarse si distingue patrones con criterios operativos o si es una taxonomía superficial.
 
 ## Evidence
-- El documento llega como un solo ítem y el resumen describe el marco pero no cita pasajes — source: 0248fdb60811e91e
+- El clúster contiene un único documento RSS sin engagement — source: 0248fdb60811e91e
+- El documento registra engagement=0, sin señal de interacción o validación por lectores — source: 0248fdb60811e91e
 
 ## Why it matters
-Cualquier uso del marco para enseñar, estimar o justificar alcance se apoya en una descripción de segundo orden. Sin el cuerpo, la afirmación de que el documento «propone» los ejes no puede verificarse contra el texto.
+Cualquier afirmación sobre el contenido del marco sería reconstrucción desde el título. La única afirmación admisible es que existe una pieza de contenido que propone un marco; nada más es compilable.
 
-Refuerza el riesgo de que el marco sea opinión no validada. Es el lado de ingesta del mismo problema que el lado metodológico de la nota sobre el framework sin validar.
+Sostiene la nota sobre la taxonomía de dos ejes: aquello que parece marco no tiene cuerpo que lo respalde. Deriva del patrón general de que un singleton RSS sin engagement no sostiene generalización.
 
 ## Links
 - relates_to → [[how-to-match-llm-patterns-problema-patron]]
 - supports → [[how-to-match-llm-patterns-framework-opinion-sin-validar]]
+- supports → [[taxonomia-dos-ejes-llm-externo-interno-datos]]
+- derived_from → [[singleton-rss-engagement-cero-novelty-cero-no-sostiene-generalizacion]]

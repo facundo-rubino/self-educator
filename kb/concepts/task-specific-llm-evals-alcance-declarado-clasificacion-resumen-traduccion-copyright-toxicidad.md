@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-23'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -35,7 +35,7 @@ tags:
 - taxonomia-de-tareas
 base_confidence: 0.05
 half_life_days: 180
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -80,19 +80,23 @@ links:
   type: relates_to
 - to: eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
   type: contradicts
+- to: task-specific-llm-evals-sin-conexion-con-agentes-o-docencia
+  type: supports
+- to: evals-especifica-por-tarea-como-infraestructura-de-fiabilidad
+  type: relates_to
 ---
 
 ## What it is
-El documento «Task-Specific LLM Evals that Do & Don't Work» [93963a5f93e58d05] enumera cinco dominios de evaluación: clasificación, resumen, traducción, regurgitación de copyright y toxicidad. Es el único contenido verificable del ítem: una lista de familias de tarea, sin métricas, sin benchmarks ni resultados comparativos.
+«Task-Specific LLM Evals that Do & Don't Work» es un documento que se presenta como análisis de la eficacia diferencial de las evaluaciones de LLM según la tarea. Las tareas que enumera son: clasificación, resumen, traducción, regurgitación de contenido con copyright y toxicidad. No hay cuerpo ingerido más allá de ese alcance declarado.
 
 ## Evidence
-- El clúster contiene exactamente un documento, ítem de feed titulado «Task-Specific LLM Evals that Do & Don't Work», con engagement cero registrado — source: 93963a5f93e58d05
-- El documento enumera dominios de eval: clasificación, resumen, traducción, copyright regurgitation y toxicidad — source: 93963a5f93e58d05
+- El documento se presenta explícitamente como un análisis de «Task-Specific LLM Evals that Do & Don't Work», es decir, evalúa la eficacia diferencial de las evaluaciones según la tarea — source: 93963a5f93e58d05
+- Enumera las tareas cubiertas: clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
 
 ## Why it matters
-Para un dev que construye con agentes y además enseña, el único uso defendible de este ítem es como recordatorio de nombrar la familia de tarea al hablar de evaluación: «lo evaluamos» sin tarea ni modo de fallo no dice nada. No habilita ninguna asignación de esfuerzo de evaluación por tipo de tarea, porque el documento no mide esa asignación.
+El único contenido verificable del documento es la lista de familias de tarea, no una medición de qué evals funcionan. Sirve como inventario de alcance, no como resultado.
 
-Es la variante concreto-por-familias de `task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable` y de `task-families-evaluadas-en-el-documento-evals`. Contradice el encuadre de `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` en tanto este ítem no aporta ni un dato de fiabilidad; sólo nombres de categorías.
+Se relaciona con `task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable`: mismo hallazgo de alcance. Apoya a `task-specific-llm-evals-sin-conexion-con-agentes-o-docencia` porque la lista no incluye generación de código ni tutoring. Vecino temático de `evals-especifica-por-tarea-como-infraestructura-de-fiabilidad`, pero sin la evidencia que esa nota necesitaría.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-singleton-engagement-cero]]
@@ -115,3 +119,5 @@ Es la variante concreto-por-familias de `task-specific-llm-evals-familias-de-tar
 - supports → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
 - relates_to → [[evals-de-llm-especificas-por-tarea-enunciadas-sin-metodologia]]
 - contradicts → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
+- supports → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]
+- relates_to → [[evals-especifica-por-tarea-como-infraestructura-de-fiabilidad]]

@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-10-12'
+updated: '2026-10-22'
 sources:
 - 93963a5f93e58d05
 tags:
@@ -23,12 +23,13 @@ tags:
 - coding-agents
 - docencia
 - evals
+- extrapolacion
 - llm
 - nlp
 - pregunta-abierta
 base_confidence: 0.25
 half_life_days: 120
-last_reinforced: '2026-10-12'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -71,19 +72,21 @@ links:
   type: relates_to
 - to: task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable
   type: derived_from
+- to: task-specific-llm-evals-tareas-nlp-no-cubren-ejes-del-brief
+  type: supports
 ---
 
 ## What it is
-Las cinco familias declaradas (clasificación, resumen, traducción, copyright, toxicidad) son tareas de NLP general. Ninguna de ellas es una eval de generación o edición de código, y ninguna es una eval de un asistente de enseñanza. Queda abierto si el documento completo las cubriría.
+Las familias de tarea del documento — clasificación, resumen, traducción, copyright, toxicidad — son NLP general. No incluyen generación de código ni tutoring. Extrapolar sus conclusiones al núcleo del brief (agentes que programan, gestionan o enseñan) es especulativo.
 
 ## Evidence
-- El documento solo nombra clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
-- No aparece en el extracto ninguna familia de tarea de código, depuración, estimación ni docencia — source: 93963a5f93e58d05
+- Enumera las tareas cubiertas: clasificación, resumen, traducción, regurgitación de copyright y toxicidad — source: 93963a5f93e58d05
+- Las tareas listadas no incluyen generación de código ni tutoring — source: 93963a5f93e58d05
 
 ## Why it matters
-Si un dev-líder quiere evaluar un agente antes de confiarle código o material de clase, este listado no le da la familia de tarea que necesita. La pregunta abierta es si eso es un límite del documento o de la extracción; el extracto actual no permite distinguirlo.
+Para un dev que lidera y enseña, el marco no ofrece evals de las tareas que le importan. Sirve como catálogo de verificación para salidas de modelo en NLP, no como guía de aceptación de código generado ni de feedback a estudiantes.
 
-`derived_from` la nota sobre las familias declaradas como único contenido verificable. Se relaciona con la nota ya existente sobre la falta de conexión del documento con agentes o docencia, sin contradecirla: aquí la pregunta es más estrecha — el desajuste está en la nomenclatura de tareas, no solo en la relevancia al brief.
+Profundiza `task-specific-llm-evals-sin-conexion-con-agentes-o-docencia` con la razón concreta: qué tareas están y cuáles no. Deriva del alcance declarado. Refuerza `task-specific-llm-evals-tareas-nlp-no-cubren-ejes-del-brief`.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-do-dont-work-titulo-sin-contenido-ingerido]]
@@ -105,3 +108,4 @@ Si un dev-líder quiere evaluar un agente antes de confiarle código o material 
 - supports → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]
 - relates_to → [[task-specific-llm-evals-sin-conexion-con-agentes-o-docencia]]
 - derived_from → [[task-specific-llm-evals-familias-de-tarea-declaradas-como-unico-contenido-verificable]]
+- supports → [[task-specific-llm-evals-tareas-nlp-no-cubren-ejes-del-brief]]

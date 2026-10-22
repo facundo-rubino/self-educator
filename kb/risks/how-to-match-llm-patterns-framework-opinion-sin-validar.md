@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-20'
-updated: '2026-10-20'
+updated: '2026-10-22'
 sources:
 - 0248fdb60811e91e
 tags:
 - evidencia-tenue
-- validacion
 - llm
+- llm-patterns
+- sin-validacion
+- taxonomia
+- validacion
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-20'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -27,19 +30,26 @@ links:
   type: contradicts
 - to: how-to-match-llm-patterns-heuristica-secuenciacion-sin-evaluar
   type: relates_to
+- to: taxonomia-dos-ejes-llm-externo-interno-datos
+  type: supports
+- to: how-to-match-llm-patterns-sin-cuerpo-ingestado
+  type: relates_to
 ---
 
 ## What it is
-El marco no viene acompañado de datos de rendimiento, costo ni errores de patrón. Con un solo documento y sin comparaciones medidas, no hay base para tratarlo como hallazgo validado.
+Las dicotomías externo/interno y datos/no-datos son distinciones genéricas que aparecerían en casi cualquier artículo de patrones LLM. El clúster no trae análisis empírico, casos ni métricas que las validen [0248fdb60811e91e].
 
 ## Evidence
-- No hay datos de rendimiento, costo ni errores de los patrones asociados al marco — source: 0248fdb60811e91e
+- El documento no aporta datos empíricos, estudios de caso ni métricas que corroboren el marco — source: 0248fdb60811e91e
+- El único documento del clúster registra engagement=0 — source: 0248fdb60811e91e
 
 ## Why it matters
-Un líder que use los dos ejes para decidir arquitectura o para justificar por qué un problema no necesita agente está usando una heurística de opinión, no un resultado. Sirve para ordenar la conversación, no para cerrar una decisión cuantitativa.
+Tratar el marco como modelo de decisión validado propagaría una taxonomía de vendor-style al brief de agentes y liderazgo. La calibración correcta es: plausible, no validado, no prioritario.
 
-Contradice la nota sobre la taxonomía como hallazgo, degradándola a heurística. Se relaciona con la nota sobre el valor de secuenciación no evaluado.
+Sostiene la nota de taxonomía de dos ejes marcándola como no validada. Se relaciona con la falta de cuerpo ingerido que impediría, incluso, comprobar si los criterios son operativos.
 
 ## Links
 - contradicts → [[how-to-match-llm-patterns-taxonomia-dos-ejes]]
 - relates_to → [[how-to-match-llm-patterns-heuristica-secuenciacion-sin-evaluar]]
+- supports → [[taxonomia-dos-ejes-llm-externo-interno-datos]]
+- relates_to → [[how-to-match-llm-patterns-sin-cuerpo-ingestado]]

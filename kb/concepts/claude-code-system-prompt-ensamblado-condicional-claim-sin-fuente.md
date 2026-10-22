@@ -10,12 +10,13 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-07'
-updated: '2026-10-20'
+updated: '2026-10-22'
 sources:
 - abf61eeec75462f9
 tags:
 - claude-code
 - ensamblado-condicional
+- evidencia-debil
 - fuente-no-verificada
 - leak
 - prompt-assembly
@@ -27,7 +28,7 @@ tags:
 - unverified
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-10-20'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -64,19 +65,22 @@ links:
   type: supports
 - to: claude-code-system-prompt-conclusion-circular-y-sin-poder-discriminativo
   type: supports
+- to: claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion
+  type: supports
 ---
 
 ## What it is
-Un ítem RSS (engagement=0) afirma que el código fuente filtrado de Claude Code muestra un system prompt ensamblado a partir de «docenas de partes condicionales». La afirmación llega como resumen de un artículo externo: el texto del prompt, el inventario de condiciones y cualquier muestra reproducible están ausentes del clúster.
+Un ítem RSS afirma que el system prompt de Claude Code se arma a partir de docenas de partes condicionales, supuestamente visibles en código fuente filtrado. El documento es un único ítem de agregación, con engagement cero y novelty 0.00. Ningún artefacto primario fue inspeccionado en la evidencia.
 
 ## Evidence
-- «Claude Code's leaked source reportedly shows a system prompt assembled from dozens of conditional parts.» — source: abf61eeec75462f9
-- El ítem es una entrada de feed RSS con engagement=0, sin discusión ni corroboración observada aguas abajo. — source: abf61eeec75462f9
+- El prompt se describe como ensamblado de «docenas de partes condicionales» a partir de fuente filtrada — source: abf61eeec75462f9
+- El crítico marca el ítem como débil: un solo documento, sin corroboración intra-clúster ni verificación independiente — source: abf61eeec75462f9
+- Confianza ajustada a 0.12 tras crítica — source: abf61eeec75462f9
 
 ## Why it matters
-Es un puntero a leer la fuente primaria, no un hallazgo accionable. Confirma como mucho que el patrón de ensamblado condicional es plausible en un producto comercial de agentes de código, lo que no autoriza cambiar flujos de trabajo ni materiales de docencia.
+La afirmación es plausible pero no verificable desde el material: es hearsay de segunda mano sobre un producto propietario. Cualquier uso como hecho sobre los internals de Claude Code sería especulación.
 
-`relates_to` `ensamblado-condicional-de-prompts`: es una instancia concreta (no verificada) del patrón general. `derived_from` `claude-code-condiciones-que-gatean-secciones-sin-observar`: la pregunta abierta sobre qué condiciones gatean qué secciones es exactamente lo que este documento no responde. `supports` las notas de riesgo sobre singleton y sobre circularidad del leak: comparten la misma base documental única.
+Se relaciona con el patrón general de ensamblado condicional de prompts, pero el documento no aporta evidencia primaria que lo valide en este producto.
 
 ## Links
 - relates_to → [[claude-code-system-prompt-conditional-composition]]
@@ -95,3 +99,4 @@ Es un puntero a leer la fuente primaria, no un hallazgo accionable. Confirma com
 - relates_to → [[claude-code-source-leak-conditions-parts-unspecified]]
 - supports → [[claude-code-system-prompt-singleton-rss-engagement-cero]]
 - supports → [[claude-code-system-prompt-conclusion-circular-y-sin-poder-discriminativo]]
+- supports → [[claude-code-system-prompt-artefacto-de-ingesta-sin-api-de-verificacion]]

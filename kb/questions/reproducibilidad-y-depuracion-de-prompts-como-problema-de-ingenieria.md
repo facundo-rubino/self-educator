@@ -1,7 +1,7 @@
 ---
 id: reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria
-title: Si el comportamiento del agente depende de muchas condiciones, la depuración
-  de prompts es un problema de ingeniería
+title: Si la conducta del agente depende de muchas condiciones, la depuración de prompts
+  es un problema de ingeniería
 type: question
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,17 +10,22 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-24'
-updated: '2026-09-24'
+updated: '2026-10-22'
 sources:
+- 19cb8032958cd964
 - abf61eeec75462f9
 tags:
 - agentes
-- prompt-engineering
+- depuracion
 - oficio
+- pregunta-abierta
+- prompt-engineering
+- prompts
+- proveedores
 - reproducibilidad
 base_confidence: 0.3
 half_life_days: 120
-last_reinforced: '2026-09-24'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -33,23 +38,27 @@ links:
   type: relates_to
 - to: afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases
   type: relates_to
+- to: divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor
+  type: relates_to
+- to: ensamblado-condicional-de-prompts
+  type: relates_to
 ---
 
 ## What it is
-Si el comportamiento de un agente emerge del ensamblado de muchas ramas condicionales, la reproducibilidad y la depuración dejan de ser redacción y pasan a ser ingeniería: hay que saber qué rama se activó en cada ejecución. El reporte plantea la implicación pero no la respalda con ninguna observación del sistema.
+Cuando la respuesta depende de proveedor, versión, cuenta, región y phrasing, reproducir una conducta de rechazo exige registrar y controlar todas esas variables. La divergencia ChatGPT/Claude/Gemini es un caso de esa dependencia, aunque la fuente no la documente.
 
 ## Evidence
-- La implicación de que reproducibilidad y depuración se vuelven un problema de ingeniería es enunciada por el propio reporte, sin medición — source: abf61eeec75462f9
-- El mismo reporte reconoce que la conexión con el topic es indirecta y que la lección es de diseño de prompts, no de práctica de liderazgo — source: abf61eeec75462f9
-- El crítico marca la lección sobre diseño condicional como «interpretive leap», no como hallazgo — source: abf61eeec75462f9
+- El documento solo reporta el resultado de la diferencia, sin declarar ninguna variable de control — source: 19cb8032958cd964
 
 ## Why it matters
-Es la pregunta que sobreviviría al colapso del claim principal: si la afirmación sobre Claude Code se cae, la cuestión de cómo depurar un agente multi-rama sigue abierta y es directamente relevante al oficio. Queda sin respuesta en este clúster.
+Sin condiciones declaradas, la conducta no es depurable ni testeable. La pregunta abierta es qué mínima instrumentación por proveedor hace reproducible una política de rechazo observada.
 
-Se deriva de `system-prompt-como-artefacto-de-ingenieria`, que ya trata el prompt como artefacto versionado y testeado. Se relaciona con `revision-de-setup-de-agente-por-rama-condicional-no-por-prompt-monolitico` y con `test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes`. Advertencia: sostener esta pregunta con la evidencia actual sería `afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases`.
+Se relaciona con la pregunta sobre qué condiciones gobiernan la divergencia de rechazo y con el ensamblado condicional de prompts.
 
 ## Links
 - derived_from → [[system-prompt-como-artefacto-de-ingenieria]]
 - relates_to → [[revision-de-setup-de-agente-por-rama-condicional-no-por-prompt-monolitico]]
 - relates_to → [[test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes]]
 - relates_to → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]
+- relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
+- relates_to → [[ensamblado-condicional-de-prompts]]

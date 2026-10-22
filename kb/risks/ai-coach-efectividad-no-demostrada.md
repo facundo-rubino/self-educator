@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-21'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
-- single-source
+- no-corroboration
 - no-outcome-data
+- self-report
+- single-source
 base_confidence: 0.55
 half_life_days: 120
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -29,21 +31,27 @@ links:
   type: derived_from
 - to: ai-coach-monkey-mind-como-organizacion-personal
   type: derived_from
+- to: ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica
+  type: relates_to
+- to: ai-coach-como-herramienta-de-foco-personal
+  type: derived_from
 ---
 
 ## What it is
-El documento describe qué se construyó, no resultados medidos. No hay evidencia de mejora de rendimiento en el trabajo, así que atribuirle eficacia — propia o de equipo — sería fabricar un claim causal.
+Las afirmaciones de éxito o fracaso del coach son autoinformadas y no verificables. No hay medición de competencia, resultado, comparación, replicación ni segunda fuente.
 
 ## Evidence
-- El documento describe qué se construyó, no resultados medidos; no hay evidencia de mejora de rendimiento en el trabajo — source: 49140f9d5133d3c7
-- El clúster contiene un solo documento RSS con novelty 0.00, relevance 0.33 y corroboración en línea base 0.50 — source: 49140f9d5133d3c7
+- Narrativa de proyecto personal: los claims de éxito/fracaso son autoinformados y no verificables — source: 49140f9d5133d3c7
+- Sin corroboración de ninguna segunda fuente — source: 49140f9d5133d3c7
 
 ## Why it matters
-Impide citar este ítem como práctica de productividad validada. Un proyecto personal sin medición de resultados es un dato de existencia del proyecto, no de su efecto.
+Impide citar el proyecto como prueba de que un coach LLM mejora foco o productividad. Solo sostiene el claim de que es montable.
 
-Se deriva del encuadre de organización personal (el alcance es el propio autor) y de las métricas del singleton. Repite el riesgo ya registrado de afirmar efectividad de un AI coach desde un stack de una línea.
+`relates_to` el riesgo de generalizar desde un anuncio personal; `derived_from` la motivación individual del artefacto.
 
 ## Links
 - relates_to → [[afirmar-efectividad-de-ai-coach-desde-stack-de-una-linea-es-inferencia]]
 - derived_from → [[ai-coach-monkey-mind-singleton-engagement-cero]]
 - derived_from → [[ai-coach-monkey-mind-como-organizacion-personal]]
+- relates_to → [[ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica]]
+- derived_from → [[ai-coach-como-herramienta-de-foco-personal]]

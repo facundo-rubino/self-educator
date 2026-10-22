@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-17'
-updated: '2026-09-23'
+updated: '2026-10-22'
 sources:
 - 0248fdb60811e91e
 tags:
@@ -21,10 +21,11 @@ tags:
 - seleccion-de-tecnicas
 - sin-contenido-ingerido
 - sin-cuerpo
+- sin-cuerpo-ingerido
 - taxonomia
 base_confidence: 0.05
 half_life_days: 120
-last_reinforced: '2026-09-23'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -43,19 +44,25 @@ links:
   type: derived_from
 - to: task-specific-llm-evals-adyacencia-al-brief-no-demostrada
   type: relates_to
+- to: how-to-match-llm-patterns-taxonomia-dos-ejes
+  type: contradicts
+- to: how-to-match-llm-patterns-sin-cuerpo-ingestado
+  type: derived_from
+- to: how-to-match-llm-patterns-adyacencia-al-brief-no-demostrada
+  type: relates_to
 ---
 
 ## What it is
-El subtítulo del documento propone distinguir problemas con LLM externo vs. interno y patrones con datos vs. sin datos [0248fdb60811e91e]. Es un encuadre de decisión para elegir cómo aplicar LLMs, no una taxonomía validada: no hay criterios, definiciones de frontera ni ejemplos en el material ingerido [0248fdb60811e91e].
+El único documento del clúster [0248fdb60811e91e] propone distinguir problemas de LLM externos frente a internos y patrones basados en datos frente a no basados en datos. La distinción existe solo como descripción del documento en el clúster; no hay cuerpo ingerido que la desarrolle con criterios operativos.
 
 ## Evidence
-- El subtítulo distingue problemas con LLM externo vs. interno y patrones con datos vs. sin datos — source: 0248fdb60811e91e
-- No hay cuerpo ingerido que desarrolle los criterios de la taxonomía — source: 0248fdb60811e91e
+- El documento aborda cómo distinguir problemas con LLMs externos frente a internos, y patrones basados en datos frente a no basados en datos — source: 0248fdb60811e91e
+- El documento proviene de RSS con engagement=0 — source: 0248fdb60811e91e
 
 ## Why it matters
-Si la taxonomía se sostuviera, sería una ayuda de decisión para que un líder técnico elija cómo aplicar LLMs a tareas de programación, gestión y docencia. Hoy no pasa de hipótesis de encuadre.
+Una taxonomía de dos ejes sin clases de problema ni ejemplos no es una herramienta de decisión: es una etiqueta de ingesta. Para el brief no habilita ninguna decisión sobre estimación, secuenciación o delegación a agentes.
 
-Deriva de la nota sobre el título sin contenido [0248fdb60811e91e]. Comparte con `bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados` la pregunta por los límites no validados de cualquier taxonomía de este tipo.
+Contradice la nota previa que presentaba la taxonomía como contenido establecido: aquí solo consta como descripción del ítem. Deriva de la ausencia de cuerpo ingerido y se relaciona con la nota sobre la adyacencia léxica al brief.
 
 ## Links
 - derived_from → [[matching-llm-patterns-to-problems-titulo-sin-contenido]]
@@ -65,3 +72,6 @@ Deriva de la nota sobre el título sin contenido [0248fdb60811e91e]. Comparte co
 - contradicts → [[bordes-de-la-taxonomia-externo-interno-y-datos-no-datos-no-validados]]
 - derived_from → [[how-to-match-llm-patterns-to-problems-titulo-sin-contenido]]
 - relates_to → [[task-specific-llm-evals-adyacencia-al-brief-no-demostrada]]
+- contradicts → [[how-to-match-llm-patterns-taxonomia-dos-ejes]]
+- derived_from → [[how-to-match-llm-patterns-sin-cuerpo-ingestado]]
+- relates_to → [[how-to-match-llm-patterns-adyacencia-al-brief-no-demostrada]]

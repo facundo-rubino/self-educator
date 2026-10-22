@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-30'
-updated: '2026-10-15'
+updated: '2026-10-22'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -24,7 +24,7 @@ tags:
 - verificabilidad
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-10-15'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -57,19 +57,23 @@ links:
   type: contradicts
 - to: afirmacion-poblacional-desde-un-solo-proveedor
   type: relates_to
+- to: llms-identifican-figuras-publicas-sin-metodologia
+  type: supports
+- to: caso-multimodal-como-ejemplo-de-politica-vs-capacidad
+  type: contradicts
 ---
 
 ## What it is
-Afirmar que «los LLM ahora pueden identificar figuras públicas en imágenes» a partir de un único ítem RSS sin fecha, versión de modelo, condiciones ni reproducción es un sobrealcance. La observación de un proveedor no sostiene un claim poblacional sobre LLM.
+El ítem es un titular RSS con engagement cero y novelty cero; no trae error rate, condiciones de prueba, versiones de modelo ni verificación independiente. No es base para afirmar una capacidad poblacional de los LLMs.
 
 ## Evidence
-- El clúster se apoya en un solo post RSS con engagement cero: sin segunda fuente, sin reproducción, sin fecha y sin versión de modelo fijada — source: sig-237cc97a9794
-- El propio documento describe una asimetría de política entre proveedores, no un umbral técnico alcanzado — source: sig-237cc97a9794
+- La evidencia disponible son dos frases atribuidas al documento 19cb8032958cd964, una de ellas un contraste de proveedores
+- El crítico califica la señal de WEAK y ajusta la confianza a 0.12 — source: sig-237cc97a9794
 
 ## Why it matters
-Un claim de capacidad sin metodología no debe entrar en un estándar de equipo ni en un currículo. La acción correcta es verificar en un test controlado antes de que algo derive de él.
+Tratar el titular como hallazgo produce una inferencia circular: la fuente afirma el claim y el claim cita la fuente. La divergencia de política es plausible pero no demostrada, y podría deberse a capacidad, a tolerancia al riesgo o a dependencia del prompt.
 
-Contradice `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor` en el nivel del titular, no del hecho: el hecho reportado es una divergencia de rechazo, no un salto de capacidad. Relacionado con `afirmacion-poblacional-desde-un-solo-proveedor`.
+Respalda la nota de identificación sin metodología y contradice el uso del caso como ejemplo cerrado en docencia.
 
 ## Links
 - relates_to → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
@@ -86,3 +90,5 @@ Contradice `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor` en el
 - relates_to → [[verificar-features-de-tooling-antes-de-citar-en-docencia-o-config]]
 - contradicts → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - relates_to → [[afirmacion-poblacional-desde-un-solo-proveedor]]
+- supports → [[llms-identifican-figuras-publicas-sin-metodologia]]
+- contradicts → [[caso-multimodal-como-ejemplo-de-politica-vs-capacidad]]

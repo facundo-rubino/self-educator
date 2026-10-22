@@ -9,21 +9,23 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-14'
+updated: '2026-10-22'
 sources:
 - 49140f9d5133d3c7
 tags:
 - ai-coach
+- anecdote
 - brief
 - brief-scope
 - evidence-quality
 - evidencia
+- generalization
 - proyecto-personal
 - risk
 - singleton
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -44,20 +46,25 @@ links:
   type: relates_to
 - to: riesgo-de-generalizar-desde-ai-coach-monkey-mind
   type: relates_to
+- to: proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional
+  type: relates_to
+- to: ai-coach-efectividad-no-demostrada
+  type: relates_to
+- to: ai-coach-personal-como-anecdota-de-proyecto-de-un-solo-dev
+  type: supports
 ---
 
 ## What it is
-El cluster se apoya en un único documento con engagement=0, novelty=0.00 y corroboración parcial 0.50. Un artefacto autodescrito por su autor no es evidencia de práctica profesional, de adopción ni de efectividad. Solo puede afirmarse que alguien describió haber construido la pieza.
+El documento es la narrativa de un builder anónimo sobre un hobby project. Mapear «misma forma de habilidad» desde cualquier proyecto maker es circular: asume la relevancia que pretende mostrar.
 
 ## Evidence
-- El cluster contiene un único documento [49140f9d5133d3c7] — source: 49140f9d5133d3c7
-- La novedad registrada es 0.00 y el engagement es cero — source: 49140f9d5133d3c7
-- El documento no reporta resultados ni evaluación de efectividad del coach — source: 49140f9d5133d3c7
+- El ítem es un post RSS de baja interacción de un builder anónimo sobre un proyecto personal — source: 49140f9d5133d3c7
+- El claim de «misma forma de habilidad» es infalsable tal como está enunciado — source: 49140f9d5133d3c7
 
 ## Why it matters
-Impedir que un solo anuncio personal se compile como hallazgo de práctica técnica, o que se infiera impacto/tendencia, es exactamente el modo de fallo que el brief previene. El artefacto puede registrar, pero no probar relevancia para los ejes de agentes, liderazgo o docencia.
+Cualquier proyecto maker podría mapearse a esa forma; por tanto no discrimina y no debe elevar la confianza de ninguna nota sobre práctica de equipo.
 
-Opera simétricamente a `ai-coach-voz-a-voz-ensamblado-de-servicios`, formulando su límite epistémico. Se enlaza con la métrica cruda ya registrada en `ai-coach-monkey-mind-singleton-engagement-cero`, con la regla general `generalizar-un-proyecto-personal-a-practica-profesional-es-inferencia`, y con los puentes específicos ya rechazados en `puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia` y `riesgo-de-generalizar-desde-ai-coach-monkey-mind`.
+`relates_to` el patrón ya registrado de que un proyecto personal no es hallazgo de práctica; `relates_to` la efectividad no demostrada; `supports` la nota de anécdota de un solo dev.
 
 ## Links
 - relates_to → [[ai-coach-stack-stt-tts-llm-numero-virtual]]
@@ -68,3 +75,6 @@ Opera simétricamente a `ai-coach-voz-a-voz-ensamblado-de-servicios`, formulando
 - relates_to → [[generalizar-un-proyecto-personal-a-practica-profesional-es-inferencia]]
 - relates_to → [[puente-de-ai-coach-anecdotico-a-liderazgo-es-inferencia]]
 - relates_to → [[riesgo-de-generalizar-desde-ai-coach-monkey-mind]]
+- relates_to → [[proyecto-personal-de-herramienta-no-es-hallazgo-de-practica-profesional]]
+- relates_to → [[ai-coach-efectividad-no-demostrada]]
+- supports → [[ai-coach-personal-como-anecdota-de-proyecto-de-un-solo-dev]]

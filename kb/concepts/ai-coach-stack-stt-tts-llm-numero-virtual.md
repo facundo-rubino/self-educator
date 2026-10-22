@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-09'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - 49140f9d5133d3c7
 tags:
@@ -17,6 +17,7 @@ tags:
 - ai-coach
 - composicion-de-servicios
 - integracion-de-servicios
+- integration
 - llm
 - monkey-mind
 - personal-tooling
@@ -26,7 +27,7 @@ tags:
 - voz
 base_confidence: 0.04
 half_life_days: 180
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -69,18 +70,22 @@ links:
   type: relates_to
 - to: agentes-abaratan-el-ensamblaje-no-la-integracion-con-el-flujo
   type: relates_to
+- to: ai-coach-como-herramienta-de-foco-personal
+  type: derived_from
+- to: ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica
+  type: supports
 ---
 
 ## What it is
-Un AI coach por voz se construye ensamblando cuatro servicios existentes: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. No requiere entrenar modelos; el valor está en la composición del loop voz-entrada → texto → LLM → voz-salida sobre un canal telefónico.
+Un AI coach personal se ensambla con cuatro componentes commodity: speech-to-text, text-to-speech, un LLM y un número de teléfono virtual. No requiere modelo propio ni plataforma de equipo; es composición de servicios.
 
 ## Evidence
-- El AI coach se construyó combinando speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
+- El proyecto combina speech-to-text, text-to-speech, un LLM y un número virtual — source: 49140f9d5133d3c7
 
 ## Why it matters
-Es un ejemplo de prototipado por composición de APIs: el coste de entrada es bajo porque cada pieza es un servicio de catálogo. Reproducible por un solo dev sin infraestructura propia.
+Demuestra que el coste de montar un loop de voz con LLM es de integración, no de entrenamiento. Relevante solo como forma de habilidad (componer APIs), no como hallazgo sobre productividad medida.
 
-Se apoya en el patrón general de prototipado por composición de APIs sin entrenamiento. Se relaciona con el stack de AI coach voz-a-voz ya registrado. Contradice directamente la suposición de que ensamblar STT + TTS + LLM + número virtual sea novedoso: aquí aparece como la construcción obvia, no como hallazgo.
+`derived_from` la motivación personal de foco; `relates_to` el patrón general de prototipado por composición; `supports` la nota de riesgo que niega que esto sea evidencia de práctica profesional.
 
 ## Links
 - relates_to → [[ai-coach-voz-a-voz-ensamblado-de-servicios]]
@@ -102,3 +107,5 @@ Se apoya en el patrón general de prototipado por composición de APIs sin entre
 - relates_to → [[prototipado-por-composicion-de-apis-sin-entrenamiento]]
 - relates_to → [[ai-coach-stack-stt-tts-llm-loop-como-primitiva-no-demostrada-para-docencia]]
 - relates_to → [[agentes-abaratan-el-ensamblaje-no-la-integracion-con-el-flujo]]
+- derived_from → [[ai-coach-como-herramienta-de-foco-personal]]
+- supports → [[ai-coach-anuncio-de-proyecto-personal-no-es-evidencia-de-practica]]

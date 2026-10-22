@@ -1,6 +1,7 @@
 ---
 id: afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion-nueva-evidencia
-title: Ser juez humano en un hackathon no acredita práctica de evaluación
+title: Ser juez humano en un hackathon no acredita práctica de evaluación (evidencia
+  repetida)
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -9,13 +10,14 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-06'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - d2a0c86ca8027978
 tags:
 - categoria-error
 - evals
 - evaluacion
+- evaluacion-llm
 - evidencia-unica
 - hackathon
 - juez-humano
@@ -28,7 +30,7 @@ tags:
 - wandb
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -63,19 +65,20 @@ links:
   type: supports
 - to: afirmar-mejora-de-liderazgo-por-juzgar-evaluadores-de-llm-seria-invencion
   type: supports
+- to: juez-humano-en-hackathon-llm-as-a-judge-de-wandb-rol-declarado
+  type: supports
 ---
 
 ## What it is
-Un rol de juez en un hackathon describe participación, no competencia ni resultado. Del ítem de W&B no se extrae método de evaluación del propio autor ni lección transferible a agentes, docencia o liderazgo: es un error de categoría tratar el rol como evidencia de práctica.
+Variante registrada del mismo riesgo: la mención de un rol de jurado no transfiere expertise evaluadora. Se conserva como evidencia de repetición sobre el mismo doc, no como hallazgo independiente.
 
 ## Evidence
-- El documento registra el rol de juez humano sin describir criterios, decisiones ni resultados — source: d2a0c86ca8027978
-- El enmarcado es de relato personal, no de análisis de práctica — source: d2a0c86ca8027978
+- El autor participó como juez humano en el hackathon «LLM-as-a-Judge» de Weights & Biases; es el único contenido del documento y no desarrolla lecciones, criterios de evaluación ni resultados del evento — source: d2a0c86ca8027978
 
 ## Why it matters
-Evita incorporar al brief recomendaciones de evaluación sostenidas en participación en eventos. El rol declarado no sobrevive como hallazgo.
+Sirve de recordatorio operativo: antes de citar una participación como credencial de evaluación, pedir el método (criterios, rúbrica, resultados). El documento no los contiene.
 
-Variante con nueva evidencia de [[afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion]]. Apoya el veredicto de no-claim del clúster W&B ([[juez-humano-we-and-b-llm-evaluator-hackathon-sin-contenido-para-el-brief]]).
+Se relaciona con la nota canónica del mismo riesgo y apoya la nota que registra el rol declarado del juez humano.
 
 ## Links
 - supports → [[afirmar-experiencia-de-evaluacion-desde-ser-juez-es-sobreinterpretacion]]
@@ -93,3 +96,4 @@ Variante con nueva evidencia de [[afirmar-experiencia-de-evaluacion-desde-ser-ju
 - derived_from → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb-rol-declarado]]
 - supports → [[leer-llm-as-a-judge-como-practica-de-agentes-seria-invencion]]
 - supports → [[afirmar-mejora-de-liderazgo-por-juzgar-evaluadores-de-llm-seria-invencion]]
+- supports → [[juez-humano-en-hackathon-llm-as-a-judge-de-wandb-rol-declarado]]

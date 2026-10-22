@@ -9,17 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-21'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - 93963a5f93e58d05
 tags:
-- llm-evals
 - eval-taxonomy
-- unfalsifiable
+- evals
+- llm
+- llm-evals
+- metodologia
 - rss-singleton
+- titular
+- unfalsifiable
 base_confidence: 0.1
 half_life_days: 180
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -30,21 +34,27 @@ links:
   type: supports
 - to: task-specific-llm-evals-do-dont-work-afirmacion-sin-metodologia
   type: supports
+- to: task-specific-llm-evals-do-dont-work-afirmacion-sin-metodologia
+  type: relates_to
+- to: task-specific-llm-evals-dicotomia-do-dont-work-sin-medicion
+  type: contradicts
 ---
 
 ## What it is
-El encuadre del documento [93963a5f93e58d05] separa explícitamente evals que «funcionan» de evals que «no funcionan», implicando que la fiabilidad depende de la familia de tarea. La distinción se enuncia, no se mide: no hay umbral, ni métrica comparativa, ni replicación independiente que separe los dos lados.
+El título del documento promete una dicotomía: qué evals de LLM «funcionan» y cuáles «no funcionan» por tipo de tarea. El clúster no trae datos de validación, ni definición operacional de «funciona», ni réplica de otro autor. La afirmación de eficacia diferencial descansa en un único autor.
 
 ## Evidence
-- El encuadre del documento está explícitamente dividido entre evals que «do» y «don't» funcionan, implicando fiabilidad dependiente de la familia de tarea — source: 93963a5f93e58d05
-- No se ofrece resultado de benchmark, métrica comparativa ni replicación independiente para sostener la dicotomía — source: 93963a5f93e58d05
+- El documento se presenta como un análisis de «Task-Specific LLM Evals that Do & Don't Work» — source: 93963a5f93e58d05
+- El clúster contiene un único documento con engagement=0 y novelty=0.00 — source: 93963a5f93e58d05
 
 ## Why it matters
-«Tractable» frente a «contested» es estipulación, no hallazgo. Cualquier decisión de inversión en evaluación que se apoye en esta dicotomía está apoyándose en la aserción de un autor, no en una medición. El valor práctico es negativo: obliga a exigir el criterio operacional antes de aceptar el reparto.
+«Funciona» significa aquí lo que el autor del documento decidió que significaba, sin medición externa. La dicotomía es un encuadre editorial, no un resultado establecido.
 
-Se deriva de la nota de alcance declarado: la dicotomía es lo que el documento afirma sobre la lista de familias. `evals-por-tarea-que-funcionan-o-no-tautologia-sin-evidencia` captura la misma objeción desde el marco general; `task-specific-llm-evals-do-dont-work-afirmacion-sin-metodologia` la registra como riesgo de lectura del título.
+Se relaciona con `task-specific-llm-evals-do-dont-work-afirmacion-sin-metodologia`: mismo problema de método. Deriva del alcance declarado (nota `task-specific-llm-evals-alcance-declarado-...`) porque sin la lista de tareas no habría siquiera dicotomía que enunciar. El vínculo `contradicts` apunta a sí mismo como registro de que su propio título excede la evidencia: la nota existe para marcar que la promesa no está respaldada, no para sostenerla.
 
 ## Links
 - derived_from → [[task-specific-llm-evals-alcance-declarado-clasificacion-resumen-traduccion-copyright-toxicidad]]
 - supports → [[evals-por-tarea-que-funcionan-o-no-tautologia-sin-evidencia]]
 - supports → [[task-specific-llm-evals-do-dont-work-afirmacion-sin-metodologia]]
+- relates_to → [[task-specific-llm-evals-do-dont-work-afirmacion-sin-metodologia]]
+- contradicts → [[task-specific-llm-evals-dicotomia-do-dont-work-sin-medicion]]

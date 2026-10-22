@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-21'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - 4004eb9d4bbe0e76
 tags:
+- ainews
+- anuncio
+- anuncio-sin-evidencia
 - meta
 - modelos-frontera
-- anuncio-sin-evidencia
-- ainews
+- sin-benchmarks
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -32,23 +34,28 @@ links:
   type: supports
 - to: claude-5-5-tier-comparacion-sin-metrica
   type: relates_to
+- to: claude-5-5-tier-etiqueta-de-nivel-sin-medicion
+  type: relates_to
+- to: muse-wonder-wonder-full-anuncio-de-modelo-meta-sin-benchmarks
+  type: relates_to
 ---
 
 ## What it is
-Un post de AINews afirma que MSL (Meta Superintelligence Labs) completó su emergencia como laboratorio frontera con un modelo llamado «Meta Muse Wonder & Wonder Full», situado en un nivel «Claude 5.5». El documento es una afirmación de encuadre («MSL's emergence as a frontier lab is finally complete») sin benchmarks, detalles de entrenamiento, disponibilidad, precios ni evaluaciones de capacidad. El nombre del modelo y su nivel proceden de una única fuente tipo RSS con engagement cero.
+Un boletín AINews reporta que MSL completó su transición a laboratorio frontera con un modelo llamado «Meta Muse Wonder & Wonder Full», descrito como de nivel «Claude 5.5». El único contenido verificable es el titular y la etiqueta de posicionamiento; no hay benchmarks, latencia, precio ni disponibilidad para desarrolladores. La descripción «Claude 5.5-tier» es una comparación nominal por bando, no una medición.
 
 ## Evidence
-- El documento afirma que MSL completó su emergencia como laboratorio frontera y sitúa a «Meta Muse Wonder» en nivel «Claude 5.5» — source: 4004eb9d4bbe0e76
-- El documento no aporta benchmarks, detalles de entrenamiento, disponibilidad, precios ni evaluaciones de coding o agentes — source: 4004eb9d4bbe0e76
-- Es una única fuente tipo RSS con engagement=0, sin corroboración independiente en el clúster — source: 4004eb9d4bbe0e76
+- Un boletín AINews reporta que MSL habría alcanzado estado de laboratorio frontera con el modelo «Meta Muse Wonder & Wonder Full», etiquetado «Claude 5.5» — source: 4004eb9d4bbe0e76
+- El documento es un ítem RSS de tipo agregador; no incluye resultados de evaluación ni ficha técnica del modelo — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-Para el brief (agentes aplicados a programar, gestionar y enseñar; liderazgo técnico; productividad) el ítem no aporta nada aplicable: no evalúa capacidad de coding, ni de orquestación de agentes, ni de tutoría. El modelo y su nivel deben tratarse como no verificados hasta que existan benchmarks independientes o fuentes primarias.
+Como máximo sirve como dato de contexto de mercado sobre el ritmo de lanzamientos de modelos frontera que podrían alimentar agentes de coding. No informa decisiones sobre gestión, enseñanza ni liderazgo técnico; tratarlo como hallazgo de capacidades sería confundir marketing con medición.
 
-Formaliza la misma ausencia de evidencia que `muse-wonder-wonder-full-titular-sin-evidencia` y refuerza `muse-wonder-cero-benchmarks-cero-datos-de-disponibilidad`. Es tangencial al brief por la misma razón que `muse-wonder-anuncio-de-modelo-de-meta-tangencial-al-brief`, y comparte con `claude-5-5-tier-comparacion-sin-metrica` el uso de una etiqueta de tier como sustituto de una medición.
+Se relaciona con `muse-wonder-wonder-full-titular-sin-evidencia` porque ambos describen el mismo ítem RSS desde la falta de cuerpo. Se relaciona con `claude-5-5-tier-etiqueta-de-nivel-sin-medicion` porque reutiliza la misma etiqueta nominal de tier sin operacionalizarla.
 
 ## Links
 - relates_to → [[muse-wonder-wonder-full-titular-sin-evidencia]]
 - relates_to → [[muse-wonder-anuncio-de-modelo-de-meta-tangencial-al-brief]]
 - supports → [[muse-wonder-cero-benchmarks-cero-datos-de-disponibilidad]]
 - relates_to → [[claude-5-5-tier-comparacion-sin-metrica]]
+- relates_to → [[claude-5-5-tier-etiqueta-de-nivel-sin-medicion]]
+- relates_to → [[muse-wonder-wonder-full-anuncio-de-modelo-meta-sin-benchmarks]]

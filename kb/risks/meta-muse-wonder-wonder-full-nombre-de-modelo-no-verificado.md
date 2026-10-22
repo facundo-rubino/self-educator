@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-21'
-updated: '2026-10-21'
+updated: '2026-10-22'
 sources:
 - 4004eb9d4bbe0e76
 tags:
+- fuente-unica
+- identidad-de-modelo
+- naming
 - nombres-de-modelo
-- verificacion
 - single-source
+- verificacion
 base_confidence: 0.08
 half_life_days: 120
-last_reinforced: '2026-10-21'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -31,22 +34,25 @@ links:
   type: relates_to
 - to: claude-sonnet-5-5-etiqueta-sin-documento-que-la-respalde
   type: relates_to
+- to: muse-wonder-wonder-full-anuncio-de-modelo-meta-sin-benchmarks
+  type: derived_from
 ---
 
 ## What it is
-«Muse Wonder» y «Wonder Full» aparecen en un único documento RSS como nombres de modelo de Meta, sin página de modelo, versión, licencia ni disponibilidad asociada. El nombre no actúa como sujeto significativo hasta que existe un referente primario. El propio documento citado es la única fuente del nombre.
+La denominación «Meta Muse Wonder & Wonder Full» proviene de un solo boletín agregador; hay riesgo de naming confuso o especulativo y de que el lanzamiento sea anuncio sin disponibilidad real, o con especificaciones distintas. «Muse Wonder» y «Wonder Full» podrían ser dos etiquetas de un mismo release, dos modelos distintos, o un artefacto de agregación del boletín.
 
 ## Evidence
-- La única fuente del nombre es un post de AINews con engagement cero; no hay artefacto primario de Meta en el clúster — source: 4004eb9d4bbe0e76
-- El documento no da disponibilidad, precios ni detalles de entrenamiento del modelo — source: 4004eb9d4bbe0e76
+- Un único documento AINews menciona «Meta Muse Wonder & Wonder Full» como modelo frontera de MSL — source: 4004eb9d4bbe0e76
+- El documento es un ítem RSS de tipo agregador sin verificación independiente en el clúster — source: 4004eb9d4bbe0e76
 
 ## Why it matters
-Registrar nombres de modelo no verificados como conocimiento infla el KB y contamina decisiones posteriores: se acaba discutiendo un modelo que quizá no exista como producto. El pipeline debe tratar estos clusters como señal débil y no promoverlos al brief.
+Over-indexar en un nombre de modelo sin referente establecido propaga un dato no verificado al resto del grafo. Antes de escribir cualquier claim sobre capacidades o disponibilidad, la identidad, procedencia y licencia del modelo deben quedar establecidas.
 
-Refuerza `muse-wonder-dos-etiquetas-de-modelo-sin-referente-verificable` y `riesgo-de-over-indexar-nombres-de-modelos`. Se apoya en el mismo cluster que `muse-wonder-wonder-full-anuncio-de-modelo-meta-sin-benchmarks` y comparte forma con `claude-sonnet-5-5-etiqueta-sin-documento-que-la-respalde`: etiqueta de señal sin documento que la respalde.
+Se deriva del anuncio sin benchmarks. Soporta la advertencia general de `riesgo-de-over-indexar-nombres-de-modelos`.
 
 ## Links
 - supports → [[muse-wonder-dos-etiquetas-de-modelo-sin-referente-verificable]]
 - supports → [[riesgo-de-over-indexar-nombres-de-modelos]]
 - relates_to → [[muse-wonder-wonder-full-anuncio-de-modelo-meta-sin-benchmarks]]
 - relates_to → [[claude-sonnet-5-5-etiqueta-sin-documento-que-la-respalde]]
+- derived_from → [[muse-wonder-wonder-full-anuncio-de-modelo-meta-sin-benchmarks]]

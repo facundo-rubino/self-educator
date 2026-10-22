@@ -9,17 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-13'
-updated: '2026-10-13'
+updated: '2026-10-22'
 sources:
 - 19cb8032958cd964
 tags:
+- figuras-publicas
+- identificacion-figuras-publicas
+- metodologia
 - multimodal
 - rechazo
-- metodologia
-- figuras-publicas
+- sin-metodologia
+- vision
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-10-13'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -30,22 +33,30 @@ links:
   type: relates_to
 - to: afirmacion-de-capacidad-multimodal-sin-metodologia
   type: supports
+- to: capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo
+  type: relates_to
+- to: afirmacion-de-capacidad-multimodal-sin-metodologia
+  type: derived_from
+- to: divergencia-de-rechazo-entre-proveedores
+  type: relates_to
 ---
 
 ## What it is
-El único documento del clúster [19cb8032958cd964] afirma que ChatGPT y Claude se niegan a identificar figuras públicas en imágenes, mientras que Gemini sí lo hace. El documento no aporta detalle técnico, prompts, imágenes de prueba ni análisis de errores. La señal debe tratarse como observación anecdótica, no como hallazgo corroborado.
+Un ítem RSS único afirma que los LLMs «ya pueden» identificar figuras públicas en imágenes. La afirmación se enuncia como capacidad adquirida, sin fecha, versión de modelo, error rate ni condiciones de prueba.
 
 ## Evidence
-- ChatGPT y Claude no identifican figuras públicas en imágenes; Gemini sí lo hace — source: 19cb8032958cd964
-- El documento no aporta evidencia técnica, ejemplos concretos ni metodología — source: 19cb8032958cd964
-- Initial confidence 0.20; veredicto del crítico WEAK con confianza ajustada 0.08 — source: sig-237cc97a9794
+- El documento afirma que los LLMs pueden ahora identificar figuras públicas en imágenes — source: 19cb8032958cd964
+- El mismo documento contrasta proveedores: «ChatGPT y Claude no lo harán, pero Gemini sí» — source: 19cb8032958cd964
 
 ## Why it matters
-Para el perfil del brief (dev que lidera, programa y enseña), el reconocimiento de figuras públicas no es una capacidad operativa relevante para coding agents, gestión técnica ni docencia. Las diferencias entre proveedores apuntan a políticas de moderación, no a capacidades técnicas reutilizables.
+Sin metodología, la frase no distingue entre capacidad interna del modelo, política de producto y comportamiento dependiente de prompt. Cualquier lectura de «salto de capacidad» excede lo que el documento sostiene.
 
-Se deriva de `politica-de-face-recognition-como-variable-de-producto`: la variación entre proveedores se explica mejor por política que por capacidad. Se relaciona con `divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor`, que documenta el mismo patrón observacional. Refuerza `afirmacion-de-capacidad-multimodal-sin-metodologia`: sin protocolo reproducible, el claim no sostiene un salto de capacidad.
+Se apoya en la nota sobre afirmaciones de capacidad multimodal sin metodología, y se relaciona con la distinción entre capacidad técnica y política de rechazo, y con la divergencia de rechazo entre proveedores.
 
 ## Links
 - derived_from → [[politica-de-face-recognition-como-variable-de-producto]]
 - relates_to → [[divergencia-de-rechazo-nombrar-figuras-publicas-por-proveedor]]
 - supports → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
+- relates_to → [[capacidad-tecnica-y-politica-de-rechazo-no-son-lo-mismo]]
+- derived_from → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
+- relates_to → [[divergencia-de-rechazo-entre-proveedores]]

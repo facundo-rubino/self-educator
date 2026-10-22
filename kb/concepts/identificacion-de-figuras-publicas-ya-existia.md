@@ -9,7 +9,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-09-16'
-updated: '2026-10-14'
+updated: '2026-10-22'
 sources:
 - 19cb8032958cd964
 - sig-237cc97a9794
@@ -27,7 +27,7 @@ tags:
 - vision
 base_confidence: 0.4
 half_life_days: 180
-last_reinforced: '2026-10-14'
+last_reinforced: '2026-10-22'
 provenance:
   scale: XL
   query: null
@@ -56,19 +56,22 @@ links:
   type: supports
 - to: llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia
   type: relates_to
+- to: llms-identifican-figuras-publicas-sin-metodologia
+  type: relates_to
+- to: afirmacion-de-novedad-sin-linea-base
+  type: derived_from
 ---
 
 ## What it is
-La identificación de figuras públicas en imágenes es una tarea clásica de visión por computador y reconocimiento facial, no un hallazgo nuevo de los LLMs. El encuadre «LLMs can now identify public figures» presenta como capacidad emergente algo que es una tarea establecida, reetiquetada con el vocabulario de los modelos multimodales.
+El «now» del titular no viene acompañado de línea base: no se indica qué modelos antes no podían, ni cuándo cambió, ni con qué medición. La novedad de la identificación de figuras públicas por modelos de visión queda sin establecer.
 
 ## Evidence
-- La identificación de figuras públicas es una tarea antigua de computer vision / face recognition, no un hallazgo novedoso de LLM — fuente: sig-237cc97a9794 (argumento del crítico)
-- El encuadre de la señal presenta la tarea como novedad de modelo cuando describe un cambio de producto — fuente: sig-237cc97a9794
+- El documento enuncia la capacidad como recién llegada sin fecha, versión ni comparación previa — source: 19cb8032958cd964
 
 ## Why it matters
-Reetiquetar una tarea establecida como capacidad nueva infla la percepción de avance y desvía de la pregunta útil: qué cambió de producto, política o alcance, no qué «puede» ahora un modelo.
+Sostener «ahora» sin línea base convierte una observación puntual de conducta de producto en una afirmación de progreso técnico que la fuente no respalda.
 
-Se relaciona con las notas de claim sin metodología sobre identificación de figuras públicas, y sostiene el riesgo general de afirmar novedad sin línea base.
+Se relaciona con el ítem de identificación sin metodología y deriva del riesgo de afirmar novedad sin línea base.
 
 ## Links
 - supports → [[afirmacion-de-novedad-sin-linea-base]]
@@ -83,3 +86,5 @@ Se relaciona con las notas de claim sin metodología sobre identificación de fi
 - supports → [[afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - supports → [[afirmacion-de-capacidad-multimodal-sin-metodologia]]
 - relates_to → [[llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia]]
+- relates_to → [[llms-identifican-figuras-publicas-sin-metodologia]]
+- derived_from → [[afirmacion-de-novedad-sin-linea-base]]
