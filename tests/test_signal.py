@@ -37,6 +37,12 @@ def test_cluster_groups_similar_and_separates_different():
     assert sorted(len(g) for g in groups) == [1, 2]
 
 
+def test_cluster_caps_size_so_one_group_cannot_swallow_the_corpus():
+    vectors = np.ones((7, 2))
+    groups = cluster(vectors, threshold=0.5, max_size=3)
+    assert sorted(len(g) for g in groups) == [1, 3, 3]
+
+
 def test_metric_scorers_stay_neutral_without_metrics():
     """An RSS-only corpus has no upvotes; scoring that as zero interest would
     bury every signal that came from it."""

@@ -9,7 +9,14 @@ from __future__ import annotations
 import numpy as np
 
 
-def cluster(vectors: np.ndarray, threshold: float = 0.55) -> list[list[int]]:
+#: A story worth one brief item is a handful of posts, not the whole corpus.
+#: Past this a cluster stops accepting members: with a weak embedder the
+#: running centroid drifts toward "generic text" and swallows everything.
+MAX_CLUSTER_SIZE = 25
+
+
+def cluster(vectors: np.ndarray, threshold: float = 0.55,
+            max_size: int = MAX_CLUSTER_SIZE) -> list[list[int]]:
     """Return groups of row indices. Every row lands in exactly one group."""
     clusters: list[list[int]] = []
     centroids: list[np.ndarray] = []
@@ -17,6 +24,8 @@ def cluster(vectors: np.ndarray, threshold: float = 0.55) -> list[list[int]]:
         v = vectors[i]
         best, best_sim = -1, threshold
         for c, centroid in enumerate(centroids):
+            if len(clusters[c]) >= max_size:
+                continue
             denom = float(np.linalg.norm(centroid) * np.linalg.norm(v)) + 1e-9
             sim = float(v @ centroid) / denom
             if sim >= best_sim:
