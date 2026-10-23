@@ -24,7 +24,7 @@ model: deepseek-chat
 themes:
   - name: ia-agentes
     label: "IA y agentes en mi trabajo"
-    quota: 8   # TEMP semana 1 (bootstrap), revertir a 3 el 2026-09-22
+    quota: 3
     keywords:
       - agent
       - agentic
@@ -54,7 +54,7 @@ themes:
 
   - name: liderazgo
     label: "Liderar proyectos, equipos y a mí mismo"
-    quota: 6   # TEMP semana 1, revertir a 2 el 2026-09-22
+    quota: 2
     keywords:
       - estimat
       - forecast
@@ -88,7 +88,7 @@ themes:
 
   - name: oficio-dev
     label: "Seguir siendo buen software engineer"
-    quota: 6   # TEMP semana 1, revertir a 2 el 2026-09-22
+    quota: 2
     keywords:
       - javascript
       - typescript
@@ -120,7 +120,7 @@ themes:
 
   - name: productividad-estudio
     label: "Productividad y técnicas de estudio"
-    quota: 5   # TEMP semana 1, revertir a 2 el 2026-09-22
+    quota: 2
     keywords:
       - deep work
       - spaced repetition
@@ -167,8 +167,7 @@ kb:
 # --- Etapa 2: señal --------------------------------------------------------
 signal:
   cluster_threshold: 0.55
-  promotion_threshold: 0.3      # TEMP semana 1 (piso bajado a propósito para
-                                 # juntar volumen), revertir a 0.6 el 2026-09-22
+  promotion_threshold: 0.6
   weights:
     relevance: 0.35             # ¿es de lo mío, y está escrito para leerse?
     novelty: 0.25               # lo que evita que se repita entre días

@@ -47,6 +47,8 @@ jobs:
     if: needs.check.outputs.already_done != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      UV_NO_SYNC: "1"   # que `uv run` no desinstale lo instalado con `uv pip`
     steps:
       - uses: actions/checkout@v4
 
@@ -56,6 +58,14 @@ jobs:
 
       - name: Instalar
         run: uv sync --group dev
+
+      # Embeddings de verdad para agrupar. Sin esto el agrupamiento cae al
+      # HashingEmbedder y todo el corpus termina en un único cluster.
+      # torch sin CUDA: el runner no tiene GPU y la rueda con CUDA pesa GBs.
+      - name: Instalar embeddings (CPU)
+        run: |
+          uv pip install --index-url https://download.pytorch.org/whl/cpu torch
+          uv pip install sentence-transformers
 
       - name: Crear kb/ y store/ si faltan
         run: uv run edu init
