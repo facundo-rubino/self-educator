@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-22 — 1023 entries, highest priority first._
+_Updated 2026-10-23 — 1028 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1581,6 +1581,15 @@ _Updated 2026-10-22 — 1023 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-23'
+- id: gap-0576b7e55d
+  type: open_question
+  description: Note 'disposicion-a-parecer-estupido-habilita-conducta-no-optimizada-para-parecer-inteligente'
+    has decayed — does it still hold?
+  related_notes:
+  - disposicion-a-parecer-estupido-habilita-conducta-no-optimizada-para-parecer-inteligente
+  priority: 0.7
+  status: open
+  created: '2026-10-23'
 - id: gap-913caf5c23
   type: open_question
   description: Note 'divergencia-de-rechazo-entre-proveedores' has decayed — does
@@ -1617,6 +1626,15 @@ _Updated 2026-10-22 — 1023 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-18'
+- id: gap-6c90c002f9
+  type: open_question
+  description: Note 'entrevistas-algoritmicas-justificadas-por-riesgo-de-escala' has
+    decayed — does it still hold?
+  related_notes:
+  - entrevistas-algoritmicas-justificadas-por-riesgo-de-escala
+  priority: 0.7
+  status: open
+  created: '2026-10-23'
 - id: gap-c27d212826
   type: open_question
   description: Note 'escepticismo-ante-progreso-rapido-a-superinteligencia' has decayed
@@ -2659,6 +2677,15 @@ _Updated 2026-10-22 — 1023 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-08'
+- id: gap-ecab853c31
+  type: open_question
+  description: Note 'reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria'
+    has decayed — does it still hold?
+  related_notes:
+  - reproducibilidad-y-depuracion-de-prompts-como-problema-de-ingenieria
+  priority: 0.7
+  status: open
+  created: '2026-10-23'
 - id: gap-b1988d2213
   type: open_question
   description: Note 'sequential-thinking-como-paquete-de-primera-clase-senal-fina'
@@ -2857,6 +2884,24 @@ _Updated 2026-10-22 — 1023 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-14'
+- id: gap-48b5046a45
+  type: open_question
+  description: Note 'claude-code-docenas-partes-condicionales-claim-conteo-inverificable'
+    has decayed — does it still hold?
+  related_notes:
+  - claude-code-docenas-partes-condicionales-claim-conteo-inverificable
+  priority: 0.7
+  status: open
+  created: '2026-10-23'
+- id: gap-935f46b427
+  type: open_question
+  description: Note 'claude-code-takeaway-arquitectonico-no-hallazgo' has decayed
+    — does it still hold?
+  related_notes:
+  - claude-code-takeaway-arquitectonico-no-hallazgo
+  priority: 0.7
+  status: open
+  created: '2026-10-23'
 - id: gap-e2e351c3e2
   type: open_question
   description: Note 'clef-cloudflare-titulo-de-envio-sin-sustancia-tecnica' has decayed

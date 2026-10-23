@@ -1,0 +1,29 @@
+{
+  "id": "sig-6a60a90b3c24",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Uncrating the Oxide Rack | Bryan Cantrill, Steve Tuck (Oxide)",
+  "member_doc_ids": [
+    "c433333a0f229667"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://softwaremisadventures.com/p/uncrating-the-oxide-rack-bryan-cantrill-steve-tuck",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 1.0,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.5667,
+  "first_seen": "2024-09-24T11:01:00Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

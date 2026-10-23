@@ -1,0 +1,43 @@
+{
+  "signal_id": "sig-0f3bce7863c9",
+  "summary": "A single low-engagement RSS item [580b04fcb6725f89] reports a comparison by Naresh Jain of coding agents building the same API service with and without a behavioral harness. The headline result: a frontier model, 'GPT-6 Sol', passed every external evaluation with or without the harness, while a cost-optimized model, 'GPT-6 Luna', succeeded in only 3 of 10 unharnessed runs versus all 10 with the harness, at the cost of higher token usage and runtime. The substantive claim is that a robust harness buys reliability specifically for cheaper/weaker models and is largely redundant for frontier ones — a 'spend on scaffolding or spend on the model' trade-off. Evidence quality is weak: one document, engagement=0, corroboration=0.50, velocity=0.50, and the excerpt is truncated, so failure modes, harness contents, evaluation strictness, and cost figures are unknown. For a dev who leads small projects, codes with agents, and teaches, this is a plausible and actionable but unverified signal: harnesses look like a lever for cost-constrained, reliability-sensitive work, not a default for every agent setup.",
+  "evidence": [
+    {
+      "claim": "Naresh Jain compared coding agents building the same API service with and without a behavioral harness.",
+      "source_doc_id": "580b04fcb6725f89"
+    },
+    {
+      "claim": "A frontier model, GPT-6 Sol, passed every external evaluation either with or without the harness.",
+      "source_doc_id": "580b04fcb6725f89"
+    },
+    {
+      "claim": "A cost-optimized model, GPT-6 Luna, succeeded in only 3 of 10 unharnessed runs but all 10 with the harness.",
+      "source_doc_id": "580b04fcb6725f89"
+    },
+    {
+      "claim": "Adding the harness increased token usage and runtime for Luna.",
+      "source_doc_id": "580b04fcb6725f89"
+    }
+  ],
+  "implications": [
+    "For small-team technical leadership, harness investment (tests, validation loops, retry/verification scaffolding) may be a cheaper reliability lever than upgrading to a frontier model, especially on cost-sensitive or high-volume agent tasks.",
+    "When teaching agent-assisted programming, harness design becomes teachable craft: how to wrap a model with behavioral constraints and checks is a skill that shows measurable payoff on weaker models.",
+    "Model choice and scaffolding should be evaluated jointly per task: pay for the strong model where the harness is redundant, and pay for the harness where cheaper models fail without it.",
+    "Token and runtime cost increases from harnesses must be weighed against failure/rework cost; 3/10 vs 10/10 implies large expected savings from avoided retries and debugging."
+  ],
+  "risks": [
+    "Single-source, zero-engagement RSS item; no independent replication (corroboration=0.50), so the 3/10 vs 10/10 gap could be noise or task-specific.",
+    "The excerpt is truncated; harness contents, definition of 'external evaluation', task difficulty, and exact cost trade-offs are unknown, so generalization is unsafe.",
+    "Model names ('GPT-6 Sol', 'GPT-6 Luna') are unusual and the result may reflect one narrow API-service task rather than diverse engineering work.",
+    "Sample of 10 runs per condition is small; without variance or confidence intervals, the success-rate difference is suggestive rather than established.",
+    "Higher token usage and runtime under the harness could negate cost savings in time-sensitive or budget-capped contexts."
+  ],
+  "critic": {
+    "is_weak": true,
+    "argument": "The entire evidentiary base is a single low-engagement RSS item (engagement=0, corroboration=0.50) reporting one person's informal comparison — not a controlled experiment, not peer-reviewed, not replicated. Several failure modes are fatal: (1) 'GPT-6 Sol' and 'GPT-6 Luna' are almost certainly anonymized/placeholder model names, meaning the specific models — and thus their capability gap, a variable the whole claim hinges on — cannot even be identified or independently checked. (2) N=10 per condition on one API service is a toy sample; 3/10 vs 10/10 is suggestive but a single task and single run-set is exactly the regime where noise, task-specific harness fit, and evaluator luck dominate. (3) The harness contents, evaluation strictness, failure taxonomy, and cost figures are all unknown — the excerpt is truncated, so we cannot tell whether the 'harness' encodes the very evaluation criteria being measured (a circularity risk: if the behavioral harness constrains the agent toward the external eval's checks, the 'harness helps weaker model' result is partly tautological). (4) The framing 'spend on scaffolding or spend on the model' is a plausible-sounding narrative that the data does not actually establish — a difference at the frontier could reflect ceiling effects (Sol passes everything, so the harness has nothing to add) rather than a genuine capability-dependent trade-off. (5) Single-source, self-reported by the tool's own proponent (Jain builds harnesses), which is a self-promotional incentive. The claim is directionally sensible and worth flagging, but as stated it is one anecdote dressed as a general law. It does not survive scrutiny as a finding; at most it is a hypothesis."
+  },
+  "transcript": "## Analyst\nA single low-engagement RSS item [580b04fcb6725f89] reports a comparison by Naresh Jain of coding agents building the same API service with and without a behavioral harness. The headline result: a frontier model, 'GPT-6 Sol', passed every external evaluation with or without the harness, while a cost-optimized model, 'GPT-6 Luna', succeeded in only 3 of 10 unharnessed runs versus all 10 with the harness, at the cost of higher token usage and runtime. The substantive claim is that a robust harness buys reliability specifically for cheaper/weaker models and is largely redundant for frontier ones — a 'spend on scaffolding or spend on the model' trade-off. Evidence quality is weak: one document, engagement=0, corroboration=0.50, velocity=0.50, and the excerpt is truncated, so failure modes, harness contents, evaluation strictness, and cost figures are unknown. For a dev who leads small projects, codes with agents, and teaches, this is a plausible and actionable but unverified signal: harnesses look like a lever for cost-constrained, reliability-sensitive work, not a default for every agent setup.\n\nInitial confidence: 0.40\n\n## Critic\nThe entire evidentiary base is a single low-engagement RSS item (engagement=0, corroboration=0.50) reporting one person's informal comparison — not a controlled experiment, not peer-reviewed, not replicated. Several failure modes are fatal: (1) 'GPT-6 Sol' and 'GPT-6 Luna' are almost certainly anonymized/placeholder model names, meaning the specific models — and thus their capability gap, a variable the whole claim hinges on — cannot even be identified or independently checked. (2) N=10 per condition on one API service is a toy sample; 3/10 vs 10/10 is suggestive but a single task and single run-set is exactly the regime where noise, task-specific harness fit, and evaluator luck dominate. (3) The harness contents, evaluation strictness, failure taxonomy, and cost figures are all unknown — the excerpt is truncated, so we cannot tell whether the 'harness' encodes the very evaluation criteria being measured (a circularity risk: if the behavioral harness constrains the agent toward the external eval's checks, the 'harness helps weaker model' result is partly tautological). (4) The framing 'spend on scaffolding or spend on the model' is a plausible-sounding narrative that the data does not actually establish — a difference at the frontier could reflect ceiling effects (Sol passes everything, so the harness has nothing to add) rather than a genuine capability-dependent trade-off. (5) Single-source, self-reported by the tool's own proponent (Jain builds harnesses), which is a self-promotional incentive. The claim is directionally sensible and worth flagging, but as stated it is one anecdote dressed as a general law. It does not survive scrutiny as a finding; at most it is a hypothesis.\n\nVerdict: WEAK — adjusted confidence: 0.15",
+  "confidence": 0.15,
+  "generated_at": "2026-10-23T14:05:08.404321Z",
+  "token_cost": 2293
+}

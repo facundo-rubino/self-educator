@@ -1,0 +1,29 @@
+{
+  "id": "sig-f93cd3ff25b9",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "The Illusion of Clarity: How to Test Whether you Really Understand Something",
+  "member_doc_ids": [
+    "c7522336c6250f87"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://nesslabs.com/illusion-of-clarity?utm_source=rss&utm_medium=rss&utm_campaign=illusion-of-clarity",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 1.0,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.45,
+  "first_seen": "2026-04-08T13:08:07Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

@@ -1,6 +1,6 @@
 {
   "id": "sig-f2922b907bf6",
-  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, productividad y técnicas de estudio, y docencia de programación entry-level en la era de la IA.",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
   "label": "LLMs break down in funny ways when told the Jacobian Conjecture counterargument",
   "member_doc_ids": [
     "6648acc5dac54017"
@@ -13,11 +13,11 @@
   "scores": {
     "relevance": 0.3333,
     "novelty": 1.0,
-    "corroboration": 1.0,
+    "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.6417,
+  "aggregate_score": 0.5667,
   "first_seen": "2026-07-23T09:15:00-07:00",
   "sources_count": 1,
   "status": "candidate",

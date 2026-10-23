@@ -1,0 +1,29 @@
+{
+  "id": "sig-81f0c5be73c6",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Happy 1st Birthday, Atomic Habits! (plus 3 gifts for you…)",
+  "member_doc_ids": [
+    "e796ad607bf69090"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://jamesclear.com/atomic-habits-first-birthday",
+  "theme": "productividad-estudio",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 1.0,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.5667,
+  "first_seen": "2019-10-15T18:28:47Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

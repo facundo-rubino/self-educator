@@ -1,0 +1,29 @@
+{
+  "id": "sig-6c407e827cc9",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "We should be more tired than the model",
+  "member_doc_ids": [
+    "f1318e37d49fd291"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 0.6667,
+    "novelty": 1.0,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.6833,
+  "first_seen": "2026-05-28T00:00:00Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

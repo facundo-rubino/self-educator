@@ -1,0 +1,29 @@
+{
+  "id": "sig-3874cf5c44b1",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Logic for Programmers is Done",
+  "member_doc_ids": [
+    "9a4ee22c5d93ce52"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://buttondown.com/hillelwayne/archive/logic-for-programmers-is-done/",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 1.0,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.45,
+  "first_seen": "2026-07-29T15:43:52Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

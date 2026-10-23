@@ -1,0 +1,29 @@
+{
+  "id": "sig-633763f058e2",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Claude Mods: Flipping the Harness Inside Out",
+  "member_doc_ids": [
+    "ce1f34e3811cc342"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://latent.space/p/claude-mods/",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 0.6667,
+    "novelty": 1.0,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.6833,
+  "first_seen": "2026-10-21T13:04:19Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

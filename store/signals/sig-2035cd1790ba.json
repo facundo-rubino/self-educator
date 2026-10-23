@@ -1,0 +1,29 @@
+{
+  "id": "sig-2035cd1790ba",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Context Inertia: When Agents Won’t Let Go",
+  "member_doc_ids": [
+    "58f7e7d10e063e4c"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://www.dbreunig.com/2026/10/14/context-inertia",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 1.0,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.5667,
+  "first_seen": "2026-10-14T22:20:47-07:00",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
