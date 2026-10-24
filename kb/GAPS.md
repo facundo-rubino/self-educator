@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-23 — 1028 entries, highest priority first._
+_Updated 2026-10-24 — 1035 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1905,6 +1905,15 @@ _Updated 2026-10-23 — 1028 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-09'
+- id: gap-5af075a358
+  type: open_question
+  description: Note 'quick-study-prompt-a-artefacto-canvas-sobel' has decayed — does
+    it still hold?
+  related_notes:
+  - quick-study-prompt-a-artefacto-canvas-sobel
+  priority: 0.7
+  status: open
+  created: '2026-10-24'
 - id: gap-bf39d8dc6c
   type: open_question
   description: Note 'stack-de-ai-coach-voz-a-voz-ensamblado' has decayed — does it
@@ -4057,6 +4066,14 @@ _Updated 2026-10-23 — 1028 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-22'
+- id: gap-3bb146b3a0
+  type: thin_evidence
+  description: Note 'quick-study-prompt-a-artefacto-canvas-sobel' rests on 1 source(s)
+  related_notes:
+  - quick-study-prompt-a-artefacto-canvas-sobel
+  priority: 0.5
+  status: open
+  created: '2026-10-24'
 - id: gap-11d1d619e3
   type: thin_evidence
   description: Note 'ranking-openrouter-mide-consumo-no-calidad' rests on 1 source(s)
@@ -5595,6 +5612,23 @@ _Updated 2026-10-23 — 1028 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
+- id: gap-63f85f5fe0
+  type: thin_evidence
+  description: Note 'quick-study-exploracion-iterativa-con-distintos-modelos-como-hipotesis'
+    rests on 1 source(s)
+  related_notes:
+  - quick-study-exploracion-iterativa-con-distintos-modelos-como-hipotesis
+  priority: 0.5
+  status: open
+  created: '2026-10-24'
+- id: gap-a5a05b86f3
+  type: thin_evidence
+  description: Note 'quick-study-fuera-de-los-ejes-del-brief' rests on 1 source(s)
+  related_notes:
+  - quick-study-fuera-de-los-ejes-del-brief
+  priority: 0.5
+  status: open
+  created: '2026-10-24'
 - id: gap-8ab7d8205f
   type: thin_evidence
   description: Note 'react-hooks-call-order-como-fundamento-fuera-del-brief' rests
@@ -8140,6 +8174,15 @@ _Updated 2026-10-23 — 1028 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-c8300f53d6
+  type: thin_evidence
+  description: Note 'prompt-a-artefacto-no-es-evidencia-de-practica-de-ingenieria'
+    rests on 1 source(s)
+  related_notes:
+  - prompt-a-artefacto-no-es-evidencia-de-practica-de-ingenieria
+  priority: 0.5
+  status: open
+  created: '2026-10-24'
 - id: gap-669ff1f453
   type: thin_evidence
   description: Note 'prompt-modular-sin-mecanica-verificable' rests on 1 source(s)
@@ -8175,6 +8218,24 @@ _Updated 2026-10-23 — 1028 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-7007d17857
+  type: thin_evidence
+  description: Note 'quick-study-identificador-claude-opus-5-5-high-no-verificable'
+    rests on 1 source(s)
+  related_notes:
+  - quick-study-identificador-claude-opus-5-5-high-no-verificable
+  priority: 0.5
+  status: open
+  created: '2026-10-24'
+- id: gap-821bd31bdd
+  type: thin_evidence
+  description: Note 'quick-study-singleton-engagement-cero-no-sostiene-patron-de-trabajo'
+    rests on 1 source(s)
+  related_notes:
+  - quick-study-singleton-engagement-cero-no-sostiene-patron-de-trabajo
+  priority: 0.5
+  status: open
+  created: '2026-10-24'
 - id: gap-33f9035a86
   type: thin_evidence
   description: Note 'quoting-geoffrey-huntley-cluster-error-de-agregacion' rests on

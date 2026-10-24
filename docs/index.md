@@ -1,49 +1,42 @@
-# Brief — 2026-10-23
+# Brief — 2026-10-24
 
 ## Los titulares
 
-1. [v2.1.306](tag:github.com,2008:Repository/937253475/v2.1.306) — *IA y agentes en mi trabajo*
-2. [recursos](file:///home/runner/work/self-educator/self-educator/seed/recursos.csv) — *IA y agentes en mi trabajo*
-3. [Claude’s new auto eval tool](https://hamel.dev/blog/posts/claude-auto-evals/) — *IA y agentes en mi trabajo*
-4. [CSS vs. JavaScript](https://www.joshwcomeau.com/animation/css-vs-javascript/) — *Seguir siendo buen software engineer*
-5. [Check whether a CSS property is supported](https://lea.verou.me/?p=3) — *Seguir siendo buen software engineer*
+1. [I expect rapid progress but not towards general superintelligence](https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards) — *IA y agentes en mi trabajo*
+2. [Quick Study](https://simonwillison.net/2026/Oct/23/quick-study-painter/) — *IA y agentes en mi trabajo*
+3. [Donating Agent Skills to the Agentic AI Foundation](https://simonwillison.net/2026/Oct/22/donating-agent-skills/) — *IA y agentes en mi trabajo*
+4. [Do web components have a future if nobody is writing them?](https://nolanlawson.com/2026/10/19/do-web-components-have-a-future-if-nobody-is-writing-them/) — *Seguir siendo buen software engineer*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [v2.1.306](tag:github.com,2008:Repository/937253475/v2.1.306)
+### [I expect rapid progress but not towards general superintelligence](https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards)
 
-El clúster consiste en un único documento de release notes (v2.1.306) de una herramienta de agentes de IA para programar, con dos correcciones puntuales: (1) `claude -p` dentro de sesiones cloud reportaba 'Not logged in…
-
-<sub>fuentes: rss · confianza: 5%</sub>
-
-### [recursos](file:///home/runner/work/self-educator/self-educator/seed/recursos.csv)
-
-The cluster contains a single document [8029a0f3026b0dd0]: a curated resource table (formato, link, why-it-was-chosen, topic, when to use) with one visible row pointing to Anthropic's engineering post 'Writing effective…
-
-<sub>fuentes: files · confianza: 5%</sub>
-
-### [Claude’s new auto eval tool](https://hamel.dev/blog/posts/claude-auto-evals/)
-
-Anthropic shipped first-party eval tooling into the claude-api plugin for Claude Code, adding `build_eval` and `hill-climb` commands that scaffold evals, validate the graders, and iteratively improve an application agai…
+This cluster is not really about a technical lead who teaches programming; it is a set of AI-discourse RSS posts (Cal Newport, skepticism about superintelligence, lab accountability, prediction track records, AI agents)
 
 <sub>fuentes: rss · confianza: 12%</sub>
 
+### [Quick Study](https://simonwillison.net/2026/Oct/23/quick-study-painter/)
+
+El clúster contiene un único documento: una nota breve ('Quick Study') que describe un artefacto generado por un modelo de lenguaje (Claude Opus 5.5 High) a partir de un prompt
+
+<sub>fuentes: rss · confianza: 8%</sub>
+
+### [Donating Agent Skills to the Agentic AI Foundation](https://simonwillison.net/2026/Oct/22/donating-agent-skills/)
+
+Anthropic announced it is donating the Agent Skills standard to the Agentic AI Foundation (AAIF), a Linux Foundation body it co-founded with Block and OpenAI, which previously received the donated Model Context Protocol…
+
+<sub>fuentes: rss · confianza: 28%</sub>
+
 ## Seguir siendo buen software engineer
 
-### [CSS vs. JavaScript](https://www.joshwcomeau.com/animation/css-vs-javascript/)
+### [Do web components have a future if nobody is writing them?](https://nolanlawson.com/2026/10/19/do-web-components-have-a-future-if-nobody-is-writing-them/)
 
-This cluster is thin: two RSS-ingested blog posts about web animation techniques (CSS/JS animation performance and the CSS scroll-driven Animations / Animation Timeline API) [33e8b48379728e46] [618ff725eae0d990]
+This cluster is two linked opinion posts (same author, second explicitly a follow-up to the first) arguing about why developers don't "use the platform," with the surprising pivot that web components dominate the reacti…
 
-<sub>fuentes: rss · confianza: 3%</sub>
-
-### [Check whether a CSS property is supported](https://lea.verou.me/?p=3)
-
-El cluster contiene dos documentos de un blog técnico sobre detección de soporte de propiedades CSS y vendor prefixes en el navegador [6fff67af11e1724d][e915fa7ba8ebe93a]
-
-<sub>fuentes: rss · confianza: 3%</sub>
+<sub>fuentes: rss · confianza: 12%</sub>
 
 ---
 
-<sub>11 señales consideradas, 2 descartadas por no ser de ningún tema, 25 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
+<sub>7 señales consideradas, 2 descartadas por no ser de ningún tema, 27 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>

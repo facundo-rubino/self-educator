@@ -1,0 +1,36 @@
+{
+  "id": "sig-092f0a949df8",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "AI Is Getting Good at Math. Here’s Why.",
+  "member_doc_ids": [
+    "0038729e398b77be",
+    "1ccc8e412cdaa1c4",
+    "44c8e5ef06e5fbe2",
+    "ae72befeffedbc16",
+    "b647bfde274dd2a1",
+    "d955592a4eb5ee8f",
+    "e6908eaca18c8e77",
+    "edbbf9c187af7003"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://latent.space/p/ai-is-getting-good-at-math/",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 1.0,
+    "novelty": 0.0424,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.5606,
+  "first_seen": "2026-08-31T15:44:59Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

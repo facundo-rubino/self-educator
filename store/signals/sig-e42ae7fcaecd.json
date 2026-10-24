@@ -13,15 +13,15 @@
   "theme": "oficio-dev",
   "scores": {
     "relevance": 1.0,
-    "novelty": 1.0,
+    "novelty": 0.0,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.8,
+  "aggregate_score": 0.55,
   "first_seen": "2009-02-10T00:00:00Z",
   "sources_count": 1,
-  "status": "promoted",
+  "status": "candidate",
   "outcome": {
     "reviewed_at": null,
     "verdict": null,
