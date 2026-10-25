@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-24 — 1035 entries, highest priority first._
+_Updated 2026-10-25 — 1047 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -193,6 +193,15 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-15'
+- id: gap-f6a35e7f96
+  type: contradiction
+  description: Unresolved contradiction between 'donacion-agent-skills-aaif' and 'gobernanza-neutral-no-verificada-extrapolacion-a-practica'
+  related_notes:
+  - donacion-agent-skills-aaif
+  - gobernanza-neutral-no-verificada-extrapolacion-a-practica
+  priority: 0.9
+  status: open
+  created: '2026-10-25'
 - id: gap-bdfe66add3
   type: contradiction
   description: Unresolved contradiction between 'ensayo-goodbye-clean-code-sin-cuerpo-recorrido'
@@ -463,6 +472,16 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-28'
+- id: gap-45c2fd5cfa
+  type: contradiction
+  description: Unresolved contradiction between 'agent-skills-y-mcp-como-vocabulario-neutral-para-mentoria-hipotesis'
+    and 'gobernanza-neutral-no-verificada-extrapolacion-a-practica'
+  related_notes:
+  - agent-skills-y-mcp-como-vocabulario-neutral-para-mentoria-hipotesis
+  - gobernanza-neutral-no-verificada-extrapolacion-a-practica
+  priority: 0.9
+  status: open
+  created: '2026-10-25'
 - id: gap-bb48a5c394
   type: contradiction
   description: Unresolved contradiction between 'ai-coach-telefono-como-canal-asincrono-baja-friccion-hipotesis'
@@ -2336,6 +2355,15 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-21'
+- id: gap-3f9249e543
+  type: open_question
+  description: Note 'agent-skills-y-mcp-como-vocabulario-neutral-para-mentoria-hipotesis'
+    has decayed — does it still hold?
+  related_notes:
+  - agent-skills-y-mcp-como-vocabulario-neutral-para-mentoria-hipotesis
+  priority: 0.7
+  status: open
+  created: '2026-10-25'
 - id: gap-3f29eca1d5
   type: open_question
   description: Note 'ai-coach-ensamblado-reutilizable-para-feedback-sin-claim' has
@@ -2632,6 +2660,15 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-13'
+- id: gap-1d9c563357
+  type: open_question
+  description: Note 'no-silver-bullet-limita-el-techo-de-los-agentes-codigo' has decayed
+    — does it still hold?
+  related_notes:
+  - no-silver-bullet-limita-el-techo-de-los-agentes-codigo
+  priority: 0.7
+  status: open
+  created: '2026-10-25'
 - id: gap-4386ed6b7e
   type: open_question
   description: Note 'orden-de-transform-importa-a-veces-sin-detalle-de-casos' has
@@ -2677,6 +2714,15 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-05'
+- id: gap-809389202a
+  type: open_question
+  description: Note 'quick-study-exploracion-iterativa-con-distintos-modelos-como-hipotesis'
+    has decayed — does it still hold?
+  related_notes:
+  - quick-study-exploracion-iterativa-con-distintos-modelos-como-hipotesis
+  priority: 0.7
+  status: open
+  created: '2026-10-25'
 - id: gap-861cf1b64e
   type: open_question
   description: Note 'ranking-de-figuras-publicas-sin-metodologia-ni-fecha' has decayed
@@ -3542,6 +3588,14 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-4111e9ef3d
+  type: thin_evidence
+  description: Note 'donacion-agent-skills-aaif' rests on 1 source(s)
+  related_notes:
+  - donacion-agent-skills-aaif
+  priority: 0.5
+  status: open
+  created: '2026-10-25'
 - id: gap-9393553aee
   type: thin_evidence
   description: Note 'ensayo-goodbye-clean-code-sin-cuerpo-recorrido' rests on 1 source(s)
@@ -4491,6 +4545,15 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-7da7a4a99d
+  type: thin_evidence
+  description: Note 'donacion-mcp-aaif-como-patron-de-estandarizacion' rests on 1
+    source(s)
+  related_notes:
+  - donacion-mcp-aaif-como-patron-de-estandarizacion
+  priority: 0.5
+  status: open
+  created: '2026-10-25'
 - id: gap-5d78a3fd0b
   type: thin_evidence
   description: Note 'ensamblado-condicional-de-instrucciones-para-docencia-por-ejercicio'
@@ -4894,6 +4957,15 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-b2b4d7b035
+  type: thin_evidence
+  description: Note 'agent-skills-y-mcp-como-vocabulario-neutral-para-mentoria-hipotesis'
+    rests on 1 source(s)
+  related_notes:
+  - agent-skills-y-mcp-como-vocabulario-neutral-para-mentoria-hipotesis
+  priority: 0.5
+  status: open
+  created: '2026-10-25'
 - id: gap-dad7cfc80e
   type: thin_evidence
   description: Note 'agentes-de-codigo-asistidos-por-ia-en-flujos-reales-evidencia-tenue-en-el-cluster'
@@ -6271,6 +6343,15 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-07'
+- id: gap-3fda63a4f4
+  type: thin_evidence
+  description: Note 'anuncio-de-estandar-con-excerpto-truncado-sin-detalle-operativo'
+    rests on 1 source(s)
+  related_notes:
+  - anuncio-de-estandar-con-excerpto-truncado-sin-detalle-operativo
+  priority: 0.5
+  status: open
+  created: '2026-10-25'
 - id: gap-a85b578dd8
   type: thin_evidence
   description: Note 'aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion' rests
@@ -6922,6 +7003,24 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-07'
+- id: gap-3aa42fb625
+  type: thin_evidence
+  description: Note 'donacion-de-estandar-novelty-cero-no-justifica-conclusion-estrategica'
+    rests on 1 source(s)
+  related_notes:
+  - donacion-de-estandar-novelty-cero-no-justifica-conclusion-estrategica
+  priority: 0.5
+  status: open
+  created: '2026-10-25'
+- id: gap-5970683388
+  type: thin_evidence
+  description: Note 'donacion-de-estandar-single-source-sin-corroboracion' rests on
+    1 source(s)
+  related_notes:
+  - donacion-de-estandar-single-source-sin-corroboracion
+  priority: 0.5
+  status: open
+  created: '2026-10-25'
 - id: gap-53bf29dbb5
   type: thin_evidence
   description: Note 'efectividad-de-ai-coach-no-demostrada' rests on 1 source(s)
@@ -7245,6 +7344,15 @@ _Updated 2026-10-24 — 1035 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-12'
+- id: gap-9e7a6a9d9e
+  type: thin_evidence
+  description: Note 'gobernanza-neutral-no-verificada-extrapolacion-a-practica' rests
+    on 1 source(s)
+  related_notes:
+  - gobernanza-neutral-no-verificada-extrapolacion-a-practica
+  priority: 0.5
+  status: open
+  created: '2026-10-25'
 - id: gap-bc39a043e9
   type: thin_evidence
   description: Note 'goodbye-clean-code-mapea-a-temas-del-brief-sin-evidencia' rests

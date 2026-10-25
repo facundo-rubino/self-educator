@@ -1,0 +1,29 @@
+{
+  "id": "sig-021cc4cc59f9",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "The State of Context Engineering",
+  "member_doc_ids": [
+    "aa7352360926c450"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 0.5877,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.4636,
+  "first_seen": "2026-10-24T17:31:38-07:00",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
