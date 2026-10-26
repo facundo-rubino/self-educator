@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-25 — 1047 entries, highest priority first._
+_Updated 2026-10-26 — 1055 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1915,6 +1915,15 @@ _Updated 2026-10-25 — 1047 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-22'
+- id: gap-655d763351
+  type: open_question
+  description: Note 'precio-de-token-no-es-coste-total-de-tarea' has decayed — does
+    it still hold?
+  related_notes:
+  - precio-de-token-no-es-coste-total-de-tarea
+  priority: 0.7
+  status: open
+  created: '2026-10-26'
 - id: gap-e971c02252
   type: open_question
   description: Note 'prototipado-por-composicion-de-apis-sin-entrenamiento' has decayed
@@ -2445,6 +2454,15 @@ _Updated 2026-10-25 — 1047 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-06'
+- id: gap-e04f0e0a48
+  type: open_question
+  description: Note 'corte-de-precios-llm-80-por-ciento-pregunta-sin-evidencia' has
+    decayed — does it still hold?
+  related_notes:
+  - corte-de-precios-llm-80-por-ciento-pregunta-sin-evidencia
+  priority: 0.7
+  status: open
+  created: '2026-10-26'
 - id: gap-0b2b91300a
   type: open_question
   description: Note 'criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido' has decayed
@@ -3065,6 +3083,15 @@ _Updated 2026-10-25 — 1047 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-05'
+- id: gap-ce0478b954
+  type: open_question
+  description: Note 'mcp-release-stubs-como-artefacto-de-feed' has decayed — does
+    it still hold?
+  related_notes:
+  - mcp-release-stubs-como-artefacto-de-feed
+  priority: 0.7
+  status: open
+  created: '2026-10-26'
 - id: gap-4a3d4685cf
   type: open_question
   description: Note 'meta-muse-wonder-wonder-full-nombre-de-modelo-no-verificado'
@@ -4093,6 +4120,14 @@ _Updated 2026-10-25 — 1047 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-02'
+- id: gap-ce777e2771
+  type: thin_evidence
+  description: Note 'precio-de-token-no-es-coste-total-de-tarea' rests on 1 source(s)
+  related_notes:
+  - precio-de-token-no-es-coste-total-de-tarea
+  priority: 0.5
+  status: open
+  created: '2026-10-26'
 - id: gap-38095f1cd0
   type: thin_evidence
   description: Note 'progreso-agentes-sin-superinteligencia-esperanza-vs-pares-evidencia-emudhra'
@@ -5172,6 +5207,15 @@ _Updated 2026-10-25 — 1047 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-21'
+- id: gap-f388a4cd59
+  type: thin_evidence
+  description: Note 'corte-de-precios-llm-80-por-ciento-pregunta-sin-evidencia' rests
+    on 1 source(s)
+  related_notes:
+  - corte-de-precios-llm-80-por-ciento-pregunta-sin-evidencia
+  priority: 0.5
+  status: open
+  created: '2026-10-26'
 - id: gap-8c36af03a4
   type: thin_evidence
   description: Note 'criterios-de-juicio-de-hackathon-sin-cuerpo-ingerido' rests on
@@ -6952,6 +6996,15 @@ _Updated 2026-10-25 — 1047 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-7a228d57ca
+  type: thin_evidence
+  description: Note 'corte-de-precios-llm-singleton-sin-corroboracion' rests on 1
+    source(s)
+  related_notes:
+  - corte-de-precios-llm-singleton-sin-corroboracion
+  priority: 0.5
+  status: open
+  created: '2026-10-26'
 - id: gap-40f80ce829
   type: thin_evidence
   description: Note 'cosignar-estandar-no-implica-adopcion' rests on 1 source(s)
@@ -6969,6 +7022,14 @@ _Updated 2026-10-25 — 1047 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
+- id: gap-1b669b5904
+  type: thin_evidence
+  description: Note 'coste-real-de-un-token-como-gancho-editorial' rests on 1 source(s)
+  related_notes:
+  - coste-real-de-un-token-como-gancho-editorial
+  priority: 0.5
+  status: open
+  created: '2026-10-26'
 - id: gap-562a56b393
   type: thin_evidence
   description: Note 'decision-models-claim-sin-especificacion' rests on 1 source(s)
@@ -8222,6 +8283,14 @@ _Updated 2026-10-25 — 1047 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
+- id: gap-5c7eb529d8
+  type: thin_evidence
+  description: Note 'precios-llm-son-solo-señal-tangencial-al-brief' rests on 1 source(s)
+  related_notes:
+  - precios-llm-son-solo-señal-tangencial-al-brief
+  priority: 0.5
+  status: open
+  created: '2026-10-26'
 - id: gap-6176f6ba49
   type: thin_evidence
   description: Note 'privacidad-de-uso-de-llm-como-cuaderno-personal' rests on 1 source(s)
