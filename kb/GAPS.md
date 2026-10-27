@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-26 — 1055 entries, highest priority first._
+_Updated 2026-10-27 — 1065 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -3400,6 +3400,15 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-57faa439de
+  type: thin_evidence
+  description: Note 'auditoria-de-predicciones-de-escepticos-como-metodo' rests on
+    1 source(s)
+  related_notes:
+  - auditoria-de-predicciones-de-escepticos-como-metodo
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-ffdfd82815
   type: thin_evidence
   description: Note 'blog-feature-por-voz-codex-entrega-acotada-evidencia-emudhra'
@@ -3515,6 +3524,15 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-14'
+- id: gap-9fabc52d6f
+  type: thin_evidence
+  description: Note 'critica-a-laboratorios-como-demanda-de-rendicion-de-cuentas'
+    rests on 1 source(s)
+  related_notes:
+  - critica-a-laboratorios-como-demanda-de-rendicion-de-cuentas
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-ded192ed3f
   type: thin_evidence
   description: Note 'critica-entrevistas-algoritmos-no-reflejan-valor' rests on 1
@@ -3785,6 +3803,15 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-17'
+- id: gap-756e0695b3
+  type: thin_evidence
+  description: Note 'ingenieria-de-modelos-como-cadena-de-pequenas-decisiones' rests
+    on 1 source(s)
+  related_notes:
+  - ingenieria-de-modelos-como-cadena-de-pequenas-decisiones
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-b79c531aab
   type: thin_evidence
   description: Note 'item-de-blog-por-voz-con-codex-chatgpt-desktop' rests on 1 source(s)
@@ -4137,6 +4164,15 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-21'
+- id: gap-f7edc4300e
+  type: thin_evidence
+  description: Note 'progreso-rapido-sin-superinteligencia-y-sorpresa-ante-pares'
+    rests on 1 source(s)
+  related_notes:
+  - progreso-rapido-sin-superinteligencia-y-sorpresa-ante-pares
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-82487262c3
   type: thin_evidence
   description: Note 'prompt-condicional-conocimiento-comun-en-productos-llm' rests
@@ -4731,6 +4767,14 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-22'
+- id: gap-16cb39db6d
+  type: thin_evidence
+  description: Note 'politicas-no-ai-dificiles-de-hacer-cumplir' rests on 1 source(s)
+  related_notes:
+  - politicas-no-ai-dificiles-de-hacer-cumplir
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-f58e70ee01
   type: thin_evidence
   description: Note 'prompt-a-herramienta-en-feed-rss-como-artefacto-de-ingesta' rests
@@ -4938,6 +4982,23 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-18e9ca5abf
+  type: thin_evidence
+  description: Note 'newport-ataque-openai-como-guerra-de-civilizaciones-de-agentes'
+    rests on 1 source(s)
+  related_notes:
+  - newport-ataque-openai-como-guerra-de-civilizaciones-de-agentes
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
+- id: gap-5c5fbcb0e8
+  type: thin_evidence
+  description: Note 'newport-superinteligencia-cuento-de-hadas' rests on 1 source(s)
+  related_notes:
+  - newport-superinteligencia-cuento-de-hadas
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-a70daa8d06
   type: thin_evidence
   description: Note 'a-chain-reaction-artefacto-de-metadatos-no-cuerpo-de-evidencia'
@@ -5676,6 +5737,15 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
+- id: gap-25ff94120e
+  type: thin_evidence
+  description: Note 'orosz-ia-prohibida-en-concurso-dificil-de-detectar' rests on
+    1 source(s)
+  related_notes:
+  - orosz-ia-prohibida-en-concurso-dificil-de-detectar
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-96745cf1a8
   type: thin_evidence
   description: Note 'pipeline-sin-fuente-primaria-para-verificar-senal-de-ataques'
@@ -6308,6 +6378,14 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-09'
+- id: gap-3ce92546d6
+  type: thin_evidence
+  description: Note 'ai-math-signal-teaser-sin-datos' rests on 1 source(s)
+  related_notes:
+  - ai-math-signal-teaser-sin-datos
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-d1ad87a2d7
   type: thin_evidence
   description: Note 'analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub' rests
@@ -7991,6 +8069,15 @@ _Updated 2026-10-26 — 1055 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-19'
+- id: gap-1037adefca
+  type: thin_evidence
+  description: Note 'marco-guerra-civilizaciones-desvia-discusion-de-usos-practicos'
+    rests on 1 source(s)
+  related_notes:
+  - marco-guerra-civilizaciones-desvia-discusion-de-usos-practicos
+  priority: 0.5
+  status: open
+  created: '2026-10-27'
 - id: gap-d8e488a87d
   type: thin_evidence
   description: Note 'matching-llm-as-a-judge-relevancia-lexica-sin-ejes-del-brief'
