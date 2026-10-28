@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-27 — 1065 entries, highest priority first._
+_Updated 2026-10-28 — 1073 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -83,6 +83,16 @@ _Updated 2026-10-27 — 1065 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-28'
+- id: gap-cf68ef978c
+  type: contradiction
+  description: Unresolved contradiction between 'agentes-ia-aceleran-trabajo-acotado-y-verificable'
+    and 'anthropic-ship-claude-with-claude-framing-propio-sin-verificar'
+  related_notes:
+  - agentes-ia-aceleran-trabajo-acotado-y-verificable
+  - anthropic-ship-claude-with-claude-framing-propio-sin-verificar
+  priority: 0.9
+  status: open
+  created: '2026-10-28'
 - id: gap-caa401c036
   type: contradiction
   description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
@@ -652,6 +662,16 @@ _Updated 2026-10-27 — 1065 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-30'
+- id: gap-947f7fe228
+  type: contradiction
+  description: Unresolved contradiction between 'ensenanza-entry-level-fuera-de-alcance-ausencia-de-evidencia'
+    and 'separacion-cerebro-manos-como-modelo-mental-para-aprendices'
+  related_notes:
+  - ensenanza-entry-level-fuera-de-alcance-ausencia-de-evidencia
+  - separacion-cerebro-manos-como-modelo-mental-para-aprendices
+  priority: 0.9
+  status: open
+  created: '2026-10-28'
 - id: gap-1c2e438e02
   type: contradiction
   description: Unresolved contradiction between 'shadow-roots-hay-interes-en-explicar-css-con-artefactos-interactivos'
@@ -1492,6 +1512,15 @@ _Updated 2026-10-27 — 1065 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-06'
+- id: gap-88fc6dc284
+  type: open_question
+  description: Note 'anthropic-ship-claude-with-claude-framing-propio-sin-verificar'
+    has decayed — does it still hold?
+  related_notes:
+  - anthropic-ship-claude-with-claude-framing-propio-sin-verificar
+  priority: 0.7
+  status: open
+  created: '2026-10-28'
 - id: gap-2e558d50f4
   type: open_question
   description: Note 'aria-describedby-no-basta-para-tooltips-accesibles-integracion'
@@ -1942,6 +1971,15 @@ _Updated 2026-10-27 — 1065 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-24'
+- id: gap-38a64590fb
+  type: open_question
+  description: Note 'separacion-cerebro-manos-modelo-harness-agente' has decayed —
+    does it still hold?
+  related_notes:
+  - separacion-cerebro-manos-modelo-harness-agente
+  priority: 0.7
+  status: open
+  created: '2026-10-28'
 - id: gap-bf39d8dc6c
   type: open_question
   description: Note 'stack-de-ai-coach-voz-a-voz-ensamblado' has decayed — does it
@@ -2553,6 +2591,15 @@ _Updated 2026-10-27 — 1065 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-210a95f5dc
+  type: open_question
+  description: Note 'hipotesis-harness-como-inversion-durable-en-flujo-asistido' has
+    decayed — does it still hold?
+  related_notes:
+  - hipotesis-harness-como-inversion-durable-en-flujo-asistido
+  priority: 0.7
+  status: open
+  created: '2026-10-28'
 - id: gap-e521680d21
   type: open_question
   description: Note 'hipotesis-humildad-como-modelado-para-juniors' has decayed —
@@ -2759,6 +2806,15 @@ _Updated 2026-10-27 — 1065 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-23'
+- id: gap-30a6155899
+  type: open_question
+  description: Note 'separacion-cerebro-manos-como-modelo-mental-para-aprendices'
+    has decayed — does it still hold?
+  related_notes:
+  - separacion-cerebro-manos-como-modelo-mental-para-aprendices
+  priority: 0.7
+  status: open
+  created: '2026-10-28'
 - id: gap-b1988d2213
   type: open_question
   description: Note 'sequential-thinking-como-paquete-de-primera-clase-senal-fina'
@@ -3137,6 +3193,15 @@ _Updated 2026-10-27 — 1065 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-02'
+- id: gap-95877d1d52
+  type: open_question
+  description: Note 'opus-5-5-en-blurb-de-podcast-dato-sin-verificar' has decayed
+    — does it still hold?
+  related_notes:
+  - opus-5-5-en-blurb-de-podcast-dato-sin-verificar
+  priority: 0.7
+  status: open
+  created: '2026-10-28'
 - id: gap-50f1a39222
   type: open_question
   description: Note 'perplexity-decider-27b-titulo-sin-sustanciacion' has decayed
@@ -3382,6 +3447,15 @@ _Updated 2026-10-27 — 1065 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-06'
+- id: gap-8a00acba3c
+  type: thin_evidence
+  description: Note 'anthropic-ship-claude-with-claude-framing-propio-sin-verificar'
+    rests on 1 source(s)
+  related_notes:
+  - anthropic-ship-claude-with-claude-framing-propio-sin-verificar
+  priority: 0.5
+  status: open
+  created: '2026-10-28'
 - id: gap-a442abd442
   type: thin_evidence
   description: Note 'aria-describedby-no-basta-para-tooltips-accesibles-integracion'

@@ -1,19 +1,19 @@
-# Brief — 2026-10-27
+# Brief — 2026-10-28
 
 ## Los titulares
 
-1. [AI Is Getting Good at Math. Here’s Why.](https://latent.space/p/ai-is-getting-good-at-math/) — *IA y agentes en mi trabajo*
+1. [How Anthropic ships Claude with Claude: Separating the Brain from the Hands](https://latent.space/p/opus55/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [AI Is Getting Good at Math. Here’s Why.](https://latent.space/p/ai-is-getting-good-at-math/)
+### [How Anthropic ships Claude with Claude: Separating the Brain from the Hands](https://latent.space/p/opus55/)
 
-El clúster no es un hallazgo técnico sino una colección de comentarios RSS sobre el estado y el discurso público de la IA: escepticismo sobre la superinteligencia, críticas a los labs, el avance de la IA en matemáticas…
+Two near-duplicate RSS items [3602a6421bac79d9][7244910924d06485] cover the same Latent Space episode with Katelyn Lesse and Angela Jiang of Anthropic
 
 <sub>fuentes: rss · confianza: 12%</sub>
 
 ---
 
-<sub>1 señales consideradas, 0 descartadas por no ser de ningún tema, 32 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
+<sub>1 señales consideradas, 0 descartadas por no ser de ningún tema, 31 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>

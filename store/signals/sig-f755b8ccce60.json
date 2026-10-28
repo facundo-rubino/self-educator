@@ -1,0 +1,29 @@
+{
+  "id": "sig-f755b8ccce60",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Artificial Analysis Intelligence Index v5 (major update)",
+  "member_doc_ids": [
+    "27e512bc833c953d"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "t3_1xhdmlk",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 0.4916,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.3229,
+  "first_seen": "2026-10-28T03:36:56Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
