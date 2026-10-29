@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-28 — 1073 entries, highest priority first._
+_Updated 2026-10-29 — 1078 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1917,6 +1917,15 @@ _Updated 2026-10-28 — 1073 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-15'
+- id: gap-0060499a79
+  type: open_question
+  description: Note 'octoverse-2026-220m-prs-mes-anuncio-en-github-universe' has decayed
+    — does it still hold?
+  related_notes:
+  - octoverse-2026-220m-prs-mes-anuncio-en-github-universe
+  priority: 0.7
+  status: open
+  created: '2026-10-29'
 - id: gap-bd6c2f7875
   type: open_question
   description: Note 'openai-corta-cursor-titular-sin-detalle' has decayed — does it
@@ -4204,6 +4213,15 @@ _Updated 2026-10-28 — 1073 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-12'
+- id: gap-283e8934e4
+  type: thin_evidence
+  description: Note 'octoverse-2026-220m-prs-mes-anuncio-en-github-universe' rests
+    on 1 source(s)
+  related_notes:
+  - octoverse-2026-220m-prs-mes-anuncio-en-github-universe
+  priority: 0.5
+  status: open
+  created: '2026-10-29'
 - id: gap-cc20068a32
   type: thin_evidence
   description: Note 'openai-corta-cursor-titular-sin-detalle' rests on 1 source(s)
@@ -5802,6 +5820,15 @@ _Updated 2026-10-28 — 1073 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-c7cbb42df6
+  type: thin_evidence
+  description: Note 'octoverse-2026-contexto-ambiente-debil-no-soporte-de-cambio-de-practica'
+    rests on 1 source(s)
+  related_notes:
+  - octoverse-2026-contexto-ambiente-debil-no-soporte-de-cambio-de-practica
+  priority: 0.5
+  status: open
+  created: '2026-10-29'
 - id: gap-a872c22d25
   type: thin_evidence
   description: Note 'orden-de-transform-importa-a-veces-sin-detalle-de-casos' rests
@@ -8214,6 +8241,15 @@ _Updated 2026-10-28 — 1073 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-30'
+- id: gap-dfc8de9a20
+  type: thin_evidence
+  description: Note 'merged-prs-triplicados-no-es-evidencia-de-productividad-por-agentes'
+    rests on 1 source(s)
+  related_notes:
+  - merged-prs-triplicados-no-es-evidencia-de-productividad-por-agentes
+  priority: 0.5
+  status: open
+  created: '2026-10-29'
 - id: gap-7f4bd5878d
   type: thin_evidence
   description: Note 'meta-muse-wonder-wonder-full-nombre-de-modelo-no-verificado'
@@ -8384,6 +8420,15 @@ _Updated 2026-10-28 — 1073 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-02'
+- id: gap-300296224e
+  type: thin_evidence
+  description: Note 'octoverse-2026-agregado-de-embudo-superior-sin-normalizar' rests
+    on 1 source(s)
+  related_notes:
+  - octoverse-2026-agregado-de-embudo-superior-sin-normalizar
+  priority: 0.5
+  status: open
+  created: '2026-10-29'
 - id: gap-d34ece1d8a
   type: thin_evidence
   description: Note 'opus-5-5-explainer-videos-titulo-sin-contenido-ingerido' rests

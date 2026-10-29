@@ -1,18 +1,18 @@
-# Brief — 2026-10-28
+# Brief — 2026-10-29
 
 ## Los titulares
 
-1. [How Anthropic ships Claude with Claude: Separating the Brain from the Hands](https://latent.space/p/opus55/) — *IA y agentes en mi trabajo*
+1. [GitHub Octoverse 2026](https://simonwillison.net/2026/Oct/28/github-octoverse-2026/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [How Anthropic ships Claude with Claude: Separating the Brain from the Hands](https://latent.space/p/opus55/)
+### [GitHub Octoverse 2026](https://simonwillison.net/2026/Oct/28/github-octoverse-2026/)
 
-Two near-duplicate RSS items [3602a6421bac79d9][7244910924d06485] cover the same Latent Space episode with Katelyn Lesse and Angela Jiang of Anthropic
+Single-source signal: a first-hand account from GitHub Universe where EVP Jay Parikh presented Octoverse 2026 numbers claiming merged pull requests tripled in under a year to 220 million per month, framed as evidence of…
 
-<sub>fuentes: rss · confianza: 12%</sub>
+<sub>fuentes: rss · confianza: 5%</sub>
 
 ---
 

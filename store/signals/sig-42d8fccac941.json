@@ -18,7 +18,7 @@
     "surprise": 0.5
   },
   "aggregate_score": 0.3167,
-  "first_seen": "2026-10-21T12:51:00+02:00",
+  "first_seen": "2026-10-21T12:51:00-04:00",
   "sources_count": 1,
   "status": "candidate",
   "outcome": {
