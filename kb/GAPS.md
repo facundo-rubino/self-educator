@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-29 — 1078 entries, highest priority first._
+_Updated 2026-10-30 — 1087 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -832,6 +832,26 @@ _Updated 2026-10-29 — 1078 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-20'
+- id: gap-0a284501b0
+  type: contradiction
+  description: Unresolved contradiction between 'cautela-ante-agentes-como-tesis-interpretativa-sin-muestra'
+    and 'cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio'
+  related_notes:
+  - cautela-ante-agentes-como-tesis-interpretativa-sin-muestra
+  - cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio
+  priority: 0.9
+  status: open
+  created: '2026-10-30'
+- id: gap-7686ca6230
+  type: contradiction
+  description: Unresolved contradiction between 'cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio'
+    and 'cautela-explicada-por-el-grupo-favorecido-como-racionalizacion'
+  related_notes:
+  - cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio
+  - cautela-explicada-por-el-grupo-favorecido-como-racionalizacion
+  priority: 0.9
+  status: open
+  created: '2026-10-30'
 - id: gap-7704e59d1c
   type: contradiction
   description: Unresolved contradiction between 'claude-code-cluster-singleton-engagement-cero-novelty-cero'
@@ -952,6 +972,16 @@ _Updated 2026-10-29 — 1078 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-19'
+- id: gap-7bc260c5b8
+  type: contradiction
+  description: Unresolved contradiction between 'cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio'
+    and 'construido-vs-funcionando-en-produccion-truismo-no-explica-recelo-agentico'
+  related_notes:
+  - cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio
+  - construido-vs-funcionando-en-produccion-truismo-no-explica-recelo-agentico
+  priority: 0.9
+  status: open
+  created: '2026-10-30'
 - id: gap-30355d4789
   type: contradiction
   description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
@@ -1566,6 +1596,15 @@ _Updated 2026-10-29 — 1078 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-07'
+- id: gap-2897a46364
+  type: open_question
+  description: Note 'cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio' has
+    decayed — does it still hold?
+  related_notes:
+  - cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio
+  priority: 0.7
+  status: open
+  created: '2026-10-30'
 - id: gap-a64ed1dcbf
   type: open_question
   description: Note 'claude-5-5-tier-etiqueta-de-nivel-sin-medicion' has decayed —
@@ -3510,6 +3549,15 @@ _Updated 2026-10-29 — 1078 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-07'
+- id: gap-379f6419b4
+  type: thin_evidence
+  description: Note 'cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio' rests
+    on 1 source(s)
+  related_notes:
+  - cautela-de-buenos-devs-ante-agentes-como-juicio-de-oficio
+  priority: 0.5
+  status: open
+  created: '2026-10-30'
 - id: gap-05d3bce7ee
   type: thin_evidence
   description: Note 'claude-5-5-tier-etiqueta-de-nivel-sin-medicion' rests on 1 source(s)
@@ -3598,6 +3646,15 @@ _Updated 2026-10-29 — 1078 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-19d50030bf
+  type: thin_evidence
+  description: Note 'construccion-vs-validacion-presupuestar-por-separado-con-agentes'
+    rests on 1 source(s)
+  related_notes:
+  - construccion-vs-validacion-presupuestar-por-separado-con-agentes
+  priority: 0.5
+  status: open
+  created: '2026-10-30'
 - id: gap-a515237848
   type: thin_evidence
   description: Note 'corroboracion-0-5-en-cluster-de-un-solo-documento-no-es-consenso-nueva-evidencia'
@@ -6717,6 +6774,24 @@ _Updated 2026-10-29 — 1078 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-18'
+- id: gap-acc45d65b4
+  type: thin_evidence
+  description: Note 'cautela-ante-agentes-como-tesis-interpretativa-sin-muestra' rests
+    on 1 source(s)
+  related_notes:
+  - cautela-ante-agentes-como-tesis-interpretativa-sin-muestra
+  priority: 0.5
+  status: open
+  created: '2026-10-30'
+- id: gap-1c14bdf353
+  type: thin_evidence
+  description: Note 'cautela-explicada-por-el-grupo-favorecido-como-racionalizacion'
+    rests on 1 source(s)
+  related_notes:
+  - cautela-explicada-por-el-grupo-favorecido-como-racionalizacion
+  priority: 0.5
+  status: open
+  created: '2026-10-30'
 - id: gap-2cee8d35e4
   type: thin_evidence
   description: Note 'citar-cluster-mislabeled-como-output-del-frontier-red-team-seria-afirmacion-falsa'
@@ -7068,6 +7143,15 @@ _Updated 2026-10-29 — 1078 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-07'
+- id: gap-9b8e7bf012
+  type: thin_evidence
+  description: Note 'construido-vs-funcionando-en-produccion-truismo-no-explica-recelo-agentico'
+    rests on 1 source(s)
+  related_notes:
+  - construido-vs-funcionando-en-produccion-truismo-no-explica-recelo-agentico
+  priority: 0.5
+  status: open
+  created: '2026-10-30'
 - id: gap-87e1b1b252
   type: thin_evidence
   description: Note 'contar-docenas-de-partes-condicionales-es-claim-de-conteo-fragil'
