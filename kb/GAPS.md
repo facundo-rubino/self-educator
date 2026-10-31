@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-30 — 1087 entries, highest priority first._
+_Updated 2026-10-31 — 1097 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -532,6 +532,16 @@ _Updated 2026-10-30 — 1087 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-05'
+- id: gap-5e5e8d66a0
+  type: contradiction
+  description: Unresolved contradiction between 'aie-code-conferencia-de-agentes-de-codigo-como-categoria-nombrada'
+    and 'cluster-aie-code-topic-drift-tres-items-sin-ejes-del-brief'
+  related_notes:
+  - aie-code-conferencia-de-agentes-de-codigo-como-categoria-nombrada
+  - cluster-aie-code-topic-drift-tres-items-sin-ejes-del-brief
+  priority: 0.9
+  status: open
+  created: '2026-10-31'
 - id: gap-3ff58daa4d
   type: contradiction
   description: Unresolved contradiction between 'contradiccion-force-multiplier-de-especificacion-vs-codegen-que-evita-escribir'
@@ -792,6 +802,26 @@ _Updated 2026-10-30 — 1087 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-19'
+- id: gap-b97b59df94
+  type: contradiction
+  description: Unresolved contradiction between 'aie-code-conferencia-de-agentes-de-codigo-como-categoria-nombrada'
+    and 'aie-code-solo-contenido-de-teaser-sin-practica'
+  related_notes:
+  - aie-code-conferencia-de-agentes-de-codigo-como-categoria-nombrada
+  - aie-code-solo-contenido-de-teaser-sin-practica
+  priority: 0.9
+  status: open
+  created: '2026-10-31'
+- id: gap-5f6b2f4b58
+  type: contradiction
+  description: Unresolved contradiction between 'aie-code-solo-un-eslabon-debil-de-tres-no-prueba-cluster-vacio'
+    and 'cluster-aie-code-topic-drift-tres-items-sin-ejes-del-brief'
+  related_notes:
+  - aie-code-solo-un-eslabon-debil-de-tres-no-prueba-cluster-vacio
+  - cluster-aie-code-topic-drift-tres-items-sin-ejes-del-brief
+  priority: 0.9
+  status: open
+  created: '2026-10-31'
 - id: gap-808c2fc462
   type: contradiction
   description: Unresolved contradiction between 'arquitectura-de-prompt-cambia-sin-aviso'
@@ -1524,6 +1554,15 @@ _Updated 2026-10-30 — 1087 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-15'
+- id: gap-cb73e785fd
+  type: open_question
+  description: Note 'aie-code-conferencia-de-agentes-de-codigo-como-categoria-nombrada'
+    has decayed — does it still hold?
+  related_notes:
+  - aie-code-conferencia-de-agentes-de-codigo-como-categoria-nombrada
+  priority: 0.7
+  status: open
+  created: '2026-10-31'
 - id: gap-d2fd9c98e6
   type: open_question
   description: Note 'animating-zooming-css-transform-order-importa-a-veces' has decayed
@@ -1650,6 +1689,15 @@ _Updated 2026-10-30 — 1087 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-07'
+- id: gap-cadda3d08b
+  type: open_question
+  description: Note 'construccion-vs-validacion-presupuestar-por-separado-con-agentes'
+    has decayed — does it still hold?
+  related_notes:
+  - construccion-vs-validacion-presupuestar-por-separado-con-agentes
+  priority: 0.7
+  status: open
+  created: '2026-10-31'
 - id: gap-14dab2c3b4
   type: open_question
   description: Note 'css-transform-order-importa-a-veces-sin-detalle-de-casos' has
@@ -3477,6 +3525,15 @@ _Updated 2026-10-30 — 1087 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-b788e1d216
+  type: thin_evidence
+  description: Note 'aie-code-conferencia-de-agentes-de-codigo-como-categoria-nombrada'
+    rests on 1 source(s)
+  related_notes:
+  - aie-code-conferencia-de-agentes-de-codigo-como-categoria-nombrada
+  priority: 0.5
+  status: open
+  created: '2026-10-31'
 - id: gap-d13a3a334f
   type: thin_evidence
   description: Note 'animating-zooming-css-transform-order-importa-a-veces' rests
@@ -5256,6 +5313,15 @@ _Updated 2026-10-30 — 1087 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-19'
+- id: gap-0ee0a610f3
+  type: thin_evidence
+  description: Note 'aie-code-puntero-a-observar-no-hallazgo-sobre-practica' rests
+    on 1 source(s)
+  related_notes:
+  - aie-code-puntero-a-observar-no-hallazgo-sobre-practica
+  priority: 0.5
+  status: open
+  created: '2026-10-31'
 - id: gap-157496089a
   type: thin_evidence
   description: Note 'animating-zooming-css-fuera-del-brief-de-agentes-y-liderazgo'
@@ -6544,6 +6610,23 @@ _Updated 2026-10-30 — 1087 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-27'
+- id: gap-24394e36ce
+  type: thin_evidence
+  description: Note 'aie-code-solo-contenido-de-teaser-sin-practica' rests on 1 source(s)
+  related_notes:
+  - aie-code-solo-contenido-de-teaser-sin-practica
+  priority: 0.5
+  status: open
+  created: '2026-10-31'
+- id: gap-f6d8c2e168
+  type: thin_evidence
+  description: Note 'analisis-900-herramientas-ai-open-source-solo-framing-y-changelog'
+    rests on 1 source(s)
+  related_notes:
+  - analisis-900-herramientas-ai-open-source-solo-framing-y-changelog
+  priority: 0.5
+  status: open
+  created: '2026-10-31'
 - id: gap-d1ad87a2d7
   type: thin_evidence
   description: Note 'analogia-llm-as-a-judge-a-agentes-no-sostenida-por-el-stub' rests
@@ -8468,6 +8551,14 @@ _Updated 2026-10-30 — 1087 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-ef26a33d40
+  type: thin_evidence
+  description: Note 'newport-incidente-no-es-guia-de-ingenieria' rests on 1 source(s)
+  related_notes:
+  - newport-incidente-no-es-guia-de-ingenieria
+  priority: 0.5
+  status: open
+  created: '2026-10-31'
 - id: gap-44677e9e43
   type: thin_evidence
   description: Note 'nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria-2'

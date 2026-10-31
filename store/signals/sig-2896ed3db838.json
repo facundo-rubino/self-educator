@@ -1,0 +1,29 @@
+{
+  "id": "sig-2896ed3db838",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "We’re MOSS, the team behind MOSS-Image, MOSS-TTS, and more — Ask Us Anything!",
+  "member_doc_ids": [
+    "42aa0bc3807d6cad"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "t3_1xjhpn9",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 0.2547,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.2637,
+  "first_seen": "2026-10-30T15:00:55Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
