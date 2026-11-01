@@ -12,12 +12,12 @@
   "theme": "productividad-estudio",
   "scores": {
     "relevance": 0.3333,
-    "novelty": 0.4866,
+    "novelty": 0.0,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.4383,
+  "aggregate_score": 0.3167,
   "first_seen": "2026-10-30T05:00:00-07:00",
   "sources_count": 1,
   "status": "candidate",

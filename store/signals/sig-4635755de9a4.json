@@ -22,7 +22,7 @@
   "aggregate_score": 0.55,
   "first_seen": "2024-03-14T00:00:00Z",
   "sources_count": 1,
-  "status": "promoted",
+  "status": "candidate",
   "outcome": {
     "reviewed_at": null,
     "verdict": null,

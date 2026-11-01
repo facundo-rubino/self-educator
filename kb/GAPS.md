@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-10-31 — 1097 entries, highest priority first._
+_Updated 2026-11-01 — 1109 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1797,6 +1797,15 @@ _Updated 2026-10-31 — 1097 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-20'
+- id: gap-bc8bdbc060
+  type: open_question
+  description: Note 'finedna-dataset-announcement-single-source' has decayed — does
+    it still hold?
+  related_notes:
+  - finedna-dataset-announcement-single-source
+  priority: 0.7
+  status: open
+  created: '2026-11-01'
 - id: gap-be53812b8c
   type: open_question
   description: Note 'glm-5-3-labs-chinos-sin-detalle' has decayed — does it still
@@ -1905,6 +1914,15 @@ _Updated 2026-10-31 — 1097 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-6cc6e8dfd7
+  type: open_question
+  description: Note 'lenguaje-como-frontera-epistemica-wittgenstein' has decayed —
+    does it still hold?
+  related_notes:
+  - lenguaje-como-frontera-epistemica-wittgenstein
+  priority: 0.7
+  status: open
+  created: '2026-11-01'
 - id: gap-c6d67eb92e
   type: open_question
   description: Note 'lesswrong-reading-list-modelos-abiertos-como-listado-sin-tesis'
@@ -2354,6 +2372,15 @@ _Updated 2026-10-31 — 1097 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-17'
+- id: gap-f269923825
+  type: open_question
+  description: Note 'finedna-receta-abierta-como-patron-de-handoff-reproducible' has
+    decayed — does it still hold?
+  related_notes:
+  - finedna-receta-abierta-como-patron-de-handoff-reproducible
+  priority: 0.7
+  status: open
+  created: '2026-11-01'
 - id: gap-0a8715ebae
   type: open_question
   description: Note 'gate-de-cobertura-tematica-en-el-filtro-determinista' has decayed
@@ -2785,6 +2812,15 @@ _Updated 2026-10-31 — 1097 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-22'
+- id: gap-3bccdfd6b2
+  type: open_question
+  description: Note 'llm-assisted-software-work-hilo-fino-y-disputado-en-cluster-heterogeneo'
+    has decayed — does it still hold?
+  related_notes:
+  - llm-assisted-software-work-hilo-fino-y-disputado-en-cluster-heterogeneo
+  priority: 0.7
+  status: open
+  created: '2026-11-01'
 - id: gap-b640ba2b7f
   type: open_question
   description: Note 'mcp-cadencia-date-versioned-descartada-para-brief' has decayed
@@ -3898,6 +3934,14 @@ _Updated 2026-10-31 — 1097 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-a8c033da49
+  type: thin_evidence
+  description: Note 'finedna-dataset-announcement-single-source' rests on 1 source(s)
+  related_notes:
+  - finedna-dataset-announcement-single-source
+  priority: 0.5
+  status: open
+  created: '2026-11-01'
 - id: gap-4f11faabcf
   type: thin_evidence
   description: Note 'github-to-sqlite-2-9-1-fix-compatibilidad-sqlite-utils-4-x' rests
@@ -4884,6 +4928,23 @@ _Updated 2026-10-31 — 1097 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-22'
+- id: gap-3b6de0e5df
+  type: thin_evidence
+  description: Note 'finedna-receta-abierta-como-patron-de-handoff-reproducible' rests
+    on 1 source(s)
+  related_notes:
+  - finedna-receta-abierta-como-patron-de-handoff-reproducible
+  priority: 0.5
+  status: open
+  created: '2026-11-01'
+- id: gap-5d7288ca72
+  type: thin_evidence
+  description: Note 'finedna-receta-tres-etapas-midtraining-sft-rl' rests on 1 source(s)
+  related_notes:
+  - finedna-receta-tres-etapas-midtraining-sft-rl
+  priority: 0.5
+  status: open
+  created: '2026-11-01'
 - id: gap-bb744359aa
   type: thin_evidence
   description: Note 'fragmento-corto-con-thin-score-se-descarta-antes-de-clustering'
@@ -5598,6 +5659,24 @@ _Updated 2026-10-31 — 1097 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-29'
+- id: gap-5e8f4e0676
+  type: thin_evidence
+  description: Note 'finedna-analogia-curriculum-entrenamiento-docencia-no-demostrada'
+    rests on 1 source(s)
+  related_notes:
+  - finedna-analogia-curriculum-entrenamiento-docencia-no-demostrada
+  priority: 0.5
+  status: open
+  created: '2026-11-01'
+- id: gap-cc2c062d43
+  type: thin_evidence
+  description: Note 'finedna-verifiable-prompts-como-disciplina-de-criterios-de-aceptacion'
+    rests on 1 source(s)
+  related_notes:
+  - finedna-verifiable-prompts-como-disciplina-de-criterios-de-aceptacion
+  priority: 0.5
+  status: open
+  created: '2026-11-01'
 - id: gap-cab17378a7
   type: thin_evidence
   description: Note 'fix-like-no-one-s-watching-mantenimiento-sin-evidencia' rests
@@ -7602,6 +7681,32 @@ _Updated 2026-10-31 — 1097 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-13'
+- id: gap-2af4f67b7e
+  type: thin_evidence
+  description: Note 'finedna-carbon-x-claim-mas-fuerte-en-dna-sin-benchmarks' rests
+    on 1 source(s)
+  related_notes:
+  - finedna-carbon-x-claim-mas-fuerte-en-dna-sin-benchmarks
+  priority: 0.5
+  status: open
+  created: '2026-11-01'
+- id: gap-ff3e29a4f3
+  type: thin_evidence
+  description: Note 'finedna-fuera-de-los-ejes-del-brief' rests on 1 source(s)
+  related_notes:
+  - finedna-fuera-de-los-ejes-del-brief
+  priority: 0.5
+  status: open
+  created: '2026-11-01'
+- id: gap-a982941192
+  type: thin_evidence
+  description: Note 'finedna-superlativo-largest-dataset-sin-medicion' rests on 1
+    source(s)
+  related_notes:
+  - finedna-superlativo-largest-dataset-sin-medicion
+  priority: 0.5
+  status: open
+  created: '2026-11-01'
 - id: gap-312c0b4ed3
   type: thin_evidence
   description: Note 'fix-like-no-one-s-watching-argumento-sin-corroboracion' rests
