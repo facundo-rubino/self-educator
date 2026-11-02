@@ -1,0 +1,29 @@
+{
+  "id": "sig-39bb20b3da40",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "[GLB-3D-Coder] A tiny 4B coding model that creates 3D assets for Godot and other game engines",
+  "member_doc_ids": [
+    "2fef574d963a1660"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "t3_1xlh0zw",
+  "theme": "productividad-estudio",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 0.6211,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.4719,
+  "first_seen": "2026-11-01T22:56:19Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

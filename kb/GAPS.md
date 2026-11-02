@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-01 — 1109 entries, highest priority first._
+_Updated 2026-11-02 — 1131 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -822,6 +822,16 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-31'
+- id: gap-265bac9e76
+  type: contradiction
+  description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
+    and 'arca-evidencia-un-solo-documento-sin-metricas'
+  related_notes:
+  - arca-agentes-largo-horizonte-memoria-harness
+  - arca-evidencia-un-solo-documento-sin-metricas
+  priority: 0.9
+  status: open
+  created: '2026-11-02'
 - id: gap-808c2fc462
   type: contradiction
   description: Unresolved contradiction between 'arquitectura-de-prompt-cambia-sin-aviso'
@@ -1052,6 +1062,16 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-25'
+- id: gap-1360c8daef
+  type: contradiction
+  description: Unresolved contradiction between 'estado-obsoleto-en-memoria-persistente-de-agentes'
+    and 'memoria-persistente-como-eje-de-agente-de-largo-horizonte'
+  related_notes:
+  - estado-obsoleto-en-memoria-persistente-de-agentes
+  - memoria-persistente-como-eje-de-agente-de-largo-horizonte
+  priority: 0.9
+  status: open
+  created: '2026-11-02'
 - id: gap-cacb4173b2
   type: contradiction
   description: Unresolved contradiction between 'etiqueta-determinista-como-falso-positivo-de-categoria'
@@ -1082,6 +1102,26 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-20'
+- id: gap-669f2e9bcb
+  type: contradiction
+  description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
+    and 'generalizar-de-finanzas-a-ingenieria-o-docencia-es-extrapolacion'
+  related_notes:
+  - arca-agentes-largo-horizonte-memoria-harness
+  - generalizar-de-finanzas-a-ingenieria-o-docencia-es-extrapolacion
+  priority: 0.9
+  status: open
+  created: '2026-11-02'
+- id: gap-133726bb88
+  type: contradiction
+  description: Unresolved contradiction between 'como-generaliza-un-harness-de-dominio-a-otros-dominios'
+    and 'generalizar-de-finanzas-a-ingenieria-o-docencia-es-extrapolacion'
+  related_notes:
+  - como-generaliza-un-harness-de-dominio-a-otros-dominios
+  - generalizar-de-finanzas-a-ingenieria-o-docencia-es-extrapolacion
+  priority: 0.9
+  status: open
+  created: '2026-11-02'
 - id: gap-b1660e90b1
   type: contradiction
   description: Unresolved contradiction between 'goodbye-clean-code-mapea-a-temas-del-brief-sin-evidencia'
@@ -1590,6 +1630,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-28'
+- id: gap-a72c4b03db
+  type: open_question
+  description: Note 'arca-agentes-largo-horizonte-memoria-harness' has decayed — does
+    it still hold?
+  related_notes:
+  - arca-agentes-largo-horizonte-memoria-harness
+  priority: 0.7
+  status: open
+  created: '2026-11-02'
 - id: gap-2e558d50f4
   type: open_question
   description: Note 'aria-describedby-no-basta-para-tooltips-accesibles-integracion'
@@ -1644,6 +1693,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-30'
+- id: gap-4d8cb64323
+  type: open_question
+  description: Note 'checkpoints-y-handoffs-en-workflows-agenticos-de-varios-dias'
+    has decayed — does it still hold?
+  related_notes:
+  - checkpoints-y-handoffs-en-workflows-agenticos-de-varios-dias
+  priority: 0.7
+  status: open
+  created: '2026-11-02'
 - id: gap-a64ed1dcbf
   type: open_question
   description: Note 'claude-5-5-tier-etiqueta-de-nivel-sin-medicion' has decayed —
@@ -1842,6 +1900,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-24'
+- id: gap-eb74eabf88
+  type: open_question
+  description: Note 'harness-propio-frente-a-framework-generico-caso-arca' has decayed
+    — does it still hold?
+  related_notes:
+  - harness-propio-frente-a-framework-generico-caso-arca
+  priority: 0.7
+  status: open
+  created: '2026-11-02'
 - id: gap-701b7e5714
   type: open_question
   description: Note 'how-far-weve-come-post-comunitario-sin-contenido-tecnico' has
@@ -1986,6 +2053,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-13'
+- id: gap-0d1c4c4a7a
+  type: open_question
+  description: Note 'memoria-persistente-como-eje-de-agente-de-largo-horizonte' has
+    decayed — does it still hold?
+  related_notes:
+  - memoria-persistente-como-eje-de-agente-de-largo-horizonte
+  priority: 0.7
+  status: open
+  created: '2026-11-02'
 - id: gap-2908c9e5a9
   type: open_question
   description: Note 'meta-muse-wonder-wonder-full-titular-sin-evidencia' has decayed
@@ -2381,6 +2457,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-01'
+- id: gap-3f0b79b803
+  type: open_question
+  description: Note 'finedna-receta-tres-etapas-midtraining-sft-rl' has decayed —
+    does it still hold?
+  related_notes:
+  - finedna-receta-tres-etapas-midtraining-sft-rl
+  priority: 0.7
+  status: open
+  created: '2026-11-02'
 - id: gap-0a8715ebae
   type: open_question
   description: Note 'gate-de-cobertura-tematica-en-el-filtro-determinista' has decayed
@@ -2615,6 +2700,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-06'
+- id: gap-a64a7d8d68
+  type: open_question
+  description: Note 'como-generaliza-un-harness-de-dominio-a-otros-dominios' has decayed
+    — does it still hold?
+  related_notes:
+  - como-generaliza-un-harness-de-dominio-a-otros-dominios
+  priority: 0.7
+  status: open
+  created: '2026-11-02'
 - id: gap-e04f0e0a48
   type: open_question
   description: Note 'corte-de-precios-llm-80-por-ciento-pregunta-sin-evidencia' has
@@ -2830,6 +2924,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-21'
+- id: gap-1b28fbe76a
+  type: open_question
+  description: Note 'memoria-persistente-para-progreso-de-alumnos-hipotesis-sin-fe'
+    has decayed — does it still hold?
+  related_notes:
+  - memoria-persistente-para-progreso-de-alumnos-hipotesis-sin-fe
+  priority: 0.7
+  status: open
+  created: '2026-11-02'
 - id: gap-be2db53ab7
   type: open_question
   description: Note 'meta-shakes-up-frontiers-single-source-headline-sin-cuerpo' has
@@ -3217,6 +3320,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-21'
+- id: gap-bd2825ed78
+  type: open_question
+  description: Note 'estado-obsoleto-en-memoria-persistente-de-agentes' has decayed
+    — does it still hold?
+  related_notes:
+  - estado-obsoleto-en-memoria-persistente-de-agentes
+  priority: 0.7
+  status: open
+  created: '2026-11-02'
 - id: gap-6e968d60e6
   type: open_question
   description: Note 'etiqueta-tier-nombrada-por-competidor-como-categoria-error' has
@@ -3597,6 +3709,14 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-28'
+- id: gap-7e35cdade9
+  type: thin_evidence
+  description: Note 'arca-agentes-largo-horizonte-memoria-harness' rests on 1 source(s)
+  related_notes:
+  - arca-agentes-largo-horizonte-memoria-harness
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-a442abd442
   type: thin_evidence
   description: Note 'aria-describedby-no-basta-para-tooltips-accesibles-integracion'
@@ -3651,6 +3771,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-30'
+- id: gap-ec9f0350d1
+  type: thin_evidence
+  description: Note 'checkpoints-y-handoffs-en-workflows-agenticos-de-varios-dias'
+    rests on 1 source(s)
+  related_notes:
+  - checkpoints-y-handoffs-en-workflows-agenticos-de-varios-dias
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-05d3bce7ee
   type: thin_evidence
   description: Note 'claude-5-5-tier-etiqueta-de-nivel-sin-medicion' rests on 1 source(s)
@@ -3993,6 +4122,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-22'
+- id: gap-d5b267eb2b
+  type: thin_evidence
+  description: Note 'harness-propio-frente-a-framework-generico-caso-arca' rests on
+    1 source(s)
+  related_notes:
+  - harness-propio-frente-a-framework-generico-caso-arca
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-c87e577535
   type: thin_evidence
   description: Note 'how-far-weve-come-post-comunitario-sin-contenido-tecnico' rests
@@ -4302,6 +4440,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-12'
+- id: gap-007edac4e4
+  type: thin_evidence
+  description: Note 'memoria-persistente-como-eje-de-agente-de-largo-horizonte' rests
+    on 1 source(s)
+  related_notes:
+  - memoria-persistente-como-eje-de-agente-de-largo-horizonte
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-9a8cab4000
   type: thin_evidence
   description: Note 'meta-muse-wonder-wonder-full-titular-sin-evidencia' rests on
@@ -5544,6 +5691,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-21'
+- id: gap-2964d3f7b5
+  type: thin_evidence
+  description: Note 'como-generaliza-un-harness-de-dominio-a-otros-dominios' rests
+    on 1 source(s)
+  related_notes:
+  - como-generaliza-un-harness-de-dominio-a-otros-dominios
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-f388a4cd59
   type: thin_evidence
   description: Note 'corte-de-precios-llm-80-por-ciento-pregunta-sin-evidencia' rests
@@ -5943,6 +6099,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-7df4a961f9
+  type: thin_evidence
+  description: Note 'memoria-persistente-para-progreso-de-alumnos-hipotesis-sin-fe'
+    rests on 1 source(s)
+  related_notes:
+  - memoria-persistente-para-progreso-de-alumnos-hipotesis-sin-fe
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-3530d1da45
   type: thin_evidence
   description: Note 'meta-shakes-up-frontiers-single-source-headline-sin-cuerpo' rests
@@ -6803,6 +6968,14 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-98436485aa
+  type: thin_evidence
+  description: Note 'arca-evidencia-un-solo-documento-sin-metricas' rests on 1 source(s)
+  related_notes:
+  - arca-evidencia-un-solo-documento-sin-metricas
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-4508dc370c
   type: thin_evidence
   description: Note 'argumento-ex-silentio-en-corpus-truncado' rests on 1 source(s)
@@ -7455,6 +7628,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-26'
+- id: gap-41e5723cad
+  type: thin_evidence
+  description: Note 'coste-y-latencia-de-workflows-de-varios-dias-no-discutidos' rests
+    on 1 source(s)
+  related_notes:
+  - coste-y-latencia-de-workflows-de-varios-dias-no-discutidos
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-562a56b393
   type: thin_evidence
   description: Note 'decision-models-claim-sin-especificacion' rests on 1 source(s)
@@ -7603,6 +7785,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-21'
+- id: gap-c301c8b010
+  type: thin_evidence
+  description: Note 'estado-obsoleto-en-memoria-persistente-de-agentes' rests on 1
+    source(s)
+  related_notes:
+  - estado-obsoleto-en-memoria-persistente-de-agentes
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-adb1b01964
   type: thin_evidence
   description: Note 'etiqueta-cluster-desde-titulo-de-un-documento' rests on 1 source(s)
@@ -7829,6 +8020,15 @@ _Updated 2026-11-01 — 1109 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-03075cf36b
+  type: thin_evidence
+  description: Note 'generalizar-de-finanzas-a-ingenieria-o-docencia-es-extrapolacion'
+    rests on 1 source(s)
+  related_notes:
+  - generalizar-de-finanzas-a-ingenieria-o-docencia-es-extrapolacion
+  priority: 0.5
+  status: open
+  created: '2026-11-02'
 - id: gap-a007e6e201
   type: thin_evidence
   description: Note 'generalizar-desde-goodbye-clean-code-sin-corroboracion' rests
