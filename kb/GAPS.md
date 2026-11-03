@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-02 — 1131 entries, highest priority first._
+_Updated 2026-11-03 — 1149 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1002,6 +1002,16 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-12'
+- id: gap-4a8b4d5df7
+  type: contradiction
+  description: Unresolved contradiction between 'cluster-legora-dos-documentos-misma-serie-sin-corroboracion'
+    and 'constraint-de-evaluacion-sin-trazas-legora'
+  related_notes:
+  - cluster-legora-dos-documentos-misma-serie-sin-corroboracion
+  - constraint-de-evaluacion-sin-trazas-legora
+  priority: 0.9
+  status: open
+  created: '2026-11-03'
 - id: gap-1de25a3f14
   type: contradiction
   description: Unresolved contradiction between 'ai-coach-como-herramienta-de-foco-personal'
@@ -1222,6 +1232,16 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-29'
+- id: gap-3748b593c4
+  type: contradiction
+  description: Unresolved contradiction between 'constraint-de-evaluacion-sin-trazas-legora'
+    and 'legora-sin-contenido-sobre-docencia-liderazgo-estimacion'
+  related_notes:
+  - constraint-de-evaluacion-sin-trazas-legora
+  - legora-sin-contenido-sobre-docencia-liderazgo-estimacion
+  priority: 0.9
+  status: open
+  created: '2026-11-03'
 - id: gap-06a5fb8b2c
   type: contradiction
   description: Unresolved contradiction between 'llm-anthropic-0-29-topic-match-espurio-por-vocabulario'
@@ -1312,6 +1332,16 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-22'
+- id: gap-e5695e54fb
+  type: contradiction
+  description: Unresolved contradiction between 'constraint-de-evaluacion-sin-trazas-legora'
+    and 'no-trace-es-especifico-de-dominios-con-confidencialidad-de-cliente'
+  related_notes:
+  - constraint-de-evaluacion-sin-trazas-legora
+  - no-trace-es-especifico-de-dominios-con-confidencialidad-de-cliente
+  priority: 0.9
+  status: open
+  created: '2026-11-03'
 - id: gap-67a8a7af24
   type: contradiction
   description: Unresolved contradiction between 'post-css-sin-engagement-y-relevancia-tangencial-al-brief'
@@ -1747,6 +1777,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-07'
+- id: gap-777927a907
+  type: open_question
+  description: Note 'constraint-de-evaluacion-sin-trazas-legora' has decayed — does
+    it still hold?
+  related_notes:
+  - constraint-de-evaluacion-sin-trazas-legora
+  priority: 0.7
+  status: open
+  created: '2026-11-03'
 - id: gap-cadda3d08b
   type: open_question
   description: Note 'construccion-vs-validacion-presupuestar-por-separado-con-agentes'
@@ -1981,6 +2020,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-6cf1b9c25d
+  type: open_question
+  description: Note 'legora-millon-de-celdas-revisiones-tabulares-como-superficie-de-eval'
+    has decayed — does it still hold?
+  related_notes:
+  - legora-millon-de-celdas-revisiones-tabulares-como-superficie-de-eval
+  priority: 0.7
+  status: open
+  created: '2026-11-03'
 - id: gap-6cc6e8dfd7
   type: open_question
   description: Note 'lenguaje-como-frontera-epistemica-wittgenstein' has decayed —
@@ -2026,6 +2074,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-12'
+- id: gap-22b69292a7
+  type: open_question
+  description: Note 'llm-para-etiquetado-automatico-de-blog-posts' has decayed — does
+    it still hold?
+  related_notes:
+  - llm-para-etiquetado-automatico-de-blog-posts
+  priority: 0.7
+  status: open
+  created: '2026-11-03'
 - id: gap-0a01043681
   type: open_question
   description: Note 'llm-tools-datasette-0-1-1-fix-dependencia-transitiva-httpx2'
@@ -2143,6 +2200,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-26'
+- id: gap-ed480e798d
+  type: open_question
+  description: Note 'presion-sobre-facturacion-por-horas-como-efecto-de-agentes' has
+    decayed — does it still hold?
+  related_notes:
+  - presion-sobre-facturacion-por-horas-como-efecto-de-agentes
+  priority: 0.7
+  status: open
+  created: '2026-11-03'
 - id: gap-e971c02252
   type: open_question
   description: Note 'prototipado-por-composicion-de-apis-sin-entrenamiento' has decayed
@@ -2583,6 +2649,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-91db97f7a5
+  type: open_question
+  description: Note 'legora-cto-jacob-lauritzen-legal-ai' has decayed — does it still
+    hold?
+  related_notes:
+  - legora-cto-jacob-lauritzen-legal-ai
+  priority: 0.7
+  status: open
+  created: '2026-11-03'
 - id: gap-8ce5261ff7
   type: open_question
   description: Note 'a-chain-reaction-artefacto-de-metadatos-no-cuerpo-de-evidencia'
@@ -2682,6 +2757,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-19'
+- id: gap-9490904af0
+  type: open_question
+  description: Note 'billable-hour-como-palanca-de-alcance-con-stakeholders-hipotesis'
+    has decayed — does it still hold?
+  related_notes:
+  - billable-hour-como-palanca-de-alcance-con-stakeholders-hipotesis
+  priority: 0.7
+  status: open
+  created: '2026-11-03'
 - id: gap-59e86a9e5f
   type: open_question
   description: Note 'cadencia-de-release-unificada-sugiere-monorepo-mcp' has decayed
@@ -2745,6 +2829,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-20'
+- id: gap-7ad7b0f334
+  type: open_question
+  description: Note 'disenar-evals-que-no-dependan-de-inspeccionar-datos-crudos-hipotesis'
+    has decayed — does it still hold?
+  related_notes:
+  - disenar-evals-que-no-dependan-de-inspeccionar-datos-crudos-hipotesis
+  priority: 0.7
+  status: open
+  created: '2026-11-03'
 - id: gap-b2fd0b0bf7
   type: open_question
   description: Note 'docs-agentes-codigo-sembrables-sin-soporte-para-el-bof' has decayed
@@ -3131,6 +3224,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-02'
+- id: gap-a45758c8ed
+  type: open_question
+  description: Note 'tiempo-de-depuracion-a-ciegas-como-partida-de-estimacion-bajo-sin-trazas'
+    has decayed — does it still hold?
+  related_notes:
+  - tiempo-de-depuracion-a-ciegas-como-partida-de-estimacion-bajo-sin-trazas
+  priority: 0.7
+  status: open
+  created: '2026-11-03'
 - id: gap-5030d3d882
   type: open_question
   description: Note 'afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion'
@@ -3868,6 +3970,14 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-542beee691
+  type: thin_evidence
+  description: Note 'constraint-de-evaluacion-sin-trazas-legora' rests on 1 source(s)
+  related_notes:
+  - constraint-de-evaluacion-sin-trazas-legora
+  priority: 0.5
+  status: open
+  created: '2026-11-03'
 - id: gap-19d50030bf
   type: thin_evidence
   description: Note 'construccion-vs-validacion-presupuestar-por-separado-con-agentes'
@@ -4274,6 +4384,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-22'
+- id: gap-f4eb800da4
+  type: thin_evidence
+  description: Note 'legora-millon-de-celdas-revisiones-tabulares-como-superficie-de-eval'
+    rests on 1 source(s)
+  related_notes:
+  - legora-millon-de-celdas-revisiones-tabulares-como-superficie-de-eval
+  priority: 0.5
+  status: open
+  created: '2026-11-03'
 - id: gap-658f7a496e
   type: thin_evidence
   description: Note 'lenguaje-como-frontera-epistemica-wittgenstein' rests on 1 source(s)
@@ -4552,6 +4671,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-26'
+- id: gap-d04db65882
+  type: thin_evidence
+  description: Note 'presion-sobre-facturacion-por-horas-como-efecto-de-agentes' rests
+    on 1 source(s)
+  related_notes:
+  - presion-sobre-facturacion-por-horas-como-efecto-de-agentes
+  priority: 0.5
+  status: open
+  created: '2026-11-03'
 - id: gap-38095f1cd0
   type: thin_evidence
   description: Note 'progreso-agentes-sin-superinteligencia-esperanza-vs-pares-evidencia-emudhra'
@@ -5396,6 +5524,14 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-4d58e591d5
+  type: thin_evidence
+  description: Note 'legora-cto-jacob-lauritzen-legal-ai' rests on 1 source(s)
+  related_notes:
+  - legora-cto-jacob-lauritzen-legal-ai
+  priority: 0.5
+  status: open
+  created: '2026-11-03'
 - id: gap-18e9ca5abf
   type: thin_evidence
   description: Note 'newport-ataque-openai-como-guerra-de-civilizaciones-de-agentes'
@@ -5593,6 +5729,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-08'
+- id: gap-3cd71652be
+  type: thin_evidence
+  description: Note 'billable-hour-como-palanca-de-alcance-con-stakeholders-hipotesis'
+    rests on 1 source(s)
+  related_notes:
+  - billable-hour-como-palanca-de-alcance-con-stakeholders-hipotesis
+  priority: 0.5
+  status: open
+  created: '2026-11-03'
 - id: gap-dbdc3ec554
   type: thin_evidence
   description: Note 'brooks-complejidad-esencial-unica-conexion-tangencial-al-brief'
@@ -6434,6 +6579,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-02'
+- id: gap-e806641965
+  type: thin_evidence
+  description: Note 'tiempo-de-depuracion-a-ciegas-como-partida-de-estimacion-bajo-sin-trazas'
+    rests on 1 source(s)
+  related_notes:
+  - tiempo-de-depuracion-a-ciegas-como-partida-de-estimacion-bajo-sin-trazas
+  priority: 0.5
+  status: open
+  created: '2026-11-03'
 - id: gap-782e954f9a
   type: thin_evidence
   description: Note 'tooltip-aria-describedby-insuficiente-anecdota-sin-mecanismo'
@@ -8864,6 +9018,15 @@ _Updated 2026-11-02 — 1131 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-31'
+- id: gap-a43581b40f
+  type: thin_evidence
+  description: Note 'no-trace-es-especifico-de-dominios-con-confidencialidad-de-cliente'
+    rests on 1 source(s)
+  related_notes:
+  - no-trace-es-especifico-de-dominios-con-confidencialidad-de-cliente
+  priority: 0.5
+  status: open
+  created: '2026-11-03'
 - id: gap-44677e9e43
   type: thin_evidence
   description: Note 'nombrar-figuras-publicas-no-demuestra-practica-de-ingenieria-2'
