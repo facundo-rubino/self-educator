@@ -9,16 +9,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-02'
-updated: '2026-11-02'
+updated: '2026-11-04'
 sources:
 - 5e81338675ea4d09
 tags:
 - docencia
-- memoria-persistente
 - feedback
+- hipotesis
+- memoria
+- memoria-persistente
 base_confidence: 0.1
 half_life_days: 120
-last_reinforced: '2026-11-02'
+last_reinforced: '2026-11-04'
 provenance:
   scale: S
   query: null
@@ -27,20 +29,23 @@ links:
   type: derived_from
 - to: ai-coach-ensamblado-reutilizable-para-feedback-sin-claim
   type: relates_to
+- to: docencia-entry-level-mudada-a-profile-teaching-de-pogba
+  type: relates_to
 ---
 
 ## What it is
-Una extrapolación posible del caso Arca: un agente con memoria persistente podría recordar el progreso de cada alumno entre clases y con ello cambiar el diseño de ejercicios y de feedback asíncrono.
+Se plantea que un agente con memoria persistente podría recordar el progreso del alumno entre sesiones. El documento no aporta ninguna evidencia de que esto funcione en contextos educativos, y la docencia entry-level está fuera del alcance de este brief.
 
 ## Evidence
-- El caso Arca usa memoria persistente en trabajo financiero; no menciona docencia ni alumnos — source: 5e81338675ea4d09
-- Ningún documento del cluster aporta evidencia sobre uso en enseñanza — source: 5e81338675ea4d09
+- El head of AI de Arca discute el uso de memoria persistente en agentes de IA — fuente: 5e81338675ea4d09
+- El contexto de aplicación es trabajo financiero, no ingeniería de software ni docencia — fuente: 5e81338675ea4d09
 
 ## Why it matters
-La idea es plausible pero no está ni siquiera formulada por el documento: es del analista. Registrarla como pregunta evita que se cuele como implicación establecida del brief de docencia.
+Es una hipótesis plausible pero sin respaldo: la única fuente describe finanzas. Registrarla evita que se cuele como hallazgo en una nota de docencia.
 
-Deriva de la nota sobre memoria persistente. Se relaciona con la pregunta ya registrada sobre reutilizar un ensamblado para feedback sin claim que lo sostenga.
+Se deriva de la nota sobre memoria persistente como eje. Queda fuera del alcance de este brief, cuya docencia entry-level se movió al profile `teaching` de pogba.
 
 ## Links
 - derived_from → [[memoria-persistente-como-eje-de-agente-de-largo-horizonte]]
 - relates_to → [[ai-coach-ensamblado-reutilizable-para-feedback-sin-claim]]
+- relates_to → [[docencia-entry-level-mudada-a-profile-teaching-de-pogba]]

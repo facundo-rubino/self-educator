@@ -9,18 +9,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-02'
-updated: '2026-11-02'
+updated: '2026-11-04'
 sources:
 - 5e81338675ea4d09
 tags:
 - agentes
-- memoria-persistente
+- finanzas
 - harness
 - largo-horizonte
-- finanzas
+- long-horizon
+- memoria
+- memoria-persistente
 base_confidence: 0.18
 half_life_days: 180
-last_reinforced: '2026-11-02'
+last_reinforced: '2026-11-04'
 provenance:
   scale: S
   query: null
@@ -33,24 +35,36 @@ links:
   type: supports
 - to: generalizar-un-proyecto-personal-a-practica-profesional-es-inferencia
   type: supports
+- to: memoria-persistente-como-eje-de-agente-de-largo-horizonte
+  type: supports
+- to: harness-propio-frente-a-framework-generico-caso-arca
+  type: supports
+- to: checkpoints-y-handoffs-en-workflows-agenticos-de-varios-dias
+  type: relates_to
+- to: arca-evidencia-un-solo-documento-sin-metricas
+  type: relates_to
 ---
 
 ## What it is
-Caso de industria: Arca aplica agentes de IA a trabajo financiero de largo horizonte, con memoria persistente entre sesiones, un harness construido a medida en vez de un framework genérico, y workflows que se extienden durante días.
+El head of AI de Arca describe tres ejes de su práctica con agentes: memoria persistente, un harness propio en lugar de tooling genérico, y flujos agénticos que abarcan varios días (long-horizon), no tareas puntuales. El contexto de aplicación es trabajo financiero, no ingeniería de software ni docencia.
 
 ## Evidence
-- El flujo agéntico de Arca usa memoria persistente como componente central — source: 5e81338675ea4d09
-- Arca construyó un harness propio en lugar de usar uno genérico y lo presenta como beneficio — source: 5e81338675ea4d09
-- Los workflows descritos abarcan varios días: son de largo horizonte, no de una sola interacción — source: 5e81338675ea4d09
-- El dominio del caso es trabajo financiero, no ingeniería de software ni enseñanza — source: 5e81338675ea4d09
+- El head of AI de Arca discute el uso de memoria persistente en agentes de IA — fuente: 5e81338675ea4d09
+- Se defiende el beneficio de construir un harness propio en lugar de depender solo de tooling genérico — fuente: 5e81338675ea4d09
+- Se describen flujos agénticos que abarcan varios días (long-horizon), no solo tareas puntuales — fuente: 5e81338675ea4d09
+- El contexto de aplicación es trabajo financiero, no ingeniería de software ni docencia — fuente: 5e81338675ea4d09
 
 ## Why it matters
-Es un caso de industria que describe tres componentes (memoria entre sesiones, andamiaje propio, horizonte de días) sin métricas, sin baseline y sin detalles de fallo. Para el brief sirve como vocabulario para nombrar problemas, no como evidencia de que el patrón funcione en ingeniería o docencia.
+Es un caso de vendor que articula el patrón «memoria persistente + harness propio + horizontes de días». Como descripción de práctica es débil (entrevista promocional, sin resultados medidos), pero sirve como vocabulario para discutir delegación por hitos frente a paso a paso.
 
-Se relaciona con la hipótesis del harness como inversión durable y con la separación cerebro/manos. La nota de riesgo sobre clústeres de un solo documento y la de generalización desde un proyecto aislado sostienen el marco escéptico con que debe leerse.
+Se apoya en las notas existentes sobre memoria persistente y harness propio, que ya registraban el caso Arca. Se relaciona con checkpoints/handoffs en workflows de varios días y con la separación cerebro/manos: el harness propio es la «manos» que se posee.
 
 ## Links
 - relates_to → [[hipotesis-harness-como-inversion-durable-en-flujo-asistido]]
 - relates_to → [[separacion-cerebro-manos-modelo-harness-agente]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[generalizar-un-proyecto-personal-a-practica-profesional-es-inferencia]]
+- supports → [[memoria-persistente-como-eje-de-agente-de-largo-horizonte]]
+- supports → [[harness-propio-frente-a-framework-generico-caso-arca]]
+- relates_to → [[checkpoints-y-handoffs-en-workflows-agenticos-de-varios-dias]]
+- relates_to → [[arca-evidencia-un-solo-documento-sin-metricas]]

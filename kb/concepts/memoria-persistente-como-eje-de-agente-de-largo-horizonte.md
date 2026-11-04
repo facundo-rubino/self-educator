@@ -10,16 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-02'
-updated: '2026-11-02'
+updated: '2026-11-04'
 sources:
 - 5e81338675ea4d09
 tags:
-- memoria-persistente
 - agentes
 - largo-horizonte
+- long-horizon
+- memoria
+- memoria-persistente
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-11-02'
+last_reinforced: '2026-11-04'
 provenance:
   scale: S
   query: null
@@ -30,21 +32,24 @@ links:
   type: relates_to
 - to: afirmar-capacidad-desde-un-titular-rss-sobre-identificacion
   type: relates_to
+- to: estado-obsoleto-en-memoria-persistente-de-agentes
+  type: relates_to
 ---
 
 ## What it is
-Claim de un caso único: la memoria persistente entre sesiones es el componente que convierte al agente en algo más parecido a un colaborador que a una herramienta stateless.
+La memoria persistente se presenta como componente que permite a un agente sostener trabajo a lo largo de varios días. El claim procede de un único caso de vendor y no viene con mecanismo, arquitectura ni evaluación de retención.
 
 ## Evidence
-- El trabajo agéntico de Arca usa memoria persistente como componente central del flujo — source: 5e81338675ea4d09
-- El documento no describe cómo se invalida ni cómo se audita lo recordado — source: 5e81338675ea4d09 (ausencia de contenido, no afirmación del documento)
+- El head of AI de Arca discute el uso de memoria persistente en agentes de IA — fuente: 5e81338675ea4d09
+- Se describen flujos agénticos que abarcan varios días, no solo tareas puntuales — fuente: 5e81338675ea4d09
 
 ## Why it matters
-Si el claim sostuviera, un proyecto de software de varias semanas y un curso con continuidad entre clases compartirían el mismo problema: sin memoria, cada sesión reinicia contexto de alcance, decisiones y estado del alumno. Con un solo documento de dominio financiero, esto queda como pregunta abierta, no como hallazgo.
+Si la memoria persistente es lo que habilita horizontes largos, el diseño del estado (qué se retiene, cuándo se invalida) pasa a ser una decisión de ingeniería central, no un detalle.
 
-Deriva del caso Arca. Se relaciona con `server-memory` como primitiva de estado ya registrada en el grafo. El riesgo de afirmar capacidad desde una sola pieza sin metodología aplica aquí de forma directa.
+Se deriva del caso Arca. Conecta con el riesgo de estado obsoleto o contaminado en memoria persistente de agentes: el mismo mecanismo que habilita continuidad acumula errores.
 
 ## Links
 - derived_from → [[arca-agentes-largo-horizonte-memoria-harness]]
 - relates_to → [[server-memory-como-primitiva-de-estado-para-agentes]]
 - relates_to → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
+- relates_to → [[estado-obsoleto-en-memoria-persistente-de-agentes]]

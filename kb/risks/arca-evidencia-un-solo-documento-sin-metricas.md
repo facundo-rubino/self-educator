@@ -9,16 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-02'
-updated: '2026-11-02'
+updated: '2026-11-04'
 sources:
 - 5e81338675ea4d09
 tags:
+- evidencia
 - evidencia-unica
-- sin-metricas
 - generalizacion
+- metricas
+- sin-metricas
+- singleton
 base_confidence: 0.62
 half_life_days: 120
-last_reinforced: '2026-11-02'
+last_reinforced: '2026-11-04'
 provenance:
   scale: S
   query: null
@@ -31,24 +34,25 @@ links:
   type: supports
 - to: anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica
   type: supports
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: supports
 ---
 
 ## What it is
-El caso Arca se sostiene en un único documento de dominio financiero, probablemente auto-descripción promocional, sin métricas de éxito, sin baseline y sin comparación con un harness genérico ni con un flujo stateless.
+La descripción del caso Arca no viene con métricas, baseline ni comparación: se enuncia qué hace la empresa, no qué resultados obtiene. La evidencia es un solo documento.
 
 ## Evidence
-- Un solo documento soporta todo el cluster — source: 5e81338675ea4d09
-- El dominio es finanzas, no ingeniería ni docencia — source: 5e81338675ea4d09
-- El documento presenta el harness propio como beneficio sin datos comparativos — source: 5e81338675ea4d09
-- La novedad reportada es 0.00 y la confianza ajustada del crítico 0.08 (reporte, no documento)
+- Se describen flujos agénticos que abarcan varios días, no solo tareas puntuales — fuente: 5e81338675ea4d09
+- Se defiende el beneficio de construir un harness propio en lugar de depender solo de tooling genérico — fuente: 5e81338675ea4d09
 
 ## Why it matters
-Generalizar de aquí a ingeniería de software o a docencia es extrapolación, no hallazgo. Usar el caso para decidir una inversión en harness o memoria persistente sin evidencia propia sería el modo de fallo que este grafo ya registra en otros clústeres de documento único.
+Sin métricas ni comparación, no se puede distinguir una práctica mejor de una práctica simplemente declarada. Un solo documento no soporta generalización a otros dominios.
 
-Contradice la lectura de los tres conceptos derivados del caso Arca como si fueran lecciones establecidas. Apoya las notas ya existentes sobre clústeres de un solo documento, sobre el argumento de ausencia de contenido y sobre la anécdota arquitectónica de fuente única.
+Contradice la lectura del caso Arca como hallazgo y refuerza la nota existente sobre singletons sin engagement.
 
 ## Links
 - contradicts → [[arca-agentes-largo-horizonte-memoria-harness]]
 - supports → [[single-document-cluster-engagement-cero-no-generaliza]]
 - supports → [[afirmar-capacidad-desde-un-titular-rss-sobre-identificacion]]
 - supports → [[anecdota-arquitectonica-de-fuente-unica-no-es-evidencia-de-practica]]
+- supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]

@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-03 — 1149 entries, highest priority first._
+_Updated 2026-11-04 — 1162 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -822,6 +822,16 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-31'
+- id: gap-597e080242
+  type: contradiction
+  description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
+    and 'arca-contexto-financiero-no-generaliza-a-ingenieria-ni-docencia'
+  related_notes:
+  - arca-agentes-largo-horizonte-memoria-harness
+  - arca-contexto-financiero-no-generaliza-a-ingenieria-ni-docencia
+  priority: 0.9
+  status: open
+  created: '2026-11-04'
 - id: gap-265bac9e76
   type: contradiction
   description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
@@ -832,6 +842,16 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-11-02'
+- id: gap-619878af02
+  type: contradiction
+  description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
+    and 'arca-singleton-engagement-cero-novelty-cero'
+  related_notes:
+  - arca-agentes-largo-horizonte-memoria-harness
+  - arca-singleton-engagement-cero-novelty-cero
+  priority: 0.9
+  status: open
+  created: '2026-11-04'
 - id: gap-808c2fc462
   type: contradiction
   description: Unresolved contradiction between 'arquitectura-de-prompt-cambia-sin-aviso'
@@ -1052,6 +1072,16 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-19'
+- id: gap-731b51becb
+  type: contradiction
+  description: Unresolved contradiction between 'coste-de-mantener-memoria-persistente-y-harness-propio-en-equipos-chicos'
+    and 'harness-propio-frente-a-framework-generico-caso-arca'
+  related_notes:
+  - coste-de-mantener-memoria-persistente-y-harness-propio-en-equipos-chicos
+  - harness-propio-frente-a-framework-generico-caso-arca
+  priority: 0.9
+  status: open
+  created: '2026-11-04'
 - id: gap-584d367458
   type: contradiction
   description: Unresolved contradiction between 'deuda-tecnica-como-puente-lexico-al-brief'
@@ -1072,6 +1102,16 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-25'
+- id: gap-44f63c0ac4
+  type: contradiction
+  description: Unresolved contradiction between 'errores-silenciosos-acumulados-en-flujos-agenticos-de-dias'
+    and 'flujos-agenticos-de-varios-dias-como-horizonte-de-delegacion'
+  related_notes:
+  - errores-silenciosos-acumulados-en-flujos-agenticos-de-dias
+  - flujos-agenticos-de-varios-dias-como-horizonte-de-delegacion
+  priority: 0.9
+  status: open
+  created: '2026-11-04'
 - id: gap-1360c8daef
   type: contradiction
   description: Unresolved contradiction between 'estado-obsoleto-en-memoria-persistente-de-agentes'
@@ -1412,6 +1452,16 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-14'
+- id: gap-21f0153932
+  type: contradiction
+  description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
+    and 'sesgo-de-vendor-en-entrevista-de-head-of-ai'
+  related_notes:
+  - arca-agentes-largo-horizonte-memoria-harness
+  - sesgo-de-vendor-en-entrevista-de-head-of-ai
+  priority: 0.9
+  status: open
+  created: '2026-11-04'
 - id: gap-483f7310ad
   type: contradiction
   description: Unresolved contradiction between 'relevancia-tematica-baja-no-es-ruido'
@@ -1903,6 +1953,15 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-01'
+- id: gap-1c23a8bb35
+  type: open_question
+  description: Note 'flujos-agenticos-de-varios-dias-como-horizonte-de-delegacion'
+    has decayed — does it still hold?
+  related_notes:
+  - flujos-agenticos-de-varios-dias-como-horizonte-de-delegacion
+  priority: 0.7
+  status: open
+  created: '2026-11-04'
 - id: gap-be53812b8c
   type: open_question
   description: Note 'glm-5-3-labs-chinos-sin-detalle' has decayed — does it still
@@ -3575,6 +3634,15 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-21'
+- id: gap-a3ee011a13
+  type: open_question
+  description: Note 'privacidad-y-costo-en-asistentes-de-voz-continuos' has decayed
+    — does it still hold?
+  related_notes:
+  - privacidad-y-costo-en-asistentes-de-voz-continuos
+  priority: 0.7
+  status: open
+  created: '2026-11-04'
 - id: gap-0a18190ec9
   type: open_question
   description: Note 'probabilidad-de-una-cola-de-60-dias-y-una-cola-corta' has decayed
@@ -4181,6 +4249,15 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-01'
+- id: gap-8e7cd64684
+  type: thin_evidence
+  description: Note 'flujos-agenticos-de-varios-dias-como-horizonte-de-delegacion'
+    rests on 1 source(s)
+  related_notes:
+  - flujos-agenticos-de-varios-dias-como-horizonte-de-delegacion
+  priority: 0.5
+  status: open
+  created: '2026-11-04'
 - id: gap-4f11faabcf
   type: thin_evidence
   description: Note 'github-to-sqlite-2-9-1-fix-compatibilidad-sqlite-utils-4-x' rests
@@ -7122,6 +7199,15 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-f9e07c80c2
+  type: thin_evidence
+  description: Note 'arca-contexto-financiero-no-generaliza-a-ingenieria-ni-docencia'
+    rests on 1 source(s)
+  related_notes:
+  - arca-contexto-financiero-no-generaliza-a-ingenieria-ni-docencia
+  priority: 0.5
+  status: open
+  created: '2026-11-04'
 - id: gap-98436485aa
   type: thin_evidence
   description: Note 'arca-evidencia-un-solo-documento-sin-metricas' rests on 1 source(s)
@@ -7130,6 +7216,14 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-02'
+- id: gap-0bc27e68ca
+  type: thin_evidence
+  description: Note 'arca-singleton-engagement-cero-novelty-cero' rests on 1 source(s)
+  related_notes:
+  - arca-singleton-engagement-cero-novelty-cero
+  priority: 0.5
+  status: open
+  created: '2026-11-04'
 - id: gap-4508dc370c
   type: thin_evidence
   description: Note 'argumento-ex-silentio-en-corpus-truncado' rests on 1 source(s)
@@ -7774,6 +7868,15 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
+- id: gap-84e9a46d56
+  type: thin_evidence
+  description: Note 'coste-de-mantener-memoria-persistente-y-harness-propio-en-equipos-chicos'
+    rests on 1 source(s)
+  related_notes:
+  - coste-de-mantener-memoria-persistente-y-harness-propio-en-equipos-chicos
+  priority: 0.5
+  status: open
+  created: '2026-11-04'
 - id: gap-1b669b5904
   type: thin_evidence
   description: Note 'coste-real-de-un-token-como-gancho-editorial' rests on 1 source(s)
@@ -7931,6 +8034,15 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-19'
+- id: gap-d0c9f95a82
+  type: thin_evidence
+  description: Note 'errores-silenciosos-acumulados-en-flujos-agenticos-de-dias' rests
+    on 1 source(s)
+  related_notes:
+  - errores-silenciosos-acumulados-en-flujos-agenticos-de-dias
+  priority: 0.5
+  status: open
+  created: '2026-11-04'
 - id: gap-b1efdb0f8b
   type: thin_evidence
   description: Note 'escribir-semanal-15-5s-sin-evidencia' rests on 1 source(s)
@@ -9640,6 +9752,14 @@ _Updated 2026-11-03 — 1149 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-22'
+- id: gap-9f9fa3c6e4
+  type: thin_evidence
+  description: Note 'sesgo-de-vendor-en-entrevista-de-head-of-ai' rests on 1 source(s)
+  related_notes:
+  - sesgo-de-vendor-en-entrevista-de-head-of-ai
+  priority: 0.5
+  status: open
+  created: '2026-11-04'
 - id: gap-c0b4e5bf35
   type: thin_evidence
   description: Note 'shadow-roots-artefacto-interactivo-css-prompt-sin-practica-demostrada'

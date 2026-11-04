@@ -9,16 +9,17 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-02'
-updated: '2026-11-02'
+updated: '2026-11-04'
 sources:
 - 5e81338675ea4d09
 tags:
-- harness
 - agentes
 - andamiaje
+- harness
+- tooling
 base_confidence: 0.15
 half_life_days: 180
-last_reinforced: '2026-11-02'
+last_reinforced: '2026-11-04'
 provenance:
   scale: S
   query: null
@@ -32,16 +33,15 @@ links:
 ---
 
 ## What it is
-Arca construyó un harness a medida en vez de usar un framework genérico y lo presenta como un beneficio. El claim implícito es que el valor está en el andamiaje específico del dominio, no en el modelo.
+Arca declara preferir un harness propio antes que depender solo de tooling genérico. Es una preferencia de vendor sobre su propio producto, enunciada sin comparación medida contra alternativas.
 
 ## Evidence
-- Arca construyó un harness propio en lugar de usar uno genérico — source: 5e81338675ea4d09
-- El documento lo presenta como beneficio, sin comparación contra un baseline genérico — source: 5e81338675ea4d09
+- Se defiende el beneficio de construir un harness propio (custom harness) en lugar de depender solo de tooling genérico — fuente: 5e81338675ea4d09
 
 ## Why it matters
-Si el claim generalizara, un líder técnico invertiría en herramientas y verificaciones propias (tests, linters, checklists, rúbricas) antes que en cambiar de modelo. El documento no ofrece datos de esa comparación, así que la preferencia queda como postura declarada.
+Define «harness propio» como diferenciador declarado. Para un equipo chico o un docente, convierte el harness en una partida de inversión explícita que compite con entrega y enseñanza.
 
-Deriva del caso Arca y apoya la hipótesis del harness como inversión durable. Se relaciona con la separación cerebro/manos: el harness es la mitad «manos» del sistema del agente.
+Se deriva del caso Arca. Se relaciona con la separación cerebro/manos (el harness es lo que se posee) y aporta evidencia —débil— a la hipótesis del harness como inversión durable frente al cambio de modelo.
 
 ## Links
 - derived_from → [[arca-agentes-largo-horizonte-memoria-harness]]
