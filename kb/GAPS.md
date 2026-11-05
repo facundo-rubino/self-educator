@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-04 — 1162 entries, highest priority first._
+_Updated 2026-11-05 — 1165 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -4817,6 +4817,14 @@ _Updated 2026-11-04 — 1162 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-05'
+- id: gap-6dee0e1572
+  type: thin_evidence
+  description: Note 'reddit-worst-day-since-ipo-30-por-ciento' rests on 1 source(s)
+  related_notes:
+  - reddit-worst-day-since-ipo-30-por-ciento
+  priority: 0.5
+  status: open
+  created: '2026-11-05'
 - id: gap-527de369fc
   type: thin_evidence
   description: Note 'scrimshaw-jukebox-cluster-heterogeneo-rss-sin-hilo-conductor'
@@ -5429,6 +5437,15 @@ _Updated 2026-11-04 — 1162 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-22'
+- id: gap-043014a304
+  type: thin_evidence
+  description: Note 'search-referral-traffic-como-fragilidad-de-producto' rests on
+    1 source(s)
+  related_notes:
+  - search-referral-traffic-como-fragilidad-de-producto
+  priority: 0.5
+  status: open
+  created: '2026-11-05'
 - id: gap-c71dac6a1e
   type: thin_evidence
   description: Note 'singleton-rss-engagement-cero-novelty-cero-no-sostiene-generalizacion'
@@ -9744,6 +9761,15 @@ _Updated 2026-11-04 — 1162 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-22'
+- id: gap-dc5bd8acfc
+  type: thin_evidence
+  description: Note 'senal-de-mercado-no-es-hallazgo-de-practica-de-ingenieria' rests
+    on 1 source(s)
+  related_notes:
+  - senal-de-mercado-no-es-hallazgo-de-practica-de-ingenieria
+  priority: 0.5
+  status: open
+  created: '2026-11-05'
 - id: gap-de743d20ef
   type: thin_evidence
   description: Note 'senal-jev-system-one-sin-documento-de-soporte' rests on 1 source(s)
