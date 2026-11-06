@@ -1,19 +1,19 @@
-# Brief — 2026-11-05
+# Brief — 2026-11-06
 
 ## Los titulares
 
-1. [Three Dots](https://randsinrepose.com/archives/three-dots/) — *Liderar proyectos, equipos y a mí mismo*
+1. [[AINews] Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark](https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/) — *IA y agentes en mi trabajo*
 
 ---
 
-## Liderar proyectos, equipos y a mí mismo
+## IA y agentes en mi trabajo
 
-### [Three Dots](https://randsinrepose.com/archives/three-dots/)
+### [[AINews] Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark](https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/)
 
-The cluster contains a single document: a short RSS item from Three Dots [f4d4a67450a0a34f] reporting that Reddit shares fell almost 30% in one session — its worst day since IPO — after Q4 guidance disappointed despite…
+El clúster contiene un único documento [382d9b6490c36fd5]: una entrada de AINews sobre 'Inkling 2 Small', un modelo descrito como 17A-594B (arquitectura MoE, presumiblemente ~17B activos de ~594B totales) entrenado en 6…
 
-<sub>fuentes: rss · confianza: 90%</sub>
+<sub>fuentes: rss · confianza: 4%</sub>
 
 ---
 
-<sub>1 señales consideradas, 0 descartadas por no ser de ningún tema, 7 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
+<sub>1 señales consideradas, 0 descartadas por no ser de ningún tema, 6 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>

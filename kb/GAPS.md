@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-05 — 1165 entries, highest priority first._
+_Updated 2026-11-06 — 1172 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1926,6 +1926,15 @@ _Updated 2026-11-05 — 1165 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-20'
+- id: gap-8412a04f96
+  type: open_question
+  description: Note 'estudio-metr-investigacion-ia-anthropic-mencion-sin-contenido'
+    has decayed — does it still hold?
+  related_notes:
+  - estudio-metr-investigacion-ia-anthropic-mencion-sin-contenido
+  priority: 0.7
+  status: open
+  created: '2026-11-06'
 - id: gap-17e803242d
   type: open_question
   description: Note 'eval-especifica-por-tarea-como-infraestructura-de-fiabilidad'
@@ -2061,6 +2070,15 @@ _Updated 2026-11-05 — 1165 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-17'
+- id: gap-a3d315f89d
+  type: open_question
+  description: Note 'inkling-2-small-anuncio-de-modelo-sin-benchmarks' has decayed
+    — does it still hold?
+  related_notes:
+  - inkling-2-small-anuncio-de-modelo-sin-benchmarks
+  priority: 0.7
+  status: open
+  created: '2026-11-06'
 - id: gap-8b278e11ad
   type: open_question
   description: Note 'js-como-lenguaje-general-ya-presente-en-el-runtime' has decayed
@@ -4223,6 +4241,15 @@ _Updated 2026-11-05 — 1165 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-7579064cd7
+  type: thin_evidence
+  description: Note 'estudio-metr-investigacion-ia-anthropic-mencion-sin-contenido'
+    rests on 1 source(s)
+  related_notes:
+  - estudio-metr-investigacion-ia-anthropic-mencion-sin-contenido
+  priority: 0.5
+  status: open
+  created: '2026-11-06'
 - id: gap-ab6b228b05
   type: thin_evidence
   description: Note 'eval-especifica-por-tarea-como-infraestructura-de-fiabilidad'
@@ -4378,6 +4405,15 @@ _Updated 2026-11-05 — 1165 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-27'
+- id: gap-be2fd43283
+  type: thin_evidence
+  description: Note 'inkling-2-small-anuncio-de-modelo-sin-benchmarks' rests on 1
+    source(s)
+  related_notes:
+  - inkling-2-small-anuncio-de-modelo-sin-benchmarks
+  priority: 0.5
+  status: open
+  created: '2026-11-06'
 - id: gap-b79c531aab
   type: thin_evidence
   description: Note 'item-de-blog-por-voz-con-codex-chatgpt-desktop' rests on 1 source(s)
@@ -7110,6 +7146,15 @@ _Updated 2026-11-05 — 1165 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-31'
+- id: gap-aee9f26aa8
+  type: thin_evidence
+  description: Note 'ainews-inkling-2-small-singleton-rss-engagement-cero' rests on
+    1 source(s)
+  related_notes:
+  - ainews-inkling-2-small-singleton-rss-engagement-cero
+  priority: 0.5
+  status: open
+  created: '2026-11-06'
 - id: gap-f6d8c2e168
   type: thin_evidence
   description: Note 'analisis-900-herramientas-ai-open-source-solo-framing-y-changelog'
@@ -8996,6 +9041,15 @@ _Updated 2026-11-05 — 1165 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-30'
+- id: gap-1dc0e06b18
+  type: thin_evidence
+  description: Note 'mejora-de-costo-y-velocidad-de-entrenamiento-no-demuestra-utilidad-para-agentes'
+    rests on 1 source(s)
+  related_notes:
+  - mejora-de-costo-y-velocidad-de-entrenamiento-no-demuestra-utilidad-para-agentes
+  priority: 0.5
+  status: open
+  created: '2026-11-06'
 - id: gap-dfc8de9a20
   type: thin_evidence
   description: Note 'merged-prs-triplicados-no-es-evidencia-de-productividad-por-agentes'
@@ -9032,6 +9086,15 @@ _Updated 2026-11-05 — 1165 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-1ef6c50c61
+  type: thin_evidence
+  description: Note 'modelo-no-verificado-como-motor-de-agentes-costo-de-oportunidad'
+    rests on 1 source(s)
+  related_notes:
+  - modelo-no-verificado-como-motor-de-agentes-costo-de-oportunidad
+  priority: 0.5
+  status: open
+  created: '2026-11-06'
 - id: gap-7b1cf78427
   type: thin_evidence
   description: Note 'monkey-mind-sin-contenido-ingerido' rests on 1 source(s)

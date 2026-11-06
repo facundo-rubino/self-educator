@@ -1,0 +1,29 @@
+{
+  "id": "sig-fe99e658d50a",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "Looking back at snow",
+  "member_doc_ids": [
+    "c07bdac2eefd1fb8"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://www.baldurbjarnason.com/notes/photos/looking-back-at-snow/",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 0.656,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.364,
+  "first_seen": "2026-11-05T18:49:00Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
