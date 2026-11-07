@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-06 — 1172 entries, highest priority first._
+_Updated 2026-11-07 — 1181 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -822,6 +822,26 @@ _Updated 2026-11-06 — 1172 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-31'
+- id: gap-b8c1a79cdf
+  type: contradiction
+  description: Unresolved contradiction between 'anthropic-claude-code-eval-tooling-build-eval-hill-climb'
+    and 'anthropic-claude-code-eval-tooling-no-cubre-ejes-de-liderazgo-docencia'
+  related_notes:
+  - anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  - anthropic-claude-code-eval-tooling-no-cubre-ejes-de-liderazgo-docencia
+  priority: 0.9
+  status: open
+  created: '2026-11-07'
+- id: gap-4d04a9587c
+  type: contradiction
+  description: Unresolved contradiction between 'anthropic-claude-code-eval-tooling-build-eval-hill-climb'
+    and 'anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial'
+  related_notes:
+  - anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  - anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial
+  priority: 0.9
+  status: open
+  created: '2026-11-07'
 - id: gap-597e080242
   type: contradiction
   description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
@@ -1701,6 +1721,15 @@ _Updated 2026-11-06 — 1172 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-06'
+- id: gap-376d9c154f
+  type: open_question
+  description: Note 'anthropic-claude-code-eval-tooling-build-eval-hill-climb' has
+    decayed — does it still hold?
+  related_notes:
+  - anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  priority: 0.7
+  status: open
+  created: '2026-11-07'
 - id: gap-88fc6dc284
   type: open_question
   description: Note 'anthropic-ship-claude-with-claude-framing-propio-sin-verificar'
@@ -3697,6 +3726,15 @@ _Updated 2026-11-06 — 1172 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-21'
+- id: gap-ac8e55b634
+  type: open_question
+  description: Note 'sueltalo-clean-code-sin-mencion-al-brief' has decayed — does
+    it still hold?
+  related_notes:
+  - sueltalo-clean-code-sin-mencion-al-brief
+  priority: 0.7
+  status: open
+  created: '2026-11-07'
 - id: gap-31817238a3
   type: open_question
   description: Note 'task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto'
@@ -3888,6 +3926,15 @@ _Updated 2026-11-06 — 1172 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-06'
+- id: gap-7881ba56d5
+  type: thin_evidence
+  description: Note 'anthropic-claude-code-eval-tooling-build-eval-hill-climb' rests
+    on 1 source(s)
+  related_notes:
+  - anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  priority: 0.5
+  status: open
+  created: '2026-11-07'
 - id: gap-8a00acba3c
   type: thin_evidence
   description: Note 'anthropic-ship-claude-with-claude-framing-propio-sin-verificar'
@@ -6064,6 +6111,15 @@ _Updated 2026-11-06 — 1172 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-62bc203f25
+  type: thin_evidence
+  description: Note 'evals-construidas-por-el-mismo-proveedor-como-infraestructura-de-flujo'
+    rests on 1 source(s)
+  related_notes:
+  - evals-construidas-por-el-mismo-proveedor-como-infraestructura-de-flujo
+  priority: 0.5
+  status: open
+  created: '2026-11-07'
 - id: gap-46eb3bd292
   type: thin_evidence
   description: Note 'evals-llm-genericas-fuera-del-alcance-del-brief' rests on 1 source(s)
@@ -7216,6 +7272,33 @@ _Updated 2026-11-06 — 1172 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-29'
+- id: gap-dca61e25c0
+  type: thin_evidence
+  description: Note 'anthropic-claude-code-eval-tooling-envejece-rapido-por-shelf-life'
+    rests on 1 source(s)
+  related_notes:
+  - anthropic-claude-code-eval-tooling-envejece-rapido-por-shelf-life
+  priority: 0.5
+  status: open
+  created: '2026-11-07'
+- id: gap-403229714f
+  type: thin_evidence
+  description: Note 'anthropic-claude-code-eval-tooling-no-cubre-ejes-de-liderazgo-docencia'
+    rests on 1 source(s)
+  related_notes:
+  - anthropic-claude-code-eval-tooling-no-cubre-ejes-de-liderazgo-docencia
+  priority: 0.5
+  status: open
+  created: '2026-11-07'
+- id: gap-5dd0dd6c09
+  type: thin_evidence
+  description: Note 'anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial'
+    rests on 1 source(s)
+  related_notes:
+  - anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial
+  priority: 0.5
+  status: open
+  created: '2026-11-07'
 - id: gap-3ec276ab5d
   type: thin_evidence
   description: Note 'anti-patterns-in-software-blogging-corpus-sin-contenido-citado'

@@ -1,0 +1,29 @@
+{
+  "id": "sig-c16a9e3f72b2",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "We are cooked. My QFN 3.8 NVFP4 just drew a dog freehand in MS Paint (using new Open WebUI 0.13.0 and Open Terminal 0.17",
+  "member_doc_ids": [
+    "7f42b69df14f724e"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "t3_1xpmvf2",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 0.6662,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.3665,
+  "first_seen": "2026-11-06T20:12:07Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
