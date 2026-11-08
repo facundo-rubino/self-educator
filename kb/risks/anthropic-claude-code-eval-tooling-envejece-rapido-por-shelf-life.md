@@ -1,7 +1,7 @@
 ---
 id: anthropic-claude-code-eval-tooling-envejece-rapido-por-shelf-life
 title: 'El tooling de evals envejece rápido: el propio autor advierte vida útil corta
-  de las reseñas de herramientas de eval'
+  de las reseñas'
 type: risk
 topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace mejor su
   trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico
@@ -10,16 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-07'
-updated: '2026-11-07'
+updated: '2026-11-08'
 sources:
 - 541b1e7161ae8f43
 tags:
 - evals
-- shelf-life
+- mantenimiento
 - obsolescencia
+- shelf-life
+- tooling
+- vida-util
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-11-07'
+last_reinforced: '2026-11-08'
 provenance:
   scale: S
   query: null
@@ -28,20 +31,22 @@ links:
   type: relates_to
 - to: arquitectura-de-prompt-cambia-sin-aviso
   type: relates_to
+- to: datasette-alpha-features-no-son-settled
+  type: relates_to
 ---
 
 ## What it is
-El autor declara que normalmente no reseña herramientas de evaluación por su corta vida útil, lo que convierte al propio documento en una fuente con caducidad declarada [541b1e7161ae8f43].
+El autor declara que normalmente evita reseñar herramientas de evaluación porque el software cambia rápido y las reseñas tienen vida útil corta; hace una excepción con el tooling de primera parte de Anthropic [541b1e7161ae8f43]. Cualquier detalle sobre `build_eval` o `hill-climb` registrado hoy puede quedar obsoleto o cambiar pronto.
 
 ## Evidence
-- El autor evita reseñar herramientas de eval por su corta vida útil — source: 541b1e7161ae8f43
-- Esa expectativa de obsolescencia es la razón dada para no cubrirlas habitualmente — source: 541b1e7161ae8f43
+- El autor evita reseñar herramientas de eval por el ritmo de cambio del software y la corta vida útil de las reseñas — source: 541b1e7161ae8f43
 
 ## Why it matters
-Cualquier implicación práctica derivada de esta nota puede quedar obsoleta en semanas: comandos renombrados, retirados o absorbidos en el producto. La nota debería revisarse o caducar explícitamente antes de citarse como recomendación operativa.
+Un claim sobre este tooling es perecedero por diseño: no debe citarse como estado estable de la práctica sin re-verificación contra upstream antes de usarse en configuración o docencia.
 
-Refuerza el riesgo de fuente única y se alinea con otras notas sobre productos comerciales que cambian sin aviso.
+Se relaciona con la nota del tooling como condición de vigencia de su contenido, y con la nota sobre features de alpha no asentadas: en ambos casos lo documentado puede cambiar antes de estabilizarse.
 
 ## Links
 - relates_to → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
 - relates_to → [[arquitectura-de-prompt-cambia-sin-aviso]]
+- relates_to → [[datasette-alpha-features-no-son-settled]]

@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-07 — 1181 entries, highest priority first._
+_Updated 2026-11-08 — 1184 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -2962,6 +2962,15 @@ _Updated 2026-11-07 — 1181 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-28'
+- id: gap-cb37c845e8
+  type: open_question
+  description: Note 'evals-construidas-por-el-mismo-proveedor-como-infraestructura-de-flujo'
+    has decayed — does it still hold?
+  related_notes:
+  - evals-construidas-por-el-mismo-proveedor-como-infraestructura-de-flujo
+  priority: 0.7
+  status: open
+  created: '2026-11-08'
 - id: gap-2f0b5ad3c8
   type: open_question
   description: Note 'evals-llm-genericas-fuera-del-alcance-del-brief' has decayed
@@ -3105,6 +3114,15 @@ _Updated 2026-11-07 — 1181 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-22'
+- id: gap-44a24c964f
+  type: open_question
+  description: Note 'juez-humano-we-and-b-llm-as-a-judge-hackathon-sin-contenido-ingerido'
+    has decayed — does it still hold?
+  related_notes:
+  - juez-humano-we-and-b-llm-as-a-judge-hackathon-sin-contenido-ingerido
+  priority: 0.7
+  status: open
+  created: '2026-11-08'
 - id: gap-3bccdfd6b2
   type: open_question
   description: Note 'llm-assisted-software-work-hilo-fino-y-disputado-en-cluster-heterogeneo'
@@ -3573,6 +3591,15 @@ _Updated 2026-11-07 — 1181 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-21'
+- id: gap-4d914c610f
+  type: open_question
+  description: Note 'juez-humano-we-and-b-llm-as-a-judge-hackathon-sin-corroboracion'
+    has decayed — does it still hold?
+  related_notes:
+  - juez-humano-we-and-b-llm-as-a-judge-hackathon-sin-corroboracion
+  priority: 0.7
+  status: open
+  created: '2026-11-08'
 - id: gap-805331f729
   type: open_question
   description: Note 'juez-humano-we-and-b-llm-evaluator-hackathon-relevancia-lexica'
