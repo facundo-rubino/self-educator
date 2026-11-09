@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-08 — 1184 entries, highest priority first._
+_Updated 2026-11-09 — 1197 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -163,6 +163,16 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-13'
+- id: gap-b4160db102
+  type: contradiction
+  description: Unresolved contradiction between 'afirmacion-de-una-pasada-de-agentes-no-medida'
+    and 'cs146s-rediseno-de-deberes-por-agentes-que-hacen-una-pasada'
+  related_notes:
+  - afirmacion-de-una-pasada-de-agentes-no-medida
+  - cs146s-rediseno-de-deberes-por-agentes-que-hacen-una-pasada
+  priority: 0.9
+  status: open
+  created: '2026-11-09'
 - id: gap-b960a42f22
   type: contradiction
   description: Unresolved contradiction between 'disposicion-a-parecer-estupido-tiene-costes'
@@ -392,6 +402,16 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-02'
+- id: gap-e50f02f14a
+  type: contradiction
+  description: Unresolved contradiction between 'barra-de-trabajo-asignable-se-corre-hacia-juicio-y-comunicacion'
+    and 'puente-de-cs146s-a-practica-de-equipo-y-docencia-es-inferencia'
+  related_notes:
+  - barra-de-trabajo-asignable-se-corre-hacia-juicio-y-comunicacion
+  - puente-de-cs146s-a-practica-de-equipo-y-docencia-es-inferencia
+  priority: 0.9
+  status: open
+  created: '2026-11-09'
 - id: gap-f6efa7a083
   type: contradiction
   description: Unresolved contradiction between 'afirmacion-de-capacidad-multimodal-sin-metodologia'
@@ -412,6 +432,16 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-20'
+- id: gap-1d3e4882c3
+  type: contradiction
+  description: Unresolved contradiction between 'compresion-agresiva-de-material-de-sesiones-como-tecnica-de-estudio'
+    and 'compresion-de-sesiones-documentada-por-el-propio-autor-sin-medicion'
+  related_notes:
+  - compresion-agresiva-de-material-de-sesiones-como-tecnica-de-estudio
+  - compresion-de-sesiones-documentada-por-el-propio-autor-sin-medicion
+  priority: 0.9
+  status: open
+  created: '2026-11-09'
 - id: gap-2366ec3d0e
   type: contradiction
   description: Unresolved contradiction between 'ensamblado-condicional-de-instrucciones-para-docencia-por-ejercicio'
@@ -422,6 +452,16 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-07'
+- id: gap-9673988076
+  type: contradiction
+  description: Unresolved contradiction between 'eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes'
+    and 'sintesis-de-eval-discipline-con-cs146s-no-soportada-por-la-fuente'
+  related_notes:
+  - eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes
+  - sintesis-de-eval-discipline-con-cs146s-no-soportada-por-la-fuente
+  priority: 0.9
+  status: open
+  created: '2026-11-09'
 - id: gap-95b4ea52a9
   type: contradiction
   description: Unresolved contradiction between 'cadencia-de-release-unificada-sugiere-monorepo-mcp'
@@ -2512,6 +2552,15 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-07'
+- id: gap-1099ed0236
+  type: open_question
+  description: Note 'barra-de-trabajo-asignable-se-corre-hacia-juicio-y-comunicacion'
+    has decayed — does it still hold?
+  related_notes:
+  - barra-de-trabajo-asignable-se-corre-hacia-juicio-y-comunicacion
+  priority: 0.7
+  status: open
+  created: '2026-11-09'
 - id: gap-52427b1686
   type: open_question
   description: Note 'caso-de-rechazo-por-imagen-como-ejemplo-de-politica-vs-capacidad'
@@ -2620,6 +2669,15 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-17'
+- id: gap-15b44a4a62
+  type: open_question
+  description: Note 'eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes'
+    has decayed — does it still hold?
+  related_notes:
+  - eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes
+  priority: 0.7
+  status: open
+  created: '2026-11-09'
 - id: gap-f269923825
   type: open_question
   description: Note 'finedna-receta-abierta-como-patron-de-handoff-reproducible' has
@@ -3114,6 +3172,15 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-22'
+- id: gap-dba30510b5
+  type: open_question
+  description: Note 'interaccion-juez-humano-llm-as-a-judge-sin-mecanismo-ingerido'
+    has decayed — does it still hold?
+  related_notes:
+  - interaccion-juez-humano-llm-as-a-judge-sin-mecanismo-ingerido
+  priority: 0.7
+  status: open
+  created: '2026-11-09'
 - id: gap-44a24c964f
   type: open_question
   description: Note 'juez-humano-we-and-b-llm-as-a-judge-hackathon-sin-contenido-ingerido'
@@ -3780,6 +3847,15 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-13'
+- id: gap-1be7aa9415
+  type: open_question
+  description: Note 'task-specific-llm-evals-relevancia-0-67-como-artefacto-del-scorer'
+    has decayed — does it still hold?
+  related_notes:
+  - task-specific-llm-evals-relevancia-0-67-como-artefacto-del-scorer
+  priority: 0.7
+  status: open
+  created: '2026-11-09'
 - id: gap-8333b6559c
   type: open_question
   description: Note 'tema-de-identificacion-de-figuras-publicas-tangencial-al-brief'
@@ -4342,6 +4418,14 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-4a6c4a9c96
+  type: thin_evidence
+  description: Note 'evals-faq-destilada-de-5000-ingenieros-y-pms' rests on 1 source(s)
+  related_notes:
+  - evals-faq-destilada-de-5000-ingenieros-y-pms
+  priority: 0.5
+  status: open
+  created: '2026-11-09'
 - id: gap-a8c033da49
   type: thin_evidence
   description: Note 'finedna-dataset-announcement-single-source' rests on 1 source(s)
@@ -5292,6 +5376,15 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-12'
+- id: gap-cff8dd7a26
+  type: thin_evidence
+  description: Note 'compresion-agresiva-de-material-de-sesiones-como-tecnica-de-estudio'
+    rests on 1 source(s)
+  related_notes:
+  - compresion-agresiva-de-material-de-sesiones-como-tecnica-de-estudio
+  priority: 0.5
+  status: open
+  created: '2026-11-09'
 - id: gap-da467e160b
   type: thin_evidence
   description: Note 'corregir-un-error-propio-en-publico-como-artefacto-pedagogico'
@@ -5380,6 +5473,15 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-30'
+- id: gap-f32aca5cfd
+  type: thin_evidence
+  description: Note 'eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes'
+    rests on 1 source(s)
+  related_notes:
+  - eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes
+  priority: 0.5
+  status: open
+  created: '2026-11-09'
 - id: gap-3a0848e052
   type: thin_evidence
   description: Note 'evals-por-tarea-candidato-a-retrieval-no-a-insight' rests on
@@ -7871,6 +7973,15 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-19'
+- id: gap-9aa7da15bc
+  type: thin_evidence
+  description: Note 'compresion-de-sesiones-documentada-por-el-propio-autor-sin-medicion'
+    rests on 1 source(s)
+  related_notes:
+  - compresion-de-sesiones-documentada-por-el-propio-autor-sin-medicion
+  priority: 0.5
+  status: open
+  created: '2026-11-09'
 - id: gap-e483cbf0bf
   type: thin_evidence
   description: Note 'confianza-inflada-en-hallazgo-sobre-ausencia-de-contenido' rests
@@ -8258,6 +8369,15 @@ _Updated 2026-11-08 — 1184 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-21'
+- id: gap-d5353c13a1
+  type: thin_evidence
+  description: Note 'evals-faq-opiniones-fuertes-no-verdades-universales' rests on
+    1 source(s)
+  related_notes:
+  - evals-faq-opiniones-fuertes-no-verdades-universales
+  priority: 0.5
+  status: open
+  created: '2026-11-09'
 - id: gap-b7e7e76096
   type: thin_evidence
   description: Note 'evals-por-tarea-no-cubren-ejes-del-brief' rests on 1 source(s)

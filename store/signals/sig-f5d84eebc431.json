@@ -1,0 +1,33 @@
+{
+  "id": "sig-f5d84eebc431",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+  "member_doc_ids": [
+    "0ee42d1cbb1cb2ff",
+    "14d26da33645360c",
+    "537f26930a76d7e3",
+    "90580d5369cf9c15",
+    "e6908eaca18c8e77"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://latent.space/p/cs146s/",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 1.0,
+    "novelty": 0.1269,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.5817,
+  "first_seen": "2026-08-12T07:00:00Z",
+  "sources_count": 1,
+  "status": "promoted",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
