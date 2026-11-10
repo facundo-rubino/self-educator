@@ -1,18 +1,18 @@
-# Brief — 2026-11-09
+# Brief — 2026-11-10
 
 ## Los titulares
 
-1. [How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco](https://latent.space/p/cs146s/) — *IA y agentes en mi trabajo*
+1. [llm-anthropic 0.31](https://simonwillison.net/2026/Nov/9/llm-anthropic/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco](https://latent.space/p/cs146s/)
+### [llm-anthropic 0.31](https://simonwillison.net/2026/Nov/9/llm-anthropic/)
 
-This cluster centers on a single, thinly corroborated signal: Mihail Eric's account of Stanford's CS146S ('AI-Native Engineering') and the engineering team at Monaco, where the premise is that coding agents can one-shot…
+The cluster is essentially a single release signal, not a research finding: the `llm-anthropic` plugin added support for two new Anthropic models, Fable 5.2 and Mythos 5.2, released on the same day as the $ANT IPO roads…
 
-<sub>fuentes: rss · confianza: 18%</sub>
+<sub>fuentes: rss · confianza: 10%</sub>
 
 ---
 

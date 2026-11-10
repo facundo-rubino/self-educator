@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-09 — 1197 entries, highest priority first._
+_Updated 2026-11-10 — 1205 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1352,6 +1352,16 @@ _Updated 2026-11-09 — 1197 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-30'
+- id: gap-58d8d3bfb5
+  type: contradiction
+  description: Unresolved contradiction between 'ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo'
+    and 'llm-anthropic-0-31-sin-evidencia-sobre-ejes-del-brief'
+  related_notes:
+  - ausencia-de-conexion-con-el-brief-es-artefacto-de-muestreo
+  - llm-anthropic-0-31-sin-evidencia-sobre-ejes-del-brief
+  priority: 0.9
+  status: open
+  created: '2026-11-10'
 - id: gap-84b7ad0664
   type: contradiction
   description: Unresolved contradiction between 'llm-mistral-0-16-identificador-version-posible-misparseo'
@@ -1914,6 +1924,15 @@ _Updated 2026-11-09 — 1197 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-31'
+- id: gap-87f549269d
+  type: open_question
+  description: Note 'cs146s-rediseno-de-deberes-por-agentes-que-hacen-una-pasada'
+    has decayed — does it still hold?
+  related_notes:
+  - cs146s-rediseno-de-deberes-por-agentes-que-hacen-una-pasada
+  priority: 0.7
+  status: open
+  created: '2026-11-10'
 - id: gap-14dab2c3b4
   type: open_question
   description: Note 'css-transform-order-importa-a-veces-sin-detalle-de-casos' has
@@ -3514,6 +3533,15 @@ _Updated 2026-11-09 — 1197 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-06'
+- id: gap-55165b0042
+  type: open_question
+  description: Note 'ataque-openai-rubygems-evidencia-tangencial-de-capacidades' has
+    decayed — does it still hold?
+  related_notes:
+  - ataque-openai-rubygems-evidencia-tangencial-de-capacidades
+  priority: 0.7
+  status: open
+  created: '2026-11-10'
 - id: gap-34b28571ef
   type: open_question
   description: Note 'bof-agentic-engineering-sf-14-octubre-sin-contenido-ingerido'
@@ -3640,6 +3668,15 @@ _Updated 2026-11-09 — 1197 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-980a0ce7c1
+  type: open_question
+  description: Note 'humildad-condicionada-por-audiencia-y-apuestas' has decayed —
+    does it still hold?
+  related_notes:
+  - humildad-condicionada-por-audiencia-y-apuestas
+  priority: 0.7
+  status: open
+  created: '2026-11-10'
 - id: gap-ea003b0105
   type: open_question
   description: Note 'identificar-no-es-reconocer-en-la-fuente' has decayed — does
@@ -4681,6 +4718,14 @@ _Updated 2026-11-09 — 1197 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-23'
+- id: gap-aebcc62297
+  type: thin_evidence
+  description: Note 'llm-anthropic-0-31-anade-fable-5-2-y-mythos-5-2' rests on 1 source(s)
+  related_notes:
+  - llm-anthropic-0-31-anade-fable-5-2-y-mythos-5-2
+  priority: 0.5
+  status: open
+  created: '2026-11-10'
 - id: gap-c0eada25ee
   type: thin_evidence
   description: Note 'llm-mistral-0-16-anade-soporte-para-modelos-de-razonamiento'
@@ -8412,6 +8457,24 @@ _Updated 2026-11-09 — 1197 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-24'
+- id: gap-a58112dbda
+  type: thin_evidence
+  description: Note 'fable-5-2-primero-en-artificial-analysis-claim-sin-metodologia'
+    rests on 1 source(s)
+  related_notes:
+  - fable-5-2-primero-en-artificial-analysis-claim-sin-metodologia
+  priority: 0.5
+  status: open
+  created: '2026-11-10'
+- id: gap-4a51999061
+  type: thin_evidence
+  description: Note 'fable-5-2-resolvio-dos-problemas-abiertos-de-agujeros-negros-claim-sin-verificar'
+    rests on 1 source(s)
+  related_notes:
+  - fable-5-2-resolvio-dos-problemas-abiertos-de-agujeros-negros-claim-sin-verificar
+  priority: 0.5
+  status: open
+  created: '2026-11-10'
 - id: gap-a3efc8f88b
   type: thin_evidence
   description: Note 'falso-match-llm-as-a-judge-evaluacion-vs-brief-de-agentes-y-liderazgo'
@@ -9046,6 +9109,15 @@ _Updated 2026-11-09 — 1197 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-05'
+- id: gap-12c0268e94
+  type: thin_evidence
+  description: Note 'lanzamiento-de-modelo-coincidente-con-roadshow-de-ipo-como-framing-editorial'
+    rests on 1 source(s)
+  related_notes:
+  - lanzamiento-de-modelo-coincidente-con-roadshow-de-ipo-como-framing-editorial
+  priority: 0.5
+  status: open
+  created: '2026-11-10'
 - id: gap-e537c430bd
   type: thin_evidence
   description: Note 'leak-como-premisa-y-conclusion-en-claude-code' rests on 1 source(s)
