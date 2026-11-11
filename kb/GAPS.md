@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-10 — 1205 entries, highest priority first._
+_Updated 2026-11-11 — 1213 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1906,6 +1906,15 @@ _Updated 2026-11-10 — 1205 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-07'
+- id: gap-f0738c458a
+  type: open_question
+  description: Note 'codex-voz-nube-dots-interaccion-agentes-codigo' has decayed —
+    does it still hold?
+  related_notes:
+  - codex-voz-nube-dots-interaccion-agentes-codigo
+  priority: 0.7
+  status: open
+  created: '2026-11-11'
 - id: gap-777927a907
   type: open_question
   description: Note 'constraint-de-evaluacion-sin-trazas-legora' has decayed — does
@@ -2230,6 +2239,15 @@ _Updated 2026-11-10 — 1205 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-23'
+- id: gap-e7db12c0f0
+  type: open_question
+  description: Note 'llm-anthropic-0-31-anade-fable-5-2-y-mythos-5-2' has decayed
+    — does it still hold?
+  related_notes:
+  - llm-anthropic-0-31-anade-fable-5-2-y-mythos-5-2
+  priority: 0.7
+  status: open
+  created: '2026-11-11'
 - id: gap-a1e4d21e87
   type: open_question
   description: Note 'llm-mistral-0-16-soporte-modelos-razonamiento' has decayed —
@@ -4217,6 +4235,14 @@ _Updated 2026-11-10 — 1205 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-30'
+- id: gap-da84ae57ee
+  type: thin_evidence
+  description: Note 'codex-voz-nube-dots-interaccion-agentes-codigo' rests on 1 source(s)
+  related_notes:
+  - codex-voz-nube-dots-interaccion-agentes-codigo
+  priority: 0.5
+  status: open
+  created: '2026-11-11'
 - id: gap-2269507379
   type: thin_evidence
   description: Note 'complejidad-esencial-vs-accidental-brooks' rests on 1 source(s)
@@ -4505,6 +4531,15 @@ _Updated 2026-11-10 — 1205 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-23'
+- id: gap-30695295a1
+  type: thin_evidence
+  description: Note 'good-ai-list-15k-repos-open-source-ia-fotografia-de-ecosistema'
+    rests on 1 source(s)
+  related_notes:
+  - good-ai-list-15k-repos-open-source-ia-fotografia-de-ecosistema
+  priority: 0.5
+  status: open
+  created: '2026-11-11'
 - id: gap-44b69717d3
   type: thin_evidence
   description: Note 'gpt-6-astra-anuncio-sin-detalle' rests on 1 source(s)
@@ -4768,6 +4803,15 @@ _Updated 2026-11-10 — 1205 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-f4559a4c7f
+  type: thin_evidence
+  description: Note 'llms-en-contribuciones-foss-mitigacion-de-dano-como-recomendacion'
+    rests on 1 source(s)
+  related_notes:
+  - llms-en-contribuciones-foss-mitigacion-de-dano-como-recomendacion
+  priority: 0.5
+  status: open
+  created: '2026-11-11'
 - id: gap-6bd055c312
   type: thin_evidence
   description: Note 'llms-identifican-figuras-publicas-sin-metodologia' rests on 1
@@ -6187,6 +6231,24 @@ _Updated 2026-11-10 — 1205 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-21'
+- id: gap-67e0fe763c
+  type: thin_evidence
+  description: Note 'codex-modos-de-interaccion-no-evidencia-de-estimacion-y-secuenciacion'
+    rests on 1 source(s)
+  related_notes:
+  - codex-modos-de-interaccion-no-evidencia-de-estimacion-y-secuenciacion
+  priority: 0.5
+  status: open
+  created: '2026-11-11'
+- id: gap-73ad4cb9b7
+  type: thin_evidence
+  description: Note 'codex-voz-nube-dots-cobertura-de-charla-sin-fuente-primaria'
+    rests on 1 source(s)
+  related_notes:
+  - codex-voz-nube-dots-cobertura-de-charla-sin-fuente-primaria
+  priority: 0.5
+  status: open
+  created: '2026-11-11'
 - id: gap-2964d3f7b5
   type: thin_evidence
   description: Note 'como-generaliza-un-harness-de-dominio-a-otros-dominios' rests
@@ -9566,6 +9628,15 @@ _Updated 2026-11-10 — 1205 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-29'
+- id: gap-091fe5f4be
+  type: thin_evidence
+  description: Note 'openai-incidente-hacking-agentes-como-contrapeso-a-adopcion'
+    rests on 1 source(s)
+  related_notes:
+  - openai-incidente-hacking-agentes-como-contrapeso-a-adopcion
+  priority: 0.5
+  status: open
+  created: '2026-11-11'
 - id: gap-d34ece1d8a
   type: thin_evidence
   description: Note 'opus-5-5-explainer-videos-titulo-sin-contenido-ingerido' rests

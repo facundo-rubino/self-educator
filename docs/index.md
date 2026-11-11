@@ -1,19 +1,19 @@
-# Brief — 2026-11-10
+# Brief — 2026-11-11
 
 ## Los titulares
 
-1. [llm-anthropic 0.31](https://simonwillison.net/2026/Nov/9/llm-anthropic/) — *IA y agentes en mi trabajo*
+1. [AI Engineer Code Summit: OpenAI on New Ways of Working With Codex](https://latent.space/p/codex-work/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [llm-anthropic 0.31](https://simonwillison.net/2026/Nov/9/llm-anthropic/)
+### [AI Engineer Code Summit: OpenAI on New Ways of Working With Codex](https://latent.space/p/codex-work/)
 
-The cluster is essentially a single release signal, not a research finding: the `llm-anthropic` plugin added support for two new Anthropic models, Fable 5.2 and Mythos 5.2, released on the same day as the $ANT IPO roads…
+El clúster es heterogéneo y no respalda una tesis técnica fuerte; el único documento directamente relevante al signal es una nota breve de la AIE Code Summit sobre cómo OpenAI presenta a Codex como herramienta que se ma…
 
-<sub>fuentes: rss · confianza: 10%</sub>
+<sub>fuentes: rss · confianza: 7%</sub>
 
 ---
 
-<sub>1 señales consideradas, 0 descartadas por no ser de ningún tema, 5 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
+<sub>1 señales consideradas, 0 descartadas por no ser de ningún tema, 6 ya emitidas en un brief anterior. El KB completo se abre con Obsidian sobre `kb/`.</sub>
