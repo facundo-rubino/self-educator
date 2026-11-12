@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-11 — 1213 entries, highest priority first._
+_Updated 2026-11-12 — 1222 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -173,6 +173,16 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-11-09'
+- id: gap-9786d9f1dd
+  type: contradiction
+  description: Unresolved contradiction between 'dataphilly-charla-retrieval-embeddings-onnx-titulo-sin-slides'
+    and 'relevancia-inferencial-no-es-evidencia-para-el-brief'
+  related_notes:
+  - dataphilly-charla-retrieval-embeddings-onnx-titulo-sin-slides
+  - relevancia-inferencial-no-es-evidencia-para-el-brief
+  priority: 0.9
+  status: open
+  created: '2026-11-12'
 - id: gap-b960a42f22
   type: contradiction
   description: Unresolved contradiction between 'disposicion-a-parecer-estupido-tiene-costes'
@@ -1960,6 +1970,15 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-23'
+- id: gap-55060806d1
+  type: open_question
+  description: Note 'dataphilly-charla-retrieval-embeddings-onnx-titulo-sin-slides'
+    has decayed — does it still hold?
+  related_notes:
+  - dataphilly-charla-retrieval-embeddings-onnx-titulo-sin-slides
+  priority: 0.7
+  status: open
+  created: '2026-11-12'
 - id: gap-0576b7e55d
   type: open_question
   description: Note 'disposicion-a-parecer-estupido-habilita-conducta-no-optimizada-para-parecer-inteligente'
@@ -2086,6 +2105,15 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-23'
+- id: gap-da7c9ff089
+  type: open_question
+  description: Note 'good-ai-list-15k-repos-open-source-ia-fotografia-de-ecosistema'
+    has decayed — does it still hold?
+  related_notes:
+  - good-ai-list-15k-repos-open-source-ia-fotografia-de-ecosistema
+  priority: 0.7
+  status: open
+  created: '2026-11-12'
 - id: gap-3677f80aab
   type: open_question
   description: Note 'gpt-6-astra-anuncio-sin-detalle' has decayed — does it still
@@ -2275,6 +2303,15 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-20'
+- id: gap-9e6e09f4aa
+  type: open_question
+  description: Note 'llms-en-contribuciones-foss-mitigacion-de-dano-como-recomendacion'
+    has decayed — does it still hold?
+  related_notes:
+  - llms-en-contribuciones-foss-mitigacion-de-dano-como-recomendacion
+  priority: 0.7
+  status: open
+  created: '2026-11-12'
 - id: gap-f33692e75e
   type: open_question
   description: Note 'llms-identifican-figuras-publicas-en-imagenes-claim-sin-metodologia'
@@ -3308,6 +3345,15 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-800ce91b49
+  type: open_question
+  description: Note 'pregunta-abierta-build-vs-host-como-palanca-de-liderazgo-tecnico'
+    has decayed — does it still hold?
+  related_notes:
+  - pregunta-abierta-build-vs-host-como-palanca-de-liderazgo-tecnico
+  priority: 0.7
+  status: open
+  created: '2026-11-12'
 - id: gap-93f4fb054a
   type: open_question
   description: Note 'probe-de-rechazo-por-identidad-en-produccion' has decayed — does
@@ -4338,6 +4384,15 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-23'
+- id: gap-781f74f7fb
+  type: thin_evidence
+  description: Note 'dataphilly-charla-retrieval-embeddings-onnx-titulo-sin-slides'
+    rests on 1 source(s)
+  related_notes:
+  - dataphilly-charla-retrieval-embeddings-onnx-titulo-sin-slides
+  priority: 0.5
+  status: open
+  created: '2026-11-12'
 - id: gap-8cdc928f9d
   type: thin_evidence
   description: Note 'datasette-0-65-5-security-fix-trailing-newline' rests on 1 source(s)
@@ -6808,6 +6863,15 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-8cf7714492
+  type: thin_evidence
+  description: Note 'pregunta-abierta-build-vs-host-como-palanca-de-liderazgo-tecnico'
+    rests on 1 source(s)
+  related_notes:
+  - pregunta-abierta-build-vs-host-como-palanca-de-liderazgo-tecnico
+  priority: 0.5
+  status: open
+  created: '2026-11-12'
 - id: gap-a5870e56ed
   type: thin_evidence
   description: Note 'probe-de-rechazo-por-identidad-en-produccion' rests on 1 source(s)
@@ -8284,6 +8348,15 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-02'
+- id: gap-efe8ce8e63
+  type: thin_evidence
+  description: Note 'dataphilly-charla-single-source-engagement-cero-no-es-tendencia'
+    rests on 1 source(s)
+  related_notes:
+  - dataphilly-charla-single-source-engagement-cero-no-es-tendencia
+  priority: 0.5
+  status: open
+  created: '2026-11-12'
 - id: gap-562a56b393
   type: thin_evidence
   description: Note 'decision-models-claim-sin-especificacion' rests on 1 source(s)
@@ -9055,6 +9128,15 @@ _Updated 2026-11-11 — 1213 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-4ab21aaa00
+  type: thin_evidence
+  description: Note 'indice-ignora-que-el-cluster-de-dataphilly-no-tiene-ejes-del-brief'
+    rests on 1 source(s)
+  related_notes:
+  - indice-ignora-que-el-cluster-de-dataphilly-no-tiene-ejes-del-brief
+  priority: 0.5
+  status: open
+  created: '2026-11-12'
 - id: gap-8678f65c86
   type: thin_evidence
   description: Note 'inferir-aria-adicional-desde-fragmento-tooltip-seria-alucinacion'

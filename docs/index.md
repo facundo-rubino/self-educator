@@ -1,18 +1,18 @@
-# Brief — 2026-11-11
+# Brief — 2026-11-12
 
 ## Los titulares
 
-1. [AI Engineer Code Summit: OpenAI on New Ways of Working With Codex](https://latent.space/p/codex-work/) — *IA y agentes en mi trabajo*
+1. [Slides on retrieval and ranking with ONNX inference](https://vickiboykis.com/2026/10/29/slides-on-retrieval-and-ranking-with-onnx-inference/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [AI Engineer Code Summit: OpenAI on New Ways of Working With Codex](https://latent.space/p/codex-work/)
+### [Slides on retrieval and ranking with ONNX inference](https://vickiboykis.com/2026/10/29/slides-on-retrieval-and-ranking-with-onnx-inference/)
 
-El clúster es heterogéneo y no respalda una tesis técnica fuerte; el único documento directamente relevante al signal es una nota breve de la AIE Code Summit sobre cómo OpenAI presenta a Codex como herramienta que se ma…
+The cluster contains a single low-engagement RSS artifact [081b67711434f0d2] describing a half-hour DataPhilly meetup talk on embedding-based retrieval, ML model artifact creation and inference, general vs
 
-<sub>fuentes: rss · confianza: 7%</sub>
+<sub>fuentes: rss · confianza: 5%</sub>
 
 ---
 
