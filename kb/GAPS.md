@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-12 — 1222 entries, highest priority first._
+_Updated 2026-11-13 — 1231 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1452,6 +1452,16 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-22'
+- id: gap-205f757927
+  type: contradiction
+  description: Unresolved contradiction between 'anthropic-claude-code-eval-tooling-build-eval-hill-climb'
+    and 'naming-auto-eval-tool-no-implica-sistema-autonomo'
+  related_notes:
+  - anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  - naming-auto-eval-tool-no-implica-sistema-autonomo
+  priority: 0.9
+  status: open
+  created: '2026-11-13'
 - id: gap-e5695e54fb
   type: contradiction
   description: Unresolved contradiction between 'constraint-de-evaluacion-sin-trazas-legora'
@@ -1844,6 +1854,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-24'
+- id: gap-9b819e7ef3
+  type: open_question
+  description: Note 'build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders'
+    has decayed — does it still hold?
+  related_notes:
+  - build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders
+  priority: 0.7
+  status: open
+  created: '2026-11-13'
 - id: gap-803600fc77
   type: open_question
   description: Note 'cagliostro-v3-5-135m-open-slm-leaderboard-sin-evaluacion-practica'
@@ -3507,6 +3526,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-03'
+- id: gap-a5cfc624c1
+  type: open_question
+  description: Note 'tooling-first-party-como-camino-a-estandarizacion-de-evals-hipotesis'
+    has decayed — does it still hold?
+  related_notes:
+  - tooling-first-party-como-camino-a-estandarizacion-de-evals-hipotesis
+  priority: 0.7
+  status: open
+  created: '2026-11-13'
 - id: gap-5030d3d882
   type: open_question
   description: Note 'afirmacion-de-capacidad-desde-un-titular-rss-sobre-identificacion'
@@ -3669,6 +3697,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-17'
+- id: gap-9cab5a9e6e
+  type: open_question
+  description: Note 'cosignar-evaluacion-o-participar-en-ella-no-es-adopcion' has
+    decayed — does it still hold?
+  related_notes:
+  - cosignar-evaluacion-o-participar-en-ella-no-es-adopcion
+  priority: 0.7
+  status: open
+  created: '2026-11-13'
 - id: gap-5a4e8423c5
   type: open_question
   description: Note 'decision-models-claim-sin-especificacion' has decayed — does
@@ -4139,15 +4176,6 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-07'
-- id: gap-8a00acba3c
-  type: thin_evidence
-  description: Note 'anthropic-ship-claude-with-claude-framing-propio-sin-verificar'
-    rests on 1 source(s)
-  related_notes:
-  - anthropic-ship-claude-with-claude-framing-propio-sin-verificar
-  priority: 0.5
-  status: open
-  created: '2026-10-28'
 - id: gap-7e35cdade9
   type: thin_evidence
   description: Note 'arca-agentes-largo-horizonte-memoria-harness' rests on 1 source(s)
@@ -4192,6 +4220,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-21'
+- id: gap-2a720fb0f7
+  type: thin_evidence
+  description: Note 'build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders'
+    rests on 1 source(s)
+  related_notes:
+  - build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders
+  priority: 0.5
+  status: open
+  created: '2026-11-13'
 - id: gap-51d66900c8
   type: thin_evidence
   description: Note 'cagliostro-v3-5-135m-open-slm-leaderboard-sin-evaluacion-practica'
@@ -5916,6 +5953,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-22'
+- id: gap-53bcfb24c5
+  type: thin_evidence
+  description: Note 'verificar-comandos-de-plugin-contra-upstream-antes-de-adoptarlos'
+    rests on 1 source(s)
+  related_notes:
+  - verificar-comandos-de-plugin-contra-upstream-antes-de-adoptarlos
+  priority: 0.5
+  status: open
+  created: '2026-11-13'
 - id: gap-65d3e6e651
   type: thin_evidence
   description: Note 'verificar-etiqueta-de-cluster-antes-de-compilar-claim-sobre-su-tema'
@@ -7074,6 +7120,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-03'
+- id: gap-9c0ee20f4e
+  type: thin_evidence
+  description: Note 'tooling-first-party-como-camino-a-estandarizacion-de-evals-hipotesis'
+    rests on 1 source(s)
+  related_notes:
+  - tooling-first-party-como-camino-a-estandarizacion-de-evals-hipotesis
+  priority: 0.5
+  status: open
+  created: '2026-11-13'
 - id: gap-782e954f9a
   type: thin_evidence
   description: Note 'tooltip-aria-describedby-insuficiente-anecdota-sin-mecanismo'
@@ -7572,6 +7627,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-29'
+- id: gap-dd27d2b9f3
+  type: thin_evidence
+  description: Note 'anthropic-claude-code-eval-tooling-engagement-cero-sin-corroboracion'
+    rests on 1 source(s)
+  related_notes:
+  - anthropic-claude-code-eval-tooling-engagement-cero-sin-corroboracion
+  priority: 0.5
+  status: open
+  created: '2026-11-13'
 - id: gap-dca61e25c0
   type: thin_evidence
   description: Note 'anthropic-claude-code-eval-tooling-envejece-rapido-por-shelf-life'
@@ -7590,6 +7654,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-07'
+- id: gap-769bed3d9a
+  type: thin_evidence
+  description: Note 'anthropic-claude-code-eval-tooling-novelty-cero-no-sostiene-claim-de-novedad'
+    rests on 1 source(s)
+  related_notes:
+  - anthropic-claude-code-eval-tooling-novelty-cero-no-sostiene-claim-de-novedad
+  priority: 0.5
+  status: open
+  created: '2026-11-13'
 - id: gap-5dd0dd6c09
   type: thin_evidence
   description: Note 'anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial'
@@ -9648,6 +9721,15 @@ _Updated 2026-11-12 — 1222 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-6374220e6f
+  type: thin_evidence
+  description: Note 'naming-auto-eval-tool-no-implica-sistema-autonomo' rests on 1
+    source(s)
+  related_notes:
+  - naming-auto-eval-tool-no-implica-sistema-autonomo
+  priority: 0.5
+  status: open
+  created: '2026-11-13'
 - id: gap-ef26a33d40
   type: thin_evidence
   description: Note 'newport-incidente-no-es-guia-de-ingenieria' rests on 1 source(s)

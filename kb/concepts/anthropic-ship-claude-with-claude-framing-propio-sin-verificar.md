@@ -9,18 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-28'
-updated: '2026-10-28'
+updated: '2026-11-13'
 sources:
 - 3602a6421bac79d9
+- 541b1e7161ae8f43
 tags:
+- agentes
 - anthropic
+- evals
 - framing
+- marketing
 - productividad
 - vendor
-- agentes
 base_confidence: 0.12
 half_life_days: 180
-last_reinforced: '2026-10-28'
+last_reinforced: '2026-11-13'
 provenance:
   scale: S
   query: null
@@ -31,20 +34,27 @@ links:
   type: relates_to
 - to: agentes-ia-aceleran-trabajo-acotado-y-verificable
   type: contradicts
+- to: anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  type: relates_to
+- to: cosignar-estandar-no-implica-adopcion
+  type: relates_to
 ---
 
 ## What it is
-Anthropic presenta su tesis de que «ship Claude with Claude»: los agentes participan en la ingeniería del propio producto. Es una afirmación corporativa sobre el proceso interno, sin tasas de fallo, retrabajo ni datos de productividad asociados.
+La postura «una herramienta first-party de Anthropic probablemente influya en cómo se hacen las evals» es especulación del autor sobre influencia futura, no un hallazgo medido. El documento está a la vez vendiendo un flujo de trabajo (iterar contra graders con `hill-climb`) y anunciando su origen first-party. El riesgo es que la fuente promocione su propio flujo y que el resumen lo amplifique sin verificación independiente de qué hacen los comandos ni si se publican.
 
 ## Evidence
-- La tesis es que Anthropic entrega Claude usando Claude mismo: agentes participan en la ingeniería de su producto — source: 3602a6421bac79d9
+- El autor afirma que una herramienta first-party de Anthropic probablemente influya en cómo se hacen las evals — source: 541b1e7161ae8f43
+- El documento describe el flujo de mejora iterando contra graders que la herramienta facilita — source: 541b1e7161ae8f43
 
 ## Why it matters
-Un líder que lea esto como evidencia de productividad de agentes estaría citando testimonio interesado. La afirmación describe una narrativa de vendor, no un resultado. No hay en el material reporte de fallos ni de coste de rework.
+Un titular sobre una herramienta propia de un proveedor no es evidencia de adopción ni de eficacia. La afirmación «probablemente influya» no se puede usar como palanca en una decisión de equipo.
 
-`relates_to` la separación cerebro/manos, de cuyo episodio proviene este framing. `relates_to` la crítica a laboratorios como demanda de rendición de cuentas: la afirmación es del propio laboratorio. `contradicts` la nota sobre que los agentes aceleran trabajo acotado y verificable: aquí no se acota qué trabajo interno aceleran ni con qué verificación.
+Se relaciona con el concepto del tooling por describir el mismo flujo. Comparte con `cosignar-estandar-no-implica-adopcion` la estructura: el respaldo de un actor no es evidencia de que su práctica se adopte.
 
 ## Links
 - relates_to → [[separacion-cerebro-manos-modelo-harness-agente]]
 - relates_to → [[critica-a-laboratorios-como-demanda-de-rendicion-de-cuentas]]
 - contradicts → [[agentes-ia-aceleran-trabajo-acotado-y-verificable]]
+- relates_to → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
+- relates_to → [[cosignar-estandar-no-implica-adopcion]]

@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-07'
-updated: '2026-11-08'
+updated: '2026-11-13'
 sources:
 - 541b1e7161ae8f43
 tags:
@@ -22,7 +22,7 @@ tags:
 - vida-util
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-11-08'
+last_reinforced: '2026-11-13'
 provenance:
   scale: S
   query: null
@@ -33,20 +33,23 @@ links:
   type: relates_to
 - to: datasette-alpha-features-no-son-settled
   type: relates_to
+- to: anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  type: derived_from
 ---
 
 ## What it is
-El autor declara que normalmente evita reseñar herramientas de evaluación porque el software cambia rápido y las reseñas tienen vida útil corta; hace una excepción con el tooling de primera parte de Anthropic [541b1e7161ae8f43]. Cualquier detalle sobre `build_eval` o `hill-climb` registrado hoy puede quedar obsoleto o cambiar pronto.
+El autor del documento afirma que normalmente no revisa herramientas de evaluación por su corta vida útil. Ese juicio es en sí mismo evidencia de que cualquier nota o recomendación basada en el tooling de evals de Claude Code caduca rápido: los comandos, su interfaz y su comportamiento pueden cambiar o desaparecer sin correlato en un estándar estable.
 
 ## Evidence
-- El autor evita reseñar herramientas de eval por el ritmo de cambio del software y la corta vida útil de las reseñas — source: 541b1e7161ae8f43
+- El autor declara que no suele reseñar herramientas de eval por su corta vida útil — source: 541b1e7161ae8f43
 
 ## Why it matters
-Un claim sobre este tooling es perecedero por diseño: no debe citarse como estado estable de la práctica sin re-verificación contra upstream antes de usarse en configuración o docencia.
+Una nota del KB que documente `build_eval` y `hill-climb` como práctica recomendada debe fecharse y revisarse contra la versión del plugin. Para un equipo chico, invertir en un harness propio sobre evals estables es más duradero que adoptar comandos de un plugin que puede cambiar por release.
 
-Se relaciona con la nota del tooling como condición de vigencia de su contenido, y con la nota sobre features de alpha no asentadas: en ambos casos lo documentado puede cambiar antes de estabilizarse.
+Deriva del concepto del tooling. Conecta con la discusión general sobre mantenimiento frente a generación: el coste de re-verificar tooling, no el de escribirlo, es lo que no baja.
 
 ## Links
 - relates_to → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
 - relates_to → [[arquitectura-de-prompt-cambia-sin-aviso]]
 - relates_to → [[datasette-alpha-features-no-son-settled]]
+- derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]

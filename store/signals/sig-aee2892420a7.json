@@ -1,0 +1,29 @@
+{
+  "id": "sig-aee2892420a7",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "‘Bring Back THE Boss’: Nvidia Employees Petition for Jensen Huang’s Return",
+  "member_doc_ids": [
+    "e25a5888ceb1de49"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "t3_1xuxxmb",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 0.6006,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.3502,
+  "first_seen": "2026-11-13T04:03:28Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

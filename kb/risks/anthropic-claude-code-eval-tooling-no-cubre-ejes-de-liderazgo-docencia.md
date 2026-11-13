@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-07'
-updated: '2026-11-08'
+updated: '2026-11-13'
 sources:
 - 541b1e7161ae8f43
 tags:
@@ -22,7 +22,7 @@ tags:
 - liderazgo
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-11-08'
+last_reinforced: '2026-11-13'
 provenance:
   scale: S
   query: null
@@ -35,22 +35,27 @@ links:
   type: relates_to
 - to: puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista
   type: supports
+- to: anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  type: derived_from
+- to: eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes
+  type: relates_to
 ---
 
 ## What it is
-El documento no dice nada sobre liderazgo de equipo, estimación, secuenciación, alcance, organización personal ni pedagogía. La conexión con el topic es temática, no evidencial: solo esboza un mecanismo (construir evals y escalar contra ellas) que un ingeniero que usa agentes incorporaría a su flujo de coding [541b1e7161ae8f43].
+El documento reporta la existencia de dos comandos en un plugin. No contiene datos sobre estimación, secuenciamiento, gestión de equipos ni docencia de programación. Leerlo como evidencia de que los equipos chicos estandarizarán sus evals, o de que el patrón es trasladable a ejercicios de enseñanza, es un puente del analista, no un hallazgo del documento.
 
 ## Evidence
-- El documento no menciona liderazgo, estimación, secuenciación ni pedagogía — source: 541b1e7161ae8f43
-- La conexión declarada con el topic es temática más que evidencial — source: 541b1e7161ae8f43
+- La única evidencia del documento son los dos comandos y el juicio del autor sobre su posible influencia — source: 541b1e7161ae8f43
 
 ## Why it matters
-Extender los hallazgos a liderazgo técnico o docencia sería inferencia del analista, no hallazgo. La utilidad plausible (graders como criterios de aceptación explícitos y revisables) queda como hipótesis, no como evidencia del documento.
+Para el brief de agentes, liderazgo y docencia, este clúster aporta a lo sumo una técnica de evals de agente. No aporta nada sobre cómo un dev-líder organiza trabajo o enseña. Marcarlo así evita inflar su relevancia en una síntesis.
 
-Contradice la nota del tooling en el eje de aplicabilidad al brief. Refuerza la nota de riesgo sobre el puente «evals por tarea → práctica de liderazgo» como inferencia del analista.
+Deriva del concepto del tooling. Se relaciona con `eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes`, que es el lugar donde una señal de evals sí conectaría con liderazgo, pero solo con evidencia adicional.
 
 ## Links
 - contradicts → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
 - relates_to → [[task-specific-llm-evals-puente-a-liderazgo-y-docencia-es-inferencia]]
 - relates_to → [[afirmar-contenido-de-bof-desde-titulo-de-signal]]
 - supports → [[puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista]]
+- derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
+- relates_to → [[eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes]]

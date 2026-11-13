@@ -1,0 +1,30 @@
+{
+  "id": "sig-ce226b621bb3",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "llm-gemini 0.37",
+  "member_doc_ids": [
+    "754551035866d1df",
+    "c88eaccf86ecdd4c"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 0.3333,
+    "novelty": 0.107,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.3434,
+  "first_seen": "2026-11-11T09:34:28Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
