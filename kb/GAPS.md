@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-13 — 1231 entries, highest priority first._
+_Updated 2026-11-14 — 1240 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1252,6 +1252,16 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-17'
+- id: gap-dd90993400
+  type: contradiction
+  description: Unresolved contradiction between 'harness-agentico-de-seis-pasos-para-asegurar-codigo'
+    and 'harness-de-seguridad-como-marcador-de-topico-no-hallazgo'
+  related_notes:
+  - harness-agentico-de-seis-pasos-para-asegurar-codigo
+  - harness-de-seguridad-como-marcador-de-topico-no-hallazgo
+  priority: 0.9
+  status: open
+  created: '2026-11-14'
 - id: gap-84e2fdc881
   type: contradiction
   description: Unresolved contradiction between 'how-to-match-llm-patterns-bordes-taxonomia-no-validados'
@@ -2151,6 +2161,15 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-24'
+- id: gap-811bfbdb9a
+  type: open_question
+  description: Note 'harness-agentico-de-seis-pasos-para-asegurar-codigo' has decayed
+    — does it still hold?
+  related_notes:
+  - harness-agentico-de-seis-pasos-para-asegurar-codigo
+  priority: 0.7
+  status: open
+  created: '2026-11-14'
 - id: gap-eb74eabf88
   type: open_question
   description: Note 'harness-propio-frente-a-framework-generico-caso-arca' has decayed
@@ -3068,6 +3087,15 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-24'
+- id: gap-addb2d21e9
+  type: open_question
+  description: Note 'cuellos-de-botella-organizacionales-como-constraint-de-adopcion-de-agentes-de-seguridad'
+    has decayed — does it still hold?
+  related_notes:
+  - cuellos-de-botella-organizacionales-como-constraint-de-adopcion-de-agentes-de-seguridad
+  priority: 0.7
+  status: open
+  created: '2026-11-14'
 - id: gap-0a359f89ac
   type: open_question
   description: Note 'delta-de-rendimiento-triangulado-por-una-sola-maquina' has decayed
@@ -3149,6 +3177,15 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-24'
+- id: gap-b7d8d7b07f
+  type: open_question
+  description: Note 'harness-de-seis-pasos-como-scaffold-para-estudiantes-requiere-guardrails'
+    has decayed — does it still hold?
+  related_notes:
+  - harness-de-seis-pasos-como-scaffold-para-estudiantes-requiere-guardrails
+  priority: 0.7
+  status: open
+  created: '2026-11-14'
 - id: gap-e4bc5610dd
   type: open_question
   description: Note 'herramientas-y-vocabulario-compartido-como-infraestructura-cognitiva'
@@ -3355,6 +3392,15 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-24'
+- id: gap-bd16e56f9f
+  type: open_question
+  description: Note 'pasos-de-verificacion-y-triage-como-gate-de-accionabilidad' has
+    decayed — does it still hold?
+  related_notes:
+  - pasos-de-verificacion-y-triage-como-gate-de-accionabilidad
+  priority: 0.7
+  status: open
+  created: '2026-11-14'
 - id: gap-954d28de03
   type: open_question
   description: Note 'post-unico-como-plantilla-de-demostracion-end-to-end' has decayed
@@ -3706,6 +3752,15 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-13'
+- id: gap-ae769f35e6
+  type: open_question
+  description: Note 'coste-y-latencia-de-workflows-de-varios-dias-no-discutidos' has
+    decayed — does it still hold?
+  related_notes:
+  - coste-y-latencia-de-workflows-de-varios-dias-no-discutidos
+  priority: 0.7
+  status: open
+  created: '2026-11-14'
 - id: gap-5a4e8423c5
   type: open_question
   description: Note 'decision-models-claim-sin-especificacion' has decayed — does
@@ -6395,6 +6450,15 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-13'
+- id: gap-a6bb636de3
+  type: thin_evidence
+  description: Note 'cuellos-de-botella-organizacionales-como-constraint-de-adopcion-de-agentes-de-seguridad'
+    rests on 1 source(s)
+  related_notes:
+  - cuellos-de-botella-organizacionales-como-constraint-de-adopcion-de-agentes-de-seguridad
+  priority: 0.5
+  status: open
+  created: '2026-11-14'
 - id: gap-b98f9a1d56
   type: thin_evidence
   description: Note 'datasette-1-0a40-cluster-sin-documento-datasette' rests on 1
@@ -6564,6 +6628,15 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-22'
+- id: gap-32c386aa88
+  type: thin_evidence
+  description: Note 'harness-de-seis-pasos-como-scaffold-para-estudiantes-requiere-guardrails'
+    rests on 1 source(s)
+  related_notes:
+  - harness-de-seis-pasos-como-scaffold-para-estudiantes-requiere-guardrails
+  priority: 0.5
+  status: open
+  created: '2026-11-14'
 - id: gap-aa5f7f4963
   type: thin_evidence
   description: Note 'herramientas-y-vocabulario-compartido-como-infraestructura-cognitiva'
@@ -6882,6 +6955,15 @@ _Updated 2026-11-13 — 1231 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-27'
+- id: gap-7e2cb01aed
+  type: thin_evidence
+  description: Note 'pasos-de-verificacion-y-triage-como-gate-de-accionabilidad' rests
+    on 1 source(s)
+  related_notes:
+  - pasos-de-verificacion-y-triage-como-gate-de-accionabilidad
+  priority: 0.5
+  status: open
+  created: '2026-11-14'
 - id: gap-96745cf1a8
   type: thin_evidence
   description: Note 'pipeline-sin-fuente-primaria-para-verificar-senal-de-ataques'
