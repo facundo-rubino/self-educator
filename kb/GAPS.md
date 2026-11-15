@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-14 — 1240 entries, highest priority first._
+_Updated 2026-11-15 — 1249 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1332,6 +1332,16 @@ _Updated 2026-11-14 — 1240 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-18'
+- id: gap-7b1b893ca7
+  type: contradiction
+  description: Unresolved contradiction between 'jev-system-one-como-etiqueta-de-vendor'
+    and 'presentar-una-etiqueta-como-capacidad-demostrada'
+  related_notes:
+  - jev-system-one-como-etiqueta-de-vendor
+  - presentar-una-etiqueta-como-capacidad-demostrada
+  priority: 0.9
+  status: open
+  created: '2026-11-15'
 - id: gap-cdd3c17a47
   type: contradiction
   description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
@@ -4049,6 +4059,15 @@ _Updated 2026-11-14 — 1240 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-09'
+- id: gap-8d95c5c29d
+  type: open_question
+  description: Note 'task-specific-llm-evals-singleton-engagement-cero' has decayed
+    — does it still hold?
+  related_notes:
+  - task-specific-llm-evals-singleton-engagement-cero
+  priority: 0.7
+  status: open
+  created: '2026-11-15'
 - id: gap-8333b6559c
   type: open_question
   description: Note 'tema-de-identificacion-de-figuras-publicas-tangencial-al-brief'
@@ -6805,6 +6824,32 @@ _Updated 2026-11-14 — 1240 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-9387183444
+  type: thin_evidence
+  description: Note 'jev-cluster-no-aporta-evidencia-de-docencia' rests on 1 source(s)
+  related_notes:
+  - jev-cluster-no-aporta-evidencia-de-docencia
+  priority: 0.5
+  status: open
+  created: '2026-11-15'
+- id: gap-1e1691ac14
+  type: thin_evidence
+  description: Note 'jev-cluster-no-aporta-evidencia-de-estimacion-ni-secuenciacion'
+    rests on 1 source(s)
+  related_notes:
+  - jev-cluster-no-aporta-evidencia-de-estimacion-ni-secuenciacion
+  priority: 0.5
+  status: open
+  created: '2026-11-15'
+- id: gap-d5fe01e788
+  type: thin_evidence
+  description: Note 'jev-revolution-cluster-senal-debil-sin-evidencia-de-liderazgo-ni-docencia'
+    rests on 1 source(s)
+  related_notes:
+  - jev-revolution-cluster-senal-debil-sin-evidencia-de-liderazgo-ni-docencia
+  priority: 0.5
+  status: open
+  created: '2026-11-15'
 - id: gap-be3e79e069
   type: thin_evidence
   description: Note 'juez-humano-we-and-b-llm-as-a-judge-hackathon-sin-contenido-ingerido'
@@ -9337,6 +9382,41 @@ _Updated 2026-11-14 — 1240 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-02'
+- id: gap-1d8a4cc68d
+  type: thin_evidence
+  description: Note 'jev-confianza-ajustada-0-05-por-critico' rests on 1 source(s)
+  related_notes:
+  - jev-confianza-ajustada-0-05-por-critico
+  priority: 0.5
+  status: open
+  created: '2026-11-15'
+- id: gap-b79b82f880
+  type: thin_evidence
+  description: Note 'jev-consejo-automate-everything-puede-degradar-juicio-y-revision'
+    rests on 1 source(s)
+  related_notes:
+  - jev-consejo-automate-everything-puede-degradar-juicio-y-revision
+  priority: 0.5
+  status: open
+  created: '2026-11-15'
+- id: gap-5cbea2cd78
+  type: thin_evidence
+  description: Note 'jev-inferencia-de-tema-vivo-entre-ingenieros-es-circular' rests
+    on 1 source(s)
+  related_notes:
+  - jev-inferencia-de-tema-vivo-entre-ingenieros-es-circular
+  priority: 0.5
+  status: open
+  created: '2026-11-15'
+- id: gap-47d67824ec
+  type: thin_evidence
+  description: Note 'jev-novelty-baja-0-13-reafirmacion-de-narrativa-existente' rests
+    on 1 source(s)
+  related_notes:
+  - jev-novelty-baja-0-13-reafirmacion-de-narrativa-existente
+  priority: 0.5
+  status: open
+  created: '2026-11-15'
 - id: gap-6bf2a06f83
   type: thin_evidence
   description: Note 'jpeg-xl-vs-avif-claim-reitera-la-query-circularidad' rests on
