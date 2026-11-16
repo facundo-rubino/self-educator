@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-15 — 1249 entries, highest priority first._
+_Updated 2026-11-16 — 1252 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -4528,6 +4528,33 @@ _Updated 2026-11-15 — 1249 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-3a4fa2a8e1
+  type: thin_evidence
+  description: Note 'datasette-agent-0-6a0-fixes-acumulados-y-prompt-en-homepage'
+    rests on 1 source(s)
+  related_notes:
+  - datasette-agent-0-6a0-fixes-acumulados-y-prompt-en-homepage
+  priority: 0.5
+  status: open
+  created: '2026-11-16'
+- id: gap-b3c231fff3
+  type: thin_evidence
+  description: Note 'datasette-apps-0-4a0-enlace-por-fragmentos-y-schemes' rests on
+    1 source(s)
+  related_notes:
+  - datasette-apps-0-4a0-enlace-por-fragmentos-y-schemes
+  priority: 0.5
+  status: open
+  created: '2026-11-16'
+- id: gap-c63e899cc2
+  type: thin_evidence
+  description: Note 'datasette-apps-sandbox-html-js-con-sql-analogo-a-artifacts' rests
+    on 1 source(s)
+  related_notes:
+  - datasette-apps-sandbox-html-js-con-sql-analogo-a-artifacts
+  priority: 0.5
+  status: open
+  created: '2026-11-16'
 - id: gap-c3e06e1f48
   type: thin_evidence
   description: Note 'datasette-explain-plugin-0-2-2' rests on 1 source(s)
