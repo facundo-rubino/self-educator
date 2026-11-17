@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 sources:
 - 541b1e7161ae8f43
 tags:
+- config
+- configuracion-de-equipo
+- evals
+- plugin
 - tooling
 - verificacion
-- evals
-- config
 base_confidence: 0.45
 half_life_days: 365
-last_reinforced: '2026-11-13'
+last_reinforced: '2026-11-17'
 provenance:
   scale: S
   query: null
@@ -29,19 +31,26 @@ links:
   type: derived_from
 - to: verificar-features-de-tooling-antes-de-citar-en-docencia-o-config
   type: supports
+- to: anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial
+  type: derived_from
+- to: datasette-explain-upgrade-como-forcing-function
+  type: relates_to
 ---
 
 ## What it is
-Cuando una feature de tooling aparece solo en un reporte secundario y no en documentación oficial, la regla operativa es verificarla contra upstream (changelog del plugin, repositorio o docs del proveedor) antes de incluirla en configuración de equipo o en material de docencia. El caso de `build_eval` y `hill-climb` es una instancia: el nombre exacto, la interfaz y la disponibilidad no están confirmados más allá del reporte.
+Antes de adoptar un comando de plugin (`build_eval`, `hill-climb`) como criterio de aceptación, de configuración de equipo o de material didáctico, la verificación contra la documentación oficial del proveedor es requisito. Un anuncio de blog, aunque sea de una empresa conocida, no confirma la existencia ni la semántica de los comandos.
 
 ## Evidence
-- La única fuente es un reporte secundario de feed RSS sobre `build_eval` y `hill-climb` — source: 541b1e7161ae8f43
+- El anuncio de `build_eval`/`hill-climb` proviene de una sola fuente truncada, sin documentación oficial enlazada — fuente: 541b1e7161ae8f43
+- El post se corta antes de describir mecanismos ni resultados — fuente: 541b1e7161ae8f43
 
 ## Why it matters
-Adoptar un comando de plugin en la configuración de un equipo es barato; adoptarlo cuando no existe con ese nombre en la versión instalada cuesta el tiempo de descubrirlo en producción o en clase. La verificación previa es más barata que la corrección posterior.
+Adoptar comandos descritos solo en un anuncio conlleva el riesgo de que no existan como se describen, que cambien de nombre o que su comportamiento difiera. La verificación previa evita configurar equipos o clases contra una descripción periodística.
 
-Deriva del concepto del tooling. Es evidencia adicional para `verificar-features-de-tooling-antes-de-citar-en-docencia-o-config`, que enuncia la misma regla operativa.
+`anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial` registra el riesgo de fuente única. `datasette-explain-upgrade-como-forcing-function` es otro caso donde la verificación contra upstream resulta ser la práctica correcta.
 
 ## Links
 - derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
 - supports → [[verificar-features-de-tooling-antes-de-citar-en-docencia-o-config]]
+- derived_from → [[anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial]]
+- relates_to → [[datasette-explain-upgrade-como-forcing-function]]

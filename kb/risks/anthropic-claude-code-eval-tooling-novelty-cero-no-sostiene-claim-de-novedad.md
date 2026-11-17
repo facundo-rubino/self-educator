@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 sources:
 - 541b1e7161ae8f43
 tags:
 - evals
 - novedad
+- novelty
 - pipeline
 - senal
+- señal-debil
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-11-13'
+last_reinforced: '2026-11-17'
 provenance:
   scale: S
   query: null
@@ -32,16 +34,16 @@ links:
 ---
 
 ## What it is
-La novedad reportada del clúster es 0.00 y la corroboración 0.50, con un solo documento de feed RSS sin engagement. Es decir: el pipeline no encontró ninguna novedad, y la corroboración «media» no viene de fuentes independientes sino de la posición por defecto del scorer en un clúster de un solo documento. Afirmar que la herramienta es «nueva» apoya el titular en una palabra que la propia puntuación contradice.
+El pipeline reporta novelty 0.00 y corroboración 0.50 para este clúster. La novedad nula indica que el anuncio no añade información sobre el estado previo del conocimiento del pipeline; la corroboración plana indica ausencia de verificación independiente.
 
 ## Evidence
-- Novedad reportada de 0.00 en el clúster — source: 541b1e7161ae8f43
-- Un solo documento de fuente RSS sin engagement — source: 541b1e7161ae8f43
+- La novedad reportada por el pipeline es 0.00 y la corroboración 0.50 — fuente: 541b1e7161ae8f43
+- El clúster contiene un único documento, truncado — fuente: 541b1e7161ae8f43
 
 ## Why it matters
-Una señal de novedad cero con un solo documento es un candidato a retrieval de texto completo, no a insight corroborado. El valor del KB está en registrar el puntero («existen build_eval y hill-climb en claude-api»), no en compilar afirmaciones sobre tendencia o adopción.
+Presentar este anuncio como hallazgo de novedad sería afirmar algo que el propio pipeline no detecta. La señal es admisible como referencia de infraestructura, no como descubrimiento.
 
-Deriva del concepto del tooling. Repite el patrón documentado en `claude-code-system-prompt-novelty-cero-conocimiento-ya-disponible`: novelty 0.00 significa que la audiencia del brief ya conoce el marco, no que el ítem sea falso.
+`anthropic-claude-code-eval-tooling-build-eval-hill-climb` es la nota cuya novedad se cuestiona.
 
 ## Links
 - derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]

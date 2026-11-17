@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 sources:
 - 541b1e7161ae8f43
 tags:
-- evals
-- hipotesis
-- estandarizacion
 - equipos
+- estandarizacion
+- evals
+- first-party
+- hipotesis
 base_confidence: 0.2
 half_life_days: 120
-last_reinforced: '2026-11-13'
+last_reinforced: '2026-11-17'
 provenance:
   scale: S
   query: null
@@ -32,15 +33,16 @@ links:
 ---
 
 ## What it is
-El documento sugiere que, por ser una herramienta first-party de Anthropic, es probable que influya en cómo se hacen las evals. Eso plantea una pregunta que la evidencia no responde: ¿una herramienta del proveedor del modelo influye en la práctica de eval de los equipos, o simplemente coexiste con harnesses propios? No hay datos de adopción, uso ni resultados en el clúster.
+El autor del post sugiere, en la frase donde el texto se corta, que una herramienta first-party de Anthropic probablemente influya en cómo se construyen las evals. La frase se interrumpe; no hay mecanismo ni alcance articulados.
 
 ## Evidence
-- El autor declara que una herramienta first-party de Anthropic probablemente influya en cómo se hacen las evals — source: 541b1e7161ae8f43
+- El autor declara que una herramienta first-party de Anthropic probablemente influya en cómo se hacen las evals — fuente: 541b1e7161ae8f43
+- El post se corta justo en esa reflexión, sin desarrollo — fuente: 541b1e7161ae8f43
 
 ## Why it matters
-Si se confirmara, afectaría la estimación y el secuenciamiento: definir evals primero como criterio de alcance. Si no, la disciplina de evals dependería del harness propio y la herramienta sería una opción más. La respuesta requiere datos de uso, no la inferencia del autor.
+Es una hipótesis del propio autor, no un resultado. Si se confirmara, explicaría por qué merece seguimiento; sin confirmación, el argumento es que "lo first-party fija convenciones" es plausible pero no medido.
 
-Deriva del concepto del tooling. Conecta con `cosignar-estandar-no-implica-adopcion`: la talla del actor no basta para predecir adopción.
+`anthropic-claude-code-eval-tooling-build-eval-hill-climb` es la nota que contextualiza la herramienta sobre la que se hace la hipótesis.
 
 ## Links
 - derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]

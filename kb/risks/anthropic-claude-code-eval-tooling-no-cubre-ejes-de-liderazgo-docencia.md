@@ -10,19 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-07'
-updated: '2026-11-13'
+updated: '2026-11-17'
 sources:
 - 541b1e7161ae8f43
 tags:
 - alcance
 - brief
 - docencia
+- estimacion
 - evals
 - extrapolacion
 - liderazgo
 base_confidence: 0.8
 half_life_days: 120
-last_reinforced: '2026-11-13'
+last_reinforced: '2026-11-17'
 provenance:
   scale: S
   query: null
@@ -39,18 +40,23 @@ links:
   type: derived_from
 - to: eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes
   type: relates_to
+- to: puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista
+  type: relates_to
+- to: afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases
+  type: relates_to
 ---
 
 ## What it is
-El documento reporta la existencia de dos comandos en un plugin. No contiene datos sobre estimación, secuenciamiento, gestión de equipos ni docencia de programación. Leerlo como evidencia de que los equipos chicos estandarizarán sus evals, o de que el patrón es trasladable a ejercicios de enseñanza, es un puente del analista, no un hallazgo del documento.
+El anuncio del tooling de evals es infraestructura de agentes de IA para desarrollo de software, no evidencia sobre liderazgo técnico, estimación, secuenciamiento, docencia o productividad personal. El clúster no contiene ningún documento que ligue la herramienta a esos ejes.
 
 ## Evidence
-- La única evidencia del documento son los dos comandos y el juicio del autor sobre su posible influencia — source: 541b1e7161ae8f43
+- El clúster contiene un único documento sobre el tooling, sin discusión de liderazgo, estimación ni docencia — fuente: 541b1e7161ae8f43
+- El post se interrumpe antes de la reflexión del autor; no hay tesis sobre práctica profesional — fuente: 541b1e7161ae8f43
 
 ## Why it matters
-Para el brief de agentes, liderazgo y docencia, este clúster aporta a lo sumo una técnica de evals de agente. No aporta nada sobre cómo un dev-líder organiza trabajo o enseña. Marcarlo así evita inflar su relevancia en una síntesis.
+Construir un puente "tooling de evals → criterio de aceptación del equipo → mejor estimación" sería inferencia del analista. La nota debe quedarse en describir el anuncio y no convertirse en recomendación de práctica sin una fuente que lo sostenga.
 
-Deriva del concepto del tooling. Se relaciona con `eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes`, que es el lugar donde una señal de evals sí conectaría con liderazgo, pero solo con evidencia adicional.
+`anthropic-claude-code-eval-tooling-build-eval-hill-climb` es el objeto de esta advertencia. `puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista` documenta el mismo puente ya marcado como no sostenido en otra nota. `afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases` describe el modo de fallo general.
 
 ## Links
 - contradicts → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
@@ -59,3 +65,5 @@ Deriva del concepto del tooling. Se relaciona con `eval-discipline-como-capa-de-
 - supports → [[puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista]]
 - derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
 - relates_to → [[eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes]]
+- relates_to → [[puente-evals-por-tarea-a-practica-de-liderazgo-es-inferencia-del-analista]]
+- relates_to → [[afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases]]

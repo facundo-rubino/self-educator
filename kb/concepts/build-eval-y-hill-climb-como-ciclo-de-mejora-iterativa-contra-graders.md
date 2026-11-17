@@ -9,17 +9,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 sources:
 - 541b1e7161ae8f43
 tags:
-- evals
-- hill-climb
-- graders
 - agentes
+- agentes-de-codigo
+- ciclo-de-mejora
+- evals
+- graders
+- hill-climb
 base_confidence: 0.25
 half_life_days: 180
-last_reinforced: '2026-11-13'
+last_reinforced: '2026-11-17'
 provenance:
   scale: S
   query: null
@@ -33,16 +35,16 @@ links:
 ---
 
 ## What it is
-El reporte describe una secuencia: construir la eval (`build_eval`), verificar que los graders puntúan correctamente, y mejorar la aplicación iterando contra esos graders (`hill-climb`). Esta secuencia tiene la forma clásica de un ciclo de verificación antes de escalar, aplicado al output de un agente de código. El documento no detalla cómo se implementan los graders ni cómo se mide la mejora entre iteraciones.
+El anuncio describe implícitamente un ciclo de dos fases: `build_eval` construye el conjunto de evaluación y `hill-climb` mejora la aplicación contra los graders ya verificados. El ciclo completo —construir eval, verificar el grader, mejorar contra él— es la estructura descrita, sin detalles mecánicos ni resultados.
 
 ## Evidence
-- `build_eval` construye evals y `hill-climb` mejora la aplicación iterando contra los graders — source: 541b1e7161ae8f43
-- El flujo incluye verificar los graders además de construir la eval — source: 541b1e7161ae8f43
+- El tooling anunciado incluye comandos para construir evals, chequear los graders y mejorar la aplicación contra ellos — fuente: 541b1e7161ae8f43
+- El post se corta antes de aportar mecanismos, benchmarks o resultados — fuente: 541b1e7161ae8f43
 
 ## Why it matters
-Es la única idea transferible del clúster: la disciplina de definir el criterio de aceptación (el grader) y verificar el criterio antes de iterar. Esa estructura es independiente de Claude Code y de su plugin; la herramienta solo la hace más barata si los comandos existen y se mantienen.
+Un ciclo formalizado de "construir eval → verificar grader → mejorar contra él" es la abstracción mínima que hace verificable el trabajo con agentes de código. La fuente solo nombra los comandos y el propósito; no demuestra que el ciclo funcione.
 
-Deriva del concepto del tooling. Se relaciona con `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` por la idea de evals por tarea como capa de fiabilidad, y con `test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes` por el uso de tests para gobernar cambios en un agente.
+`anthropic-claude-code-eval-tooling-build-eval-hill-climb` es la nota-madre con la descripción del plugin y los comandos. `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` es la capa conceptual a la que este ciclo pertenece.
 
 ## Links
 - derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]

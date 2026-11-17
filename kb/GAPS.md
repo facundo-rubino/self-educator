@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-16 — 1252 entries, highest priority first._
+_Updated 2026-11-17 — 1252 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -3043,6 +3043,15 @@ _Updated 2026-11-16 — 1252 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-19'
+- id: gap-7b71713935
+  type: open_question
+  description: Note 'bajo-relevance-pero-al-menos-cinco-docs-on-topic' has decayed
+    — does it still hold?
+  related_notes:
+  - bajo-relevance-pero-al-menos-cinco-docs-on-topic
+  priority: 0.7
+  status: open
+  created: '2026-11-17'
 - id: gap-9490904af0
   type: open_question
   description: Note 'billable-hour-como-palanca-de-alcance-con-stakeholders-hipotesis'
@@ -5755,15 +5764,6 @@ _Updated 2026-11-16 — 1252 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-30'
-- id: gap-f32aca5cfd
-  type: thin_evidence
-  description: Note 'eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes'
-    rests on 1 source(s)
-  related_notes:
-  - eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes
-  priority: 0.5
-  status: open
-  created: '2026-11-09'
 - id: gap-3a0848e052
   type: thin_evidence
   description: Note 'evals-por-tarea-candidato-a-retrieval-no-a-insight' rests on

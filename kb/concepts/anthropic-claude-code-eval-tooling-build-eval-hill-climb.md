@@ -10,11 +10,12 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-07'
-updated: '2026-11-13'
+updated: '2026-11-17'
 sources:
 - 541b1e7161ae8f43
 tags:
 - agentes
+- agentes-de-codigo
 - anthropic
 - claude-code
 - evals
@@ -22,7 +23,7 @@ tags:
 - tooling
 base_confidence: 0.08
 half_life_days: 180
-last_reinforced: '2026-11-13'
+last_reinforced: '2026-11-17'
 provenance:
   scale: S
   query: null
@@ -45,19 +46,22 @@ links:
   type: relates_to
 - to: anthropic-claude-code-eval-tooling-envejece-rapido-por-shelf-life
   type: supports
+- to: build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders
+  type: relates_to
 ---
 
 ## What it is
-Un documento reporta que el plugin `claude-api` de Claude Code incluye los comandos `build_eval` y `hill-climb`, descritos como ayudas para construir evals, verificar los graders y mejorar la aplicación iterando contra ellos. El reporte no describe la mecánica interna de los comandos ni si están publicados y estables. La etiqueta «auto eval tool» del titular no está respaldada por la evidencia: `build_eval` y `hill-climb` se presentan como comandos de ayuda, no como un sistema autónomo de evaluación.
+Anthropic publicó, según un único post de blog, tooling de evaluación para Claude Code dentro de un plugin `claude-api` con dos comandos: `build_eval` para construir evals y `hill-climb` para verificar los graders y mejorar la aplicación contra ellos. El post no describe el mecanismo, los límites, el coste ni la fiabilidad de ninguno de los dos comandos.
 
 ## Evidence
-- Anthropic lanzó nuevo tooling de evaluación para Claude Code — source: 541b1e7161ae8f43
-- El plugin `claude-api` incluye `build_eval` y `hill-climb` para construir evals, chequear los graders y mejorar la aplicación contra ellos — source: 541b1e7161ae8f43
+- Anthropic lanzó tooling de evaluación para Claude Code con comandos `build_eval` y `hill-climb` en el plugin `claude-api`, para construir evals, chequear graders y mejorar la aplicación contra ellos — fuente: 541b1e7161ae8f43
+- El autor declara que no suele reseñar herramientas de evaluación por su corta vida útil, pero que una herramienta first-party de Anthropic probablemente influya en cómo se hacen las evals — fuente: 541b1e7161ae8f43
+- El post se interrumpe justo en la frase sobre la influencia esperada; no incluye benchmarks, comparaciones ni resultados medidos — fuente: 541b1e7161ae8f43
 
 ## Why it matters
-Si el tooling existe y es estable, el ciclo de desarrollo con Claude Code incorporaría evals como práctica de primera clase en lugar de confianza ciega en el output del agente. La consecuencia práctica sería definir criterios de aceptación y graders antes de iterar. Nada de esto está demostrado por la evidencia disponible: un solo documento, sin detalle técnico de los comandos.
+Si el tooling fuera real y funcionara como se describe, bajaría el coste de montar evals para agentes de código: un dev que usa agentes para programar podría exigir graders y medir mejoras en vez de confiar en demos. La descripción existente no permite verificar esa utilidad.
 
-Se relaciona con `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` por compartir la idea de evals por tarea como capa de verificación. Es evidencia (débil) para las tres notas de riesgo sobre este mismo tooling: vida útil corta, fuente única sin documentación oficial, y ausencia de conexión con liderazgo/docencia.
+`build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders` describe el mismo ciclo en abstracto a partir de esta misma fuente. `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` es el concepto general de evals como capa de fiabilidad al que este tooling se adscribiría si existiera evidencia de su funcionamiento. `anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial` registra el riesgo de descansar en una sola fuente secundaria sin documentación oficial.
 
 ## Links
 - relates_to → [[evals-por-tipo-de-tarea-como-criterio-de-aceptacion-de-salidas]]
@@ -69,3 +73,4 @@ Se relaciona con `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` 
 - derived_from → [[anthropic-claude-code-eval-tooling-envejece-rapido-por-shelf-life]]
 - relates_to → [[claude-code-ensamblado-condicional-de-system-prompt]]
 - supports → [[anthropic-claude-code-eval-tooling-envejece-rapido-por-shelf-life]]
+- relates_to → [[build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders]]

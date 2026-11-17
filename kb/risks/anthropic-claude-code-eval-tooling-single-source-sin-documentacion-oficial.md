@@ -10,7 +10,7 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-07'
-updated: '2026-11-13'
+updated: '2026-11-17'
 sources:
 - 541b1e7161ae8f43
 tags:
@@ -23,7 +23,7 @@ tags:
 - verificacion
 base_confidence: 0.7
 half_life_days: 120
-last_reinforced: '2026-11-13'
+last_reinforced: '2026-11-17'
 provenance:
   scale: S
   query: null
@@ -41,16 +41,17 @@ links:
 ---
 
 ## What it is
-La existencia y el alcance de `build_eval` y `hill-climb` provienen de un único documento de feed RSS, sin enlace a documentación oficial de Anthropic ni a un artefacto primario. El resumen del documento está truncado («...likely to influence how»), por lo que el alcance real de la herramienta y sus limitaciones no están descritos. Cualquier afirmación sobre capacidades más allá de «existen estos comandos» sería especulación.
+Todo lo afirmado sobre el tooling de evals de Anthropic proviene de un solo post de blog, truncado, sin documentación oficial enlazada. No hay segunda fuente en el clúster ni referencia a la documentación de Anthropic que confirme la existencia o el comportamiento de `build_eval` y `hill-climb`.
 
 ## Evidence
-- Toda la evidencia sobre `build_eval` y `hill-climb` proviene de un solo doc_id — source: 541b1e7161ae8f43
-- El resumen del documento está truncado en la frase sobre influencia — source: 541b1e7161ae8f43
+- El clúster contiene un único documento sobre el tema — fuente: 541b1e7161ae8f43
+- La corroboración reportada por el pipeline es 0.50 y la novedad 0.00 — fuente: 541b1e7161ae8f43
+- El post está cortado antes de la tesis del autor y no incluye benchmark ni comparación — fuente: 541b1e7161ae8f43
 
 ## Why it matters
-Antes de citar esta feature en configuración de equipo o material de docencia hay que verificarla contra upstream (changelog del plugin, repositorio o docs de Anthropic). Un comando de plugin no documentado oficialmente puede no existir con ese nombre en la versión instalada.
+Cualquier recomendación operativa —adoptar `build_eval` como criterio de aceptación, enseñar el flujo, presupuestar tiempo de evals— descansaría sobre una fuente única no verificada. La verificación contra documentación oficial de Anthropic es requisito antes de cualquier uso.
 
-Deriva del concepto principal del tooling. Comparte con `documento-unico-sin-engagement-no-sostiene-claim-sobre-practica` el patrón general: un solo documento no sostiene afirmaciones de práctica.
+`anthropic-claude-code-eval-tooling-build-eval-hill-climb` es la afirmación que este riesgo condiciona. `afirmar-practica-desde-ausencia-de-contenido-en-feed-de-releases` documenta el mismo modo de fallo: tomar un anuncio como evidencia de práctica.
 
 ## Links
 - contradicts → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
