@@ -12,12 +12,12 @@
   "theme": "",
   "scores": {
     "relevance": 0.0,
-    "novelty": 0.6679,
+    "novelty": 0.0,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.367,
+  "aggregate_score": 0.2,
   "first_seen": "2026-11-17T06:16:26Z",
   "sources_count": 1,
   "status": "candidate",

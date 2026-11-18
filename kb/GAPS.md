@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-17 — 1252 entries, highest priority first._
+_Updated 2026-11-18 — 1262 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -2108,6 +2108,15 @@ _Updated 2026-11-17 — 1252 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-20'
+- id: gap-5a1aceeee3
+  type: open_question
+  description: Note 'external-sandboxes-para-codigo-de-agentes-exploracion-de-un-solo-documento'
+    has decayed — does it still hold?
+  related_notes:
+  - external-sandboxes-para-codigo-de-agentes-exploracion-de-un-solo-documento
+  priority: 0.7
+  status: open
+  created: '2026-11-18'
 - id: gap-bc8bdbc060
   type: open_question
   description: Note 'finedna-dataset-announcement-single-source' has decayed — does
@@ -3214,6 +3223,15 @@ _Updated 2026-11-17 — 1252 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-21'
+- id: gap-ba5cb695eb
+  type: open_question
+  description: Note 'hilo-tangencial-ia-y-craft-de-software-en-el-cluster' has decayed
+    — does it still hold?
+  related_notes:
+  - hilo-tangencial-ia-y-craft-de-software-en-el-cluster
+  priority: 0.7
+  status: open
+  created: '2026-11-18'
 - id: gap-ccedfb94bc
   type: open_question
   description: Note 'hipotesis-de-coach-de-voz-como-accountability-de-equipo' has
@@ -3492,6 +3510,15 @@ _Updated 2026-11-17 — 1252 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-23'
+- id: gap-fd862429a5
+  type: open_question
+  description: Note 'sandboxing-como-parte-del-alcance-y-riesgo-al-onboarding-agentes-hipotesis'
+    has decayed — does it still hold?
+  related_notes:
+  - sandboxing-como-parte-del-alcance-y-riesgo-al-onboarding-agentes-hipotesis
+  priority: 0.7
+  status: open
+  created: '2026-11-18'
 - id: gap-30a6155899
   type: open_question
   description: Note 'separacion-cerebro-manos-como-modelo-mental-para-aprendices'
@@ -3834,6 +3861,24 @@ _Updated 2026-11-17 — 1252 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-21'
+- id: gap-89d4087bbf
+  type: open_question
+  description: Note 'external-sandboxes-fuera-de-los-ejes-del-brief' has decayed —
+    does it still hold?
+  related_notes:
+  - external-sandboxes-fuera-de-los-ejes-del-brief
+  priority: 0.7
+  status: open
+  created: '2026-11-18'
+- id: gap-9ed167daed
+  type: open_question
+  description: Note 'external-sandboxes-single-source-engagement-modesto-no-sostiene-doctrina'
+    has decayed — does it still hold?
+  related_notes:
+  - external-sandboxes-single-source-engagement-modesto-no-sostiene-doctrina
+  priority: 0.7
+  status: open
+  created: '2026-11-18'
 - id: gap-3a1aabbeac
   type: open_question
   description: Note 'generalizar-un-error-de-un-post-sin-corrobracion' has decayed
@@ -4041,6 +4086,15 @@ _Updated 2026-11-17 — 1252 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-07'
+- id: gap-3a08581518
+  type: open_question
+  description: Note 'task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto-nueva-evidencia'
+    has decayed — does it still hold?
+  related_notes:
+  - task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto-nueva-evidencia
+  priority: 0.7
+  status: open
+  created: '2026-11-18'
 - id: gap-31817238a3
   type: open_question
   description: Note 'task-specific-llm-evals-copyright-regurgitation-como-riesgo-de-producto'
@@ -4691,6 +4745,15 @@ _Updated 2026-11-17 — 1252 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-09'
+- id: gap-43808c6f80
+  type: thin_evidence
+  description: Note 'external-sandboxes-para-codigo-de-agentes-exploracion-de-un-solo-documento'
+    rests on 1 source(s)
+  related_notes:
+  - external-sandboxes-para-codigo-de-agentes-exploracion-de-un-solo-documento
+  priority: 0.5
+  status: open
+  created: '2026-11-18'
 - id: gap-a8c033da49
   type: thin_evidence
   description: Note 'finedna-dataset-announcement-single-source' rests on 1 source(s)
@@ -7141,6 +7204,15 @@ _Updated 2026-11-17 — 1252 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-21'
+- id: gap-e4008acd92
+  type: thin_evidence
+  description: Note 'sandboxing-como-parte-del-alcance-y-riesgo-al-onboarding-agentes-hipotesis'
+    rests on 1 source(s)
+  related_notes:
+  - sandboxing-como-parte-del-alcance-y-riesgo-al-onboarding-agentes-hipotesis
+  priority: 0.5
+  status: open
+  created: '2026-11-18'
 - id: gap-984dc19e64
   type: thin_evidence
   description: Note 'scrimshaw-jukebox-candidato-a-descarte-no-a-retrieval' rests
@@ -8801,6 +8873,23 @@ _Updated 2026-11-17 — 1252 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-20'
+- id: gap-a76175a6b3
+  type: thin_evidence
+  description: Note 'external-sandboxes-fuera-de-los-ejes-del-brief' rests on 1 source(s)
+  related_notes:
+  - external-sandboxes-fuera-de-los-ejes-del-brief
+  priority: 0.5
+  status: open
+  created: '2026-11-18'
+- id: gap-be4f5b19a3
+  type: thin_evidence
+  description: Note 'external-sandboxes-single-source-engagement-modesto-no-sostiene-doctrina'
+    rests on 1 source(s)
+  related_notes:
+  - external-sandboxes-single-source-engagement-modesto-no-sostiene-doctrina
+  priority: 0.5
+  status: open
+  created: '2026-11-18'
 - id: gap-6852d4df2a
   type: thin_evidence
   description: Note 'extrapolar-arquitectura-de-prompt-a-liderazgo-o-docencia-seria-invencion'
