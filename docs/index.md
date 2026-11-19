@@ -1,18 +1,18 @@
-# Brief — 2026-11-18
+# Brief — 2026-11-19
 
 ## Los titulares
 
-1. [External sandboxes for coding agents](https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/) — *IA y agentes en mi trabajo*
+1. [v2.1.327](tag:github.com,2008:Repository/937253475/v2.1.327) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [External sandboxes for coding agents](https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/)
+### [v2.1.327](tag:github.com,2008:Repository/937253475/v2.1.327)
 
-The cluster contains a single document describing exploratory work on external sandboxes for code executed by coding agents, motivated by the desire to safely try local models without risking prompt-injection or acciden…
+The cluster contains a single low-signal artifact: the changelog entry for Claude Code version v2.1.327 [4f414908e605fee4]
 
-<sub>fuentes: rss · confianza: 15%</sub>
+<sub>fuentes: rss · confianza: 30%</sub>
 
 ---
 

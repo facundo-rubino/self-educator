@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-18 — 1262 entries, highest priority first._
+_Updated 2026-11-19 — 1273 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -432,6 +432,16 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-22'
+- id: gap-89796dc336
+  type: contradiction
+  description: Unresolved contradiction between 'changelog-de-release-como-senal-de-craft-y-tooling-no-de-practica-medida'
+    and 'release-de-parche-no-revela-practica-de-ingenieria'
+  related_notes:
+  - changelog-de-release-como-senal-de-craft-y-tooling-no-de-practica-medida
+  - release-de-parche-no-revela-practica-de-ingenieria
+  priority: 0.9
+  status: open
+  created: '2026-11-19'
 - id: gap-069e9b508b
   type: contradiction
   description: Unresolved contradiction between 'agentes-ia-aceleran-trabajo-acotado-y-verificable'
@@ -1152,6 +1162,16 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-11-04'
+- id: gap-1251dc5c14
+  type: contradiction
+  description: Unresolved contradiction between 'critico-del-cluster-v2-1-327-no-hay-contenido-sustantivo-es-conclusion-por-reetiquetado'
+    and 'release-de-parche-no-revela-practica-de-ingenieria'
+  related_notes:
+  - critico-del-cluster-v2-1-327-no-hay-contenido-sustantivo-es-conclusion-por-reetiquetado
+  - release-de-parche-no-revela-practica-de-ingenieria
+  priority: 0.9
+  status: open
+  created: '2026-11-19'
 - id: gap-584d367458
   type: contradiction
   description: Unresolved contradiction between 'deuda-tecnica-como-puente-lexico-al-brief'
@@ -2342,6 +2362,15 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-12'
+- id: gap-f621f87e90
+  type: open_question
+  description: Note 'llm-mistral-0-16-soporte-razonamiento' has decayed — does it
+    still hold?
+  related_notes:
+  - llm-mistral-0-16-soporte-razonamiento
+  priority: 0.7
+  status: open
+  created: '2026-11-19'
 - id: gap-22b69292a7
   type: open_question
   description: Note 'llm-para-etiquetado-automatico-de-blog-posts' has decayed — does
@@ -3079,6 +3108,15 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-19'
+- id: gap-91403f234d
+  type: open_question
+  description: Note 'claude-code-system-prompt-doc-sin-analisis-de-condiciones' has
+    decayed — does it still hold?
+  related_notes:
+  - claude-code-system-prompt-doc-sin-analisis-de-condiciones
+  priority: 0.7
+  status: open
+  created: '2026-11-19'
 - id: gap-abf1567b50
   type: open_question
   description: Note 'cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional'
@@ -4428,6 +4466,40 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-07'
+- id: gap-16385d9c2d
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-327-aviso-sesion-reanudada' rests on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-327-aviso-sesion-reanudada
+  priority: 0.5
+  status: open
+  created: '2026-11-19'
+- id: gap-9fd542e730
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-327-confirmacion-install-github-app' rests on
+    1 source(s)
+  related_notes:
+  - claude-code-v2-1-327-confirmacion-install-github-app
+  priority: 0.5
+  status: open
+  created: '2026-11-19'
+- id: gap-d4f7b015b7
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-327-mcp-add-json-stdin' rests on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-327-mcp-add-json-stdin
+  priority: 0.5
+  status: open
+  created: '2026-11-19'
+- id: gap-af13614227
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-327-status-lista-agentes-skills-roto' rests
+    on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-327-status-lista-agentes-skills-roto
+  priority: 0.5
+  status: open
+  created: '2026-11-19'
 - id: gap-1db07d3cdd
   type: thin_evidence
   description: Note 'claude-como-diario-reporte-a-policia-riesgo-confidencialidad'
@@ -5685,6 +5757,15 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-22'
+- id: gap-023e553ca7
+  type: thin_evidence
+  description: Note 'changelog-de-release-como-senal-de-craft-y-tooling-no-de-practica-medida'
+    rests on 1 source(s)
+  related_notes:
+  - changelog-de-release-como-senal-de-craft-y-tooling-no-de-practica-medida
+  priority: 0.5
+  status: open
+  created: '2026-11-19'
 - id: gap-c1f2109a58
   type: thin_evidence
   description: Note 'claude-code-ensamblado-condicional-refuerza-prompt-por-contexto-pero-sin-evidencia-de-eficacia'
@@ -6460,6 +6541,15 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-30'
+- id: gap-a9a48d67db
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-327-fuera-de-los-ejes-del-brief' rests on 1
+    source(s)
+  related_notes:
+  - claude-code-v2-1-327-fuera-de-los-ejes-del-brief
+  priority: 0.5
+  status: open
+  created: '2026-11-19'
 - id: gap-301ff0ed4a
   type: thin_evidence
   description: Note 'cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional'
@@ -8304,6 +8394,15 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-22'
+- id: gap-ebfba3013c
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-327-cluster-un-solo-changelog-engagement-cero'
+    rests on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-327-cluster-un-solo-changelog-engagement-cero
+  priority: 0.5
+  status: open
+  created: '2026-11-19'
 - id: gap-80cbb232a2
   type: thin_evidence
   description: Note 'claude-opus-5-5-identificador-no-verificable' rests on 1 source(s)
@@ -8647,6 +8746,15 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-02'
+- id: gap-a49d4d122c
+  type: thin_evidence
+  description: Note 'critico-del-cluster-v2-1-327-no-hay-contenido-sustantivo-es-conclusion-por-reetiquetado'
+    rests on 1 source(s)
+  related_notes:
+  - critico-del-cluster-v2-1-327-no-hay-contenido-sustantivo-es-conclusion-por-reetiquetado
+  priority: 0.5
+  status: open
+  created: '2026-11-19'
 - id: gap-efe8ce8e63
   type: thin_evidence
   description: Note 'dataphilly-charla-single-source-engagement-cero-no-es-tendencia'
@@ -10456,15 +10564,6 @@ _Updated 2026-11-18 — 1262 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-05'
-- id: gap-377343f052
-  type: thin_evidence
-  description: Note 'release-de-parche-no-revela-practica-de-ingenieria' rests on
-    1 source(s)
-  related_notes:
-  - release-de-parche-no-revela-practica-de-ingenieria
-  priority: 0.5
-  status: open
-  created: '2026-09-16'
 - id: gap-2dcd3eee67
   type: thin_evidence
   description: Note 'release-de-plugin-no-es-evidencia-de-practica' rests on 1 source(s)

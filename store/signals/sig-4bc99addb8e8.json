@@ -1,0 +1,29 @@
+{
+  "id": "sig-4bc99addb8e8",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "The PSF end-of-year fundraiser",
+  "member_doc_ids": [
+    "cc1a7a314bf64ffa"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser/",
+  "theme": "",
+  "scores": {
+    "relevance": 0.0,
+    "novelty": 0.665,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.3663,
+  "first_seen": "2026-11-18T14:44:48Z",
+  "sources_count": 1,
+  "status": "candidate",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}
