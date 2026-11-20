@@ -1,18 +1,18 @@
-# Brief — 2026-11-19
+# Brief — 2026-11-20
 
 ## Los titulares
 
-1. [v2.1.327](tag:github.com,2008:Repository/937253475/v2.1.327) — *IA y agentes en mi trabajo*
+1. [v2.1.328](tag:github.com,2008:Repository/937253475/v2.1.328) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [v2.1.327](tag:github.com,2008:Repository/937253475/v2.1.327)
+### [v2.1.328](tag:github.com,2008:Repository/937253475/v2.1.328)
 
-The cluster contains a single low-signal artifact: the changelog entry for Claude Code version v2.1.327 [4f414908e605fee4]
+El cluster contiene un único documento: una nota de changelog de la versión v2.1.328 de una herramienta (aparentemente un CLI/agente de Claude), que describe cambios de infraestructura del producto: modo 'auto' por defe…
 
-<sub>fuentes: rss · confianza: 30%</sub>
+<sub>fuentes: rss · confianza: 9%</sub>
 
 ---
 

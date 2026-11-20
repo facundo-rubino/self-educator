@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-19 — 1273 entries, highest priority first._
+_Updated 2026-11-20 — 1277 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -4500,6 +4500,24 @@ _Updated 2026-11-19 — 1273 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-19'
+- id: gap-0e68d90c4e
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-328-modo-auto-por-defecto-en-proveedores-cloud'
+    rests on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-328-modo-auto-por-defecto-en-proveedores-cloud
+  priority: 0.5
+  status: open
+  created: '2026-11-20'
+- id: gap-0230637885
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-328-onfailure-block-para-hooks-mcp-tool' rests
+    on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-328-onfailure-block-para-hooks-mcp-tool
+  priority: 0.5
+  status: open
+  created: '2026-11-20'
 - id: gap-1db07d3cdd
   type: thin_evidence
   description: Note 'claude-como-diario-reporte-a-policia-riesgo-confidencialidad'
@@ -6550,6 +6568,15 @@ _Updated 2026-11-19 — 1273 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-19'
+- id: gap-df046ec93c
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-328-advertencia-mensajes-sesion-truncada' rests
+    on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-328-advertencia-mensajes-sesion-truncada
+  priority: 0.5
+  status: open
+  created: '2026-11-20'
 - id: gap-301ff0ed4a
   type: thin_evidence
   description: Note 'cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional'
@@ -8403,6 +8430,15 @@ _Updated 2026-11-19 — 1273 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-19'
+- id: gap-8cf2313bb7
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-328-changelog-engagement-cero-sin-corroboracion'
+    rests on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-328-changelog-engagement-cero-sin-corroboracion
+  priority: 0.5
+  status: open
+  created: '2026-11-20'
 - id: gap-80cbb232a2
   type: thin_evidence
   description: Note 'claude-opus-5-5-identificador-no-verificable' rests on 1 source(s)
