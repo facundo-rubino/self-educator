@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-20 — 1277 entries, highest priority first._
+_Updated 2026-11-21 — 1282 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -2964,6 +2964,15 @@ _Updated 2026-11-20 — 1277 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-30'
+- id: gap-87d6667fa5
+  type: open_question
+  description: Note 'ataque-de-agentes-openai-a-rubygems' has decayed — does it still
+    hold?
+  related_notes:
+  - ataque-de-agentes-openai-a-rubygems
+  priority: 0.7
+  status: open
+  created: '2026-11-21'
 - id: gap-3fe31b1b6a
   type: open_question
   description: Note 'gemini-no-rechaza-nombrar-figuras-publicas' has decayed — does
@@ -3117,6 +3126,15 @@ _Updated 2026-11-20 — 1277 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-19'
+- id: gap-d80178daf9
+  type: open_question
+  description: Note 'claude-code-v2-1-328-advertencia-mensajes-sesion-truncada' has
+    decayed — does it still hold?
+  related_notes:
+  - claude-code-v2-1-328-advertencia-mensajes-sesion-truncada
+  priority: 0.7
+  status: open
+  created: '2026-11-21'
 - id: gap-abf1567b50
   type: open_question
   description: Note 'cluster-ai-coach-monkey-mind-sin-evidencia-de-practica-profesional'
@@ -4518,6 +4536,24 @@ _Updated 2026-11-20 — 1277 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-20'
+- id: gap-26c59bca78
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-330-easel-graficos-bajo-resultados-mcp' rests
+    on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-330-easel-graficos-bajo-resultados-mcp
+  priority: 0.5
+  status: open
+  created: '2026-11-21'
+- id: gap-0093a08a01
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-330-login-por-organizacion-enterprise' rests
+    on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-330-login-por-organizacion-enterprise
+  priority: 0.5
+  status: open
+  created: '2026-11-21'
 - id: gap-1db07d3cdd
   type: thin_evidence
   description: Note 'claude-como-diario-reporte-a-policia-riesgo-confidencialidad'
@@ -8439,6 +8475,15 @@ _Updated 2026-11-20 — 1277 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-20'
+- id: gap-c3999a7658
+  type: thin_evidence
+  description: Note 'claude-code-v2-1-330-changelog-unico-sin-ejes-del-brief' rests
+    on 1 source(s)
+  related_notes:
+  - claude-code-v2-1-330-changelog-unico-sin-ejes-del-brief
+  priority: 0.5
+  status: open
+  created: '2026-11-21'
 - id: gap-80cbb232a2
   type: thin_evidence
   description: Note 'claude-opus-5-5-identificador-no-verificable' rests on 1 source(s)
