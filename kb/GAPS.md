@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-21 — 1282 entries, highest priority first._
+_Updated 2026-11-22 — 1284 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1966,6 +1966,24 @@ _Updated 2026-11-21 — 1282 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-07'
+- id: gap-06a432ae8c
+  type: open_question
+  description: Note 'claude-code-v2-1-330-easel-graficos-bajo-resultados-mcp' has
+    decayed — does it still hold?
+  related_notes:
+  - claude-code-v2-1-330-easel-graficos-bajo-resultados-mcp
+  priority: 0.7
+  status: open
+  created: '2026-11-22'
+- id: gap-7d4af9c23a
+  type: open_question
+  description: Note 'claude-code-v2-1-330-login-por-organizacion-enterprise' has decayed
+    — does it still hold?
+  related_notes:
+  - claude-code-v2-1-330-login-por-organizacion-enterprise
+  priority: 0.7
+  status: open
+  created: '2026-11-22'
 - id: gap-4e33ed5877
   type: open_question
   description: Note 'claude-como-diario-reporte-a-policia-riesgo-confidencialidad'
