@@ -10,17 +10,18 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-23'
 sources:
 - 541b1e7161ae8f43
 tags:
-- evals
-- engagement
-- corroboracion
 - cluster
+- corroboracion
+- engagement
+- evals
+- evidencia-debil
 base_confidence: 0.5
 half_life_days: 120
-last_reinforced: '2026-11-13'
+last_reinforced: '2026-11-23'
 provenance:
   scale: S
   query: null
@@ -29,20 +30,29 @@ links:
   type: derived_from
 - to: documento-unico-engagement-cero-no-sostiene-practica-de-ensamblado-condicional
   type: relates_to
+- to: anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  type: relates_to
+- to: corroboracion-0-5-en-cluster-de-un-solo-documento-no-es-consenso
+  type: supports
+- to: documento-unico-sin-engagement-no-sostiene-claim-sobre-practica
+  type: supports
 ---
 
 ## What it is
-El clúster consta de un único documento de fuente RSS con engagement cero y sin corroboración independiente. La cobertura es n=1: no hay patrón, solo un post. La corroboración 0.50 es la posición por defecto del scorer en clústeres de un solo documento, no acuerdo entre fuentes.
+Los scores del clúster son novelty=0.00 y corroboration=0.50 sobre un único ítem con engagement cero. La corroboración de 0.50 en un clúster de un solo documento no es consenso entre fuentes: es un valor por defecto sin validación independiente.
 
 ## Evidence
-- Un solo documento en el clúster — source: 541b1e7161ae8f43
-- Engagement cero en el clúster — source: 541b1e7161ae8f43
+- El clúster contiene un solo documento con engagement bajo — source: 541b1e7161ae8f43
+- Los scores del clúster son novelty=0.00 y corroboration=0.50 — source: 541b1e7161ae8f43
 
 ## Why it matters
-Con n=1 no se puede afirmar interés, adopción ni influencia. El ítem sirve como puntero a verificar, no como soporte de una tesis sobre el estado de las evals en la industria.
+La novedad nula indica que el pipeline no encontró información nueva; la corroboración parcial no aporta verificación. El anuncio no debe elevarse a hallazgo sobre práctica de equipos.
 
-Deriva del concepto del tooling. Repite el patrón de `documento-unico-engagement-cero-no-sostiene-practica-de-ensamblado-condicional`: un documento sin engagement no sostiene un claim de práctica.
+`relates_to` la nota del anuncio. `supports` la regla de que una corroboración de 0.50 en un clúster de un solo documento no es consenso, y la de que un documento único sin engagement no sostiene claims sobre práctica.
 
 ## Links
 - derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
 - relates_to → [[documento-unico-engagement-cero-no-sostiene-practica-de-ensamblado-condicional]]
+- relates_to → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
+- supports → [[corroboracion-0-5-en-cluster-de-un-solo-documento-no-es-consenso]]
+- supports → [[documento-unico-sin-engagement-no-sostiene-claim-sobre-practica]]

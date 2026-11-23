@@ -9,19 +9,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-13'
-updated: '2026-11-17'
+updated: '2026-11-23'
 sources:
 - 541b1e7161ae8f43
 tags:
 - agentes
 - agentes-de-codigo
 - ciclo-de-mejora
+- claude-code
 - evals
 - graders
 - hill-climb
+- iteracion
 base_confidence: 0.25
 half_life_days: 180
-last_reinforced: '2026-11-17'
+last_reinforced: '2026-11-23'
 provenance:
   scale: S
   query: null
@@ -32,21 +34,30 @@ links:
   type: relates_to
 - to: test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes
   type: relates_to
+- to: eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes
+  type: relates_to
+- to: naming-auto-eval-tool-no-implica-sistema-autonomo
+  type: contradicts
+- to: hackathon-wandb-llm-as-a-judge-tangencial-por-definicion-de-llm-evaluation
+  type: relates_to
 ---
 
 ## What it is
-El anuncio describe implícitamente un ciclo de dos fases: `build_eval` construye el conjunto de evaluación y `hill-climb` mejora la aplicación contra los graders ya verificados. El ciclo completo —construir eval, verificar el grader, mejorar contra él— es la estructura descrita, sin detalles mecánicos ni resultados.
+La descripción del anuncio presenta `build_eval` y `hill-climb` como dos pasos encadenados: construir la eval y luego mejorar la aplicación contra los graders. Se lee como un ciclo de refinamiento iterativo, no como una sola herramienta. El nombre `hill-climb` es una etiqueta de marketing sugerente; el documento no describe el algoritmo ni lo que realmente optimiza.
 
 ## Evidence
-- El tooling anunciado incluye comandos para construir evals, chequear los graders y mejorar la aplicación contra ellos — fuente: 541b1e7161ae8f43
-- El post se corta antes de aportar mecanismos, benchmarks o resultados — fuente: 541b1e7161ae8f43
+- `build_eval` ayuda a construir evals — source: 541b1e7161ae8f43
+- `hill-climb` ayuda a revisar graders y mejorar una aplicación contra ellos — source: 541b1e7161ae8f43
 
 ## Why it matters
-Un ciclo formalizado de "construir eval → verificar grader → mejorar contra él" es la abstracción mínima que hace verificable el trabajo con agentes de código. La fuente solo nombra los comandos y el propósito; no demuestra que el ciclo funcione.
+Si el ciclo funciona como se describe, materializa la secuencia «escribir evals, iterar contra graders, luego enviar» como ergonomía por defecto. Para docencia, ofrece un modelo observable de refinamiento iterativo demostrable sin depender del resultado concreto de la herramienta.
 
-`anthropic-claude-code-eval-tooling-build-eval-hill-climb` es la nota-madre con la descripción del plugin y los comandos. `eval-especifica-por-tarea-como-infraestructura-de-fiabilidad` es la capa conceptual a la que este ciclo pertenece.
+`derived_from` la nota del tooling de Anthropic. `contradicts` el riesgo de que el nombre de la herramienta se confunda con un sistema autónomo: el documento no pasa de nombrar comandos. `relates_to` con la disciplina de evals y con la noción de evaluación de LLMs, de la que este ciclo es una instancia concreta aunque no verificada.
 
 ## Links
 - derived_from → [[anthropic-claude-code-eval-tooling-build-eval-hill-climb]]
 - relates_to → [[eval-especifica-por-tarea-como-infraestructura-de-fiabilidad]]
 - relates_to → [[test-de-regresion-por-condicion-habilitada-en-prompts-de-agentes]]
+- relates_to → [[eval-discipline-como-capa-de-medicion-del-trabajo-con-agentes]]
+- contradicts → [[naming-auto-eval-tool-no-implica-sistema-autonomo]]
+- relates_to → [[hackathon-wandb-llm-as-a-judge-tangencial-por-definicion-de-llm-evaluation]]

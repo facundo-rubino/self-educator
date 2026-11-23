@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-22 — 1284 entries, highest priority first._
+_Updated 2026-11-23 — 1291 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -83,6 +83,16 @@ _Updated 2026-11-22 — 1284 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-28'
+- id: gap-ffeb1258c6
+  type: contradiction
+  description: Unresolved contradiction between 'anthropic-claude-code-eval-tooling-build-eval-hill-climb'
+    and 'eval-especifica-por-tarea-como-infraestructura-de-fiabilidad'
+  related_notes:
+  - anthropic-claude-code-eval-tooling-build-eval-hill-climb
+  - eval-especifica-por-tarea-como-infraestructura-de-fiabilidad
+  priority: 0.9
+  status: open
+  created: '2026-11-23'
 - id: gap-cf68ef978c
   type: contradiction
   description: Unresolved contradiction between 'agentes-ia-aceleran-trabajo-acotado-y-verificable'
@@ -93,6 +103,16 @@ _Updated 2026-11-22 — 1284 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-28'
+- id: gap-0d11290eae
+  type: contradiction
+  description: Unresolved contradiction between 'build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders'
+    and 'naming-auto-eval-tool-no-implica-sistema-autonomo'
+  related_notes:
+  - build-eval-y-hill-climb-como-ciclo-de-mejora-iterativa-contra-graders
+  - naming-auto-eval-tool-no-implica-sistema-autonomo
+  priority: 0.9
+  status: open
+  created: '2026-11-23'
 - id: gap-caa401c036
   type: contradiction
   description: Unresolved contradiction between 'claude-code-system-prompt-conditional-composition'
@@ -802,6 +822,16 @@ _Updated 2026-11-22 — 1284 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-17'
+- id: gap-6b69a85b20
+  type: contradiction
+  description: Unresolved contradiction between 'adopcion-del-loop-de-eval-del-proveedor-sin-auditar-graders'
+    and 'anthropic-protagonismo-first-party-en-el-loop-de-evals-convergencia-hipotetica'
+  related_notes:
+  - adopcion-del-loop-de-eval-del-proveedor-sin-auditar-graders
+  - anthropic-protagonismo-first-party-en-el-loop-de-evals-convergencia-hipotetica
+  priority: 0.9
+  status: open
+  created: '2026-11-23'
 - id: gap-3e68dcc812
   type: contradiction
   description: Unresolved contradiction between 'afirmacion-de-capacidad-desde-fragmento-de-una-linea'
@@ -902,6 +932,16 @@ _Updated 2026-11-22 — 1284 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-11-07'
+- id: gap-7f619282d0
+  type: contradiction
+  description: Unresolved contradiction between 'anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial'
+    and 'esquema-de-version-por-fecha-no-es-versionado-semantico'
+  related_notes:
+  - anthropic-claude-code-eval-tooling-single-source-sin-documentacion-oficial
+  - esquema-de-version-por-fecha-no-es-versionado-semantico
+  priority: 0.9
+  status: open
+  created: '2026-11-23'
 - id: gap-597e080242
   type: contradiction
   description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
@@ -3081,6 +3121,15 @@ _Updated 2026-11-22 — 1284 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-19'
+- id: gap-573879bfb1
+  type: open_question
+  description: Note 'anthropic-protagonismo-first-party-en-el-loop-de-evals-convergencia-hipotetica'
+    has decayed — does it still hold?
+  related_notes:
+  - anthropic-protagonismo-first-party-en-el-loop-de-evals-convergencia-hipotetica
+  priority: 0.7
+  status: open
+  created: '2026-11-23'
 - id: gap-f78370512d
   type: open_question
   description: Note 'anti-patterns-in-software-blogging-etiqueta-sin-claim' has decayed
@@ -6488,6 +6537,15 @@ _Updated 2026-11-22 — 1284 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-23'
+- id: gap-9f1b1c5d2b
+  type: thin_evidence
+  description: Note 'anthropic-protagonismo-first-party-en-el-loop-de-evals-convergencia-hipotetica'
+    rests on 1 source(s)
+  related_notes:
+  - anthropic-protagonismo-first-party-en-el-loop-de-evals-convergencia-hipotetica
+  priority: 0.5
+  status: open
+  created: '2026-11-23'
 - id: gap-2a4025b497
   type: thin_evidence
   description: Note 'anti-patterns-in-software-blogging-etiqueta-sin-claim' rests
@@ -7701,6 +7759,15 @@ _Updated 2026-11-22 — 1284 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-29'
+- id: gap-0f612e6de9
+  type: thin_evidence
+  description: Note 'adopcion-del-loop-de-eval-del-proveedor-sin-auditar-graders'
+    rests on 1 source(s)
+  related_notes:
+  - adopcion-del-loop-de-eval-del-proveedor-sin-auditar-graders
+  priority: 0.5
+  status: open
+  created: '2026-11-23'
 - id: gap-b9b1387573
   type: thin_evidence
   description: Note 'adoptar-composicion-condicional-sin-inspeccionar-perdida-de-depurabilidad'
