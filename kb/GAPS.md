@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-23 — 1291 entries, highest priority first._
+_Updated 2026-11-24 — 1302 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -203,6 +203,16 @@ _Updated 2026-11-23 — 1291 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-11-12'
+- id: gap-bc26fb2cd1
+  type: contradiction
+  description: Unresolved contradiction between 'afirmar-efectividad-de-ai-coach-desde-stack-de-una-linea-es-inferencia'
+    and 'datasette-charts-ciclo-idea-prototipo-plugin-integracion'
+  related_notes:
+  - afirmar-efectividad-de-ai-coach-desde-stack-de-una-linea-es-inferencia
+  - datasette-charts-ciclo-idea-prototipo-plugin-integracion
+  priority: 0.9
+  status: open
+  created: '2026-11-24'
 - id: gap-b960a42f22
   type: contradiction
   description: Unresolved contradiction between 'disposicion-a-parecer-estupido-tiene-costes'
@@ -632,6 +642,16 @@ _Updated 2026-11-23 — 1291 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-19'
+- id: gap-ab98b237b8
+  type: contradiction
+  description: Unresolved contradiction between 'datasette-charts-ciclo-idea-prototipo-plugin-integracion'
+    and 'datasette-charts-cluster-sin-contenido-de-docencia-liderazgo-estimacion'
+  related_notes:
+  - datasette-charts-ciclo-idea-prototipo-plugin-integracion
+  - datasette-charts-cluster-sin-contenido-de-docencia-liderazgo-estimacion
+  priority: 0.9
+  status: open
+  created: '2026-11-24'
 - id: gap-3c42fcc53d
   type: contradiction
   description: Unresolved contradiction between 'evals-llm-genericas-fuera-del-alcance-del-brief'
@@ -1212,6 +1232,16 @@ _Updated 2026-11-23 — 1291 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-11-19'
+- id: gap-2dd745382e
+  type: contradiction
+  description: Unresolved contradiction between 'datasette-charts-ciclo-idea-prototipo-plugin-integracion'
+    and 'datasette-charts-single-author-auto-publicado-sin-corroboracion'
+  related_notes:
+  - datasette-charts-ciclo-idea-prototipo-plugin-integracion
+  - datasette-charts-single-author-auto-publicado-sin-corroboracion
+  priority: 0.9
+  status: open
+  created: '2026-11-24'
 - id: gap-584d367458
   type: contradiction
   description: Unresolved contradiction between 'deuda-tecnica-como-puente-lexico-al-brief'
@@ -2096,6 +2126,42 @@ _Updated 2026-11-23 — 1291 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-12'
+- id: gap-73cd2a4df1
+  type: open_question
+  description: Note 'datasette-agent-0-7a1-panel-iframe-y-fragment-hashes' has decayed
+    — does it still hold?
+  related_notes:
+  - datasette-agent-0-7a1-panel-iframe-y-fragment-hashes
+  priority: 0.7
+  status: open
+  created: '2026-11-24'
+- id: gap-ee7d2d2f4e
+  type: open_question
+  description: Note 'datasette-charts-0-2a0-integracion-con-datasette-agent' has decayed
+    — does it still hold?
+  related_notes:
+  - datasette-charts-0-2a0-integracion-con-datasette-agent
+  priority: 0.7
+  status: open
+  created: '2026-11-24'
+- id: gap-23ce77f329
+  type: open_question
+  description: Note 'datasette-charts-0-2a0-prototipo-con-agente-a-plugin' has decayed
+    — does it still hold?
+  related_notes:
+  - datasette-charts-0-2a0-prototipo-con-agente-a-plugin
+  priority: 0.7
+  status: open
+  created: '2026-11-24'
+- id: gap-336882d487
+  type: open_question
+  description: Note 'datasette-charts-ciclo-idea-prototipo-plugin-integracion' has
+    decayed — does it still hold?
+  related_notes:
+  - datasette-charts-ciclo-idea-prototipo-plugin-integracion
+  priority: 0.7
+  status: open
+  created: '2026-11-24'
 - id: gap-0576b7e55d
   type: open_question
   description: Note 'disposicion-a-parecer-estupido-habilita-conducta-no-optimizada-para-parecer-inteligente'
@@ -4793,6 +4859,15 @@ _Updated 2026-11-23 — 1291 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-16'
+- id: gap-a693b81440
+  type: thin_evidence
+  description: Note 'datasette-agent-0-7a1-panel-iframe-y-fragment-hashes' rests on
+    1 source(s)
+  related_notes:
+  - datasette-agent-0-7a1-panel-iframe-y-fragment-hashes
+  priority: 0.5
+  status: open
+  created: '2026-11-24'
 - id: gap-b3c231fff3
   type: thin_evidence
   description: Note 'datasette-apps-0-4a0-enlace-por-fragmentos-y-schemes' rests on
@@ -4811,6 +4886,24 @@ _Updated 2026-11-23 — 1291 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-16'
+- id: gap-52adcf26cc
+  type: thin_evidence
+  description: Note 'datasette-charts-0-2a0-integracion-con-datasette-agent' rests
+    on 1 source(s)
+  related_notes:
+  - datasette-charts-0-2a0-integracion-con-datasette-agent
+  priority: 0.5
+  status: open
+  created: '2026-11-24'
+- id: gap-2a3a5117fc
+  type: thin_evidence
+  description: Note 'datasette-charts-0-2a0-prototipo-con-agente-a-plugin' rests on
+    1 source(s)
+  related_notes:
+  - datasette-charts-0-2a0-prototipo-con-agente-a-plugin
+  priority: 0.5
+  status: open
+  created: '2026-11-24'
 - id: gap-c3e06e1f48
   type: thin_evidence
   description: Note 'datasette-explain-plugin-0-2-2' rests on 1 source(s)
@@ -8569,6 +8662,15 @@ _Updated 2026-11-23 — 1291 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-21'
+- id: gap-2d41f963c4
+  type: thin_evidence
+  description: Note 'claude-fable-5-2-identificador-de-modelo-no-verificado' rests
+    on 1 source(s)
+  related_notes:
+  - claude-fable-5-2-identificador-de-modelo-no-verificado
+  priority: 0.5
+  status: open
+  created: '2026-11-24'
 - id: gap-80cbb232a2
   type: thin_evidence
   description: Note 'claude-opus-5-5-identificador-no-verificable' rests on 1 source(s)
