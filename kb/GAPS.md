@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-24 — 1302 entries, highest priority first._
+_Updated 2026-11-25 — 1313 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -1592,6 +1592,16 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-09-22'
+- id: gap-0b0436a841
+  type: contradiction
+  description: Unresolved contradiction between 'afirmacion-tres-puntos-de-inflexion-agentes-codigo-doce-meses-sin-cuerpo'
+    and 'puntos-de-inflexion-de-agentes-como-empaquetado-retorico-sin-vacios'
+  related_notes:
+  - afirmacion-tres-puntos-de-inflexion-agentes-codigo-doce-meses-sin-cuerpo
+  - puntos-de-inflexion-de-agentes-como-empaquetado-retorico-sin-vacios
+  priority: 0.9
+  status: open
+  created: '2026-11-25'
 - id: gap-764ed9137f
   type: contradiction
   description: Unresolved contradiction between 'react-for-two-computers-pasa-filtro-determinista-con-cuerpo-vacio'
@@ -1811,6 +1821,15 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-60dcd0b36c
+  type: open_question
+  description: Note 'afirmacion-tres-puntos-de-inflexion-agentes-codigo-doce-meses-sin-cuerpo'
+    has decayed — does it still hold?
+  related_notes:
+  - afirmacion-tres-puntos-de-inflexion-agentes-codigo-doce-meses-sin-cuerpo
+  priority: 0.7
+  status: open
+  created: '2026-11-25'
 - id: gap-2a0e5c73cd
   type: open_question
   description: Note 'agentes-ia-aceleran-trabajo-acotado-y-verificable' has decayed
@@ -2477,6 +2496,15 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-11'
+- id: gap-1bd3e38ad6
+  type: open_question
+  description: Note 'llm-mistral-0-16-anade-soporte-para-modelos-de-razonamiento'
+    has decayed — does it still hold?
+  related_notes:
+  - llm-mistral-0-16-anade-soporte-para-modelos-de-razonamiento
+  priority: 0.7
+  status: open
+  created: '2026-11-25'
 - id: gap-a1e4d21e87
   type: open_question
   description: Note 'llm-mistral-0-16-soporte-modelos-razonamiento' has decayed —
@@ -4239,6 +4267,24 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-25'
+- id: gap-7b06e98d35
+  type: open_question
+  description: Note 'puntos-de-inflexion-de-agentes-como-empaquetado-retorico-sin-vacios'
+    has decayed — does it still hold?
+  related_notes:
+  - puntos-de-inflexion-de-agentes-como-empaquetado-retorico-sin-vacios
+  priority: 0.7
+  status: open
+  created: '2026-11-25'
+- id: gap-ace28858e1
+  type: open_question
+  description: Note 're-basar-estimacion-por-trimestre-si-la-tesis-de-inflexion-se-sostiene'
+    has decayed — does it still hold?
+  related_notes:
+  - re-basar-estimacion-por-trimestre-si-la-tesis-de-inflexion-se-sostiene
+  priority: 0.7
+  status: open
+  created: '2026-11-25'
 - id: gap-526978e4c1
   type: open_question
   description: Note 'relevance-0-67-del-titulo-llm-judge-como-artefacto-lexico' has
@@ -4391,6 +4437,15 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-9789377385
+  type: thin_evidence
+  description: Note 'afirmacion-tres-puntos-de-inflexion-agentes-codigo-doce-meses-sin-cuerpo'
+    rests on 1 source(s)
+  related_notes:
+  - afirmacion-tres-puntos-de-inflexion-agentes-codigo-doce-meses-sin-cuerpo
+  priority: 0.5
+  status: open
+  created: '2026-11-25'
 - id: gap-7e599dd5cd
   type: thin_evidence
   description: Note 'agentes-abaratan-codigo-mantener-sigue-costoso-evidencia-emudhra'
@@ -5270,6 +5325,15 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-29'
+- id: gap-0f79575b4f
+  type: thin_evidence
+  description: Note 'keynote-como-argumento-post-hoc-de-puntos-de-inflexion' rests
+    on 1 source(s)
+  related_notes:
+  - keynote-como-argumento-post-hoc-de-puntos-de-inflexion
+  priority: 0.5
+  status: open
+  created: '2026-11-25'
 - id: gap-31759452f7
   type: thin_evidence
   description: Note 'leer-incidentes-como-sistemas-sociotecnicos' rests on 1 source(s)
@@ -7421,6 +7485,15 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-14'
+- id: gap-bc449ede5b
+  type: thin_evidence
+  description: Note 'pipeline-no-puede-distinguir-paso-de-cambio-de-framing-de-ponente'
+    rests on 1 source(s)
+  related_notes:
+  - pipeline-no-puede-distinguir-paso-de-cambio-de-framing-de-ponente
+  priority: 0.5
+  status: open
+  created: '2026-11-25'
 - id: gap-96745cf1a8
   type: thin_evidence
   description: Note 'pipeline-sin-fuente-primaria-para-verificar-senal-de-ataques'
@@ -10627,6 +10700,15 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-f2abcb60e4
+  type: thin_evidence
+  description: Note 'puntos-de-inflexion-de-agentes-como-empaquetado-retorico-sin-vacios'
+    rests on 1 source(s)
+  related_notes:
+  - puntos-de-inflexion-de-agentes-como-empaquetado-retorico-sin-vacios
+  priority: 0.5
+  status: open
+  created: '2026-11-25'
 - id: gap-7007d17857
   type: thin_evidence
   description: Note 'quick-study-identificador-claude-opus-5-5-high-no-verificable'
@@ -10708,6 +10790,15 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-05'
+- id: gap-45e05e0b82
+  type: thin_evidence
+  description: Note 're-basar-estimacion-por-trimestre-si-la-tesis-de-inflexion-se-sostiene'
+    rests on 1 source(s)
+  related_notes:
+  - re-basar-estimacion-por-trimestre-si-la-tesis-de-inflexion-se-sostiene
+  priority: 0.5
+  status: open
+  created: '2026-11-25'
 - id: gap-afffd910db
   type: thin_evidence
   description: Note 'react-for-two-computers-conclusion-autoinvalidante-vestida-de-veredicto'
@@ -11452,6 +11543,15 @@ _Updated 2026-11-24 — 1302 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-08'
+- id: gap-5139bf4010
+  type: thin_evidence
+  description: Note 'tres-puntos-de-inflexion-no-vienen-con-benchmarks-ni-alcance-de-tarea'
+    rests on 1 source(s)
+  related_notes:
+  - tres-puntos-de-inflexion-no-vienen-con-benchmarks-ni-alcance-de-tarea
+  priority: 0.5
+  status: open
+  created: '2026-11-25'
 - id: gap-4cddf86b0e
   type: thin_evidence
   description: Note 'two-worlds-two-doors-no-es-evidencia-de-separacion-servidor-cliente'

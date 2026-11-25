@@ -12,12 +12,12 @@
   "theme": "oficio-dev",
   "scores": {
     "relevance": 0.3333,
-    "novelty": 0.6473,
+    "novelty": 0.0,
     "corroboration": 0.5,
     "velocity": 0.5,
     "surprise": 0.5
   },
-  "aggregate_score": 0.4785,
+  "aggregate_score": 0.3167,
   "first_seen": "2026-11-23T23:40:49Z",
   "sources_count": 1,
   "status": "candidate",
