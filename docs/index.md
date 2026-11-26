@@ -1,16 +1,16 @@
-# Brief — 2026-11-25
+# Brief — 2026-11-26
 
 ## Los titulares
 
-1. [Three LLM inflection points in twelve months](https://simonwillison.net/2026/Nov/24/llm-inflection-points/) — *IA y agentes en mi trabajo*
+1. [The Revolution vs The Renaissance — Thariq Shihipar, OpenAI](https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/) — *IA y agentes en mi trabajo*
 
 ---
 
 ## IA y agentes en mi trabajo
 
-### [Three LLM inflection points in twelve months](https://simonwillison.net/2026/Nov/24/llm-inflection-points/)
+### [The Revolution vs The Renaissance — Thariq Shihipar, OpenAI](https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/)
 
-The cluster contains a single document [3b07d865be8f53ef] — a post accompanying a keynote at the AI Engineer Code Summit — arguing that LLM/coding-agent capabilities crossed three significant inflection points in roughl…
+The cluster is nominally anchored on Thariq Shihipar's talk 'The Revolution vs The Renaissance' [4d274026caadd90f], which argues AI can make software cheap enough to mass-produce while still leaving room for craft on th…
 
 <sub>fuentes: rss · confianza: 12%</sub>
 

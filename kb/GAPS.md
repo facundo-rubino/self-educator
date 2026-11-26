@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-25 — 1313 entries, highest priority first._
+_Updated 2026-11-26 — 1337 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -2109,6 +2109,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-31'
+- id: gap-4db2ce86e9
+  type: open_question
+  description: Note 'cs146s-cambio-hacia-comprension-de-repo-y-propuesta-de-cambio'
+    has decayed — does it still hold?
+  related_notes:
+  - cs146s-cambio-hacia-comprension-de-repo-y-propuesta-de-cambio
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-87f549269d
   type: open_question
   description: Note 'cs146s-rediseno-de-deberes-por-agentes-que-hacen-una-pasada'
@@ -2271,6 +2280,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-20'
+- id: gap-32ffcdd671
+  type: open_question
+  description: Note 'experiencia-de-ia-se-concentra-en-infraestructura-y-seguridad-no-en-modelado'
+    has decayed — does it still hold?
+  related_notes:
+  - experiencia-de-ia-se-concentra-en-infraestructura-y-seguridad-no-en-modelado
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-5a1aceeee3
   type: open_question
   description: Note 'external-sandboxes-para-codigo-de-agentes-exploracion-de-un-solo-documento'
@@ -2343,6 +2361,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-24'
+- id: gap-c256af674d
+  type: open_question
+  description: Note 'hacer-la-ia-aburrida-normalizar-como-herramienta-ordinaria' has
+    decayed — does it still hold?
+  related_notes:
+  - hacer-la-ia-aburrida-normalizar-como-herramienta-ordinaria
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-811bfbdb9a
   type: open_question
   description: Note 'harness-agentico-de-seis-pasos-para-asegurar-codigo' has decayed
@@ -2442,6 +2469,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-16'
+- id: gap-fa771d2467
+  type: open_question
+  description: Note 'keynote-como-argumento-post-hoc-de-puntos-de-inflexion' has decayed
+    — does it still hold?
+  related_notes:
+  - keynote-como-argumento-post-hoc-de-puntos-de-inflexion
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-6cf1b9c25d
   type: open_question
   description: Note 'legora-millon-de-celdas-revisiones-tabulares-como-superficie-de-eval'
@@ -2568,6 +2604,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-13'
+- id: gap-85cc35f071
+  type: open_question
+  description: Note 'marco-aditivo-vs-violacion-como-juicio-por-tarea' has decayed
+    — does it still hold?
+  related_notes:
+  - marco-aditivo-vs-violacion-como-juicio-por-tarea
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-0d1c4c4a7a
   type: open_question
   description: Note 'memoria-persistente-como-eje-de-agente-de-largo-horizonte' has
@@ -2586,6 +2631,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-15'
+- id: gap-2bd727f041
+  type: open_question
+  description: Note 'modelos-intercambian-diversidad-por-fiabilidad-irritante-fuera-del-promedio'
+    has decayed — does it still hold?
+  related_notes:
+  - modelos-intercambian-diversidad-por-fiabilidad-irritante-fuera-del-promedio
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-f1b1274ee7
   type: open_question
   description: Note 'monkey-mind-como-encuadre-de-productividad-personal' has decayed
@@ -2613,6 +2667,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-15'
+- id: gap-9686989650
+  type: open_question
+  description: Note 'normas-de-uso-de-ia-como-aprendizaje-social-con-cat-hicks' has
+    decayed — does it still hold?
+  related_notes:
+  - normas-de-uso-de-ia-como-aprendizaje-social-con-cat-hicks
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-0060499a79
   type: open_question
   description: Note 'octoverse-2026-220m-prs-mes-anuncio-en-github-universe' has decayed
@@ -2649,6 +2712,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-22'
+- id: gap-9b574f9f64
+  type: open_question
+  description: Note 'precariedad-de-carrera-en-web-dev-con-ia-como-narrativa-sin-datos'
+    has decayed — does it still hold?
+  related_notes:
+  - precariedad-de-carrera-en-web-dev-con-ia-como-narrativa-sin-datos
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-655d763351
   type: open_question
   description: Note 'precio-de-token-no-es-coste-total-de-tarea' has decayed — does
@@ -2747,6 +2819,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-29'
+- id: gap-a8c8f13fe3
+  type: open_question
+  description: Note 'thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten'
+    has decayed — does it still hold?
+  related_notes:
+  - thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-b3f7382661
   type: open_question
   description: Note 'tiny-theory-of-mind-benchmark-front-page-hf' has decayed — does
@@ -3655,6 +3736,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-14'
+- id: gap-76bb22fc43
+  type: open_question
+  description: Note 'pipeline-no-puede-distinguir-paso-de-cambio-de-framing-de-ponente'
+    has decayed — does it still hold?
+  related_notes:
+  - pipeline-no-puede-distinguir-paso-de-cambio-de-framing-de-ponente
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-954d28de03
   type: open_question
   description: Note 'post-unico-como-plantilla-de-demostracion-end-to-end' has decayed
@@ -3673,6 +3763,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-12'
+- id: gap-3a9de28e32
+  type: open_question
+  description: Note 'pregunta-de-si-la-ia-obliga-a-repensar-seguridad-de-software'
+    has decayed — does it still hold?
+  related_notes:
+  - pregunta-de-si-la-ia-obliga-a-repensar-seguridad-de-software
+  priority: 0.7
+  status: open
+  created: '2026-11-26'
 - id: gap-93f4fb054a
   type: open_question
   description: Note 'probe-de-rechazo-por-identidad-en-produccion' has decayed — does
@@ -5086,6 +5185,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-09'
+- id: gap-40e69d453d
+  type: thin_evidence
+  description: Note 'experiencia-de-ia-se-concentra-en-infraestructura-y-seguridad-no-en-modelado'
+    rests on 1 source(s)
+  related_notes:
+  - experiencia-de-ia-se-concentra-en-infraestructura-y-seguridad-no-en-modelado
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-43808c6f80
   type: thin_evidence
   description: Note 'external-sandboxes-para-codigo-de-agentes-exploracion-de-un-solo-documento'
@@ -5163,6 +5271,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-23'
+- id: gap-94174fb02e
+  type: thin_evidence
+  description: Note 'hacer-la-ia-aburrida-normalizar-como-herramienta-ordinaria' rests
+    on 1 source(s)
+  related_notes:
+  - hacer-la-ia-aburrida-normalizar-como-herramienta-ordinaria
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-0bda209b02
   type: thin_evidence
   description: Note 'hackathon-wandb-llm-evaluator-participacion-como-dato-de-contexto-del-autor'
@@ -5470,6 +5587,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-22'
+- id: gap-9faf2b3a65
+  type: thin_evidence
+  description: Note 'marco-aditivo-vs-violacion-como-juicio-por-tarea' rests on 1
+    source(s)
+  related_notes:
+  - marco-aditivo-vs-violacion-como-juicio-por-tarea
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-b4e40abd76
   type: thin_evidence
   description: Note 'mcp-release-2025-11-25-bumps' rests on 1 source(s)
@@ -5552,6 +5678,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-15'
+- id: gap-9857a16b8f
+  type: thin_evidence
+  description: Note 'modelos-intercambian-diversidad-por-fiabilidad-irritante-fuera-del-promedio'
+    rests on 1 source(s)
+  related_notes:
+  - modelos-intercambian-diversidad-por-fiabilidad-irritante-fuera-del-promedio
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-520c4bbc59
   type: thin_evidence
   description: Note 'monkey-mind-como-encuadre-de-productividad-personal' rests on
@@ -5612,6 +5747,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-12'
+- id: gap-80c43e4038
+  type: thin_evidence
+  description: Note 'normas-de-uso-de-ia-como-aprendizaje-social-con-cat-hicks' rests
+    on 1 source(s)
+  related_notes:
+  - normas-de-uso-de-ia-como-aprendizaje-social-con-cat-hicks
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-283e8934e4
   type: thin_evidence
   description: Note 'octoverse-2026-220m-prs-mes-anuncio-en-github-universe' rests
@@ -5638,6 +5782,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-02'
+- id: gap-3d5d9f86b6
+  type: thin_evidence
+  description: Note 'precariedad-de-carrera-en-web-dev-con-ia-como-narrativa-sin-datos'
+    rests on 1 source(s)
+  related_notes:
+  - precariedad-de-carrera-en-web-dev-con-ia-como-narrativa-sin-datos
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-ce777e2771
   type: thin_evidence
   description: Note 'precio-de-token-no-es-coste-total-de-tarea' rests on 1 source(s)
@@ -5809,6 +5962,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-29'
+- id: gap-8c743aeec4
+  type: thin_evidence
+  description: Note 'thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten'
+    rests on 1 source(s)
+  related_notes:
+  - thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-9ec88540a1
   type: thin_evidence
   description: Note 'the-two-reacts-fragmento-aislado-ui-f-data-state' rests on 1
@@ -7530,6 +7692,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-12'
+- id: gap-aa6dce56de
+  type: thin_evidence
+  description: Note 'pregunta-de-si-la-ia-obliga-a-repensar-seguridad-de-software'
+    rests on 1 source(s)
+  related_notes:
+  - pregunta-de-si-la-ia-obliga-a-repensar-seguridad-de-software
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-a5870e56ed
   type: thin_evidence
   description: Note 'probe-de-rechazo-por-identidad-en-produccion' rests on 1 source(s)
@@ -7644,6 +7815,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-28'
+- id: gap-717cafc8b5
+  type: thin_evidence
+  description: Note 'shiro-consultar-transcripcion-completa-antes-de-citar' rests
+    on 1 source(s)
+  related_notes:
+  - shiro-consultar-transcripcion-completa-antes-de-citar
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-c65128eea8
   type: thin_evidence
   description: Note 'sin-claim-positivo-posible-desde-cluster-de-agentic-engineering'
@@ -10983,6 +11163,33 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-df6a54bb39
+  type: thin_evidence
+  description: Note 'revolution-vs-renaissance-ancla-unica-parafraseada-como-hallazgo'
+    rests on 1 source(s)
+  related_notes:
+  - revolution-vs-renaissance-ancla-unica-parafraseada-como-hallazgo
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
+- id: gap-5d06532929
+  type: thin_evidence
+  description: Note 'revolution-vs-renaissance-binario-lexico-craft-vs-produccion-masiva'
+    rests on 1 source(s)
+  related_notes:
+  - revolution-vs-renaissance-binario-lexico-craft-vs-produccion-masiva
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
+- id: gap-6d184e4e01
+  type: thin_evidence
+  description: Note 'revolution-vs-renaissance-novelty-cero-restatement-de-supuestos-previos'
+    rests on 1 source(s)
+  related_notes:
+  - revolution-vs-renaissance-novelty-cero-restatement-de-supuestos-previos
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-91ce7ec0eb
   type: thin_evidence
   description: Note 'riesgo-de-generalizar-desde-ai-coach-monkey-mind' rests on 1
@@ -11158,6 +11365,15 @@ _Updated 2026-11-25 — 1313 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-dd14e61108
+  type: thin_evidence
+  description: Note 'shiro-no-es-evidencia-de-practica-de-liderazgo-ni-docencia' rests
+    on 1 source(s)
+  related_notes:
+  - shiro-no-es-evidencia-de-practica-de-liderazgo-ni-docencia
+  priority: 0.5
+  status: open
+  created: '2026-11-26'
 - id: gap-5a011b4465
   type: thin_evidence
   description: Note 'single-document-cluster-engagement-cero-no-generaliza' rests
