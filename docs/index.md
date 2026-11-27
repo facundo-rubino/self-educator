@@ -1,4 +1,4 @@
-# Brief — 2026-11-26
+# Brief — 2026-11-27
 
 ## Los titulares
 
@@ -10,9 +10,9 @@
 
 ### [The Revolution vs The Renaissance — Thariq Shihipar, OpenAI](https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/)
 
-The cluster is nominally anchored on Thariq Shihipar's talk 'The Revolution vs The Renaissance' [4d274026caadd90f], which argues AI can make software cheap enough to mass-produce while still leaving room for craft on th…
+The cluster is not really about Thariq Shihipar's talk despite the signal label; it is a loose set of RSS posts about AI's effect on software work, its ethics/labor politics, and the craft/security concerns that come wi…
 
-<sub>fuentes: rss · confianza: 12%</sub>
+<sub>fuentes: rss · confianza: 10%</sub>
 
 ---
 

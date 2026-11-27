@@ -1,0 +1,39 @@
+{
+  "id": "sig-b786ada299a4",
+  "topic": "Cómo un dev que lidera proyectos y también enseña a programar hace mejor su trabajo: agentes de IA aplicados a programar, gestionar y enseñar, liderazgo técnico de equipos chicos (estimación, secuenciamiento, alcance, organización personal), oficio de software engineering en general, y productividad y técnicas de estudio. # Docencia de programación entry-level se mudó al profile `teaching` de # pogba (KB acumulativa aparte); ya no compite por cupo en este brief.",
+  "label": "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+  "member_doc_ids": [
+    "1ccc8e412cdaa1c4",
+    "44c8e5ef06e5fbe2",
+    "4d274026caadd90f",
+    "9092c0c6b90504b8",
+    "920f9480cbde9f81",
+    "b0eec5d1c809894f",
+    "b4bb15c8b88654d9",
+    "d4324dca52ba829d",
+    "d8cdb516fcf9f5fe",
+    "e6908eaca18c8e77",
+    "ee7d97417bb16595"
+  ],
+  "member_sources": [
+    "rss"
+  ],
+  "headline_url": "https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/",
+  "theme": "ia-agentes",
+  "scores": {
+    "relevance": 1.0,
+    "novelty": 0.0042,
+    "corroboration": 0.5,
+    "velocity": 0.5,
+    "surprise": 0.5
+  },
+  "aggregate_score": 0.551,
+  "first_seen": "2024-03-14T00:00:00Z",
+  "sources_count": 1,
+  "status": "promoted",
+  "outcome": {
+    "reviewed_at": null,
+    "verdict": null,
+    "notes": null
+  }
+}

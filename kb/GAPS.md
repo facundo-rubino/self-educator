@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-26 — 1337 entries, highest priority first._
+_Updated 2026-11-27 — 1343 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -432,6 +432,16 @@ _Updated 2026-11-26 — 1337 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-22'
+- id: gap-b3ce27e788
+  type: contradiction
+  description: Unresolved contradiction between 'complejidad-esencial-teclado-a-la-productividad-por-agentes'
+    and 'thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten'
+  related_notes:
+  - complejidad-esencial-teclado-a-la-productividad-por-agentes
+  - thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten
+  priority: 0.9
+  status: open
+  created: '2026-11-27'
 - id: gap-079bf799e3
   type: contradiction
   description: Unresolved contradiction between 'bajo-relevance-no-implica-cluster-de-ruido-excepcion-matthew-green'
@@ -2217,6 +2227,15 @@ _Updated 2026-11-26 — 1337 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-17'
+- id: gap-37a4366b41
+  type: open_question
+  description: Note 'divergencia-del-promedio-como-argumento-para-revision-humana'
+    has decayed — does it still hold?
+  related_notes:
+  - divergencia-del-promedio-como-argumento-para-revision-humana
+  priority: 0.7
+  status: open
+  created: '2026-11-27'
 - id: gap-a40161cea2
   type: open_question
   description: Note 'docencia-entry-level-mudada-a-profile-teaching-de-pogba' has
@@ -2262,6 +2281,15 @@ _Updated 2026-11-26 — 1337 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-06'
+- id: gap-a5adbbc35e
+  type: open_question
+  description: Note 'etica-de-ia-relacional-escuchar-antes-que-reglas' has decayed
+    — does it still hold?
+  related_notes:
+  - etica-de-ia-relacional-escuchar-antes-que-reglas
+  priority: 0.7
+  status: open
+  created: '2026-11-27'
 - id: gap-17e803242d
   type: open_question
   description: Note 'eval-especifica-por-tarea-como-infraestructura-de-fiabilidad'
@@ -2334,15 +2362,6 @@ _Updated 2026-11-26 — 1337 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-23'
-- id: gap-da7c9ff089
-  type: open_question
-  description: Note 'good-ai-list-15k-repos-open-source-ia-fotografia-de-ecosistema'
-    has decayed — does it still hold?
-  related_notes:
-  - good-ai-list-15k-repos-open-source-ia-fotografia-de-ecosistema
-  priority: 0.7
-  status: open
-  created: '2026-11-12'
 - id: gap-3677f80aab
   type: open_question
   description: Note 'gpt-6-astra-anuncio-sin-detalle' has decayed — does it still
@@ -2757,6 +2776,15 @@ _Updated 2026-11-26 — 1337 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-24'
+- id: gap-600e98187e
+  type: open_question
+  description: Note 'seguridad-reexaminada-como-primera-clase-al-adoptar-ia' has decayed
+    — does it still hold?
+  related_notes:
+  - seguridad-reexaminada-como-primera-clase-al-adoptar-ia
+  priority: 0.7
+  status: open
+  created: '2026-11-27'
 - id: gap-38a64590fb
   type: open_question
   description: Note 'separacion-cerebro-manos-modelo-harness-agente' has decayed —
@@ -5091,6 +5119,15 @@ _Updated 2026-11-26 — 1337 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-152d8e0366
+  type: thin_evidence
+  description: Note 'divergencia-del-promedio-como-argumento-para-revision-humana'
+    rests on 1 source(s)
+  related_notes:
+  - divergencia-del-promedio-como-argumento-para-revision-humana
+  priority: 0.5
+  status: open
+  created: '2026-11-27'
 - id: gap-f9ee2b54ed
   type: thin_evidence
   description: Note 'docencia-entry-level-mudada-a-profile-teaching-de-pogba' rests
@@ -5185,6 +5222,15 @@ _Updated 2026-11-26 — 1337 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-11-09'
+- id: gap-83699926d1
+  type: thin_evidence
+  description: Note 'experiencia-de-ia-concentrada-en-infraestructura-y-seguridad'
+    rests on 1 source(s)
+  related_notes:
+  - experiencia-de-ia-concentrada-en-infraestructura-y-seguridad
+  priority: 0.5
+  status: open
+  created: '2026-11-27'
 - id: gap-40e69d453d
   type: thin_evidence
   description: Note 'experiencia-de-ia-se-concentra-en-infraestructura-y-seguridad-no-en-modelado'
@@ -5885,6 +5931,15 @@ _Updated 2026-11-26 — 1337 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-06'
+- id: gap-994ccc7f0a
+  type: thin_evidence
+  description: Note 'seguridad-reexaminada-como-primera-clase-al-adoptar-ia' rests
+    on 1 source(s)
+  related_notes:
+  - seguridad-reexaminada-como-primera-clase-al-adoptar-ia
+  priority: 0.5
+  status: open
+  created: '2026-11-27'
 - id: gap-69ee1e190e
   type: thin_evidence
   description: Note 'senal-ingresos-anthropic-16-8b-ipo-sin-respaldo-en-cluster' rests

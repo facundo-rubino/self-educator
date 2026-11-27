@@ -10,17 +10,21 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-26'
-updated: '2026-11-26'
+updated: '2026-11-27'
 sources:
 - 4d274026caadd90f
 tags:
 - circularidad
+- circularity
+- cluster-quality
 - corroboracion
 - novelty-cero
 - pipeline
+- rss-noise
+- single-source
 base_confidence: 0.85
 half_life_days: 120
-last_reinforced: '2026-11-26'
+last_reinforced: '2026-11-27'
 provenance:
   scale: S
   query: null
@@ -31,21 +35,26 @@ links:
   type: relates_to
 - to: restatement-de-titulo-no-es-hallazgo
   type: supports
+- to: singleton-rss-engagement-cero-novelty-cero-no-sostiene-generalizacion
+  type: supports
+- to: validacion-de-senal-por-contenido-no-por-titulo
+  type: supports
 ---
 
 ## What it is
-La conclusión «la IA amplifica el craft en vez de reemplazar el juicio» es una paráfrasis del único documento directamente sobre el tema, no un hallazgo establecido por fuentes independientes: el clúster es un solo documento hablándose a sí mismo rodeado de citas adyacentes.
+El clúster se etiqueta «Revolution vs Renaissance» pero solo uno de once documentos trata el tema; el resto es adyacente o fuera de tópico. La tesis del clúster no es un hallazgo: es paráfrasis de la única charla que la sostiene.
 
 ## Evidence
-- Solo un documento [4d274026caadd90f] trata directamente el tema; el resto es discurso de IA adyacente — source: 4d274026caadd90f
-- El critic ajusta la confianza a 0.12: corroboración 0.50 y novelty 0.00 no protegen ningún hallazgo, solo una reformulación — source: 4d274026caadd90f
+- El único documento que coincide con el tema declarado es la charla de Shihipar; el resto se describe como adyacente o fuera de tópico — source: 4d274026caadd90f (vía resumen del informe)
 
 ## Why it matters
-Cualquier informe que presente esta tesis como «respaldada por el clúster» comete circularidad: el acuerdo entre documentos adyacentes confunde tono con sustento.
+Cualquier conclusión del clúster hereda la debilidad de n=1. Tomar la etiqueta del clúster como tema validado sería razonamiento circular: la etiqueta viene del título de un documento, no de convergencia entre varios.
 
-Es el riesgo estructural de toda esta compilación. Se apoya en el patrón conocido de que reformular el título no es un hallazgo y en el de que un titular de clúster puede no tener referente en sus documentos.
+Es la contrapartida crítica de la nota sobre la charla: se deriva de ella y la limita. Confirma el patrón de que un singleton sin engagement no sostiene generalización, y el de validar la señal por contenido y no por título.
 
 ## Links
 - derived_from → [[thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten]]
 - relates_to → [[titular-de-cluster-sin-referente-en-sus-documentos]]
 - supports → [[restatement-de-titulo-no-es-hallazgo]]
+- supports → [[singleton-rss-engagement-cero-novelty-cero-no-sostiene-generalizacion]]
+- supports → [[validacion-de-senal-por-contenido-no-por-titulo]]
