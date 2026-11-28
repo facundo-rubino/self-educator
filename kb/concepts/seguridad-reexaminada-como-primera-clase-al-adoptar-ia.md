@@ -10,17 +10,20 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-27'
-updated: '2026-11-27'
+updated: '2026-11-28'
 sources:
 - b0eec5d1c809894f
 tags:
-- security
-- process
+- adopcion-ia
 - adoption
+- proceso
+- process
+- security
+- seguridad
 - single-source
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-11-27'
+last_reinforced: '2026-11-28'
 provenance:
   scale: S
   query: null
@@ -29,19 +32,22 @@ links:
   type: relates_to
 - to: aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion
   type: relates_to
+- to: seguridad-reexaminada-como-primera-clase-al-adoptar-ia-2
+  type: relates_to
 ---
 
 ## What it is
-Un mes de brechas de seguridad reportadas en un solo día lleva a preguntar si la IA exige repensar la seguridad del software. La implicación práctica es tratar la revisión de seguridad como proceso de primera clase y reexaminado, no como práctica heredada.
+Afirmación: un mes de brechas de seguridad ocurridas en un solo día motiva repensar la seguridad del software a causa de la IA. La consecuencia es tratar la seguridad como disciplina a reexaminar al adoptar IA, no como proceso heredado.
 
 ## Evidence
-- Un mes de brechas reportadas en un día plantea si la IA obliga a repensar la seguridad del software — source: b0eec5d1c809894f
+- Un mes de brechas de seguridad ocurridas en un solo día motiva repensar la seguridad de software a causa de la IA — fuente: b0eec5d1c809894f
 
 ## Why it matters
-Es la única pieza del clúster que apunta a una disciplina de proceso concreta para equipos que adoptan desarrollo asistido por IA. Pero llega como pregunta de un solo documento, sin mecanismo ni datos: no se puede afirmar que la IA cause el aumento ni qué revisión concreta añadir.
+Según las implicaciones del clúster, el liderazgo técnico debería priorizar la revisión del código generado por IA y no solo la velocidad de entrega. El dato de las brechas es de segunda mano y sin verificación en la fuente.
 
-Conecta con la tesis craft/volumen como una de las disciplinas que el craft reservado debe cubrir. Comparte con la nota sobre extrapolar evals NLP a agentes la advertencia de no convertir una pregunta en doctrina.
+Es la misma tesis que ya recoge `seguridad-reexaminada-como-primera-clase-al-adoptar-ia`; esta nota añade la formulación «un mes de brechas en un día» como disparador concreto.
 
 ## Links
 - relates_to → [[thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten]]
 - relates_to → [[aplicar-evals-nlp-a-agentes-de-codigo-seria-extrapolacion]]
+- relates_to → [[seguridad-reexaminada-como-primera-clase-al-adoptar-ia-2]]

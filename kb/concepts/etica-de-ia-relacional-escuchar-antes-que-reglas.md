@@ -10,36 +10,41 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-27'
-updated: '2026-11-27'
+updated: '2026-11-28'
 sources:
-- d8cdb516fcf9f5fe
 - d4324dca52ba829d
+- d8cdb516fcf9f5fe
 tags:
-- ethics
-- teaching-norms
 - dialogue
+- escuchar
+- ethics
+- etica-ia
+- normas
+- teaching-norms
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-11-27'
+last_reinforced: '2026-11-28'
 provenance:
   scale: S
   query: null
 links:
 - to: hacer-la-ia-aburrida-normalizar-como-herramienta-ordinaria
   type: supports
+- to: normas-de-uso-de-ia-como-aprendizaje-social-con-cat-hicks
+  type: relates_to
 ---
 
 ## What it is
-La ética y el aprendizaje en torno a la IA se enmarcan como relacionales: un diálogo sobre lo que nos debemos mutuamente, empezando por escuchar. Otra pieza aboga por «hacer la IA aburrida otra vez» frente a la política de pureza moral, apoyándose en externalidades.
+Postura: las normas sobre IA surgen de la ética, el aprendizaje y lo que nos debemos mutuamente, y el punto de partida es escuchar. Se rechaza la ética como catálogo previo de reglas a imponer.
 
 ## Evidence
-- La ética y el aprendizaje de la IA se enmarcan como «un diálogo» sobre lo que nos debemos, empezando por escuchar — source: d8cdb516fcf9f5fe
-- Argumento normativo sobre ética de IA vía externalidades y «engagement», con llamada a hacer la IA aburrida — source: d4324dca52ba829d
+- Las normas sobre IA surgen de la ética, el aprendizaje y lo que nos debemos mutuamente, empezando por escuchar — fuente: d8cdb516fcf9f5fe
 
 ## Why it matters
-Ofrece un encuadre para normas de uso de IA en un aula o equipo (diálogo, escucha) en vez de listas. No trae mecánica: no dice cómo se conduce ese diálogo ni qué cambia en el resultado de enseñanza.
+Es una premisa de proceso, no una técnica. Para un docente implica derivar las normas de uso con el grupo en lugar de entregarlas; para un líder, tratarlas como aprendizaje social y no como política.
 
-Refuerza la nota de hacer la IA aburrida como herramienta ordinaria. Es el único puente ético del clúster hacia docencia, y es un encuadre, no una práctica demostrada.
+Coincide con `normas-de-uso-de-ia-como-aprendizaje-social-con-cat-hicks` en tratar las normas como algo aprendido y transmitido. Sostiene `hacer-la-ia-aburrida-normalizar-como-herramienta-ordinaria`: si la ética se construye escuchando, la IA deja de ser espectáculo.
 
 ## Links
 - supports → [[hacer-la-ia-aburrida-normalizar-como-herramienta-ordinaria]]
+- relates_to → [[normas-de-uso-de-ia-como-aprendizaje-social-con-cat-hicks]]

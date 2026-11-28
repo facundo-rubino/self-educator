@@ -1,6 +1,6 @@
 # GAPS — what this knowledge base does not know
 
-_Updated 2026-11-27 — 1343 entries, highest priority first._
+_Updated 2026-11-28 — 1354 entries, highest priority first._
 
 ```yaml
 - id: gap-1390930dcf
@@ -213,6 +213,16 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-11-24'
+- id: gap-e02e9361d7
+  type: contradiction
+  description: Unresolved contradiction between 'desintermediacion-de-carrera-por-ia-como-narrativa-sin-datos'
+    and 'thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten'
+  related_notes:
+  - desintermediacion-de-carrera-por-ia-como-narrativa-sin-datos
+  - thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten
+  priority: 0.9
+  status: open
+  created: '2026-11-28'
 - id: gap-b960a42f22
   type: contradiction
   description: Unresolved contradiction between 'disposicion-a-parecer-estupido-tiene-costes'
@@ -1672,6 +1682,26 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.9
   status: open
   created: '2026-10-14'
+- id: gap-75350d0e11
+  type: contradiction
+  description: Unresolved contradiction between 'revolucion-vs-renacimiento-ancla-unica-parafraseada-como-hallazgo'
+    and 'thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten'
+  related_notes:
+  - revolucion-vs-renacimiento-ancla-unica-parafraseada-como-hallazgo
+  - thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten
+  priority: 0.9
+  status: open
+  created: '2026-11-28'
+- id: gap-2027976a03
+  type: contradiction
+  description: Unresolved contradiction between 'revolucion-vs-renacimiento-puede-racionalizar-el-statu-quo'
+    and 'thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten'
+  related_notes:
+  - revolucion-vs-renacimiento-puede-racionalizar-el-statu-quo
+  - thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten
+  priority: 0.9
+  status: open
+  created: '2026-11-28'
 - id: gap-21f0153932
   type: contradiction
   description: Unresolved contradiction between 'arca-agentes-largo-horizonte-memoria-harness'
@@ -2200,6 +2230,15 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-11-24'
+- id: gap-1ee96d6810
+  type: open_question
+  description: Note 'desintermediacion-de-carrera-por-ia-como-narrativa-sin-datos'
+    has decayed — does it still hold?
+  related_notes:
+  - desintermediacion-de-carrera-por-ia-como-narrativa-sin-datos
+  priority: 0.7
+  status: open
+  created: '2026-11-28'
 - id: gap-0576b7e55d
   type: open_question
   description: Note 'disposicion-a-parecer-estupido-habilita-conducta-no-optimizada-para-parecer-inteligente'
@@ -2245,6 +2284,15 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-28'
+- id: gap-138dfb74f2
+  type: open_question
+  description: Note 'edits-the-size-of-a-rock-como-ejemplo-de-craft-persistente' has
+    decayed — does it still hold?
+  related_notes:
+  - edits-the-size-of-a-rock-como-ejemplo-de-craft-persistente
+  priority: 0.7
+  status: open
+  created: '2026-11-28'
 - id: gap-47fa61261d
   type: open_question
   description: Note 'ensayo-goodbye-clean-code-sin-cuerpo-recorrido' has decayed —
@@ -2362,6 +2410,15 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-09-23'
+- id: gap-da7c9ff089
+  type: open_question
+  description: Note 'good-ai-list-15k-repos-open-source-ia-fotografia-de-ecosistema'
+    has decayed — does it still hold?
+  related_notes:
+  - good-ai-list-15k-repos-open-source-ia-fotografia-de-ecosistema
+  priority: 0.7
+  status: open
+  created: '2026-11-28'
 - id: gap-3677f80aab
   type: open_question
   description: Note 'gpt-6-astra-anuncio-sin-detalle' has decayed — does it still
@@ -3522,6 +3579,15 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.7
   status: open
   created: '2026-10-20'
+- id: gap-025081198c
+  type: open_question
+  description: Note 'finedna-verifiable-prompts-como-disciplina-de-criterios-de-aceptacion'
+    has decayed — does it still hold?
+  related_notes:
+  - finedna-verifiable-prompts-como-disciplina-de-criterios-de-aceptacion
+  priority: 0.7
+  status: open
+  created: '2026-11-28'
 - id: gap-0d9f85cdc4
   type: open_question
   description: Note 'fix-like-no-one-s-watching-mantenimiento-sin-evidencia' has decayed
@@ -5094,6 +5160,15 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-25'
+- id: gap-0b421471c5
+  type: thin_evidence
+  description: Note 'desintermediacion-de-carrera-por-ia-como-narrativa-sin-datos'
+    rests on 1 source(s)
+  related_notes:
+  - desintermediacion-de-carrera-por-ia-como-narrativa-sin-datos
+  priority: 0.5
+  status: open
+  created: '2026-11-28'
 - id: gap-eec645d547
   type: thin_evidence
   description: Note 'disposicion-a-parecer-estupido-habilita-conducta-no-optimizada-para-parecer-inteligente'
@@ -5145,6 +5220,15 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-10-25'
+- id: gap-3ef1d4dc70
+  type: thin_evidence
+  description: Note 'edits-the-size-of-a-rock-como-ejemplo-de-craft-persistente' rests
+    on 1 source(s)
+  related_notes:
+  - edits-the-size-of-a-rock-como-ejemplo-de-craft-persistente
+  priority: 0.5
+  status: open
+  created: '2026-11-28'
 - id: gap-9393553aee
   type: thin_evidence
   description: Note 'ensayo-goodbye-clean-code-sin-cuerpo-recorrido' rests on 1 source(s)
@@ -11218,6 +11302,24 @@ _Updated 2026-11-27 — 1343 entries, highest priority first._
   priority: 0.5
   status: open
   created: '2026-09-16'
+- id: gap-469f4d1822
+  type: thin_evidence
+  description: Note 'revolucion-vs-renacimiento-ancla-unica-parafraseada-como-hallazgo'
+    rests on 1 source(s)
+  related_notes:
+  - revolucion-vs-renacimiento-ancla-unica-parafraseada-como-hallazgo
+  priority: 0.5
+  status: open
+  created: '2026-11-28'
+- id: gap-62fa5e7123
+  type: thin_evidence
+  description: Note 'revolucion-vs-renacimiento-binario-lexico-craft-vs-produccion-masiva'
+    rests on 1 source(s)
+  related_notes:
+  - revolucion-vs-renacimiento-binario-lexico-craft-vs-produccion-masiva
+  priority: 0.5
+  status: open
+  created: '2026-11-28'
 - id: gap-df6a54bb39
   type: thin_evidence
   description: Note 'revolution-vs-renaissance-ancla-unica-parafraseada-como-hallazgo'

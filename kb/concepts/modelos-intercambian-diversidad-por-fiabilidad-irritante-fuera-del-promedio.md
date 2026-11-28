@@ -10,17 +10,19 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-26'
-updated: '2026-11-26'
+updated: '2026-11-28'
 sources:
 - b4bb15c8b88654d9
 tags:
+- agentes
 - diversidad
 - fiabilidad
+- promedio
 - revision-de-diseno
-- agentes
+- rol-humano
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-11-26'
+last_reinforced: '2026-11-28'
 provenance:
   scale: S
   query: null
@@ -29,19 +31,25 @@ links:
   type: relates_to
 - to: revolution-vs-renaissance-cluster-discurso-adyacente-no-practica
   type: derived_from
+- to: thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten
+  type: supports
+- to: divergencia-del-promedio-como-argumento-para-revision-humana
+  type: relates_to
 ---
 
 ## What it is
-Los modelos de IA optimizan fiabilidad a costa de diversidad; sin intervención, «nos entierran en el promedio». El papel humano es ser el irritante que empuja fuera del camino pavimentado.
+Afirmación: los modelos de IA intercambian diversidad por fiabilidad y, sin control, sepultan al usuario en el promedio. El rol humano que se deriva es el de irritante que empuja el output fuera del camino pavimentado.
 
 ## Evidence
-- La IA intercambia diversidad por fiabilidad y, sin control, «nos entierra en el promedio»; toca al humano ser el irritante que se sale del camino trillado — source: b4bb15c8b88654d9
+- Los modelos intercambian diversidad por fiabilidad y, sin control, nos sepultan en el promedio; el rol humano es ser el irritante que los empuja fuera del camino pavimentado — fuente: b4bb15c8b88654d9
 
 ## Why it matters
-Justifica pedir divergencia de forma deliberada en revisiones de diseño y de código: el valor del humano no es generar más, es romper la convergencia hacia la media.
+Es el argumento más directamente utilizable del clúster para docencia: justifica enseñar a discrepar del output del modelo en lugar de aceptarlo. La afirmación sobre el intercambio diversidad/fiabilidad se enuncia sin medición en la fuente.
 
-Complementa la tesis de Shihipar sobre craft: si el modelo tiende al promedio, el craft es precisamente lo que se aparta de él. Es discurso adyacente, no evidencia de práctica propia.
+Proporciona el mecanismo que falta a la tesis de coexistencia `thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten`: el pulido humano es precisamente salirse del promedio. Recoge la misma idea que `divergencia-del-promedio-como-argumento-para-revision-humana`.
 
 ## Links
 - relates_to → [[thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten]]
 - derived_from → [[revolution-vs-renaissance-cluster-discurso-adyacente-no-practica]]
+- supports → [[thariq-shihipar-revolucion-vs-renacimiento-salida-masiva-y-craft-coexisten]]
+- relates_to → [[divergencia-del-promedio-como-argumento-para-revision-humana]]

@@ -10,21 +10,24 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-26'
-updated: '2026-11-27'
+updated: '2026-11-28'
 sources:
 - 4d274026caadd90f
 tags:
 - agentes-de-codigo
 - agents
+- ai-craft
 - ai-engineer-code
 - craft
+- revolucion-renacimiento
 - salida-masiva
 - single-talk
 - software-production
+- thariq-shihipar
 - weak-evidence
 base_confidence: 0.25
 half_life_days: 180
-last_reinforced: '2026-11-27'
+last_reinforced: '2026-11-28'
 provenance:
   scale: S
   query: null
@@ -41,19 +44,21 @@ links:
   type: contradicts
 - to: afirmacion-tres-puntos-de-inflexion-agentes-codigo-doce-meses-sin-cuerpo
   type: relates_to
+- to: agentes-abaratan-codigo-mantener-sigue-costoso-evidencia-emudhra
+  type: relates_to
 ---
 
 ## What it is
-Una charla de Thariq Shihipar (OpenAI) encuadra la IA como algo que abarata el software lo bastante como para producirlo «por millares», sin eliminar el tiempo para hacer que una sola cosa «se sienta bien». Revolución (volumen) y renacimiento (calidad de craft) coexisten en vez de sustituirse.
+Tesis de coexistencia: la IA abarata la producción de software lo suficiente para hacer miles de cosas y aún así dejar tiempo para pulir una sola hasta que «se sienta bien». Los dos futuros —salida masiva barata y trabajo artesanal de detalle— no se excluyen; el segundo no desaparece bajo el primero.
 
 ## Evidence
-- La IA abarata el software hasta producirlo por millares y aún deja tiempo para pulir una sola pieza hasta que «se sienta bien» — source: 4d274026caadd90f
-- El ponente demuestra iteración de craft concreta (ajustar el tamaño de una roca en un juego de lucha), indicio de asistencia a trabajo fino, no solo generación masiva — source: 4d274026caadd90f
+- La IA permite hacer miles de cosas y aun así dejar tiempo para pulir una sola hasta que «se sienta bien»; ambos futuros pueden coexistir — fuente: 4d274026caadd90f
+- Ejemplo del propio autor: en su juego de pelea edita el tamaño de una roca, trabajo artesanal de detalle que persiste frente a la producción masiva asistida — fuente: 4d274026caadd90f
 
 ## Why it matters
-Sugiere una división del trabajo para un lead: delegar a la IA el software de alto volumen y barato, reservar el tiempo humano para la «cosa que tiene que sentirse bien». Es un claim de ponente, no un resultado medido: n=1 y sin corroboración independiente.
+Es la única pieza del clúster que articula una postura sobre el oficio con IA. Para un dev-líder-docente sugiere una partición de tarea: agentes para la cantidad, juicio humano para el pulido y el criterio de calidad. La evidencia es anecdótica (un juego de pelea) y de una charla de evento, no un estudio del oficio.
 
-Se relaciona con el patrón de generación barata que no elimina mantenimiento, porque el craft reservado es justamente el coste que sobrevive. Choca con lecturas fuertes de Brooks sobre techo de productividad, que la charla no aborda. Comparte con la tesis de «tres puntos de inflexión» el ser framing de keynote, no medición.
+Se apoya en la misma intuición que «los agentes abaratan el código pero no el mantenimiento» y en la distinción agentes/aceleración de trabajo acotado: lo que se abarata es la generación, lo que persiste es el juicio. Ver `agentes-abaratan-codigo-mantener-sigue-costoso-evidencia-emudhra` y `agentes-ia-aceleran-trabajo-acotado-y-verificable`.
 
 ## Links
 - relates_to → [[agentes-ia-aceleran-trabajo-acotado-y-verificable]]
@@ -62,3 +67,4 @@ Se relaciona con el patrón de generación barata que no elimina mantenimiento, 
 - relates_to → [[generacion-barata-no-elimina-coste-de-mantenimiento]]
 - contradicts → [[complejidad-esencial-teclado-a-la-productividad-por-agentes]]
 - relates_to → [[afirmacion-tres-puntos-de-inflexion-agentes-codigo-doce-meses-sin-cuerpo]]
+- relates_to → [[agentes-abaratan-codigo-mantener-sigue-costoso-evidencia-emudhra]]

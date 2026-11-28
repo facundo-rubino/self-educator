@@ -10,35 +10,42 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-11-26'
-updated: '2026-11-26'
+updated: '2026-11-28'
 sources:
 - d4324dca52ba829d
 tags:
-- etica
-- normalizacion
-- externalidades
 - engagement
+- etica
+- etica-ia
+- externalidades
+- normalizacion
 base_confidence: 0.2
 half_life_days: 180
-last_reinforced: '2026-11-26'
+last_reinforced: '2026-11-28'
 provenance:
   scale: S
   query: null
 links:
 - to: hacer-la-ia-aburrida-como-postura-sin-evidencia-de-practica
   type: relates_to
+- to: etica-de-ia-relacional-escuchar-antes-que-reglas
+  type: derived_from
+- to: escepticismo-ante-hype-de-ia-calibrado-por-tarea-no-por-superinteligencia
+  type: relates_to
 ---
 
 ## What it is
-El uso ético de la IA se enmarca en externalidades y engagement; la propuesta es hacer la IA «aburrida otra vez», normalizándola como tooling ordinario y no como espectáculo.
+Propuesta: la ética del uso de IA debe considerar externalidades y engagement, evitando la política de pureza, y el objetivo es hacer la IA aburrida. Lo contrario del espectáculo es la herramienta ordinaria.
 
 ## Evidence
-- La ética de la IA se discute por externalidades y engagement, con un argumento por hacer la IA «boring» como herramienta normal — source: d4324dca52ba829d
+- La ética del uso de IA debe considerar externalidades y engagement, evitando la política de pureza y buscando hacer la IA aburrida — fuente: d4324dca52ba829d
 
 ## Why it matters
-Sugiere tratar el uso de agentes en el flujo y la estimación como práctica corriente, no como iniciativa especial con coste ceremonial.
+Da una dirección concreta a la formación: presentar la IA como herramienta ordinaria con externalidades, no como acontecimiento. Es también una crítica al marco del propio clúster, que trata la IA como tema civilizatorio.
 
-Puente conceptual hacia la adopción de agentes en equipo, pero el documento es opinión de feed y no mide adopción alguna.
+Se deriva de la ética relacional de `etica-de-ia-relacional-escuchar-antes-que-reglas`. Conecta con `escepticismo-ante-hype-de-ia-calibrado-por-tarea-no-por-superinteligencia`: bajar la IA a tarea concreta es la versión operativa de hacerla aburrida.
 
 ## Links
 - relates_to → [[hacer-la-ia-aburrida-como-postura-sin-evidencia-de-practica]]
+- derived_from → [[etica-de-ia-relacional-escuchar-antes-que-reglas]]
+- relates_to → [[escepticismo-ante-hype-de-ia-calibrado-por-tarea-no-por-superinteligencia]]

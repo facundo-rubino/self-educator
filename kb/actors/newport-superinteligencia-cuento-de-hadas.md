@@ -9,34 +9,41 @@ topic: 'Cómo un dev que lidera proyectos y también enseña a programar hace me
   # Docencia de programación entry-level se mudó al profile `teaching` de # pogba
   (KB acumulativa aparte); ya no compite por cupo en este brief.'
 created: '2026-10-27'
-updated: '2026-10-27'
+updated: '2026-11-28'
 sources:
 - 1ccc8e412cdaa1c4
 tags:
 - cal-newport
-- superinteligencia
 - escepticismo
+- riesgo-ia
+- superinteligencia
 base_confidence: 0.6
 half_life_days: 120
-last_reinforced: '2026-10-27'
+last_reinforced: '2026-11-28'
 provenance:
   scale: S
   query: null
 links:
 - to: cluster-discurso-publico-ia-no-evidencia-de-practica
   type: relates_to
+- to: escepticismo-ante-progreso-rapido-a-superinteligencia
+  type: supports
+- to: newport-ataque-openai-como-guerra-de-civilizaciones-de-agentes
+  type: relates_to
 ---
 
 ## What it is
-Cal Newport sostiene que la superinteligencia es un cuento de hadas y que perseguirla puede causar daño, citando a empleados de Anthropic que discutieron públicamente riesgos catastróficos.
+Postura de Newport: la superinteligencia es un cuento y perseguirla causa daño. Su argumento central es que empleados de Anthropic afirmaron públicamente que los tipos de IA que construyen podrían matar a miles de millones; de ahí deriva que el riesgo no está en la llegada de la superinteligencia sino en la carrera por alcanzarla.
 
 ## Evidence
-- Newport sostiene que la superinteligencia es un cuento de hadas y que perseguirla puede causar daño, citando a empleados de Anthropic — source: 1ccc8e412cdaa1c4
+- Empleados de Anthropic afirmaron públicamente que los tipos de IA que construyen podrían matar a miles de millones, lo que el autor usa para argumentar que la superinteligencia es un cuento pero perseguirla causa daño — fuente: 1ccc8e412cdaa1c4
 
 ## Why it matters
-Es una posición de escepticismo dentro del debate público, no evidencia sobre prácticas con agentes. Generalizar desde esta opinión a conclusiones sobre herramientas de IA para programar o enseñar sería un salto no soportado.
+Aporta lenguaje de riesgo al clúster, pero es opinión publicada, no dato sobre equipos chicos ni sobre docencia. Para el brief su valor es como contrapeso retórico, no como evidencia operativa.
 
-Se relaciona con el encuadre del clúster como termómetro del debate público.
+Refuerza `escepticismo-ante-progreso-rapido-a-superinteligencia`. Es la misma voz de `newport-ataque-openai-como-guerra-de-civilizaciones-de-agentes`, con el mismo patrón de argumentación: incidente o afirmación ajena leída como síntoma de una carrera mal planteada.
 
 ## Links
 - relates_to → [[cluster-discurso-publico-ia-no-evidencia-de-practica]]
+- supports → [[escepticismo-ante-progreso-rapido-a-superinteligencia]]
+- relates_to → [[newport-ataque-openai-como-guerra-de-civilizaciones-de-agentes]]
